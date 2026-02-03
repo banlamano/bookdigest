@@ -1,0 +1,22 @@
+// Xcode project file for BookDigest iOS App
+// This is a placeholder - actual project should be created in Xcode
+
+// Project Configuration:
+// - Platform: iOS 15.0+
+// - Language: Swift 5.9
+// - UI Framework: SwiftUI
+// - Architecture: MVVM + Clean Architecture
+
+// Dependencies (using Swift Package Manager):
+// 1. Alamofire - Networking
+// 2. Kingfisher - Image loading & caching
+// 3. Stripe iOS SDK - Payments
+// 4. KeychainSwift - Secure storage
+
+// Main Groups:
+// - App/
+// - Data/
+// - Domain/
+// - Presentation/
+// - Core/
+// - Resources/
