@@ -4,7 +4,7 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "rm -rf node_modules/.prisma && npx prisma generate",
+    "build": "npx prisma generate --force",
     "start": "npx prisma migrate deploy && tsx src/server.ts",
     "postinstall": "npx prisma generate",
     "prisma:generate": "prisma generate",
