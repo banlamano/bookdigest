@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: bookdigest-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install && npx prisma generate && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: bookdigest-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        value: "*"
+
+databases:
+  - name: bookdigest-db
+    databaseName: bookdigest
+    user: bookdigest
+    plan: free
