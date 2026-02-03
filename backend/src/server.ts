@@ -9,6 +9,7 @@ import userRoutes from './routes/user.routes';
 import categoryRoutes from './routes/category.routes';
 import paymentRoutes from './routes/payment.routes';
 import progressRoutes from './routes/progress.routes';
+import seedRoutes from './routes/seed.routes';
 import { errorHandler } from './middleware/error.middleware';
 import { logger } from './utils/logger';
 
@@ -48,6 +49,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/payments', paymentRoutes);
 app.use('/api', progressRoutes);
+app.use('/api', seedRoutes);
 
 // Error handling
 app.use(errorHandler);
