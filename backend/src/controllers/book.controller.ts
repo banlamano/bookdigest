@@ -152,9 +152,9 @@ export const searchBooks = async (req: Request, res: Response, next: NextFunctio
         where: {
           isPublished: 1,
           OR: [
-            { title: { contains: searchTerm, mode: 'insensitive' } },
-            { author: { contains: searchTerm, mode: 'insensitive' } },
-            { tags: { has: searchTerm } },
+            { title: { contains: searchTerm } },
+            { author: { contains: searchTerm } },
+            { tags: { contains: searchTerm } },
           ],
         },
       }),
@@ -362,7 +362,7 @@ export const getBookReviews = async (req: Request, res: Response, next: NextFunc
 
     const [reviews, total] = await Promise.all([
       prisma.review.findMany({
-        where: { bookId: id, isPublic: true },
+        where: { bookId: id, isPublic: 1 },
         skip,
         take: Number(limit),
         include: {
@@ -376,7 +376,7 @@ export const getBookReviews = async (req: Request, res: Response, next: NextFunc
         },
         orderBy: { createdAt: 'desc' },
       }),
-      prisma.review.count({ where: { bookId: id, isPublic: true } }),
+      prisma.review.count({ where: { bookId: id, isPublic: 1 } }),
     ]);
 
     res.json({
