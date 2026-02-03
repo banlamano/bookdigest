@@ -20,7 +20,7 @@ export const getUserStats = async (req: Request, res: Response, next: NextFuncti
 
     const [inProgress, favorites, achievements] = await Promise.all([
       prisma.readingProgress.count({
-        where: { userId, isCompleted: false },
+        where: { userId, isCompleted: 0 },
       }),
       prisma.favorite.count({ where: { userId } }),
       prisma.userAchievement.count({ where: { userId } }),
