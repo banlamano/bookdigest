@@ -11,6 +11,7 @@ import paymentRoutes from './routes/payment.routes';
 import progressRoutes from './routes/progress.routes';
 import seedRoutes from './routes/seed.routes';
 import regenerateRoutes from './routes/regenerate.routes';
+import adminRoutes from './routes/admin.routes';
 import { errorHandler } from './middleware/error.middleware';
 import { logger } from './utils/logger';
 
@@ -57,6 +58,7 @@ app.use('/api/payments', paymentRoutes);
 app.use('/api', progressRoutes);
 app.use('/api', seedRoutes);
 app.use('/api/admin', regenerateRoutes);
+app.use('/api/admin', adminRoutes);
 
 // Error handling
 app.use(errorHandler);
