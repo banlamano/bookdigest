@@ -13,6 +13,7 @@ import { AudioPlayer } from '@/components/books/AudioPlayer';
 import { EnhancedAudioPlayer } from '@/components/books/EnhancedAudioPlayer';
 import { BookmarkButton } from '@/components/books/BookmarkButton';
 import { ReadingProgressTracker } from '@/components/books/ReadingProgressTracker';
+import EnhancedBookContent from '@/components/books/EnhancedBookContent';
 import Link from 'next/link';
 
 export default function BookDetailPage() {
@@ -20,7 +21,6 @@ export default function BookDetailPage() {
   const router = useRouter();
   const { isAuthenticated, user } = useAuthStore();
   const queryClient = useQueryClient();
-  const [activeTab, setActiveTab] = useState<'summary' | 'insights' | 'quotes' | 'chapters' | 'actions'>('summary');
 
   const { data, isLoading } = useQuery({
     queryKey: ['book', params.id],
@@ -199,159 +199,20 @@ export default function BookDetailPage() {
 
         {/* Content Tabs */}
         {!requiresPremium && (
-          <>
-            <div className="flex space-x-2 mb-6 border-b border-gray-200 dark:border-gray-700">
-              <button
-                onClick={() => setActiveTab('summary')}
-                className={`px-6 py-3 font-medium transition-colors ${
-                  activeTab === 'summary'
-                    ? 'text-primary-600 border-b-2 border-primary-600'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-                }`}
-              >
-                Summary
-              </button>
-              <button
-                onClick={() => setActiveTab('insights')}
-                className={`px-6 py-3 font-medium transition-colors ${
-                  activeTab === 'insights'
-                    ? 'text-primary-600 border-b-2 border-primary-600'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-                }`}
-              >
-                Key Insights
-              </button>
-              <button
-                onClick={() => setActiveTab('quotes')}
-                className={`px-6 py-3 font-medium transition-colors ${
-                  activeTab === 'quotes'
-                    ? 'text-primary-600 border-b-2 border-primary-600'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-                }`}
-              >
-                Quotes
-              </button>
-              <button
-                onClick={() => setActiveTab('chapters')}
-                className={`px-6 py-3 font-medium transition-colors ${
-                  activeTab === 'chapters'
-                    ? 'text-primary-600 border-b-2 border-primary-600'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-                }`}
-              >
-                Chapters
-              </button>
-              <button
-                onClick={() => setActiveTab('actions')}
-                className={`px-6 py-3 font-medium transition-colors ${
-                  activeTab === 'actions'
-                    ? 'text-primary-600 border-b-2 border-primary-600'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-                }`}
-              >
-                Action Items
-              </button>
-            </div>
-
-            <motion.div
-              id="book-summary"
-              key={activeTab}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="card p-8"
-            >
-              {activeTab === 'summary' && (
-                <div className="prose prose-lg dark:prose-invert max-w-none">
-                  <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Book Summary</h2>
-                  <div className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 whitespace-pre-line">
-                    {book.summary}
-                  </div>
-                </div>
-              )}
-
-              {activeTab === 'insights' && (
-                <div>
-                  <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Key Insights</h2>
-                  <div className="space-y-4">
-                    {book.keyInsights?.split('\n').filter((line: string) => line.trim()).map((insight: string, index: number) => (
-                      <div
-                        key={index}
-                        className="flex items-start space-x-4 p-5 bg-gradient-to-r from-primary-50 to-blue-50 dark:from-primary-900/20 dark:to-blue-900/20 rounded-xl border border-primary-100 dark:border-primary-800 hover:shadow-md transition-shadow"
-                      >
-                        <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-primary-600 to-primary-700 text-white rounded-full flex items-center justify-center font-bold shadow-lg">
-                          {index + 1}
-                        </div>
-                        <p className="text-gray-800 dark:text-gray-200 flex-1 pt-1">{insight.replace(/^[•\-]\s*/, '')}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {activeTab === 'quotes' && (
-                <div>
-                  <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Inspiring Quotes</h2>
-                  <div className="space-y-8">
-                    {book.quotes?.split('\n\n').filter((line: string) => line.trim()).map((quote: string, index: number) => (
-                      <blockquote
-                        key={index}
-                        className="relative border-l-4 border-primary-600 pl-8 py-4 italic text-xl text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-gray-800/50 rounded-r-lg"
-                      >
-                        <span className="absolute -left-3 top-0 text-6xl text-primary-600 opacity-20">"</span>
-                        {quote.replace(/^[""]|[""]$/g, '')}
-                      </blockquote>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {activeTab === 'chapters' && (
-                <div>
-                  <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Chapter Breakdown</h2>
-                  <div className="space-y-3">
-                    {book.chapters?.split(',').map((chapter: string, index: number) => (
-                      <div
-                        key={index}
-                        className="flex items-center space-x-4 p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-primary-400 dark:hover:border-primary-600 transition-colors cursor-pointer"
-                      >
-                        <div className="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-lg flex items-center justify-center font-bold text-lg">
-                          {index + 1}
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="font-semibold text-gray-900 dark:text-white">{chapter.trim()}</h3>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {activeTab === 'actions' && (
-                <div>
-                  <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Action Items</h2>
-                  <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-6 rounded-xl border-2 border-green-200 dark:border-green-800 mb-6">
-                    <p className="text-gray-700 dark:text-gray-300 text-lg">
-                      🎯 Apply what you've learned! Here are actionable steps to implement the insights from this book:
-                    </p>
-                  </div>
-                  <div className="space-y-4">
-                    {book.actionItems?.split('\n').filter((line: string) => line.trim()).map((action: string, index: number) => (
-                      <div
-                        key={index}
-                        className="flex items-start space-x-4 p-5 bg-white dark:bg-gray-800 rounded-lg border-l-4 border-green-500 shadow-sm hover:shadow-md transition-shadow"
-                      >
-                        <input 
-                          type="checkbox" 
-                          className="mt-1 w-5 h-5 text-green-600 rounded focus:ring-green-500"
-                        />
-                        <p className="text-gray-800 dark:text-gray-200 flex-1">{action.replace(/^[•\-]\s*/, '')}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </motion.div>
-          </>
+          <motion.div
+            id="book-content"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-8"
+          >
+            <EnhancedBookContent
+              summary={book.summary}
+              keyInsights={book.keyInsights}
+              chapters={book.chapters}
+              quotes={book.quotes}
+              actionItems={book.actionItems}
+            />
+          </motion.div>
         )}
       </div>
     </div>
