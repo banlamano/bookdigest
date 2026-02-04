@@ -94,6 +94,11 @@ export default function BookDetailPage() {
                   fill
                   className="object-cover"
                   unoptimized
+                  priority
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = '/placeholder-book.jpg';
+                  }}
                 />
                 {book.isPremium && (
                   <div className="absolute top-4 right-4">
