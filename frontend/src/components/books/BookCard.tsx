@@ -43,16 +43,9 @@ export function BookCard({ book }: BookCardProps) {
             quality={85}
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              // Try alternative sources before falling back to placeholder
+              // Final fallback to placeholder
               if (!target.src.includes('placeholder-book.jpg')) {
-                if (target.src.includes('openlibrary.org')) {
-                  // If OpenLibrary fails, try Google Books generic cover
-                  const googleFallback = `https://books.google.com/books/content?id=${book.isbn || 'default'}&printsec=frontcover&img=1&zoom=1`;
-                  target.src = googleFallback;
-                } else {
-                  // Final fallback to placeholder
-                  target.src = '/placeholder-book.jpg';
-                }
+                target.src = '/placeholder-book.jpg';
               }
             }}
           />
