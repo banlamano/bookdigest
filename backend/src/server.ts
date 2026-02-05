@@ -14,8 +14,11 @@ import regenerateRoutes from './routes/regenerate.routes';
 import adminRoutes from './routes/admin.routes';
 import { errorHandler } from './middleware/error.middleware';
 import { logger } from './utils/logger';
+import { PrismaClient } from '@prisma/client';
 
 dotenv.config();
+
+const prisma = new PrismaClient();
 
 const app: Express = express();
 const PORT = process.env.PORT || 5000;
@@ -63,10 +66,31 @@ app.use('/api/admin', adminRoutes);
 // Error handling
 app.use(errorHandler);
 
+// Auto-update book covers on startup (runs once when server starts)
+async function updateCoversOnStartup() {
+  // Only run in production to avoid unnecessary local runs
+  if (process.env.NODE_ENV === 'production') {
+    logger.info('🔄 Checking for cover updates...');
+    
+    try {
+      const { runCoverUpdate } = await import('./scripts/update-covers-helper');
+      const result = await runCoverUpdate();
+      logger.info(`✅ Cover update complete: ${result.updated} updated, ${result.skipped} skipped`);
+    } catch (error) {
+      logger.warn('⚠️ Cover update failed (non-critical):', error);
+    }
+  }
+}
+
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   logger.info(`🚀 Server running on port ${PORT}`);
   logger.info(`📚 Environment: ${process.env.NODE_ENV}`);
+  
+  // Run cover update in background (don't block server startup)
+  updateCoversOnStartup().catch(err => 
+    logger.warn('Cover update background task failed:', err)
+  );
 });
 
 export default app;
