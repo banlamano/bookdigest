@@ -68,17 +68,17 @@ app.use(errorHandler);
 
 // Auto-update book covers on startup (runs once when server starts)
 async function updateCoversOnStartup() {
-  // Only run in production to avoid unnecessary local runs
-  if (process.env.NODE_ENV === 'production') {
-    logger.info('🔄 Checking for cover updates...');
-    
-    try {
-      const { runCoverUpdate } = await import('./scripts/update-covers-helper');
-      const result = await runCoverUpdate();
-      logger.info(`✅ Cover update complete: ${result.updated} updated, ${result.skipped} skipped`);
-    } catch (error) {
-      logger.warn('⚠️ Cover update failed (non-critical):', error);
-    }
+  // Run on startup (checks if books need updating)
+  logger.info('🔄 Checking for cover updates...');
+  
+  try {
+    const { runCoverUpdate } = await import('./scripts/update-covers-helper');
+    const result = await runCoverUpdate();
+    logger.info(`✅ Cover update complete: ${result.updated} updated, ${result.skipped} skipped`);
+    return result;
+  } catch (error: any) {
+    logger.warn('⚠️ Cover update failed (non-critical):', error.message);
+    return { updated: 0, skipped: 0, errors: 1, total: 0 };
   }
 }
 
