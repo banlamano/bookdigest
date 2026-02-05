@@ -39,6 +39,9 @@ export const getAllBooks = async (req: Request, res: Response, next: NextFunctio
       prisma.book.count({ where }),
     ]);
 
+    // Add cache headers for better performance
+    res.set('Cache-Control', 'public, max-age=300, s-maxage=600, stale-while-revalidate=86400');
+
     res.json({
       status: 'success',
       data: {
@@ -67,6 +70,9 @@ export const getFeaturedBooks = async (req: Request, res: Response, next: NextFu
       },
     });
 
+    // Add cache headers for featured books
+    res.set('Cache-Control', 'public, max-age=600, s-maxage=1200, stale-while-revalidate=86400');
+    
     res.json({
       status: 'success',
       data: { books },
@@ -111,6 +117,9 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       });
     }
 
+    // Add cache headers for individual books
+    res.set('Cache-Control', 'public, max-age=600, s-maxage=1200, stale-while-revalidate=86400');
+    
     res.json({
       status: 'success',
       data: { book },
