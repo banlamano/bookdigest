@@ -93,8 +93,11 @@ export default function BookDetailPage() {
                   alt={book.title}
                   fill
                   className="object-cover"
-                  unoptimized
                   priority
+                  quality={90}
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI2VmZjZmZiIvPjwvc3ZnPg=="
+                  sizes="(max-width: 768px) 100vw, 400px"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = '/placeholder-book.jpg';
