@@ -18,7 +18,7 @@
                     "generate:summaries":  "tsx prisma/generate-summaries.ts",
                     "regenerate:summaries":  "tsx src/scripts/regenerate-summaries.ts",
                     "setup:dev":  "npm run prisma:generate \u0026\u0026 npm run prisma:migrate \u0026\u0026 npm run prisma:seed",
-                    "update-covers":  "ts-node src/scripts/update-covers.ts"
+                    "update-covers":  "tsx src/scripts/update-covers.ts"
                 },
     "prisma":  {
                    "seed":  "tsx prisma/seed.ts"
