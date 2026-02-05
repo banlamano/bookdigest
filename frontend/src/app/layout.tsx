@@ -5,6 +5,7 @@ import { Providers } from '@/components/Providers';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { PWAInstallPrompt } from '@/components/PWAInstallPrompt';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -39,6 +40,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <Providers>
           <div className="flex min-h-screen flex-col">

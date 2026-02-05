@@ -38,6 +38,9 @@ export function BookCard({ book }: BookCardProps) {
             className="object-cover group-hover:scale-105 transition-transform duration-300"
             unoptimized
             loading="lazy"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI2VlZSIvPjwvc3ZnPg=="
+            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.src = '/placeholder-book.jpg';
