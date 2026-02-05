@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { booksAPI } from '@/lib/api';
 import { BookCard } from '@/components/books/BookCard';
@@ -31,6 +31,15 @@ export default function SearchPage() {
 
   const books = data?.data?.data?.books || [];
   const pagination = data?.data?.data?.pagination;
+
+  // Track search queries with Google Analytics
+  useEffect(() => {
+    if (debouncedQuery && books) {
+      import('@/lib/analytics').then(({ trackSearch }) => {
+        trackSearch(debouncedQuery, books.length);
+      });
+    }
+  }, [debouncedQuery, books]);
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12">

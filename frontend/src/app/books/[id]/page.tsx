@@ -28,6 +28,15 @@ export default function BookDetailPage() {
   });
 
   const book = data?.data?.data?.book;
+
+  // Track book views with Google Analytics
+  useEffect(() => {
+    if (book) {
+      import('@/lib/analytics').then(({ trackBookView }) => {
+        trackBookView(book.id, book.title);
+      });
+    }
+  }, [book]);
   const requiresPremium = data?.data?.data?.requiresPremium;
 
   const favoriteMutation = useMutation({
