@@ -146,9 +146,9 @@ export const searchBooks = async (req: Request, res: Response, next: NextFunctio
         where: {
           isPublished: 1,
           OR: [
-            { title: { contains: searchTerm } },
-            { author: { contains: searchTerm } },
-            { tags: { contains: searchTerm } },
+            { title: { contains: searchTerm, mode: 'insensitive' } },
+            { author: { contains: searchTerm, mode: 'insensitive' } },
+            { tags: { contains: searchTerm, mode: 'insensitive' } },
           ],
         },
         skip,
@@ -161,9 +161,9 @@ export const searchBooks = async (req: Request, res: Response, next: NextFunctio
         where: {
           isPublished: 1,
           OR: [
-            { title: { contains: searchTerm } },
-            { author: { contains: searchTerm } },
-            { tags: { contains: searchTerm } },
+            { title: { contains: searchTerm, mode: 'insensitive' } },
+            { author: { contains: searchTerm, mode: 'insensitive' } },
+            { tags: { contains: searchTerm, mode: 'insensitive' } },
           ],
         },
       }),
