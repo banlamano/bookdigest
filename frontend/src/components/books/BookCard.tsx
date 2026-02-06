@@ -37,13 +37,12 @@ export function BookCard({ book }: BookCardProps) {
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
-            placeholder="blur"
-            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI2VmZjZmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNjY2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5Mb2FkaW5nLi4uPC90ZXh0Pjwvc3ZnPg=="
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             quality={85}
+            unoptimized={true}
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              // Final fallback to placeholder
+              console.log('Image error for:', book.title, book.coverImage);
               if (!target.src.includes('placeholder-book.jpg')) {
                 target.src = '/placeholder-book.jpg';
               }
