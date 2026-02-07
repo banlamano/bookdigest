@@ -6,13 +6,24 @@ import { paymentAPI } from '@/lib/api';
 import { useAuthStore } from '@/store/authStore';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Testimonials } from '@/components/home/Testimonials';
+import { useQuery } from '@tanstack/react-query';
 
 export default function PricingPage() {
   const { isAuthenticated } = useAuthStore();
   const router = useRouter();
   const [isLoading, setIsLoading] = useState<string | null>(null);
+
+  // Fetch subscription status
+  const { data: subscriptionData } = useQuery({
+    queryKey: ['subscription-status'],
+    queryFn: () => paymentAPI.getSubscriptionStatus(),
+    enabled: isAuthenticated,
+  });
+
+  const subscriptionType = subscriptionData?.data?.data?.subscriptionType || 'FREE';
+  const isPremium = subscriptionType !== 'FREE';
 
   const handleSubscribe = async (planType: 'monthly' | 'yearly' | 'team') => {
     if (!isAuthenticated) {
