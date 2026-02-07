@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
+import jwt, { SignOptions } from 'jsonwebtoken';
 import { PrismaClient } from '@prisma/client';
 import { AppError } from '../middleware/error.middleware';
 import { logger } from '../utils/logger';
@@ -9,10 +9,12 @@ const prisma = new PrismaClient();
 
 // Generate JWT token
 const generateToken = (userId: string, email: string, role: string): string => {
+  const secret = process.env.JWT_SECRET || 'default-secret-key';
+  
   return jwt.sign(
     { userId, email, role },
-    process.env.JWT_SECRET!,
-    { expiresIn: process.env.JWT_EXPIRE || '7d' }
+    secret,
+    { expiresIn: '7d' } as SignOptions
   );
 };
 
