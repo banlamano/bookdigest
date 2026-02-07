@@ -34,10 +34,11 @@ export function generateAffiliateLink(
   const affiliateId = AFFILIATE_IDS[region];
   const domain = AMAZON_DOMAINS[region];
 
-  // If we have ISBN, use it for direct product link
+  // If we have ISBN, use search instead of direct /dp/ link
+  // Amazon's /dp/ is picky about ISBN format, search is more reliable
   if (isbn) {
-    const cleanIsbn = isbn.replace(/[^0-9X]/g, '');
-    return `https://www.${domain}/dp/${cleanIsbn}?tag=${affiliateId}`;
+    const searchQuery = encodeURIComponent(`${title} ${author} ISBN ${isbn}`);
+    return `https://www.${domain}/s?k=${searchQuery}&tag=${affiliateId}`;
   }
 
   // Otherwise, use search link with title and author
