@@ -1,56 +1,34 @@
 import { MetadataRoute } from 'next';
 
 export const dynamic = 'force-dynamic';
-export const revalidate = 86400; // Revalidate daily
+export const revalidate = 3600; // Revalidate every hour
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://bookdigest-iota.vercel.app';
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://bookdigest-lypx.onrender.com';
+  
+  // Return a basic sitemap with static pages
+  // Books and categories will be discovered through crawling
+  const routes = [
+    '',
+    '/about',
+    '/features',
+    '/pricing',
+    '/contact',
+    '/login',
+    '/register',
+    '/library',
+    '/categories',
+    '/terms',
+    '/privacy',
+    '/cookies',
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: route === '' ? 1 : 0.8,
+  }));
 
-  let books: any[] = [];
-  let categories: any[] = [];
-
-  // Fetch all books from API with error handling and timeout
-  try {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
-    
-    const booksResponse = await fetch(`${apiUrl}/api/books?page=1&limit=500`, {
-      cache: 'no-store',
-      signal: controller.signal,
-    });
-    
-    clearTimeout(timeoutId);
-    
-    if (booksResponse.ok) {
-      const booksData = await booksResponse.json();
-      books = booksData.data?.books || [];
-    }
-  } catch (error) {
-    console.error('Error fetching books for sitemap:', error);
-    // Return basic sitemap even if API fails
-  }
-
-  // Fetch all categories with error handling and timeout
-  try {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
-    
-    const categoriesResponse = await fetch(`${apiUrl}/api/categories`, {
-      cache: 'no-store',
-      signal: controller.signal,
-    });
-    
-    clearTimeout(timeoutId);
-    
-    if (categoriesResponse.ok) {
-      const categoriesData = await categoriesResponse.json();
-      categories = categoriesData.data || [];
-    }
-  } catch (error) {
-    console.error('Error fetching categories for sitemap:', error);
-    // Return basic sitemap even if API fails
-  }
+  return routes;
 
   // Static pages
   const staticPages = [
