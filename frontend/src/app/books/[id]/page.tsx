@@ -12,9 +12,15 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://bookdigest-lypx.onre
 // Fetch book data on server
 async function getBook(id: string) {
   try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
+    
     const res = await fetch(`${API_URL}/api/books/${id}`, {
       cache: 'no-store',
+      signal: controller.signal,
     });
+    
+    clearTimeout(timeoutId);
     
     if (!res.ok) {
       return null;
