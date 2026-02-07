@@ -14,6 +14,7 @@ import { EnhancedAudioPlayer } from '@/components/books/EnhancedAudioPlayer';
 import { BookmarkButton } from '@/components/books/BookmarkButton';
 import { ReadingProgressTracker } from '@/components/books/ReadingProgressTracker';
 import EnhancedBookContent from '@/components/books/EnhancedBookContent';
+import { BuyOnAmazonButton } from '@/components/books/BuyOnAmazonButton';
 import Link from 'next/link';
 
 export default function BookDetailPage() {

@@ -58,6 +58,9 @@ model Book {
   isFeatured     Int               @default(0)
   isPublished    Int               @default(1)
   amazonLink     String?
+  amazonLinkUS   String?
+  amazonLinkUK   String?
+  amazonLinkDE   String?
   affiliateId    String?
   createdAt      DateTime          @default(now())
   updatedAt      DateTime          @updatedAt
