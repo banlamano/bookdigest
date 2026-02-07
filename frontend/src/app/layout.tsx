@@ -6,14 +6,37 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { PWAInstallPrompt } from '@/components/PWAInstallPrompt';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import { WebsiteStructuredData, OrganizationStructuredData } from '@/components/StructuredData';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'BookDigest - Read & Listen to Book Summaries in 15 Minutes',
-  description: 'Learn from the world\'s best books in just 15 minutes. Read or listen to expertly crafted summaries. Start your learning journey today!',
-  keywords: 'book summaries, audio books, 15 minute reads, learn faster, book insights',
+  metadataBase: new URL('https://bookdigest-iota.vercel.app'),
+  title: {
+    default: 'BookDigest - AI-Powered Book Summaries | 454+ Business & Self-Help Books',
+    template: '%s | BookDigest',
+  },
+  description: 'Discover 454+ AI-generated book summaries for business, self-help, and personal development. Learn from the best books in 15 minutes. Free book summaries with key insights, quotes, and action items.',
+  keywords: [
+    'book summaries',
+    'AI book summaries',
+    'business books',
+    'self-help books',
+    'personal development',
+    'book summary',
+    '15 minute reads',
+    'productivity books',
+    'leadership books',
+    'book insights',
+    'executive summaries',
+    'book recommendations',
+    'quick reads',
+    'learn faster',
+    'book notes',
+  ],
   authors: [{ name: 'BookDigest' }],
+  creator: 'BookDigest',
+  publisher: 'BookDigest',
   manifest: '/manifest.json',
   themeColor: '#2563eb',
   appleWebApp: {
@@ -26,10 +49,41 @@ export const metadata: Metadata = {
     initialScale: 1,
     maximumScale: 1,
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
-    title: 'BookDigest - Book Summaries in 15 Minutes',
-    description: 'Learn from the world\'s best books in just 15 minutes',
     type: 'website',
+    locale: 'en_US',
+    url: 'https://bookdigest-iota.vercel.app',
+    title: 'BookDigest - AI-Powered Book Summaries | 454+ Books',
+    description: 'Discover 454+ AI-generated book summaries. Learn from business, self-help, and personal development books in 15 minutes.',
+    siteName: 'BookDigest',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'BookDigest - AI-Powered Book Summaries',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'BookDigest - AI Book Summaries',
+    description: '454+ AI-generated book summaries. Learn faster from the best books.',
+    images: ['/og-image.png'],
+  },
+  alternates: {
+    canonical: 'https://bookdigest-iota.vercel.app',
   },
 };
 
@@ -42,6 +96,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <GoogleAnalytics />
+        <WebsiteStructuredData />
+        <OrganizationStructuredData />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <Providers>

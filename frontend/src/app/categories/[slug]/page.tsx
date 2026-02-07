@@ -1,119 +1,102 @@
-'use client';
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import CategoryBooksClient from './CategoryBooksClient';
 
-import { useParams } from 'next/navigation';
-import { useQuery } from '@tanstack/react-query';
-import { categoriesAPI } from '@/lib/api';
-import { BookCard } from '@/components/books/BookCard';
-import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
-import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
-import { useState } from 'react';
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+export const revalidate = 3600; // Revalidate every hour
 
-export default function CategoryBooksPage() {
-  const params = useParams();
-  const slug = params.slug as string;
-  const [page, setPage] = useState(1);
+// API base URL
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://bookdigest-lypx.onrender.com';
 
-  const { data, isLoading } = useQuery({
-    queryKey: ['category-books', slug, page],
-    queryFn: () => categoriesAPI.getBooks(slug, { page, limit: 12 }),
-  });
+// Fetch category data on server
+async function getCategoryBooks(slug: string) {
+  try {
+    const res = await fetch(`${API_URL}/api/categories/${slug}/books?page=1&limit=12`, {
+      cache: 'no-store',
+    });
+    
+    if (!res.ok) {
+      return null;
+    }
+    
+    const data = await res.json();
+    return data?.data || null;
+  } catch (error) {
+    console.error('Error fetching category:', error);
+    return null;
+  }
+}
 
-  const category = data?.data?.data?.category;
-  const books = data?.data?.data?.books || [];
-  const pagination = data?.data?.data?.pagination;
+// Generate metadata for SEO
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const data = await getCategoryBooks(params.slug);
+  const category = data?.category;
 
-  if (isLoading) {
-    return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="h-8 w-48 bg-gray-200 dark:bg-gray-700 rounded mb-8 animate-pulse" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {Array.from({ length: 8 }).map((_, i) => (
-              <BookCardSkeleton key={i} />
-            ))}
-          </div>
-        </div>
-      </div>
-    );
+  if (!category) {
+    return {
+      title: 'Category Not Found',
+    };
   }
 
+  const categoryTitle = `${category.name} Books - AI Summaries & Key Insights`;
+  const categoryDescription = category.description ||
+    `Explore ${data?.books?.length || 'our collection of'} AI-generated summaries of the best ${category.name.toLowerCase()} books. Learn from top authors and get key insights in 15 minutes. Business book summaries, self-help guides, and more.`;
+
+  return {
+    title: categoryTitle,
+    description: categoryDescription,
+    keywords: [
+      category.name,
+      `${category.name} books`,
+      `${category.name} book summaries`,
+      `best ${category.name} books`,
+      'book recommendations',
+      'AI book summaries',
+      'book insights',
+      '15 minute reads',
+      'book notes',
+    ],
+    openGraph: {
+      title: categoryTitle,
+      description: categoryDescription,
+      type: 'website',
+      url: `https://bookdigest-iota.vercel.app/categories/${params.slug}`,
+    },
+    twitter: {
+      card: 'summary',
+      title: categoryTitle,
+      description: categoryDescription,
+    },
+    alternates: {
+      canonical: `https://bookdigest-iota.vercel.app/categories/${params.slug}`,
+    },
+  };
+}
+
+export default async function CategoryBooksPage({ params }: { params: { slug: string } }) {
+  const data = await getCategoryBooks(params.slug);
+
+  if (!data || !data.category) {
+    notFound();
+  }
+
+  const { category, books, pagination } = data;
+
+  // Breadcrumb data for structured data
+  const breadcrumbItems = [
+    { name: 'Home', url: 'https://bookdigest-iota.vercel.app' },
+    { name: 'Categories', url: 'https://bookdigest-iota.vercel.app/categories' },
+    { name: category.name, url: `https://bookdigest-iota.vercel.app/categories/${params.slug}` },
+  ];
+
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-8">
-          <Link
-            href="/categories"
-            className="inline-flex items-center text-primary-600 hover:text-primary-700 mb-4"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Categories
-          </Link>
-
-          <div className="flex items-center space-x-4 mb-4">
-            {category?.color && (
-              <div
-                className="w-16 h-16 rounded-xl flex items-center justify-center"
-                style={{ backgroundColor: category.color }}
-              >
-                <span className="text-2xl text-white">📚</span>
-              </div>
-            )}
-            <div>
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-                {category?.name || 'Category'}
-              </h1>
-              <p className="text-gray-600 dark:text-gray-400 mt-1">
-                {books.length} book{books.length !== 1 ? 's' : ''} in this category
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Books Grid */}
-        {books.length === 0 ? (
-          <div className="text-center py-12">
-            <p className="text-gray-600 dark:text-gray-400 mb-4">
-              No books found in this category yet.
-            </p>
-            <Link href="/library" className="btn-primary">
-              Browse All Books
-            </Link>
-          </div>
-        ) : (
-          <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-              {books.map((book: any) => (
-                <BookCard key={book.id} book={book} />
-              ))}
-            </div>
-
-            {/* Pagination */}
-            {pagination && pagination.pages > 1 && (
-              <div className="flex justify-center gap-2">
-                <button
-                  onClick={() => setPage(page - 1)}
-                  disabled={page === 1}
-                  className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  Previous
-                </button>
-                <div className="flex items-center px-4">
-                  Page {page} of {pagination.pages}
-                </div>
-                <button
-                  onClick={() => setPage(page + 1)}
-                  disabled={page >= pagination.pages}
-                  className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  Next
-                </button>
-              </div>
-            )}
-          </>
-        )}
-      </div>
-    </div>
+    <CategoryBooksClient
+      slug={params.slug}
+      initialCategory={category}
+      initialBooks={books}
+      initialPagination={pagination}
+      breadcrumbItems={breadcrumbItems}
+    />
   );
 }
