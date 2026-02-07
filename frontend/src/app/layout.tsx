@@ -7,6 +7,7 @@ import { Footer } from '@/components/layout/Footer';
 import { PWAInstallPrompt } from '@/components/PWAInstallPrompt';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { WebsiteStructuredData, OrganizationStructuredData } from '@/components/StructuredData';
+import EmailCapturePopup from '@/components/EmailCapturePopup';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
