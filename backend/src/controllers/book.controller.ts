@@ -4,6 +4,29 @@ import { AppError } from '../middleware/error.middleware';
 
 const prisma = new PrismaClient();
 
+// Helper function to check if user has premium access
+async function checkPremiumAccess(userId: string | undefined, bookIsPremium: number): Promise<boolean> {
+  // If book is not premium, everyone has access
+  if (!bookIsPremium) return true;
+  
+  // If user is not authenticated, no access
+  if (!userId) return false;
+  
+  // Check user's subscription status
+  const user = await prisma.user.findUnique({
+    where: { id: userId },
+    select: { subscriptionType: true, subscriptionEnd: true },
+  });
+  
+  if (!user) return false;
+  
+  // Check if user has active premium subscription
+  const isPremiumUser = user.subscriptionType !== 'FREE';
+  const subscriptionActive = user.subscriptionEnd ? new Date(user.subscriptionEnd) > new Date() : false;
+  
+  return isPremiumUser && subscriptionActive;
+}
+
 // Get all books with filters and pagination
 export const getAllBooks = async (req: Request, res: Response, next: NextFunction) => {
   try {
@@ -101,14 +124,18 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       throw new AppError('Book not found', 404);
     }
 
-    // Check if premium book and user is not authenticated
-    if (book.isPremium && !req.user) {
-      // Return limited data
+    // Check if premium book and user doesn't have access
+    const hasAccess = await checkPremiumAccess(req.user?.userId, book.isPremium);
+    
+    if (book.isPremium && !hasAccess) {
+      // Return limited data for premium books without access
       const limitedBook = {
         ...book,
-        summary: book.summary.substring(0, 200) + '...',
+        summary: book.summary?.substring(0, 200) + '...' || '',
         keyInsights: [],
         chapters: [],
+        quotes: [],
+        actionItems: [],
         audioUrl: null,
       };
       return res.json({

@@ -7,6 +7,8 @@ import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { BookOpen, Clock, TrendingUp, Award, Heart } from 'lucide-react';
 import { BookCard } from '@/components/books/BookCard';
+import SubscriptionCard from '@/components/dashboard/SubscriptionCard';
+import FreemiumStatus from '@/components/dashboard/FreemiumStatus';
 
 export default function DashboardPage() {
   const { isAuthenticated, user } = useAuthStore();
@@ -47,6 +49,12 @@ export default function DashboardPage() {
           <p className="text-gray-600 dark:text-gray-400">
             Continue your learning journey
           </p>
+        </div>
+
+        {/* Subscription Card & Freemium Status */}
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <SubscriptionCard />
+          <FreemiumStatus />
         </div>
 
         {/* Stats Grid */}
