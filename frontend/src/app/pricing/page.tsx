@@ -1,12 +1,13 @@
 'use client';
 
-import { Check } from 'lucide-react';
+import { Check, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { paymentAPI } from '@/lib/api';
 import { useAuthStore } from '@/store/authStore';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
 import { useState } from 'react';
+import { Testimonials } from '@/components/home/Testimonials';
 
 export default function PricingPage() {
   const { isAuthenticated } = useAuthStore();
@@ -166,6 +167,170 @@ export default function PricingPage() {
             </motion.div>
           ))}
         </div>
+
+        {/* Comparison Table */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
+            Free vs Premium Comparison
+          </h2>
+          <div className="card overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead className="bg-gray-50 dark:bg-gray-800">
+                  <tr>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">
+                      Feature
+                    </th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 dark:text-white">
+                      Free
+                    </th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-white bg-gradient-to-r from-primary-600 to-secondary-600">
+                      Premium
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
+                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
+                      Book summaries per month
+                    </td>
+                    <td className="px-6 py-4 text-center text-sm text-gray-600 dark:text-gray-400">
+                      3 summaries
+                    </td>
+                    <td className="px-6 py-4 text-center text-sm text-primary-600 dark:text-primary-400 font-semibold">
+                      Unlimited
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
+                      Audio narration
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <X className="w-5 h-5 text-red-500 mx-auto" />
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <Check className="w-5 h-5 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
+                      Offline downloads
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <X className="w-5 h-5 text-red-500 mx-auto" />
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <Check className="w-5 h-5 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
+                      Ad-free experience
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <X className="w-5 h-5 text-red-500 mx-auto" />
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <Check className="w-5 h-5 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
+                      Key insights & action items
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <span className="text-sm text-gray-600 dark:text-gray-400">Limited</span>
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <Check className="w-5 h-5 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
+                      Quotes & highlights
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <X className="w-5 h-5 text-red-500 mx-auto" />
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <Check className="w-5 h-5 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
+                      Priority support
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <X className="w-5 h-5 text-red-500 mx-auto" />
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <Check className="w-5 h-5 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
+                      Early access to new books
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <X className="w-5 h-5 text-red-500 mx-auto" />
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <Check className="w-5 h-5 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
+                      Mobile app access
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <Check className="w-5 h-5 text-green-500 mx-auto" />
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <Check className="w-5 h-5 text-green-500 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-50 dark:bg-gray-800">
+                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-bold">
+                      Price
+                    </td>
+                    <td className="px-6 py-4 text-center text-2xl font-bold text-gray-900 dark:text-white">
+                      €0
+                    </td>
+                    <td className="px-6 py-4 text-center text-2xl font-bold text-primary-600 dark:text-primary-400">
+                      €9.99/mo
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            {/* CTA Row */}
+            <div className="grid grid-cols-2 border-t border-gray-200 dark:border-gray-700">
+              <div className="px-6 py-6 text-center">
+                <a
+                  href="/register"
+                  className="btn-outline inline-block"
+                >
+                  Start Free
+                </a>
+              </div>
+              <div className="px-6 py-6 bg-gradient-to-r from-primary-50 to-secondary-50 dark:from-primary-900/20 dark:to-secondary-900/20 text-center border-l border-gray-200 dark:border-gray-700">
+                <button
+                  onClick={() => handleSubscribe('monthly')}
+                  disabled={isLoading === 'monthly'}
+                  className="btn-primary"
+                >
+                  {isLoading === 'monthly' ? 'Processing...' : 'Start Free Trial'}
+                </button>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Team Plan */}
         <motion.div
