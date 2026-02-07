@@ -111,6 +111,7 @@ export default function RootLayout({
             <Footer />
           </div>
           <PWAInstallPrompt />
+          <EmailCapturePopup />
         </Providers>
       </body>
     </html>

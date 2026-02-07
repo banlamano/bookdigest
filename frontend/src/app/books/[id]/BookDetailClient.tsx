@@ -15,6 +15,7 @@ import { ReadingProgressTracker } from '@/components/books/ReadingProgressTracke
 import EnhancedBookContent from '@/components/books/EnhancedBookContent';
 import { BuyOnAmazonButton } from '@/components/books/BuyOnAmazonButton';
 import { BookStructuredData, BreadcrumbStructuredData } from '@/components/StructuredData';
+import SocialShareButtons from '@/components/books/SocialShareButtons';
 import Link from 'next/link';
 
 interface BookDetailClientProps {
