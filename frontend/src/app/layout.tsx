@@ -12,6 +12,9 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://bookdigest-iota.vercel.app'),
+  verification: {
+    google: '_vdNbYX3ur3mO5jTjKdCaPotFz-6vICN_j9JDnYXQ80',
+  },
   title: {
     default: 'BookDigest - AI-Powered Book Summaries | 454+ Business & Self-Help Books',
     template: '%s | BookDigest',
