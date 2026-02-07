@@ -36,6 +36,9 @@ async function addAffiliateLinksToAllBooks() {
           amazonLinkUS: affiliateLinks.US,
           amazonLinkUK: affiliateLinks.UK,
           amazonLinkDE: affiliateLinks.DE,
+          amazonLinkES: affiliateLinks.ES,
+          amazonLinkFR: affiliateLinks.FR,
+          amazonLinkIT: affiliateLinks.IT,
           amazonLink: affiliateLinks.US, // Default to US
         },
       });

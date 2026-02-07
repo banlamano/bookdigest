@@ -7,6 +7,9 @@ interface BuyOnAmazonButtonProps {
   amazonLinkUS?: string;
   amazonLinkUK?: string;
   amazonLinkDE?: string;
+  amazonLinkES?: string;
+  amazonLinkFR?: string;
+  amazonLinkIT?: string;
   bookTitle: string;
   className?: string;
 }
@@ -15,10 +18,13 @@ export function BuyOnAmazonButton({
   amazonLinkUS,
   amazonLinkUK,
   amazonLinkDE,
+  amazonLinkES,
+  amazonLinkFR,
+  amazonLinkIT,
   bookTitle,
   className = '',
 }: BuyOnAmazonButtonProps) {
-  const [selectedRegion, setSelectedRegion] = useState<'US' | 'UK' | 'DE'>('US');
+  const [selectedRegion, setSelectedRegion] = useState<'US' | 'UK' | 'DE' | 'ES' | 'FR' | 'IT'>('US');
   const [showDropdown, setShowDropdown] = useState(false);
 
   // Detect user's region based on browser locale
@@ -26,6 +32,12 @@ export function BuyOnAmazonButton({
     const locale = navigator.language.toLowerCase();
     if (locale.includes('de')) {
       setSelectedRegion('DE');
+    } else if (locale.includes('es')) {
+      setSelectedRegion('ES');
+    } else if (locale.includes('fr')) {
+      setSelectedRegion('FR');
+    } else if (locale.includes('it')) {
+      setSelectedRegion('IT');
     } else if (locale.includes('gb') || locale.includes('en-gb')) {
       setSelectedRegion('UK');
     } else {
@@ -36,12 +48,18 @@ export function BuyOnAmazonButton({
   const getCurrentLink = () => {
     if (selectedRegion === 'UK' && amazonLinkUK) return amazonLinkUK;
     if (selectedRegion === 'DE' && amazonLinkDE) return amazonLinkDE;
-    return amazonLinkUS || amazonLinkUK || amazonLinkDE || '#';
+    if (selectedRegion === 'ES' && amazonLinkES) return amazonLinkES;
+    if (selectedRegion === 'FR' && amazonLinkFR) return amazonLinkFR;
+    if (selectedRegion === 'IT' && amazonLinkIT) return amazonLinkIT;
+    return amazonLinkUS || amazonLinkUK || amazonLinkDE || amazonLinkES || amazonLinkFR || amazonLinkIT || '#';
   };
 
   const getRegionLabel = () => {
     if (selectedRegion === 'UK') return '🇬🇧 Amazon.co.uk';
     if (selectedRegion === 'DE') return '🇩🇪 Amazon.de';
+    if (selectedRegion === 'ES') return '🇪🇸 Amazon.es';
+    if (selectedRegion === 'FR') return '🇫🇷 Amazon.fr';
+    if (selectedRegion === 'IT') return '🇮🇹 Amazon.it';
     return '🇺🇸 Amazon.com';
   };
 
@@ -133,13 +151,42 @@ export function BuyOnAmazonButton({
                     setSelectedRegion('DE');
                     setShowDropdown(false);
                   }}
-                  className="
-                    w-full px-4 py-2 text-left
-                    hover:bg-gray-100 dark:hover:bg-gray-700
-                    last:rounded-b-lg
-                  "
+                  className="w-full px-4 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
                   🇩🇪 Amazon.de
+                </button>
+              )}
+              {amazonLinkES && (
+                <button
+                  onClick={() => {
+                    setSelectedRegion('ES');
+                    setShowDropdown(false);
+                  }}
+                  className="w-full px-4 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  🇪🇸 Amazon.es
+                </button>
+              )}
+              {amazonLinkFR && (
+                <button
+                  onClick={() => {
+                    setSelectedRegion('FR');
+                    setShowDropdown(false);
+                  }}
+                  className="w-full px-4 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  🇫🇷 Amazon.fr
+                </button>
+              )}
+              {amazonLinkIT && (
+                <button
+                  onClick={() => {
+                    setSelectedRegion('IT');
+                    setShowDropdown(false);
+                  }}
+                  className="w-full px-4 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700 last:rounded-b-lg"
+                >
+                  🇮🇹 Amazon.it
                 </button>
               )}
             </div>

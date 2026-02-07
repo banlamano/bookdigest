@@ -4,12 +4,18 @@ export const AFFILIATE_IDS = {
   US: 'bookdigest06-20',
   UK: 'bookdigest-21',
   DE: 'bookdigest-21',
+  ES: 'bookdigest-21',
+  FR: 'bookdigest-21',
+  IT: 'bookdigest-21',
 };
 
 export const AMAZON_DOMAINS = {
   US: 'amazon.com',
   UK: 'amazon.co.uk',
   DE: 'amazon.de',
+  ES: 'amazon.es',
+  FR: 'amazon.fr',
+  IT: 'amazon.it',
 };
 
 /**
@@ -23,7 +29,7 @@ export function generateAffiliateLink(
   title: string,
   author: string,
   isbn?: string,
-  region: 'US' | 'UK' | 'DE' = 'US'
+  region: 'US' | 'UK' | 'DE' | 'ES' | 'FR' | 'IT' = 'US'
 ): string {
   const affiliateId = AFFILIATE_IDS[region];
   const domain = AMAZON_DOMAINS[region];
@@ -43,7 +49,7 @@ export function generateAffiliateLink(
  * Detect user's region based on various factors
  * This will be used on the frontend
  */
-export function getDefaultRegion(): 'US' | 'UK' | 'DE' {
+export function getDefaultRegion(): 'US' | 'UK' | 'DE' | 'ES' | 'FR' | 'IT' {
   // Server-side: default to US
   // Client-side will detect based on browser locale/IP
   return 'US';
@@ -61,5 +67,8 @@ export function generateAllAffiliateLinks(
     US: generateAffiliateLink(title, author, isbn, 'US'),
     UK: generateAffiliateLink(title, author, isbn, 'UK'),
     DE: generateAffiliateLink(title, author, isbn, 'DE'),
+    ES: generateAffiliateLink(title, author, isbn, 'ES'),
+    FR: generateAffiliateLink(title, author, isbn, 'FR'),
+    IT: generateAffiliateLink(title, author, isbn, 'IT'),
   };
 }

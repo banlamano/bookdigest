@@ -162,6 +162,19 @@ export default function BookDetailPage() {
                 )}
               </div>
 
+              {/* Buy on Amazon Button */}
+              <div className="mb-6">
+                <BuyOnAmazonButton
+                  amazonLinkUS={book.amazonLinkUS}
+                  amazonLinkUK={book.amazonLinkUK}
+                  amazonLinkDE={book.amazonLinkDE}
+                  amazonLinkES={book.amazonLinkES}
+                  amazonLinkFR={book.amazonLinkFR}
+                  amazonLinkIT={book.amazonLinkIT}
+                  bookTitle={book.title}
+                />
+              </div>
+
               {requiresPremium ? (
                 <div className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 border-2 border-yellow-400 rounded-lg p-6">
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">

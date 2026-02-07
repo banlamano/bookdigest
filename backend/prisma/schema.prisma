@@ -61,6 +61,9 @@ model Book {
   amazonLinkUS   String?
   amazonLinkUK   String?
   amazonLinkDE   String?
+  amazonLinkES   String?
+  amazonLinkFR   String?
+  amazonLinkIT   String?
   affiliateId    String?
   createdAt      DateTime          @default(now())
   updatedAt      DateTime          @updatedAt
