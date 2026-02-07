@@ -164,17 +164,31 @@ export default function PricingPage() {
                 ))}
               </ul>
 
-              <button
-                onClick={() => plan.planType && handleSubscribe(plan.planType)}
-                disabled={!plan.planType || isLoading === plan.planType}
-                className={`w-full py-3 rounded-lg font-medium transition-colors ${
-                  plan.highlighted
-                    ? 'bg-primary-600 hover:bg-primary-700 text-white'
-                    : 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white'
-                } disabled:opacity-50 disabled:cursor-not-allowed`}
-              >
-                {isLoading === plan.planType ? 'Processing...' : plan.cta}
-              </button>
+              {isPremium && plan.planType ? (
+                <div className="text-center">
+                  <div className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 py-3 rounded-lg font-medium">
+                    ✓ Current Plan
+                  </div>
+                  <a
+                    href="/dashboard"
+                    className="text-sm text-primary-600 hover:text-primary-700 mt-2 inline-block"
+                  >
+                    Manage Subscription →
+                  </a>
+                </div>
+              ) : (
+                <button
+                  onClick={() => plan.planType && handleSubscribe(plan.planType)}
+                  disabled={!plan.planType || isLoading === plan.planType}
+                  className={`w-full py-3 rounded-lg font-medium transition-colors ${
+                    plan.highlighted
+                      ? 'bg-primary-600 hover:bg-primary-700 text-white'
+                      : 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white'
+                  } disabled:opacity-50 disabled:cursor-not-allowed`}
+                >
+                  {isLoading === plan.planType ? 'Processing...' : plan.cta}
+                </button>
+              )}
             </motion.div>
           ))}
         </div>
@@ -331,13 +345,19 @@ export default function PricingPage() {
                 </a>
               </div>
               <div className="px-6 py-6 bg-gradient-to-r from-primary-50 to-secondary-50 dark:from-primary-900/20 dark:to-secondary-900/20 text-center border-l border-gray-200 dark:border-gray-700">
-                <button
-                  onClick={() => handleSubscribe('monthly')}
-                  disabled={isLoading === 'monthly'}
-                  className="btn-primary"
-                >
-                  {isLoading === 'monthly' ? 'Processing...' : 'Start Free Trial'}
-                </button>
+                {isPremium ? (
+                  <div className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 py-3 rounded-lg font-medium">
+                    ✓ You're Premium!
+                  </div>
+                ) : (
+                  <button
+                    onClick={() => handleSubscribe('monthly')}
+                    disabled={isLoading === 'monthly'}
+                    className="btn-primary"
+                  >
+                    {isLoading === 'monthly' ? 'Processing...' : 'Start Free Trial'}
+                  </button>
+                )}
               </div>
             </div>
           </div>
@@ -378,13 +398,22 @@ export default function PricingPage() {
             <div className="text-center md:text-right">
               <div className="text-5xl font-bold mb-4">€49.99</div>
               <div className="text-primary-100 mb-6">per month for 5 users</div>
-              <button
-                onClick={() => handleSubscribe('team')}
-                disabled={isLoading === 'team'}
-                className="bg-white text-primary-600 hover:bg-primary-50 px-8 py-3 rounded-lg font-semibold transition-colors disabled:opacity-50"
-              >
-                {isLoading === 'team' ? 'Processing...' : 'Contact Sales'}
-              </button>
+              {isPremium ? (
+                <a
+                  href="/dashboard"
+                  className="bg-white text-primary-600 hover:bg-primary-50 px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
+                >
+                  Manage Subscription
+                </a>
+              ) : (
+                <button
+                  onClick={() => handleSubscribe('team')}
+                  disabled={isLoading === 'team'}
+                  className="bg-white text-primary-600 hover:bg-primary-50 px-8 py-3 rounded-lg font-semibold transition-colors disabled:opacity-50"
+                >
+                  {isLoading === 'team' ? 'Processing...' : 'Contact Sales'}
+                </button>
+              )}
             </div>
           </div>
         </motion.div>
