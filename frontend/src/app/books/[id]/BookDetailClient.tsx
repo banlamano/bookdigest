@@ -236,6 +236,12 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
               quotes={book.quotes}
               actionItems={book.actionItems}
             />
+            
+            {/* Social Share Buttons */}
+            <SocialShareButtons 
+              bookTitle={book.title}
+              bookAuthor={book.author}
+            />
           </motion.div>
         )}
       </div>
