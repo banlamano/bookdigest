@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Providers } from '@/components/Providers';
@@ -10,6 +10,13 @@ import { WebsiteStructuredData, OrganizationStructuredData } from '@/components/
 import EmailCapturePopup from '@/components/EmailCapturePopup';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: '#2563eb',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://bookdigest-iota.vercel.app'),
@@ -42,16 +49,10 @@ export const metadata: Metadata = {
   creator: 'BookDigest',
   publisher: 'BookDigest',
   manifest: '/manifest.json',
-  themeColor: '#2563eb',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
     title: 'BookDigest',
-  },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
   },
   robots: {
     index: true,

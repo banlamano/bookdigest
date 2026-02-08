@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { BookOpen, Search, Menu, X, Sun, Moon, User, LogOut } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
@@ -10,9 +10,14 @@ import { useRouter } from 'next/navigation';
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const { user, isAuthenticated, logout } = useAuthStore();
   const router = useRouter();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleLogout = () => {
     logout();
@@ -53,17 +58,19 @@ export function Navbar() {
           {/* Right Side Actions */}
           <div className="hidden md:flex items-center space-x-4">
             {/* Theme Toggle */}
-            <button
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-              aria-label="Toggle theme"
-            >
-              {theme === 'dark' ? (
-                <Sun className="w-5 h-5 text-gray-700 dark:text-gray-300" />
-              ) : (
-                <Moon className="w-5 h-5 text-gray-700 dark:text-gray-300" />
-              )}
-            </button>
+            {mounted && (
+              <button
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                aria-label="Toggle theme"
+              >
+                {theme === 'dark' ? (
+                  <Sun className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+                ) : (
+                  <Moon className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+                )}
+              </button>
+            )}
 
             {isAuthenticated ? (
               <div className="relative">

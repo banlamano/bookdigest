@@ -41,26 +41,30 @@ export default function EmailCapturePopup() {
     setIsSubmitting(true);
 
     try {
-      // TODO: Replace with your actual email collection endpoint
-      // For now, we'll just save to localStorage and show success
-      
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-
-      // Save to localStorage (replace with actual API call later)
-      const subscribers = JSON.parse(localStorage.getItem('emailSubscribers') || '[]');
-      subscribers.push({
-        email,
-        subscribedAt: new Date().toISOString(),
+      // Call the email capture API
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/email-capture/capture`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
       });
-      localStorage.setItem('emailSubscribers', JSON.stringify(subscribers));
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || 'Failed to subscribe');
+      }
+
+      // Save subscription status to localStorage
       localStorage.setItem('emailSubscribed', 'true');
 
       toast.success('🎉 Success! Check your email for your free summaries!');
       setIsOpen(false);
       setEmail('');
-    } catch (error) {
-      toast.error('Something went wrong. Please try again.');
+    } catch (error: any) {
+      console.error('Email capture error:', error);
+      toast.error(error.message || 'Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
