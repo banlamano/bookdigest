@@ -4,7 +4,7 @@
     "main":  "dist/server.js",
     "scripts":  {
                     "dev":  "tsx watch src/server.ts",
-                    "build":  "npx prisma generate --force",
+                    "build": "npx prisma generate && tsc",
                     "start":  "npx prisma db push --accept-data-loss \u0026\u0026 npx tsx src/server.ts",
                     "postinstall":  "npx prisma generate",
                     "prisma:generate":  "prisma generate",
