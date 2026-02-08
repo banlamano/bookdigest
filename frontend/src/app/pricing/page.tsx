@@ -25,6 +25,15 @@ export default function PricingPage() {
   const subscriptionType = subscriptionData?.data?.data?.subscriptionType || 'FREE';
   const isPremium = subscriptionType !== 'FREE';
 
+  // Check if a specific plan is the user's current subscription
+  const isCurrentPlan = (planType: string | null) => {
+    if (!planType) return false;
+    if (planType === 'monthly') return subscriptionType === 'PREMIUM_MONTHLY';
+    if (planType === 'yearly') return subscriptionType === 'PREMIUM_YEARLY';
+    if (planType === 'team') return subscriptionType === 'TEAM';
+    return false;
+  };
+
   const handleSubscribe = async (planType: 'monthly' | 'yearly' | 'team') => {
     if (!isAuthenticated) {
       toast.error('Please login to subscribe');
@@ -164,7 +173,7 @@ export default function PricingPage() {
                 ))}
               </ul>
 
-              {isPremium && plan.planType ? (
+              {isCurrentPlan(plan.planType) ? (
                 <div className="text-center">
                   <div className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 py-3 rounded-lg font-medium">
                     ✓ Current Plan
