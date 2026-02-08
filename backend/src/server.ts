@@ -14,6 +14,7 @@ import regenerateRoutes from './routes/regenerate.routes';
 import adminRoutes from './routes/admin.routes';
 import adminSimpleRoutes from './routes/admin-simple.routes';
 import emailCaptureRoutes from './routes/email-capture.routes';
+import updateCoversRoutes from './routes/update-covers.routes';
 import { errorHandler } from './middleware/error.middleware';
 import { logger } from './utils/logger';
 import { PrismaClient } from '@prisma/client';
@@ -69,6 +70,7 @@ app.use('/api/admin', regenerateRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/admin-simple', adminSimpleRoutes);
 app.use('/api/email-capture', emailCaptureRoutes);
+app.use('/api/admin', updateCoversRoutes);
 
 // Error handling
 app.use(errorHandler);
