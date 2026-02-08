@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e6156973-00f0-4a0a-be4e-086c3a58b577" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#grad-e6156973-00f0-4a0a-be4e-086c3a58b577)" />
+  
+  <!-- Decorative pattern -->
+  <g opacity="0.1">
+    <circle cx="151.9399507412249" cy="365.98607964795855" r="17.246865349311236" fill="white" /><circle cx="186.59547410087157" cy="496.66313908693985" r="17.067866315655788" fill="white" /><circle cx="134.21072298256553" cy="317.220034670799" r="14.191376931114817" fill="white" /><circle cx="110.34273884759575" cy="120.06148696063046" r="15.397839999676794" fill="white" /><circle cx="148.19989967465887" cy="530.6576711088902" r="23.487203270866228" fill="white" /><circle cx="278.38354052607144" cy="374.0443113599313" r="25.723459469134266" fill="white" /><circle cx="344.9127455093461" cy="100.10234693685223" r="22.102628768289883" fill="white" /><circle cx="92.14494426661224" cy="587.0477452168053" r="27.85260234040089" fill="white" /><circle cx="72.37616491638575" cy="468.5504473460013" r="19.530149849751083" fill="white" /><circle cx="187.8438365051682" cy="234.22439457034122" r="18.98137667339944" fill="white" /><circle cx="72.34517323422827" cy="415.9497448517262" r="26.34710384575478" fill="white" /><circle cx="2.4193469047064653" cy="408.2921143224822" r="29.3345245044852" fill="white" /><circle cx="304.87287534729114" cy="384.67451788638687" r="13.699501234963973" fill="white" /><circle cx="397.61860166009035" cy="308.0546609034504" r="17.582912706769044" fill="white" /><circle cx="376.08762137987117" cy="303.62184500661806" r="10.390061044880428" fill="white" /><circle cx="227.1270789507933" cy="202.75932041731872" r="11.438355052065672" fill="white" /><circle cx="393.41214879172276" cy="394.37586718167404" r="17.550712108313242" fill="white" /><circle cx="288.7722224363768" cy="567.0250770437068" r="14.293152092063071" fill="white" /><circle cx="182.78330339151773" cy="17.711897247798582" r="15.963373772150668" fill="white" /><circle cx="81.53359889113277" cy="370.1178715275978" r="29.14338675144155" fill="white" />
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        The Telomere Effect
+      </text>
+    
+  </g>
+  
+  <!-- Author -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#86efac" 
+            text-anchor="middle">
+        Elizabeth Blackburn
+      </text>
+    
+  </g>
+  
+  <!-- Category badge -->
+  <g>
+    <rect x="20" y="20" width="102" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

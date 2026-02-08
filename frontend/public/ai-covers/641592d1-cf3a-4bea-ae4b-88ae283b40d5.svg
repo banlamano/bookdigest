@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-641592d1-cf3a-4bea-ae4b-88ae283b40d5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7e22ce;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#grad-641592d1-cf3a-4bea-ae4b-88ae283b40d5)" />
+  
+  <!-- Decorative pattern -->
+  <g opacity="0.1">
+    <circle cx="103.75391313499253" cy="487.7798324901273" r="25.117007075122544" fill="white" /><circle cx="147.9941993651155" cy="68.75342203762555" r="27.288137959951555" fill="white" /><circle cx="191.90319679727125" cy="336.65093115532636" r="24.149647359145554" fill="white" /><circle cx="312.888572086667" cy="239.19204040590475" r="14.483317353996197" fill="white" /><circle cx="352.10889544497337" cy="167.22333116001073" r="26.821747881528168" fill="white" /><circle cx="271.63802344720006" cy="438.79098591032175" r="11.724195726939996" fill="white" /><circle cx="123.29039047601312" cy="314.81794378986257" r="29.236686812356037" fill="white" /><circle cx="354.2114531348401" cy="188.72897142312726" r="29.699409735162906" fill="white" /><circle cx="102.79698025782871" cy="447.61698332297175" r="26.958206055030324" fill="white" /><circle cx="75.58337891584625" cy="48.05145202469285" r="25.930623851838686" fill="white" /><circle cx="271.3689541010844" cy="352.74366906958994" r="27.54986490644754" fill="white" /><circle cx="14.18197139996522" cy="75.61539093553051" r="26.22203803580959" fill="white" /><circle cx="27.13112807411555" cy="516.4509065367581" r="11.177431960433747" fill="white" /><circle cx="214.39224975068942" cy="497.27613834507156" r="19.618878718569718" fill="white" /><circle cx="371.8040590645725" cy="126.25341207007104" r="10.396177444781696" fill="white" /><circle cx="143.9805710526862" cy="136.71379482009834" r="25.700053409848415" fill="white" /><circle cx="397.68595921742326" cy="568.5809447180153" r="11.963002879518502" fill="white" /><circle cx="64.53784759358423" cy="434.5156814070798" r="28.488935199623075" fill="white" /><circle cx="321.11843084574053" cy="361.9103716527978" r="16.547474899585893" fill="white" /><circle cx="247.21147261135195" cy="131.4547749060221" r="16.9310569631673" fill="white" />
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        The Aladdin Factor
+      </text>
+    
+  </g>
+  
+  <!-- Author -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#c084fc" 
+            text-anchor="middle">
+        Jack Canfield
+      </text>
+    
+  </g>
+  
+  <!-- Category badge -->
+  <g>
+    <rect x="20" y="20" width="138" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="590" width="400" height="10" fill="#a855f7" opacity="0.8" />
+</svg>
