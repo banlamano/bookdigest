@@ -1,9 +1,9 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Clock, Headphones, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { OptimizedBookCover } from './OptimizedBookCover';
 
 interface BookCardProps {
   book: {
@@ -31,13 +31,54 @@ export function BookCard({ book }: BookCardProps) {
     >
       <Link href={`/books/${book.id}`}>
         <div className="relative aspect-[3/4] overflow-hidden bg-gray-100">
-          <OptimizedBookCover
-            src={book.coverImage || '/placeholder-book.svg'}
-            alt={`${book.title} by ${book.author}`}
-            title={book.title}
-            author={book.author}
-            category={book.category.name}
-            className="group-hover:scale-105 transition-transform duration-300"
+          <Image
+            src={book.coverImage || '/placeholder-book.jpg'}
+            alt={book.title}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            quality={85}
+            unoptimized={true}
+            onError={async (e) => {
+              const target = e.target as HTMLImageElement;
+              
+              // If already tried fallback, use placeholder
+              if (target.dataset.fallbackAttempted === 'true' || target.src.includes('placeholder-book.jpg')) {
+                if (!target.src.includes('placeholder-book.jpg')) {
+                  target.src = '/placeholder-book.jpg';
+                }
+                return;
+              }
+              
+              // Mark that we're trying fallback
+              target.dataset.fallbackAttempted = 'true';
+              
+              // If it's an OpenLibrary URL, try to fetch from Google Books API
+              if (book.coverImage?.includes('openlibrary.org')) {
+                try {
+                  const query = encodeURIComponent(`${book.title} ${book.author}`);
+                  const response = await fetch(
+                    `https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=1`
+                  );
+                  const data = await response.json();
+                  
+                  if (data.items?.[0]?.volumeInfo?.imageLinks) {
+                    const links = data.items[0].volumeInfo.imageLinks;
+                    const cover = links.large || links.medium || links.thumbnail;
+                    if (cover) {
+                      target.src = cover.replace('http://', 'https://');
+                      return;
+                    }
+                  }
+                } catch (error) {
+                  console.log('Fallback fetch failed:', error);
+                }
+              }
+              
+              // Final fallback
+              target.src = '/placeholder-book.svg';
+            }}
           />
           {book.isPremium && (
             <div className="absolute top-2 right-2">
