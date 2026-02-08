@@ -16,8 +16,6 @@ export function OptimizedBookCover({ src, alt, className = '', priority = false 
   const [hasError, setHasError] = useState(false);
 
   const handleError = () => {
-    console.log(`Image failed to load: ${imgSrc}`);
-    
     // If it's already the placeholder SVG, don't try again
     if (imgSrc.includes('placeholder-book.svg')) {
       setHasError(true);
@@ -25,7 +23,7 @@ export function OptimizedBookCover({ src, alt, className = '', priority = false 
       return;
     }
 
-    // Try fallback to placeholder SVG
+    // Fallback to placeholder SVG
     setImgSrc('/placeholder-book.svg');
     setHasError(true);
     setIsLoading(false);
