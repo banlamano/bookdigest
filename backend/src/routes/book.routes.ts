@@ -29,29 +29,37 @@ router.post('/:id/progress', authenticate, updateProgress);
 router.get('/:id/progress', authenticate, getBookProgress);
 router.post('/:id/reviews', authenticate, addReview);
 
-// Admin routes (update book cover)
+// Admin routes (update book - cover and/or amazon link)
 router.put('/:id', authenticate, async (req, res) => {
   try {
     const { id } = req.params;
-    const { coverImage } = req.body;
+    const { coverImage, amazonLink } = req.body;
 
-    if (!coverImage) {
-      return res.status(400).json({ success: false, message: 'Cover image URL required' });
+    if (!coverImage && !amazonLink) {
+      return res.status(400).json({ 
+        success: false, 
+        message: 'Either coverImage or amazonLink is required' 
+      });
     }
 
     const { PrismaClient } = require('@prisma/client');
     const prisma = new PrismaClient();
 
+    // Build update data object
+    const updateData: any = {};
+    if (coverImage) updateData.coverImage = coverImage;
+    if (amazonLink) updateData.amazonLink = amazonLink;
+
     const book = await prisma.book.update({
-      where: { id: parseInt(id) },
-      data: { coverImage },
+      where: { id },
+      data: updateData,
     });
 
     await prisma.$disconnect();
 
     res.json({
       success: true,
-      message: 'Book cover updated successfully',
+      message: 'Book updated successfully',
       data: { book },
     });
   } catch (error) {
