@@ -44,3 +44,13 @@ coverage/
 .cache/
 temp/
 tmp/
+
+# Security - Never commit sensitive files
+*LIVE_ENV*
+*PRODUCTION_ENV*
+*SECRET*
+*CREDENTIALS*
+*.pem
+*.key
+*.p12
+*.pfx
