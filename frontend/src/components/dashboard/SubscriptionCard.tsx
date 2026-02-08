@@ -50,7 +50,10 @@ export default function SubscriptionCard() {
     );
   }
 
-  const isPremium = subscriptionType !== 'FREE';
+  // Check if user is premium AND subscription is not expired
+  const isPremium = subscriptionType !== 'FREE' && 
+                   subscriptionEnd && 
+                   new Date(subscriptionEnd) > new Date();
   const isCanceled = details?.cancelAtPeriodEnd;
 
   return (
