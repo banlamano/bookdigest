@@ -18,15 +18,15 @@ export function OptimizedBookCover({ src, alt, className = '', priority = false 
   const handleError = () => {
     console.log(`Image failed to load: ${imgSrc}`);
     
-    // If it's already the placeholder, don't try again
-    if (imgSrc.includes('placeholder-book.jpg')) {
+    // If it's already the placeholder SVG, don't try again
+    if (imgSrc.includes('placeholder-book.svg')) {
       setHasError(true);
       setIsLoading(false);
       return;
     }
 
-    // Try fallback to placeholder
-    setImgSrc('/placeholder-book.jpg');
+    // Try fallback to placeholder SVG
+    setImgSrc('/placeholder-book.svg');
     setHasError(true);
     setIsLoading(false);
   };
@@ -60,7 +60,7 @@ export function OptimizedBookCover({ src, alt, className = '', priority = false 
         </div>
       )}
       
-      {hasError && imgSrc.includes('placeholder-book.jpg') && (
+      {hasError && imgSrc.includes('placeholder-book.svg') && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-800">
           <div className="text-center p-4">
             <p className="text-sm text-gray-500">Cover unavailable</p>

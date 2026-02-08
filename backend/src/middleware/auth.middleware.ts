@@ -33,14 +33,38 @@ export const authenticate = async (
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET!) as JwtPayload;
     
-    // Verify user still exists
+    // Verify user still exists and check subscription status
     const user = await prisma.user.findUnique({
       where: { id: decoded.userId },
-      select: { id: true, email: true, role: true },
+      select: { 
+        id: true, 
+        email: true, 
+        role: true,
+        subscriptionType: true,
+        subscriptionEnd: true
+      },
     });
 
     if (!user) {
       throw new AppError('User no longer exists', 401);
+    }
+
+    // Auto-expire subscription if end date has passed
+    if (user.subscriptionType !== 'FREE' && user.subscriptionEnd) {
+      const now = new Date();
+      const endDate = new Date(user.subscriptionEnd);
+      
+      if (endDate < now) {
+        // Subscription expired - revert to FREE
+        await prisma.user.update({
+          where: { id: user.id },
+          data: {
+            subscriptionType: 'FREE',
+            subscriptionId: null,
+            subscriptionEnd: null
+          }
+        });
+      }
     }
 
     req.user = decoded;

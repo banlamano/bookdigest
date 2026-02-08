@@ -16,6 +16,8 @@ export default function SubscriptionCard() {
   const { data, isLoading } = useQuery({
     queryKey: ['subscription-status'],
     queryFn: () => paymentAPI.getSubscriptionStatus(),
+    // Refetch every minute to keep status fresh
+    refetchInterval: 60 * 1000,
   });
 
   const subscriptionData = data?.data?.data;

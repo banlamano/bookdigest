@@ -81,6 +81,32 @@ export const login = async (req: Request, res: Response, next: NextFunction) => 
       throw new AppError('Invalid email or password', 401);
     }
 
+    // Verify subscription status and auto-expire if needed
+    let currentSubscriptionType = user.subscriptionType;
+    let currentSubscriptionEnd = user.subscriptionEnd;
+    
+    if (user.subscriptionType !== 'FREE' && user.subscriptionEnd) {
+      const now = new Date();
+      const endDate = new Date(user.subscriptionEnd);
+      
+      if (endDate < now) {
+        // Subscription expired - update to FREE
+        await prisma.user.update({
+          where: { id: user.id },
+          data: {
+            subscriptionType: 'FREE',
+            subscriptionId: null,
+            subscriptionEnd: null
+          }
+        });
+        
+        currentSubscriptionType = 'FREE';
+        currentSubscriptionEnd = null;
+        
+        logger.info(`Subscription expired for user: ${email}, reverted to FREE`);
+      }
+    }
+
     // Generate token
     const token = generateToken(user.id, user.email, user.role);
 
@@ -95,7 +121,8 @@ export const login = async (req: Request, res: Response, next: NextFunction) => 
           firstName: user.firstName,
           lastName: user.lastName,
           role: user.role,
-          subscriptionType: user.subscriptionType,
+          subscriptionType: currentSubscriptionType,
+          subscriptionEnd: currentSubscriptionEnd,
           avatar: user.avatar,
         },
         token,
@@ -120,6 +147,7 @@ export const getProfile = async (req: Request, res: Response, next: NextFunction
         role: true,
         subscriptionType: true,
         subscriptionEnd: true,
+        subscriptionId: true,
         booksRead: true,
         totalReadingTime: true,
         currentStreak: true,
@@ -132,9 +160,46 @@ export const getProfile = async (req: Request, res: Response, next: NextFunction
       throw new AppError('User not found', 404);
     }
 
+    // Check and update expired subscription
+    let updatedUser = user;
+    if (user.subscriptionType !== 'FREE' && user.subscriptionEnd) {
+      const now = new Date();
+      const endDate = new Date(user.subscriptionEnd);
+      
+      if (endDate < now) {
+        // Subscription expired - update to FREE
+        updatedUser = await prisma.user.update({
+          where: { id: user.id },
+          data: {
+            subscriptionType: 'FREE',
+            subscriptionId: null,
+            subscriptionEnd: null
+          },
+          select: {
+            id: true,
+            email: true,
+            firstName: true,
+            lastName: true,
+            avatar: true,
+            role: true,
+            subscriptionType: true,
+            subscriptionEnd: true,
+            subscriptionId: true,
+            booksRead: true,
+            totalReadingTime: true,
+            currentStreak: true,
+            longestStreak: true,
+            createdAt: true,
+          }
+        });
+        
+        logger.info(`Subscription expired for user: ${user.email}, reverted to FREE`);
+      }
+    }
+
     res.json({
       status: 'success',
-      data: { user },
+      data: { user: updatedUser },
     });
   } catch (error) {
     next(error);

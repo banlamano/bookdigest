@@ -10,6 +10,8 @@ export default function FreemiumStatus() {
   const { data, isLoading } = useQuery({
     queryKey: ['freemium-status'],
     queryFn: () => userAPI.getFreemiumStatus(),
+    // Refetch every 5 minutes to keep status fresh
+    refetchInterval: 5 * 60 * 1000,
   });
 
   const status = data?.data?.data;
@@ -20,8 +22,14 @@ export default function FreemiumStatus() {
 
   const { limit, used, remaining, isPremium } = status;
 
-  // Don't show for premium users
+  // CRITICAL FIX: Don't show for premium users
+  // This prevents showing "Free Trial" to paid users
   if (isPremium) {
+    return null;
+  }
+
+  // Also don't show if limit is -1 (unlimited)
+  if (limit === -1) {
     return null;
   }
 
