@@ -11,32 +11,44 @@ import SubscriptionCard from '@/components/dashboard/SubscriptionCard';
 import FreemiumStatus from '@/components/dashboard/FreemiumStatus';
 
 export default function DashboardPage() {
-  const { isAuthenticated, user } = useAuthStore();
+  const { isAuthenticated, user, isHydrated } = useAuthStore();
   const router = useRouter();
 
   useEffect(() => {
+    // Wait for hydration to complete before checking auth
+    if (!isHydrated) return;
+    
+    // After hydration, check if user is authenticated
     if (!isAuthenticated) {
       router.push('/login');
     }
-  }, [isAuthenticated, router]);
+  }, [isAuthenticated, isHydrated, router]);
 
   const { data: statsData } = useQuery({
     queryKey: ['user-stats'],
     queryFn: () => userAPI.getStats(),
-    enabled: isAuthenticated,
+    enabled: isAuthenticated && isHydrated,
   });
 
   const { data: favoritesData } = useQuery({
     queryKey: ['favorites'],
     queryFn: () => booksAPI.getFavorites(),
-    enabled: isAuthenticated,
+    enabled: isAuthenticated && isHydrated,
   });
 
   const stats = statsData?.data?.data?.stats;
   const favorites = favoritesData?.data?.data?.favorites || [];
 
-  if (!isAuthenticated) {
-    return null;
+  // Show loading while hydrating or redirecting
+  if (!isHydrated || !isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
+          <p className="text-gray-600 dark:text-gray-400">Loading...</p>
+        </div>
+      </div>
+    );
   }
 
   return (

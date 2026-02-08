@@ -29,10 +29,24 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => response,
   (error) => {
+    // Only redirect on 401 if we're on a protected route AND have a token
+    // Don't redirect if login/register itself fails (that's just wrong credentials)
     if (error.response?.status === 401) {
-      // Token expired or invalid
-      Cookies.remove('token');
-      window.location.href = '/login';
+      const token = Cookies.get('token');
+      const isAuthEndpoint = error.config?.url?.includes('/auth/login') || 
+                            error.config?.url?.includes('/auth/register');
+      
+      // Only redirect if:
+      // 1. We have a token (meaning we're authenticated)
+      // 2. This is NOT a login/register request
+      // 3. We're not already on the login page
+      if (token && !isAuthEndpoint && !window.location.pathname.includes('/login')) {
+        // Token is invalid/expired - clear it and redirect
+        Cookies.remove('token');
+        // Clear localStorage auth state
+        localStorage.removeItem('auth-storage');
+        window.location.href = '/login';
+      }
     }
     return Promise.reject(error);
   }

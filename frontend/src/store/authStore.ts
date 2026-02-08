@@ -16,8 +16,10 @@ interface AuthState {
   user: User | null;
   token: string | null;
   isAuthenticated: boolean;
+  isHydrated: boolean;
   setAuth: (user: User, token: string) => void;
   logout: () => void;
+  setHydrated: () => void;
 }
 
 export const useAuthStore = create<AuthState>()(
@@ -26,17 +28,26 @@ export const useAuthStore = create<AuthState>()(
       user: null,
       token: null,
       isAuthenticated: false,
+      isHydrated: false,
       setAuth: (user, token) => {
         Cookies.set('token', token, { expires: 7 });
         set({ user, token, isAuthenticated: true });
       },
       logout: () => {
         Cookies.remove('token');
+        localStorage.removeItem('auth-storage');
         set({ user: null, token: null, isAuthenticated: false });
+      },
+      setHydrated: () => {
+        set({ isHydrated: true });
       },
     }),
     {
       name: 'auth-storage',
+      onRehydrateStorage: () => (state) => {
+        // Mark as hydrated when rehydration completes
+        state?.setHydrated();
+      },
     }
   )
 );
