@@ -4,6 +4,7 @@ import jwt, { SignOptions } from 'jsonwebtoken';
 import { PrismaClient } from '@prisma/client';
 import { AppError } from '../middleware/error.middleware';
 import { logger } from '../utils/logger';
+import { EmailService } from '../services/email.service';
 
 const prisma = new PrismaClient();
 
@@ -52,6 +53,12 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
 
     // Generate token
     const token = generateToken(user.id, user.email, user.role);
+
+    // Send welcome email (don't wait for it, don't block registration)
+    EmailService.sendWelcomeEmail({
+      email: user.email,
+      firstName: user.firstName
+    }).catch(err => logger.error('Failed to send welcome email:', err));
 
     logger.info(`New user registered: ${email}`);
 

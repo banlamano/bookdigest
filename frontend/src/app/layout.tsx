@@ -8,6 +8,7 @@ import { PWAInstallPrompt } from '@/components/PWAInstallPrompt';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { WebsiteStructuredData, OrganizationStructuredData } from '@/components/StructuredData';
 import EmailCapturePopup from '@/components/EmailCapturePopup';
+import FAQSchema from '@/components/FAQSchema';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -103,6 +104,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         <WebsiteStructuredData />
         <OrganizationStructuredData />
+        <FAQSchema />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <Providers>

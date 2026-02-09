@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import Stripe from 'stripe';
 import { PrismaClient } from '@prisma/client';
 import { AppError } from '../middleware/error.middleware';
+import { EmailService } from '../services/email.service';
 import { logger } from '../utils/logger';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
@@ -120,6 +121,7 @@ export const handleWebhook = async (req: Request, res: Response, next: NextFunct
 
       case 'invoice.payment_failed': {
         const invoice = event.data.object as Stripe.Invoice;
+        await handlePaymentFailed(invoice);
         logger.error(`Payment failed for invoice: ${invoice.id}`);
         break;
       }
@@ -144,6 +146,12 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
   const subscription = await stripe.subscriptions.retrieve(subscriptionId);
   const endDate = new Date(subscription.current_period_end * 1000);
 
+  // Get user details
+  const user = await prisma.user.findUnique({
+    where: { id: userId },
+    select: { email: true, firstName: true }
+  });
+
   // Update user subscription
   await prisma.user.update({
     where: { id: userId },
@@ -166,6 +174,22 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
       subscriptionType: subscriptionType as any,
     },
   });
+
+  // Send payment confirmation email
+  if (user) {
+    const planName = subscriptionType === 'PREMIUM_MONTHLY' ? 'Premium Monthly' : 
+                     subscriptionType === 'PREMIUM_YEARLY' ? 'Premium Yearly' : 
+                     'Team Plan';
+    
+    EmailService.sendPaymentConfirmation(
+      { email: user.email, firstName: user.firstName },
+      { 
+        amount: (session.amount_total || 0) / 100,
+        plan: planName,
+        currency: session.currency?.toUpperCase() || 'EUR'
+      }
+    ).catch(err => logger.error('Failed to send payment confirmation email:', err));
+  }
 
   logger.info(`Subscription activated for user ${userId}: ${subscriptionType}`);
 }
@@ -197,6 +221,31 @@ async function handleSubscriptionCanceled(subscription: Stripe.Subscription) {
   });
 
   logger.info(`Subscription canceled: ${subscriptionId}`);
+}
+
+// Handle payment failed
+async function handlePaymentFailed(invoice: Stripe.Invoice) {
+  const customerId = invoice.customer as string;
+  
+  // Find user by Stripe customer ID
+  const user = await prisma.user.findFirst({
+    where: { 
+      subscriptionId: {
+        not: null
+      }
+    },
+    select: { id: true, email: true, firstName: true, subscriptionId: true }
+  });
+  
+  if (user) {
+    // Send payment failed email
+    EmailService.sendPaymentFailed({
+      email: user.email,
+      firstName: user.firstName
+    }).catch(err => logger.error('Failed to send payment failed email:', err));
+  }
+  
+  logger.error(`Payment failed for customer ${customerId}`);
 }
 
 // Get subscription status
