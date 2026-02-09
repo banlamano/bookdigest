@@ -1,0 +1,230 @@
+// Prisma Schema for BookDigest Platform - SQLite Version for Local Development
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User model with authentication
+model User {
+  id                String   @id @default(uuid())
+  email             String   @unique
+  password          String
+  firstName         String?
+  lastName          String?
+  avatar            String?
+  role              String   @default("USER")
+  
+  // Password reset
+  passwordResetToken   String?
+  passwordResetExpires DateTime?
+  
+  // Subscription fields
+  subscriptionType  String   @default("FREE")
+  subscriptionId    String?
+  subscriptionEnd   DateTime?
+  freeTrialUsed     Int      @default(0)
+  
+  // Reading stats
+  booksRead         Int      @default(0)
+  totalReadingTime  Int      @default(0)
+  currentStreak     Int      @default(0)
+  longestStreak     Int      @default(0)
+  lastReadDate      DateTime?
+  
+  // Relations
+  progress          ReadingProgress[]
+  favorites         Favorite[]
+  reviews           Review[]
+  achievements      UserAchievement[]
+  readingHistory    ReadingHistory[]
+  
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+// Book model
+model Book {
+  id                String   @id @default(uuid())
+  title             String
+  author            String
+  originalTitle     String?
+  isbn              String?  @unique
+  
+  // Summary content
+  summary           String
+  keyInsights       String   // JSON as string
+  readingTime       Int      @default(15)
+  
+  // Media
+  coverImage        String
+  audioUrl          String?
+  audioDuration     Int?
+  
+  // Metadata
+  categoryId        String
+  category          Category @relation(fields: [categoryId], references: [id])
+  tags              String   // JSON as string
+  language          String   @default("en")
+  publishedYear     Int?
+  rating            Float    @default(0)
+  ratingsCount      Int      @default(0)
+  
+  // Content structure
+  chapters          String   // JSON as string
+  quotes            String   // JSON as string
+  actionItems       String   // JSON as string
+  
+  // Status
+  isPremium         Int      @default(0)
+  isFeatured        Int      @default(0)
+  isPublished       Int      @default(1)
+  
+  // Relations
+  progress          ReadingProgress[]
+  favorites         Favorite[]
+  reviews           Review[]
+  readingHistory    ReadingHistory[]
+  
+  // Amazon affiliate
+  amazonLink        String?
+  affiliateId       String?
+  
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+// Category model
+model Category {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  slug        String   @unique
+  description String?
+  icon        String?
+  color       String?
+  order       Int      @default(0)
+  books       Book[]
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// Reading progress tracking
+model ReadingProgress {
+  id              String   @id @default(uuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bookId          String
+  book            Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  
+  progress        Float    @default(0)
+  currentChapter  Int      @default(0)
+  audioProgress   Int      @default(0)
+  isCompleted     Int      @default(0)
+  completedAt     DateTime?
+  
+  timeSpent       Int      @default(0)
+  lastPosition    String?  // JSON as string
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@unique([userId, bookId])
+}
+
+// Favorites/Bookmarks
+model Favorite {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bookId    String
+  book      Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  
+  createdAt DateTime @default(now())
+  
+  @@unique([userId, bookId])
+}
+
+// Reviews and ratings
+model Review {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bookId    String
+  book      Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  
+  rating    Int
+  comment   String?
+  isPublic  Int      @default(1)
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@unique([userId, bookId])
+}
+
+// Achievements/Gamification
+model Achievement {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  description String
+  icon        String
+  points      Int      @default(0)
+  
+  criteriaType  String
+  criteriaValue Int
+  
+  users       UserAchievement[]
+  
+  createdAt   DateTime @default(now())
+}
+
+model UserAchievement {
+  id            String      @id @default(uuid())
+  userId        String
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievementId String
+  achievement   Achievement @relation(fields: [achievementId], references: [id])
+  
+  unlockedAt    DateTime    @default(now())
+  
+  @@unique([userId, achievementId])
+}
+
+// Reading history
+model ReadingHistory {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bookId    String
+  book      Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  
+  duration  Int
+  completed Int      @default(0)
+  
+  createdAt DateTime @default(now())
+}
+
+// Payment transactions
+model Transaction {
+  id              String   @id @default(uuid())
+  userId          String
+  
+  stripeSessionId String?  @unique
+  stripePaymentId String?
+  
+  amount          Float
+  currency        String   @default("EUR")
+  status          String   @default("PENDING")
+  subscriptionType String
+  
+  description     String?
+  metadata        String?  // JSON as string
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}

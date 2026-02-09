@@ -10,7 +10,12 @@ import { WebsiteStructuredData, OrganizationStructuredData } from '@/components/
 import EmailCapturePopup from '@/components/EmailCapturePopup';
 import FAQSchema from '@/components/FAQSchema';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const inter = Inter({ 
+  subsets: ['latin'], 
+  variable: '--font-inter',
+  display: 'swap', // Optimize font loading
+  preload: true,
+});
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -25,26 +30,49 @@ export const metadata: Metadata = {
     google: '_vdNbYX3ur3mO5jTjKdCaPotFz-6vICN_j9JDnYXQ80',
   },
   title: {
-    default: 'BookDigest - AI-Powered Book Summaries | 454+ Business & Self-Help Books',
+    default: 'BookDigest - Free AI Book Summaries | Learn from 1000+ Books in 15 Minutes',
     template: '%s | BookDigest',
   },
-  description: 'Discover 454+ AI-generated book summaries for business, self-help, and personal development. Learn from the best books in 15 minutes. Free book summaries with key insights, quotes, and action items.',
+  description: 'Access 454+ free AI-powered book summaries. Read bestselling business, self-help, psychology & personal development books in 15 minutes. Get key insights, quotes & action items from top authors. Better than Blinkist - 100% free.',
   keywords: [
+    // Primary keywords
     'book summaries',
     'AI book summaries',
-    'business books',
-    'self-help books',
-    'personal development',
+    'free book summaries',
     'book summary',
     '15 minute reads',
+    '15 minute book summary',
+    
+    // Category keywords  
+    'business books',
+    'business book summaries',
+    'self-help books',
+    'self-help book summaries',
+    'personal development',
+    'personal development books',
+    'psychology books',
     'productivity books',
     'leadership books',
+    'entrepreneurship books',
+    
+    // Competitive keywords
+    'blinkist alternative',
+    'blinkist free',
+    'shortform alternative',
+    'getabstract alternative',
+    'free blinkist',
+    
+    // Value keywords
     'book insights',
     'executive summaries',
     'book recommendations',
     'quick reads',
     'learn faster',
     'book notes',
+    'key takeaways',
+    'best books to read',
+    'top business books',
+    'summarized books',
   ],
   authors: [{ name: 'BookDigest' }],
   creator: 'BookDigest',
@@ -70,22 +98,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://bookdigest-iota.vercel.app',
-    title: 'BookDigest - AI-Powered Book Summaries | 454+ Books',
-    description: 'Discover 454+ AI-generated book summaries. Learn from business, self-help, and personal development books in 15 minutes.',
+    title: 'BookDigest - Free AI Book Summaries | Learn from 1000+ Books in 15 Minutes',
+    description: 'Access 454+ free AI-powered book summaries. Read bestselling business, self-help & psychology books in 15 minutes. Better than Blinkist - 100% free with key insights & action items.',
     siteName: 'BookDigest',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'BookDigest - AI-Powered Book Summaries',
+        alt: 'BookDigest - Free AI-Powered Book Summaries - Learn from 1000+ Books',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BookDigest - AI Book Summaries',
-    description: '454+ AI-generated book summaries. Learn faster from the best books.',
+    title: 'BookDigest - Free AI Book Summaries',
+    description: '454+ free book summaries. Learn from bestselling books in 15 minutes. Better than Blinkist.',
     images: ['/og-image.png'],
   },
   alternates: {
@@ -101,6 +129,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Preconnect to external domains for better performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* DNS prefetch for API and CDN */}
+        <link rel="dns-prefetch" href={process.env.NEXT_PUBLIC_API_URL || 'https://bookdigest-lypx.onrender.com'} />
+        
         <GoogleAnalytics />
         <WebsiteStructuredData />
         <OrganizationStructuredData />

@@ -1,26 +1,52 @@
 import { Metadata } from 'next';
 
 export const siteMetadata = {
-  title: 'BookDigest - AI-Powered Book Summaries',
-  description: 'Discover over 454 AI-generated book summaries for business, self-help, and personal development books. Learn from the best books in minutes, not hours.',
+  title: 'BookDigest - Learn from 1000+ Books in 15 Minutes | Free AI Book Summaries',
+  description: 'Read AI-powered summaries of bestselling books in business, self-help, psychology & personal development. Save 10+ hours per book. Free access to 454+ expert book summaries with key insights, quotes & action items.',
   siteUrl: 'https://bookdigest-iota.vercel.app',
   author: 'BookDigest',
   keywords: [
+    // Primary keywords
     'book summaries',
     'book summary',
     'AI book summaries',
+    'free book summaries',
+    '15 minute book summary',
+    
+    // Category keywords
     'business books',
+    'business book summaries',
     'self-help books',
+    'self-help book summaries',
     'personal development',
+    'personal development books',
+    'psychology books',
     'productivity books',
     'leadership books',
+    'entrepreneurship books',
+    
+    // Competitive keywords
+    'blinkist alternative',
+    'shortform alternative',
+    'getabstract alternative',
+    'instaread alternative',
+    'book summary app',
+    'book summary website',
+    
+    // Long-tail keywords
+    'learn faster from books',
     'book recommendations',
     'quick book summaries',
-    'learn faster',
     'book insights',
     'key takeaways',
     'executive summaries',
     'book notes',
+    'best books to read',
+    'top business books',
+    'must read books',
+    'book digest platform',
+    'summarized books online',
+    'condensed book summaries',
   ],
   social: {
     twitter: '@bookdigest',
@@ -88,23 +114,39 @@ export function generateBookMetadata(book: {
   category?: { name: string };
   rating?: number;
 }): Metadata {
-  const bookTitle = `${book.title} by ${book.author} - Summary & Key Insights`;
+  const bookTitle = `${book.title} by ${book.author} - Free Summary, Key Insights & Quotes`;
   const bookDescription = book.description
-    ? `${book.description.substring(0, 150)}...`
-    : `Read our AI-generated summary of ${book.title} by ${book.author}. Get key insights, takeaways, and action items in minutes.`;
+    ? `${book.description.substring(0, 140)}... Read the full AI-powered summary free on BookDigest.`
+    : `Read our free AI-powered summary of "${book.title}" by ${book.author}. Get key insights, important quotes, and actionable takeaways in 15 minutes. ${book.category?.name ? `Best ${book.category.name} book summary.` : ''}`;
 
   return {
     title: bookTitle,
     description: bookDescription,
     keywords: [
+      // Primary book keywords
       book.title,
-      book.author,
       `${book.title} summary`,
+      `${book.title} book summary`,
+      `${book.title} key takeaways`,
+      `${book.title} review`,
+      
+      // Author keywords
+      book.author,
       `${book.author} book`,
+      `${book.author} books`,
+      
+      // Category keywords
       book.category?.name || '',
+      `${book.category?.name || ''} books`,
+      `best ${book.category?.name || ''} books`,
+      
+      // Generic keywords
       'book summary',
       'book notes',
       'key insights',
+      'book review',
+      'free book summary',
+      'AI book summary',
     ].filter(Boolean),
     openGraph: {
       title: bookTitle,
@@ -116,14 +158,14 @@ export function generateBookMetadata(book: {
               url: book.coverImage,
               width: 400,
               height: 600,
-              alt: `${book.title} book cover`,
+              alt: `${book.title} by ${book.author} - Book Cover`,
             },
           ]
         : undefined,
     },
     twitter: {
       card: 'summary_large_image',
-      title: bookTitle,
+      title: `${book.title} Summary - Free AI Book Summary`,
       description: bookDescription,
       images: book.coverImage ? [book.coverImage] : undefined,
     },
@@ -137,20 +179,33 @@ export function generateCategoryMetadata(category: {
   name: string;
   description?: string;
 }): Metadata {
-  const categoryTitle = `${category.name} Books - Summaries & Insights`;
+  const categoryTitle = `Best ${category.name} Books - Free AI Summaries & Key Insights`;
   const categoryDescription =
     category.description ||
-    `Explore AI-generated summaries of the best ${category.name.toLowerCase()} books. Learn from top authors and get key insights in minutes.`;
+    `Read free AI-powered summaries of the best ${category.name.toLowerCase()} books. Learn from top authors and bestsellers. Get key insights, quotes & action items in 15 minutes. Perfect alternative to Blinkist.`;
 
   return {
     title: categoryTitle,
     description: categoryDescription,
     keywords: [
-      category.name,
+      // Primary category keywords
       `${category.name} books`,
+      `best ${category.name} books`,
       `${category.name} book summaries`,
+      `top ${category.name} books`,
+      
+      // Long-tail keywords
+      `${category.name} book recommendations`,
+      `must read ${category.name} books`,
+      `popular ${category.name} books`,
+      
+      // Generic keywords
+      'book summaries',
+      'free book summaries',
+      'AI book summaries',
       'book recommendations',
       'best books',
+      'book insights',
     ],
     openGraph: {
       title: categoryTitle,
