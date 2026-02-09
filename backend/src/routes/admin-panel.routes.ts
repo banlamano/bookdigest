@@ -61,6 +61,28 @@ router.get('/dashboard/stats', checkAdminAccess, async (req, res) => {
       prisma.book.count({ where: { isPremium: 0 } })
     ]);
 
+    // Get category counts
+    const categoryStats = await prisma.book.groupBy({
+      by: ['categoryId'],
+      _count: {
+        _all: true
+      }
+    });
+
+    // Get category names
+    const categoriesWithNames = await Promise.all(
+      categoryStats.map(async (stat) => {
+        const category = await prisma.category.findUnique({
+          where: { id: stat.categoryId },
+          select: { name: true }
+        });
+        return {
+          category: category?.name || 'Unknown',
+          _count: stat._count._all
+        };
+      })
+    );
+
     res.json({
       success: true,
       data: {
@@ -68,10 +90,7 @@ router.get('/dashboard/stats', checkAdminAccess, async (req, res) => {
         totalUsers,
         premiumBooks,
         freeBooks,
-        categories: await prisma.book.groupBy({
-          by: ['category'],
-          _count: true
-        })
+        categories: categoriesWithNames
       }
     });
   } catch (error: any) {
