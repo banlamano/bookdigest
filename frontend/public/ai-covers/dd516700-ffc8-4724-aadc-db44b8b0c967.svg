@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-dd516700-ffc8-4724-aadc-db44b8b0c967" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9333ea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c084fc;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#grad-dd516700-ffc8-4724-aadc-db44b8b0c967)" />
+  
+  <!-- Decorative pattern -->
+  <g opacity="0.1">
+    <circle cx="261.95365155230866" cy="510.98188448353784" r="22.603249223349195" fill="white" /><circle cx="89.13956924377446" cy="209.05793348943834" r="22.777230177973497" fill="white" /><circle cx="327.20604759511826" cy="98.45533470452554" r="28.61032744282702" fill="white" /><circle cx="179.4974667654055" cy="359.4167248045546" r="12.153680177011877" fill="white" /><circle cx="9.427143028015905" cy="191.33901341735992" r="25.376497688495114" fill="white" /><circle cx="158.08362669688117" cy="543.3338122955519" r="15.789863549965975" fill="white" /><circle cx="109.67573747011623" cy="343.9336981374317" r="24.216538383310006" fill="white" /><circle cx="288.20174321631754" cy="242.33897335930016" r="21.475632916705774" fill="white" /><circle cx="257.9144151113327" cy="493.49219058361535" r="14.459377066612554" fill="white" /><circle cx="354.9080864982344" cy="371.0129690786366" r="25.87900331392254" fill="white" /><circle cx="316.2542640085133" cy="56.31402241020318" r="13.88451788433599" fill="white" /><circle cx="164.49133175802228" cy="384.43915759451744" r="23.039091635995867" fill="white" /><circle cx="345.4426228914138" cy="321.42011750916845" r="11.546300127964304" fill="white" /><circle cx="271.8466384469834" cy="578.9965357313488" r="26.078592755256775" fill="white" /><circle cx="155.0333190703792" cy="594.5000642873212" r="24.465027225401904" fill="white" /><circle cx="124.74165173902225" cy="64.35956438843209" r="23.992085230748092" fill="white" /><circle cx="91.32442520022872" cy="185.69735366968513" r="14.059649172670616" fill="white" /><circle cx="145.95289857052472" cy="539.366736471802" r="24.855411103334966" fill="white" /><circle cx="183.09703714457845" cy="99.49206453298713" r="21.306812315295875" fill="white" /><circle cx="322.9174830744113" cy="12.08155319554991" r="23.059280930526604" fill="white" />
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        Purple Cow
+      </text>
+    
+  </g>
+  
+  <!-- Author -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#d8b4fe" 
+            text-anchor="middle">
+        Seth Godin
+      </text>
+    
+  </g>
+  
+  <!-- Category badge -->
+  <g>
+    <rect x="20" y="20" width="138" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      MARKETING
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="590" width="400" height="10" fill="#c084fc" opacity="0.8" />
+</svg>

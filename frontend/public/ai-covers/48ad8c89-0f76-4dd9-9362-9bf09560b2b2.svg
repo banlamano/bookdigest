@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-48ad8c89-0f76-4dd9-9362-9bf09560b2b2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#grad-48ad8c89-0f76-4dd9-9362-9bf09560b2b2)" />
+  
+  <!-- Decorative pattern -->
+  <g opacity="0.1">
+    <circle cx="386.5260982007763" cy="171.95945436471416" r="12.044180967673272" fill="white" /><circle cx="351.72556385973417" cy="567.6366115937793" r="10.57577390649427" fill="white" /><circle cx="298.3973167070306" cy="112.8349926821925" r="29.282740280471568" fill="white" /><circle cx="137.86929227197672" cy="325.89841947378585" r="17.36637247238915" fill="white" /><circle cx="29.094208748064165" cy="92.20629358134505" r="16.75493333252738" fill="white" /><circle cx="88.74322360678097" cy="520.2619099837806" r="23.994968739100095" fill="white" /><circle cx="313.5768723503809" cy="561.6779264639086" r="18.403850314496893" fill="white" /><circle cx="259.70736183353426" cy="103.13085661806791" r="11.659795334863311" fill="white" /><circle cx="342.24481027853705" cy="577.0157732138713" r="13.774442946630526" fill="white" /><circle cx="194.33973915976708" cy="437.02389922185876" r="18.976747290628968" fill="white" /><circle cx="263.00670518742226" cy="338.18330475928474" r="28.758275399093698" fill="white" /><circle cx="192.62011846471376" cy="547.8810585902542" r="17.660486554102736" fill="white" /><circle cx="357.5555531507974" cy="70.56116557588443" r="18.488048523834326" fill="white" /><circle cx="282.63810991620295" cy="103.38520678355366" r="28.92107586201274" fill="white" /><circle cx="257.0514907476561" cy="526.7995628899836" r="16.50578997104527" fill="white" /><circle cx="41.72466568912161" cy="271.4014454494444" r="11.078649505174852" fill="white" /><circle cx="129.08616897150264" cy="363.58507399890516" r="12.90013295260322" fill="white" /><circle cx="280.2782560455778" cy="354.44183385096215" r="28.840245804674357" fill="white" /><circle cx="278.9298453592698" cy="326.2067401427306" r="28.63721809480344" fill="white" /><circle cx="372.49434213544464" cy="152.51364167080703" r="19.900736378517024" fill="white" />
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        Crushing It!
+      </text>
+    
+  </g>
+  
+  <!-- Author -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#60a5fa" 
+            text-anchor="middle">
+        Gary Vaynerchuk
+      </text>
+    
+  </g>
+  
+  <!-- Category badge -->
+  <g>
+    <rect x="20" y="20" width="126" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

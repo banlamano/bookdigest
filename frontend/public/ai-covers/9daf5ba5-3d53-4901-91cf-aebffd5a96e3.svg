@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9daf5ba5-3d53-4901-91cf-aebffd5a96e3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#grad-9daf5ba5-3d53-4901-91cf-aebffd5a96e3)" />
+  
+  <!-- Decorative pattern -->
+  <g opacity="0.1">
+    <circle cx="318.8626274476296" cy="518.3849980164429" r="11.111309817298187" fill="white" /><circle cx="296.85918966569113" cy="263.78772946494274" r="26.002619281818507" fill="white" /><circle cx="298.5475069462086" cy="566.68142137921" r="13.208049310295936" fill="white" /><circle cx="294.64737852972974" cy="157.96965404268207" r="23.981259586318526" fill="white" /><circle cx="118.46383703146057" cy="10.094260447086945" r="12.03666766692406" fill="white" /><circle cx="216.79666431207156" cy="406.4963752035576" r="14.407210644797974" fill="white" /><circle cx="152.51121306980386" cy="43.571612443208885" r="10.734964556910999" fill="white" /><circle cx="279.71704769561484" cy="3.0798719927323415" r="19.203872155479544" fill="white" /><circle cx="21.252463948173794" cy="102.82411525200503" r="25.749142019339022" fill="white" /><circle cx="55.20328304054352" cy="162.8770127158464" r="17.214491911664094" fill="white" /><circle cx="381.7620719703668" cy="32.44404658472686" r="21.28232816167703" fill="white" /><circle cx="211.4925434613307" cy="356.6457909795798" r="27.292539497501195" fill="white" /><circle cx="193.45055795117904" cy="471.26122252613146" r="12.950083232652618" fill="white" /><circle cx="53.02719124524637" cy="55.194050039216776" r="13.713199003352926" fill="white" /><circle cx="68.10608275508301" cy="100.1745115983628" r="28.36600521806804" fill="white" /><circle cx="91.53671175971726" cy="48.022897725533895" r="27.033488647411573" fill="white" /><circle cx="332.3055317324456" cy="70.79129683544896" r="23.25112673474274" fill="white" /><circle cx="67.11919854684005" cy="490.51024824260975" r="29.66808319543339" fill="white" /><circle cx="122.21424071989611" cy="233.4792020951179" r="29.812526257593678" fill="white" /><circle cx="88.67181068652168" cy="54.57814850887457" r="23.59147192961246" fill="white" />
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        I Know How She Does It
+      </text>
+    
+  </g>
+  
+  <!-- Author -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#fdba74" 
+            text-anchor="middle">
+        Laura Vanderkam
+      </text>
+    
+  </g>
+  
+  <!-- Category badge -->
+  <g>
+    <rect x="20" y="20" width="174" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

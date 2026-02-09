@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5b9a9415-19fb-471f-9baa-1d27c4cde51d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#991b1b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#grad-5b9a9415-19fb-471f-9baa-1d27c4cde51d)" />
+  
+  <!-- Decorative pattern -->
+  <g opacity="0.1">
+    <circle cx="328.7141803716359" cy="232.59949824078618" r="28.54979600936436" fill="white" /><circle cx="97.8775830866129" cy="168.9341539520057" r="15.684762967471091" fill="white" /><circle cx="160.80104824972398" cy="34.615025184598224" r="13.10375287747121" fill="white" /><circle cx="292.02630885047625" cy="582.0770784345993" r="23.523073044180947" fill="white" /><circle cx="135.35518718600653" cy="137.68220572464242" r="14.763217725781479" fill="white" /><circle cx="162.15817360312258" cy="100.64946016463956" r="19.853353976840655" fill="white" /><circle cx="365.1928777515297" cy="470.74909493860395" r="14.743731299940277" fill="white" /><circle cx="193.36026006078453" cy="594.6269080421386" r="13.488041561246039" fill="white" /><circle cx="346.4495682467848" cy="7.600017487542043" r="26.465761775880118" fill="white" /><circle cx="363.0695450353564" cy="366.6501511663724" r="29.214628951191912" fill="white" /><circle cx="136.90205775472677" cy="535.6672723439294" r="16.946480087692432" fill="white" /><circle cx="112.64095091052747" cy="130.8863749204794" r="10.43678636051975" fill="white" /><circle cx="4.825219763381439" cy="330.47415339527254" r="29.099732585464245" fill="white" /><circle cx="202.8012738915054" cy="290.9540203144385" r="29.4070125138974" fill="white" /><circle cx="352.5614451449621" cy="595.0659435747945" r="29.084396138825184" fill="white" /><circle cx="200.97034149535457" cy="473.74053568681774" r="10.848487023161724" fill="white" /><circle cx="78.5580610360523" cy="544.1130506075972" r="22.856479873340405" fill="white" /><circle cx="101.87173141546056" cy="553.4503724905941" r="22.991657362814333" fill="white" /><circle cx="207.37732924757358" cy="62.69740244410098" r="22.760906789270432" fill="white" /><circle cx="389.36339628988435" cy="508.6661705868818" r="19.668885133786077" fill="white" />
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        The Sales Acceleration
+      </text>
+    
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        Formula
+      </text>
+    
+  </g>
+  
+  <!-- Author -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#fca5a5" 
+            text-anchor="middle">
+        Mark Roberge
+      </text>
+    
+  </g>
+  
+  <!-- Category badge -->
+  <g>
+    <rect x="20" y="20" width="90" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="65" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      SALES
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="590" width="400" height="10" fill="#ef4444" opacity="0.8" />
+</svg>

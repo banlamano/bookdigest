@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1acab521-4d6f-432b-af4b-515aaa053612" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7e22ce;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#grad-1acab521-4d6f-432b-af4b-515aaa053612)" />
+  
+  <!-- Decorative pattern -->
+  <g opacity="0.1">
+    <circle cx="261.514540722841" cy="173.4124654010236" r="20.91972683929223" fill="white" /><circle cx="358.0229832053085" cy="566.6892973278078" r="24.854392211754604" fill="white" /><circle cx="28.75506236184444" cy="172.32791644436531" r="10.690782845134123" fill="white" /><circle cx="298.16308012407893" cy="309.2936904967336" r="21.896986117790565" fill="white" /><circle cx="372.9747751809304" cy="281.8687718589415" r="20.8716895978308" fill="white" /><circle cx="41.795058888983405" cy="578.3106138449365" r="23.57992710383792" fill="white" /><circle cx="314.9985110308619" cy="368.711827259126" r="16.10309387407236" fill="white" /><circle cx="10.248653172305477" cy="481.34032650123197" r="23.338960124435705" fill="white" /><circle cx="69.91864654510924" cy="574.9633634442505" r="12.023796439528272" fill="white" /><circle cx="191.76128321312854" cy="162.35741249143123" r="13.740611226486788" fill="white" /><circle cx="198.45352576115576" cy="50.762291241526846" r="26.6023701257894" fill="white" /><circle cx="333.83694077894427" cy="488.1806243492959" r="18.646768138286177" fill="white" /><circle cx="199.97481128406665" cy="55.30886840353697" r="23.21735800522166" fill="white" /><circle cx="310.67826606035294" cy="319.0544060949951" r="26.93352123996608" fill="white" /><circle cx="197.98112775601672" cy="429.42023757774854" r="13.598017464410269" fill="white" /><circle cx="235.98318364451922" cy="387.2522671306226" r="24.28470258503667" fill="white" /><circle cx="293.34739006325134" cy="439.27257378782224" r="13.37740700609518" fill="white" /><circle cx="367.01319119050004" cy="349.30818066542395" r="29.037393445876287" fill="white" /><circle cx="150.294448170788" cy="206.70066802081234" r="27.96181013933397" fill="white" /><circle cx="46.1676967806429" cy="553.6029395601075" r="12.746393257955459" fill="white" />
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        The Compound Effect
+      </text>
+    
+  </g>
+  
+  <!-- Author -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#c084fc" 
+            text-anchor="middle">
+        Darren Hardy
+      </text>
+    
+  </g>
+  
+  <!-- Category badge -->
+  <g>
+    <rect x="20" y="20" width="138" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="590" width="400" height="10" fill="#a855f7" opacity="0.8" />
+</svg>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5e262075-eec1-4c96-948d-71a7b8c5c7c4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#be123c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f43f5e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#grad-5e262075-eec1-4c96-948d-71a7b8c5c7c4)" />
+  
+  <!-- Decorative pattern -->
+  <g opacity="0.1">
+    <circle cx="255.47351345193073" cy="62.078660551936025" r="19.490222339725506" fill="white" /><circle cx="135.61740923802677" cy="294.37904269155626" r="27.492914094812953" fill="white" /><circle cx="209.8228045242707" cy="191.62552591060626" r="18.700865566822735" fill="white" /><circle cx="4.988384117433853" cy="413.2038016258213" r="20.636926250112086" fill="white" /><circle cx="347.4748563091" cy="203.35299983444204" r="14.813989896789916" fill="white" /><circle cx="302.6604017113573" cy="292.62574938121486" r="27.709284720658367" fill="white" /><circle cx="122.13009900789618" cy="481.94749685406555" r="19.90861890242761" fill="white" /><circle cx="321.9708676412847" cy="64.52083607003102" r="27.36356269365721" fill="white" /><circle cx="349.03417129983615" cy="446.3908730070101" r="27.57407070976298" fill="white" /><circle cx="388.4150814401331" cy="569.3806111443688" r="20.19304879020503" fill="white" /><circle cx="91.16946660074694" cy="63.78111627643446" r="12.758636494408703" fill="white" /><circle cx="239.45887707665236" cy="473.9468649646988" r="16.820142308543513" fill="white" /><circle cx="12.82384792493021" cy="473.89301656316877" r="14.69470260734721" fill="white" /><circle cx="159.0517796438943" cy="279.3529403182636" r="23.856062028799464" fill="white" /><circle cx="222.56404312485802" cy="327.84066483236967" r="14.770978023356829" fill="white" /><circle cx="392.22771189504033" cy="284.44238285425723" r="11.874691449506257" fill="white" /><circle cx="276.7712055707612" cy="146.40874359807964" r="20.039327292073096" fill="white" /><circle cx="56.535654301072924" cy="266.14958042141916" r="27.482937671313902" fill="white" /><circle cx="207.794006676778" cy="375.6447302497622" r="26.331417464545016" fill="white" /><circle cx="302.58029418354204" cy="6.122021989020743" r="14.790835365731018" fill="white" />
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        The Artist&apos;s Journey
+      </text>
+    
+  </g>
+  
+  <!-- Author -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#fb7185" 
+            text-anchor="middle">
+        Steven Pressfield
+      </text>
+    
+  </g>
+  
+  <!-- Category badge -->
+  <g>
+    <rect x="20" y="20" width="150" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      CREATIVITY
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="590" width="400" height="10" fill="#f43f5e" opacity="0.8" />
+</svg>

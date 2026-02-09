@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-58a328fd-20b8-491b-ac33-67b16b9c10e3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7e22ce;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#grad-58a328fd-20b8-491b-ac33-67b16b9c10e3)" />
+  
+  <!-- Decorative pattern -->
+  <g opacity="0.1">
+    <circle cx="200.97053692245305" cy="60.46246224534349" r="11.234158488196647" fill="white" /><circle cx="315.25248880713946" cy="555.001062042152" r="16.20251633504889" fill="white" /><circle cx="4.276687107941246" cy="518.8224481016478" r="16.681228972917765" fill="white" /><circle cx="42.65382654562417" cy="175.83761377543402" r="13.52090952318461" fill="white" /><circle cx="383.6276806096203" cy="115.63438747861228" r="15.25801308099341" fill="white" /><circle cx="21.2593792939209" cy="264.8713767064218" r="22.753998933779574" fill="white" /><circle cx="203.29729623561664" cy="580.3051356510035" r="15.818281769664331" fill="white" /><circle cx="193.67269390684422" cy="227.11253056986976" r="23.95467439241826" fill="white" /><circle cx="174.46573931960526" cy="461.11300705312004" r="17.274663355507457" fill="white" /><circle cx="1.8461511575826428" cy="380.27014677836013" r="10.882324356160813" fill="white" /><circle cx="236.7017384690894" cy="46.08432491066898" r="24.139473886786707" fill="white" /><circle cx="343.42172082978095" cy="442.896711399339" r="16.382289440492812" fill="white" /><circle cx="327.42978274414725" cy="121.87969952318267" r="17.81337143432024" fill="white" /><circle cx="183.82192359354752" cy="212.96870433117076" r="12.703991065676721" fill="white" /><circle cx="298.9319695280391" cy="442.38739937180657" r="18.895786873043335" fill="white" /><circle cx="340.6456513550043" cy="15.503860246023526" r="26.898989722285364" fill="white" /><circle cx="91.33066621143873" cy="125.37266069936727" r="24.072591617460063" fill="white" /><circle cx="9.874512079520992" cy="427.88972990864215" r="25.266669873695616" fill="white" /><circle cx="150.7316629511025" cy="417.54098419732827" r="20.25445298353129" fill="white" /><circle cx="245.4975926267175" cy="251.65911605631135" r="13.53805269146381" fill="white" />
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        The Little Book of Hygge
+      </text>
+    
+  </g>
+  
+  <!-- Author -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#c084fc" 
+            text-anchor="middle">
+        Meik Wiking
+      </text>
+    
+  </g>
+  
+  <!-- Category badge -->
+  <g>
+    <rect x="20" y="20" width="138" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="590" width="400" height="10" fill="#a855f7" opacity="0.8" />
+</svg>

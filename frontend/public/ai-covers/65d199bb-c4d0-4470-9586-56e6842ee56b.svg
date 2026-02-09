@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-65d199bb-c4d0-4470-9586-56e6842ee56b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#grad-65d199bb-c4d0-4470-9586-56e6842ee56b)" />
+  
+  <!-- Decorative pattern -->
+  <g opacity="0.1">
+    <circle cx="196.96513445155236" cy="406.0207613367719" r="14.136714709522044" fill="white" /><circle cx="125.82816058459207" cy="555.5175688429559" r="27.126675608818218" fill="white" /><circle cx="147.86316912802744" cy="108.32824733943865" r="14.376497944954751" fill="white" /><circle cx="125.6789338451493" cy="424.4900368513364" r="21.136389784272673" fill="white" /><circle cx="91.30716360650841" cy="169.4539537632635" r="29.778586766093426" fill="white" /><circle cx="61.649874238694615" cy="537.0221076993462" r="29.58822780227823" fill="white" /><circle cx="205.69422771179907" cy="96.87847950387692" r="13.918372623981533" fill="white" /><circle cx="104.36002495142299" cy="149.47452372936482" r="27.895010933375996" fill="white" /><circle cx="124.73142540209166" cy="100.15779744797892" r="10.635670249279812" fill="white" /><circle cx="218.59868345651924" cy="142.0291720040376" r="19.503123302634435" fill="white" /><circle cx="276.15175052059027" cy="589.2802617826733" r="12.729333427230717" fill="white" /><circle cx="279.3630322971656" cy="385.78592820555417" r="23.09686111239143" fill="white" /><circle cx="257.04349811333844" cy="140.0373704954117" r="26.92724056158796" fill="white" /><circle cx="350.29668866487646" cy="508.4461839276368" r="16.449860132471382" fill="white" /><circle cx="321.5262069654976" cy="447.98599195397435" r="15.187507127577069" fill="white" /><circle cx="108.16658595001023" cy="448.5841312138768" r="28.363928956161306" fill="white" /><circle cx="395.8872633445595" cy="584.2981291310638" r="11.489908909457622" fill="white" /><circle cx="111.05073342056784" cy="63.257096426079194" r="29.34996286647367" fill="white" /><circle cx="106.50723753131514" cy="406.2335100476129" r="19.521538173792813" fill="white" /><circle cx="130.93054433731575" cy="423.06966446258826" r="20.044342054495054" fill="white" />
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        Margin of Safety
+      </text>
+    
+  </g>
+  
+  <!-- Author -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#6ee7b7" 
+            text-anchor="middle">
+        Seth Klarman
+      </text>
+    
+  </g>
+  
+  <!-- Category badge -->
+  <g>
+    <rect x="20" y="20" width="114" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

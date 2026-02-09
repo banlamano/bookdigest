@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-2ad5ab0d-0a7e-4286-a296-5c2b856d5ee3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#grad-2ad5ab0d-0a7e-4286-a296-5c2b856d5ee3)" />
+  
+  <!-- Decorative pattern -->
+  <g opacity="0.1">
+    <circle cx="255.44318125785074" cy="212.73819139159843" r="17.94603969940121" fill="white" /><circle cx="194.52620801605715" cy="463.350739089536" r="19.521331191728905" fill="white" /><circle cx="7.729755457743792" cy="25.005087868375988" r="13.363528599323185" fill="white" /><circle cx="157.99414007594507" cy="517.1019010316668" r="22.76623989297682" fill="white" /><circle cx="354.96643127751184" cy="283.2902112806155" r="27.590867233044257" fill="white" /><circle cx="311.9246181733131" cy="513.6918776603385" r="29.215895919907226" fill="white" /><circle cx="350.9970095890449" cy="281.3719101286353" r="21.199560388522105" fill="white" /><circle cx="375.8300795915245" cy="24.461349958428013" r="29.49957612434894" fill="white" /><circle cx="236.57654215424236" cy="157.7553940264364" r="29.837365539745736" fill="white" /><circle cx="141.03707762537988" cy="223.46563141979198" r="20.095425882731156" fill="white" /><circle cx="20.484200769420504" cy="472.2216561551883" r="29.001656094326513" fill="white" /><circle cx="140.6421840666531" cy="148.4685364324251" r="22.439382023986628" fill="white" /><circle cx="55.950713843969254" cy="93.7276558133634" r="29.50698373384538" fill="white" /><circle cx="17.1973148913835" cy="255.76090505758287" r="12.867332125822061" fill="white" /><circle cx="12.518704251447987" cy="566.9816397172293" r="12.990717586838556" fill="white" /><circle cx="92.59280803122465" cy="225.52889508261015" r="21.55394264120262" fill="white" /><circle cx="66.80268516846314" cy="522.4769643906503" r="25.723326778345545" fill="white" /><circle cx="87.3008788455623" cy="278.5605334521068" r="13.104985717039739" fill="white" /><circle cx="97.28195353442209" cy="378.6496439334722" r="21.31270184186043" fill="white" /><circle cx="83.16359603362535" cy="164.40896200524466" r="16.929235865165992" fill="white" />
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        The Unfair Advantage
+      </text>
+    
+  </g>
+  
+  <!-- Author -->
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#60a5fa" 
+            text-anchor="middle">
+        Ash Ali
+      </text>
+    
+  </g>
+  
+  <!-- Category badge -->
+  <g>
+    <rect x="20" y="20" width="126" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>
