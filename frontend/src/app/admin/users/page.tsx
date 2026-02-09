@@ -12,7 +12,7 @@ interface User {
   lastName: string;
   role: string;
   subscriptionType: string | null;
-  subscriptionEndDate: string | null;
+  subscriptionEnd: string | null;
   createdAt: string;
 }
 
@@ -278,9 +278,9 @@ export default function AdminUsers() {
                         <div className="text-sm text-gray-900">
                           {user.subscriptionType || 'Free'}
                         </div>
-                        {user.subscriptionEndDate && (
+                        {user.subscriptionEnd && (
                           <div className="text-xs text-gray-500">
-                            Until {new Date(user.subscriptionEndDate).toLocaleDateString()}
+                            Until {new Date(user.subscriptionEnd).toLocaleDateString()}
                           </div>
                         )}
                       </td>

@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { PrismaClient } from '@prisma/client';
 import jwt from 'jsonwebtoken';
+import { logger } from '../utils/logger';
 
 const router = Router();
 const prisma = new PrismaClient();
@@ -243,45 +244,6 @@ router.post('/books', checkAdminAccess, async (req, res) => {
   }
 });
 
-// Get all users
-router.get('/users', checkAdminAccess, async (req, res) => {
-  try {
-    const page = parseInt(req.query.page as string) || 1;
-    const limit = parseInt(req.query.limit as string) || 20;
-
-    const [users, total] = await Promise.all([
-      prisma.user.findMany({
-        skip: (page - 1) * limit,
-        take: limit,
-        orderBy: { createdAt: 'desc' },
-        select: {
-          id: true,
-          email: true,
-          name: true,
-          subscriptionType: true,
-          createdAt: true
-        }
-      }),
-      prisma.user.count()
-    ]);
-
-    res.json({
-      success: true,
-      data: {
-        users,
-        pagination: {
-          page,
-          limit,
-          total,
-          totalPages: Math.ceil(total / limit)
-        }
-      }
-    });
-  } catch (error: any) {
-    res.status(500).json({ success: false, message: error.message });
-  }
-});
-
 // Bulk operations
 router.post('/books/bulk/delete', checkAdminAccess, async (req, res) => {
   try {
@@ -359,7 +321,7 @@ router.get('/users', checkAdminAccess, async (req: any, res: any) => {
           lastName: true,
           role: true,
           subscriptionType: true,
-          subscriptionEndDate: true,
+          subscriptionEnd: true,
           createdAt: true
         }
       }),
