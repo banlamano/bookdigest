@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { body } from 'express-validator';
-import { register, login, getProfile, updateProfile } from '../controllers/auth.controller';
+import { register, login, getProfile, updateProfile, forgotPassword, resetPassword } from '../controllers/auth.controller';
 import { authenticate } from '../middleware/auth.middleware';
 import { validate } from '../middleware/validate.middleware';
 
@@ -26,9 +26,9 @@ router.get('/profile', authenticate, getProfile);
 router.put('/profile', authenticate, updateProfile);
 
 // Forgot password - send reset email
-router.post('/forgot-password', AuthController.forgotPassword);
+router.post('/forgot-password', forgotPassword);
 
 // Reset password - verify token and update password
-router.post('/reset-password', AuthController.resetPassword);
+router.post('/reset-password', resetPassword);
 
 export default router;
