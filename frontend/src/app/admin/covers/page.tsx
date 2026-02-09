@@ -1,431 +1,306 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useAuthStore } from '@/store/authStore';
-import axios from 'axios';
+import Image from 'next/image';
 
 interface Book {
-  id: number;
+  id: string;
   title: string;
   author: string;
-  coverImage: string | null;
-  category: { name: string };
+  coverImage: string;
 }
 
-export default function AdminCoversPage() {
-  const { isAuthenticated, user } = useAuthStore();
+export default function AdminCovers() {
   const router = useRouter();
   const [books, setBooks] = useState<Book[]>([]);
-  const [filteredBooks, setFilteredBooks] = useState<Book[]>([]);
   const [loading, setLoading] = useState(true);
-  const [filter, setFilter] = useState<'all' | 'broken' | 'good'>('broken');
-  const [searchTerm, setSearchTerm] = useState('');
+  const [search, setSearch] = useState('');
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
   const [newCoverUrl, setNewCoverUrl] = useState('');
-  const [updating, setUpdating] = useState(false);
-  const [message, setMessage] = useState('');
+  const [regenerating, setRegenerating] = useState(false);
+
+  const adminKey = typeof window !== 'undefined' ? localStorage.getItem('admin_key') : null;
 
   useEffect(() => {
-    if (!isAuthenticated) {
-      router.push('/login');
+    if (!adminKey) {
+      router.push('/admin/dashboard');
       return;
     }
-
-    // Check if user is admin (you can add a role check here)
     fetchBooks();
-  }, [isAuthenticated, router]);
+  }, [search, adminKey]);
 
   const fetchBooks = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/books?limit=1000`);
-      const bookData = response.data.data.books;
-      setBooks(bookData);
-      applyFilters(bookData, filter, searchTerm);
+      const params = new URLSearchParams({
+        limit: '100',
+        ...(search && { search })
+      });
+
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/admin-panel/books?${params}`,
+        {
+          headers: { 'X-Admin-Key': adminKey! }
+        }
+      );
+
+      const data = await response.json();
+      if (data.success) {
+        setBooks(data.data.books);
+      }
     } catch (error) {
       console.error('Error fetching books:', error);
-      setMessage('Error loading books');
     } finally {
       setLoading(false);
     }
   };
 
-  const applyFilters = (bookData: Book[], filterType: string, search: string) => {
-    let filtered = bookData;
-
-    // Apply broken/good filter
-    if (filterType === 'broken') {
-      filtered = filtered.filter(
-        (book) =>
-          !book.coverImage ||
-          book.coverImage.includes('openlibrary.org') ||
-          book.coverImage.includes('placeholder')
-      );
-    } else if (filterType === 'good') {
-      filtered = filtered.filter(
-        (book) =>
-          book.coverImage &&
-          !book.coverImage.includes('openlibrary.org') &&
-          !book.coverImage.includes('placeholder')
-      );
-    }
-
-    // Apply search filter
-    if (search) {
-      filtered = filtered.filter(
-        (book) =>
-          book.title.toLowerCase().includes(search.toLowerCase()) ||
-          book.author.toLowerCase().includes(search.toLowerCase())
-      );
-    }
-
-    setFilteredBooks(filtered);
-  };
-
-  const handleFilterChange = (newFilter: 'all' | 'broken' | 'good') => {
-    setFilter(newFilter);
-    applyFilters(books, newFilter, searchTerm);
-  };
-
-  const handleSearchChange = (search: string) => {
-    setSearchTerm(search);
-    applyFilters(books, filter, search);
-  };
-
-  const handleSelectBook = (book: Book) => {
-    setSelectedBook(book);
-    setNewCoverUrl(book.coverImage || '');
-    setMessage('');
-  };
-
   const handleUpdateCover = async () => {
-    if (!selectedBook || !newCoverUrl.trim()) {
-      setMessage('Please enter a cover URL');
-      return;
-    }
+    if (!selectedBook || !newCoverUrl) return;
 
     try {
-      setUpdating(true);
-      setMessage('');
-
-      // Update via API
-      await axios.put(
-        `${process.env.NEXT_PUBLIC_API_URL}/books/${selectedBook.id}`,
-        { coverImage: newCoverUrl.trim() }
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/admin-panel/books/${selectedBook.id}`,
+        {
+          method: 'PUT',
+          headers: {
+            'X-Admin-Key': adminKey!,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ coverImage: newCoverUrl })
+        }
       );
 
-      setMessage('✅ Cover updated successfully!');
-      
-      // Refresh books
-      await fetchBooks();
-      
-      // Clear selection after 2 seconds
-      setTimeout(() => {
+      if (response.ok) {
+        alert('Cover updated successfully!');
         setSelectedBook(null);
         setNewCoverUrl('');
-        setMessage('');
-      }, 2000);
-      
+        fetchBooks();
+      }
     } catch (error) {
       console.error('Error updating cover:', error);
-      setMessage('❌ Error updating cover. Please try again.');
-    } finally {
-      setUpdating(false);
+      alert('Failed to update cover');
     }
   };
 
-  const isBroken = (book: Book) => {
-    return (
-      !book.coverImage ||
-      book.coverImage.includes('openlibrary.org') ||
-      book.coverImage.includes('placeholder')
-    );
+  const handleRegenerateAICovers = async () => {
+    if (!confirm('Regenerate AI covers for books with missing covers? This may take a few minutes.')) return;
+
+    try {
+      setRegenerating(true);
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/admin-simple/update-covers`,
+        {
+          method: 'POST',
+          headers: { 'X-Admin-Key': adminKey! }
+        }
+      );
+
+      const data = await response.json();
+      if (data.success) {
+        alert(`Successfully updated ${data.data.success} covers!`);
+        fetchBooks();
+      }
+    } catch (error) {
+      console.error('Error regenerating covers:', error);
+      alert('Failed to regenerate covers');
+    } finally {
+      setRegenerating(false);
+    }
   };
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
-          <p className="text-gray-600 dark:text-gray-400">Loading books...</p>
-        </div>
-      </div>
-    );
-  }
+  const booksWithMissingCovers = books.filter(
+    b => !b.coverImage || b.coverImage.includes('placeholder')
+  );
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-            Book Cover Management
-          </h1>
-          <p className="text-gray-600 dark:text-gray-400">
-            Update book covers for books with missing or broken images
-          </p>
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <header className="bg-white shadow-sm border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex justify-between items-center">
+            <h1 className="text-2xl font-bold text-gray-900">🎨 Cover Management</h1>
+            <button
+              onClick={() => router.push('/admin/dashboard')}
+              className="text-sm text-gray-600 hover:text-gray-900"
+            >
+              ← Back to Dashboard
+            </button>
+          </div>
         </div>
+      </header>
 
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-            <div className="text-2xl font-bold text-gray-900 dark:text-white">
-              {books.length}
-            </div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">Total Books</div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="bg-white rounded-lg shadow-sm p-6">
+            <h3 className="text-sm text-gray-600 mb-1">Total Books</h3>
+            <p className="text-3xl font-bold text-gray-900">{books.length}</p>
           </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-            <div className="text-2xl font-bold text-green-600">
-              {books.filter((b) => !isBroken(b)).length}
-            </div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">Good Covers</div>
+          <div className="bg-white rounded-lg shadow-sm p-6">
+            <h3 className="text-sm text-gray-600 mb-1">With Covers</h3>
+            <p className="text-3xl font-bold text-green-600">
+              {books.length - booksWithMissingCovers.length}
+            </p>
           </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-            <div className="text-2xl font-bold text-red-600">
-              {books.filter((b) => isBroken(b)).length}
-            </div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">Broken Covers</div>
+          <div className="bg-white rounded-lg shadow-sm p-6">
+            <h3 className="text-sm text-gray-600 mb-1">Missing Covers</h3>
+            <p className="text-3xl font-bold text-red-600">
+              {booksWithMissingCovers.length}
+            </p>
           </div>
         </div>
 
-        {/* Filters */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Filter buttons */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Filter
-              </label>
-              <div className="flex gap-2">
-                <button
-                  onClick={() => handleFilterChange('all')}
-                  className={`px-4 py-2 rounded-lg ${
-                    filter === 'all'
-                      ? 'bg-primary-600 text-white'
-                      : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
-                  }`}
-                >
-                  All ({books.length})
-                </button>
-                <button
-                  onClick={() => handleFilterChange('broken')}
-                  className={`px-4 py-2 rounded-lg ${
-                    filter === 'broken'
-                      ? 'bg-red-600 text-white'
-                      : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
-                  }`}
-                >
-                  Broken ({books.filter((b) => isBroken(b)).length})
-                </button>
-                <button
-                  onClick={() => handleFilterChange('good')}
-                  className={`px-4 py-2 rounded-lg ${
-                    filter === 'good'
-                      ? 'bg-green-600 text-white'
-                      : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
-                  }`}
-                >
-                  Good ({books.filter((b) => !isBroken(b)).length})
-                </button>
+        {/* Actions */}
+        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
+          <h2 className="text-lg font-semibold mb-4">Quick Actions</h2>
+          <div className="flex flex-wrap gap-4">
+            <button
+              onClick={handleRegenerateAICovers}
+              disabled={regenerating}
+              className="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 flex items-center"
+            >
+              {regenerating ? (
+                <>
+                  <svg className="animate-spin h-5 w-5 mr-2" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"></circle>
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  Regenerating...
+                </>
+              ) : (
+                <>
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                  Regenerate AI Covers
+                </>
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Search */}
+        <div className="bg-white rounded-lg shadow-sm p-4 mb-6">
+          <input
+            type="text"
+            placeholder="Search books..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        {/* Books Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          {loading ? (
+            <div className="col-span-full text-center py-12 text-gray-500">
+              Loading books...
+            </div>
+          ) : books.length === 0 ? (
+            <div className="col-span-full text-center py-12 text-gray-500">
+              No books found
+            </div>
+          ) : (
+            books.map((book) => (
+              <div
+                key={book.id}
+                className="bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer hover:shadow-md transition-shadow"
+                onClick={() => {
+                  setSelectedBook(book);
+                  setNewCoverUrl(book.coverImage);
+                }}
+              >
+                <div className="aspect-[2/3] relative bg-gray-100">
+                  <Image
+                    src={book.coverImage || '/placeholder-book.svg'}
+                    alt={book.title}
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                  {(!book.coverImage || book.coverImage.includes('placeholder')) && (
+                    <div className="absolute inset-0 bg-red-500 bg-opacity-20 flex items-center justify-center">
+                      <span className="text-red-600 font-bold">Missing</span>
+                    </div>
+                  )}
+                </div>
+                <div className="p-3">
+                  <h3 className="font-semibold text-sm text-gray-900 truncate">
+                    {book.title}
+                  </h3>
+                  <p className="text-xs text-gray-500 truncate">{book.author}</p>
+                </div>
+              </div>
+            ))
+          )}
+        </div>
+      </main>
+
+      {/* Edit Cover Modal */}
+      {selectedBook && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-lg max-w-md w-full p-6">
+            <h2 className="text-2xl font-bold mb-4">Update Cover</h2>
+            
+            <div className="mb-4">
+              <p className="text-sm text-gray-600 mb-2">
+                <strong>Book:</strong> {selectedBook.title}
+              </p>
+              <p className="text-sm text-gray-600 mb-4">
+                <strong>Author:</strong> {selectedBook.author}
+              </p>
+            </div>
+
+            <div className="mb-4">
+              <div className="aspect-[2/3] w-48 mx-auto relative bg-gray-100 rounded mb-4">
+                <Image
+                  src={newCoverUrl || '/placeholder-book.svg'}
+                  alt="Preview"
+                  fill
+                  className="object-cover rounded"
+                  unoptimized
+                />
               </div>
             </div>
 
-            {/* Search */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Search
+            <div className="mb-6">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Cover Image URL
               </label>
               <input
                 type="text"
-                value={searchTerm}
-                onChange={(e) => handleSearchChange(e.target.value)}
-                placeholder="Search by title or author..."
-                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500"
+                value={newCoverUrl}
+                onChange={(e) => setNewCoverUrl(e.target.value)}
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                placeholder="https://example.com/cover.jpg"
               />
+              <p className="mt-2 text-xs text-gray-500">
+                For AI covers, use: /ai-covers/{selectedBook.id}.svg
+              </p>
+            </div>
+
+            <div className="flex justify-end space-x-3">
+              <button
+                onClick={() => {
+                  setSelectedBook(null);
+                  setNewCoverUrl('');
+                }}
+                className="px-4 py-2 text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleUpdateCover}
+                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+              >
+                Update Cover
+              </button>
             </div>
           </div>
         </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Book List */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-              Books ({filteredBooks.length})
-            </h2>
-            <div className="space-y-2 max-h-[600px] overflow-y-auto">
-              {filteredBooks.map((book) => (
-                <div
-                  key={book.id}
-                  onClick={() => handleSelectBook(book)}
-                  className={`p-4 rounded-lg cursor-pointer transition-colors ${
-                    selectedBook?.id === book.id
-                      ? 'bg-primary-100 dark:bg-primary-900 border-2 border-primary-500'
-                      : 'bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600'
-                  }`}
-                >
-                  <div className="flex items-center gap-3">
-                    {/* Status indicator */}
-                    <div
-                      className={`w-3 h-3 rounded-full ${
-                        isBroken(book) ? 'bg-red-500' : 'bg-green-500'
-                      }`}
-                    />
-                    <div className="flex-1 min-w-0">
-                      <div className="font-medium text-gray-900 dark:text-white truncate">
-                        {book.title}
-                      </div>
-                      <div className="text-sm text-gray-600 dark:text-gray-400 truncate">
-                        {book.author}
-                      </div>
-                    </div>
-                    <div className="text-xs text-gray-500">ID: {book.id}</div>
-                  </div>
-                </div>
-              ))}
-              {filteredBooks.length === 0 && (
-                <div className="text-center py-8 text-gray-500 dark:text-gray-400">
-                  No books found
-                </div>
-              )}
-            </div>
-          </div>
-
-          {/* Update Form */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-              Update Cover
-            </h2>
-
-            {selectedBook ? (
-              <div className="space-y-4">
-                {/* Book Info */}
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <div className="font-medium text-gray-900 dark:text-white mb-1">
-                    {selectedBook.title}
-                  </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                    by {selectedBook.author}
-                  </div>
-                  <div className="text-xs text-gray-500">
-                    ID: {selectedBook.id} | Category: {selectedBook.category.name}
-                  </div>
-                </div>
-
-                {/* Current Cover Preview */}
-                {selectedBook.coverImage && !isBroken(selectedBook) && (
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                      Current Cover
-                    </label>
-                    <img
-                      src={selectedBook.coverImage}
-                      alt={selectedBook.title}
-                      className="w-32 h-48 object-cover rounded-lg"
-                    />
-                  </div>
-                )}
-
-                {/* Cover URL Input */}
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    New Cover URL
-                  </label>
-                  <input
-                    type="url"
-                    value={newCoverUrl}
-                    onChange={(e) => setNewCoverUrl(e.target.value)}
-                    placeholder="https://example.com/cover.jpg"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500"
-                  />
-                  <p className="mt-1 text-xs text-gray-500">
-                    Paste the URL of the new cover image
-                  </p>
-                </div>
-
-                {/* Preview new cover */}
-                {newCoverUrl && newCoverUrl.startsWith('http') && (
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                      Preview
-                    </label>
-                    <img
-                      src={newCoverUrl}
-                      alt="Preview"
-                      className="w-32 h-48 object-cover rounded-lg"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).src = '/placeholder-book.svg';
-                      }}
-                    />
-                  </div>
-                )}
-
-                {/* Message */}
-                {message && (
-                  <div
-                    className={`p-3 rounded-lg ${
-                      message.startsWith('✅')
-                        ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200'
-                        : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'
-                    }`}
-                  >
-                    {message}
-                  </div>
-                )}
-
-                {/* Action Buttons */}
-                <div className="flex gap-3">
-                  <button
-                    onClick={handleUpdateCover}
-                    disabled={updating || !newCoverUrl.trim()}
-                    className="flex-1 bg-primary-600 hover:bg-primary-700 disabled:bg-gray-400 text-white font-medium py-2 px-4 rounded-lg transition-colors"
-                  >
-                    {updating ? 'Updating...' : 'Update Cover'}
-                  </button>
-                  <button
-                    onClick={() => {
-                      setSelectedBook(null);
-                      setNewCoverUrl('');
-                      setMessage('');
-                    }}
-                    className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
-                  >
-                    Cancel
-                  </button>
-                </div>
-
-                {/* Help Text */}
-                <div className="bg-blue-50 dark:bg-blue-900 rounded-lg p-4 text-sm text-blue-800 dark:text-blue-200">
-                  <div className="font-medium mb-2">💡 Where to find cover images:</div>
-                  <ul className="list-disc list-inside space-y-1">
-                    <li>Google: Search "{selectedBook.title} book cover"</li>
-                    <li>Amazon: Right-click cover and copy image address</li>
-                    <li>Upload to ImgBB.com for free hosting</li>
-                    <li>Use Goodreads cover images</li>
-                  </ul>
-                </div>
-              </div>
-            ) : (
-              <div className="text-center py-12 text-gray-500 dark:text-gray-400">
-                <svg
-                  className="w-16 h-16 mx-auto mb-4 opacity-50"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
-                <p>Select a book from the list to update its cover</p>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
+      )}
     </div>
   );
 }
