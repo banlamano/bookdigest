@@ -67,7 +67,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       title: categoryTitle,
       description: categoryDescription,
       type: 'website',
-      url: `https://bookdigest-iota.vercel.app/categories/${params.slug}`,
+      url: `https://book-digest.com/categories/${params.slug}`,
     },
     twitter: {
       card: 'summary',
@@ -75,7 +75,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       description: categoryDescription,
     },
     alternates: {
-      canonical: `https://bookdigest-iota.vercel.app/categories/${params.slug}`,
+      canonical: `https://book-digest.com/categories/${params.slug}`,
     },
   };
 }
@@ -91,9 +91,9 @@ export default async function CategoryBooksPage({ params }: { params: { slug: st
 
   // Breadcrumb data for structured data
   const breadcrumbItems = [
-    { name: 'Home', url: 'https://bookdigest-iota.vercel.app' },
-    { name: 'Categories', url: 'https://bookdigest-iota.vercel.app/categories' },
-    { name: category.name, url: `https://bookdigest-iota.vercel.app/categories/${params.slug}` },
+    { name: 'Home', url: 'https://book-digest.com' },
+    { name: 'Categories', url: 'https://book-digest.com/categories' },
+    { name: category.name, url: `https://book-digest.com/categories/${params.slug}` },
   ];
 
   return (

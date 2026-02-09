@@ -14,7 +14,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/dashboard/', '/login', '/register', '/admin/'],
       },
     ],
-    sitemap: 'https://bookdigest-iota.vercel.app/sitemap.xml',
-    host: 'https://bookdigest-iota.vercel.app',
+    sitemap: 'https://book-digest.com/sitemap.xml',
+    host: 'https://book-digest.com',
   };
 }

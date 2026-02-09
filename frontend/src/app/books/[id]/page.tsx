@@ -94,7 +94,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
       images: book.coverImage ? [book.coverImage] : undefined,
     },
     alternates: {
-      canonical: `https://bookdigest-iota.vercel.app/books/${params.id}`,
+      canonical: `https://book-digest.com/books/${params.id}`,
     },
   };
 }
@@ -108,10 +108,10 @@ export default async function BookDetailPage({ params }: { params: { id: string 
 
   // Breadcrumb data for structured data
   const breadcrumbItems = [
-    { name: 'Home', url: 'https://bookdigest-iota.vercel.app' },
-    { name: 'Books', url: 'https://bookdigest-iota.vercel.app/library' },
-    { name: book.category?.name || 'Category', url: `https://bookdigest-iota.vercel.app/categories/${book.category?.slug || ''}` },
-    { name: book.title, url: `https://bookdigest-iota.vercel.app/books/${params.id}` },
+    { name: 'Home', url: 'https://book-digest.com' },
+    { name: 'Books', url: 'https://book-digest.com/library' },
+    { name: book.category?.name || 'Category', url: `https://book-digest.com/categories/${book.category?.slug || ''}` },
+    { name: book.title, url: `https://book-digest.com/books/${params.id}` },
   ];
 
   return (

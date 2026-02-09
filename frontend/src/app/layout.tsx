@@ -25,7 +25,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bookdigest-iota.vercel.app'),
+  metadataBase: new URL('https://book-digest.com'),
   verification: {
     google: '_vdNbYX3ur3mO5jTjKdCaPotFz-6vICN_j9JDnYXQ80',
   },
@@ -97,7 +97,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://bookdigest-iota.vercel.app',
+    url: 'https://book-digest.com',
     title: 'BookDigest - Free AI Book Summaries | Learn from 1000+ Books in 15 Minutes',
     description: 'Access 454+ free AI-powered book summaries. Read bestselling business, self-help & psychology books in 15 minutes. Better than Blinkist - 100% free with key insights & action items.',
     siteName: 'BookDigest',
@@ -117,7 +117,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://bookdigest-iota.vercel.app',
+    canonical: 'https://book-digest.com',
   },
 };
 

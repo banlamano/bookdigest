@@ -6,7 +6,7 @@ export function WebsiteStructuredData() {
     '@type': 'WebSite',
     name: 'BookDigest',
     alternateName: 'Book Digest',
-    url: 'https://bookdigest-iota.vercel.app',
+    url: 'https://book-digest.com',
     description: 'Free AI-powered book summaries for 454+ bestselling books in business, self-help, psychology & personal development. Learn from books in 15 minutes.',
     inLanguage: 'en',
     publisher: {
@@ -14,14 +14,14 @@ export function WebsiteStructuredData() {
       name: 'BookDigest',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://bookdigest-iota.vercel.app/icon-192.png',
+        url: 'https://book-digest.com/icon-192.png',
       },
     },
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://bookdigest-iota.vercel.app/search?q={search_term_string}',
+        urlTemplate: 'https://book-digest.com/search?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },
@@ -67,7 +67,7 @@ export function BookStructuredData({ book }: { book: any }) {
       availability: 'https://schema.org/InStock',
       price: '0',
       priceCurrency: 'EUR',
-      url: `https://bookdigest-iota.vercel.app/books/${book.id}`,
+      url: `https://book-digest.com/books/${book.id}`,
     },
     review: {
       '@type': 'Review',
@@ -118,10 +118,10 @@ export function OrganizationStructuredData() {
     '@type': 'Organization',
     name: 'BookDigest',
     alternateName: 'Book Digest',
-    url: 'https://bookdigest-iota.vercel.app',
+    url: 'https://book-digest.com',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://bookdigest-iota.vercel.app/icon-192.png',
+      url: 'https://book-digest.com/icon-192.png',
       width: 192,
       height: 192,
     },

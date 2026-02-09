@@ -169,7 +169,7 @@ export async function GET(request: Request) {
               fontSize: '24px',
             }}
           >
-            bookdigest-iota.vercel.app
+            book-digest.com
           </div>
         </div>
       ),

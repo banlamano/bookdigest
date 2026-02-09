@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 export const siteMetadata = {
   title: 'BookDigest - Learn from 1000+ Books in 15 Minutes | Free AI Book Summaries',
   description: 'Read AI-powered summaries of bestselling books in business, self-help, psychology & personal development. Save 10+ hours per book. Free access to 454+ expert book summaries with key insights, quotes & action items.',
-  siteUrl: 'https://bookdigest-iota.vercel.app',
+  siteUrl: 'https://book-digest.com',
   author: 'BookDigest',
   keywords: [
     // Primary keywords

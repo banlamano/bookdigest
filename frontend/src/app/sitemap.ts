@@ -30,7 +30,7 @@ async function getCategories() {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://bookdigest-iota.vercel.app';
+  const baseUrl = 'https://book-digest.com';
   
   // Static pages with optimized priorities
   const staticPages = [
