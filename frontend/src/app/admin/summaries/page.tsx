@@ -78,10 +78,11 @@ export default function AdminSummaries() {
       }
 
       const data = await response.json();
-      if (data.success) {
-        setBooks(data.data.books);
+      if (data.success && data.data) {
+        setBooks(data.data.books || []);
       } else {
         toast.error(data.message || 'Failed to load books');
+        setBooks([]);
       }
     } catch (error) {
       console.error('Error fetching books:', error);
@@ -207,7 +208,7 @@ export default function AdminSummaries() {
   const booksWithoutSummaries = books.length - booksWithSummaries;
 
   // Show loading while mounting or loading data
-  if (!mounted || loading) {
+  if (!mounted) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">

@@ -92,11 +92,12 @@ export default function AdminBooks() {
       }
 
       const data = await response.json();
-      if (data.success) {
-        setBooks(data.data.books);
-        setTotalPages(data.data.pagination.totalPages);
+      if (data.success && data.data) {
+        setBooks(data.data.books || []);
+        setTotalPages(data.data.pagination?.totalPages || 1);
       } else {
         toast.error(data.message || 'Failed to load books');
+        setBooks([]);
       }
     } catch (error) {
       console.error('Error fetching books:', error);
@@ -232,7 +233,7 @@ export default function AdminBooks() {
   };
 
   // Show loading while mounting or loading data
-  if (!mounted || loading) {
+  if (!mounted) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
