@@ -28,21 +28,25 @@ export default function AdminDashboard() {
   useEffect(() => {
     if (!mounted) return;
 
-    const { user, isAuthenticated } = useAuthStore.getState();
+    const checkAuthAndFetch = async () => {
+      const { user, isAuthenticated } = useAuthStore.getState();
 
-    // Check if user is logged in and is admin
-    if (!isAuthenticated) {
-      router.push('/login');
-      return;
-    }
+      // Check if user is logged in and is admin
+      if (!isAuthenticated) {
+        router.push('/login');
+        return;
+      }
 
-    if (user?.role !== 'ADMIN') {
-      setError('Access Denied: Admin privileges required');
-      setLoading(false);
-      return;
-    }
+      if (user?.role !== 'ADMIN') {
+        setError('Access Denied: Admin privileges required');
+        setLoading(false);
+        return;
+      }
 
-    fetchStats();
+      await fetchStats();
+    };
+
+    checkAuthAndFetch();
   }, [mounted, router]);
 
   const fetchStats = async () => {

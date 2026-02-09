@@ -32,21 +32,24 @@ export default function AdminCovers() {
   useEffect(() => {
     if (!mounted) return;
 
-    const { user, isAuthenticated } = useAuthStore.getState();
+    const checkAuthAndFetch = async () => {
+      const { user, isAuthenticated } = useAuthStore.getState();
 
-    // Check if user is logged in and is admin
-    if (!isAuthenticated) {
-      router.push('/login');
-      return;
-    }
+      // Check if user is logged in and is admin
+      if (!isAuthenticated) {
+        router.push('/login');
+        return;
+      }
 
-    if (user?.role !== 'ADMIN') {
-      toast.error('Access Denied: Admin privileges required');
-      router.push('/dashboard');
-      return;
-    }
+      if (user?.role !== 'ADMIN') {
+        router.push('/dashboard');
+        return;
+      }
 
-    fetchBooks();
+      await fetchBooks();
+    };
+
+    checkAuthAndFetch();
   }, [mounted, search, router]);
 
   const fetchBooks = async () => {
