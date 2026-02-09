@@ -4,6 +4,7 @@
   "description": "Read and listen to book summaries in 15 minutes",
   "start_url": "/",
   "display": "standalone",
+  "prefer_related_applications": false,
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
   "orientation": "portrait-primary",

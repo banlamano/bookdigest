@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useAuthStore } from '@/store/authStore';
+import Cookies from 'js-cookie';
 
 interface DashboardStats {
   totalBooks: number;
@@ -13,96 +15,76 @@ interface DashboardStats {
 
 export default function AdminDashboard() {
   const router = useRouter();
+  const [mounted, setMounted] = useState(false);
   const [stats, setStats] = useState<DashboardStats | null>(null);
   const [loading, setLoading] = useState(true);
-  const [adminKey, setAdminKey] = useState('');
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
+  // Handle client-side mounting
   useEffect(() => {
-    // Check if admin key is in localStorage
-    const savedKey = localStorage.getItem('admin_key');
-    if (savedKey) {
-      setAdminKey(savedKey);
-      setIsAuthenticated(true);
-      fetchStats(savedKey);
-    } else {
-      setLoading(false);
-    }
+    setMounted(true);
   }, []);
 
-  const fetchStats = async (key: string) => {
+  useEffect(() => {
+    if (!mounted) return;
+
+    const { user, isAuthenticated } = useAuthStore.getState();
+
+    // Check if user is logged in and is admin
+    if (!isAuthenticated) {
+      router.push('/login');
+      return;
+    }
+
+    if (user?.role !== 'ADMIN') {
+      setError('Access Denied: Admin privileges required');
+      setLoading(false);
+      return;
+    }
+
+    fetchStats();
+  }, [mounted, router]);
+
+  const fetchStats = async () => {
     try {
+      const authToken = useAuthStore.getState().token || Cookies.get('token');
+      
+      if (!authToken) {
+        router.push('/login');
+        return;
+      }
+
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/admin-panel/dashboard/stats`, {
         headers: {
-          'X-Admin-Key': key
+          'Authorization': `Bearer ${authToken}`
         }
       });
 
       if (response.status === 401) {
-        setIsAuthenticated(false);
-        localStorage.removeItem('admin_key');
+        setError('Unauthorized - Please login again');
+        router.push('/login');
         return;
       }
 
       const data = await response.json();
       if (data.success) {
         setStats(data.data);
+      } else {
+        setError(data.message || 'Failed to load stats');
       }
     } catch (error) {
       console.error('Error fetching stats:', error);
+      setError('Failed to load dashboard stats');
     } finally {
       setLoading(false);
     }
   };
 
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    localStorage.setItem('admin_key', adminKey);
-    setIsAuthenticated(true);
-    fetchStats(adminKey);
-  };
-
   const handleLogout = () => {
-    localStorage.removeItem('admin_key');
-    setIsAuthenticated(false);
-    setAdminKey('');
+    const { logout } = useAuthStore.getState();
+    logout();
+    router.push('/login');
   };
-
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 flex items-center justify-center p-4">
-        <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md">
-          <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Admin Panel</h1>
-            <p className="text-gray-600">Enter your admin key to access the dashboard</p>
-          </div>
-          
-          <form onSubmit={handleLogin}>
-            <div className="mb-6">
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Admin Key
-              </label>
-              <input
-                type="password"
-                value={adminKey}
-                onChange={(e) => setAdminKey(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder="Enter admin key"
-                required
-              />
-            </div>
-            
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-            >
-              Access Dashboard
-            </button>
-          </form>
-        </div>
-      </div>
-    );
-  }
 
   if (loading) {
     return (
@@ -110,6 +92,30 @@ export default function AdminDashboard() {
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
           <p className="text-gray-600">Loading dashboard...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+        <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md text-center">
+          <div className="mb-6">
+            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Access Denied</h2>
+            <p className="text-gray-600 mb-6">{error}</p>
+            <button
+              onClick={() => router.push('/dashboard')}
+              className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            >
+              Go to Dashboard
+            </button>
+          </div>
         </div>
       </div>
     );

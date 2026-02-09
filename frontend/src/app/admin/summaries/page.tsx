@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useAuthStore } from '@/store/authStore';
+import Cookies from 'js-cookie';
+import toast from 'react-hot-toast';
 
 interface Book {
   id: string;
@@ -14,38 +17,72 @@ interface Book {
 
 export default function AdminSummaries() {
   const router = useRouter();
+  const [mounted, setMounted] = useState(false);
   const [books, setBooks] = useState<Book[]>([]);
   const [loading, setLoading] = useState(true);
   const [regenerating, setRegenerating] = useState<string | null>(null);
   const [selectedBooks, setSelectedBooks] = useState<Set<string>>(new Set());
   const [filter, setFilter] = useState<'all' | 'missing' | 'has'>('all');
 
-  const adminKey = typeof window !== 'undefined' ? localStorage.getItem('admin_key') : null;
+  // Handle client-side mounting
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
-    if (!adminKey) {
-      router.push('/admin/dashboard');
+    if (!mounted) return;
+
+    const { user, isAuthenticated } = useAuthStore.getState();
+
+    // Check if user is logged in and is admin
+    if (!isAuthenticated) {
+      router.push('/login');
       return;
     }
+
+    if (user?.role !== 'ADMIN') {
+      toast.error('Access Denied: Admin privileges required');
+      router.push('/dashboard');
+      return;
+    }
+
     fetchBooks();
-  }, []);
+  }, [mounted, router]);
 
   const fetchBooks = async () => {
     try {
       setLoading(true);
+      const authToken = useAuthStore.getState().token || Cookies.get('token');
+      
+      if (!authToken) {
+        router.push('/login');
+        return;
+      }
+
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/api/admin-panel/books?limit=500`,
         {
-          headers: { 'X-Admin-Key': adminKey! }
+          headers: { 
+            'Authorization': `Bearer ${authToken}`
+          }
         }
       );
+
+      if (response.status === 401) {
+        toast.error('Session expired. Please login again.');
+        router.push('/login');
+        return;
+      }
 
       const data = await response.json();
       if (data.success) {
         setBooks(data.data.books);
+      } else {
+        toast.error(data.message || 'Failed to load books');
       }
     } catch (error) {
       console.error('Error fetching books:', error);
+      toast.error('Failed to load books');
     } finally {
       setLoading(false);
     }
@@ -60,23 +97,38 @@ export default function AdminSummaries() {
 
     try {
       setRegenerating(bookId);
+      const authToken = useAuthStore.getState().token || Cookies.get('token');
+      
+      if (!authToken) {
+        router.push('/login');
+        return;
+      }
+
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/api/admin/regenerate/${bookId}`,
         {
           method: 'POST',
-          headers: { 'X-Admin-Key': adminKey! }
+          headers: { 
+            'Authorization': `Bearer ${authToken}`
+          }
         }
       );
 
+      if (response.status === 401) {
+        toast.error('Session expired. Please login again.');
+        router.push('/login');
+        return;
+      }
+
       if (response.ok) {
-        alert('Summary regenerated successfully!');
+        toast.success('Summary regenerated successfully!');
         fetchBooks();
       } else {
-        alert('Failed to regenerate summary');
+        toast.error('Failed to regenerate summary');
       }
     } catch (error) {
       console.error('Error regenerating summary:', error);
-      alert('Failed to regenerate summary');
+      toast.error('Failed to regenerate summary');
     } finally {
       setRegenerating(null);
     }
@@ -86,7 +138,7 @@ export default function AdminSummaries() {
     const booksToRegenerate = filteredBooks.filter(b => selectedBooks.has(b.id));
     
     if (booksToRegenerate.length === 0) {
-      alert('No books selected');
+      toast.error('No books selected');
       return;
     }
 
@@ -94,23 +146,31 @@ export default function AdminSummaries() {
 
     try {
       setRegenerating('bulk');
+      const authToken = useAuthStore.getState().token || Cookies.get('token');
+      
+      if (!authToken) {
+        router.push('/login');
+        return;
+      }
       
       for (const book of booksToRegenerate) {
         await fetch(
           `${process.env.NEXT_PUBLIC_API_URL}/api/admin/regenerate/${book.id}`,
           {
             method: 'POST',
-            headers: { 'X-Admin-Key': adminKey! }
+            headers: { 
+              'Authorization': `Bearer ${authToken}`
+            }
           }
         );
       }
 
-      alert(`Successfully regenerated ${booksToRegenerate.length} summaries!`);
+      toast.success(`Successfully regenerated ${booksToRegenerate.length} summaries!`);
       setSelectedBooks(new Set());
       fetchBooks();
     } catch (error) {
       console.error('Error bulk regenerating:', error);
-      alert('Failed to regenerate some summaries');
+      toast.error('Failed to regenerate some summaries');
     } finally {
       setRegenerating(null);
     }
@@ -142,6 +202,18 @@ export default function AdminSummaries() {
 
   const booksWithSummaries = books.filter(hasSummary).length;
   const booksWithoutSummaries = books.length - booksWithSummaries;
+
+  // Show loading while mounting or loading data
+  if (!mounted || loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">

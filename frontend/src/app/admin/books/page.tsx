@@ -2,7 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useAuthStore } from '@/store/authStore';
+import Cookies from 'js-cookie';
 import Image from 'next/image';
+import toast from 'react-hot-toast';
 
 interface Book {
   id: string;
@@ -17,6 +20,7 @@ interface Book {
 
 export default function AdminBooks() {
   const router = useRouter();
+  const [mounted, setMounted] = useState(false);
   const [books, setBooks] = useState<Book[]>([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
@@ -27,19 +31,41 @@ export default function AdminBooks() {
   const [showEditModal, setShowEditModal] = useState(false);
   const [editingBook, setEditingBook] = useState<Book | null>(null);
 
-  const adminKey = typeof window !== 'undefined' ? localStorage.getItem('admin_key') : null;
+  // Handle client-side mounting
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
-    if (!adminKey) {
-      router.push('/admin/dashboard');
+    if (!mounted) return;
+
+    const { user, isAuthenticated } = useAuthStore.getState();
+
+    // Check if user is logged in and is admin
+    if (!isAuthenticated) {
+      router.push('/login');
       return;
     }
+
+    if (user?.role !== 'ADMIN') {
+      toast.error('Access Denied: Admin privileges required');
+      router.push('/dashboard');
+      return;
+    }
+
     fetchBooks();
-  }, [page, search, selectedCategory]);
+  }, [mounted, page, search, selectedCategory, router]);
 
   const fetchBooks = async () => {
     try {
       setLoading(true);
+      const authToken = useAuthStore.getState().token || Cookies.get('token');
+      
+      if (!authToken) {
+        router.push('/login');
+        return;
+      }
+
       const params = new URLSearchParams({
         page: page.toString(),
         limit: '20',
@@ -50,17 +76,28 @@ export default function AdminBooks() {
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/api/admin-panel/books?${params}`,
         {
-          headers: { 'X-Admin-Key': adminKey! }
+          headers: { 
+            'Authorization': `Bearer ${authToken}`
+          }
         }
       );
+
+      if (response.status === 401) {
+        toast.error('Session expired. Please login again.');
+        router.push('/login');
+        return;
+      }
 
       const data = await response.json();
       if (data.success) {
         setBooks(data.data.books);
         setTotalPages(data.data.pagination.totalPages);
+      } else {
+        toast.error(data.message || 'Failed to load books');
       }
     } catch (error) {
       console.error('Error fetching books:', error);
+      toast.error('Failed to load books');
     } finally {
       setLoading(false);
     }
@@ -93,12 +130,19 @@ export default function AdminBooks() {
     if (!editingBook) return;
 
     try {
+      const authToken = useAuthStore.getState().token || Cookies.get('token');
+      
+      if (!authToken) {
+        router.push('/login');
+        return;
+      }
+
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/api/admin-panel/books/${editingBook.id}`,
         {
           method: 'PUT',
           headers: {
-            'X-Admin-Key': adminKey!,
+            'Authorization': `Bearer ${authToken}`,
             'Content-Type': 'application/json'
           },
           body: JSON.stringify(editingBook)
@@ -120,11 +164,20 @@ export default function AdminBooks() {
     if (!confirm('Are you sure you want to delete this book?')) return;
 
     try {
+      const authToken = useAuthStore.getState().token || Cookies.get('token');
+      
+      if (!authToken) {
+        router.push('/login');
+        return;
+      }
+
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/api/admin-panel/books/${bookId}`,
         {
           method: 'DELETE',
-          headers: { 'X-Admin-Key': adminKey! }
+          headers: {
+            'Authorization': `Bearer ${authToken}`
+          }
         }
       );
 
@@ -165,6 +218,18 @@ export default function AdminBooks() {
       alert('Failed to delete books');
     }
   };
+
+  // Show loading while mounting or loading data
+  if (!mounted || loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
