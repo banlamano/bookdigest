@@ -134,9 +134,13 @@ router.get('/books', checkAdminAccess, async (req, res) => {
           id: true,
           title: true,
           author: true,
-          category: true,
+          category: {
+            select: {
+              name: true
+            }
+          },
           coverImage: true,
-          isPremium: 1,
+          isPremium: true,
           createdAt: true,
           summary: true
         }
@@ -144,10 +148,17 @@ router.get('/books', checkAdminAccess, async (req, res) => {
       prisma.book.count({ where })
     ]);
 
+    // Transform books to flatten category
+    const transformedBooks = books.map(book => ({
+      ...book,
+      category: book.category?.name || 'Unknown',
+      isPremium: book.isPremium === 1
+    }));
+
     res.json({
       success: true,
       data: {
-        books,
+        books: transformedBooks,
         pagination: {
           page,
           limit,
