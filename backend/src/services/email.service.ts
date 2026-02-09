@@ -1,16 +1,27 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const RESEND_API_KEY = process.env.RESEND_API_KEY;
+const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
 const FROM_EMAIL = process.env.FROM_EMAIL || 'BookDigest <onboarding@resend.dev>';
 const SITE_URL = process.env.FRONTEND_URL || 'https://bookdigest-iota.vercel.app';
+
+// Helper to check if email service is enabled
+function isEmailEnabled(): boolean {
+  return !!resend;
+}
 
 export class EmailService {
   /**
    * Send welcome email to new users
    */
   static async sendWelcomeEmail(user: { email: string; firstName: string }) {
+    if (!isEmailEnabled()) {
+      console.log('⚠️  Email service not configured, skipping welcome email');
+      return { success: false, error: 'Email service not configured' };
+    }
+
     try {
-      await resend.emails.send({
+      await resend!.emails.send({
         from: FROM_EMAIL,
         to: user.email,
         subject: 'Welcome to BookDigest! 🎉',
@@ -89,10 +100,15 @@ export class EmailService {
     user: { email: string; firstName: string },
     payment: { amount: number; plan: string; currency?: string }
   ) {
+    if (!isEmailEnabled()) {
+      console.log('⚠️  Email service not configured, skipping payment confirmation');
+      return { success: false, error: 'Email service not configured' };
+    }
+
     try {
       const currency = payment.currency || '€';
       
-      await resend.emails.send({
+      await resend!.emails.send({
         from: FROM_EMAIL,
         to: user.email,
         subject: 'Payment Confirmed - Welcome to Premium! 💳',
@@ -183,8 +199,13 @@ export class EmailService {
    * Send payment failed notification
    */
   static async sendPaymentFailed(user: { email: string; firstName: string }) {
+    if (!isEmailEnabled()) {
+      console.log('⚠️  Email service not configured, skipping payment failed email');
+      return { success: false, error: 'Email service not configured' };
+    }
+
     try {
-      await resend.emails.send({
+      await resend!.emails.send({
         from: FROM_EMAIL,
         to: user.email,
         subject: '⚠️ Payment Failed - Action Required',
@@ -258,10 +279,15 @@ export class EmailService {
     user: { email: string; firstName: string },
     subscription: { amount: number; plan: string; renewalDate: Date; currency?: string }
   ) {
+    if (!isEmailEnabled()) {
+      console.log('⚠️  Email service not configured, skipping renewal reminder');
+      return { success: false, error: 'Email service not configured' };
+    }
+
     try {
       const currency = subscription.currency || '€';
       
-      await resend.emails.send({
+      await resend!.emails.send({
         from: FROM_EMAIL,
         to: user.email,
         subject: '🔔 Your Subscription Renews in 3 Days',
@@ -338,8 +364,13 @@ export class EmailService {
    * Send free tier limit reached notification
    */
   static async sendFreeTierLimitReached(user: { email: string; firstName: string }) {
+    if (!isEmailEnabled()) {
+      console.log('⚠️  Email service not configured, skipping free tier limit email');
+      return { success: false, error: 'Email service not configured' };
+    }
+
     try {
-      await resend.emails.send({
+      await resend!.emails.send({
         from: FROM_EMAIL,
         to: user.email,
         subject: '🎉 You\'ve Read 3 Summaries! Upgrade to Continue',
