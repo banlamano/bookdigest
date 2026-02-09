@@ -57,8 +57,8 @@ router.get('/dashboard/stats', checkAdminAccess, async (req, res) => {
     const [totalBooks, totalUsers, premiumBooks, freeBooks] = await Promise.all([
       prisma.book.count(),
       prisma.user.count(),
-      prisma.book.count({ where: { isPremium: true } }),
-      prisma.book.count({ where: { isPremium: false } })
+      prisma.book.count({ where: { isPremium: 1 } }),
+      prisma.book.count({ where: { isPremium: 0 } })
     ]);
 
     res.json({
@@ -102,7 +102,7 @@ router.get('/books', checkAdminAccess, async (req, res) => {
     }
     
     if (isPremium !== undefined) {
-      where.isPremium = isPremium === 'true';
+      where.isPremium = isPremium === 'true' ? 1 : 0;
     }
 
     const [books, total] = await Promise.all([
@@ -117,7 +117,7 @@ router.get('/books', checkAdminAccess, async (req, res) => {
           author: true,
           category: true,
           coverImage: true,
-          isPremium: true,
+          isPremium: 1,
           createdAt: true,
           summary: true
         }
