@@ -1,23 +1,54 @@
 import { Router } from 'express';
 import { PrismaClient } from '@prisma/client';
+import jwt from 'jsonwebtoken';
 
 const router = Router();
 const prisma = new PrismaClient();
 
-// Middleware to check admin access (simplified for now - add JWT later)
-const checkAdminAccess = (req: any, res: any, next: any) => {
-  // TODO: Add proper JWT authentication
-  // For now, check a simple admin key in headers
-  const adminKey = req.headers['x-admin-key'];
-  
-  if (adminKey !== process.env.ADMIN_SECRET_KEY) {
+// Middleware to check admin access - supports both admin key and JWT
+const checkAdminAccess = async (req: any, res: any, next: any) => {
+  try {
+    // Option 1: Check for admin key in headers (simple auth)
+    const adminKey = req.headers['x-admin-key'];
+    
+    if (adminKey && adminKey === process.env.ADMIN_SECRET_KEY) {
+      return next();
+    }
+    
+    // Option 2: Check for JWT token with admin role (integrated auth)
+    const authHeader = req.headers.authorization;
+    
+    if (authHeader && authHeader.startsWith('Bearer ')) {
+      const token = authHeader.substring(7);
+      
+      try {
+        const decoded = jwt.verify(token, process.env.JWT_SECRET || 'your-super-secret-jwt-key-change-this-in-production') as any;
+        
+        // Verify user exists and has admin role
+        const user = await prisma.user.findUnique({
+          where: { id: decoded.userId }
+        });
+        
+        if (user && user.role === 'ADMIN') {
+          req.user = user;
+          return next();
+        }
+      } catch (jwtError) {
+        // JWT verification failed, continue to return 401 below
+      }
+    }
+    
+    // No valid authentication found
+    return res.status(401).json({
+      success: false,
+      message: 'Unauthorized - Admin access required'
+    });
+  } catch (error) {
     return res.status(401).json({
       success: false,
       message: 'Unauthorized - Admin access required'
     });
   }
-  
-  next();
 };
 
 // Dashboard stats
