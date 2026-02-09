@@ -27,7 +27,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://book-digest.com'),
   verification: {
-    google: '_vdNbYX3ur3mO5jTjKdCaPotFz-6vICN_j9JDnYXQ80',
+    google: 'W1TzMoQfgmIyvk4KRMnXIA1us0ayz_RAow9vRQNXp8A',
   },
   title: {
     default: 'BookDigest - Free AI Book Summaries | Learn from 1000+ Books in 15 Minutes',
