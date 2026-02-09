@@ -33,6 +33,8 @@ app.use(helmet());
 app.use(cors({
   origin: [
     'https://bookdigest-iota.vercel.app',
+    'https://book-digest.com',
+    'https://www.book-digest.com',
     'http://localhost:3000',
     process.env.CORS_ORIGIN,
     process.env.CLIENT_URL
