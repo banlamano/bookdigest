@@ -19,6 +19,10 @@ model User {
   avatar            String?
   role              String   @default("USER")
   
+  // Password reset
+  passwordResetToken   String?
+  passwordResetExpires DateTime?
+  
   // Subscription fields
   subscriptionType  String   @default("FREE")
   subscriptionId    String?

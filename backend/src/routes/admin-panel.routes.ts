@@ -318,4 +318,118 @@ router.post('/books/bulk/update', checkAdminAccess, async (req, res) => {
   }
 });
 
+// Get all users with pagination and filters
+router.get('/users', checkAdminAccess, async (req: any, res: any) => {
+  try {
+    const { page = '1', limit = '20', search, role, subscriptionType } = req.query;
+    const pageNum = parseInt(page);
+    const limitNum = parseInt(limit);
+
+    const where: any = {};
+
+    // Search filter
+    if (search) {
+      where.OR = [
+        { email: { contains: search, mode: 'insensitive' } },
+        { firstName: { contains: search, mode: 'insensitive' } },
+        { lastName: { contains: search, mode: 'insensitive' } }
+      ];
+    }
+
+    // Role filter
+    if (role) {
+      where.role = role;
+    }
+
+    // Subscription filter
+    if (subscriptionType) {
+      where.subscriptionType = subscriptionType;
+    }
+
+    const [users, total] = await Promise.all([
+      prisma.user.findMany({
+        where,
+        skip: (pageNum - 1) * limitNum,
+        take: limitNum,
+        orderBy: { createdAt: 'desc' },
+        select: {
+          id: true,
+          email: true,
+          firstName: true,
+          lastName: true,
+          role: true,
+          subscriptionType: true,
+          subscriptionEndDate: true,
+          createdAt: true
+        }
+      }),
+      prisma.user.count({ where })
+    ]);
+
+    res.json({
+      success: true,
+      data: {
+        users,
+        pagination: {
+          page: pageNum,
+          limit: limitNum,
+          total,
+          totalPages: Math.ceil(total / limitNum)
+        }
+      }
+    });
+  } catch (error) {
+    logger.error('Error fetching users:', error);
+    res.status(500).json({ success: false, message: 'Internal server error' });
+  }
+});
+
+// Update user role
+router.put('/users/:userId/role', checkAdminAccess, async (req: any, res: any) => {
+  try {
+    const { userId } = req.params;
+    const { role } = req.body;
+
+    if (!['USER', 'ADMIN'].includes(role)) {
+      return res.status(400).json({ success: false, message: 'Invalid role' });
+    }
+
+    const user = await prisma.user.update({
+      where: { id: userId },
+      data: { role }
+    });
+
+    logger.info(`User role updated: ${userId} -> ${role}`);
+
+    res.json({
+      success: true,
+      data: user
+    });
+  } catch (error) {
+    logger.error('Error updating user role:', error);
+    res.status(500).json({ success: false, message: 'Internal server error' });
+  }
+});
+
+// Delete user
+router.delete('/users/:userId', checkAdminAccess, async (req: any, res: any) => {
+  try {
+    const { userId } = req.params;
+
+    await prisma.user.delete({
+      where: { id: userId }
+    });
+
+    logger.info(`User deleted: ${userId}`);
+
+    res.json({
+      success: true,
+      message: 'User deleted successfully'
+    });
+  } catch (error) {
+    logger.error('Error deleting user:', error);
+    res.status(500).json({ success: false, message: 'Internal server error' });
+  }
+});
+
 export default router;

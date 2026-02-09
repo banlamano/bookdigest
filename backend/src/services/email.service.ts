@@ -363,6 +363,88 @@ export class EmailService {
   /**
    * Send free tier limit reached notification
    */
+  /**
+   * Send password reset email
+   */
+  static async sendPasswordResetEmail(user: { email: string; firstName: string; resetUrl: string }) {
+    if (!isEmailEnabled()) {
+      console.log('⚠️  Email service not configured, skipping password reset email');
+      return { success: false, error: 'Email service not configured' };
+    }
+
+    try {
+      await resend!.emails.send({
+        from: FROM_EMAIL,
+        to: user.email,
+        subject: '🔐 Reset Your Password - BookDigest',
+        html: `
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <style>
+              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+              .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+              .header { background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+              .content { background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px; }
+              .button { background: #2563eb; color: white; padding: 14px 30px; text-decoration: none; border-radius: 6px; display: inline-block; margin: 20px 0; font-weight: bold; }
+              .warning-box { background: #fef2f2; border-left: 4px solid #ef4444; padding: 15px; margin: 20px 0; border-radius: 4px; }
+              .footer { text-align: center; color: #6b7280; font-size: 14px; margin-top: 30px; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="header">
+                <h1>🔐 Reset Your Password</h1>
+              </div>
+              <div class="content">
+                <p>Hi ${user.firstName},</p>
+                <p>We received a request to reset your password for your BookDigest account.</p>
+                
+                <p style="text-align: center;">
+                  <a href="${user.resetUrl}" class="button">Reset Password →</a>
+                </p>
+
+                <p>Or copy and paste this link into your browser:</p>
+                <p style="background: white; padding: 15px; border-radius: 6px; word-break: break-all; font-size: 14px; color: #4b5563;">
+                  ${user.resetUrl}
+                </p>
+
+                <div class="warning-box">
+                  <strong>⏰ This link expires in 1 hour</strong>
+                </div>
+
+                <p><strong>Didn't request this?</strong></p>
+                <p>If you didn't request a password reset, please ignore this email. Your password will remain unchanged.</p>
+                
+                <p>For security reasons:</p>
+                <ul>
+                  <li>Never share this link with anyone</li>
+                  <li>We'll never ask for your password via email</li>
+                  <li>This link can only be used once</li>
+                </ul>
+
+                <p>Need help? Reply to this email and we'll assist you!</p>
+                
+                <p>Best regards,<br>The BookDigest Team</p>
+              </div>
+              <div class="footer">
+                <p>BookDigest - Learn from the best books in 15 minutes<br>
+                <a href="${SITE_URL}/terms">Terms</a> | <a href="${SITE_URL}/privacy">Privacy</a></p>
+              </div>
+            </div>
+          </body>
+          </html>
+        `,
+      });
+      
+      console.log(`✅ Password reset email sent to ${user.email}`);
+      return { success: true };
+    } catch (error) {
+      console.error('❌ Failed to send password reset email:', error);
+      return { success: false, error };
+    }
+  }
+
   static async sendFreeTierLimitReached(user: { email: string; firstName: string }) {
     if (!isEmailEnabled()) {
       console.log('⚠️  Email service not configured, skipping free tier limit email');

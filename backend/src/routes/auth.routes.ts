@@ -25,4 +25,10 @@ router.post('/login', loginValidation, validate, login);
 router.get('/profile', authenticate, getProfile);
 router.put('/profile', authenticate, updateProfile);
 
+// Forgot password - send reset email
+router.post('/forgot-password', AuthController.forgotPassword);
+
+// Reset password - verify token and update password
+router.post('/reset-password', AuthController.resetPassword);
+
 export default router;
