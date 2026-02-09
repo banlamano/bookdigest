@@ -196,12 +196,19 @@ export default function AdminBooks() {
     if (!confirm(`Delete ${selectedBooks.size} selected books?`)) return;
 
     try {
+      const authToken = useAuthStore.getState().token || Cookies.get('token');
+      
+      if (!authToken) {
+        router.push('/login');
+        return;
+      }
+
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/api/admin-panel/books/bulk/delete`,
         {
           method: 'POST',
           headers: {
-            'X-Admin-Key': adminKey!,
+            'Authorization': `Bearer ${authToken}`,
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({ bookIds: Array.from(selectedBooks) })
@@ -211,11 +218,13 @@ export default function AdminBooks() {
       if (response.ok) {
         setSelectedBooks(new Set());
         fetchBooks();
-        alert('Books deleted successfully!');
+        toast.success('Books deleted successfully!');
+      } else {
+        toast.error('Failed to delete books');
       }
     } catch (error) {
       console.error('Error bulk deleting:', error);
-      alert('Failed to delete books');
+      toast.error('Failed to delete books');
     }
   };
 
