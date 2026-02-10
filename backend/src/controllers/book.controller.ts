@@ -126,7 +126,37 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       throw new AppError('Book not found', 404);
     }
 
-    // Get user's freemium status
+    // CRITICAL: Track book access for freemium limit enforcement
+    // Check if user has already accessed this book this month
+    const startOfMonth = new Date();
+    startOfMonth.setDate(1);
+    startOfMonth.setHours(0, 0, 0, 0);
+
+    const existingProgress = await prisma.readingProgress.findFirst({
+      where: {
+        userId,
+        bookId: id,
+        createdAt: {
+          gte: startOfMonth,
+        },
+      },
+    });
+
+    // If this is a new book access this month, create a progress record
+    if (!existingProgress) {
+      await prisma.readingProgress.create({
+        data: {
+          userId,
+          bookId: id,
+          progress: 0,
+          currentChapter: 0,
+          timeSpent: 0,
+          isCompleted: false,
+        },
+      });
+    }
+
+    // Get user's freemium status (after tracking access)
     const freemiumStatus = await getFreemiumStatus(userId);
     
     // Check if user has premium access
