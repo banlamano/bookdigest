@@ -27,8 +27,8 @@ async function regenerateAllSummaries(options: {
   dryRun?: boolean;
 } = {}) {
   const {
-    batchSize = 10,
-    delayMs = 2000, // 2 seconds between batches to respect rate limits
+    batchSize = 5, // Reduced to 5 to stay under 15 RPM limit
+    delayMs = 5000, // 5 seconds between batches to respect Gemini free tier (15 RPM)
     forceRegenerate = false,
     dryRun = false
   } = options;
@@ -79,8 +79,8 @@ async function regenerateAllSummaries(options: {
       console.log(`\n📦 Processing Batch ${batchNum}/${totalBatches} (Books ${i + 1}-${Math.min(i + batchSize, books.length)})`);
       console.log('─'.repeat(80));
 
-      // Process books in parallel within batch
-      const batchPromises = batch.map(async (book) => {
+      // Process books SEQUENTIALLY within batch to avoid rate limits
+      for (const book of batch) {
         try {
           // Skip if already has good content and not forcing
           const hasGoodContent = book.summary && book.summary.length > 500;
@@ -134,9 +134,10 @@ async function regenerateAllSummaries(options: {
           console.error(`   ❌ Failed: "${book.title}"`, error instanceof Error ? error.message : error);
           stats.failed++;
         }
-      });
-
-      await Promise.all(batchPromises);
+        
+        // Small delay between books within batch (4 seconds = 15 requests per minute)
+        await new Promise(resolve => setTimeout(resolve, 4000));
+      }
 
       // Delay between batches (except for last batch)
       if (i + batchSize < books.length) {
@@ -178,8 +179,8 @@ async function main() {
   const args = process.argv.slice(2);
   
   const options = {
-    batchSize: 10,
-    delayMs: 2000,
+    batchSize: 5, // Reduced default to respect Gemini free tier
+    delayMs: 5000, // Increased to stay under 15 RPM
     forceRegenerate: args.includes('--force'),
     dryRun: args.includes('--dry-run')
   };
