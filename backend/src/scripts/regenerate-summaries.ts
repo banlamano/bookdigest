@@ -8,7 +8,7 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 dotenv.config(); // Default .env
 
 import { PrismaClient } from '@prisma/client';
-import { aiSummaryService } from '../services/ai-summary.service';
+import { aiSummaryService } from '../services/ai-summary-openai.service';
 
 const prisma = new PrismaClient();
 
