@@ -51,7 +51,8 @@ export class AISummaryService {
     if (apiKey) {
       try {
         this.genAI = new GoogleGenerativeAI(apiKey);
-        this.model = this.genAI.getGenerativeModel({ model: 'gemini-pro' });
+        // Using gemini-1.5-pro - the stable, working model for new API keys
+        this.model = this.genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
       } catch (error) {
         console.error('Failed to initialize Gemini AI:', error);
       }
