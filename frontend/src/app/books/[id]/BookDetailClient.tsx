@@ -38,6 +38,7 @@ const LoadingSpinner = ({ message = "Loading..." }: { message?: string }) => (
 );
 
 export default function BookDetailClient({ bookId, initialBook, breadcrumbItems }: BookDetailClientProps) {
+  // ALL HOOKS MUST BE AT THE TOP - Rules of Hooks!
   const router = useRouter();
   const { isAuthenticated, isHydrated } = useAuthStore();
   const queryClient = useQueryClient();
@@ -58,24 +59,8 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
   const book = data?.data?.data?.book || initialBook;
   const freemiumStatus = data?.data?.data?.freemiumStatus;
   const requiresPremium = data?.data?.data?.requiresPremium;
-  
-  // Critical fix: Always render the same thing on first render to avoid hydration mismatch
-  // Since this component is loaded with ssr: false, the first render is always client-side
-  if (!isMounted || !isHydrated) {
-    return <LoadingSpinner message="Loading..." />;
-  }
-  
-  // Check authentication (after hydration is complete)
-  if (!isAuthenticated) {
-    return <LoginGate bookTitle={initialBook?.title || 'this book'} />;
-  }
-  
-  // Show loading while fetching authenticated data
-  if (isLoading) {
-    return <LoadingSpinner message="Loading book details..." />;
-  }
 
-  // Track book views with Google Analytics
+  // Track book views with Google Analytics - MUST be before any return statements
   useEffect(() => {
     if (book) {
       import('@/lib/analytics').then(({ trackBookView }) => {
@@ -84,6 +69,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
     }
   }, [book]);
 
+  // Favorite mutation - MUST be before any return statements
   const favoriteMutation = useMutation({
     mutationFn: () => booksAPI.toggleFavorite(bookId),
     onSuccess: () => {
@@ -100,6 +86,21 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
     }
     favoriteMutation.mutate();
   };
+
+  // NOW we can do conditional rendering - all hooks are already called
+  if (!isMounted || !isHydrated) {
+    return <LoadingSpinner message="Loading..." />;
+  }
+  
+  // Check authentication (after hydration is complete)
+  if (!isAuthenticated) {
+    return <LoginGate bookTitle={initialBook?.title || 'this book'} />;
+  }
+  
+  // Show loading while fetching authenticated data
+  if (isLoading) {
+    return <LoadingSpinner message="Loading book details..." />;
+  }
 
   if (!book) {
     return (
