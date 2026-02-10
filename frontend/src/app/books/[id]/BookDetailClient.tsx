@@ -221,23 +221,45 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                 />
               </div>
 
-              {/* Audio Player - Premium Only */}
-              {book.audioUrl && freemiumStatus?.isPremium && book.summary ? (
+              {/* Audio Player - Always show if available, but gate for free users */}
+              {book.audioUrl && book.summary && (
                 <div className="mb-6">
-                  <EnhancedAudioPlayer 
-                    bookTitle={book.title}
-                    bookSummary={book.summary}
-                    bookId={book.id}
-                  />
+                  {freemiumStatus?.isPremium ? (
+                    <EnhancedAudioPlayer 
+                      bookTitle={book.title}
+                      bookSummary={book.summary}
+                      bookId={book.id}
+                    />
+                  ) : (
+                    <div className="relative">
+                      {/* Show disabled audio player preview */}
+                      <div className="opacity-50 pointer-events-none">
+                        <EnhancedAudioPlayer 
+                          bookTitle={book.title}
+                          bookSummary={book.summary}
+                          bookId={book.id}
+                        />
+                      </div>
+                      {/* Premium overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-gray-900/50 rounded-lg flex items-center justify-center backdrop-blur-sm">
+                        <div className="text-center px-6">
+                          <Headphones className="w-12 h-12 text-yellow-400 mx-auto mb-3" />
+                          <h3 className="text-xl font-bold text-white mb-2">Premium Feature</h3>
+                          <p className="text-gray-200 mb-4">
+                            Listen to this book summary with high-quality AI narration
+                          </p>
+                          <Link 
+                            href="/pricing" 
+                            className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:from-yellow-500 hover:to-yellow-600 transition-all shadow-lg"
+                          >
+                            Upgrade to Premium
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
-              ) : book.audioUrl && !freemiumStatus?.isPremium ? (
-                <div className="mb-6">
-                  <PremiumFeaturePrompt 
-                    feature="Audio Narration" 
-                    description="Listen to this book summary with high-quality AI narration. Available exclusively for Premium members."
-                  />
-                </div>
-              ) : null}
+              )}
 
               <div className="flex gap-4 mt-6">
                 <button 
