@@ -7,7 +7,7 @@ import { useAuthStore } from '@/store/authStore';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Clock, Headphones, Star, Play } from 'lucide-react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { EnhancedAudioPlayer } from '@/components/books/EnhancedAudioPlayer';
 import { BookmarkButton } from '@/components/books/BookmarkButton';
@@ -31,6 +31,12 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
   const router = useRouter();
   const { isAuthenticated } = useAuthStore();
   const queryClient = useQueryClient();
+  const [mounted, setMounted] = React.useState(false);
+
+  // Fix hydration mismatch by waiting for client to mount
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Fetch fresh data (with initial data from server)
   const { data, isLoading } = useQuery({
@@ -43,7 +49,19 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
   const freemiumStatus = data?.data?.data?.freemiumStatus;
   const requiresPremium = data?.data?.data?.requiresPremium;
   
-  // Check if user is authenticated
+  // Before mount, show loading to prevent hydration mismatch
+  if (!mounted) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading book details...</p>
+        </div>
+      </div>
+    );
+  }
+  
+  // After mount, check authentication (client-side only)
   if (!isAuthenticated) {
     return <LoginGate bookTitle={book?.title || 'this book'} />;
   }
