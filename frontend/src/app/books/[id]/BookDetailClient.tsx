@@ -7,7 +7,7 @@ import { useAuthStore } from '@/store/authStore';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Clock, Headphones, Star, Play } from 'lucide-react';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { EnhancedAudioPlayer } from '@/components/books/EnhancedAudioPlayer';
 import { BookmarkButton } from '@/components/books/BookmarkButton';
@@ -31,21 +31,26 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
   const router = useRouter();
   const { isAuthenticated, isHydrated } = useAuthStore();
   const queryClient = useQueryClient();
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Fix hydration by only rendering after mount
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // Fetch fresh data with authentication (client-side)
   const { data, isLoading } = useQuery({
     queryKey: ['book', bookId],
     queryFn: () => booksAPI.getById(bookId),
-    enabled: isAuthenticated && isHydrated, // Only fetch if authenticated AND hydrated
+    enabled: isMounted && isAuthenticated && isHydrated, // Only fetch if mounted, authenticated AND hydrated
   });
 
   const book = data?.data?.data?.book || initialBook;
   const freemiumStatus = data?.data?.data?.freemiumStatus;
   const requiresPremium = data?.data?.data?.requiresPremium;
   
-  // CRITICAL: Wait for Zustand to hydrate before checking auth
-  // This prevents hydration mismatch between server and client
-  if (!isHydrated) {
+  // Show loading on server-side and before hydration
+  if (!isMounted || !isHydrated) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
         <div className="text-center">
