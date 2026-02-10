@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Providers } from '@/components/Providers';
-import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { WebsiteStructuredData, OrganizationStructuredData } from '@/components/StructuredData';
@@ -10,6 +9,11 @@ import FAQSchema from '@/components/FAQSchema';
 import dynamic from 'next/dynamic';
 
 // Import client-only components with SSR disabled to prevent hydration errors
+// Navbar uses useEffect and theme toggle which cause hydration mismatches
+const Navbar = dynamic(() => import('@/components/layout/Navbar').then(mod => ({ default: mod.Navbar })), {
+  ssr: false,
+});
+
 const PWAInstallPrompt = dynamic(() => import('@/components/PWAInstallPrompt').then(mod => ({ default: mod.PWAInstallPrompt })), {
   ssr: false,
 });
