@@ -2,12 +2,12 @@
 
 import { useQuery } from '@tanstack/react-query';
 import { categoriesAPI } from '@/lib/api';
-import { BookCard } from '@/components/books/BookCard';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { useState } from 'react';
 import { BreadcrumbStructuredData } from '@/components/StructuredData';
+import { BookCard } from '@/components/books/BookCard';
 
 interface CategoryBooksClientProps {
   slug: string;

@@ -6,9 +6,10 @@ import { useAuthStore } from '@/store/authStore';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { BookOpen, Clock, TrendingUp, Award, Heart } from 'lucide-react';
-import { BookCard } from '@/components/books/BookCard';
+import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import SubscriptionCard from '@/components/dashboard/SubscriptionCard';
 import FreemiumStatus from '@/components/dashboard/FreemiumStatus';
+import { BookCard } from '@/components/books/BookCard';
 
 export default function DashboardPage() {
   const { isAuthenticated, user, isHydrated } = useAuthStore();

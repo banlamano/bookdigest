@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { booksAPI, categoriesAPI } from '@/lib/api';
-import { BookCard } from '@/components/books/BookCard';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import { Search, Filter, SlidersHorizontal } from 'lucide-react';
+import { BookCard } from '@/components/books/BookCard';
 
 export default function LibraryPage() {
   const [searchQuery, setSearchQuery] = useState('');

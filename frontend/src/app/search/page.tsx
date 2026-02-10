@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { booksAPI } from '@/lib/api';
-import { BookCard } from '@/components/books/BookCard';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import { Search, X } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { BookCard } from '@/components/books/BookCard';
 
 export default function SearchPage() {
   const [searchQuery, setSearchQuery] = useState('');
