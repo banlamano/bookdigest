@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { PrismaClient } from '@prisma/client';
-import { aiSummaryService } from '../services/ai-summary.service';
+import { aiSummaryService } from '../services/ai-summary-openai.service';
 
 const router = Router();
 const prisma = new PrismaClient();
