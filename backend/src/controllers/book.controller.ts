@@ -195,16 +195,12 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
     
     // Premium content restrictions for free users
     if (!isPremiumUser) {
-      // Remove audio for free users
-      const freeBook = {
-        ...book,
-        audioUrl: null, // Audio is premium-only
-      };
-      
+      // Keep audioUrl visible to show the feature (UX improvement for conversions)
+      // Frontend will handle showing upgrade prompt for free users
       return res.json({
         status: 'success',
         data: { 
-          book: freeBook,
+          book, // Return full book data including audioUrl
           freemiumStatus: {
             isPremium: false,
             booksRemaining: freemiumStatus.remaining,
