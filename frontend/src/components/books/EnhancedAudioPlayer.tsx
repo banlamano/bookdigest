@@ -40,6 +40,7 @@ export function EnhancedAudioPlayer({ bookTitle, bookSummary, bookId }: Enhanced
 
   const estimateDuration = (text: string) => {
     // Average speaking rate: 150 words per minute
+    if (!text) return 0;
     const words = text.split(/\s+/).length;
     return (words / 150) * 60; // duration in seconds
   };

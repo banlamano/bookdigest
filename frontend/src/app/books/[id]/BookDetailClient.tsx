@@ -194,7 +194,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
               </div>
 
               {/* Audio Player - Premium Only */}
-              {book.audioUrl && freemiumStatus?.isPremium ? (
+              {book.audioUrl && freemiumStatus?.isPremium && book.summary ? (
                 <div className="mb-6">
                   <EnhancedAudioPlayer 
                     bookTitle={book.title}
@@ -237,27 +237,29 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
           </div>
         </motion.div>
 
-        {/* Content Tabs - Always show for authenticated users */}
-        <motion.div
-          id="book-content"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="mt-8"
-        >
-          <EnhancedBookContent
-            summary={book.summary}
-            keyInsights={book.keyInsights}
-            chapters={book.chapters}
-            quotes={book.quotes}
-            actionItems={book.actionItems}
-          />
+        {/* Content Tabs - Show only if we have summary data */}
+        {book.summary && (
+          <motion.div
+            id="book-content"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-8"
+          >
+            <EnhancedBookContent
+              summary={book.summary}
+              keyInsights={book.keyInsights}
+              chapters={book.chapters}
+              quotes={book.quotes}
+              actionItems={book.actionItems}
+            />
           
-          {/* Social Share Buttons */}
-          <SocialShareButtons 
-            bookTitle={book.title}
-            bookAuthor={book.author}
-          />
-        </motion.div>
+            {/* Social Share Buttons */}
+            <SocialShareButtons 
+              bookTitle={book.title}
+              bookAuthor={book.author}
+            />
+          </motion.div>
+        )}
       </div>
     </div>
   );

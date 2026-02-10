@@ -28,6 +28,11 @@ export default function EnhancedBookContent({
   const parsedQuotes = quotes ? tryParseJSON(quotes) : [];
   const parsedActions = actionItems ? tryParseJSON(actionItems) : [];
 
+  // If no summary, don't render anything
+  if (!summary) {
+    return null;
+  }
+
   return (
     <div className="space-y-6">
       {/* Summary Section - Always visible */}
