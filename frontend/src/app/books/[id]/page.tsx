@@ -9,7 +9,7 @@ export const revalidate = 3600; // Revalidate every hour
 // API base URL
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://bookdigest-lypx.onrender.com';
 
-// Fetch book data on server
+// Fetch book data on server (public data only for metadata)
 async function getBook(id: string) {
   try {
     const controller = new AbortController();
@@ -21,6 +21,16 @@ async function getBook(id: string) {
     });
     
     clearTimeout(timeoutId);
+    
+    // If 401 (auth required), return a minimal book object for the client to handle
+    if (res.status === 401) {
+      return {
+        id,
+        title: 'Book Summary',
+        author: 'Unknown',
+        requiresAuth: true
+      };
+    }
     
     if (!res.ok) {
       return null;
@@ -102,11 +112,13 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
 export default async function BookDetailPage({ params }: { params: { id: string } }) {
   const book = await getBook(params.id);
 
+  // Only return 404 if book truly doesn't exist (not auth error)
   if (!book) {
     notFound();
   }
 
-  // Breadcrumb data for structured data
+  // If book requires auth, client component will handle login gate
+  // Still render the page with minimal data for SEO
   const breadcrumbItems = [
     { name: 'Home', url: 'https://book-digest.com' },
     { name: 'Books', url: 'https://book-digest.com/library' },
