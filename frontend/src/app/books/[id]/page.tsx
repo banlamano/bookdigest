@@ -1,6 +1,19 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import BookDetailClient from './BookDetailClient';
+import dynamic from 'next/dynamic';
+
+// Import BookDetailClient with no SSR to prevent hydration issues
+const BookDetailClient = dynamic(() => import('./BookDetailClient'), {
+  ssr: false,
+  loading: () => (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
+      <div className="text-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+        <p className="mt-4 text-gray-600">Loading book details...</p>
+      </div>
+    </div>
+  ),
+});
 
 // Force dynamic rendering
 export const dynamic = 'force-dynamic';
