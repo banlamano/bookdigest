@@ -129,9 +129,10 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
     // If user is not authenticated, return public book data only
     if (!userId) {
       // Return basic book info without tracking or premium content
+      // Keep audioUrl to show the feature and drive signups
       const publicBook = {
         ...book,
-        audioUrl: null, // Audio requires authentication
+        audioUrl: book.audioUrl, // Show audio feature to drive conversions
         summary: book.summary.substring(0, 500) + '...', // Truncate summary
         keyInsights: '[]', // Hide insights
         chapters: '[]', // Hide chapters
