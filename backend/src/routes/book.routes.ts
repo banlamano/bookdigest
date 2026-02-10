@@ -12,14 +12,17 @@ import {
   getBookReviews,
 } from '../controllers/book.controller';
 import { authenticate, checkSubscription } from '../middleware/auth.middleware';
+import { checkFreemiumLimit } from '../middleware/freemium.middleware';
 
 const router = Router();
 
-// Public routes
+// Public routes (browse only)
 router.get('/', getAllBooks);
 router.get('/featured', getFeaturedBooks);
 router.get('/search', searchBooks);
-router.get('/:id', getBookById);
+
+// Book detail - REQUIRES LOGIN and respects freemium limits
+router.get('/:id', authenticate, checkFreemiumLimit, getBookById);
 router.get('/:id/reviews', getBookReviews);
 
 // Protected routes

@@ -17,6 +17,9 @@ import { BuyOnAmazonButton } from '@/components/books/BuyOnAmazonButton';
 import { BookStructuredData, BreadcrumbStructuredData } from '@/components/StructuredData';
 import SocialShareButtons from '@/components/books/SocialShareButtons';
 import Link from 'next/link';
+import FreemiumStatus from '@/components/freemium/FreemiumStatus';
+import PremiumFeaturePrompt from '@/components/freemium/PremiumFeaturePrompt';
+import LoginGate from '@/components/freemium/LoginGate';
 
 interface BookDetailClientProps {
   bookId: string;
@@ -37,7 +40,13 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
   });
 
   const book = data?.data?.data?.book || initialBook;
+  const freemiumStatus = data?.data?.data?.freemiumStatus;
   const requiresPremium = data?.data?.data?.requiresPremium;
+  
+  // Check if user is authenticated
+  if (!isAuthenticated) {
+    return <LoginGate bookTitle={book?.title || 'this book'} />;
+  }
 
   // Track book views with Google Analytics
   useEffect(() => {
@@ -86,6 +95,17 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
       
       <ReadingProgressTracker bookId={bookId} bookTitle={book?.title || ''} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Freemium Status Banner */}
+        {freemiumStatus && (
+          <FreemiumStatus
+            isPremium={freemiumStatus.isPremium || false}
+            booksRemaining={freemiumStatus.booksRemaining}
+            booksRead={freemiumStatus.booksRead}
+            limit={freemiumStatus.limit}
+          />
+        )}
+        
         {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -173,77 +193,71 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                 />
               </div>
 
-              {requiresPremium ? (
-                <div className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 border-2 border-yellow-400 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                    🔒 Premium Content
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-300 mb-4">
-                    Upgrade to Premium to access the full summary and audio narration.
-                  </p>
-                  <Link href="/pricing" className="btn-primary inline-block">
-                    Upgrade to Premium
-                  </Link>
-                </div>
-              ) : (
-                <>
-                  {/* Audio Player - Always show for free books */}
+              {/* Audio Player - Premium Only */}
+              {book.audioUrl && freemiumStatus?.isPremium ? (
+                <div className="mb-6">
                   <EnhancedAudioPlayer 
                     bookTitle={book.title}
                     bookSummary={book.summary}
                     bookId={book.id}
                   />
-                  <div className="flex gap-4 mt-6">
-                    <button 
-                      onClick={() => {
-                        const summarySection = document.getElementById('book-summary');
-                        summarySection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                      }}
-                      className="btn-primary flex-1"
-                    >
-                      <Play className="w-5 h-5 mr-2" />
-                      Start Reading
-                    </button>
-                    {book.amazonLink && (
-                      <a
-                        href={book.amazonLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-outline flex-1 text-center"
-                      >
-                        Buy Full Book
-                      </a>
-                    )}
-                  </div>
-                </>
-              )}
+                </div>
+              ) : book.audioUrl && !freemiumStatus?.isPremium ? (
+                <div className="mb-6">
+                  <PremiumFeaturePrompt 
+                    feature="Audio Narration" 
+                    description="Listen to this book summary with high-quality AI narration. Available exclusively for Premium members."
+                  />
+                </div>
+              ) : null}
+
+              <div className="flex gap-4 mt-6">
+                <button 
+                  onClick={() => {
+                    const summarySection = document.getElementById('book-summary');
+                    summarySection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }}
+                  className="btn-primary flex-1"
+                >
+                  <Play className="w-5 h-5 mr-2" />
+                  Start Reading
+                </button>
+                {book.amazonLink && (
+                  <a
+                    href={book.amazonLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-outline flex-1 text-center"
+                  >
+                    Buy Full Book
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Content Tabs */}
-        {!requiresPremium && (
-          <motion.div
-            id="book-content"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mt-8"
-          >
-            <EnhancedBookContent
-              summary={book.summary}
-              keyInsights={book.keyInsights}
-              chapters={book.chapters}
-              quotes={book.quotes}
-              actionItems={book.actionItems}
-            />
-            
-            {/* Social Share Buttons */}
-            <SocialShareButtons 
-              bookTitle={book.title}
-              bookAuthor={book.author}
-            />
-          </motion.div>
-        )}
+        {/* Content Tabs - Always show for authenticated users */}
+        <motion.div
+          id="book-content"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mt-8"
+        >
+          <EnhancedBookContent
+            summary={book.summary}
+            keyInsights={book.keyInsights}
+            chapters={book.chapters}
+            quotes={book.quotes}
+            actionItems={book.actionItems}
+          />
+          
+          {/* Social Share Buttons */}
+          <SocialShareButtons 
+            bookTitle={book.title}
+            bookAuthor={book.author}
+          />
+        </motion.div>
       </div>
     </div>
   );

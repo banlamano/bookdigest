@@ -452,7 +452,7 @@ router.get('/analytics', checkAdminAccess, async (req, res) => {
     const conversionRate = totalUsers > 0 ? (premiumUsers / totalUsers) * 100 : 0;
 
     // Engagement metrics - Most popular books
-    let popularBooksWithDetails = [];
+    let popularBooksWithDetails: any[] = [];
     let totalBookViews = 0;
     
     try {
@@ -467,7 +467,7 @@ router.get('/analytics', checkAdminAccess, async (req, res) => {
         take: 10
       });
 
-      if (popularBooks.length > 0) {
+      if (popularBooks && popularBooks.length > 0) {
         // Get book details
         const bookIds = popularBooks.map(b => b.bookId);
         const books = await prisma.book.findMany({
@@ -503,9 +503,11 @@ router.get('/analytics', checkAdminAccess, async (req, res) => {
         
         totalBookViews = popularBooks.reduce((sum, b) => sum + b._count, 0);
       }
-    } catch (error) {
-      logger.error('Error fetching popular books:', error);
-      // Continue with empty array
+    } catch (error: any) {
+      logger.error('Error fetching popular books:', error.message);
+      // Continue with empty arrays - this is fine
+      popularBooksWithDetails = [];
+      totalBookViews = 0;
     }
 
     // User growth over time (simplified for SQLite/PostgreSQL compatibility)

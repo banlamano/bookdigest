@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import { PrismaClient } from '@prisma/client';
 import { AppError } from '../middleware/error.middleware';
+import { getFreemiumStatus } from '../middleware/freemium.middleware';
 
 const prisma = new PrismaClient();
 
@@ -109,6 +110,7 @@ export const getFeaturedBooks = async (req: Request, res: Response, next: NextFu
 export const getBookById = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { id } = req.params;
+    const userId = req.user!.userId; // User is authenticated (required by middleware)
 
     const book = await prisma.book.findUnique({
       where: { id },
@@ -124,32 +126,44 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       throw new AppError('Book not found', 404);
     }
 
-    // Check if premium book and user doesn't have access
-    const hasAccess = await checkPremiumAccess(req.user?.userId, book.isPremium);
+    // Get user's freemium status
+    const freemiumStatus = await getFreemiumStatus(userId);
     
-    if (book.isPremium && !hasAccess) {
-      // Return limited data for premium books without access
-      const limitedBook = {
+    // Check if user has premium access
+    const isPremiumUser = freemiumStatus.isPremium;
+    
+    // Premium content restrictions for free users
+    if (!isPremiumUser) {
+      // Remove audio for free users
+      const freeBook = {
         ...book,
-        summary: book.summary?.substring(0, 200) + '...' || '',
-        keyInsights: [],
-        chapters: [],
-        quotes: [],
-        actionItems: [],
-        audioUrl: null,
+        audioUrl: null, // Audio is premium-only
       };
+      
       return res.json({
         status: 'success',
-        data: { book: limitedBook, requiresPremium: true },
+        data: { 
+          book: freeBook,
+          freemiumStatus: {
+            isPremium: false,
+            booksRemaining: freemiumStatus.remaining,
+            booksRead: freemiumStatus.used,
+            limit: freemiumStatus.limit
+          }
+        },
       });
     }
 
-    // Add cache headers for individual books
-    res.set('Cache-Control', 'public, max-age=600, s-maxage=1200, stale-while-revalidate=86400');
-    
+    // Premium users get everything
     res.json({
       status: 'success',
-      data: { book },
+      data: { 
+        book,
+        freemiumStatus: {
+          isPremium: true,
+          unlimited: true
+        }
+      },
     });
   } catch (error) {
     next(error);
