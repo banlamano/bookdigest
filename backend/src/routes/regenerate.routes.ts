@@ -7,12 +7,13 @@ const prisma = new PrismaClient();
 
 // Admin endpoint to regenerate summaries
 router.post('/regenerate-summaries', async (req, res) => {
-  const { batchSize = 10, force = false, limit } = req.body;
+  const { batchSize = 10, force = false, limit, offset = 0 } = req.body;
   
   try {
-    console.log('Starting summary regeneration...');
+    console.log(`Starting summary regeneration... (offset: ${offset}, limit: ${limit || 'all'})`);
     
     const books = await prisma.book.findMany({
+      skip: offset,
       take: limit,
       select: {
         id: true,
