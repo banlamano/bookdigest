@@ -59,11 +59,13 @@ async function getBook(id: string) {
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+  // Fetch book data for metadata only (won't cause hydration issues)
   const book = await getBook(params.id);
 
   if (!book) {
     return {
-      title: 'Book Not Found',
+      title: 'Book Summary - BookDigest',
+      description: 'Discover book summaries, key insights, and actionable takeaways.',
     };
   }
 
@@ -123,25 +125,18 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
 }
 
 export default async function BookDetailPage({ params }: { params: { id: string } }) {
-  const book = await getBook(params.id);
-
-  // Only return 404 if book truly doesn't exist (not auth error)
-  if (!book) {
-    notFound();
-  }
-
-  // If book requires auth, client component will handle login gate
-  // Still render the page with minimal data for SEO
+  // Don't fetch book data server-side to avoid hydration issues
+  // Let the client component handle all data fetching with proper auth
   const breadcrumbItems = [
     { name: 'Home', url: 'https://book-digest.com' },
     { name: 'Books', url: 'https://book-digest.com/library' },
-    { name: book.category?.name || 'Category', url: `https://book-digest.com/categories/${book.category?.slug || ''}` },
-    { name: book.title, url: `https://book-digest.com/books/${params.id}` },
+    { name: 'Category', url: 'https://book-digest.com/categories' },
+    { name: 'Book Details', url: `https://book-digest.com/books/${params.id}` },
   ];
 
   return (
     <>
-      <BookDetailClient bookId={params.id} initialBook={book} breadcrumbItems={breadcrumbItems} />
+      <BookDetailClient bookId={params.id} initialBook={null} breadcrumbItems={breadcrumbItems} />
     </>
   );
 }
