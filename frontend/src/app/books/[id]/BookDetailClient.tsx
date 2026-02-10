@@ -29,21 +29,34 @@ interface BookDetailClientProps {
 
 export default function BookDetailClient({ bookId, initialBook, breadcrumbItems }: BookDetailClientProps) {
   const router = useRouter();
-  const { isAuthenticated } = useAuthStore();
+  const { isAuthenticated, isHydrated } = useAuthStore();
   const queryClient = useQueryClient();
 
   // Fetch fresh data with authentication (client-side)
   const { data, isLoading } = useQuery({
     queryKey: ['book', bookId],
     queryFn: () => booksAPI.getById(bookId),
-    enabled: isAuthenticated, // Only fetch if authenticated
+    enabled: isAuthenticated && isHydrated, // Only fetch if authenticated AND hydrated
   });
 
   const book = data?.data?.data?.book || initialBook;
   const freemiumStatus = data?.data?.data?.freemiumStatus;
   const requiresPremium = data?.data?.data?.requiresPremium;
   
-  // Check authentication (now safe since component is client-only)
+  // CRITICAL: Wait for Zustand to hydrate before checking auth
+  // This prevents hydration mismatch between server and client
+  if (!isHydrated) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+  
+  // Check authentication (after hydration is complete)
   if (!isAuthenticated) {
     return <LoginGate bookTitle={initialBook?.title || 'this book'} />;
   }

@@ -4,11 +4,19 @@ import './globals.css';
 import { Providers } from '@/components/Providers';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { PWAInstallPrompt } from '@/components/PWAInstallPrompt';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { WebsiteStructuredData, OrganizationStructuredData } from '@/components/StructuredData';
-import EmailCapturePopup from '@/components/EmailCapturePopup';
 import FAQSchema from '@/components/FAQSchema';
+import dynamic from 'next/dynamic';
+
+// Import client-only components with SSR disabled to prevent hydration errors
+const PWAInstallPrompt = dynamic(() => import('@/components/PWAInstallPrompt').then(mod => ({ default: mod.PWAInstallPrompt })), {
+  ssr: false,
+});
+
+const EmailCapturePopup = dynamic(() => import('@/components/EmailCapturePopup'), {
+  ssr: false,
+});
 
 const inter = Inter({ 
   subsets: ['latin'], 
