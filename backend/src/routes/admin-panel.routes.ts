@@ -403,41 +403,34 @@ router.get('/analytics', checkAdminAccess, async (req, res) => {
     startDate.setDate(startDate.getDate() - days);
 
     // User metrics
-    const [totalUsers, newUsers, activeUsers, previousPeriodUsers] = await Promise.all([
-      // Total users
-      prisma.user.count(),
-      
-      // New users in period
-      prisma.user.count({
-        where: {
-          createdAt: {
-            gte: startDate
-          }
+    const totalUsers = await prisma.user.count();
+    
+    const newUsers = await prisma.user.count({
+      where: {
+        createdAt: {
+          gte: startDate
         }
-      }),
-      
-      // Active users (have progress in period)
-      prisma.user.count({
-        where: {
-          readingProgress: {
-            some: {
-              updatedAt: {
-                gte: startDate
-              }
-            }
-          }
+      }
+    });
+    
+    // Active users - users with any reading progress
+    const usersWithProgress = await prisma.readingProgress.groupBy({
+      by: ['userId'],
+      where: {
+        updatedAt: {
+          gte: startDate
         }
-      }),
-      
-      // Users from previous period (for growth calculation)
-      prisma.user.count({
-        where: {
-          createdAt: {
-            lt: startDate
-          }
+      }
+    });
+    const activeUsers = usersWithProgress.length;
+    
+    const previousPeriodUsers = await prisma.user.count({
+      where: {
+        createdAt: {
+          lt: startDate
         }
-      })
-    ]);
+      }
+    });
 
     // Subscription metrics
     const subscriptionStats = await prisma.user.groupBy({
@@ -459,49 +452,61 @@ router.get('/analytics', checkAdminAccess, async (req, res) => {
     const conversionRate = totalUsers > 0 ? (premiumUsers / totalUsers) * 100 : 0;
 
     // Engagement metrics - Most popular books
-    const popularBooks = await prisma.readingProgress.groupBy({
-      by: ['bookId'],
-      _count: true,
-      orderBy: {
-        _count: {
-          bookId: 'desc'
-        }
-      },
-      take: 10
-    });
-
-    // Get book details
-    const bookIds = popularBooks.map(b => b.bookId);
-    const books = await prisma.book.findMany({
-      where: {
-        id: {
-          in: bookIds
-        }
-      },
-      select: {
-        id: true,
-        title: true,
-        author: true,
-        coverImage: true,
-        category: {
-          select: {
-            name: true
+    let popularBooksWithDetails = [];
+    let totalBookViews = 0;
+    
+    try {
+      const popularBooks = await prisma.readingProgress.groupBy({
+        by: ['bookId'],
+        _count: true,
+        orderBy: {
+          _count: {
+            bookId: 'desc'
           }
-        }
-      }
-    });
+        },
+        take: 10
+      });
 
-    const popularBooksWithDetails = popularBooks.map(pb => {
-      const book = books.find(b => b.id === pb.bookId);
-      return {
-        bookId: pb.bookId,
-        views: pb._count,
-        title: book?.title || 'Unknown',
-        author: book?.author || 'Unknown',
-        coverImage: book?.coverImage,
-        category: book?.category?.name || 'Uncategorized'
-      };
-    });
+      if (popularBooks.length > 0) {
+        // Get book details
+        const bookIds = popularBooks.map(b => b.bookId);
+        const books = await prisma.book.findMany({
+          where: {
+            id: {
+              in: bookIds
+            }
+          },
+          select: {
+            id: true,
+            title: true,
+            author: true,
+            coverImage: true,
+            category: {
+              select: {
+                name: true
+              }
+            }
+          }
+        });
+
+        popularBooksWithDetails = popularBooks.map(pb => {
+          const book = books.find(b => b.id === pb.bookId);
+          return {
+            bookId: pb.bookId,
+            views: pb._count,
+            title: book?.title || 'Unknown',
+            author: book?.author || 'Unknown',
+            coverImage: book?.coverImage,
+            category: book?.category?.name || 'Uncategorized'
+          };
+        });
+        
+        totalBookViews = popularBooks.reduce((sum, b) => sum + b._count, 0);
+      }
+    } catch (error) {
+      logger.error('Error fetching popular books:', error);
+      // Continue with empty array
+    }
 
     // User growth over time (simplified for SQLite/PostgreSQL compatibility)
     const allUsers = await prisma.user.findMany({
