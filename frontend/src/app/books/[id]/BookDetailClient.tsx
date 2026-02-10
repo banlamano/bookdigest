@@ -37,7 +37,6 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
     queryKey: ['book', bookId],
     queryFn: () => booksAPI.getById(bookId),
     enabled: isAuthenticated, // Only fetch if authenticated
-    initialData: initialBook ? { data: { data: { book: initialBook } } } : undefined,
   });
 
   const book = data?.data?.data?.book || initialBook;
