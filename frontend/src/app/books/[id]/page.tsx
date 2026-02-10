@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import dynamic from 'next/dynamic';
+import dynamicImport from 'next/dynamic';
 
 // Import BookDetailClient with no SSR to prevent hydration issues
-const BookDetailClient = dynamic(() => import('./BookDetailClient'), {
+const BookDetailClient = dynamicImport(() => import('./BookDetailClient'), {
   ssr: false,
   loading: () => (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
