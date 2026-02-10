@@ -117,7 +117,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
             <div className="md:col-span-1">
               <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src={book.coverImage || '/placeholder-book.jpg'}
+                  src={book.coverImage || '/placeholder-book.svg'}
                   alt={book.title}
                   fill
                   className="object-cover"
@@ -128,7 +128,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                   sizes="(max-width: 768px) 100vw, 400px"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = '/placeholder-book.jpg';
+                    target.src = '/placeholder-book.svg';
                   }}
                 />
                 {book.isPremium && (

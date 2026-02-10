@@ -110,7 +110,7 @@ export const getFeaturedBooks = async (req: Request, res: Response, next: NextFu
 export const getBookById = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { id } = req.params;
-    const userId = req.user!.userId; // User is authenticated (required by middleware)
+    const userId = req.user?.userId; // User may or may not be authenticated
 
     const book = await prisma.book.findUnique({
       where: { id },
@@ -124,6 +124,29 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
 
     if (!book) {
       throw new AppError('Book not found', 404);
+    }
+
+    // If user is not authenticated, return public book data only
+    if (!userId) {
+      // Return basic book info without tracking or premium content
+      const publicBook = {
+        ...book,
+        audioUrl: null, // Audio requires authentication
+        summary: book.summary.substring(0, 500) + '...', // Truncate summary
+        keyInsights: '[]', // Hide insights
+        chapters: '[]', // Hide chapters
+        quotes: '[]', // Hide quotes
+        actionItems: '[]', // Hide action items
+      };
+      
+      return res.json({
+        status: 'success',
+        data: { 
+          book: publicBook,
+          requiresAuth: true,
+          message: 'Login to access full content'
+        },
+      });
     }
 
     // CRITICAL: Track book access for freemium limit enforcement
@@ -158,6 +181,14 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
 
     // Get user's freemium status (after tracking access)
     const freemiumStatus = await getFreemiumStatus(userId);
+    
+    // Check freemium limits for free users
+    if (!freemiumStatus.isPremium && freemiumStatus.remaining <= 0) {
+      throw new AppError(
+        `Free tier limit reached. You've read ${freemiumStatus.used} books this month. Upgrade to Premium for unlimited access.`,
+        403
+      );
+    }
     
     // Check if user has premium access
     const isPremiumUser = freemiumStatus.isPremium;

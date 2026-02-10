@@ -21,8 +21,8 @@ router.get('/', getAllBooks);
 router.get('/featured', getFeaturedBooks);
 router.get('/search', searchBooks);
 
-// Book detail - REQUIRES LOGIN and respects freemium limits
-router.get('/:id', authenticate, checkFreemiumLimit, getBookById);
+// Book detail - Public for metadata, but content restricted by authentication
+router.get('/:id', getBookById);
 router.get('/:id/reviews', getBookReviews);
 
 // Protected routes
