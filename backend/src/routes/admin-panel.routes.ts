@@ -561,7 +561,7 @@ router.get('/analytics', checkAdminAccess, async (req, res) => {
         },
         engagementMetrics: {
           popularBooks: popularBooksWithDetails,
-          totalBookViews: popularBooks.reduce((sum, b) => sum + b._count, 0)
+          totalBookViews: totalBookViews
         }
       }
     });
