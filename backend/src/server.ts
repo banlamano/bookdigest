@@ -29,6 +29,9 @@ const prisma = new PrismaClient();
 const app: Express = express();
 const PORT = process.env.PORT || 5000;
 
+// Trust proxy - required for Render.com and rate limiting
+app.set('trust proxy', 1);
+
 // Security middleware
 app.use(helmet());
 app.use(cors({
