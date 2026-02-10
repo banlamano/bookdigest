@@ -394,4 +394,181 @@ router.delete('/users/:userId', checkAdminAccess, async (req: any, res: any) => 
   }
 });
 
+// Analytics endpoint
+router.get('/analytics', checkAdminAccess, async (req, res) => {
+  try {
+    const { period = '30' } = req.query; // days: 7, 30, 90
+    const days = parseInt(period as string);
+    const startDate = new Date();
+    startDate.setDate(startDate.getDate() - days);
+
+    // User metrics
+    const [totalUsers, newUsers, activeUsers, previousPeriodUsers] = await Promise.all([
+      // Total users
+      prisma.user.count(),
+      
+      // New users in period
+      prisma.user.count({
+        where: {
+          createdAt: {
+            gte: startDate
+          }
+        }
+      }),
+      
+      // Active users (have progress in period)
+      prisma.user.count({
+        where: {
+          readingProgress: {
+            some: {
+              updatedAt: {
+                gte: startDate
+              }
+            }
+          }
+        }
+      }),
+      
+      // Users from previous period (for growth calculation)
+      prisma.user.count({
+        where: {
+          createdAt: {
+            lt: startDate
+          }
+        }
+      })
+    ]);
+
+    // Subscription metrics
+    const subscriptionStats = await prisma.user.groupBy({
+      by: ['subscriptionType'],
+      _count: true
+    });
+
+    const freeUsers = subscriptionStats.find(s => s.subscriptionType === 'FREE')?._count || 0;
+    const premiumMonthly = subscriptionStats.find(s => s.subscriptionType === 'PREMIUM_MONTHLY')?._count || 0;
+    const premiumYearly = subscriptionStats.find(s => s.subscriptionType === 'PREMIUM_YEARLY')?._count || 0;
+    const premiumUsers = premiumMonthly + premiumYearly;
+
+    // Calculate MRR (Monthly Recurring Revenue)
+    const monthlyPrice = 9.99;
+    const yearlyMonthlyEquivalent = 79.99 / 12;
+    const mrr = (premiumMonthly * monthlyPrice) + (premiumYearly * yearlyMonthlyEquivalent);
+
+    // Conversion rate
+    const conversionRate = totalUsers > 0 ? (premiumUsers / totalUsers) * 100 : 0;
+
+    // Engagement metrics - Most popular books
+    const popularBooks = await prisma.readingProgress.groupBy({
+      by: ['bookId'],
+      _count: true,
+      orderBy: {
+        _count: {
+          bookId: 'desc'
+        }
+      },
+      take: 10
+    });
+
+    // Get book details
+    const bookIds = popularBooks.map(b => b.bookId);
+    const books = await prisma.book.findMany({
+      where: {
+        id: {
+          in: bookIds
+        }
+      },
+      select: {
+        id: true,
+        title: true,
+        author: true,
+        coverImage: true,
+        category: {
+          select: {
+            name: true
+          }
+        }
+      }
+    });
+
+    const popularBooksWithDetails = popularBooks.map(pb => {
+      const book = books.find(b => b.id === pb.bookId);
+      return {
+        bookId: pb.bookId,
+        views: pb._count,
+        title: book?.title || 'Unknown',
+        author: book?.author || 'Unknown',
+        coverImage: book?.coverImage,
+        category: book?.category?.name || 'Uncategorized'
+      };
+    });
+
+    // User growth over time (simplified for SQLite/PostgreSQL compatibility)
+    const allUsers = await prisma.user.findMany({
+      where: {
+        createdAt: {
+          gte: startDate
+        }
+      },
+      select: {
+        createdAt: true
+      },
+      orderBy: {
+        createdAt: 'asc'
+      }
+    });
+
+    // Group by date
+    const userGrowthMap = new Map<string, number>();
+    allUsers.forEach(user => {
+      const date = user.createdAt.toISOString().split('T')[0];
+      userGrowthMap.set(date, (userGrowthMap.get(date) || 0) + 1);
+    });
+
+    const userGrowthData = Array.from(userGrowthMap.entries()).map(([date, count]) => ({
+      date,
+      count
+    }));
+
+    // Calculate growth percentage
+    const userGrowthPercentage = previousPeriodUsers > 0 
+      ? ((newUsers / previousPeriodUsers) * 100).toFixed(1)
+      : '100';
+
+    res.json({
+      success: true,
+      data: {
+        period: days,
+        userMetrics: {
+          total: totalUsers,
+          new: newUsers,
+          active: activeUsers,
+          growth: `${userGrowthPercentage}%`,
+          growthData: userGrowthData
+        },
+        subscriptionMetrics: {
+          free: freeUsers,
+          premiumMonthly,
+          premiumYearly,
+          totalPremium: premiumUsers,
+          conversionRate: conversionRate.toFixed(2) + '%',
+          mrr: mrr.toFixed(2)
+        },
+        engagementMetrics: {
+          popularBooks: popularBooksWithDetails,
+          totalBookViews: popularBooks.reduce((sum, b) => sum + b._count, 0)
+        }
+      }
+    });
+
+  } catch (error: any) {
+    logger.error('Analytics error:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: 'Failed to fetch analytics',
+      error: error.message 
+    });
+  }
+});
+
 export default router;
