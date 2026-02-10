@@ -126,26 +126,16 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       throw new AppError('Book not found', 404);
     }
 
-    // If user is not authenticated, return public book data only
+    // TEMPORARY: Paywall disabled for testing - show full content to everyone
     if (!userId) {
-      // Return basic book info without tracking or premium content
-      // Keep audioUrl to show the feature and drive signups
-      const publicBook = {
-        ...book,
-        audioUrl: book.audioUrl, // Show audio feature to drive conversions
-        summary: book.summary.substring(0, 500) + '...', // Truncate summary
-        keyInsights: '[]', // Hide insights
-        chapters: '[]', // Hide chapters
-        quotes: '[]', // Hide quotes
-        actionItems: '[]', // Hide action items
-      };
-      
+      // Return full book data for testing (no authentication required)
       return res.json({
         status: 'success',
         data: { 
-          book: publicBook,
-          requiresAuth: true,
-          message: 'Login to access full content'
+          book,
+          requiresAuth: false,
+          testMode: true,
+          message: 'Paywall temporarily disabled for testing'
         },
       });
     }
