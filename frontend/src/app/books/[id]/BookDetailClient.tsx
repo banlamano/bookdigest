@@ -27,6 +27,16 @@ interface BookDetailClientProps {
   breadcrumbItems: Array<{ name: string; url: string }>;
 }
 
+// Loading component to avoid duplication
+const LoadingSpinner = ({ message = "Loading..." }: { message?: string }) => (
+  <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
+    <div className="text-center">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+      <p className="mt-4 text-gray-600">{message}</p>
+    </div>
+  </div>
+);
+
 export default function BookDetailClient({ bookId, initialBook, breadcrumbItems }: BookDetailClientProps) {
   const router = useRouter();
   const { isAuthenticated, isHydrated } = useAuthStore();
@@ -49,16 +59,10 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
   const freemiumStatus = data?.data?.data?.freemiumStatus;
   const requiresPremium = data?.data?.data?.requiresPremium;
   
-  // Show loading on server-side and before hydration
+  // Critical fix: Always render the same thing on first render to avoid hydration mismatch
+  // Since this component is loaded with ssr: false, the first render is always client-side
   if (!isMounted || !isHydrated) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading...</p>
-        </div>
-      </div>
-    );
+    return <LoadingSpinner message="Loading..." />;
   }
   
   // Check authentication (after hydration is complete)
@@ -68,14 +72,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
   
   // Show loading while fetching authenticated data
   if (isLoading) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading book details...</p>
-        </div>
-      </div>
-    );
+    return <LoadingSpinner message="Loading book details..." />;
   }
 
   // Track book views with Google Analytics
