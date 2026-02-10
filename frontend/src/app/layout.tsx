@@ -149,7 +149,7 @@ export default function RootLayout({
         <OrganizationStructuredData />
         <FAQSchema />
       </head>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} font-sans antialiased`} suppressHydrationWarning>
         <Providers>
           <div className="flex min-h-screen flex-col">
             <Navbar />
