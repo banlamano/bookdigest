@@ -32,11 +32,12 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
   const { isAuthenticated } = useAuthStore();
   const queryClient = useQueryClient();
 
-  // Fetch fresh data (with initial data from server)
+  // Fetch fresh data with authentication (client-side)
   const { data, isLoading } = useQuery({
     queryKey: ['book', bookId],
     queryFn: () => booksAPI.getById(bookId),
-    enabled: false, // Don't refetch on mount, use initial data
+    enabled: isAuthenticated, // Only fetch if authenticated
+    initialData: initialBook ? { data: { data: { book: initialBook } } } : undefined,
   });
 
   const book = data?.data?.data?.book || initialBook;
@@ -45,7 +46,19 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
   
   // Check authentication (now safe since component is client-only)
   if (!isAuthenticated) {
-    return <LoginGate bookTitle={book?.title || 'this book'} />;
+    return <LoginGate bookTitle={initialBook?.title || 'this book'} />;
+  }
+  
+  // Show loading while fetching authenticated data
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading book details...</p>
+        </div>
+      </div>
+    );
   }
 
   // Track book views with Google Analytics
