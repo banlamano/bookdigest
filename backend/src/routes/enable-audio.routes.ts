@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { PrismaClient } from '@prisma/client';
-import { authenticateToken, isAdmin } from '../middleware/auth.middleware';
+import { authenticate, authorize } from '../middleware/auth.middleware';
 
 const router = Router();
 const prisma = new PrismaClient();
@@ -9,7 +9,7 @@ const prisma = new PrismaClient();
  * Admin-only endpoint to enable audio for all books
  * Sets audioUrl to 'browser-tts' for browser Web Speech API
  */
-router.post('/enable-audio', authenticateToken, isAdmin, async (req, res) => {
+router.post('/enable-audio', authenticate, authorize('ADMIN'), async (req, res) => {
   try {
     console.log('Enabling audio for all books...');
     
