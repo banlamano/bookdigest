@@ -48,9 +48,12 @@ async function regenerateAllSummaries(options: {
   console.log(`- Force regenerate: ${forceRegenerate}`);
   console.log(`- Dry run: ${dryRun}`);
   console.log(`- AI Service available: ${aiSummaryService.isAvailable() ? '✅ YES' : '❌ NO (will use fallback)'}\n`);
+  console.log(`- OPENAI_API_KEY found: ${process.env.OPENAI_API_KEY ? '✅ YES' : '❌ NO'}\n`);
 
   if (!aiSummaryService.isAvailable()) {
-    console.warn('⚠️  Warning: GEMINI_API_KEY not found. Will use enhanced fallback summaries.\n');
+    console.error('⚠️  ERROR: OPENAI_API_KEY not found in environment variables!');
+    console.error('Please add OPENAI_API_KEY to your Render environment variables.');
+    throw new Error('OPENAI_API_KEY is required');
   }
 
   try {
