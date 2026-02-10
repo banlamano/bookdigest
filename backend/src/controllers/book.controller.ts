@@ -175,7 +175,7 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
           progress: 0,
           currentChapter: 0,
           timeSpent: 0,
-          isCompleted: false,
+          isCompleted: 0,
         },
       });
     }
@@ -361,7 +361,7 @@ export const updateProgress = async (req: Request, res: Response, next: NextFunc
         currentChapter,
         audioProgress,
         timeSpent,
-        isCompleted,
+        isCompleted: isCompleted ? 1 : 0,
         completedAt: isCompleted ? new Date() : null,
       },
       create: {
@@ -371,7 +371,7 @@ export const updateProgress = async (req: Request, res: Response, next: NextFunc
         currentChapter,
         audioProgress,
         timeSpent,
-        isCompleted,
+        isCompleted: isCompleted ? 1 : 0,
         completedAt: isCompleted ? new Date() : null,
       },
     });
