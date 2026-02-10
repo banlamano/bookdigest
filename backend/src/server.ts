@@ -15,6 +15,7 @@ import adminRoutes from './routes/admin.routes';
 import adminSimpleRoutes from './routes/admin-simple.routes';
 import emailCaptureRoutes from './routes/email-capture.routes';
 import updateCoversRoutes from './routes/update-covers.routes';
+import addCoversRoutes from './routes/add-covers.routes';
 import listBooksRoutes from './routes/list-books.routes';
 import adminPanelRoutes from './routes/admin-panel.routes';
 import enableAudioRoutes from './routes/enable-audio.routes';
