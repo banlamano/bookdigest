@@ -90,7 +90,7 @@ async function regenerateAllSummaries(options: {
           if (!forceRegenerate && hasGoodContent) {
             console.log(`⏭️  Skipped: "${book.title}" (already has content)`);
             stats.skipped++;
-            return;
+            continue;
           }
 
           stats.processed++;
