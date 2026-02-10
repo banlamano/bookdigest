@@ -17,6 +17,7 @@ import emailCaptureRoutes from './routes/email-capture.routes';
 import updateCoversRoutes from './routes/update-covers.routes';
 import listBooksRoutes from './routes/list-books.routes';
 import adminPanelRoutes from './routes/admin-panel.routes';
+import enableAudioRoutes from './routes/enable-audio.routes';
 import { errorHandler } from './middleware/error.middleware';
 import { logger } from './utils/logger';
 import { PrismaClient } from '@prisma/client';
@@ -77,6 +78,7 @@ app.use('/api/email-capture', emailCaptureRoutes);
 app.use('/api/admin', updateCoversRoutes);
 app.use('/api/admin-simple', listBooksRoutes);
 app.use('/api/admin-panel', adminPanelRoutes);
+app.use('/api/admin', enableAudioRoutes);
 
 // Error handling
 app.use(errorHandler);
