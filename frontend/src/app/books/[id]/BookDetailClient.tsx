@@ -50,7 +50,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
   }, []);
 
   // Fetch fresh data with authentication (client-side)
-  const { data, isLoading } = useQuery({
+  const { data, isLoading, isError, error } = useQuery({
     queryKey: ['book', bookId],
     queryFn: () => booksAPI.getById(bookId),
     enabled: isMounted && isAuthenticated && isHydrated, // Only fetch if mounted, authenticated AND hydrated
@@ -102,7 +102,39 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
     return <LoadingSpinner message="Loading book details..." />;
   }
 
-  if (!book) {
+  // Handle freemium limit reached (403) gracefully
+  if (isError) {
+    const status = (error as any)?.response?.status;
+    const message = (error as any)?.response?.data?.message || (error as any)?.message;
+
+    if (status === 403) {
+      return (
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12">
+          <div className="max-w-4xl mx-auto px-4">
+            <PremiumFeaturePrompt
+              feature="Unlimited Access"
+              description={
+                message ||
+                "You've reached your free monthly limit. Upgrade to Premium for unlimited reading, key insights, and audio narration."
+              }
+            />
+          </div>
+        </div>
+      );
+    }
+
+    return (
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
+        <div className="text-center max-w-md px-4">
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Something went wrong</h1>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">{message || 'Please try again.'}</p>
+          <Link href="/library" className="btn-primary">Back to Library</Link>
+        </div>
+      </div>
+    );
+  }
+
+  if (!book) { 
     return (
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
         <div className="text-center">

@@ -36,7 +36,10 @@ export default function EnhancedBookContent({
   return (
     <div className="space-y-6">
       {/* Summary Section - Always visible */}
-      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-6 border border-blue-200 dark:border-gray-600">
+      <div
+        id="book-summary"
+        className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-6 border border-blue-200 dark:border-gray-600"
+      >
         <div className="flex items-center gap-2 mb-4">
           <Sparkles className="w-6 h-6 text-blue-600 dark:text-blue-400" />
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
