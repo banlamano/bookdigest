@@ -47,6 +47,7 @@ router.post('/regenerate-summaries', async (req, res) => {
           const enhanced = await aiSummaryService.generateEnhancedSummary({
             title: book.title,
             author: book.author,
+            description: book.description || undefined,
             categories: categories,
             publishedDate: book.publishedYear ? `${book.publishedYear}-01-01` : undefined
           });

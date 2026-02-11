@@ -27,10 +27,18 @@ export const checkFreemiumLimit = async (req: Request, res: Response, next: Next
 
     // If user has premium subscription, allow access
     const isPremiumUser = user.subscriptionType !== 'FREE';
-    const subscriptionActive = user.subscriptionEnd ? new Date(user.subscriptionEnd) > new Date() : false;
-
-    if (isPremiumUser && subscriptionActive) {
-      return next();
+    
+    if (isPremiumUser) {
+      // If no expiration date, allow unlimited access
+      if (!user.subscriptionEnd) {
+        return next();
+      }
+      
+      // If expiration date is set, check if active
+      const subscriptionActive = new Date(user.subscriptionEnd) > new Date();
+      if (subscriptionActive) {
+        return next();
+      }
     }
 
     // For free users, check monthly limit
