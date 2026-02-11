@@ -6,16 +6,11 @@ import {
   cancelSubscription,
 } from '../controllers/payment.controller';
 import { authenticate } from '../middleware/auth.middleware';
-import express from 'express';
 
 const router = Router();
 
-// Webhook needs raw body
-router.post(
-  '/webhook',
-  express.raw({ type: 'application/json' }),
-  handleWebhook
-);
+// Webhook raw body parsing is handled at app level in server.ts (must run before express.json)
+router.post('/webhook', handleWebhook);
 
 router.post('/create-checkout-session', authenticate, createCheckoutSession);
 router.get('/subscription-status', authenticate, getSubscriptionStatus);

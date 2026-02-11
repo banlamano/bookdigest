@@ -57,8 +57,11 @@ const limiter = rateLimit({
 });
 app.use('/api', limiter);
 
-// Body parsing middleware for all routes
-// Note: Stripe webhook route uses express.raw() at the route level (see payment.routes.ts)
+// Stripe webhook MUST use raw body and MUST be registered before express.json()
+// This ensures Stripe signature verification works reliably.
+app.use('/api/payments/webhook', express.raw({ type: 'application/json' }));
+
+// Body parsing middleware for all other routes
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
