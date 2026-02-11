@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
+import { OptimizedBookCover } from './OptimizedBookCover';
 import { Clock, Headphones, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -31,22 +31,10 @@ export function BookCard({ book }: BookCardProps) {
     >
       <Link href={`/books/${book.id}`}>
         <div className="relative aspect-[3/4] overflow-hidden bg-gray-100">
-          <Image
+          <OptimizedBookCover
             src={book.coverImage || '/placeholder-book.svg'}
             alt={book.title}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            quality={85}
-            unoptimized={true}
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              // Simple fallback to placeholder
-              if (!target.src.includes('placeholder-book.svg')) {
-                target.src = '/placeholder-book.svg';
-              }
-            }}
+            className="group-hover:scale-105 transition-transform duration-300"
           />
           {book.isPremium && (
             <div className="absolute top-2 right-2">
