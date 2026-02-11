@@ -21,7 +21,7 @@ async function fetchFromGoogleBooks(title: string, author: string): Promise<{ de
     const query = `${title} ${author}`;
     const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&maxResults=1`;
     
-    const response = await axios.get<{ items?: GoogleBookData[] }>(url);
+    const response = await axios.get<{ items?: GoogleBookData[] }>(url, { timeout: 8000 });
     
     if (response.data.items && response.data.items.length > 0) {
       const book = response.data.items[0];
@@ -50,6 +50,7 @@ router.post('/add-descriptions', async (req, res) => {
     const books = await prisma.book.findMany({
       skip: offset,
       take: limit,
+      orderBy: { createdAt: 'desc' },
       select: {
         id: true,
         title: true,
@@ -100,7 +101,9 @@ router.post('/add-descriptions', async (req, res) => {
       }
       
       // Small delay to avoid rate limits
-      await new Promise(resolve => setTimeout(resolve, 500));
+      if (delayMs > 0) {
+        await new Promise(resolve => setTimeout(resolve, delayMs));
+      }
     }
     
     res.json({
