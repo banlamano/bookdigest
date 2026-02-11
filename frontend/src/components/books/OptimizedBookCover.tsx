@@ -26,6 +26,10 @@ export function OptimizedBookCover({ src, alt, className = '', priority = false 
     // First failure: retry the SAME URL but bypass Next image optimization.
     // This helps when some remote hosts intermittently fail through the optimizer under load.
     if (!hasError) {
+      // Force a re-request by changing the URL slightly.
+      // This improves reliability for flaky remote image hosts under parallel loads.
+      const sep = imgSrc.includes('?') ? '&' : '?';
+      setImgSrc(`${imgSrc}${sep}retry=1`);
       setHasError(true);
       setIsLoading(true);
       return;
