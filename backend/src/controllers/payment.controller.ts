@@ -154,7 +154,7 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
     select: { email: true, firstName: true }
   });
 
-  // Update user subscription
+  // Update user subscription (idempotent)
   await prisma.user.update({
     where: { id: userId },
     data: {
@@ -164,18 +164,29 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
     },
   });
 
-  // Create transaction record
-  await prisma.transaction.create({
-    data: {
-      userId,
-      stripeSessionId: session.id,
-      stripePaymentId: session.payment_intent as string,
-      amount: (session.amount_total || 0) / 100,
-      currency: session.currency || 'EUR',
-      status: 'COMPLETED',
-      subscriptionType: subscriptionType as any,
-    },
-  });
+  // Create transaction record (idempotent: Stripe may retry webhooks)
+  // In subscription mode, session.payment_intent can be null.
+  if (session.id) {
+    await prisma.transaction.upsert({
+      where: { stripeSessionId: session.id },
+      update: {
+        stripePaymentId: (session.payment_intent as string) || null,
+        amount: (session.amount_total || 0) / 100,
+        currency: session.currency || 'EUR',
+        status: 'COMPLETED',
+        subscriptionType: subscriptionType as any,
+      },
+      create: {
+        userId,
+        stripeSessionId: session.id,
+        stripePaymentId: (session.payment_intent as string) || null,
+        amount: (session.amount_total || 0) / 100,
+        currency: session.currency || 'EUR',
+        status: 'COMPLETED',
+        subscriptionType: subscriptionType as any,
+      },
+    });
+  }
 
   // Send payment confirmation email
   if (user) {
