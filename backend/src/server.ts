@@ -80,6 +80,7 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/admin-simple', adminSimpleRoutes);
 app.use('/api/email-capture', emailCaptureRoutes);
 app.use('/api/admin', updateCoversRoutes);
+app.use('/api/admin', addCoversRoutes);
 app.use('/api/admin-simple', listBooksRoutes);
 app.use('/api/admin-panel', adminPanelRoutes);
 app.use('/api/admin', enableAudioRoutes);
