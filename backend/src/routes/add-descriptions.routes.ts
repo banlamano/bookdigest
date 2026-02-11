@@ -42,7 +42,7 @@ async function fetchFromGoogleBooks(title: string, author: string): Promise<{ de
 
 // Endpoint to add descriptions (and covers) to books
 router.post('/add-descriptions', async (req, res) => {
-  const { limit = 50, offset = 0 } = req.body;
+  const { limit = 50, offset = 0, delayMs = 100 } = req.body;
   
   try {
     console.log(`Adding descriptions: offset=${offset}, limit=${limit}`);
