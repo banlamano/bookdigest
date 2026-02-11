@@ -23,7 +23,15 @@ export function OptimizedBookCover({ src, alt, className = '', priority = false 
       return;
     }
 
-    // Fallback to placeholder SVG
+    // First failure: retry the SAME URL but bypass Next image optimization.
+    // This helps when some remote hosts intermittently fail through the optimizer under load.
+    if (!hasError) {
+      setHasError(true);
+      setIsLoading(true);
+      return;
+    }
+
+    // Second failure: fallback to placeholder SVG
     setImgSrc('/placeholder-book.svg');
     setHasError(true);
     setIsLoading(false);

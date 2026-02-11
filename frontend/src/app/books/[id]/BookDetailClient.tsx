@@ -54,6 +54,12 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
     queryKey: ['book', bookId],
     queryFn: () => booksAPI.getById(bookId),
     enabled: isMounted && isAuthenticated && isHydrated, // Only fetch if mounted, authenticated AND hydrated
+    // Avoid long "Loading..." loops when user hits freemium limit (403)
+    retry: (failureCount, err: any) => {
+      const status = err?.response?.status;
+      if (status === 401 || status === 403) return false;
+      return failureCount < 2;
+    },
   });
 
   const book = data?.data?.data?.book || initialBook;
