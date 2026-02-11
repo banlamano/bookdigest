@@ -54,6 +54,7 @@ model Book {
   // Summary content
   summary           String
   keyInsights       String   // JSON as string
+  description       String?  // Google Books description (optional)
   readingTime       Int      @default(15)
   
   // Media

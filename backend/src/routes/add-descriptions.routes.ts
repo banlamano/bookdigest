@@ -16,7 +16,7 @@ interface GoogleBookData {
   };
 }
 
-async function fetchFromGoogleBooks(title: string, author: string): Promise<{ description: string | null; coverUrl: string | null }> {
+async function fetchFromGoogleBooks(title: string, author: string): Promise<{ description: string | null; coverImage: string | null }> {
   try {
     const query = `${title} ${author}`;
     const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&maxResults=1`;
@@ -26,17 +26,17 @@ async function fetchFromGoogleBooks(title: string, author: string): Promise<{ de
     if (response.data.items && response.data.items.length > 0) {
       const book = response.data.items[0];
       const description = book.volumeInfo?.description || null;
-      const coverUrl = book.volumeInfo?.imageLinks?.thumbnail || book.volumeInfo?.imageLinks?.smallThumbnail || null;
+      const cover = book.volumeInfo?.imageLinks?.thumbnail || book.volumeInfo?.imageLinks?.smallThumbnail || null;
       
       return {
         description: description ? description.substring(0, 2000) : null, // Limit to 2000 chars
-        coverUrl: coverUrl ? coverUrl.replace('http:', 'https:').replace('&zoom=1', '&zoom=2') : null
+        coverImage: cover ? cover.replace('http:', 'https:').replace('&zoom=1', '&zoom=2') : null
       };
     }
     
-    return { description: null, coverUrl: null };
+    return { description: null, coverImage: null };
   } catch (error) {
-    return { description: null, coverUrl: null };
+    return { description: null, coverImage: null };
   }
 }
 
@@ -55,7 +55,7 @@ router.post('/add-descriptions', async (req, res) => {
         title: true,
         author: true,
         description: true,
-        coverUrl: true
+        coverImage: true
       }
     });
     
@@ -67,7 +67,7 @@ router.post('/add-descriptions', async (req, res) => {
     for (const book of books) {
       // Skip if already has description
       const hasDescription = book.description && book.description !== '' && book.description !== 'null';
-      const hasCover = book.coverUrl && book.coverUrl !== '' && book.coverUrl !== 'null';
+      const hasCover = book.coverImage && book.coverImage !== '' && book.coverImage !== 'null';
       
       if (hasDescription && hasCover) {
         skipped++;
@@ -83,8 +83,8 @@ router.post('/add-descriptions', async (req, res) => {
         descriptionsAdded++;
       }
       
-      if (data.coverUrl && !hasCover) {
-        updateData.coverUrl = data.coverUrl;
+      if (data.coverImage && !hasCover) {
+        updateData.coverImage = data.coverImage;
         coversAdded++;
       }
       

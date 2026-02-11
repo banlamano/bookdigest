@@ -51,7 +51,7 @@ router.post('/add-covers', async (req, res) => {
         id: true,
         title: true,
         author: true,
-        coverUrl: true
+        coverImage: true
       }
     });
     
@@ -61,7 +61,7 @@ router.post('/add-covers', async (req, res) => {
     
     for (const book of books) {
       // Skip if already has cover
-      if (book.coverUrl && book.coverUrl !== '' && book.coverUrl !== 'null') {
+      if (book.coverImage && book.coverImage !== '' && book.coverImage !== 'null') {
         skipped++;
         continue;
       }
@@ -71,7 +71,7 @@ router.post('/add-covers', async (req, res) => {
       if (coverUrl) {
         await prisma.book.update({
           where: { id: book.id },
-          data: { coverUrl }
+          data: { coverImage: coverUrl }
         });
         updated++;
         console.log(`✅ Added cover for: ${book.title}`);
