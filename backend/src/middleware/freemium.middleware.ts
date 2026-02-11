@@ -71,17 +71,24 @@ export const getFreemiumStatus = async (userId: string) => {
     return { limit: 0, used: 0, remaining: 0, isPremium: false };
   }
 
-  // Check if subscription is truly active (not just the type)
+  // Check if subscription is truly active
   const isPremiumUser = user.subscriptionType !== 'FREE';
-  const subscriptionActive = user.subscriptionEnd ? new Date(user.subscriptionEnd) > new Date() : false;
-
-  // CRITICAL FIX: Only return isPremium: true if BOTH conditions are met
-  if (isPremiumUser && subscriptionActive) {
-    return { limit: -1, used: 0, remaining: -1, isPremium: true }; // -1 means unlimited
-  }
-
-  // If subscription type is premium but expired, auto-fix it
-  if (isPremiumUser && !subscriptionActive) {
+  
+  // If user is premium type, check expiration (if set)
+  if (isPremiumUser) {
+    // If no expiration date set, treat as unlimited (lifetime premium)
+    if (!user.subscriptionEnd) {
+      return { limit: -1, used: 0, remaining: -1, isPremium: true };
+    }
+    
+    // If expiration date is set, check if still active
+    const subscriptionActive = new Date(user.subscriptionEnd) > new Date();
+    
+    if (subscriptionActive) {
+      return { limit: -1, used: 0, remaining: -1, isPremium: true };
+    }
+    
+    // Subscription expired - revert to free
     await prisma.user.update({
       where: { id: userId },
       data: {
