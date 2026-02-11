@@ -26,18 +26,31 @@ function normalizeCoverUrl(url: string) {
 
 async function isUrlReachable(url: string): Promise<boolean> {
   try {
-    // Some hosts don't like HEAD; try HEAD then GET (small range) fallback.
-    await axios.head(url, { timeout: 8000, maxRedirects: 5, validateStatus: () => true });
-    return true;
+    const head = await axios.head(url, {
+      timeout: 8000,
+      maxRedirects: 5,
+      validateStatus: () => true,
+    });
+
+    const ct = (head.headers['content-type'] || '') as string;
+    // We only accept actual images.
+    if (head.status >= 200 && head.status < 300 && ct.toLowerCase().startsWith('image/')) {
+      return true;
+    }
+
+    // Some hosts return 204 or text/html for hotlink-protected resources.
+    return false;
   } catch {
+    // Fallback: attempt a GET and check headers
     try {
-      await axios.get(url, {
+      const get = await axios.get(url, {
         timeout: 8000,
         maxRedirects: 5,
         responseType: 'stream',
         validateStatus: () => true,
       });
-      return true;
+      const ct = (get.headers['content-type'] || '') as string;
+      return get.status >= 200 && get.status < 300 && ct.toLowerCase().startsWith('image/');
     } catch {
       return false;
     }
@@ -71,7 +84,7 @@ async function fetchBestCoverFromGoogleBooks(title: string, author: string | nul
 }
 
 router.post('/fix-covers', async (req, res) => {
-  const { bookIds, replaceAiCovers = true } = req.body as { bookIds: string[]; replaceAiCovers?: boolean };
+  const { bookIds, replaceAiCovers = true, fallbackToAiCover = true } = req.body as { bookIds: string[]; replaceAiCovers?: boolean; fallbackToAiCover?: boolean };
 
   if (!Array.isArray(bookIds) || bookIds.length === 0) {
     return res.status(400).json({ status: 'error', message: 'bookIds must be a non-empty array' });
@@ -100,14 +113,25 @@ router.post('/fix-covers', async (req, res) => {
       }
 
       const best = await fetchBestCoverFromGoogleBooks(book.title, book.author, 5);
-      if (!best) {
-        results.push({ id, status: 'failed', coverImage: book.coverImage, reason: 'no_google_cover' });
+
+      if (best) {
+        await prisma.book.update({ where: { id }, data: { coverImage: best } });
+        updated++;
+        results.push({ id, status: 'updated', coverImage: best });
+        await new Promise((r) => setTimeout(r, 200));
         continue;
       }
 
-      await prisma.book.update({ where: { id }, data: { coverImage: best } });
-      updated++;
-      results.push({ id, status: 'updated', coverImage: best });
+      if (fallbackToAiCover) {
+        const aiPath = `/ai-covers/${book.id}.svg`;
+        await prisma.book.update({ where: { id }, data: { coverImage: aiPath } });
+        updated++;
+        results.push({ id, status: 'updated', coverImage: aiPath, reason: 'fallback_ai_cover' });
+        await new Promise((r) => setTimeout(r, 50));
+        continue;
+      }
+
+      results.push({ id, status: 'failed', coverImage: book.coverImage, reason: 'no_valid_cover_found' });
 
       // tiny delay to be polite
       await new Promise((r) => setTimeout(r, 200));
