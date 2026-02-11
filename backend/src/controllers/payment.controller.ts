@@ -60,6 +60,8 @@ export const createCheckoutSession = async (req: Request, res: Response, next: N
       mode: 'subscription',
       success_url: `${process.env.CLIENT_URL}/subscription/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${process.env.CLIENT_URL}/subscription/cancel`,
+      // Allow customers to apply Stripe promotion codes (e.g. Product Hunt launch discount)
+      allow_promotion_codes: true,
       metadata: {
         userId,
         subscriptionType,
