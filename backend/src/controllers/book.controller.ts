@@ -63,8 +63,9 @@ export const getAllBooks = async (req: Request, res: Response, next: NextFunctio
       prisma.book.count({ where }),
     ]);
 
-    // Add cache headers for better performance
-    res.set('Cache-Control', 'public, max-age=300, s-maxage=600, stale-while-revalidate=86400');
+    // Cache headers (short TTL so newly imported covers/descriptions show up quickly)
+    // NOTE: keep TTL low while we are actively updating book metadata.
+    res.set('Cache-Control', 'public, max-age=60, s-maxage=60, stale-while-revalidate=300');
 
     res.json({
       status: 'success',
