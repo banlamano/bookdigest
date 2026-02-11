@@ -12,6 +12,7 @@ import {
   getBookReviews,
 } from '../controllers/book.controller';
 import { authenticate, checkSubscription } from '../middleware/auth.middleware';
+import { optionalAuthenticate } from '../middleware/optionalAuth.middleware';
 import { checkFreemiumLimit } from '../middleware/freemium.middleware';
 
 const router = Router();
@@ -22,7 +23,7 @@ router.get('/featured', getFeaturedBooks);
 router.get('/search', searchBooks);
 
 // Book detail - Public for metadata, but content restricted by authentication
-router.get('/:id', getBookById);
+router.get('/:id', optionalAuthenticate, getBookById);
 router.get('/:id/reviews', getBookReviews);
 
 // Protected routes
