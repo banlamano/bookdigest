@@ -21,7 +21,8 @@ router.post('/regenerate-summaries', async (req, res) => {
         author: true,
         summary: true,
         tags: true,
-        publishedYear: true
+        publishedYear: true,
+        description: true
       }
     });
 
