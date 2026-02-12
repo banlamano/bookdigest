@@ -100,7 +100,18 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
+        <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800 space-y-4">
+          <div className="flex justify-center">
+            <a
+              href="https://www.producthunt.com/products/book-digest?utm_source=book-digest.com&utm_medium=badge&utm_campaign=product-hunt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-gray-800/60 px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:border-primary-300 hover:text-primary-700 dark:hover:text-primary-300 transition"
+            >
+              <span>Check us out on Product Hunt</span>
+              <span className="text-gray-400">→</span>
+            </a>
+          </div>
           <p className="text-center text-sm text-gray-600 dark:text-gray-400">
             © {new Date().getFullYear()} BookDigest. All rights reserved.
           </p>
