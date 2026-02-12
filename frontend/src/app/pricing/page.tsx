@@ -151,7 +151,7 @@ export default function PricingPage() {
               }`}
             >
               {plan.badge && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <div className="absolute top-3 left-1/2 z-10 transform -translate-x-1/2">
                   <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium">
                     {plan.badge}
                   </span>
