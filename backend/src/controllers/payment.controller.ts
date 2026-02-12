@@ -279,13 +279,26 @@ export const getSubscriptionStatus = async (req: Request, res: Response, next: N
       throw new AppError('User not found', 404);
     }
 
-    let subscriptionDetails = null;
+    let subscriptionDetails: any = null;
     if (user.subscriptionId) {
-      const subscription = await stripe.subscriptions.retrieve(user.subscriptionId);
+      const subscription = await stripe.subscriptions.retrieve(user.subscriptionId, {
+        expand: ['default_payment_method'],
+      });
+
+      let paymentMethod: any = null;
+      const dpm: any = (subscription as any).default_payment_method;
+      if (dpm?.card?.last4) {
+        paymentMethod = {
+          brand: dpm.card.brand,
+          last4: dpm.card.last4,
+        };
+      }
+
       subscriptionDetails = {
         status: subscription.status,
         currentPeriodEnd: new Date(subscription.current_period_end * 1000),
         cancelAtPeriodEnd: subscription.cancel_at_period_end,
+        paymentMethod,
       };
     }
 
