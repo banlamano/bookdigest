@@ -128,7 +128,11 @@ export default function SubscriptionCard() {
               <CreditCard className="w-5 h-5" />
               <span>Payment Method</span>
             </div>
-            <span className="font-medium text-gray-900 dark:text-white">•••• 4242</span>
+            <span className="font-medium text-gray-900 dark:text-white">
+              {details?.paymentMethod?.brand
+                ? `${String(details.paymentMethod.brand).toUpperCase()} •••• ${details.paymentMethod.last4}`
+                : 'Card on file'}
+            </span>
           </div>
 
           {/* Benefits */}
