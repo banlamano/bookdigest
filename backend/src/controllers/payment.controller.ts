@@ -210,14 +210,21 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
 // Handle subscription update
 async function handleSubscriptionUpdate(subscription: Stripe.Subscription) {
   const subscriptionId = subscription.id;
-  const endDate = new Date(subscription.current_period_end * 1000);
+  // Some Stripe payloads may omit current_period_end in edge cases; guard it.
+  const periodEnd = (subscription as any).current_period_end;
+  const endDate = periodEnd ? new Date(periodEnd * 1000) : null;
 
-  await prisma.user.updateMany({
-    where: { subscriptionId },
-    data: { subscriptionEnd: endDate },
-  });
+  try {
+    const result = await prisma.user.updateMany({
+      where: { subscriptionId },
+      data: endDate ? { subscriptionEnd: endDate } : {},
+    });
 
-  logger.info(`Subscription updated: ${subscriptionId}`);
+    logger.info(`Subscription updated: ${subscriptionId} (matched users: ${result.count})`);
+  } catch (error) {
+    // Do not fail webhook delivery. checkout.session.completed already sets subscriptionEnd.
+    logger.error(`Failed to process customer.subscription.updated for ${subscriptionId}:`, error);
+  }
 }
 
 // Handle subscription cancellation
