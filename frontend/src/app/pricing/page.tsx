@@ -53,6 +53,7 @@ export default function PricingPage() {
     }
   };
 
+  // Product Hunt launch: keep choices simple (Monthly + Yearly only)
   const plans = [
     {
       name: 'Free',
@@ -108,6 +109,14 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary-50 via-white to-secondary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Product Hunt launch banner */}
+        <div className="mb-8">
+          <div className="rounded-xl border border-primary-200 bg-primary-50 dark:bg-gray-800 dark:border-gray-700 p-4 text-center">
+            <div className="text-sm font-medium text-primary-800 dark:text-primary-200">
+              Product Hunt Launch Deal: Use code <span className="font-bold">PH20</span> for 20% off (Monthly + Yearly)
+            </div>
+          </div>
+        </div>
         {/* Header */}
         <div className="text-center mb-16">
           <motion.h1
@@ -368,61 +377,6 @@ export default function PricingPage() {
                   </button>
                 )}
               </div>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Team Plan */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="card p-8 bg-gradient-to-r from-primary-600 to-primary-800 text-white"
-        >
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-3xl font-bold mb-4">Team Plan</h3>
-              <p className="text-primary-100 mb-6">
-                Perfect for companies and organizations. Get bulk discounts and admin features.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-center">
-                  <Check className="w-5 h-5 mr-2" />
-                  5+ user licenses
-                </li>
-                <li className="flex items-center">
-                  <Check className="w-5 h-5 mr-2" />
-                  Team analytics dashboard
-                </li>
-                <li className="flex items-center">
-                  <Check className="w-5 h-5 mr-2" />
-                  Priority support
-                </li>
-                <li className="flex items-center">
-                  <Check className="w-5 h-5 mr-2" />
-                  Custom onboarding
-                </li>
-              </ul>
-            </div>
-            <div className="text-center md:text-right">
-              <div className="text-5xl font-bold mb-4">€49.99</div>
-              <div className="text-primary-100 mb-6">per month for 5 users</div>
-              {isPremium ? (
-                <a
-                  href="/dashboard"
-                  className="bg-white text-primary-600 hover:bg-primary-50 px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
-                >
-                  Manage Subscription
-                </a>
-              ) : (
-                <button
-                  onClick={() => handleSubscribe('team')}
-                  disabled={isLoading === 'team'}
-                  className="bg-white text-primary-600 hover:bg-primary-50 px-8 py-3 rounded-lg font-semibold transition-colors disabled:opacity-50"
-                >
-                  {isLoading === 'team' ? 'Processing...' : 'Contact Sales'}
-                </button>
-              )}
             </div>
           </div>
         </motion.div>
