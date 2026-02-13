@@ -13,11 +13,13 @@ interface OptimizedBookCoverProps {
 }
 
 export function OptimizedBookCover({ src, alt, bookId, className = '', priority = false }: OptimizedBookCoverProps) {
-  const [imgSrc, setImgSrc] = useState(src);
+  const aiCoverSrc = bookId ? `/ai-covers/${bookId}.svg` : null;
+  // Prefer local AI covers when available (they're deterministic and avoid flaky/"image not available" remote covers).
+  const initialSrc = aiCoverSrc || src;
+
+  const [imgSrc, setImgSrc] = useState(initialSrc);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
-
-  const aiCoverSrc = bookId ? `/ai-covers/${bookId}.svg` : null;
 
   const handleError = () => {
     // If it's already the placeholder SVG, don't try again
