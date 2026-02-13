@@ -128,9 +128,16 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
     }
 
     // If user is not authenticated, return public book data only
-    // Product Hunt / marketing: allow one public demo book to show full content
-    const publicDemoBookId = process.env.PUBLIC_DEMO_BOOK_ID;
-    if (!userId && (!publicDemoBookId || id !== publicDemoBookId)) {
+    // Product Hunt / marketing: allow one or more public demo books to show full content
+    // Set env var: PUBLIC_DEMO_BOOK_IDS="id1,id2" (commas) or PUBLIC_DEMO_BOOK_ID="id"
+    const demoIdsRaw = process.env.PUBLIC_DEMO_BOOK_IDS || process.env.PUBLIC_DEMO_BOOK_ID || '';
+    const demoIds = demoIdsRaw
+      .split(',')
+      .map((s) => s.trim())
+      .filter(Boolean);
+    const isPublicDemo = demoIds.includes(id);
+
+    if (!userId && !isPublicDemo) {
       // Return basic book info without tracking or premium content
       // Keep audioUrl to show the feature and drive signups
       const publicBook = {
