@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import { PrismaClient } from '@prisma/client';
 import { AppError } from '../middleware/error.middleware';
 import { getFreemiumStatus } from '../middleware/freemium.middleware';
+import { logger } from '../utils/logger';
 
 const prisma = new PrismaClient();
 
@@ -131,9 +132,11 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
     // Product Hunt / marketing: allow one or more public demo books to show full content
     // Set env var: PUBLIC_DEMO_BOOK_IDS="id1,id2" (commas) or PUBLIC_DEMO_BOOK_ID="id"
     const demoIdsRaw = process.env.PUBLIC_DEMO_BOOK_IDS || process.env.PUBLIC_DEMO_BOOK_ID || '';
+    // Render/UIs sometimes wrap env values in quotes. Also guard against whitespace/newlines.
+    const normalizeDemoId = (value: string) => value.trim().replace(/^["']+|["']+$/g, '');
     const demoIds = demoIdsRaw
       .split(',')
-      .map((s) => s.trim())
+      .map(normalizeDemoId)
       .filter(Boolean);
     const isPublicDemo = demoIds.includes(id);
 
@@ -143,21 +146,39 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       const publicBook = {
         ...book,
         audioUrl: book.audioUrl, // Show audio feature to drive conversions
-        summary: book.summary.substring(0, 500) + '...', // Truncate summary
+        summary: (book.summary || '').substring(0, 500) + '...', // Truncate summary (null-safe)
         keyInsights: '[]', // Hide insights
         chapters: '[]', // Hide chapters
         quotes: '[]', // Hide quotes
         actionItems: '[]', // Hide action items
       };
-      
+
       return res.json({
         status: 'success',
-        data: { 
+        data: {
           book: publicBook,
           requiresAuth: true,
           message: 'Login to access full content'
         },
       });
+    }
+
+    // Public demo book: allow full content without authentication.
+    // IMPORTANT: skip all progress tracking / freemium enforcement because userId is undefined.
+    if (!userId && isPublicDemo) {
+      logger.info(`Public demo book access (unauthenticated): ${id}`);
+      return res.json({
+        status: 'success',
+        data: {
+          book,
+          isPublicDemo: true,
+        },
+      });
+    }
+
+    // Safety guard: from here on we require userId for tracking & enforcement.
+    if (!userId) {
+      throw new AppError('Authentication required', 401);
     }
 
     // CRITICAL: Track book access for freemium limit enforcement
