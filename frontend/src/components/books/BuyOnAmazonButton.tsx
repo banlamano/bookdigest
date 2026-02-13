@@ -10,8 +10,52 @@ interface BuyOnAmazonButtonProps {
   amazonLinkES?: string;
   amazonLinkFR?: string;
   amazonLinkIT?: string;
+  /** Generic amazon link from backend (usually US search). Used as fallback. */
+  amazonLink?: string;
   bookTitle: string;
+  bookAuthor?: string;
+  isbn?: string;
   className?: string;
+}
+
+const AFFILIATE_IDS = {
+  US: 'bookdigest06-20',
+  UK: 'bookdigest-21',
+  DE: 'bookdigest-21',
+  ES: 'bookdigest-21',
+  FR: 'bookdigest-21',
+  IT: 'bookdigest-21',
+} as const;
+
+const AMAZON_DOMAINS = {
+  US: 'amazon.com',
+  UK: 'amazon.co.uk',
+  DE: 'amazon.de',
+  ES: 'amazon.es',
+  FR: 'amazon.fr',
+  IT: 'amazon.it',
+} as const;
+
+type Region = keyof typeof AMAZON_DOMAINS;
+
+function sanitizeUrl(url?: string): string | undefined {
+  if (!url) return undefined;
+  const trimmed = url.trim();
+  if (!trimmed) return undefined;
+  if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) return trimmed;
+  if (trimmed.startsWith('www.')) return `https://${trimmed}`;
+  if (trimmed.includes('amazon.')) return `https://${trimmed}`;
+  return trimmed;
+}
+
+function buildAmazonSearchLink(region: Region, title: string, author?: string, isbn?: string) {
+  const domain = AMAZON_DOMAINS[region];
+  const tag = AFFILIATE_IDS[region];
+  const query = isbn
+    ? `${title} ${author || ''} ISBN ${isbn}`
+    : `${title} ${author || ''}`;
+  const q = encodeURIComponent(query.trim());
+  return `https://www.${domain}/s?k=${q}&tag=${tag}`;
 }
 
 export function BuyOnAmazonButton({
@@ -21,10 +65,13 @@ export function BuyOnAmazonButton({
   amazonLinkES,
   amazonLinkFR,
   amazonLinkIT,
+  amazonLink,
   bookTitle,
+  bookAuthor,
+  isbn,
   className = '',
 }: BuyOnAmazonButtonProps) {
-  const [selectedRegion, setSelectedRegion] = useState<'US' | 'UK' | 'DE' | 'ES' | 'FR' | 'IT'>('US');
+  const [selectedRegion, setSelectedRegion] = useState<Region>('US');
   const [showDropdown, setShowDropdown] = useState(false);
 
   // Detect user's region based on browser locale
@@ -46,12 +93,25 @@ export function BuyOnAmazonButton({
   }, []);
 
   const getCurrentLink = () => {
-    if (selectedRegion === 'UK' && amazonLinkUK) return amazonLinkUK;
-    if (selectedRegion === 'DE' && amazonLinkDE) return amazonLinkDE;
-    if (selectedRegion === 'ES' && amazonLinkES) return amazonLinkES;
-    if (selectedRegion === 'FR' && amazonLinkFR) return amazonLinkFR;
-    if (selectedRegion === 'IT' && amazonLinkIT) return amazonLinkIT;
-    return amazonLinkUS || amazonLinkUK || amazonLinkDE || amazonLinkES || amazonLinkFR || amazonLinkIT || '#';
+    const byRegion = {
+      US: sanitizeUrl(amazonLinkUS),
+      UK: sanitizeUrl(amazonLinkUK),
+      DE: sanitizeUrl(amazonLinkDE),
+      ES: sanitizeUrl(amazonLinkES),
+      FR: sanitizeUrl(amazonLinkFR),
+      IT: sanitizeUrl(amazonLinkIT),
+    } as const;
+
+    // 1) Prefer explicit region link
+    const direct = byRegion[selectedRegion];
+    if (direct) return direct;
+
+    // 2) Fallback to generic amazonLink from API (if present)
+    const generic = sanitizeUrl(amazonLink);
+    if (generic) return generic;
+
+    // 3) Last resort: generate a search link for the selected region
+    return buildAmazonSearchLink(selectedRegion, bookTitle, bookAuthor, isbn);
   };
 
   const getRegionLabel = () => {

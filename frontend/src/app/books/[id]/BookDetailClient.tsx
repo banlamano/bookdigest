@@ -251,7 +251,10 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                   amazonLinkES={book.amazonLinkES}
                   amazonLinkFR={book.amazonLinkFR}
                   amazonLinkIT={book.amazonLinkIT}
+                  amazonLink={book.amazonLink}
                   bookTitle={book.title}
+                  bookAuthor={book.author}
+                  isbn={book.isbn}
                 />
               </div>
 
