@@ -140,7 +140,20 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       .filter(Boolean);
     const isPublicDemo = demoIds.includes(id);
 
-    if (!userId && !isPublicDemo) {
+    // Public demo books should always be readable (marketing), even if the user is logged in
+    // and has hit their monthly free limit. Also, we should not count demo views towards limits.
+    if (isPublicDemo) {
+      logger.info(`Public demo book access: ${id} (userId=${userId || 'anonymous'})`);
+      return res.json({
+        status: 'success',
+        data: {
+          book,
+          isPublicDemo: true,
+        },
+      });
+    }
+
+    if (!userId) {
       // Return basic book info without tracking or premium content
       // Keep audioUrl to show the feature and drive signups
       const publicBook = {
@@ -161,24 +174,6 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
           message: 'Login to access full content'
         },
       });
-    }
-
-    // Public demo book: allow full content without authentication.
-    // IMPORTANT: skip all progress tracking / freemium enforcement because userId is undefined.
-    if (!userId && isPublicDemo) {
-      logger.info(`Public demo book access (unauthenticated): ${id}`);
-      return res.json({
-        status: 'success',
-        data: {
-          book,
-          isPublicDemo: true,
-        },
-      });
-    }
-
-    // Safety guard: from here on we require userId for tracking & enforcement.
-    if (!userId) {
-      throw new AppError('Authentication required', 401);
     }
 
     // CRITICAL: Track book access for freemium limit enforcement
