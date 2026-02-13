@@ -82,7 +82,7 @@ export default function PricingPage() {
         'Priority customer support',
         'Early access to new content',
       ],
-      cta: 'Start Free Trial',
+      cta: 'Get Premium',
       highlighted: true,
       planType: 'monthly' as const,
     },
@@ -99,7 +99,7 @@ export default function PricingPage() {
         'Premium member badge',
         'Gift subscriptions',
       ],
-      cta: 'Start Free Trial',
+      cta: 'Get Premium',
       highlighted: false,
       planType: 'yearly' as const,
     },
@@ -131,7 +131,7 @@ export default function PricingPage() {
             transition={{ delay: 0.1 }}
             className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
           >
-            Start with a 7-day free trial. Cancel anytime, no questions asked.
+            Choose the plan that fits your learning goals. Cancel anytime, no questions asked.
           </motion.p>
         </div>
 
@@ -193,10 +193,10 @@ export default function PricingPage() {
                     Manage Subscription →
                   </a>
                 </div>
-              ) : (
+              ) : plan.planType ? (
                 <button
-                  onClick={() => plan.planType && handleSubscribe(plan.planType)}
-                  disabled={!plan.planType || isLoading === plan.planType}
+                  onClick={() => handleSubscribe(plan.planType!)}
+                  disabled={isLoading === plan.planType}
                   className={`w-full py-3 rounded-lg font-medium transition-colors ${
                     plan.highlighted
                       ? 'bg-primary-600 hover:bg-primary-700 text-white'
@@ -205,6 +205,13 @@ export default function PricingPage() {
                 >
                   {isLoading === plan.planType ? 'Processing...' : plan.cta}
                 </button>
+              ) : (
+                <a
+                  href={isAuthenticated ? '/library' : '/register'}
+                  className="block w-full py-3 rounded-lg font-medium transition-colors bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white text-center"
+                >
+                  {plan.cta}
+                </a>
               )}
             </motion.div>
           ))}
@@ -361,7 +368,7 @@ export default function PricingPage() {
                     disabled={isLoading === 'monthly'}
                     className="btn-primary"
                   >
-                    {isLoading === 'monthly' ? 'Processing...' : 'Start Free Trial'}
+                    {isLoading === 'monthly' ? 'Processing...' : 'Get Premium'}
                   </button>
                 )}
               </div>
