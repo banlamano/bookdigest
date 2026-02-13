@@ -95,9 +95,6 @@ export default function PricingPage() {
       features: [
         'Everything in Monthly',
         'Save €40 per year',
-        'Exclusive annual content',
-        'Premium member badge',
-        'Gift subscriptions',
       ],
       cta: 'Get Premium',
       highlighted: false,
