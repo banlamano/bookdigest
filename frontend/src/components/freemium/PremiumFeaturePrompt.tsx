@@ -33,7 +33,6 @@ export default function PremiumFeaturePrompt({ feature, description }: PremiumFe
         </div>
         <div className="flex items-center justify-center gap-2 text-gray-700 dark:text-gray-300">
           <span className="text-green-500">✓</span>
-          <span>Offline reading (coming soon)</span>
         </div>
       </div>
 

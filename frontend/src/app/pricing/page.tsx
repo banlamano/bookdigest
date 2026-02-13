@@ -77,8 +77,7 @@ export default function PricingPage() {
       description: 'For serious learners',
       features: [
         'Unlimited book summaries',
-        'Audio narration (Beta — coming soon)',
-        'Offline MP3 downloads (Coming soon)',
+        'Audio narration (Premium)',
         'Ad-free experience',
         'Priority customer support',
         'Early access to new content',
@@ -251,18 +250,7 @@ export default function PricingPage() {
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
                     <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
-                      Audio narration (Beta)
-                    </td>
-                    <td className="px-6 py-4 text-center">
-                      <X className="w-5 h-5 text-red-500 mx-auto" />
-                    </td>
-                    <td className="px-6 py-4 text-center">
-                      <Check className="w-5 h-5 text-green-500 mx-auto" />
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
-                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
-                      Offline MP3 downloads (Coming soon)
+                      Audio narration (Premium)
                     </td>
                     <td className="px-6 py-4 text-center">
                       <X className="w-5 h-5 text-red-500 mx-auto" />
