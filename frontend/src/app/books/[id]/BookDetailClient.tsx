@@ -241,7 +241,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-400">
                   <Clock className="w-5 h-5 mr-1" />
-                  <span>{book.readingTime || '5–10'} min read</span>
+                  <span>Quick read</span>
                 </div>
                 {book.audioUrl && (
                   <div className="flex items-center text-gray-600 dark:text-gray-400">
