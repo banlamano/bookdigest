@@ -49,11 +49,12 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
     setIsMounted(true);
   }, []);
 
-  // Fetch fresh data with authentication (client-side)
+  // Fetch fresh data (client-side). We always do a public fetch so demo links can work for logged-out users.
+  // Authenticated users still send token via interceptor.
   const { data, isLoading, isError, error } = useQuery({
-    queryKey: ['book', bookId],
+    queryKey: ['book', bookId, isAuthenticated],
     queryFn: () => booksAPI.getById(bookId),
-    enabled: isMounted && isAuthenticated && isHydrated, // Only fetch if mounted, authenticated AND hydrated
+    enabled: isMounted && isHydrated, // Fetch after hydration regardless of auth
     // Avoid long "Loading..." loops when user hits freemium limit (403)
     retry: (failureCount, err: any) => {
       const status = err?.response?.status;
@@ -65,6 +66,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
   const book = data?.data?.data?.book || initialBook;
   const freemiumStatus = data?.data?.data?.freemiumStatus;
   const requiresPremium = data?.data?.data?.requiresPremium;
+  const isPublicDemo = data?.data?.data?.isPublicDemo === true;
 
   // Track book views with Google Analytics - MUST be before any return statements
   useEffect(() => {
@@ -98,14 +100,14 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
     return <LoadingSpinner message="Loading..." />;
   }
   
-  // Check authentication (after hydration is complete)
-  if (!isAuthenticated) {
-    return <LoginGate bookTitle={initialBook?.title || 'this book'} />;
-  }
-  
-  // Show loading while fetching authenticated data
+  // Show loading while fetching data
   if (isLoading) {
     return <LoadingSpinner message="Loading book details..." />;
+  }
+
+  // Check authentication (after hydration is complete). Allow public demo books without login.
+  if (!isAuthenticated && !isPublicDemo) {
+    return <LoginGate bookTitle={book?.title || initialBook?.title || 'this book'} />;
   }
 
   // Handle freemium limit reached (403) gracefully
@@ -159,7 +161,9 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
       <BookStructuredData book={book} />
       <BreadcrumbStructuredData items={breadcrumbItems} />
       
-      <ReadingProgressTracker bookId={bookId} bookTitle={book?.title || ''} />
+      {isAuthenticated && (
+        <ReadingProgressTracker bookId={bookId} bookTitle={book?.title || ''} />
+      )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Freemium Status Banner */}
@@ -223,7 +227,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                   </h1>
                   <p className="text-xl text-gray-600 dark:text-gray-400 mb-4">{book.author}</p>
                 </div>
-                <BookmarkButton bookId={book.id} />
+                {isAuthenticated && <BookmarkButton bookId={book.id} />}
               </div>
 
               <div className="flex items-center space-x-6 mb-6">
