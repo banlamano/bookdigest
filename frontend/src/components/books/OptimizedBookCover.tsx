@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 interface OptimizedBookCoverProps {
@@ -14,12 +14,35 @@ interface OptimizedBookCoverProps {
 
 export function OptimizedBookCover({ src, alt, bookId, className = '', priority = false }: OptimizedBookCoverProps) {
   const aiCoverSrc = bookId ? `/ai-covers/${bookId}.svg` : null;
-  // Prefer local AI covers when available (they're deterministic and avoid flaky/"image not available" remote covers).
-  const initialSrc = aiCoverSrc || src;
-
-  const [imgSrc, setImgSrc] = useState(initialSrc);
+  const [imgSrc, setImgSrc] = useState(src);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+
+  // Smart improvement: Google Books covers sometimes return a real image that says "Image not available".
+  // In that case onError never fires. For Google Books covers, prefer our local AI cover *only if it exists*.
+  useEffect(() => {
+    if (!aiCoverSrc) return;
+    const isGoogleBooks = typeof src === 'string' && src.includes('books.google.com');
+    if (!isGoogleBooks) return;
+
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch(aiCoverSrc, { method: 'HEAD' });
+        if (!cancelled && res.ok) {
+          setImgSrc(aiCoverSrc);
+          setIsLoading(true);
+          setHasError(false);
+        }
+      } catch {
+        // ignore
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [aiCoverSrc, src]);
 
   const handleError = () => {
     // If it's already the placeholder SVG, don't try again
