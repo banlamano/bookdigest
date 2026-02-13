@@ -95,8 +95,8 @@ export const getFeaturedBooks = async (req: Request, res: Response, next: NextFu
       },
     });
 
-    // Add cache headers for featured books
-    res.set('Cache-Control', 'public, max-age=600, s-maxage=1200, stale-while-revalidate=86400');
+    // Cache headers (short TTL while metadata is being updated)
+    res.set('Cache-Control', 'public, max-age=60, s-maxage=60, stale-while-revalidate=300');
     
     res.json({
       status: 'success',
@@ -128,7 +128,9 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
     }
 
     // If user is not authenticated, return public book data only
-    if (!userId) {
+    // Product Hunt / marketing: allow one public demo book to show full content
+    const publicDemoBookId = process.env.PUBLIC_DEMO_BOOK_ID;
+    if (!userId && (!publicDemoBookId || id !== publicDemoBookId)) {
       // Return basic book info without tracking or premium content
       // Keep audioUrl to show the feature and drive signups
       const publicBook = {
