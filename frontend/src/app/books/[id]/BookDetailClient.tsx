@@ -298,13 +298,13 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                 </div>
               )}
 
-              <div className="flex gap-4 mt-6">
+              <div className="flex gap-4 mt-6 items-stretch">
                 <button 
                   onClick={() => {
                     const summarySection = document.getElementById('book-summary');
                     summarySection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }}
-                  className="btn-primary flex-1"
+                  className="btn-primary flex-1 h-12 inline-flex items-center justify-center"
                 >
                   <Play className="w-5 h-5 mr-2" />
                   Start Reading
@@ -314,7 +314,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                     href={book.amazonLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-outline flex-1 text-center"
+                    className="btn-outline flex-1 h-12 inline-flex items-center justify-center text-center"
                   >
                     Buy Full Book
                   </a>
