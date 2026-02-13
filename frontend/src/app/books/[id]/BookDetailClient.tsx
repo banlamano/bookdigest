@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { booksAPI } from '@/lib/api';
 import { useAuthStore } from '@/store/authStore';
-import Image from 'next/image';
+import { OptimizedBookCover } from '@/components/books/OptimizedBookCover';
 import { motion } from 'framer-motion';
 import { Clock, Headphones, Star, Play } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
@@ -186,20 +186,12 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
             {/* Book Cover */}
             <div className="md:col-span-1">
               <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-xl">
-                <Image
+                <OptimizedBookCover
                   src={book.coverImage || '/placeholder-book.svg'}
                   alt={book.title}
-                  fill
-                  className="object-cover"
+                  bookId={book.id}
                   priority
-                  quality={90}
-                  placeholder="blur"
-                  blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI2VmZjZmZiIvPjwvc3ZnPg=="
-                  sizes="(max-width: 768px) 100vw, 400px"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = '/placeholder-book.svg';
-                  }}
+                  className="object-cover"
                 />
                 {book.isPremium && (
                   <div className="absolute top-4 right-4">

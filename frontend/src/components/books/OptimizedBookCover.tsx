@@ -6,14 +6,18 @@ import Image from 'next/image';
 interface OptimizedBookCoverProps {
   src: string;
   alt: string;
+  /** Book id used for local AI-cover fallback (/ai-covers/<id>.svg) */
+  bookId?: string;
   className?: string;
   priority?: boolean;
 }
 
-export function OptimizedBookCover({ src, alt, className = '', priority = false }: OptimizedBookCoverProps) {
+export function OptimizedBookCover({ src, alt, bookId, className = '', priority = false }: OptimizedBookCoverProps) {
   const [imgSrc, setImgSrc] = useState(src);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+
+  const aiCoverSrc = bookId ? `/ai-covers/${bookId}.svg` : null;
 
   const handleError = () => {
     // If it's already the placeholder SVG, don't try again
@@ -23,11 +27,17 @@ export function OptimizedBookCover({ src, alt, className = '', priority = false 
       return;
     }
 
+    // If current source is an AI cover, final fallback is the placeholder
+    if (aiCoverSrc && imgSrc.includes(aiCoverSrc)) {
+      setImgSrc('/placeholder-book.svg');
+      setHasError(true);
+      setIsLoading(false);
+      return;
+    }
+
     // First failure: retry the SAME URL but bypass Next image optimization.
     // This helps when some remote hosts intermittently fail through the optimizer under load.
     if (!hasError) {
-      // Force a re-request by changing the URL slightly.
-      // This improves reliability for flaky remote image hosts under parallel loads.
       const sep = imgSrc.includes('?') ? '&' : '?';
       setImgSrc(`${imgSrc}${sep}retry=1`);
       setHasError(true);
@@ -35,7 +45,14 @@ export function OptimizedBookCover({ src, alt, className = '', priority = false 
       return;
     }
 
-    // Second failure: fallback to placeholder SVG
+    // Second failure: fallback to local AI cover if available, otherwise placeholder
+    if (aiCoverSrc) {
+      setImgSrc(aiCoverSrc);
+      setHasError(true);
+      setIsLoading(true);
+      return;
+    }
+
     setImgSrc('/placeholder-book.svg');
     setHasError(true);
     setIsLoading(false);

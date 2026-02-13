@@ -34,6 +34,7 @@ export function BookCard({ book }: BookCardProps) {
           <OptimizedBookCover
             src={book.coverImage || '/placeholder-book.svg'}
             alt={book.title}
+            bookId={book.id}
             className="group-hover:scale-105 transition-transform duration-300"
           />
           {book.isPremium && (
