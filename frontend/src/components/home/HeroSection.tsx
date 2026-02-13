@@ -32,11 +32,11 @@ export function HeroSection() {
               <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
                 world's best books
               </span>{' '}
-              in 15 minutes
+              in minutes
             </h1>
 
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Read or listen to expertly crafted book summaries. Get the key insights from bestsellers in just 15 minutes.
+              Read or listen to expertly crafted book summaries. Get the key insights from bestsellers quickly.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
@@ -55,7 +55,7 @@ export function HeroSection() {
                 <div className="text-sm text-gray-600 dark:text-gray-400">Book Summaries</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-gray-900 dark:text-white">15min</div>
+                <div className="text-3xl font-bold text-gray-900 dark:text-white">5–10min</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Average Read</div>
               </div>
               <div className="text-center lg:text-left">
@@ -90,7 +90,7 @@ export function HeroSection() {
               <FeatureCard
                 icon={<Clock className="w-8 h-8" />}
                 title="Save Time"
-                description="15 minutes per book"
+                description="Quick digest per book"
                 gradient="from-orange-500 to-red-500"
                 delay={0.5}
               />

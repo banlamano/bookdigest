@@ -5,6 +5,8 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { booksAPI } from '@/lib/api';
 import { useAuthStore } from '@/store/authStore';
 import { OptimizedBookCover } from '@/components/books/OptimizedBookCover';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Clock, Headphones, Star, Play } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
@@ -16,7 +18,6 @@ import EnhancedBookContent from '@/components/books/EnhancedBookContent';
 import { BuyOnAmazonButton } from '@/components/books/BuyOnAmazonButton';
 import { BookStructuredData, BreadcrumbStructuredData } from '@/components/StructuredData';
 import SocialShareButtons from '@/components/books/SocialShareButtons';
-import Link from 'next/link';
 import FreemiumStatus from '@/components/freemium/FreemiumStatus';
 import PremiumFeaturePrompt from '@/components/freemium/PremiumFeaturePrompt';
 import LoginGate from '@/components/freemium/LoginGate';
@@ -165,6 +166,14 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
         <ReadingProgressTracker bookId={bookId} bookTitle={book?.title || ''} />
       )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Back to Library navigation */}
+        <Link
+          href="/library"
+          className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 mb-6 transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to Library
+        </Link>
         
         {/* Freemium Status Banner */}
         {freemiumStatus && (
@@ -232,12 +241,12 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-400">
                   <Clock className="w-5 h-5 mr-1" />
-                  <span>{book.readingTime || 15} min read</span>
+                  <span>{book.readingTime || '5–10'} min read</span>
                 </div>
                 {book.audioUrl && (
                   <div className="flex items-center text-gray-600 dark:text-gray-400">
                     <Headphones className="w-5 h-5 mr-1" />
-                    <span>Audio available</span>
+                    <span>Audio {freemiumStatus?.isPremium ? 'available' : '(Premium)'}</span>
                   </div>
                 )}
               </div>
@@ -279,17 +288,17 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                       </div>
                       {/* Premium overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-gray-900/50 rounded-lg flex items-center justify-center backdrop-blur-sm">
-                        <div className="text-center px-6">
-                          <Headphones className="w-12 h-12 text-yellow-400 mx-auto mb-3" />
-                          <h3 className="text-xl font-bold text-white mb-2">Premium Feature</h3>
-                          <p className="text-gray-200 mb-4">
-                            Listen to this book summary with high-quality AI narration
+                        <div className="text-center px-4">
+                          <Headphones className="w-10 h-10 text-yellow-400 mx-auto mb-2" />
+                          <h3 className="text-lg font-bold text-white mb-1">Premium Feature</h3>
+                          <p className="text-gray-200 text-sm mb-3">
+                            Listen with AI narration
                           </p>
                           <Link 
                             href="/pricing" 
-                            className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:from-yellow-500 hover:to-yellow-600 transition-all shadow-lg"
+                            className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 px-5 py-2 rounded-lg font-semibold hover:from-yellow-500 hover:to-yellow-600 transition-all shadow-lg text-sm"
                           >
-                            Upgrade to Premium
+                            Upgrade
                           </Link>
                         </div>
                       </div>

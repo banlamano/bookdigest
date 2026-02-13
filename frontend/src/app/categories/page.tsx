@@ -109,7 +109,7 @@ export default function CategoriesPage() {
               <div className="text-gray-600 dark:text-gray-400">Book Summaries</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary-600 mb-2">15min</div>
+              <div className="text-4xl font-bold text-primary-600 mb-2">5–10min</div>
               <div className="text-gray-600 dark:text-gray-400">Average Reading Time</div>
             </div>
           </div>

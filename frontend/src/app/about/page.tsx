@@ -8,7 +8,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">About BookDigest</h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
-            Your gateway to learning from the world's best books in just 15 minutes
+            Your gateway to learning from the world's best books in minutes
           </p>
         </div>
       </div>
@@ -26,7 +26,7 @@ export default function AboutPage() {
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               That's why we created BookDigest - to distill the essential insights from bestselling books into 
-              concise 15-minute summaries that you can read or listen to on the go.
+              concise summaries that you can read or listen to on the go.
             </p>
             <p className="text-gray-600 dark:text-gray-400">
               Our goal is to help you learn faster, grow continuously, and achieve your personal and professional goals 
@@ -101,7 +101,7 @@ export default function AboutPage() {
               <div className="text-primary-100">Book Summaries</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">15min</div>
+              <div className="text-4xl font-bold mb-2">5–10min</div>
               <div className="text-primary-100">Average Read Time</div>
             </div>
             <div>

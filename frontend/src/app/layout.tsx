@@ -45,15 +45,15 @@ export const metadata: Metadata = {
     default: 'BookDigest - Free AI Book Summaries | Learn from 1000+ Books in 15 Minutes',
     template: '%s | BookDigest',
   },
-  description: 'Access 454+ free AI-powered book summaries. Read bestselling business, self-help, psychology & personal development books in 15 minutes. Get key insights, quotes & action items from top authors. Better than Blinkist - 100% free.',
+  description: 'Access 454+ free AI-powered book summaries. Read bestselling business, self-help, psychology & personal development books quickly. Get key insights, quotes & action items from top authors. Better than Blinkist - 100% free.',
   keywords: [
     // Primary keywords
     'book summaries',
     'AI book summaries',
     'free book summaries',
     'book summary',
-    '15 minute reads',
-    '15 minute book summary',
+    'quick book summaries',
+    'fast book summary',
     
     // Category keywords  
     'business books',
@@ -111,7 +111,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://book-digest.com',
     title: 'BookDigest - Free AI Book Summaries | Learn from 1000+ Books in 15 Minutes',
-    description: 'Access 454+ free AI-powered book summaries. Read bestselling business, self-help & psychology books in 15 minutes. Better than Blinkist - 100% free with key insights & action items.',
+    description: 'Access 454+ free AI-powered book summaries. Read bestselling business, self-help & psychology books quickly. Better than Blinkist - 100% free with key insights & action items.',
     siteName: 'BookDigest',
     images: [
       {
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'BookDigest - Free AI Book Summaries',
-    description: '454+ free book summaries. Learn from bestselling books in 15 minutes. Better than Blinkist.',
+    description: '454+ free book summaries. Learn from bestselling books quickly. Better than Blinkist.',
     images: ['/og-image.png'],
   },
   alternates: {

@@ -11,7 +11,7 @@ export const siteMetadata = {
     'book summary',
     'AI book summaries',
     'free book summaries',
-    '15 minute book summary',
+    'quick book summary',
     
     // Category keywords
     'business books',
@@ -117,7 +117,7 @@ export function generateBookMetadata(book: {
   const bookTitle = `${book.title} by ${book.author} - Free Summary, Key Insights & Quotes`;
   const bookDescription = book.description
     ? `${book.description.substring(0, 140)}... Read the full AI-powered summary free on BookDigest.`
-    : `Read our free AI-powered summary of "${book.title}" by ${book.author}. Get key insights, important quotes, and actionable takeaways in 15 minutes. ${book.category?.name ? `Best ${book.category.name} book summary.` : ''}`;
+    : `Read our free AI-powered summary of "${book.title}" by ${book.author}. Get key insights, important quotes, and actionable takeaways quickly. ${book.category?.name ? `Best ${book.category.name} book summary.` : ''}`;
 
   return {
     title: bookTitle,

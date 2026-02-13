@@ -15,7 +15,7 @@ export function Footer() {
               <span className="text-lg font-bold">BookDigest</span>
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Learn from the world's best books in just 15 minutes. Read or listen on the go.
+              Learn from the world's best books in minutes. Read or listen on the go.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">

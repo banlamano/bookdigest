@@ -5,7 +5,7 @@ export default function FeaturesPage() {
     {
       icon: <BookOpen className="w-8 h-8" />,
       title: '15-Minute Summaries',
-      description: 'Get the key insights from bestselling books in just 15 minutes. Perfect for busy schedules.',
+      description: 'Get the key insights from bestselling books quickly. Perfect for busy schedules.',
       color: 'from-blue-500 to-cyan-500',
     },
     {
