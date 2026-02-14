@@ -88,7 +88,7 @@ export class AISummaryServiceOpenAI {
           }
         ],
         temperature: 0.7,
-        max_tokens: 4000,
+        max_tokens: 6000, // Increased to allow for deeper, longer summaries (2500-3500 words)
         response_format: { type: 'json_object' }
       });
 
@@ -126,25 +126,25 @@ ${pageCount ? `Pages: ${pageCount}` : ''}
 Create a JSON response with the following structure (MUST be valid JSON):
 
 {
-  "bigIdea": "One punchy paragraph (50-80 words) capturing the book's core message in an engaging way",
-  "whyItMatters": "2-3 paragraphs (150-200 words) explaining relevance, problems solved, and who should read it",
+  "bigIdea": "One punchy paragraph (80-120 words) capturing the book's core message in an engaging way. Make it compelling and specific to this book.",
+  "whyItMatters": "3-4 paragraphs (250-350 words) explaining: why this book matters now, what problems it solves, real-world relevance, and who should read it. Be specific and compelling.",
   "keyInsights": [
     {
-      "title": "Catchy insight title",
-      "explanation": "What this insight means (2-3 sentences)",
-      "example": "Real-world application or example",
-      "impact": "How this changes your perspective or life"
+      "title": "Catchy, specific insight title",
+      "explanation": "What this insight means (3-5 sentences). Be detailed and specific to this book, not generic.",
+      "example": "Concrete real-world application or example from the book (2-3 sentences)",
+      "impact": "How this changes your perspective, behavior, or life (2-3 sentences)"
     }
-    // Include 8-12 insights
+    // Include 12-15 insights (comprehensive coverage of the book's main ideas)
   ],
   "chapterSummaries": [
     {
       "chapter": 1,
       "title": "Chapter title or main theme",
-      "summary": "80-100 words covering main argument and supporting evidence",
-      "keyTakeaway": "One sentence capturing the essential point"
+      "summary": "150-250 words covering: main argument, key supporting evidence, examples, counterarguments addressed, and how it builds on previous chapters. Make it detailed and specific.",
+      "keyTakeaway": "One powerful sentence capturing the essential point"
     }
-    // Include 8-12 chapters
+    // Include 10-15 chapters (aim for comprehensive coverage)
   ],
   "memorableQuotes": [
     {
@@ -171,12 +171,19 @@ Create a JSON response with the following structure (MUST be valid JSON):
   "finalTakeaway": "One powerful paragraph summarizing the lasting impact and the one thing to remember"
 }
 
+IMPORTANT: Aim for a total summary length of 2500-3500 words (comparable to Blinkist's 15-20 minute reads).
+This means:
+- Detailed chapter summaries (150-250 words each)
+- Comprehensive insights with examples (not just bullet points)
+- Specific, actionable content (not generic advice)
+
 Make the content:
 - Engaging and conversational (like Blinkist)
-- Specific to this book (not generic)
+- Specific to this book (not generic platitudes)
 - Actionable and practical
 - Inspiring and thought-provoking
 - Professional yet accessible
+- DETAILED enough to justify a 15-20 minute read
 
 Return ONLY the JSON object, no additional text.`;
   }
