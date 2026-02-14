@@ -104,7 +104,27 @@ export class AISummaryServiceOpenAI {
         throw new Error('No response from OpenAI');
       }
 
-      const summary = JSON.parse(text);
+      // Try to parse JSON with error recovery for malformed responses
+      let summary: any;
+      try {
+        summary = JSON.parse(text);
+      } catch (parseError) {
+        console.log('   ⚠️ JSON parse error, attempting to fix...');
+        // Common issue: OpenAI includes markdown blocks or has trailing commas
+        try {
+          const cleaned = text
+            .replace(/```json\n?/g, '')
+            .replace(/```\n?/g, '')
+            .replace(/,(\s*[}\]])/g, '$1') // Remove trailing commas
+            .trim();
+          summary = JSON.parse(cleaned);
+          console.log('   ✅ Fixed malformed JSON');
+        } catch (secondError) {
+          console.error('   ❌ Could not fix JSON. Response length:', text.length);
+          console.error('   Error:', parseError instanceof Error ? parseError.message : 'Unknown');
+          throw new Error(`JSON parse failed: ${parseError instanceof Error ? parseError.message : 'Unknown error'}`);
+        }
+      }
       
       if (!this.validateSummary(summary)) {
         throw new Error('Invalid summary structure from OpenAI');
