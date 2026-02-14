@@ -176,79 +176,67 @@ export function BuyOnAmazonButton({
               border border-gray-200 dark:border-gray-700
               rounded-lg shadow-xl z-10
             ">
-              {amazonLinkUS && (
-                <button
-                  onClick={() => {
-                    setSelectedRegion('US');
-                    setShowDropdown(false);
-                  }}
-                  className="
-                    w-full px-4 py-2 text-left
-                    hover:bg-gray-100 dark:hover:bg-gray-700
-                    first:rounded-t-lg
-                  "
-                >
-                  🇺🇸 Amazon.com
-                </button>
-              )}
-              {amazonLinkUK && (
-                <button
-                  onClick={() => {
-                    setSelectedRegion('UK');
-                    setShowDropdown(false);
-                  }}
-                  className="
-                    w-full px-4 py-2 text-left
-                    hover:bg-gray-100 dark:hover:bg-gray-700
-                  "
-                >
-                  🇬🇧 Amazon.co.uk
-                </button>
-              )}
-              {amazonLinkDE && (
-                <button
-                  onClick={() => {
-                    setSelectedRegion('DE');
-                    setShowDropdown(false);
-                  }}
-                  className="w-full px-4 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700"
-                >
-                  🇩🇪 Amazon.de
-                </button>
-              )}
-              {amazonLinkES && (
-                <button
-                  onClick={() => {
-                    setSelectedRegion('ES');
-                    setShowDropdown(false);
-                  }}
-                  className="w-full px-4 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700"
-                >
-                  🇪🇸 Amazon.es
-                </button>
-              )}
-              {amazonLinkFR && (
-                <button
-                  onClick={() => {
-                    setSelectedRegion('FR');
-                    setShowDropdown(false);
-                  }}
-                  className="w-full px-4 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700"
-                >
-                  🇫🇷 Amazon.fr
-                </button>
-              )}
-              {amazonLinkIT && (
-                <button
-                  onClick={() => {
-                    setSelectedRegion('IT');
-                    setShowDropdown(false);
-                  }}
-                  className="w-full px-4 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700 last:rounded-b-lg"
-                >
-                  🇮🇹 Amazon.it
-                </button>
-              )}
+              <button
+                onClick={() => {
+                  setSelectedRegion('US');
+                  setShowDropdown(false);
+                }}
+                className="
+                  w-full px-4 py-2 text-left
+                  hover:bg-gray-100 dark:hover:bg-gray-700
+                  first:rounded-t-lg
+                "
+              >
+                🇺🇸 Amazon.com
+              </button>
+              <button
+                onClick={() => {
+                  setSelectedRegion('UK');
+                  setShowDropdown(false);
+                }}
+                className="
+                  w-full px-4 py-2 text-left
+                  hover:bg-gray-100 dark:hover:bg-gray-700
+                "
+              >
+                🇬🇧 Amazon.co.uk
+              </button>
+              <button
+                onClick={() => {
+                  setSelectedRegion('DE');
+                  setShowDropdown(false);
+                }}
+                className="w-full px-4 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                🇩🇪 Amazon.de
+              </button>
+              <button
+                onClick={() => {
+                  setSelectedRegion('ES');
+                  setShowDropdown(false);
+                }}
+                className="w-full px-4 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                🇪🇸 Amazon.es
+              </button>
+              <button
+                onClick={() => {
+                  setSelectedRegion('FR');
+                  setShowDropdown(false);
+                }}
+                className="w-full px-4 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                🇫🇷 Amazon.fr
+              </button>
+              <button
+                onClick={() => {
+                  setSelectedRegion('IT');
+                  setShowDropdown(false);
+                }}
+                className="w-full px-4 py-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700 last:rounded-b-lg"
+              >
+                🇮🇹 Amazon.it
+              </button>
             </div>
           )}
         </div>
