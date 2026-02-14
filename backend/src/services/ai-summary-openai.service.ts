@@ -171,11 +171,14 @@ Create a JSON response with the following structure (MUST be valid JSON):
   "finalTakeaway": "One powerful paragraph summarizing the lasting impact and the one thing to remember"
 }
 
-IMPORTANT: Aim for a total summary length of 2500-3500 words (comparable to Blinkist's 15-20 minute reads).
-This means:
-- Detailed chapter summaries (150-250 words each)
-- Comprehensive insights with examples (not just bullet points)
-- Specific, actionable content (not generic advice)
+⚠️ CRITICAL LENGTH REQUIREMENTS (you MUST meet these minimums):
+- MINIMUM total output: 2800 words (aim for 3000-3500)
+- Each chapter summary: MINIMUM 200 words (aim for 250-300)
+- Each insight: MINIMUM 80 words total (explanation + example + impact)
+- Include at least 12 chapters and 15 insights
+
+If you generate less than the minimums, the output will be rejected.
+This is a 15-20 minute read like Blinkist - be thorough and detailed.
 
 Make the content:
 - Engaging and conversational (like Blinkist)
