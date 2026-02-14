@@ -91,11 +91,18 @@ router.post('/regenerate-summaries', async (req, res) => {
         }
       }
 
+      // Force disconnect/reconnect to ensure data is flushed to DB
+      await prisma.$disconnect();
+      
       // Delay between batches
       if (i + batchSize < books.length) {
         await new Promise(resolve => setTimeout(resolve, 2000));
+        await prisma.$connect(); // Reconnect for next batch
       }
     }
+    
+    // Final disconnect
+    await prisma.$disconnect();
 
     res.json({
       status: 'success',
