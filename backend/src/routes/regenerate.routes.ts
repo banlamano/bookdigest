@@ -52,23 +52,32 @@ router.post('/regenerate-summaries', async (req, res) => {
             publishedDate: book.publishedYear ? `${book.publishedYear}-01-01` : undefined
           });
 
-          await prisma.book.update({
+          const newSummary = `${enhanced.bigIdea}\n\n${enhanced.whyItMatters}`;
+          const newKeyInsights = JSON.stringify(enhanced.keyInsights.map(insight => ({
+            title: insight.title,
+            description: `${insight.explanation} ${insight.example}`
+          })));
+          const newChapters = JSON.stringify(enhanced.chapterSummaries.map(ch => ({
+            number: ch.chapter,
+            title: ch.title,
+            summary: ch.summary
+          })));
+
+          console.log(`   📊 Generated: ${newSummary.split(/\s+/).length} summary words, ${enhanced.chapterSummaries.length} chapters, ${enhanced.keyInsights.length} insights`);
+
+          const updated = await prisma.book.update({
             where: { id: book.id },
             data: {
-              summary: `${enhanced.bigIdea}\n\n${enhanced.whyItMatters}`,
-              keyInsights: JSON.stringify(enhanced.keyInsights.map(insight => ({
-                title: insight.title,
-                description: `${insight.explanation} ${insight.example}`
-              }))),
-              chapters: JSON.stringify(enhanced.chapterSummaries.map(ch => ({
-                number: ch.chapter,
-                title: ch.title,
-                summary: ch.summary
-              }))),
+              summary: newSummary,
+              keyInsights: newKeyInsights,
+              chapters: newChapters,
               quotes: JSON.stringify(enhanced.memorableQuotes.map(q => q.quote)),
               actionItems: JSON.stringify(enhanced.actionPlan.map(a => a.action))
             }
           });
+
+          // Verify the update actually saved
+          console.log(`   💾 Saved to DB: summary=${updated.summary.split(/\s+/).length} words, chapters=${updated.chapters.length} chars`);
 
           success++;
           console.log(`✅ Success: ${book.title}`);
