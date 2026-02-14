@@ -7,7 +7,7 @@ const prisma = new PrismaClient();
 
 // Admin endpoint to regenerate summaries
 router.post('/regenerate-summaries', async (req, res) => {
-  const { batchSize = 10, force = false, limit, offset = 0 } = req.body;
+  const { batchSize = 10, force = false, limit, offset = 0, useGPT4 = false } = req.body;
   
   try {
     console.log(`Starting summary regeneration... (offset: ${offset}, limit: ${limit || 'all'})`);
@@ -44,13 +44,16 @@ router.post('/regenerate-summaries', async (req, res) => {
           console.log(`Processing: ${book.title}`);
 
           const categories = book.tags ? book.tags.split(',').map(t => t.trim()) : undefined;
-          const enhanced = await aiSummaryService.generateEnhancedSummary({
-            title: book.title,
-            author: book.author,
-            description: book.description || undefined,
-            categories: categories,
-            publishedDate: book.publishedYear ? `${book.publishedYear}-01-01` : undefined
-          });
+          const enhanced = await aiSummaryService.generateEnhancedSummary(
+            {
+              title: book.title,
+              author: book.author,
+              description: book.description || undefined,
+              categories: categories,
+              publishedDate: book.publishedYear ? `${book.publishedYear}-01-01` : undefined
+            },
+            { useGPT4 } // Pass GPT-4 flag from request body
+          );
 
           const newSummary = `${enhanced.bigIdea}\n\n${enhanced.whyItMatters}`;
           const newKeyInsights = JSON.stringify(enhanced.keyInsights.map(insight => ({

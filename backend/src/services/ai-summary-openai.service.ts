@@ -65,7 +65,10 @@ export class AISummaryServiceOpenAI {
     return this.openai !== null;
   }
 
-  async generateEnhancedSummary(bookData: BookData): Promise<EnhancedSummary> {
+  async generateEnhancedSummary(
+    bookData: BookData,
+    options?: { useGPT4?: boolean }
+  ): Promise<EnhancedSummary> {
     this.initialize();
     
     if (!this.isAvailable()) {
@@ -75,8 +78,12 @@ export class AISummaryServiceOpenAI {
     try {
       const prompt = this.buildPrompt(bookData);
       
-      const completion = await this.openai!.chat.completions.create({
-        model: 'gpt-4o-mini',
+      // Use GPT-4 for premium quality if requested (10x cost but better quality/length)
+      const model = options?.useGPT4 ? 'gpt-4o' : 'gpt-4o-mini';
+      console.log(`   Using model: ${model}`);
+
+      const completion = await this.openai.chat.completions.create({
+        model,
         messages: [
           {
             role: 'system',
