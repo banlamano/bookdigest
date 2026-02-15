@@ -198,14 +198,14 @@ Create a JSON response with the following structure (MUST be valid JSON):
   "finalTakeaway": "One powerful paragraph summarizing the lasting impact and the one thing to remember"
 }
 
-⚠️ CRITICAL LENGTH REQUIREMENTS (you MUST meet these minimums):
-- MINIMUM total output: 2800 words (aim for 3000-3500)
-- Each chapter summary: MINIMUM 200 words (aim for 250-300)
-- Each insight: MINIMUM 80 words total (explanation + example + impact)
-- Include at least 12 chapters and 15 insights
+⚠️ IMPORTANT LENGTH TARGETS (aim for these, but keep JSON valid):
+- Target total output: 2000-2500 words (10-15 minute read)
+- Each chapter summary: 150-200 words (detailed but concise)
+- Each insight: 60-80 words total (explanation + example + impact)
+- Include 10-12 chapters and 12-14 insights
 
-If you generate less than the minimums, the output will be rejected.
-This is a 15-20 minute read like Blinkist - be thorough and detailed.
+Be thorough and detailed, but ensure the JSON output is complete and valid.
+Quality over quantity - better to have a complete 2000-word summary than a broken 3000-word one.
 
 Make the content:
 - Engaging and conversational (like Blinkist)
