@@ -20,6 +20,10 @@ router.post('/regenerate-summaries', async (req, res) => {
         title: true,
         author: true,
         summary: true,
+        keyInsights: true,
+        chapters: true,
+        quotes: true,
+        actionItems: true,
         tags: true,
         publishedYear: true,
         description: true
@@ -35,9 +39,36 @@ router.post('/regenerate-summaries', async (req, res) => {
       
       for (const book of batch) {
         try {
-          // Skip if already has good content
-          if (!force && book.summary && book.summary.length > 500) {
-            continue;
+          // Skip if already has good content (2000+ total words AND substantial chapters)
+          if (!force) {
+            const summaryWords = book.summary ? book.summary.split(/\s+/).length : 0;
+            const insightsWords = book.keyInsights ? book.keyInsights.split(/\s+/).length : 0;
+            const chaptersWords = book.chapters ? book.chapters.split(/\s+/).length : 0;
+            const quotesWords = book.quotes ? book.quotes.split(/\s+/).length : 0;
+            const actionItemsWords = book.actionItems ? book.actionItems.split(/\s+/).length : 0;
+            
+            const totalWords = summaryWords + insightsWords + chaptersWords + quotesWords + actionItemsWords;
+            
+            // Parse chapters to compute average chapter length
+            let avgChapterWords = 0;
+            try {
+              const parsedChapters = JSON.parse(book.chapters || '[]');
+              if (Array.isArray(parsedChapters) && parsedChapters.length > 0) {
+                const chapterWordsSum = parsedChapters.reduce((sum: number, ch: any) => {
+                  const chSummary = ch.summary || '';
+                  return sum + chSummary.split(/\s+/).length;
+                }, 0);
+                avgChapterWords = chapterWordsSum / parsedChapters.length;
+              }
+            } catch (e) {
+              // If parsing fails, assume chapters are weak
+            }
+            
+            // Skip only if total content >= 2000 words AND average chapter >= 200 words
+            if (totalWords >= 2000 && avgChapterWords >= 200) {
+              console.log(`⏭️  Skipping "${book.title}" (already good: ${totalWords} total words, ${Math.round(avgChapterWords)} avg chapter words)`);
+              continue;
+            }
           }
 
           processed++;
