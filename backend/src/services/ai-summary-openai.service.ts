@@ -184,7 +184,7 @@ export class AISummaryServiceOpenAI {
   private buildPrompt(bookData: BookData, options?: { retry?: boolean }): string {
     const { title, author, description, categories, pageCount } = bookData;
     const retryNote = options?.retry
-      ? '\n\nIMPORTANT: Your previous response was rejected because chapters/insights were too short. Fix this by writing LONGER chapter summaries (at least 180 words each) and substantial insight explanations (55+ words each). Do not increase chapter count; increase depth.'
+      ? '\n\nIMPORTANT: Your previous response was rejected because chapters/insights were too short. Fix this by writing LONGER chapter summaries (at least 160 words each) and substantial insight explanations (50+ words each). Do not increase chapter count; increase depth.'
       : '';
 
     return `You are an expert book summarizer for a premium book summary service like Blinkist or Shortform.
@@ -296,9 +296,9 @@ Return ONLY the JSON object, no additional text.`;
 
     const chapterTooShort = summary.chapterSummaries.some((ch: any) => {
       const wordCount = this.countWords(ch.summary);
-      const tooShort = typeof ch?.summary !== 'string' || wordCount < 180;
+      const tooShort = typeof ch?.summary !== 'string' || wordCount < 160;
       if (tooShort) {
-        console.log(`   📊 Chapter "${ch?.title || 'untitled'}" word count: ${wordCount} (min: 180)`);
+        console.log(`   📊 Chapter "${ch?.title || 'untitled'}" word count: ${wordCount} (min: 160)`);
       }
       return tooShort;
     });
@@ -306,9 +306,9 @@ Return ONLY the JSON object, no additional text.`;
 
     const insightTooShort = summary.keyInsights.some((ins: any) => {
       const wordCount = this.countWords(ins.explanation);
-      const tooShort = typeof ins?.explanation !== 'string' || wordCount < 55;
+      const tooShort = typeof ins?.explanation !== 'string' || wordCount < 50;
       if (tooShort) {
-        console.log(`   📊 Insight "${ins?.title || 'untitled'}" explanation word count: ${wordCount} (min: 55)`);
+        console.log(`   📊 Insight "${ins?.title || 'untitled'}" explanation word count: ${wordCount} (min: 50)`);
       }
       return tooShort;
     });
