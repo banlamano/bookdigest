@@ -77,6 +77,7 @@ export class AISummaryServiceOpenAI {
 
     try {
       const prompt = this.buildPrompt(bookData);
+      const retryPrompt = this.buildPrompt(bookData, { retry: true });
       
       // Use GPT-4 for premium quality if requested (10x cost but better quality/length)
       const model = options?.useGPT4 ? 'gpt-4o' : 'gpt-4o-mini';
@@ -95,7 +96,7 @@ export class AISummaryServiceOpenAI {
           }
         ],
         temperature: 0.7,
-        max_tokens: 6000, // Increased to allow for deeper, longer summaries (2500-3500 words)
+        max_tokens: 7500, // Allow longer chapter/insight bodies (aim ~2200-3000 words total)
         response_format: { type: 'json_object' }
       });
 
@@ -127,7 +128,49 @@ export class AISummaryServiceOpenAI {
       }
       
       if (!this.validateSummary(summary)) {
-        throw new Error('Invalid summary structure from OpenAI');
+        // One retry with stricter length/structure instructions (common failure mode: too-short chapters/insights)
+        console.warn('⚠️ Summary did not meet quality thresholds (likely too short). Retrying once with stricter prompt...');
+
+        const retryCompletion = await this.openai.chat.completions.create({
+          model,
+          messages: [
+            {
+              role: 'system',
+              content: 'You are an expert book summarizer for a premium book summary service like Blinkist or Shortform. You always return valid, comprehensive JSON responses.'
+            },
+            {
+              role: 'user',
+              content: retryPrompt
+            }
+          ],
+          temperature: 0.6,
+          max_tokens: 8000,
+          response_format: { type: 'json_object' }
+        });
+
+        const retryText = retryCompletion.choices[0]?.message?.content;
+        if (!retryText) {
+          throw new Error('No response from OpenAI (retry)');
+        }
+
+        let retrySummary: any;
+        try {
+          retrySummary = JSON.parse(retryText);
+        } catch {
+          const cleaned = retryText
+            .replace(/```json\n?/g, '')
+            .replace(/```\n?/g, '')
+            .replace(/,(\s*[}\]])/g, '$1')
+            .trim();
+          retrySummary = JSON.parse(cleaned);
+        }
+
+        if (!this.validateSummary(retrySummary)) {
+          throw new Error('Invalid summary structure/length from OpenAI after retry');
+        }
+
+        console.log(`✅ Generated summary for "${bookData.title}" using OpenAI (retry succeeded)`);
+        return retrySummary;
       }
 
       console.log(`✅ Generated summary for "${bookData.title}" using OpenAI GPT-4o-mini`);
@@ -138,11 +181,14 @@ export class AISummaryServiceOpenAI {
     }
   }
 
-  private buildPrompt(bookData: BookData): string {
+  private buildPrompt(bookData: BookData, options?: { retry?: boolean }): string {
     const { title, author, description, categories, pageCount } = bookData;
+    const retryNote = options?.retry
+      ? '\n\nIMPORTANT: Your previous response was rejected because chapters/insights were too short. Fix this by writing LONGER chapter summaries (at least 220 words each) and substantial insight explanations (60+ words each). Do not increase chapter count; increase depth.'
+      : '';
 
-    return `You are an expert book summarizer for a premium book summary service like Blinkist or Shortform. 
-Generate a comprehensive, engaging summary for the following book:
+    return `You are an expert book summarizer for a premium book summary service like Blinkist or Shortform.
+Generate a comprehensive, engaging summary for the following book:${retryNote}
 
 Title: ${title}
 Author: ${author}
@@ -162,16 +208,16 @@ Create a JSON response with the following structure (MUST be valid JSON):
       "example": "Concrete real-world application or example from the book (2-3 sentences)",
       "impact": "How this changes your perspective, behavior, or life (2-3 sentences)"
     }
-    // Include 12-15 insights (comprehensive coverage of the book's main ideas)
+    // Include 8-12 insights (fewer, but deeper and more practical)
   ],
   "chapterSummaries": [
     {
       "chapter": 1,
       "title": "Chapter title or main theme",
-      "summary": "150-250 words covering: main argument, key supporting evidence, examples, counterarguments addressed, and how it builds on previous chapters. Make it detailed and specific.",
+      "summary": "250-400 words. Must include: (1) the chapter's key idea, (2) supporting reasoning, (3) a concrete example or mini-story, (4) practical application steps. Write with depth—this should feel premium, not like a short paragraph.",
       "keyTakeaway": "One powerful sentence capturing the essential point"
     }
-    // Include 10-15 chapters (aim for comprehensive coverage)
+    // Include 6-8 chapters (max 10). Fewer chapters, but each must be long and substantial.
   ],
   "memorableQuotes": [
     {
@@ -199,10 +245,10 @@ Create a JSON response with the following structure (MUST be valid JSON):
 }
 
 ⚠️ IMPORTANT LENGTH TARGETS (aim for these, but keep JSON valid):
-- Target total output: 2000-2500 words (10-15 minute read)
-- Each chapter summary: 150-200 words (detailed but concise)
-- Each insight: 60-80 words total (explanation + example + impact)
-- Include 10-12 chapters and 12-14 insights
+- Target total output: 2200-3000 words (15-20 minute read is fine)
+- Chapters: 6-8 (max 10), each chapter summary 250-400 words (long, structured, premium)
+- Insights: 8-12, each insight explanation 60-120 words (plus example + impact)
+- Prefer DEPTH per chapter/insight over adding more items
 
 Be thorough and detailed, but ensure the JSON output is complete and valid.
 Quality over quantity - better to have a complete 2000-word summary than a broken 3000-word one.
@@ -218,20 +264,57 @@ Make the content:
 Return ONLY the JSON object, no additional text.`;
   }
 
+  private countWords(text: string): number {
+    return (text || '')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .split(' ')
+      .filter(Boolean).length;
+  }
+
   private validateSummary(summary: any): boolean {
-    return (
+    // Structural validation
+    if (!(
       summary &&
       typeof summary.bigIdea === 'string' &&
       typeof summary.whyItMatters === 'string' &&
       Array.isArray(summary.keyInsights) &&
-      summary.keyInsights.length >= 5 &&
       Array.isArray(summary.chapterSummaries) &&
-      summary.chapterSummaries.length >= 5 &&
       Array.isArray(summary.memorableQuotes) &&
       Array.isArray(summary.actionPlan) &&
       Array.isArray(summary.targetAudience) &&
       typeof summary.finalTakeaway === 'string'
+    )) {
+      return false;
+    }
+
+    // Shape validation (fixes the real feedback: chapters/insights too short)
+    // Target: 6-8 chapters, 8-12 insights, but *substantial* bodies.
+    const chaptersOk = summary.chapterSummaries.length >= 6 && summary.chapterSummaries.length <= 10;
+    const insightsOk = summary.keyInsights.length >= 8 && summary.keyInsights.length <= 14;
+    if (!chaptersOk || !insightsOk) return false;
+
+    const chapterTooShort = summary.chapterSummaries.some((ch: any) =>
+      typeof ch?.summary !== 'string' || this.countWords(ch.summary) < 220
     );
+    if (chapterTooShort) return false;
+
+    const insightTooShort = summary.keyInsights.some((ins: any) =>
+      typeof ins?.explanation !== 'string' || this.countWords(ins.explanation) < 60
+    );
+    if (insightTooShort) return false;
+
+    // Total word sanity check (whole page should not feel "thin")
+    const totalWords =
+      this.countWords(summary.bigIdea) +
+      this.countWords(summary.whyItMatters) +
+      this.countWords(summary.finalTakeaway) +
+      summary.chapterSummaries.reduce((acc: number, ch: any) => acc + this.countWords(ch.summary) + this.countWords(ch.keyTakeaway || ''), 0) +
+      summary.keyInsights.reduce((acc: number, ins: any) => acc + this.countWords(ins.title || '') + this.countWords(ins.explanation || '') + this.countWords(ins.example || '') + this.countWords(ins.impact || ''), 0) +
+      summary.actionPlan.reduce((acc: number, a: any) => acc + this.countWords(a.action || '') + this.countWords(a.outcome || ''), 0) +
+      summary.memorableQuotes.reduce((acc: number, q: any) => acc + this.countWords(q.quote || '') + this.countWords(q.context || '') + this.countWords(q.significance || ''), 0);
+
+    return totalWords >= 1800;
   }
 
   // Generate legacy format for backward compatibility

@@ -25,6 +25,7 @@ async function regenerateAllSummaries(options: {
   delayMs?: number;
   forceRegenerate?: boolean;
   dryRun?: boolean;
+  ids?: string[];
 } = {}) {
   const {
     batchSize = 5, // Reduced to 5 to stay under 15 RPM limit
@@ -57,8 +58,9 @@ async function regenerateAllSummaries(options: {
   }
 
   try {
-    // Get all books
+    // Get books (optionally filter to a specific ID set)
     const books = await prisma.book.findMany({
+      where: options.ids?.length ? { id: { in: options.ids } } : undefined,
       select: {
         id: true,
         title: true,
@@ -67,7 +69,8 @@ async function regenerateAllSummaries(options: {
         keyInsights: true,
         publishedYear: true,
         tags: true
-      }
+      },
+      orderBy: { id: 'asc' }
     });
 
     stats.total = books.length;
@@ -99,7 +102,7 @@ async function regenerateAllSummaries(options: {
           if (dryRun) {
             console.log('   [DRY RUN] Would generate summary');
             stats.success++;
-            return;
+            continue;
           }
 
           // Generate enhanced summary
@@ -181,12 +184,63 @@ async function regenerateAllSummaries(options: {
 async function main() {
   const args = process.argv.slice(2);
   
-  const options = {
+  const options: {
+    batchSize: number;
+    delayMs: number;
+    forceRegenerate: boolean;
+    dryRun: boolean;
+    ids?: string[];
+  } = {
     batchSize: 5, // Reduced default to respect Gemini free tier
     delayMs: 5000, // Increased to stay under 15 RPM
     forceRegenerate: args.includes('--force'),
     dryRun: args.includes('--dry-run')
   };
+
+  // Parse ids / ids file (target specific books)
+  const idsArg = args.find(arg => arg.startsWith('--ids='));
+  const idsFileArg = args.find(arg => arg.startsWith('--ids-file='));
+
+  if (idsArg && idsFileArg) {
+    throw new Error('Use only one of --ids= or --ids-file=');
+  }
+
+  if (idsArg) {
+    const raw = idsArg.split('=')[1] || '';
+    const parsed = raw
+      .split(',')
+      .map(s => s.trim())
+      .filter(Boolean)
+      .filter(s => /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(s));
+
+    if (!parsed.length) {
+      throw new Error('No valid UUID IDs provided in --ids=');
+    }
+
+    options.ids = Array.from(new Set(parsed));
+  }
+
+  if (idsFileArg) {
+    const filePath = idsFileArg.split('=')[1];
+    if (!filePath) {
+      throw new Error('Missing value for --ids-file=');
+    }
+
+    // Lazy import to avoid top-level dependency
+    const fs = await import('node:fs/promises');
+    const content = await fs.readFile(filePath, 'utf-8');
+    const parsed = content
+      .split(/\r?\n|,/g)
+      .map(s => s.trim())
+      .filter(Boolean)
+      .filter(s => /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(s));
+
+    if (!parsed.length) {
+      throw new Error(`No valid IDs found in file: ${filePath}`);
+    }
+
+    options.ids = Array.from(new Set(parsed));
+  }
 
   // Parse batch size
   const batchSizeArg = args.find(arg => arg.startsWith('--batch-size='));
@@ -210,8 +264,10 @@ Usage:
 Options:
   --force              Regenerate all summaries, even if they exist
   --dry-run            Show what would be done without making changes
-  --batch-size=N       Process N books at a time (default: 10)
-  --delay=MS           Wait MS milliseconds between batches (default: 2000)
+  --batch-size=N       Process N books at a time
+  --delay=MS           Wait MS milliseconds between batches
+  --ids=UUID1,UUID2    Only process specific book IDs (comma-separated UUIDs)
+  --ids-file=PATH      Only process IDs from a file (comma/line separated)
   --help               Show this help message
 
 Examples:
@@ -219,7 +275,8 @@ Examples:
   npm run regenerate:summaries -- --force
   npm run regenerate:summaries -- --dry-run
   npm run regenerate:summaries -- --batch-size=5 --delay=3000
-  npm run regenerate:summaries -- --force --batch-size=20
+  npm run regenerate:summaries -- --ids=006d6f26-2829-4f8c-aaa0-e66ad69de651,1972ed08-2fdb-4d8a-8cd7-3b73594fe92c -- --force
+  npm run regenerate:summaries -- --ids-file=remaining_ids.txt -- --force
 
 Environment Variables:
   GEMINI_API_KEY       Required for AI-powered summaries (falls back to templates if missing)
