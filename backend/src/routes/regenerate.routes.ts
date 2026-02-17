@@ -7,14 +7,28 @@ const prisma = new PrismaClient();
 
 // Admin endpoint to regenerate summaries
 router.post('/regenerate-summaries', async (req, res) => {
-  const { batchSize = 10, force = false, limit, offset = 0, useGPT4 = false } = req.body;
+  const { batchSize = 10, force = false, limit, offset = 0, useGPT4 = false, ids } = req.body as {
+    batchSize?: number;
+    force?: boolean;
+    limit?: number;
+    offset?: number;
+    useGPT4?: boolean;
+    ids?: string[];
+  };
   
   try {
-    console.log(`Starting summary regeneration... (offset: ${offset}, limit: ${limit || 'all'})`);
-    
+    const idsCount = Array.isArray(ids) ? ids.length : 0;
+    console.log(
+      `Starting summary regeneration... (${idsCount ? `ids=${idsCount}` : `offset=${offset}`}, limit: ${limit || 'all'})`
+    );
+
+    // If ids were provided, ignore offset/limit and process only those IDs.
+    const where = idsCount ? { id: { in: ids } } : undefined;
+
     const books = await prisma.book.findMany({
-      skip: offset,
-      take: limit,
+      where,
+      skip: idsCount ? undefined : offset,
+      take: idsCount ? undefined : limit,
       select: {
         id: true,
         title: true,
@@ -142,7 +156,8 @@ router.post('/regenerate-summaries', async (req, res) => {
         total: books.length,
         processed,
         success,
-        failed
+        failed,
+        mode: Array.isArray(ids) && ids.length ? 'ids' : 'offset-limit'
       }
     });
 
