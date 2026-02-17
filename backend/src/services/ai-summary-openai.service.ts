@@ -184,7 +184,7 @@ export class AISummaryServiceOpenAI {
   private buildPrompt(bookData: BookData, options?: { retry?: boolean }): string {
     const { title, author, description, categories, pageCount } = bookData;
     const retryNote = options?.retry
-      ? '\n\nIMPORTANT: Your previous response was rejected because chapters/insights were too short. Fix this by writing LONGER chapter summaries (at least 130 words each) and substantial insight explanations (35+ words each). Do not increase chapter count; increase depth.'
+      ? '\n\nIMPORTANT: Your previous response was rejected because chapters/insights were too short. Fix this by writing LONGER chapter summaries (at least 130 words each) and substantial insight explanations (30+ words each). Do not increase chapter count; increase depth.'
       : '';
 
     return `You are an expert book summarizer for a premium book summary service like Blinkist or Shortform.
@@ -306,9 +306,9 @@ Return ONLY the JSON object, no additional text.`;
 
     const insightTooShort = summary.keyInsights.some((ins: any) => {
       const wordCount = this.countWords(ins.explanation);
-      const tooShort = typeof ins?.explanation !== 'string' || wordCount < 35;
+      const tooShort = typeof ins?.explanation !== 'string' || wordCount < 30;
       if (tooShort) {
-        console.log(`   📊 Insight "${ins?.title || 'untitled'}" explanation word count: ${wordCount} (min: 35)`);
+        console.log(`   📊 Insight "${ins?.title || 'untitled'}" explanation word count: ${wordCount} (min: 30)`);
       }
       return tooShort;
     });
@@ -366,6 +366,7 @@ Return ONLY the JSON object, no additional text.`;
 }
 
 export const aiSummaryService = new AISummaryServiceOpenAI();
+
 
 
 
