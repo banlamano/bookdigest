@@ -184,7 +184,7 @@ export class AISummaryServiceOpenAI {
   private buildPrompt(bookData: BookData, options?: { retry?: boolean }): string {
     const { title, author, description, categories, pageCount } = bookData;
     const retryNote = options?.retry
-      ? '\n\nIMPORTANT: Your previous response was rejected because chapters/insights were too short. Fix this by writing LONGER chapter summaries (at least 220 words each) and substantial insight explanations (60+ words each). Do not increase chapter count; increase depth.'
+      ? '\n\nIMPORTANT: Your previous response was rejected because chapters/insights were too short. Fix this by writing LONGER chapter summaries (at least 180 words each) and substantial insight explanations (55+ words each). Do not increase chapter count; increase depth.'
       : '';
 
     return `You are an expert book summarizer for a premium book summary service like Blinkist or Shortform.
@@ -295,12 +295,12 @@ Return ONLY the JSON object, no additional text.`;
     if (!chaptersOk || !insightsOk) return false;
 
     const chapterTooShort = summary.chapterSummaries.some((ch: any) =>
-      typeof ch?.summary !== 'string' || this.countWords(ch.summary) < 220
+      typeof ch?.summary !== 'string' || this.countWords(ch.summary) < 180
     );
     if (chapterTooShort) return false;
 
     const insightTooShort = summary.keyInsights.some((ins: any) =>
-      typeof ins?.explanation !== 'string' || this.countWords(ins.explanation) < 60
+      typeof ins?.explanation !== 'string' || this.countWords(ins.explanation) < 55
     );
     if (insightTooShort) return false;
 
@@ -314,7 +314,7 @@ Return ONLY the JSON object, no additional text.`;
       summary.actionPlan.reduce((acc: number, a: any) => acc + this.countWords(a.action || '') + this.countWords(a.outcome || ''), 0) +
       summary.memorableQuotes.reduce((acc: number, q: any) => acc + this.countWords(q.quote || '') + this.countWords(q.context || '') + this.countWords(q.significance || ''), 0);
 
-    return totalWords >= 1800;
+    return totalWords >= 1600;
   }
 
   // Generate legacy format for backward compatibility
