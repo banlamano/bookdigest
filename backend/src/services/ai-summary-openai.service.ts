@@ -127,7 +127,18 @@ export class AISummaryServiceOpenAI {
         }
       }
       
-      if (!this.validateSummary(summary)) {
+      // We validate in two steps:
+      // - Structural validation (hard requirement): correct JSON shape + required fields
+      // - Quality validation (soft requirement): word-count and depth targets
+      // If quality fails, we retry once; after retry we still save the best structurally-valid result.
+      const isStructurallyValid = this.validateSummary(summary, { mode: 'structure' });
+      if (!isStructurallyValid) {
+        throw new Error('Invalid summary structure from OpenAI');
+      }
+
+      const meetsQuality = this.validateSummary(summary, { mode: 'quality' });
+
+      if (!meetsQuality) {
         // One retry with stricter length/structure instructions (common failure mode: too-short chapters/insights)
         console.warn('⚠️ Summary did not meet quality thresholds (likely too short). Retrying once with stricter prompt...');
 
@@ -165,15 +176,24 @@ export class AISummaryServiceOpenAI {
           retrySummary = JSON.parse(cleaned);
         }
 
-        if (!this.validateSummary(retrySummary)) {
-          throw new Error('Invalid summary structure/length from OpenAI after retry');
+        const retryStructurallyValid = this.validateSummary(retrySummary, { mode: 'structure' });
+        if (!retryStructurallyValid) {
+          throw new Error('Invalid summary structure from OpenAI after retry');
         }
 
-        console.log(`✅ Generated summary for "${bookData.title}" using OpenAI (retry succeeded)`);
+        const retryMeetsQuality = this.validateSummary(retrySummary, { mode: 'quality' });
+        if (!retryMeetsQuality) {
+          console.warn(
+            `⚠️ Summary still below quality thresholds after retry. Saving best attempt anyway for "${bookData.title}".`
+          );
+        } else {
+          console.log(`✅ Generated summary for "${bookData.title}" using OpenAI (retry met quality thresholds)`);
+        }
+
         return retrySummary;
       }
 
-      console.log(`✅ Generated summary for "${bookData.title}" using OpenAI GPT-4o-mini`);
+      console.log(`✅ Generated summary for "${bookData.title}" using OpenAI (saving initial attempt)`);
       return summary;
     } catch (error) {
       console.error('OpenAI summary generation failed:', error);
@@ -272,7 +292,8 @@ Return ONLY the JSON object, no additional text.`;
       .filter(Boolean).length;
   }
 
-  private validateSummary(summary: any): boolean {
+  private validateSummary(summary: any, opts?: { mode?: 'structure' | 'quality' }): boolean {
+    const mode = opts?.mode || 'quality';
     // Structural validation
     if (!(
       summary &&
@@ -288,12 +309,15 @@ Return ONLY the JSON object, no additional text.`;
       return false;
     }
 
-    // Shape validation (fixes the real feedback: chapters/insights too short)
-    // Target: 6-8 chapters, 8-12 insights, but *substantial* bodies.
-    const chaptersOk = summary.chapterSummaries.length >= 6 && summary.chapterSummaries.length <= 10;
-    const insightsOk = summary.keyInsights.length >= 8 && summary.keyInsights.length <= 14;
+    // Item count sanity (still structural-ish; avoids saving obviously broken/empty content)
+    const chaptersOk = summary.chapterSummaries.length >= 4 && summary.chapterSummaries.length <= 12;
+    const insightsOk = summary.keyInsights.length >= 6 && summary.keyInsights.length <= 16;
     if (!chaptersOk || !insightsOk) return false;
 
+    // If caller only wants structural validity, stop here.
+    if (mode === 'structure') return true;
+
+    // Quality validation (soft): depth/length checks.
     const chapterTooShort = summary.chapterSummaries.some((ch: any) => {
       const wordCount = this.countWords(ch.summary);
       const tooShort = typeof ch?.summary !== 'string' || wordCount < 130;
