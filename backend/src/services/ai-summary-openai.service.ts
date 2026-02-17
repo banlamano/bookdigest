@@ -294,14 +294,24 @@ Return ONLY the JSON object, no additional text.`;
     const insightsOk = summary.keyInsights.length >= 8 && summary.keyInsights.length <= 14;
     if (!chaptersOk || !insightsOk) return false;
 
-    const chapterTooShort = summary.chapterSummaries.some((ch: any) =>
-      typeof ch?.summary !== 'string' || this.countWords(ch.summary) < 180
-    );
+    const chapterTooShort = summary.chapterSummaries.some((ch: any) => {
+      const wordCount = this.countWords(ch.summary);
+      const tooShort = typeof ch?.summary !== 'string' || wordCount < 180;
+      if (tooShort) {
+        console.log(`   📊 Chapter "${ch?.title || 'untitled'}" word count: ${wordCount} (min: 180)`);
+      }
+      return tooShort;
+    });
     if (chapterTooShort) return false;
 
-    const insightTooShort = summary.keyInsights.some((ins: any) =>
-      typeof ins?.explanation !== 'string' || this.countWords(ins.explanation) < 55
-    );
+    const insightTooShort = summary.keyInsights.some((ins: any) => {
+      const wordCount = this.countWords(ins.explanation);
+      const tooShort = typeof ins?.explanation !== 'string' || wordCount < 55;
+      if (tooShort) {
+        console.log(`   📊 Insight "${ins?.title || 'untitled'}" explanation word count: ${wordCount} (min: 55)`);
+      }
+      return tooShort;
+    });
     if (insightTooShort) return false;
 
     // Total word sanity check (whole page should not feel "thin")
@@ -314,7 +324,11 @@ Return ONLY the JSON object, no additional text.`;
       summary.actionPlan.reduce((acc: number, a: any) => acc + this.countWords(a.action || '') + this.countWords(a.outcome || ''), 0) +
       summary.memorableQuotes.reduce((acc: number, q: any) => acc + this.countWords(q.quote || '') + this.countWords(q.context || '') + this.countWords(q.significance || ''), 0);
 
-    return totalWords >= 1600;
+    const meetsMinimum = totalWords >= 1600;
+    if (!meetsMinimum) {
+      console.log(`   📊 Total word count: ${totalWords} (min: 1600)`);
+    }
+    return meetsMinimum;
   }
 
   // Generate legacy format for backward compatibility
