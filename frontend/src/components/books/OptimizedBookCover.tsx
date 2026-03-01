@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 
 interface OptimizedBookCoverProps {
   src: string;
@@ -158,20 +157,19 @@ export function OptimizedBookCover({ src, alt, author, bookId, className = '', p
 
   return (
     <div className="relative w-full h-full">
-      <Image
+      {/* Use a plain <img> tag for maximum reliability.
+          Next/Image optimization (and even unoptimized mode) can still behave inconsistently
+          across browsers/CDNs for external image hosts and data-URI fallbacks. */}
+      <img
         src={imgSrc}
         alt={alt}
-        fill
-        className={`object-cover transition-opacity duration-300 ${
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
           isLoading ? 'opacity-0' : 'opacity-100'
         } ${className}`}
         loading={priority ? 'eager' : 'lazy'}
-        priority={priority}
         onError={handleError}
         onLoad={handleLoad}
-        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-        quality={85}
-        unoptimized={shouldUnoptimize} // Avoid optimizer for remote covers; always unoptimized on fallback
+        referrerPolicy="no-referrer"
       />
       
       {isLoading && (
