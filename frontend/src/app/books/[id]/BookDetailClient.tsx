@@ -198,9 +198,10 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                 <OptimizedBookCover
                   src={book.coverImage || '/placeholder-book.svg'}
                   alt={book.title}
+                  author={book.author}
                   bookId={book.id}
                   priority
-                  className="object-cover"
+                />
                 />
                 {book.isPremium && (
                   <div className="absolute top-4 right-4">
