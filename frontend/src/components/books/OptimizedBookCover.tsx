@@ -111,16 +111,24 @@ export function OptimizedBookCover({ src, alt, author, bookId, className = '', p
   }, [aiCoverSrc, src]);
 
   const handleError = () => {
-    // If it's already the placeholder SVG, don't try again
-    if (imgSrc.includes('placeholder-book.svg')) {
+    // If we've already fallen back to the generated SVG, stop.
+    if (imgSrc.startsWith('data:image/svg+xml')) {
       setHasError(true);
       setIsLoading(false);
       return;
     }
 
-    // If current source is an AI cover, final fallback is the placeholder
+    // If the placeholder fails (or we ever hit it), replace with generated SVG.
+    if (imgSrc.includes('placeholder-book.svg')) {
+      setImgSrc(generatedCoverSrc);
+      setHasError(true);
+      setIsLoading(false);
+      return;
+    }
+
+    // If current source is an AI cover and it fails, fallback to generated SVG (never placeholder).
     if (aiCoverSrc && imgSrc.includes(aiCoverSrc)) {
-      setImgSrc('/placeholder-book.svg');
+      setImgSrc(generatedCoverSrc);
       setHasError(true);
       setIsLoading(false);
       return;
@@ -136,11 +144,25 @@ export function OptimizedBookCover({ src, alt, author, bookId, className = '', p
       return;
     }
 
-    // Second failure: fallback to local AI cover if available
+    // Second failure: fallback to local AI cover if it exists; otherwise go straight to generated SVG.
     if (aiCoverSrc) {
-      setImgSrc(aiCoverSrc);
-      setHasError(true);
-      setIsLoading(true);
+      fetch(aiCoverSrc, { method: 'HEAD' })
+        .then((res) => {
+          if (res.ok) {
+            setImgSrc(aiCoverSrc);
+            setHasError(true);
+            setIsLoading(true);
+          } else {
+            setImgSrc(generatedCoverSrc);
+            setHasError(true);
+            setIsLoading(false);
+          }
+        })
+        .catch(() => {
+          setImgSrc(generatedCoverSrc);
+          setHasError(true);
+          setIsLoading(false);
+        });
       return;
     }
 
