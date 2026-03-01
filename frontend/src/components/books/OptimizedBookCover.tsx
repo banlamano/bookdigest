@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface OptimizedBookCoverProps {
   src: string;
@@ -76,11 +76,11 @@ export function OptimizedBookCover({ src, alt, author, bookId, className = '', p
   const [imgSrc, setImgSrc] = useState(src);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+  const loadTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // IMPORTANT:
-  // For external cover hosts (OpenLibrary, Google Books, etc.), Next/Image optimization can be flaky in production
-  // due to cold starts, rate limiting, or edge fetch failures from Vercel's optimizer.
-  // Using `unoptimized` forces the browser to fetch the remote image directly, which is typically far more stable.
+  // Covers are mostly remote (OpenLibrary). Remote image requests can hang (no onError) under rate limiting.
+  // So we add a hard timeout that falls back to a generated SVG cover to guarantee something always renders.
   const isRemoteSrc = typeof imgSrc === 'string' && /^https?:\/\//.test(imgSrc);
   const shouldUnoptimize = isRemoteSrc || hasError;
 
