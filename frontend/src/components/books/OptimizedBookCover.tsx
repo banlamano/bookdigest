@@ -84,6 +84,45 @@ export function OptimizedBookCover({ src, alt, author, bookId, className = '', p
   const isRemoteSrc = typeof imgSrc === 'string' && /^https?:\/\//.test(imgSrc);
   const shouldUnoptimize = isRemoteSrc || hasError;
 
+  // Hard timeout for remote covers: if the request hangs (no onError), we still show a cover.
+  useEffect(() => {
+    if (loadTimeoutRef.current) {
+      clearTimeout(loadTimeoutRef.current);
+      loadTimeoutRef.current = null;
+    }
+
+    // If src is missing/placeholder, go straight to generated cover.
+    if (!imgSrc || imgSrc.includes('placeholder-book.svg')) {
+      setImgSrc(generatedCoverSrc);
+      setIsLoading(false);
+      setHasError(true);
+      return;
+    }
+
+    if (!isRemoteSrc) return;
+    if (!isLoading) return;
+
+    const expectedSrc = imgSrc;
+    loadTimeoutRef.current = setTimeout(() => {
+      // Only fallback if we're still waiting on the same remote URL
+      setImgSrc((current) => {
+        if (current === expectedSrc) {
+          setHasError(true);
+          setIsLoading(false);
+          return generatedCoverSrc;
+        }
+        return current;
+      });
+    }, 3500);
+
+    return () => {
+      if (loadTimeoutRef.current) {
+        clearTimeout(loadTimeoutRef.current);
+        loadTimeoutRef.current = null;
+      }
+    };
+  }, [imgSrc, isRemoteSrc, isLoading, generatedCoverSrc]);
+
   // Smart improvement: Google Books covers sometimes return a real image that says "Image not available".
   // In that case onError never fires. For Google Books covers, prefer our local AI cover *only if it exists*.
   useEffect(() => {
@@ -111,6 +150,10 @@ export function OptimizedBookCover({ src, alt, author, bookId, className = '', p
   }, [aiCoverSrc, src]);
 
   const handleError = () => {
+    if (loadTimeoutRef.current) {
+      clearTimeout(loadTimeoutRef.current);
+      loadTimeoutRef.current = null;
+    }
     // If we've already fallen back to the generated SVG, stop.
     if (imgSrc.startsWith('data:image/svg+xml')) {
       setHasError(true);
@@ -173,6 +216,10 @@ export function OptimizedBookCover({ src, alt, author, bookId, className = '', p
   };
 
   const handleLoad = () => {
+    if (loadTimeoutRef.current) {
+      clearTimeout(loadTimeoutRef.current);
+      loadTimeoutRef.current = null;
+    }
     setIsLoading(false);
     setHasError(false);
   };
