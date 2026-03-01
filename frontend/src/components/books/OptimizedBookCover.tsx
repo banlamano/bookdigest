@@ -18,6 +18,13 @@ export function OptimizedBookCover({ src, alt, bookId, className = '', priority 
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
 
+  // IMPORTANT:
+  // For external cover hosts (OpenLibrary, Google Books, etc.), Next/Image optimization can be flaky in production
+  // due to cold starts, rate limiting, or edge fetch failures from Vercel's optimizer.
+  // Using `unoptimized` forces the browser to fetch the remote image directly, which is typically far more stable.
+  const isRemoteSrc = typeof imgSrc === 'string' && /^https?:\/\//.test(imgSrc);
+  const shouldUnoptimize = isRemoteSrc || hasError;
+
   // Smart improvement: Google Books covers sometimes return a real image that says "Image not available".
   // In that case onError never fires. For Google Books covers, prefer our local AI cover *only if it exists*.
   useEffect(() => {
@@ -103,7 +110,7 @@ export function OptimizedBookCover({ src, alt, bookId, className = '', priority 
         onLoad={handleLoad}
         sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
         quality={85}
-        unoptimized={hasError} // Use unoptimized for fallback
+        unoptimized={shouldUnoptimize} // Avoid optimizer for remote covers; always unoptimized on fallback
       />
       
       {isLoading && (
