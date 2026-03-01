@@ -201,7 +201,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                   author={book.author}
                   bookId={book.id}
                   priority
-                />
+                  className="object-cover"
                 />
                 {book.isPremium && (
                   <div className="absolute top-4 right-4">
