@@ -24,6 +24,9 @@ async function checkPremiumAccess(userId: string | undefined, bookIsPremium: num
   
   // Check if user has active premium subscription
   const isPremiumUser = user.subscriptionType !== 'FREE';
+  // If no expiration date is set, treat as lifetime premium
+  if (isPremiumUser && !user.subscriptionEnd) return true;
+
   const subscriptionActive = user.subscriptionEnd ? new Date(user.subscriptionEnd) > new Date() : false;
   
   return isPremiumUser && subscriptionActive;
@@ -160,10 +163,10 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
         ...book,
         audioUrl: book.audioUrl, // Show audio feature to drive conversions
         summary: (book.summary || '').substring(0, 500) + '...', // Truncate summary (null-safe)
-        keyInsights: '[]', // Hide insights
-        chapters: '[]', // Hide chapters
-        quotes: '[]', // Hide quotes
-        actionItems: '[]', // Hide action items
+        keyInsights: [], // Hide insights
+        chapters: [], // Hide chapters
+        quotes: [], // Hide quotes
+        actionItems: [], // Hide action items
       };
 
       return res.json({
