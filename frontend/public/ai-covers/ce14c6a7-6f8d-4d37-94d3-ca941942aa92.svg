@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ce14c6a7-6f8d-4d37-94d3-ca941942aa92" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="400" height="600" fill="url(#grad-ce14c6a7-6f8d-4d37-94d3-ca941942aa92)" />
+  
+  <g opacity="0.1">
+    <circle cx="97.69940503050006" cy="325.52345068606945" r="18.090257234097294" fill="white" /><circle cx="191.71121564900574" cy="91.07582856749221" r="13.625975395437177" fill="white" /><circle cx="370.5457638165277" cy="30.845675916020788" r="17.943109326464445" fill="white" /><circle cx="116.44807495485603" cy="244.35848801431462" r="23.07941561266897" fill="white" /><circle cx="296.3636134784078" cy="210.09916757788633" r="19.881297596262364" fill="white" /><circle cx="158.6613301801855" cy="595.8379910663479" r="10.700198591378516" fill="white" /><circle cx="290.04041243992754" cy="182.24594497450866" r="26.659648729111186" fill="white" /><circle cx="397.9670715161184" cy="437.93839700607435" r="15.962264614405212" fill="white" /><circle cx="389.1626863942135" cy="381.54030504024973" r="18.842957419501207" fill="white" /><circle cx="120.21287066545096" cy="181.18038938545504" r="17.666104766626326" fill="white" /><circle cx="41.27660785390468" cy="517.4946529396199" r="18.451584973688718" fill="white" /><circle cx="128.16705161579787" cy="366.052768200155" r="18.35847769708195" fill="white" /><circle cx="183.57169696805178" cy="460.3371519338402" r="20.088756533513447" fill="white" /><circle cx="370.88402064273396" cy="227.82669438839991" r="17.848787085377282" fill="white" /><circle cx="140.42293366274458" cy="268.46611326732216" r="14.629893452743898" fill="white" /><circle cx="199.81275613673182" cy="571.6816460575618" r="26.6469296172496" fill="white" /><circle cx="119.77755619882444" cy="581.7009959988201" r="12.206133982555968" fill="white" /><circle cx="47.77402777650761" cy="263.9045080772223" r="16.298411475316705" fill="white" /><circle cx="55.94153474861665" cy="580.9610022328462" r="13.592331352053126" fill="white" /><circle cx="91.02877981021105" cy="470.8751587154425" r="21.645377647576513" fill="white" />
+  </g>
+  
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        How to Win at the Sport
+      </text>
+    
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        of Business
+      </text>
+    
+  </g>
+  
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#60a5fa" 
+            text-anchor="middle">
+        Mark Cuban
+      </text>
+    
+  </g>
+  
+  <g>
+    <rect x="20" y="20" width="126" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

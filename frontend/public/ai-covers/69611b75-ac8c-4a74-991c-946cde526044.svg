@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-69611b75-ac8c-4a74-991c-946cde526044" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="400" height="600" fill="url(#grad-69611b75-ac8c-4a74-991c-946cde526044)" />
+  
+  <g opacity="0.1">
+    <circle cx="190.43188506324876" cy="437.532830029492" r="20.365029050821803" fill="white" /><circle cx="338.4330702208012" cy="234.6581139131435" r="20.681024083823097" fill="white" /><circle cx="9.61083966516787" cy="211.0982058114929" r="28.599392642699552" fill="white" /><circle cx="347.8063781943607" cy="420.10635241041183" r="13.570690751732808" fill="white" /><circle cx="169.18606512308307" cy="139.03194516046585" r="19.268644170000872" fill="white" /><circle cx="12.82407153030034" cy="591.4739466234872" r="29.8201135891055" fill="white" /><circle cx="123.33771269882239" cy="356.96505319582934" r="25.380938223155113" fill="white" /><circle cx="294.343751819684" cy="425.0664570925582" r="26.663403180117385" fill="white" /><circle cx="133.70853467261682" cy="267.74267784118547" r="20.777205660588308" fill="white" /><circle cx="244.92737782313637" cy="107.49215286267042" r="23.889775284031916" fill="white" /><circle cx="275.59939258898123" cy="90.03847756248543" r="22.462585061348793" fill="white" /><circle cx="388.75900528066165" cy="201.5417717528383" r="22.416391855718423" fill="white" /><circle cx="291.1815854319721" cy="502.10687738549103" r="26.989788311486848" fill="white" /><circle cx="26.18322959355379" cy="492.8294498468193" r="13.0921075220824" fill="white" /><circle cx="54.26797110781276" cy="143.07304997208746" r="19.530874251465313" fill="white" /><circle cx="121.9791909480159" cy="99.8072229729403" r="20.713529415904155" fill="white" /><circle cx="218.98280076129103" cy="300.93301685029775" r="20.093923932292668" fill="white" /><circle cx="104.33894462241855" cy="232.58540354339289" r="14.519467578614789" fill="white" /><circle cx="258.5735797136293" cy="425.0521777182196" r="12.398786680565983" fill="white" /><circle cx="49.797711557672606" cy="15.624549170151658" r="11.675164811509797" fill="white" />
+  </g>
+  
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        Clockwork
+      </text>
+    
+  </g>
+  
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#60a5fa" 
+            text-anchor="middle">
+        Mike Michalowicz
+      </text>
+    
+  </g>
+  
+  <g>
+    <rect x="20" y="20" width="126" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

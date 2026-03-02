@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0365165a-d499-4b47-9573-255c1dbe4ef4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="400" height="600" fill="url(#grad-0365165a-d499-4b47-9573-255c1dbe4ef4)" />
+  
+  <g opacity="0.1">
+    <circle cx="366.5808188315169" cy="186.62185826454987" r="23.38322414503523" fill="white" /><circle cx="210.70196073790694" cy="60.785594341201985" r="18.03442949318093" fill="white" /><circle cx="233.62450203670102" cy="226.83667492258286" r="14.000889719316625" fill="white" /><circle cx="216.6631149744629" cy="162.45510488685605" r="26.119611278941427" fill="white" /><circle cx="166.2310543294482" cy="575.9697903510416" r="25.934289285550577" fill="white" /><circle cx="80.77140114887986" cy="584.9123959887178" r="25.42751088131427" fill="white" /><circle cx="72.37377515516665" cy="323.7427982592211" r="12.314242815819302" fill="white" /><circle cx="308.9291255999089" cy="26.73789204746719" r="11.407591969275169" fill="white" /><circle cx="27.331973625424368" cy="312.26560052215194" r="21.946058391376226" fill="white" /><circle cx="85.65040435904491" cy="589.4605876099346" r="24.378570219121585" fill="white" /><circle cx="123.34909690164207" cy="140.41613109662597" r="22.152426080629205" fill="white" /><circle cx="204.23265151990813" cy="471.21811962055" r="12.558551831428824" fill="white" /><circle cx="76.82980757232963" cy="114.59134559312022" r="21.56781336171835" fill="white" /><circle cx="242.66682858277954" cy="539.0677150449465" r="23.9055104246547" fill="white" /><circle cx="134.39631499229446" cy="405.6775540786286" r="25.609930128387546" fill="white" /><circle cx="282.2332796593288" cy="339.05545876589656" r="29.626431160106378" fill="white" /><circle cx="271.9359289096474" cy="241.5999552705453" r="22.229879699531494" fill="white" /><circle cx="366.31112432797016" cy="444.23652610962995" r="24.678261094795992" fill="white" /><circle cx="193.29278429419693" cy="480.18937466007566" r="27.96406584459303" fill="white" /><circle cx="241.98754798777432" cy="442.7213977447989" r="17.75347058680486" fill="white" />
+  </g>
+  
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" 
+            font-size="36" 
+            font-weight="bold" 
+            fill="white" 
+            text-anchor="middle">
+        The Unfair Advantage
+      </text>
+    
+  </g>
+  
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" 
+            font-size="22" 
+            fill="#60a5fa" 
+            text-anchor="middle">
+        Ash Ali
+      </text>
+    
+  </g>
+  
+  <g>
+    <rect x="20" y="20" width="126" height="35" 
+          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" 
+          font-size="14" 
+          font-weight="bold"
+          fill="white" 
+          text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>
