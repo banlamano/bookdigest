@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 
 interface OptimizedBookCoverProps {
-  src: string;
+  src?: string | null;
   title: string;
   author?: string;
   className?: string;
@@ -51,10 +51,13 @@ function makeCoverDataUri(title: string, author?: string) {
 
 export function OptimizedBookCover({ src, title, author, className = '', priority = false }: OptimizedBookCoverProps) {
   const generatedCover = useMemo(() => makeCoverDataUri(title, author), [title, author]);
-  const [imgSrc, setImgSrc] = useState(src);
+
+  // Initialize with a non-empty src so we never render a blank cover.
+  const [imgSrc, setImgSrc] = useState<string>(() => (src && String(src).trim().length > 0 ? String(src) : generatedCover));
 
   useEffect(() => {
-    setImgSrc(src || generatedCover);
+    const next = src && String(src).trim().length > 0 ? String(src) : generatedCover;
+    setImgSrc(next);
   }, [src, generatedCover]);
 
   const handleError = () => {
