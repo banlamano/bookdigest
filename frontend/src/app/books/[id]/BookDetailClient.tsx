@@ -243,7 +243,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                   <Clock className="w-5 h-5 mr-1" />
                   <span>Quick read</span>
                 </div>
-                {book.audioUrl && (
+                {book.summary && (
                   <div className="flex items-center text-gray-600 dark:text-gray-400">
                     <Headphones className="w-5 h-5 mr-1" />
                     <span>Audio {freemiumStatus?.isPremium ? 'available' : '(Premium)'}</span>
@@ -267,8 +267,8 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                 />
               </div>
 
-              {/* Audio Player - Always show if available, but gate for free users */}
-              {book.audioUrl && book.summary && (
+              {/* Audio Player - Available for any book with a summary (AI narration) */}
+              {book.summary && (
                 <div className="mb-6">
                   {freemiumStatus?.isPremium ? (
                     <EnhancedAudioPlayer 
