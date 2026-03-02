@@ -57,7 +57,7 @@ model Book {
   
   // Summary content
   summary           String
-  keyInsights       String   // JSON as string
+  keyInsights       Json     @default("[]")
   readingTime       Int      @default(15)
   
   // Media
@@ -75,9 +75,9 @@ model Book {
   ratingsCount      Int      @default(0)
   
   // Content structure
-  chapters          String   // JSON as string
-  quotes            String   // JSON as string
-  actionItems       String   // JSON as string
+  chapters          Json     @default("[]")
+  quotes            Json     @default("[]")
+  actionItems       Json     @default("[]")
   
   // Status
   isPremium         Int      @default(0)

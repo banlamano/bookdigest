@@ -1,4 +1,4 @@
-// Prisma Schema for BookDigest Platform - PostgreSQL for Production
+// Prisma Schema for BookDigest Platform - SQLite Version for Local Development
 
 generator client {
   provider = "prisma-client-js"
@@ -18,6 +18,10 @@ model User {
   lastName          String?
   avatar            String?
   role              String   @default("USER")
+  
+  // Password reset
+  passwordResetToken   String?
+  passwordResetExpires DateTime?
   
   // Subscription fields
   subscriptionType  String   @default("FREE")
@@ -54,7 +58,6 @@ model Book {
   // Summary content
   summary           String
   keyInsights       String   // JSON as string
-  description       String?  // Google Books description (optional)
   readingTime       Int      @default(15)
   
   // Media
