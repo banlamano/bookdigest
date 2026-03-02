@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "tsx watch src/server.ts",
         "build": "npx prisma generate",
-        "start": "npx prisma db push --accept-data-loss && npx tsx src/server.ts",
+        "start": "npx tsx src/server.ts",
         "postinstall": "npx prisma generate",
         "prisma:generate": "prisma generate",
         "prisma:migrate": "prisma migrate dev",
@@ -26,9 +26,11 @@
     "dependencies": {
         "@google/generative-ai": "^0.24.1",
         "@prisma/client": "^5.8.1",
+        "@supabase/supabase-js": "^2.98.0",
         "aws-sdk": "^2.1543.0",
         "axios": "^1.13.5",
         "bcryptjs": "^2.4.3",
+        "better-sqlite3": "^12.6.2",
         "cors": "^2.8.5",
         "dotenv": "^16.4.1",
         "express": "^4.18.2",
