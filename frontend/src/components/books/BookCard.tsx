@@ -32,9 +32,9 @@ export function BookCard({ book }: BookCardProps) {
       <Link href={`/books/${book.id}`}>
         <div className="relative aspect-[3/4] overflow-hidden bg-gray-100">
           <OptimizedBookCover
-            src={book.coverImage || '/placeholder-book.svg'}
-            alt={book.title}
-            bookId={book.id}
+            src={book.coverImage}
+            title={book.title}
+            author={book.author}
             className="group-hover:scale-105 transition-transform duration-300"
           />
           {book.isPremium && (

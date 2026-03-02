@@ -1,124 +1,77 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
+import { useEffect, useMemo, useState } from 'react';
 
 interface OptimizedBookCoverProps {
   src: string;
-  alt: string;
-  /** Book id used for local AI-cover fallback (/ai-covers/<id>.svg) */
-  bookId?: string;
+  title: string;
+  author?: string;
   className?: string;
   priority?: boolean;
 }
 
-export function OptimizedBookCover({ src, alt, bookId, className = '', priority = false }: OptimizedBookCoverProps) {
-  const aiCoverSrc = bookId ? `/ai-covers/${bookId}.svg` : null;
+function escapeXml(s: string) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function clampText(s: string, max: number) {
+  const t = (s || '').trim();
+  return t.length > max ? t.slice(0, max - 1) + '…' : t;
+}
+
+function hashToHue(input: string) {
+  let h = 0;
+  for (let i = 0; i < input.length; i++) h = (h * 31 + input.charCodeAt(i)) >>> 0;
+  return h % 360;
+}
+
+function makeCoverDataUri(title: string, author?: string) {
+  const t = escapeXml(clampText(title || 'Untitled', 40));
+  const a = author ? escapeXml(clampText(author, 40)) : '';
+  const hue1 = hashToHue(`${title}|${author || ''}`);
+  const hue2 = (hue1 + 50) % 360;
+
+  const svg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="hsl(${hue1} 70% 45%)"/>
+      <stop offset="100%" stop-color="hsl(${hue2} 70% 35%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#g)"/>
+  <rect x="50" y="70" width="500" height="660" rx="26" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.20)"/>
+  <text x="90" y="190" fill="white" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial" font-size="40" font-weight="800">${t}</text>
+  ${a ? `<text x="90" y="245" fill="rgba(255,255,255,0.85)" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial" font-size="24" font-weight="600">${a}</text>` : ''}
+  <text x="90" y="705" fill="rgba(255,255,255,0.75)" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial" font-size="18" font-weight="600">Book Digest</text>
+</svg>`;
+
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+}
+
+export function OptimizedBookCover({ src, title, author, className = '', priority = false }: OptimizedBookCoverProps) {
+  const generatedCover = useMemo(() => makeCoverDataUri(title, author), [title, author]);
   const [imgSrc, setImgSrc] = useState(src);
-  const [isLoading, setIsLoading] = useState(true);
-  const [hasError, setHasError] = useState(false);
 
-  // Smart improvement: Google Books covers sometimes return a real image that says "Image not available".
-  // In that case onError never fires. For Google Books covers, prefer our local AI cover *only if it exists*.
   useEffect(() => {
-    if (!aiCoverSrc) return;
-    const isGoogleBooks = typeof src === 'string' && src.includes('books.google.com');
-    if (!isGoogleBooks) return;
-
-    let cancelled = false;
-    (async () => {
-      try {
-        const res = await fetch(aiCoverSrc, { method: 'HEAD' });
-        if (!cancelled && res.ok) {
-          setImgSrc(aiCoverSrc);
-          setIsLoading(true);
-          setHasError(false);
-        }
-      } catch {
-        // ignore
-      }
-    })();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [aiCoverSrc, src]);
+    setImgSrc(src || generatedCover);
+  }, [src, generatedCover]);
 
   const handleError = () => {
-    // If it's already the placeholder SVG, don't try again
-    if (imgSrc.includes('placeholder-book.svg')) {
-      setHasError(true);
-      setIsLoading(false);
-      return;
-    }
-
-    // If current source is an AI cover, final fallback is the placeholder
-    if (aiCoverSrc && imgSrc.includes(aiCoverSrc)) {
-      setImgSrc('/placeholder-book.svg');
-      setHasError(true);
-      setIsLoading(false);
-      return;
-    }
-
-    // First failure: retry the SAME URL but bypass Next image optimization.
-    // This helps when some remote hosts intermittently fail through the optimizer under load.
-    if (!hasError) {
-      const sep = imgSrc.includes('?') ? '&' : '?';
-      setImgSrc(`${imgSrc}${sep}retry=1`);
-      setHasError(true);
-      setIsLoading(true);
-      return;
-    }
-
-    // Second failure: fallback to local AI cover if available, otherwise placeholder
-    if (aiCoverSrc) {
-      setImgSrc(aiCoverSrc);
-      setHasError(true);
-      setIsLoading(true);
-      return;
-    }
-
-    setImgSrc('/placeholder-book.svg');
-    setHasError(true);
-    setIsLoading(false);
-  };
-
-  const handleLoad = () => {
-    setIsLoading(false);
-    setHasError(false);
+    // Single, stable fallback (no retries, no blinking)
+    setImgSrc(generatedCover);
   };
 
   return (
     <div className="relative w-full h-full">
-      <Image
+      <img
         src={imgSrc}
-        alt={alt}
-        fill
-        className={`object-cover transition-opacity duration-300 ${
-          isLoading ? 'opacity-0' : 'opacity-100'
-        } ${className}`}
+        alt={title}
+        className={`absolute inset-0 w-full h-full object-cover ${className}`}
         loading={priority ? 'eager' : 'lazy'}
-        priority={priority}
         onError={handleError}
-        onLoad={handleLoad}
-        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-        quality={85}
-        unoptimized={hasError} // Use unoptimized for fallback
+        referrerPolicy="no-referrer"
       />
-      
-      {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-800">
-          <div className="animate-pulse text-gray-400">Loading...</div>
-        </div>
-      )}
-      
-      {hasError && imgSrc.includes('placeholder-book.svg') && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-800">
-          <div className="text-center p-4">
-            <p className="text-sm text-gray-500">Cover unavailable</p>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
