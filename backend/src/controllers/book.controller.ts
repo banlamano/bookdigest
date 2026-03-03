@@ -49,7 +49,7 @@ export const getAllBooks = async (req: Request, res: Response, next: NextFunctio
     const where: any = { language };
 
     if (category) where.categoryId = category;
-    if (isPremium !== undefined) where.isPremium = isPremium === 'true';
+    // Note: isPremium column removed from schema - all books are accessible based on user subscription
 
     const [books, total] = await Promise.all([
       prisma.book.findMany({
