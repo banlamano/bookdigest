@@ -9,7 +9,7 @@ async function getBooks() {
       next: { revalidate: 3600 }
     });
     const data = await response.json();
-    return data.success ? data.data : [];
+    return data.status === 'success' ? data.books : [];
   } catch (error) {
     console.error('Error fetching books for sitemap:', error);
     return [];
@@ -22,7 +22,7 @@ async function getCategories() {
       next: { revalidate: 3600 }
     });
     const data = await response.json();
-    return data.success ? data.data : [];
+    return data.status === 'success' ? data.data.categories : [];
   } catch (error) {
     console.error('Error fetching categories for sitemap:', error);
     return [];
