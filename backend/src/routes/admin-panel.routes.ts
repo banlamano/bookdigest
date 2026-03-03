@@ -58,8 +58,8 @@ router.get('/dashboard/stats', checkAdminAccess, async (req, res) => {
     const [totalBooks, totalUsers, premiumBooks, freeBooks] = await Promise.all([
       prisma.book.count(),
       prisma.user.count(),
-      prisma.book.count({ where: { isPremium: 1 } }),
-      prisma.book.count({ where: { isPremium: 0 } })
+      0, // Premium books count (column removed)
+      prisma.book.count() // All books (isPremium column removed)
     ]);
 
     // Get category counts
@@ -106,7 +106,7 @@ router.get('/books', checkAdminAccess, async (req, res) => {
     const limit = parseInt(req.query.limit as string) || 20;
     const search = req.query.search as string;
     const category = req.query.category as string;
-    const isPremium = req.query.isPremium as string;
+    // Note: isPremium filter removed - column doesn't exist
 
     const where: any = {};
     
@@ -121,9 +121,7 @@ router.get('/books', checkAdminAccess, async (req, res) => {
       where.category = category;
     }
     
-    if (isPremium !== undefined) {
-      where.isPremium = isPremium === 'true' ? 1 : 0;
-    }
+    // isPremium filter removed - column doesn't exist in database
 
     const [books, total] = await Promise.all([
       prisma.book.findMany({
@@ -141,7 +139,7 @@ router.get('/books', checkAdminAccess, async (req, res) => {
             }
           },
           coverImage: true,
-          isPremium: true,
+          // isPremium field removed
           createdAt: true,
           summary: true
         }
@@ -153,7 +151,7 @@ router.get('/books', checkAdminAccess, async (req, res) => {
     const transformedBooks = books.map(book => ({
       ...book,
       category: book.category?.name || 'Unknown',
-      isPremium: book.isPremium === 1
+      // isPremium removed - column doesn't exist
     }));
 
     res.json({
