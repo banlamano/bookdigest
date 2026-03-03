@@ -74,12 +74,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const books = await getBooks();
   const bookUrls = books.map((book: any) => {
     // Higher priority for recently updated books
-    const isRecent = book.updatedAt && 
-      (new Date().getTime() - new Date(book.updatedAt).getTime()) < 30 * 24 * 60 * 60 * 1000; // 30 days
+    const updatedAt = book.updatedAt || book.createdAt || new Date();
+    const isRecent = (new Date().getTime() - new Date(updatedAt).getTime()) < 30 * 24 * 60 * 60 * 1000; // 30 days
     
     return {
       url: `${baseUrl}/books/${book.id}`,
-      lastModified: new Date(book.updatedAt || book.createdAt),
+      lastModified: new Date(updatedAt),
       changeFrequency: isRecent ? 'weekly' as const : 'monthly' as const,
       priority: isRecent ? 0.8 : 0.7,
     };
