@@ -41,7 +41,7 @@ export const getCategoryBooks = async (req: Request, res: Response, next: NextFu
 
     const [books, total] = await Promise.all([
       prisma.book.findMany({
-        where: { categoryId: category.id, isPublished: 1 },
+        where: { categoryId: category.id },
         skip,
         take: Number(limit),
         include: {
@@ -49,7 +49,7 @@ export const getCategoryBooks = async (req: Request, res: Response, next: NextFu
         },
         orderBy: { rating: 'desc' },
       }),
-      prisma.book.count({ where: { categoryId: category.id, isPublished: 1 } }),
+      prisma.book.count({ where: { categoryId: category.id } }),
     ]);
 
     res.json({

@@ -46,7 +46,7 @@ export const getAllBooks = async (req: Request, res: Response, next: NextFunctio
     } = req.query;
 
     const skip = (Number(page) - 1) * Number(limit);
-    const where: any = { isPublished: 1, language };
+    const where: any = { language };
 
     if (category) where.categoryId = category;
     if (isPremium !== undefined) where.isPremium = isPremium === 'true';
@@ -91,7 +91,6 @@ export const getAllBooks = async (req: Request, res: Response, next: NextFunctio
 export const getFeaturedBooks = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const books = await prisma.book.findMany({
-      where: { isFeatured: 1, isPublished: 1 },
       take: 10,
       orderBy: { rating: 'desc' },
       include: {
@@ -272,7 +271,6 @@ export const searchBooks = async (req: Request, res: Response, next: NextFunctio
     const [books, total] = await Promise.all([
       prisma.book.findMany({
         where: {
-          isPublished: 1,
           OR: [
             { title: { contains: searchTerm, mode: 'insensitive' } },
             { author: { contains: searchTerm, mode: 'insensitive' } },
@@ -287,7 +285,6 @@ export const searchBooks = async (req: Request, res: Response, next: NextFunctio
       }),
       prisma.book.count({
         where: {
-          isPublished: 1,
           OR: [
             { title: { contains: searchTerm, mode: 'insensitive' } },
             { author: { contains: searchTerm, mode: 'insensitive' } },
