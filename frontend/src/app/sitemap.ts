@@ -9,7 +9,7 @@ async function getBooks() {
       next: { revalidate: 3600 }
     });
     const data = await response.json();
-    return data.status === 'success' ? data.books : [];
+    return data.status === 'success' && data.data?.books ? data.data.books : [];
   } catch (error) {
     console.error('Error fetching books for sitemap:', error);
     return [];
