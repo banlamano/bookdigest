@@ -128,12 +128,28 @@ export default function EnhancedBookContent({
 }
 
 // Helper function to safely parse JSON
-function tryParseJSON(jsonString: string): any[] {
-  try {
-    const parsed = JSON.parse(jsonString);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch (error) {
-    console.error('Failed to parse JSON:', error);
-    return [];
+function tryParseJSON(jsonString: string | any): any[] {
+  // If it's already an array, return it
+  if (Array.isArray(jsonString)) {
+    return jsonString;
   }
+  
+  // If it's already an object (not a string), try to use it
+  if (typeof jsonString === 'object' && jsonString !== null) {
+    return Array.isArray(jsonString) ? jsonString : [];
+  }
+  
+  // If it's a string, try to parse it
+  if (typeof jsonString === 'string') {
+    try {
+      const parsed = JSON.parse(jsonString);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (error) {
+      console.error('Failed to parse JSON string:', error);
+      return [];
+    }
+  }
+  
+  // Otherwise return empty array
+  return [];
 }
