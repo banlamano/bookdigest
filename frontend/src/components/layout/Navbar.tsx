@@ -6,6 +6,7 @@ import { useTheme } from 'next-themes';
 import { BookOpen, Search, Menu, X, Sun, Moon, User, LogOut } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 import { useRouter } from 'next/navigation';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -39,7 +40,7 @@ export function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
+{/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/library" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
               Library
@@ -57,7 +58,7 @@ export function Navbar() {
 
           {/* Right Side Actions */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* Theme Toggle */}
+{/* Theme Toggle */}
             {mounted && (
               <button
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -72,6 +73,9 @@ export function Navbar() {
               </button>
             )}
 
+            {/* Language Switcher */}
+            <LanguageSwitcher />
+
             {isAuthenticated ? (
               <div className="relative">
                 <button
@@ -85,7 +89,7 @@ export function Navbar() {
                   </div>
                 </button>
 
-                {isProfileMenuOpen && (
+{isProfileMenuOpen && (
                   <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2">
                     <Link
                       href="/dashboard"
@@ -105,13 +109,13 @@ export function Navbar() {
                   </div>
                 )}
               </div>
-            ) : (
+) : (
               <>
                 <Link href="/login" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   Login
                 </Link>
                 <Link href="/register" className="btn-primary">
-                  Start Free Trial
+                  Sign Up
                 </Link>
               </>
             )}
@@ -131,7 +135,7 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+{/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
           <div className="px-4 py-4 space-y-3">
@@ -162,7 +166,7 @@ export function Navbar() {
                   Login
                 </Link>
                 <Link href="/register" className="btn-primary block text-center">
-                  Start Free Trial
+                  Sign Up
                 </Link>
               </>
             )}
