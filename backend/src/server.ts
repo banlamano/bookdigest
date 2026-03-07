@@ -23,6 +23,7 @@ import adminPanelRoutes from './routes/admin-panel.routes';
 import enableAudioRoutes from './routes/enable-audio.routes';
 import testPromptRoutes from './routes/test-prompt.routes';
 import dbInfoRoutes from './routes/db-info.routes';
+import germanRoutes from './routes/german.routes';
 import { errorHandler } from './middleware/error.middleware';
 import { logger } from './utils/logger';
 import { PrismaClient } from '@prisma/client';
@@ -93,6 +94,7 @@ app.use('/api/admin-panel', adminPanelRoutes);
 app.use('/api/admin', enableAudioRoutes);
 app.use('/api/admin', testPromptRoutes);
 app.use('/api/admin', dbInfoRoutes);
+app.use('/api/admin', germanRoutes);
 
 // Error handling
 app.use(errorHandler);

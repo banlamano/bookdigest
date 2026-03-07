@@ -39,6 +39,8 @@ interface EnhancedSummary {
   finalTakeaway: string;
 }
 
+export type SummaryLanguage = 'en' | 'de';
+
 export class AISummaryService {
   private genAI: GoogleGenerativeAI | null = null;
   private model: any = null;
@@ -65,7 +67,7 @@ export class AISummaryService {
     return this.model !== null;
   }
 
-  async generateEnhancedSummary(bookData: BookData): Promise<EnhancedSummary> {
+async generateEnhancedSummary(bookData: BookData, language: SummaryLanguage = 'en'): Promise<EnhancedSummary> {
     this.initialize();
     
     if (!this.isAvailable()) {
@@ -73,7 +75,7 @@ export class AISummaryService {
     }
 
     try {
-      const prompt = this.buildPrompt(bookData);
+      const prompt = this.buildPrompt(bookData, language);
       const result = await this.model.generateContent(prompt);
       const response = await result.response;
       const text = response.text();
@@ -87,10 +89,15 @@ export class AISummaryService {
     }
   }
 
-  private buildPrompt(bookData: BookData): string {
+  private buildPrompt(bookData: BookData, language: SummaryLanguage = 'en'): string {
     const { title, author, description, categories, pageCount } = bookData;
+    
+    const languageInstructions = language === 'de' 
+      ? 'IMPORTANT: Write the entire summary in GERMAN (Deutsch). All content, titles, quotes, and explanations must be in German.'
+      : 'Write the summary in English.';
 
     return `You are an expert book summarizer for a premium book summary service like Blinkist or Shortform. 
+${languageInstructions}
 Generate a comprehensive, engaging summary for the following book:
 
 Title: ${title}
