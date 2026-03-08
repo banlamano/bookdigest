@@ -1,5 +1,4 @@
 import axios from 'axios';
-import Cookies from 'js-cookie';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://bookdigest-lypx.onrender.com';
 
@@ -11,38 +10,28 @@ export const api = axios.create({
   timeout: 10000,
 });
 
-// Response interceptor for error handling
-api.interceptors.response.use(
-  (response) => response,
-  (error) => {
-    if (error.response?.status === 401) {
-      const token = Cookies.get('token');
-      const isAuthEndpoint = error.config?.url?.includes('/auth/login') || 
-                            error.config?.url?.includes('/auth/register');
-      
-      if (token && !isAuthEndpoint && !window.location.pathname.includes('/login')) {
-        Cookies.remove('token');
-        localStorage.removeItem('auth-storage');
-        window.location.href = '/login';
-      }
-    }
-    return Promise.reject(error);
+// Get language from URL query param or default to 'en'
+function getLanguageFromURL(): string {
+  if (typeof window !== 'undefined') {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('lang') || 'en';
   }
-);
+  return 'en';
+}
 
 // Books API
 export const booksAPI = {
   getAll: (params?: any) => {
-    const lang = Cookies.get('language') || 'en';
+    const lang = getLanguageFromURL();
     return api.get('/books', { params: { ...params, language: lang } });
   },
   getById: (id: string) => {
-    const lang = Cookies.get('language') || 'en';
+    const lang = getLanguageFromURL();
     return api.get(`/books/${id}`, { params: { language: lang } });
   },
   getFeatured: () => api.get('/books/featured'),
   search: (query: string, params?: any) => {
-    const lang = Cookies.get('language') || 'en';
+    const lang = getLanguageFromURL();
     return api.get('/books/search', { params: { q: query, language: lang, ...params } });
   },
   toggleFavorite: (id: string) => api.post(`/books/${id}/favorite`),
@@ -58,7 +47,7 @@ export const booksAPI = {
 export const categoriesAPI = {
   getAll: () => api.get('/categories'),
   getBooks: (slug: string, params?: any) => {
-    const lang = Cookies.get('language') || 'en';
+    const lang = getLanguageFromURL();
     return api.get(`/categories/${slug}/books`, { params: { language: lang, ...params } });
   },
 };

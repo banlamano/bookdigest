@@ -2,16 +2,40 @@
 
 import { useLanguage } from './LanguageProvider';
 import { Globe } from 'lucide-react';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 export function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const langParam = searchParams.get('lang');
+    if (langParam === 'de' || langParam === 'en') {
+      setLanguage(langParam as 'en' | 'de');
+    }
+  }, []);
 
   const toggleLanguage = () => {
     const newLang = language === 'en' ? 'de' : 'en';
     setLanguage(newLang);
-    // Full page reload to apply language change
-    window.location.reload();
+    
+    // Update URL with language parameter
+    const currentParams = new URLSearchParams(window.location.search);
+    currentParams.set('lang', newLang);
+    window.location.search = currentParams.toString();
   };
+
+  if (!mounted) {
+    return (
+      <button className="flex items-center gap-1 px-2 py-1 text-sm">
+        <Globe className="w-4 h-4" />
+      </button>
+    );
+  }
 
   return (
     <button
