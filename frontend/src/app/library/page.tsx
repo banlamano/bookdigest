@@ -11,6 +11,14 @@ import { BookCard } from '@/components/books/BookCard';
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
+export function generateMetadata() {
+  return {
+    headers: {
+      'Cache-Control': 'no-store, max-age=0',
+    },
+  };
+}
+
 function getLangFromURL(): string {
   if (typeof window === 'undefined') return 'en';
   const params = new URLSearchParams(window.location.search);

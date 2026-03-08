@@ -21,9 +21,10 @@ function getLanguageFromURL(): string {
 
 // Cache-busting headers
 const noCacheHeaders = {
-  'Cache-Control': 'no-cache, no-store, must-revalidate',
+  'Cache-Control': 'no-cache, no-store, must-revalidate, proxy-revalidate, s-maxage=0',
   'Pragma': 'no-cache',
   'Expires': '0',
+  'Surrogate-Control': 'no-store',
 };
 
 // Books API
