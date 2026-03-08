@@ -8,27 +8,32 @@ export const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-  timeout: 10000, // 10 second timeout
+  timeout: 10000,
 });
 
-// Request interceptor to add auth token and language
-api.interceptors.request.use(
-  (config) => {
-    const token = Cookies.get('token');
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
-    }
-    // Add language parameter for German support
-    const language = Cookies.get('language');
-    if (language && !config.url?.includes('language=')) {
-      config.url = config.url + (config.url?.includes('?') ? '&' : '?') + `language=${language}`;
-    }
-    return config;
+// Books API
+export const booksAPI = {
+  getAll: (params?: any) => {
+    const lang = Cookies.get('language') || 'en';
+    return api.get('/books', { params: { ...params, language: lang } });
   },
-  (error) => {
-    return Promise.reject(error);
-  }
-);
+  getById: (id: string) => {
+    const lang = Cookies.get('language') || 'en';
+    return api.get(`/books/${id}`, { params: { language: lang } });
+  },
+  getFeatured: () => api.get('/books/featured'),
+  search: (query: string, params?: any) => {
+    const lang = Cookies.get('language') || 'en';
+    return api.get('/books/search', { params: { q: query, language: lang, ...params } });
+  },
+  toggleFavorite: (id: string) => api.post(`/books/${id}/favorite`),
+  getFavorites: () => api.get('/books/favorites/me'),
+  updateProgress: (id: string, data: any) => api.post(`/books/${id}/progress`, data),
+  getProgress: (id: string) => api.get(`/books/${id}/progress`),
+  addReview: (id: string, data: { rating: number; comment?: string }) =>
+    api.post(`/books/${id}/reviews`, data),
+  getReviews: (id: string, params?: any) => api.get(`/books/${id}/reviews`, { params }),
+};
 
 // Response interceptor for error handling
 api.interceptors.response.use(
@@ -71,16 +76,25 @@ export const authAPI = {
 export const booksAPI = {
   getAll: (params?: any) => {
     const lang = Cookies.get('language') || 'en';
-    return api.get('/books', { params: { ...params, language: lang } });
+    return api.get('/books', { 
+      params: { ...params, language: lang },
+      headers: { 'Cache-Control': 'no-cache' }
+    });
   },
   getById: (id: string) => {
     const lang = Cookies.get('language') || 'en';
-    return api.get(`/books/${id}`, { params: { language: lang } });
+    return api.get(`/books/${id}`, { 
+      params: { language: lang },
+      headers: { 'Cache-Control': 'no-cache' }
+    });
   },
   getFeatured: () => api.get('/books/featured'),
   search: (query: string, params?: any) => {
     const lang = Cookies.get('language') || 'en';
-    return api.get('/books/search', { params: { q: query, language: lang, ...params } });
+    return api.get('/books/search', { 
+      params: { q: query, language: lang, ...params },
+      headers: { 'Cache-Control': 'no-cache' }
+    });
   },
   toggleFavorite: (id: string) => api.post(`/books/${id}/favorite`),
   getFavorites: () => api.get('/books/favorites/me'),

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
+import Cookies from 'js-cookie';
 import { booksAPI, categoriesAPI } from '@/lib/api';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import { Search, Filter, SlidersHorizontal } from 'lucide-react';
@@ -13,13 +14,15 @@ export default function LibraryPage() {
   const [showPremiumOnly, setShowPremiumOnly] = useState(false);
   const [page, setPage] = useState(1);
 
+  const language = Cookies.get('language') || 'en';
+
   const { data: categoriesData } = useQuery({
     queryKey: ['categories'],
     queryFn: () => categoriesAPI.getAll(),
   });
 
-  const { data: booksData, isLoading } = useQuery({
-    queryKey: ['books', page, selectedCategory, showPremiumOnly],
+  const { data: booksData, isLoading, refetch } = useQuery({
+    queryKey: ['books', page, selectedCategory, showPremiumOnly, language],
     queryFn: () =>
       booksAPI.getAll({
         page,
