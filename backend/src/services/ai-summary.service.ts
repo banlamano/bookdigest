@@ -71,10 +71,12 @@ async generateEnhancedSummary(bookData: BookData, language: SummaryLanguage = 'e
     this.initialize();
     
     if (!this.isAvailable()) {
-      return this.generateFallbackSummary(bookData);
+      console.log('⚠️ AI not available, using fallback');
+      return this.generateFallbackSummary(bookData, language);
     }
 
     try {
+      console.log(`📝 Generating ${language} summary for: ${bookData.title}`);
       const prompt = this.buildPrompt(bookData, language);
       const result = await this.model.generateContent(prompt);
       const response = await result.response;
@@ -82,10 +84,11 @@ async generateEnhancedSummary(bookData: BookData, language: SummaryLanguage = 'e
       
       // Parse the JSON response
       const summary = this.parseAIResponse(text, bookData);
+      console.log(`✅ ${language} summary generated for: ${bookData.title}`);
       return summary;
-    } catch (error) {
-      console.error('AI summary generation failed:', error);
-      return this.generateFallbackSummary(bookData);
+    } catch (error: any) {
+      console.error('❌ AI summary generation failed:', error.message);
+      return this.generateFallbackSummary(bookData, language);
     }
   }
 
@@ -211,9 +214,28 @@ Return ONLY the JSON object, no additional text.`;
     );
   }
 
-  private generateFallbackSummary(bookData: BookData): EnhancedSummary {
+  private generateFallbackSummary(bookData: BookData, language: SummaryLanguage = 'en'): EnhancedSummary {
     const { title, author, description, categories } = bookData;
     const category = categories?.[0] || 'Self-Help';
+    
+    if (language === 'de') {
+      return {
+        bigIdea: `"${title}" von ${author} ist ein transformatives Handbuch, das konventionelles Denken herausfordert und umsetzbare Einblicke für ${category.toLowerCase()}-Enthusiasten bietet. Dieses Buch destilliert komplexe Konzepte in praktische Weisheit, die sofort angewendet werden kann, um Ihr Leben zu verbessern und bedeutungsvolle Ergebnisse zu erzielen.`,
+        
+        whyItMatters: `In der heutigen schnelllebigen Welt adressiert "${title}" kritische Herausforderungen, mit denen viele Menschen konfrontiert sind. ${author} bringt Forschung, persönliche Erfahrung und bewährte Strategien zusammen, um Lesern zu helfen, moderne Komplexitäten zu bewältigen. Ob Sie Ihre ${category.toLowerCase()}-Fähigkeiten verbessern, Hindernisse überwinden oder Durchbruchsergebnisse erzielen möchten - dieses Buch bietet die notwendige Wegbeschreibung.`,
+        
+        keyInsights: this.generateFallbackInsights(title, author, category, 'de'),
+        chapterSummaries: this.generateFallbackChapters(title, category, 'de'),
+        memorableQuotes: this.generateFallbackQuotes(title, author, category, 'de'),
+        actionPlan: this.generateFallbackActionPlan(category, 'de'),
+        targetAudience: [
+          `Fachleute, die ihre Karriere im Bereich ${category.toLowerCase()} voranbringen möchten`,
+          `Personen, die ihre ${category.toLowerCase()}-Fähigkeiten entwickeln möchten`,
+          `Jeder, der an praktischen, evidenzbasierten Ansätzen zur persönlichen Entwicklung interessiert ist`
+        ],
+        finalTakeaway: `"${title}" erinnert uns daran, dass bedeutungsvolle Veränderung aus dem Verstehen von Grundprinzipien und konsequenter Handlung kommt. Der Schlüssel liegt nicht nur darin, neue Konzepte zu lernen, sondern sie in die tägliche Praxis zu integrieren. Beginnen Sie mit einem Einblick, wenden Sie ihn konsequent an und bauen Sie darauf auf. Ihre Transformation beginnt mit der Entscheidung, den ersten Schritt zu tun.`
+      };
+    }
 
     return {
       bigIdea: `"${title}" by ${author} is a transformative guide that challenges conventional thinking and provides actionable insights for ${category.toLowerCase()} enthusiasts. This book distills complex concepts into practical wisdom that can be applied immediately to improve your life and achieve meaningful results.`,
@@ -233,7 +255,60 @@ Return ONLY the JSON object, no additional text.`;
     };
   }
 
-  private generateFallbackInsights(title: string, author: string, category: string): EnhancedSummary['keyInsights'] {
+  private generateFallbackInsights(title: string, author: string, category: string, language: SummaryLanguage = 'en'): EnhancedSummary['keyInsights'] {
+    if (language === 'de') {
+      return [
+        {
+          title: 'Das Grundprinzip',
+          explanation: `${author} etabliert das grundlegende Framework, das allen anderen Konzepten im Buch zugrunde liegt. Dieses Prinzip dient als Grundstein für das Verständnis, wie man ${category.toLowerCase()} effektiv angeht.`,
+          example: 'Leser können dies anwenden, indem sie ihre aktuellen Annahmen untersuchen und eine stärkere Grundlage für Wachstum schaffen.',
+          impact: 'Dies verändert Ihre Perspektive von reaktiv zu proaktiv und ermöglicht strategischere Entscheidungsfindung.'
+        },
+        {
+          title: 'Die Transformationsmethode',
+          explanation: 'Ein systematischer Ansatz zur Implementierung nachhaltiger Veränderung, der komplexe Ziele in überschaubare Schritte zerlegt, die über Zeit Momentum aufbauen.',
+          example: 'Beginnen Sie mit kleinen täglichen Gewohnheiten, die mit Ihrer größeren Vision übereinstimmen, und schaffen Sie über Wochen und Monate hinweg Zusammensetzungseffekte.',
+          impact: 'Sie gehen von Überforderung durch große Ziele zu Ermächtigung durch kontinuierlichen Fortschritt über.'
+        },
+        {
+          title: 'Der Mindset-Schub',
+          explanation: 'Verstehen, wie unsere mentalen Modelle unsere Ergebnisse formen, und lernen, Perspektiven zu kultivieren, die unseren höchsten Zielen dienen.',
+          example: 'Wenn Sie auf Hindernisse stoßen, fragen Sie "Was kann ich lernen?" anstatt "Warum passiert mir das?"',
+          impact: 'Diese Neubewertung verwandelt Rückschläge in Stufen, beschleunigt Ihre Wachstumsbahn.'
+        },
+        {
+          title: 'Der Verbindungsfaktor',
+          explanation: 'Die Bedeutung von Beziehungen und Gemeinschaft für nachhaltigen Erfolg und Erfüllung erkennen.',
+          example: 'Baen Sie bewusst ein Netzwerk von Menschen auf, die Sie inspirieren, fordern und bei Ihrer Entwicklung unterstützen.',
+          impact: 'Sie schaffen ein leistungsstarkes Ökosystem, das Ihre Bemühungen verstärkt und neue Möglichkeiten eröffnet.'
+        },
+        {
+          title: 'Die Handlungsorientierung',
+          explanation: 'Über Planung und Analyse hinaus zur intelligenten Handlung tendieren, aus Feedback lernen und schnell iterieren.',
+          example: 'Anstatt Ihren Plan zu perfektionieren, starten Sie mit Version 1.0 und verbessern Sie basierend auf realen Ergebnissen.',
+          impact: 'Sie befreien sich von Paralyse durch Analyse und erzeugen Momentum, das Sie vorwärtsträgt.'
+        },
+        {
+          title: 'Die Prioritätsmatrix',
+          explanation: 'Lernen, zwischen dem, was dringend und dem, was wichtig ist, zu unterscheiden und Energie auf Aktivitäten mit hoher Wirkung zu richten.',
+          example: 'Planen Sie Zeit für wichtige nicht-dringende Aufgaben, bevor sie zu dringenden Krisen werden.',
+          impact: 'Sie gewinnen die Kontrolle über Ihre Zeit zurück und richten sie auf das wirklich Wichtige aus.'
+        },
+        {
+          title: 'Der Resilienzfaktor',
+          explanation: 'Mentale und emotionale Stärke aufbauen, um Herausforderungen, Rückschläge und Unsicherheit zu bewahren, ohne Ihr Ziel aus den Augen zu verlieren.',
+          example: 'Entwickeln Sie Praktiken wie Tagebuch, Meditation oder körperliche Bewegung, die Ihre Energie und Klarheit wiederherstellen.',
+          impact: 'Sie werden antifragil - wachsen stärker durch Widrigkeiten, anstatt unter Druck zu brechen.'
+        },
+        {
+          title: 'Die kontinuierliche Verbesserungsschleife',
+          explanation: 'Eine Philosophie des ständigen Lernens und Verfeinerns annehmen, bei der jede Erfahrung zu Optimierungsdaten wird.',
+          example: 'Führen Sie wöchentliche Reviews durch, um zu identifizieren, was funktioniert hat, was nicht, und was als Nächstes zu versuchen ist.',
+          impact: 'Sie vervielfachen Ihr Wachstum exponentiell anstatt linear und beschleunigen Ergebnisse über Zeit.'
+        }
+      ];
+    }
+
     const insights = [
       {
         title: 'The Foundation Principle',
