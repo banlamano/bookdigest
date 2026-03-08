@@ -11,6 +11,25 @@ export const api = axios.create({
   timeout: 10000,
 });
 
+// Response interceptor for error handling
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401) {
+      const token = Cookies.get('token');
+      const isAuthEndpoint = error.config?.url?.includes('/auth/login') || 
+                            error.config?.url?.includes('/auth/register');
+      
+      if (token && !isAuthEndpoint && !window.location.pathname.includes('/login')) {
+        Cookies.remove('token');
+        localStorage.removeItem('auth-storage');
+        window.location.href = '/login';
+      }
+    }
+    return Promise.reject(error);
+  }
+);
+
 // Books API
 export const booksAPI = {
   getAll: (params?: any) => {
@@ -35,32 +54,14 @@ export const booksAPI = {
   getReviews: (id: string, params?: any) => api.get(`/books/${id}/reviews`, { params }),
 };
 
-// Response interceptor for error handling
-api.interceptors.response.use(
-  (response) => response,
-  (error) => {
-    // Only redirect on 401 if we're on a protected route AND have a token
-    // Don't redirect if login/register itself fails (that's just wrong credentials)
-    if (error.response?.status === 401) {
-      const token = Cookies.get('token');
-      const isAuthEndpoint = error.config?.url?.includes('/auth/login') || 
-                            error.config?.url?.includes('/auth/register');
-      
-      // Only redirect if:
-      // 1. We have a token (meaning we're authenticated)
-      // 2. This is NOT a login/register request
-      // 3. We're not already on the login page
-      if (token && !isAuthEndpoint && !window.location.pathname.includes('/login')) {
-        // Token is invalid/expired - clear it and redirect
-        Cookies.remove('token');
-        // Clear localStorage auth state
-        localStorage.removeItem('auth-storage');
-        window.location.href = '/login';
-      }
-    }
-    return Promise.reject(error);
-  }
-);
+// Categories API
+export const categoriesAPI = {
+  getAll: () => api.get('/categories'),
+  getBooks: (slug: string, params?: any) => {
+    const lang = Cookies.get('language') || 'en';
+    return api.get(`/categories/${slug}/books`, { params: { language: lang, ...params } });
+  },
+};
 
 // Auth API
 export const authAPI = {
@@ -70,48 +71,6 @@ export const authAPI = {
     api.post('/auth/login', data),
   getProfile: () => api.get('/auth/profile'),
   updateProfile: (data: any) => api.put('/auth/profile', data),
-};
-
-// Books API
-export const booksAPI = {
-  getAll: (params?: any) => {
-    const lang = Cookies.get('language') || 'en';
-    return api.get('/books', { 
-      params: { ...params, language: lang },
-      headers: { 'Cache-Control': 'no-cache' }
-    });
-  },
-  getById: (id: string) => {
-    const lang = Cookies.get('language') || 'en';
-    return api.get(`/books/${id}`, { 
-      params: { language: lang },
-      headers: { 'Cache-Control': 'no-cache' }
-    });
-  },
-  getFeatured: () => api.get('/books/featured'),
-  search: (query: string, params?: any) => {
-    const lang = Cookies.get('language') || 'en';
-    return api.get('/books/search', { 
-      params: { q: query, language: lang, ...params },
-      headers: { 'Cache-Control': 'no-cache' }
-    });
-  },
-  toggleFavorite: (id: string) => api.post(`/books/${id}/favorite`),
-  getFavorites: () => api.get('/books/favorites/me'),
-  updateProgress: (id: string, data: any) => api.post(`/books/${id}/progress`, data),
-  getProgress: (id: string) => api.get(`/books/${id}/progress`),
-  addReview: (id: string, data: { rating: number; comment?: string }) =>
-    api.post(`/books/${id}/reviews`, data),
-  getReviews: (id: string, params?: any) => api.get(`/books/${id}/reviews`, { params }),
-};
-
-// Categories API
-export const categoriesAPI = {
-  getAll: () => api.get('/categories'),
-  getBooks: (slug: string, params?: any) => {
-    const lang = Cookies.get('language') || 'en';
-    return api.get(`/categories/${slug}/books`, { params: { language: lang, ...params } });
-  },
 };
 
 // User API
