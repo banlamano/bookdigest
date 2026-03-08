@@ -67,6 +67,7 @@ router.post('/regenerate-german', authenticate, async (req, res) => {
             chapters: summary.chapterSummaries,
             quotes: summary.memorableQuotes,
             actionItems: summary.actionPlan,
+            language: 'de',
           }
         });
 
