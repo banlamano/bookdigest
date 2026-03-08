@@ -8,6 +8,8 @@ import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import { Search, Filter, SlidersHorizontal } from 'lucide-react';
 import { BookCard } from '@/components/books/BookCard';
 
+export const dynamic = 'force-dynamic';
+
 export default function LibraryPage() {
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
