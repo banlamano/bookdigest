@@ -11,12 +11,17 @@ export const api = axios.create({
   timeout: 10000, // 10 second timeout
 });
 
-// Request interceptor to add auth token
+// Request interceptor to add auth token and language
 api.interceptors.request.use(
   (config) => {
     const token = Cookies.get('token');
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
+    }
+    // Add language parameter for German support
+    const language = Cookies.get('language');
+    if (language && !config.url?.includes('language=')) {
+      config.url = config.url + (config.url?.includes('?') ? '&' : '?') + `language=${language}`;
     }
     return config;
   },
