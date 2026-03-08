@@ -19,20 +19,36 @@ function getLanguageFromURL(): string {
   return 'en';
 }
 
+// Cache-busting headers
+const noCacheHeaders = {
+  'Cache-Control': 'no-cache, no-store, must-revalidate',
+  'Pragma': 'no-cache',
+  'Expires': '0',
+};
+
 // Books API
 export const booksAPI = {
   getAll: (params?: any) => {
     const lang = getLanguageFromURL();
-    return api.get('/books', { params: { ...params, language: lang } });
+    return api.get('/books', { 
+      params: { ...params, language: lang },
+      headers: noCacheHeaders
+    });
   },
   getById: (id: string) => {
     const lang = getLanguageFromURL();
-    return api.get(`/books/${id}`, { params: { language: lang } });
+    return api.get(`/books/${id}`, { 
+      params: { language: lang },
+      headers: noCacheHeaders
+    });
   },
-  getFeatured: () => api.get('/books/featured'),
+  getFeatured: () => api.get('/books/featured', { headers: noCacheHeaders }),
   search: (query: string, params?: any) => {
     const lang = getLanguageFromURL();
-    return api.get('/books/search', { params: { q: query, language: lang, ...params } });
+    return api.get('/books/search', { 
+      params: { q: query, language: lang, ...params },
+      headers: noCacheHeaders
+    });
   },
   toggleFavorite: (id: string) => api.post(`/books/${id}/favorite`),
   getFavorites: () => api.get('/books/favorites/me'),
@@ -48,7 +64,10 @@ export const categoriesAPI = {
   getAll: () => api.get('/categories'),
   getBooks: (slug: string, params?: any) => {
     const lang = getLanguageFromURL();
-    return api.get(`/categories/${slug}/books`, { params: { language: lang, ...params } });
+    return api.get(`/categories/${slug}/books`, { 
+      params: { language: lang, ...params },
+      headers: noCacheHeaders
+    });
   },
 };
 
