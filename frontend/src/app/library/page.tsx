@@ -1,23 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { useSearchParams } from 'next/navigation';
 import { booksAPI, categoriesAPI } from '@/lib/api';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import { Search, Filter, SlidersHorizontal } from 'lucide-react';
 import { BookCard } from '@/components/books/BookCard';
 
-export const dynamic = 'force-dynamic';
+function getLangFromURL(): string {
+  if (typeof window === 'undefined') return 'en';
+  const params = new URLSearchParams(window.location.search);
+  return params.get('lang') || 'en';
+}
 
 export default function LibraryPage() {
-  const searchParams = useSearchParams();
+  const [language, setLanguage] = useState('en');
+  
+  useEffect(() => {
+    setLanguage(getLangFromURL());
+  }, []);
+  
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [showPremiumOnly, setShowPremiumOnly] = useState(false);
   const [page, setPage] = useState(1);
-  
-  const language = searchParams.get('lang') || 'en';
 
   const { data: categoriesData } = useQuery({
     queryKey: ['categories'],
