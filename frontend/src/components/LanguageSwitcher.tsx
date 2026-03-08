@@ -2,18 +2,15 @@
 
 import { useLanguage } from './LanguageProvider';
 import { Globe } from 'lucide-react';
-import { useRouter, usePathname } from 'next/navigation';
 
 export function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
-  const router = useRouter();
-  const pathname = usePathname();
 
   const toggleLanguage = () => {
     const newLang = language === 'en' ? 'de' : 'en';
     setLanguage(newLang);
-    // Reload to apply language change
-    router.refresh();
+    // Full page reload to apply language change
+    window.location.reload();
   };
 
   return (
