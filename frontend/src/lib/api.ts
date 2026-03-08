@@ -69,10 +69,19 @@ export const authAPI = {
 
 // Books API
 export const booksAPI = {
-  getAll: (params?: any) => api.get('/books', { params }),
-  getById: (id: string) => api.get(`/books/${id}`),
+  getAll: (params?: any) => {
+    const lang = Cookies.get('language') || 'en';
+    return api.get('/books', { params: { ...params, language: lang } });
+  },
+  getById: (id: string) => {
+    const lang = Cookies.get('language') || 'en';
+    return api.get(`/books/${id}`, { params: { language: lang } });
+  },
   getFeatured: () => api.get('/books/featured'),
-  search: (query: string, params?: any) => api.get('/books/search', { params: { q: query, ...params } }),
+  search: (query: string, params?: any) => {
+    const lang = Cookies.get('language') || 'en';
+    return api.get('/books/search', { params: { q: query, language: lang, ...params } });
+  },
   toggleFavorite: (id: string) => api.post(`/books/${id}/favorite`),
   getFavorites: () => api.get('/books/favorites/me'),
   updateProgress: (id: string, data: any) => api.post(`/books/${id}/progress`, data),
@@ -85,7 +94,10 @@ export const booksAPI = {
 // Categories API
 export const categoriesAPI = {
   getAll: () => api.get('/categories'),
-  getBooks: (slug: string, params?: any) => api.get(`/categories/${slug}/books`, { params }),
+  getBooks: (slug: string, params?: any) => {
+    const lang = Cookies.get('language') || 'en';
+    return api.get(`/categories/${slug}/books`, { params: { language: lang, ...params } });
+  },
 };
 
 // User API
