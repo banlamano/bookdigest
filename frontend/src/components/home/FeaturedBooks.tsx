@@ -6,14 +6,26 @@ import { BookCard } from '@/components/books/BookCard';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 
+function getLangFromURL(): string {
+  if (typeof window === 'undefined') return 'en';
+  const params = new URLSearchParams(window.location.search);
+  return params.get('lang') || 'en';
+}
+
 export function FeaturedBooks() {
+  const [language, setLanguage] = useState('en');
+  
+  useEffect(() => {
+    setLanguage(getLangFromURL());
+  }, []);
+
   const { data, isLoading } = useQuery({
-    queryKey: ['featured-books'],
-    queryFn: () => booksAPI.getFeatured(),
-    staleTime: 5 * 60 * 1000, // 5 minutes
+    queryKey: ['featured-books', language],
+    queryFn: () => booksAPI.getAll({ limit: 6 }),
+    staleTime: 0,
   });
 
   const books = data?.data?.data?.books || [];

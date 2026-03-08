@@ -7,6 +7,10 @@ import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import { Search, Filter, SlidersHorizontal } from 'lucide-react';
 import { BookCard } from '@/components/books/BookCard';
 
+// Disable all caching
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 function getLangFromURL(): string {
   if (typeof window === 'undefined') return 'en';
   const params = new URLSearchParams(window.location.search);
