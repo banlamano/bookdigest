@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { booksAPI, categoriesAPI } from '@/lib/api';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
@@ -15,11 +15,33 @@ function getLangFromURL(): string {
 
 export default function LibraryPage() {
   const [language, setLanguage] = useState('en');
+  const [key, setKey] = useState(0); // Force refetch
   
-  useEffect(() => {
-    setLanguage(getLangFromURL());
+  const refreshLanguage = useCallback(() => {
+    const newLang = getLangFromURL();
+    setLanguage(newLang);
+    setKey(k => k + 1); // Force React Query to refetch
   }, []);
   
+  useEffect(() => {
+    refreshLanguage();
+    
+    // Listen for URL changes (when user clicks language toggle)
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        refreshLanguage();
+      }
+    };
+    
+    window.addEventListener('popstate', refreshLanguage);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    
+    return () => {
+      window.removeEventListener('popstate', refreshLanguage);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [refreshLanguage]);
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [showPremiumOnly, setShowPremiumOnly] = useState(false);
@@ -31,7 +53,7 @@ export default function LibraryPage() {
   });
 
   const { data: booksData, isLoading, refetch } = useQuery({
-    queryKey: ['books', page, selectedCategory, showPremiumOnly, language],
+    queryKey: ['books', page, selectedCategory, showPremiumOnly, language, key],
     queryFn: () =>
       booksAPI.getAll({
         page,
