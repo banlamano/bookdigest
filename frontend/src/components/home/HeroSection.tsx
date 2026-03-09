@@ -1,14 +1,15 @@
 'use client';
 
-import { Suspense } from 'react';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { BookOpen, Headphones, Clock, TrendingUp } from 'lucide-react';
 
-function HeroContent() {
-  const searchParams = useSearchParams();
-  const language = searchParams.get('lang') || 'en';
+interface HeroSectionProps {
+  language?: string;
+}
+
+export function HeroSection({ language: initialLanguage }: HeroSectionProps) {
+  const language = initialLanguage || 'en';
   
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-secondary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 lg:py-32">
@@ -48,7 +49,7 @@ function HeroContent() {
               <Link href="/register" className="btn-primary text-lg px-8 py-3">
                 {language === 'de' ? 'Kostenlos starten' : 'Start Free Trial'}
               </Link>
-              <Link href={`/library?lang=${language}`} className="btn-outline text-lg px-8 py-3">
+              <Link href="/library" className="btn-outline text-lg px-8 py-3">
                 {language === 'de' ? 'Bibliothek durchsuchen' : 'Browse Library'}
               </Link>
             </div>
@@ -109,33 +110,6 @@ function HeroContent() {
         </div>
       </div>
     </section>
-  );
-}
-
-function HeroFallback() {
-  return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-secondary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 lg:py-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-sm font-medium mb-6">
-              <TrendingUp className="w-4 h-4 mr-2" />
-              Loading...
-            </div>
-            <div className="h-16 bg-gray-200 dark:bg-gray-700 rounded w-3/4 mx-auto lg:mx-0 mb-4"></div>
-            <div className="h-10 bg-gray-200 dark:bg-gray-700 rounded w-1/2 mx-auto lg:mx-0"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-export function HeroSection() {
-  return (
-    <Suspense fallback={<HeroFallback />}>
-      <HeroContent />
-    </Suspense>
   );
 }
 

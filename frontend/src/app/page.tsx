@@ -1,11 +1,9 @@
-import Link from 'next/link';
+import { cookies } from 'next/headers';
 import { BookOpen, Headphones, Clock, TrendingUp, Star, Award } from 'lucide-react';
 import { Features } from '@/components/home/Features';
 import { CTASection } from '@/components/home/CTASection';
 import dynamic from 'next/dynamic';
 
-// Import all client-side components with SSR disabled to prevent hydration errors
-// HeroSection and Testimonials use framer-motion which can cause hydration issues
 const HeroSection = dynamic(() => import('@/components/home/HeroSection').then(mod => ({ default: mod.HeroSection })), {
   ssr: false,
 });
@@ -18,11 +16,14 @@ const Testimonials = dynamic(() => import('@/components/home/Testimonials').then
   ssr: false,
 });
 
-export default function HomePage() {
+export default async function HomePage() {
+  const cookieStore = cookies();
+  const language = cookieStore.get(' || 'en';
+  
   return (
     <div className="min-h-screen">
-      <HeroSection />
-      <FeaturedBooks />
+      <HeroSection language={language} />
+     language')?.value <FeaturedBooks language={language} />
       <Features />
       <Testimonials />
       <CTASection />
