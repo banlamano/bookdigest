@@ -1,0 +1,71 @@
+SESSION HANDOFF — 2026-02-11
+
+Goal
+- Generate high-quality, book-specific AI summaries (OpenAI) for all books.
+- Ensure premium/free gating works correctly.
+- Fix library cover loading reliability.
+
+Current live environment
+- Site: https://book-digest.com
+- Backend API: https://bookdigest-lypx.onrender.com
+- DB: Neon (user indicated Neon provides automatic backups — confirm in Neon dashboard)
+
+Status (live)
+- Regeneration script is running successfully.
+  - Latest reported: [18:30:00] offset=356 processed=2 success=2 failed=0
+  - Script: backend/tmp_rovodev_run_regen_api.ps1
+  - Current setting: per-call limit=2, batchSize=1, force=true
+
+Key fixes completed
+Backend:
+1) Optional auth on book detail route so logged-in premium/free users are recognized:
+   - Added backend/src/middleware/optionalAuth.middleware.ts
+   - Updated backend/src/routes/book.routes.ts to apply optionalAuthenticate on GET /:id
+   - Result: premium users see insights/chapters/quotes; audio upsell removed for premium.
+
+2) Premium detection:
+   - Treat premium users without subscriptionEnd as active premium (lifetime premium).
+
+3) Regeneration uses description:
+   - Book.description added to Prisma schema.
+   - Regeneration endpoint updated to select and pass description into OpenAI prompt.
+
+4) Google Books import endpoint:
+   - /api/admin/add-descriptions
+   - Fetches Google Books description into Book.description and cover into Book.coverImage.
+
+Frontend:
+1) Free-limit reached UX:
+   - Book detail now shows upgrade prompt on 403 instead of "Book not found".
+   - React Query retry disabled for 401/403 so the upgrade prompt appears fast.
+
+2) Start Reading:
+   - Added id="book-summary" to summary section so Start Reading scroll works.
+
+3) Library cover reliability:
+   - BookCard now uses OptimizedBookCover (removed unoptimized Next/Image hotlink failures).
+   - OptimizedBookCover now cache-busts URL on first error (?retry=1).
+
+What to do when regeneration finishes
+1) Verify content (premium login):
+   - Open 2-3 random books and confirm:
+     - Full summary (not truncated)
+     - Key Insights populated
+     - Chapters populated
+     - Quotes populated
+     - Action Items populated
+
+2) Create restore point / backups (Neon):
+   - Check Neon dashboard for automated backups / PITR.
+   - If available: create a named snapshot/branch or backup.
+   - Optionally run pg_dump (recommended) and store file.
+
+3) Optional: cover cleanup
+   - Re-run /api/admin/add-descriptions for remaining missing/broken covers if desired.
+
+Known non-blockers
+- Audio playback: premium audio upsell removed; true TTS/real voice playback not implemented yet.
+
+Notes
+- Do not interrupt regen script unless necessary; it is stable at processed=2/success=2.
+- If script is stopped, resume by setting $startOffset to the last completed offset.

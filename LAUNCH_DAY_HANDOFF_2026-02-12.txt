@@ -1,0 +1,148 @@
+LAUNCH DAY HANDOFF — Product Hunt Public Launch
+Date prepared: 2026-02-12
+
+LIVE URLs
+- Site: https://book-digest.com
+- Backend: https://bookdigest-lypx.onrender.com
+- Health: https://bookdigest-lypx.onrender.com/health
+
+Safety / Restore Point
+- Neon branch created successfully: post-regeneration-2026-02-11
+  (Use as restore point if anything breaks.)
+
+Status Snapshot (Everything working)
+- Premium gating: Premium users can see full content (insights/chapters/quotes/action items). Audio upsell hidden for premium.
+- Free gating: logged-out sees preview; free users limited to 3 books/month; at limit, upgrade prompt appears quickly.
+- Webhooks: checkout.session.completed DELIVERED; customer.subscription.updated now DELIVERED.
+- Promo codes: Stripe Checkout allows promotion codes. Code PH20 created (test + live to be confirmed).
+- Pricing page: Team plan hidden; Monthly + Yearly only; PH20 banner added.
+
+Key recent code changes (high level)
+Backend
+- Optional auth for book detail route so logged-in users are recognized.
+- Freemium/premium logic: premium users without expiry treated as premium.
+- Google Books import: description + coverImage.
+- Regeneration uses description; completed for all books.
+- Cover repair endpoint: /api/admin/fix-covers with validation + AI fallback.
+- Stripe: allow_promotion_codes enabled; webhook raw-body fixed; webhook idempotency; subscription.updated handler no longer 500s.
+- Subscription status now returns default payment method brand/last4 when available.
+
+Frontend
+- Book detail handles 403 (limit) gracefully (upgrade prompt).
+- Start Reading scroll anchor fixed.
+- Library cover reliability improved (OptimizedBookCover + retry).
+- Subscription card shows real brand/last4 when provided.
+- Pricing page simplified (Monthly+Yearly) + PH20 banner.
+
+PRODUCT HUNT LISTING COPY (paste-ready)
+Title:
+- Book Digest — AI book summaries turned into action plans
+
+Tagline:
+- Key insights, chapter breakdowns, quotes, and actionable takeaways.
+
+Description:
+Book Digest helps busy professionals and founders absorb the best ideas from books—fast—without losing the structure that makes those ideas usable.
+
+Instead of a shallow paragraph, each book includes:
+- Full summary
+- Key insights
+- Chapter breakdowns
+- Memorable quotes
+- Action items (so you can apply the ideas)
+
+Launch deal: Use code PH20 for 20% off (Monthly + Yearly).
+
+Demo book link (optional):
+- Built to Sell — John Warrillow
+  https://book-digest.com/books/ac848729-e4fa-4903-a3cd-4e512a8af631
+
+Maker comment:
+Hey Product Hunt — I’m the maker of Book Digest.
+
+I built it because most “book summary” sites are either too shallow or not actionable. For professionals and founders, the value is in insights and decisions—not just reading another paragraph.
+
+So Book Digest turns books into structured digests:
+summary → key insights → chapter breakdown → quotes → action plan
+
+Launch deal: use PH20 for 20% off (Monthly + Yearly).
+I’d love your feedback: what should we build next — real voice audio, exporting notes, highlights, sharing, integrations?
+
+High-wow demo links:
+- Winning — Jack Welch
+  https://book-digest.com/books/6e5dc0f9-13a7-4b47-99e8-48154e2be638
+- The Success Principles — Jack Canfield
+  https://book-digest.com/books/906fd638-7908-4f48-a2b5-3c0fd4c04e3f
+- Built to Sell — John Warrillow
+  https://book-digest.com/books/ac848729-e4fa-4903-a3cd-4e512a8af631
+
+SCREENSHOT PLAN (6–8 assets)
+1) Homepage hero + CTA
+2) Book page: Key Insights expanded (Winning)
+3) Book page: Chapters expanded (Success Principles)
+4) Book page: Action Items expanded (Built to Sell)
+5) Library grid (covers)
+6) Pricing page showing PH20 banner + Monthly/Yearly only
+7) (Optional) Free limit upgrade prompt screen
+8) (Optional) Dashboard subscription status
+
+SOCIAL POSTS (copy/paste)
+X / Twitter (short)
+I just launched Book Digest on Product Hunt 🚀
+AI book digests with key insights, chapter breakdowns, quotes & action steps — not just a paragraph summary.
+Launch deal: PH20 for 20% off.
+[PH_LINK]
+
+LinkedIn
+Today I launched Book Digest on Product Hunt.
+It turns books into structured, actionable digests:
+✅ Key insights
+✅ Chapter breakdowns
+✅ Quotes
+✅ Action items
+
+If you’re a busy professional or founder who wants the best ideas fast (and actionable), I’d love your feedback.
+Launch deal: PH20 for 20% off.
+[PH_LINK]
+
+WhatsApp/Email
+Launching Book Digest today on Product Hunt 🚀
+It turns books into structured digests (insights, chapters, quotes, action items).
+If you can check it out + leave feedback/upvote, I’d really appreciate it.
+Discount: PH20 (20% off).
+[PH_LINK]
+
+TOMORROW LAUNCH TODOs (30–60 minutes)
+0) Decide link destination for PH listing:
+   - Homepage OR demo book page (Built to Sell recommended as secondary link in description/comment).
+
+1) Stripe LIVE sanity check (5 min)
+   - Confirm PH20 exists in LIVE mode and is Active.
+   - Do NOT rotate Stripe secret key unless necessary.
+
+2) Webhook sanity check (5 min)
+   - Stripe webhooks show delivered for checkout.session.completed.
+
+3) Final UI sanity check (10 min)
+   - /pricing shows Monthly+Yearly only + PH20 banner.
+   - A premium account can access full content.
+   - A free account at limit sees upgrade prompt fast.
+
+4) Product Hunt posting (10–15 min)
+   - Upload screenshots.
+   - Paste title/tagline/description.
+   - Publish.
+   - Immediately post maker comment.
+
+5) Launch distribution (15–30 min)
+   - Share PH link to supporters.
+   - Post to X + LinkedIn.
+   - Optional: 1–2 communities (avoid spamming).
+
+POST-LAUNCH (Day 0–2)
+- Monitor Stripe payments + webhooks.
+- Monitor Render logs.
+- Collect feedback from PH comments.
+- Fix only critical issues; avoid major feature changes during peak traffic.
+
+END

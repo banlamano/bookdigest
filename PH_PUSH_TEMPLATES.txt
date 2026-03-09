@@ -1,0 +1,79 @@
+PRODUCT HUNT PUSH TEMPLATES (Feb 13)
+
+10-MINUTE LAUNCH DAY CHECKLIST
+- 08:55 CET: Open Product Hunt Launch Day dashboard, open Stripe dashboard, open Render logs.
+- 09:01 CET: Confirm the PH post is live and copy the PH URL.
+- 09:02 CET: Paste PH URL into this file (PH_LINK).
+- 09:05–09:15 CET: Post the Maker Comment. Reply quickly to first comments.
+- 09:15 CET: Push #1 to inner circle (ask for feedback/comments).
+- 09:30–12:00 CET: Reply to comments, fix only critical issues.
+- 17:45 CET: Prepare Push #2 (social posts + supporter list ready).
+- 18:00 CET: Push #2 (main wave) + post on X + LinkedIn.
+- 18:00–20:00 CET: Stay active: respond to PH comments quickly.
+
+1) Paste PH link here once live:
+PH_LINK = PASTE_PH_LINK_HERE
+
+---
+MAKER COMMENT (post at ~09:05–09:15 CET)
+Hey Product Hunt — I’m the maker of **Book Digest**.
+
+I built it because most “book summary” sites are either too shallow or not actionable. For professionals and founders, the value is in insights and decisions—not just reading another paragraph.
+
+So Book Digest turns books into structured digests:
+summary → key insights → chapter breakdown → quotes → action plan
+
+Launch deal: use **PH20** for 20% off (Monthly + Yearly).
+I’d love your feedback: what should we build next — real voice audio, exporting notes, highlights, sharing, integrations?
+
+High-wow examples:
+- Winning — Jack Welch
+  https://book-digest.com/books/6e5dc0f9-13a7-4b47-99e8-48154e2be638
+- The Success Principles — Jack Canfield
+  https://book-digest.com/books/906fd638-7908-4f48-a2b5-3c0fd4c04e3f
+- Built to Sell — John Warrillow
+  https://book-digest.com/books/ac848729-e4fa-4903-a3cd-4e512a8af631
+
+---
+PUSH #1 (09:15 CET) — INNER CIRCLE (WhatsApp/DM)
+Hey! Book Digest is live on Product Hunt today.
+If you have 2 minutes, could you check it out and leave a quick comment/feedback? It really helps early momentum.
+Link: PH_LINK — thank you!
+
+---
+PUSH #2 (18:00 CET) — MAIN WAVE (WhatsApp/Email/DM)
+🚀 We’re live on Product Hunt today!
+Book Digest turns books into structured digests (insights, chapters, quotes, action items).
+Launch deal: **PH20** for 20% off.
+If you can leave a quick comment/feedback, it helps a lot: PH_LINK — thank you!
+
+---
+X / TWITTER POST (18:00 CET)
+Just launched **Book Digest** on Product Hunt 🚀
+AI book digests with **insights, chapters, quotes & action items** — not just a paragraph summary.
+Launch deal: **PH20** for 20% off.
+PH_LINK
+
+---
+LINKEDIN POST (18:00 CET)
+Today I launched **Book Digest** on Product Hunt.
+It turns books into structured, actionable digests:
+✅ Key insights
+✅ Chapter breakdowns
+✅ Quotes
+✅ Action items
+
+Launch deal: **PH20** for 20% off.
+PH_LINK
+
+---
+EMAIL SUBJECT IDEAS
+- Quick feedback request: Book Digest is live on Product Hunt
+- Launch day: Book Digest (PH20 launch deal)
+- New: AI book digests turned into action plans
+
+---
+REMINDERS
+- Don’t spam. Ask for feedback/comments.
+- Reply fast to PH comments (first 2–4 hours matter).
+- Keep PH20 active in LIVE Stripe.

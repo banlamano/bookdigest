@@ -1,0 +1,36 @@
+FRENCH LAUNCH COPY (for later FR-only launch)
+
+1) Description du produit (FR)
+Book Digest transforme des livres en digests IA structurés et actionnables : résumé complet, idées clés, découpage par chapitres, citations marquantes et actions concrètes.
+
+Conçu pour les professionnels, les fondateurs et les lecteurs curieux qui veulent apprendre plus vite — et surtout appliquer les idées.
+
+Ce que vous obtenez :
+- Un résumé clair
+- Des idées clés (insights)
+- Des résumés de chapitres
+- Des citations mémorables
+- Un plan d’actions (actions à appliquer)
+
+Site : https://book-digest.com
+
+---
+
+2) Texte type « Maker comment » (FR)
+Bonjour Product Hunt — je suis le créateur de Book Digest.
+
+J’ai construit Book Digest parce que beaucoup d’applications de résumés restent trop superficielles. La vraie valeur d’un livre, ce sont les idées clés et les actions concrètes — pas seulement un paragraphe.
+
+Book Digest génère donc des digests structurés :
+Résumé → idées clés → chapitres → citations → plan d’actions.
+
+Je serais ravi d’avoir vos retours : quelle fonctionnalité devrions-nous développer ensuite (audio, export, surlignage, partage, intégrations) ?
+
+---
+
+3) Post LinkedIn (FR)
+Je construis Book Digest — des digests IA de livres avec idées clés, chapitres, citations et plan d’actions.
+Objectif : apprendre plus vite et appliquer les idées.
+
+👉 https://book-digest.com
+Vos retours sont les bienvenus.

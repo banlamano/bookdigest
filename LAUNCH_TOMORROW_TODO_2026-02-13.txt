@@ -1,0 +1,53 @@
+TOMORROW TODO — PRODUCT HUNT LAUNCH (Feb 13)
+
+0) Files to use
+- PH push templates: PH_PUSH_TEMPLATES.txt
+- Launch handoff: LAUNCH_DAY_HANDOFF_2026-02-12.txt
+
+1) 08:55 CET — Pre-flight (10 min)
+- Open Product Hunt Launch Day dashboard
+- Open Stripe dashboard (LIVE) and confirm:
+  - Promotion code PH20 is Active and not expired
+  - Webhooks endpoint is healthy / recent deliveries OK
+- Open Render backend logs + health endpoint
+- Open site in incognito: confirm /pricing shows PH20 banner + Monthly/Yearly only
+
+2) 09:01 CET — Launch goes live automatically (PH)
+- Copy the Product Hunt URL
+- Paste into PH_PUSH_TEMPLATES.txt (PH_LINK)
+
+3) 09:05–09:15 CET — Maker Comment
+- Post maker comment immediately
+- Reply quickly to first comments
+
+4) 09:15 CET — Push #1 (Inner circle)
+- Send to 5–15 close supporters
+- Ask for feedback/comments (avoid spammy upvote requests)
+
+5) 09:30 CET — Company page post
+- Post brand announcement with PH link
+
+6) 09:30–12:00 CET — Monitor & respond
+- Respond to PH comments quickly
+- Watch Stripe payments + webhook deliveries
+- Only fix critical issues if needed
+
+7) 17:45 CET — Prepare push #2
+- Prepare X + LinkedIn posts
+- Prepare supporter list
+
+8) 18:00 CET — Push #2 (Main wave)
+- Send supporter blast
+- Post on X + LinkedIn
+- Stay online 1–2 hours to reply to comments
+
+9) After 20:00 CET — Light monitoring
+- Check Stripe dashboards and Render logs
+- Collect feedback and note top requests
+
+Key reminders
+- Don’t change major product features on launch day.
+- Ask for comments/feedback, not direct upvote begging.
+- If anything breaks: Neon restore branch exists: post-regeneration-2026-02-11.
+
+END

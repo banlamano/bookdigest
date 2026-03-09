@@ -1,0 +1,36 @@
+PRODUCT HUNT FAQ RESPONSES (copy/paste)
+
+1) Is it free?
+Yes—there’s a free plan so anyone can try it. Free users can read a limited number of full digests per month. Premium unlocks unlimited access.
+
+2) What do I get with Premium?
+Premium unlocks unlimited reading + full digests (insights, chapters, quotes, action items) without monthly limits. We’re also working on audio features (marked as beta/coming soon).
+
+3) How is this different from Blinkist?
+Blinkist is great for short summaries. Book Digest focuses on structured output you can act on: key insights, chapter breakdowns, memorable quotes, and action items—designed to turn reading into execution.
+
+4) Are the quotes real quotes from the book?
+They’re “memorable quote-style” takeaways generated to capture key ideas. We’re exploring ways to make this even more accurate and transparent over time.
+
+5) How do you create the digests?
+We generate structured digests using AI (OpenAI), producing consistent sections (summary → insights → chapters → action plan). Quality is a top priority and we’re iterating quickly based on feedback.
+
+6) Do you have an app?
+Right now it’s a web app you can install on mobile (PWA). Native iOS/Android apps are planned.
+
+7) Do you support offline?
+Offline reading/audio downloads are planned—currently marked as coming soon. The goal is to make it great on mobile.
+
+8) Where do you get the book list / covers?
+Books and covers are pulled from public metadata sources (e.g., Google Books) and curated in the library.
+
+9) What’s next on the roadmap?
+Top priorities: real audio narration, offline downloads, and more personalization (saved highlights / exports). Feedback from PH will strongly influence what we build next.
+
+10) Any launch deal?
+Yes—use code PH20 for 20% off (Monthly + Yearly).
+
+Conversation starters (end a reply with a question)
+- What’s the #1 book you wish you could digest faster?
+- Would you prefer audio narration or offline downloads next?
+- Which category should we expand next (business, psychology, health, etc.)?
