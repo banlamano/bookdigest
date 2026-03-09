@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
+import { useLanguage } from '@/components/LanguageProvider';
 
 function getLangFromURL(): string {
   if (typeof window === 'undefined') return 'en';
@@ -15,15 +16,31 @@ function getLangFromURL(): string {
   return params.get('lang') || 'en';
 }
 
+function getInitialLanguage(): string {
+  if (typeof window === 'undefined') return 'en';
+  return getLangFromURL();
+}
+
 export function FeaturedBooks() {
-  const [language, setLanguage] = useState('en');
+  const { t, language: langContext } = useLanguage();
+  const [language, setLanguage] = useState(getInitialLanguage());
+  const [key, setKey] = useState(0);
   
   useEffect(() => {
+    const handleLanguageChange = () => {
+      const newLang = getLangFromURL();
+      setLanguage(newLang);
+      setKey(k => k + 1);
+    };
+    
     setLanguage(getLangFromURL());
+    window.addEventListener('popstate', handleLanguageChange);
+    
+    return () => window.removeEventListener('popstate', handleLanguageChange);
   }, []);
 
   const { data, isLoading } = useQuery({
-    queryKey: ['featured-books', language],
+    queryKey: ['featured-books', key],
     queryFn: () => booksAPI.getAll({ limit: 6 }),
     staleTime: 0,
   });
@@ -49,17 +66,17 @@ export function FeaturedBooks() {
           <div className="flex items-center justify-between mb-12">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-                Featured Summaries
+                {langContext === 'de' ? 'Empfohlene Zusammenfassungen' : 'Featured Summaries'}
               </h2>
               <p className="text-gray-600 dark:text-gray-400">
-                Start with our most popular book summaries
+                {langContext === 'de' ? 'Starte mit unseren beliebtesten Buchzusammenfassungen' : 'Start with our most popular book summaries'}
               </p>
             </div>
             <Link
               href="/library"
               className="hidden md:flex items-center text-primary-600 hover:text-primary-700 font-medium"
             >
-              View All <ArrowRight className="w-4 h-4 ml-2" />
+              {langContext === 'de' ? 'Alle anzeigen' : 'View All'} <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </div>
 
@@ -71,7 +88,7 @@ export function FeaturedBooks() {
 
           <div className="text-center mt-8 md:hidden">
             <Link href="/library" className="btn-outline">
-              View All Books
+              {langContext === 'de' ? 'Alle Bücher' : 'View All Books'}
             </Link>
           </div>
         </div>

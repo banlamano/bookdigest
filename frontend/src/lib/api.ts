@@ -43,7 +43,13 @@ export const booksAPI = {
       headers: noCacheHeaders
     });
   },
-  getFeatured: () => api.get('/books/featured', { headers: noCacheHeaders }),
+  getFeatured: () => {
+    const lang = getLanguageFromURL();
+    return api.get('/books/featured', { 
+      params: { language: lang },
+      headers: noCacheHeaders 
+    });
+  },
   search: (query: string, params?: any) => {
     const lang = getLanguageFromURL();
     return api.get('/books/search', { 

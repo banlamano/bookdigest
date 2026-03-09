@@ -1,7 +1,12 @@
+"use client";
+
 import Link from 'next/link';
 import { BookOpen, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export function Footer() {
+  const { t, language } = useLanguage();
+
   return (
     <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -15,7 +20,7 @@ export function Footer() {
               <span className="text-lg font-bold">BookDigest</span>
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Learn from the world's best books in minutes. Read or listen on the go.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
@@ -35,26 +40,26 @@ export function Footer() {
 
           {/* Product */}
           <div>
-            <h3 className="font-semibold mb-4">Product</h3>
+            <h3 className="font-semibold mb-4">{t('footer.product')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/library" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  Library
+                  {t('nav.library')}
                 </Link>
               </li>
               <li>
                 <Link href="/categories" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  Categories
+                  {t('nav.categories')}
                 </Link>
               </li>
               <li>
                 <Link href="/pricing" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  Pricing
+                  {t('nav.pricing')}
                 </Link>
               </li>
               <li>
                 <Link href="/features" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  Features
+                  {t('nav.features')}
                 </Link>
               </li>
             </ul>
@@ -62,16 +67,16 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="font-semibold mb-4">Company</h3>
+            <h3 className="font-semibold mb-4">{t('footer.company')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  About Us
+                  {t('footer.about')}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  Contact
+                  {t('footer.contact')}
                 </Link>
               </li>
             </ul>
@@ -79,21 +84,21 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
+            <h3 className="font-semibold mb-4">{t('footer.legal')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/privacy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  Privacy Policy
+                  {t('footer.privacy')}
                 </Link>
               </li>
               <li>
                 <Link href="/terms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  Terms of Service
+                  {t('footer.terms')}
                 </Link>
               </li>
               <li>
                 <Link href="/cookies" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  Cookie Policy
+                  {t('footer.cookies')}
                 </Link>
               </li>
             </ul>
@@ -113,7 +118,7 @@ export function Footer() {
             </a>
           </div>
           <p className="text-center text-sm text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} BookDigest. All rights reserved.
+            © {new Date().getFullYear()} BookDigest. {t('footer.allRights')}
           </p>
         </div>
       </div>

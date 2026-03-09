@@ -6,18 +6,11 @@ import { booksAPI, categoriesAPI } from '@/lib/api';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import { Search, Filter, SlidersHorizontal } from 'lucide-react';
 import { BookCard } from '@/components/books/BookCard';
+import { useLanguage } from '@/components/LanguageProvider';
 
 // Disable all caching
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
-
-export function generateMetadata() {
-  return {
-    headers: {
-      'Cache-Control': 'no-store, max-age=0',
-    },
-  };
-}
 
 function getLangFromURL(): string {
   if (typeof window === 'undefined') return 'en';
@@ -26,6 +19,7 @@ function getLangFromURL(): string {
 }
 
 export default function LibraryPage() {
+  const { t, language: langContext } = useLanguage();
   const [language, setLanguage] = useState('en');
   const [key, setKey] = useState(0); // Force refetch
   
@@ -85,10 +79,12 @@ export default function LibraryPage() {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            Book Library
+            {langContext === 'de' ? 'Buchbibliothek' : 'Book Library'}
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
-            Explore our collection of {pagination?.total || 500}+ book summaries
+            {langContext === 'de' 
+              ? `Durchsuche unsere Sammlung von ${pagination?.total || 500}+ Buchzusammenfassungen`
+              : `Explore our collection of ${pagination?.total || 500}+ book summaries`}
           </p>
         </div>
 
@@ -99,7 +95,7 @@ export default function LibraryPage() {
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="text"
-              placeholder="Search books, authors, topics..."
+              placeholder={langContext === 'de' ? 'Bücher, Autoren, Themen suchen...' : 'Search books, authors, topics...'}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent"
@@ -113,7 +109,7 @@ export default function LibraryPage() {
               onChange={(e) => setSelectedCategory(e.target.value)}
               className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500"
             >
-              <option value="">All Categories</option>
+              <option value="">{langContext === 'de' ? 'Alle Kategorien' : 'All Categories'}</option>
               {categories.map((cat: any) => (
                 <option key={cat.id} value={cat.id}>
                   {cat.name}
@@ -128,11 +124,15 @@ export default function LibraryPage() {
                 onChange={(e) => setShowPremiumOnly(e.target.checked)}
                 className="rounded border-gray-300 text-primary-600 focus:ring-primary-500"
               />
-              <span className="text-sm text-gray-700 dark:text-gray-300">Premium only</span>
+              <span className="text-sm text-gray-700 dark:text-gray-300">
+                {langContext === 'de' ? 'Nur Premium' : 'Premium only'}
+              </span>
             </label>
 
             <div className="ml-auto text-sm text-gray-600 dark:text-gray-400">
-              {pagination && `Showing ${books.length} of ${pagination.total} books`}
+              {pagination && (langContext === 'de' 
+                ? `Zeige ${books.length} von ${pagination.total} Büchern`
+                : `Showing ${books.length} of ${pagination.total} books`)}
             </div>
           </div>
         </div>
@@ -152,17 +152,17 @@ export default function LibraryPage() {
               disabled={page === 1}
               className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              Previous
+              {langContext === 'de' ? 'Zurück' : 'Previous'}
             </button>
             <div className="flex items-center px-4">
-              Page {page} of {pagination.pages}
+              {langContext === 'de' ? `Seite ${page} von ${pagination.pages}` : `Page ${page} of ${pagination.pages}`}
             </div>
             <button
               onClick={() => setPage(page + 1)}
               disabled={page >= pagination.pages}
               className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              Next
+              {langContext === 'de' ? 'Weiter' : 'Next'}
             </button>
           </div>
         )}

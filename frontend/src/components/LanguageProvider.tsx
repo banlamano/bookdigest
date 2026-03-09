@@ -375,10 +375,23 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    const savedLang = Cookies.get('language') as Language;
-    if (savedLang && (savedLang === 'en' || savedLang === 'de')) {
-      setLanguageState(savedLang);
+    // First check URL query params, then cookies
+    let savedLang: Language = 'en';
+    
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlLang = params.get('lang');
+      if (urlLang === 'en' || urlLang === 'de') {
+        savedLang = urlLang;
+      } else {
+        const cookieLang = Cookies.get('language') as Language;
+        if (cookieLang === 'en' || cookieLang === 'de') {
+          savedLang = cookieLang;
+        }
+      }
     }
+    
+    setLanguageState(savedLang);
     setIsReady(true);
   }, []);
 
