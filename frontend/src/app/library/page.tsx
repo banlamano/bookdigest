@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useSearchParams } from 'next/navigation';
 import { booksAPI, categoriesAPI } from '@/lib/api';
@@ -11,7 +11,7 @@ import { BookCard } from '@/components/books/BookCard';
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-export default function LibraryPage() {
+function LibraryContent() {
   const searchParams = useSearchParams();
   const language = searchParams.get('lang') || 'en';
   
@@ -129,5 +129,29 @@ export default function LibraryPage() {
         )}
       </div>
     </div>
+  );
+}
+
+function LoadingFallback() {
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-8">
+          <div className="h-10 bg-gray-200 dark:bg-gray-700 rounded w-48 mb-2"></div>
+          <div className="h-5 bg-gray-200 dark:bg-gray-700 rounded w-64"></div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {Array.from({ length: 8 }).map((_, i) => <BookCardSkeleton key={i} />)}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function LibraryPage() {
+  return (
+    <Suspense fallback={<LoadingFallback />}>
+      <LibraryContent />
+    </Suspense>
   );
 }

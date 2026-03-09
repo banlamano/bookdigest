@@ -1,5 +1,6 @@
 'use client';
 
+import { Suspense } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useSearchParams } from 'next/navigation';
 import { booksAPI } from '@/lib/api';
@@ -9,7 +10,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { useEffect } from 'react';
 
-export function FeaturedBooks() {
+function FeaturedBooksContent() {
   const searchParams = useSearchParams();
   const language = searchParams.get('lang') || 'en';
 
@@ -65,5 +66,31 @@ export function FeaturedBooks() {
         </div>
       </div>
     </section>
+  );
+}
+
+function FeaturedBooksFallback() {
+  return (
+    <section className="py-20 bg-white dark:bg-gray-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between mb-12">
+          <div>
+            <div className="h-10 bg-gray-200 dark:bg-gray-700 rounded w-64 mb-2"></div>
+            <div className="h-5 bg-gray-200 dark:bg-gray-700 rounded w-80"></div>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {Array.from({ length: 8 }).map((_, i) => <BookCardSkeleton key={i} />)}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function FeaturedBooks() {
+  return (
+    <Suspense fallback={<FeaturedBooksFallback />}>
+      <FeaturedBooksContent />
+    </Suspense>
   );
 }

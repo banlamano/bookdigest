@@ -1,10 +1,11 @@
 'use client';
 
+import { Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { BookOpen, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
-export function Footer() {
+function FooterContent() {
   const searchParams = useSearchParams();
   const language = searchParams.get('lang') || 'en';
   
@@ -122,5 +123,19 @@ export function Footer() {
         </div>
       </div>
     </footer>
+  );
+}
+
+export function Footer() {
+  return (
+    <Suspense fallback={
+      <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="h-64 bg-gray-100 dark:bg-gray-800 rounded"></div>
+        </div>
+      </footer>
+    }>
+      <FooterContent />
+    </Suspense>
   );
 }
