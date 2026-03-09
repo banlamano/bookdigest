@@ -1,58 +1,20 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
+import { useSearchParams } from 'next/navigation';
 import { booksAPI, categoriesAPI } from '@/lib/api';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
-import { Search, Filter, SlidersHorizontal } from 'lucide-react';
+import { Search } from 'lucide-react';
 import { BookCard } from '@/components/books/BookCard';
-import { useLanguage } from '@/components/LanguageProvider';
 
-// Disable all caching
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-function getLangFromURL(): string {
-  if (typeof window === 'undefined') return 'en';
-  const params = new URLSearchParams(window.location.search);
-  return params.get('lang') || 'en';
-}
-
-function getInitialLanguage(): string {
-  if (typeof window === 'undefined') return 'en';
-  return getLangFromURL();
-}
-
 export default function LibraryPage() {
-  const { t } = useLanguage();
-  const [language, setLanguage] = useState(getInitialLanguage);
-  const [key, setKey] = useState(0); // Force refetch
+  const searchParams = useSearchParams();
+  const language = searchParams.get('lang') || 'en';
   
-  const refreshLanguage = useCallback(() => {
-    const newLang = getLangFromURL();
-    setLanguage(newLang);
-    setKey(k => k + 1); // Force React Query to refetch
-  }, []);
-  
-  useEffect(() => {
-    refreshLanguage();
-    
-    // Listen for URL changes (when user clicks language toggle)
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        refreshLanguage();
-      }
-    };
-    
-    window.addEventListener('popstate', refreshLanguage);
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-    
-    return () => {
-      window.removeEventListener('popstate', refreshLanguage);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
-  }, [refreshLanguage]);
-
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [showPremiumOnly, setShowPremiumOnly] = useState(false);
@@ -63,8 +25,8 @@ export default function LibraryPage() {
     queryFn: () => categoriesAPI.getAll(),
   });
 
-  const { data: booksData, isLoading, refetch } = useQuery({
-    queryKey: ['books', page, selectedCategory, showPremiumOnly, language, key],
+  const { data: booksData, isLoading } = useQuery({
+    queryKey: ['books', page, selectedCategory, showPremiumOnly, language],
     queryFn: () =>
       booksAPI.getAll({
         page,
@@ -81,7 +43,6 @@ export default function LibraryPage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
             {language === 'de' ? 'Buchbibliothek' : 'Book Library'}
@@ -93,9 +54,7 @@ export default function LibraryPage() {
           </p>
         </div>
 
-        {/* Search and Filters */}
         <div className="mb-8 space-y-4">
-          {/* Search Bar */}
           <div className="relative">
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
@@ -107,7 +66,6 @@ export default function LibraryPage() {
             />
           </div>
 
-          {/* Filters */}
           <div className="flex flex-wrap gap-4 items-center">
             <select
               value={selectedCategory}
@@ -142,14 +100,12 @@ export default function LibraryPage() {
           </div>
         </div>
 
-        {/* Books Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {isLoading
             ? Array.from({ length: 12 }).map((_, i) => <BookCardSkeleton key={i} />)
             : books.map((book: any) => <BookCard key={book.id} book={book} />)}
         </div>
 
-        {/* Pagination */}
         {pagination && pagination.pages > 1 && (
           <div className="flex justify-center gap-2">
             <button

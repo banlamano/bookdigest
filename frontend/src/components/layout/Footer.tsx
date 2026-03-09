@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import { BookOpen, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import { useLanguage } from '@/components/LanguageProvider';
 
 export function Footer() {
-  const { t, language } = useLanguage();
-
+  const searchParams = useSearchParams();
+  const language = searchParams.get('lang') || 'en';
+  
   return (
     <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="p-2 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg">
@@ -20,7 +20,9 @@ export function Footer() {
               <span className="text-lg font-bold">BookDigest</span>
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              {t('footer.description')}
+              {language === 'de' 
+                ? 'Lerne von den besten Büchern der Welt in Minuten. Lies oder höre unterwegs.'
+                : 'Learn from the world\'s best books in minutes. Read or listen on the go.'}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
@@ -38,67 +40,64 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Product */}
           <div>
-            <h3 className="font-semibold mb-4">{t('footer.product')}</h3>
+            <h3 className="font-semibold mb-4">{language === 'de' ? 'Produkt' : 'Product'}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/library" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  {t('nav.library')}
+                <Link href={`/library?lang=${language}`} className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                  {language === 'de' ? 'Bibliothek' : 'Library'}
                 </Link>
               </li>
               <li>
-                <Link href="/categories" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  {t('nav.categories')}
+                <Link href={`/categories?lang=${language}`} className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                  {language === 'de' ? 'Kategorien' : 'Categories'}
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  {t('nav.pricing')}
+                <Link href={`/pricing?lang=${language}`} className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                  {language === 'de' ? 'Preise' : 'Pricing'}
                 </Link>
               </li>
               <li>
-                <Link href="/features" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  {t('nav.features')}
+                <Link href={`/features?lang=${language}`} className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                  {language === 'de' ? 'Funktionen' : 'Features'}
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Company */}
           <div>
-            <h3 className="font-semibold mb-4">{t('footer.company')}</h3>
+            <h3 className="font-semibold mb-4">{language === 'de' ? 'Unternehmen' : 'Company'}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  {t('footer.about')}
+                <Link href={`/about?lang=${language}`} className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                  {language === 'de' ? 'Über uns' : 'About Us'}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  {t('footer.contact')}
+                <Link href={`/contact?lang=${language}`} className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                  {language === 'de' ? 'Kontakt' : 'Contact'}
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Legal */}
           <div>
-            <h3 className="font-semibold mb-4">{t('footer.legal')}</h3>
+            <h3 className="font-semibold mb-4">{language === 'de' ? 'Rechtliches' : 'Legal'}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/privacy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  {t('footer.privacy')}
+                <Link href={`/privacy?lang=${language}`} className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                  {language === 'de' ? 'Datenschutz' : 'Privacy Policy'}
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  {t('footer.terms')}
+                <Link href={`/terms?lang=${language}`} className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                  {language === 'de' ? 'Nutzungsbedingungen' : 'Terms of Service'}
                 </Link>
               </li>
               <li>
-                <Link href="/cookies" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                  {t('footer.cookies')}
+                <Link href={`/cookies?lang=${language}`} className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                  {language === 'de' ? 'Cookie-Richtlinie' : 'Cookie Policy'}
                 </Link>
               </li>
             </ul>
@@ -118,7 +117,7 @@ export function Footer() {
             </a>
           </div>
           <p className="text-center text-sm text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} BookDigest. {t('footer.allRights')}
+            © {new Date().getFullYear()} BookDigest. {language === 'de' ? 'Alle Rechte vorbehalten.' : 'All rights reserved.'}
           </p>
         </div>
       </div>

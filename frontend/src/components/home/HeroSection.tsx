@@ -1,16 +1,16 @@
 'use client';
 
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { BookOpen, Headphones, Clock, TrendingUp } from 'lucide-react';
-import { useLanguage } from '@/components/LanguageProvider';
 
 export function HeroSection() {
-  const { t, language } = useLanguage();
+  const searchParams = useSearchParams();
+  const language = searchParams.get('lang') || 'en';
   
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-secondary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 lg:py-32">
-      {/* Background decorations */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary-200 dark:bg-primary-900 rounded-full opacity-20 blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary-200 dark:bg-secondary-900 rounded-full opacity-20 blur-3xl" />
@@ -18,7 +18,6 @@ export function HeroSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -48,29 +47,27 @@ export function HeroSection() {
               <Link href="/register" className="btn-primary text-lg px-8 py-3">
                 {language === 'de' ? 'Kostenlos starten' : 'Start Free Trial'}
               </Link>
-              <Link href="/library" className="btn-outline text-lg px-8 py-3">
+              <Link href={`/library?lang=${language}`} className="btn-outline text-lg px-8 py-3">
                 {language === 'de' ? 'Bibliothek durchsuchen' : 'Browse Library'}
               </Link>
             </div>
 
-            {/* Stats */}
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center lg:text-left">
                 <div className="text-3xl font-bold text-gray-900 dark:text-white">500+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">{t('hero.stats.books')}</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">{language === 'de' ? 'Buchzusammenfassungen' : 'Book Summaries'}</div>
               </div>
               <div className="text-center lg:text-left">
                 <div className="text-3xl font-bold text-gray-900 dark:text-white">5–10min</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">{t('hero.stats.read')}</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">{language === 'de' ? 'Durchschn. Lesezeit' : 'Average Read'}</div>
               </div>
               <div className="text-center lg:text-left">
                 <div className="text-3xl font-bold text-gray-900 dark:text-white">4.8★</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">{t('hero.stats.rating')}</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">{language === 'de' ? 'Benutzerbewertung' : 'User Rating'}</div>
               </div>
             </div>
           </motion.div>
 
-          {/* Right Content - Feature Cards */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
