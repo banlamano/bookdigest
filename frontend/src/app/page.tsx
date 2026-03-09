@@ -18,12 +18,12 @@ const Testimonials = dynamic(() => import('@/components/home/Testimonials').then
 
 export default async function HomePage() {
   const cookieStore = cookies();
-  const language = cookieStore.get(' || 'en';
+  const language = cookieStore.get('language')?.value || 'en';
   
   return (
     <div className="min-h-screen">
       <HeroSection language={language} />
-     language')?.value <FeaturedBooks language={language} />
+      <FeaturedBooks language={language} />
       <Features />
       <Testimonials />
       <CTASection />
