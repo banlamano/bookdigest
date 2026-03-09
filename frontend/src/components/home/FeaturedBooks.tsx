@@ -22,7 +22,7 @@ function getInitialLanguage(): string {
 }
 
 export function FeaturedBooks() {
-  const { t, language: langContext } = useLanguage();
+  const { t } = useLanguage();
   const [language, setLanguage] = useState(getInitialLanguage());
   const [key, setKey] = useState(0);
   
@@ -66,17 +66,17 @@ export function FeaturedBooks() {
           <div className="flex items-center justify-between mb-12">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-                {langContext === 'de' ? 'Empfohlene Zusammenfassungen' : 'Featured Summaries'}
+                {language === 'de' ? 'Empfohlene Zusammenfassungen' : 'Featured Summaries'}
               </h2>
               <p className="text-gray-600 dark:text-gray-400">
-                {langContext === 'de' ? 'Starte mit unseren beliebtesten Buchzusammenfassungen' : 'Start with our most popular book summaries'}
+                {language === 'de' ? 'Starte mit unseren beliebtesten Buchzusammenfassungen' : 'Start with our most popular book summaries'}
               </p>
             </div>
             <Link
               href="/library"
               className="hidden md:flex items-center text-primary-600 hover:text-primary-700 font-medium"
             >
-              {langContext === 'de' ? 'Alle anzeigen' : 'View All'} <ArrowRight className="w-4 h-4 ml-2" />
+              {language === 'de' ? 'Alle anzeigen' : 'View All'} <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </div>
 
@@ -88,7 +88,7 @@ export function FeaturedBooks() {
 
           <div className="text-center mt-8 md:hidden">
             <Link href="/library" className="btn-outline">
-              {langContext === 'de' ? 'Alle Bücher' : 'View All Books'}
+              {language === 'de' ? 'Alle Bücher' : 'View All Books'}
             </Link>
           </div>
         </div>

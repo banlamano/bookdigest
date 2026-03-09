@@ -18,9 +18,14 @@ function getLangFromURL(): string {
   return params.get('lang') || 'en';
 }
 
+function getInitialLanguage(): string {
+  if (typeof window === 'undefined') return 'en';
+  return getLangFromURL();
+}
+
 export default function LibraryPage() {
-  const { t, language: langContext } = useLanguage();
-  const [language, setLanguage] = useState('en');
+  const { t } = useLanguage();
+  const [language, setLanguage] = useState(getInitialLanguage);
   const [key, setKey] = useState(0); // Force refetch
   
   const refreshLanguage = useCallback(() => {
@@ -79,10 +84,10 @@ export default function LibraryPage() {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            {langContext === 'de' ? 'Buchbibliothek' : 'Book Library'}
+            {language === 'de' ? 'Buchbibliothek' : 'Book Library'}
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
-            {langContext === 'de' 
+            {language === 'de' 
               ? `Durchsuche unsere Sammlung von ${pagination?.total || 500}+ Buchzusammenfassungen`
               : `Explore our collection of ${pagination?.total || 500}+ book summaries`}
           </p>
@@ -95,7 +100,7 @@ export default function LibraryPage() {
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="text"
-              placeholder={langContext === 'de' ? 'Bücher, Autoren, Themen suchen...' : 'Search books, authors, topics...'}
+              placeholder={language === 'de' ? 'Bücher, Autoren, Themen suchen...' : 'Search books, authors, topics...'}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent"
@@ -109,7 +114,7 @@ export default function LibraryPage() {
               onChange={(e) => setSelectedCategory(e.target.value)}
               className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500"
             >
-              <option value="">{langContext === 'de' ? 'Alle Kategorien' : 'All Categories'}</option>
+              <option value="">{language === 'de' ? 'Alle Kategorien' : 'All Categories'}</option>
               {categories.map((cat: any) => (
                 <option key={cat.id} value={cat.id}>
                   {cat.name}
@@ -125,12 +130,12 @@ export default function LibraryPage() {
                 className="rounded border-gray-300 text-primary-600 focus:ring-primary-500"
               />
               <span className="text-sm text-gray-700 dark:text-gray-300">
-                {langContext === 'de' ? 'Nur Premium' : 'Premium only'}
+                {language === 'de' ? 'Nur Premium' : 'Premium only'}
               </span>
             </label>
 
             <div className="ml-auto text-sm text-gray-600 dark:text-gray-400">
-              {pagination && (langContext === 'de' 
+              {pagination && (language === 'de' 
                 ? `Zeige ${books.length} von ${pagination.total} Büchern`
                 : `Showing ${books.length} of ${pagination.total} books`)}
             </div>
@@ -152,17 +157,17 @@ export default function LibraryPage() {
               disabled={page === 1}
               className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              {langContext === 'de' ? 'Zurück' : 'Previous'}
+              {language === 'de' ? 'Zurück' : 'Previous'}
             </button>
             <div className="flex items-center px-4">
-              {langContext === 'de' ? `Seite ${page} von ${pagination.pages}` : `Page ${page} of ${pagination.pages}`}
+              {language === 'de' ? `Seite ${page} von ${pagination.pages}` : `Page ${page} of ${pagination.pages}`}
             </div>
             <button
               onClick={() => setPage(page + 1)}
               disabled={page >= pagination.pages}
               className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              {langContext === 'de' ? 'Weiter' : 'Next'}
+              {language === 'de' ? 'Weiter' : 'Next'}
             </button>
           </div>
         )}

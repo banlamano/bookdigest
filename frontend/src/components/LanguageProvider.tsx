@@ -401,7 +401,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   };
 
   const t = (key: string): string => {
-    if (!isReady) return key;
+    if (!isReady) return translations.en[key] || key;
     return translations[language][key] || key;
   };
 
