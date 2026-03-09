@@ -12,11 +12,13 @@ export function LanguageSwitcher() {
     setMounted(true);
   }, []);
 
-  const toggleLanguage = () => {
+  const toggleLanguage = async () => {
     const newLang = language === 'en' ? 'de' : 'en';
     setLanguage(newLang);
-    // Full page reload to get fresh content
-    window.location.href = window.location.pathname + '?lang=' + newLang;
+    
+    // Set cookie and reload
+    document.cookie = `language=${newLang};path=/;max-age=31536000`;
+    window.location.reload();
   };
 
   if (!mounted) {
