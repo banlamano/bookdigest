@@ -5,6 +5,7 @@ import { categoriesAPI } from '@/lib/api';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { BookOpen, TrendingUp, Brain, Zap, Users, DollarSign, Award, Heart } from 'lucide-react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 const iconMap: { [key: string]: any } = {
   briefcase: BookOpen,
@@ -18,6 +19,7 @@ const iconMap: { [key: string]: any } = {
 };
 
 export default function CategoriesPage() {
+  const { t } = useLanguage();
   const { data, isLoading } = useQuery({
     queryKey: ['categories'],
     queryFn: () => categoriesAPI.getAll(),
@@ -35,10 +37,10 @@ export default function CategoriesPage() {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Browse by Category
+            {t('categories.browseByCategory')}
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Explore book summaries organized by topic. Find the perfect books to expand your knowledge.
+            {t('categories.exploreSubtitle')}
           </p>
         </motion.div>
 
@@ -57,7 +59,7 @@ export default function CategoriesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {categories.map((category: any, index: number) => {
               const Icon = iconMap[category.icon || 'book'] || BookOpen;
-              
+
               return (
                 <motion.div
                   key={category.id}
@@ -77,10 +79,10 @@ export default function CategoriesPage() {
                         {category.name}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-400 text-sm">
-                        {category.description || `Explore ${category.name.toLowerCase()} books`}
+                        {category.description || `${t('categories.explore')} ${category.name.toLowerCase()}`}
                       </p>
                       <div className="mt-4 text-sm text-primary-600 font-medium">
-                        View books →
+                        {t('categories.viewBooks')}
                       </div>
                     </div>
                   </Link>
@@ -102,15 +104,15 @@ export default function CategoriesPage() {
               <div className="text-4xl font-bold text-primary-600 mb-2">
                 {categories.length}+
               </div>
-              <div className="text-gray-600 dark:text-gray-400">Categories</div>
+              <div className="text-gray-600 dark:text-gray-400">{t('categories.categories')}</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-primary-600 mb-2">500+</div>
-              <div className="text-gray-600 dark:text-gray-400">Book Summaries</div>
+              <div className="text-gray-600 dark:text-gray-400">{t('categories.bookSummaries')}</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-primary-600 mb-2">5–10min</div>
-              <div className="text-gray-600 dark:text-gray-400">Average Reading Time</div>
+              <div className="text-gray-600 dark:text-gray-400">{t('categories.avgReadingTime')}</div>
             </div>
           </div>
         </motion.div>

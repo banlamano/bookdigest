@@ -8,8 +8,10 @@ import { authAPI } from '@/lib/api';
 import { useAuthStore } from '@/store/authStore';
 import toast from 'react-hot-toast';
 import { BookOpen, Mail, Lock, User, Eye, EyeOff } from 'lucide-react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function RegisterPage() {
+  const { t } = useLanguage();
   const router = useRouter();
   const { setAuth } = useAuthStore();
   const [isLoading, setIsLoading] = useState(false);
@@ -23,9 +25,9 @@ export default function RegisterPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (formData.password.length < 8) {
-      toast.error('Password must be at least 8 characters');
+      toast.error(t('register.passwordHint'));
       return;
     }
 
@@ -34,9 +36,9 @@ export default function RegisterPage() {
     try {
       const response = await authAPI.register(formData);
       const { user, token } = response.data.data;
-      
+
       setAuth(user, token);
-      toast.success('Account created successfully!');
+      toast.success(t('register.createAccount') + '!');
       router.push('/dashboard');
     } catch (error: any) {
       toast.error(error.response?.data?.message || 'Registration failed. Please try again.');
@@ -62,9 +64,9 @@ export default function RegisterPage() {
               BookDigest
             </span>
           </Link>
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Start your free trial</h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">{t('register.title')}</h2>
           <p className="mt-2 text-gray-600 dark:text-gray-400">
-            Join thousands of learners today. No credit card required.
+            {t('register.subtitle')}
           </p>
         </div>
 
@@ -73,7 +75,7 @@ export default function RegisterPage() {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  First Name
+                  {t('register.firstName')}
                 </label>
                 <input
                   id="firstName"
@@ -86,7 +88,7 @@ export default function RegisterPage() {
               </div>
               <div>
                 <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Last Name
+                  {t('register.lastName')}
                 </label>
                 <input
                   id="lastName"
@@ -101,7 +103,7 @@ export default function RegisterPage() {
 
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Email address
+                {t('register.emailLabel')}
               </label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -119,7 +121,7 @@ export default function RegisterPage() {
 
             <div>
               <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Password
+                {t('register.passwordLabel')}
               </label>
               <div className="relative">
                 <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -140,7 +142,7 @@ export default function RegisterPage() {
                   {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
                 </button>
               </div>
-              <p className="mt-1 text-xs text-gray-500">Must be at least 8 characters</p>
+              <p className="mt-1 text-xs text-gray-500">{t('register.passwordHint')}</p>
             </div>
 
             <div className="flex items-start">
@@ -151,13 +153,13 @@ export default function RegisterPage() {
                 className="mt-1 rounded border-gray-300 text-primary-600 focus:ring-primary-500"
               />
               <label htmlFor="terms" className="ml-2 text-sm text-gray-600 dark:text-gray-400">
-                I agree to the{' '}
+                {t('register.agreeTerms')}{' '}
                 <Link href="/terms" className="text-primary-600 hover:text-primary-700">
-                  Terms of Service
+                  {t('register.termsOfService')}
                 </Link>{' '}
-                and{' '}
+                {t('register.and')}{' '}
                 <Link href="/privacy" className="text-primary-600 hover:text-primary-700">
-                  Privacy Policy
+                  {t('register.privacyPolicy')}
                 </Link>
               </label>
             </div>
@@ -167,15 +169,15 @@ export default function RegisterPage() {
               disabled={isLoading}
               className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {isLoading ? 'Creating account...' : 'Create account'}
+              {isLoading ? t('register.creating') : t('register.createAccount')}
             </button>
           </form>
 
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Already have an account?{' '}
+              {t('register.haveAccount')}{' '}
               <Link href="/login" className="text-primary-600 hover:text-primary-700 font-medium">
-                Sign in
+                {t('register.signIn')}
               </Link>
             </p>
           </div>

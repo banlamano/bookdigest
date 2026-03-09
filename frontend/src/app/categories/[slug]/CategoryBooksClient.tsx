@@ -8,6 +8,7 @@ import { ArrowLeft } from 'lucide-react';
 import { useState } from 'react';
 import { BreadcrumbStructuredData } from '@/components/StructuredData';
 import { BookCard } from '@/components/books/BookCard';
+import { useLanguage } from '@/components/LanguageProvider';
 
 interface CategoryBooksClientProps {
   slug: string;
@@ -24,6 +25,7 @@ export default function CategoryBooksClient({
   initialPagination,
   breadcrumbItems,
 }: CategoryBooksClientProps) {
+  const { t } = useLanguage();
   const [page, setPage] = useState(1);
 
   const { data, isLoading } = useQuery({
@@ -55,7 +57,7 @@ export default function CategoryBooksClient({
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12">
       {/* Structured Data for SEO */}
       <BreadcrumbStructuredData items={breadcrumbItems} />
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8">
@@ -64,7 +66,7 @@ export default function CategoryBooksClient({
             className="inline-flex items-center text-primary-600 hover:text-primary-700 mb-4"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Categories
+            {t('categoryDetail.backToCategories')}
           </Link>
 
           <div className="flex items-center space-x-4 mb-4">
@@ -78,10 +80,10 @@ export default function CategoryBooksClient({
             )}
             <div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-                {category?.name || 'Category'}
+                {category?.name || t('nav.categories')}
               </h1>
               <p className="text-gray-600 dark:text-gray-400 mt-1">
-                {books.length} book{books.length !== 1 ? 's' : ''} in this category
+                {books.length} {books.length !== 1 ? t('categoryDetail.booksInCategoryPlural') : t('categoryDetail.booksInCategory')}
               </p>
             </div>
           </div>
@@ -91,10 +93,10 @@ export default function CategoryBooksClient({
         {books.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              No books found in this category yet.
+              {t('categoryDetail.noBooksFound')}
             </p>
             <Link href="/library" className="btn-primary">
-              Browse All Books
+              {t('categoryDetail.browseAll')}
             </Link>
           </div>
         ) : (
@@ -113,17 +115,17 @@ export default function CategoryBooksClient({
                   disabled={page === 1}
                   className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
                 >
-                  Previous
+                  {t('pagination.previous')}
                 </button>
                 <div className="flex items-center px-4">
-                  Page {page} of {pagination.pages}
+                  {t('pagination.page')} {page} {t('pagination.of')} {pagination.pages}
                 </div>
                 <button
                   onClick={() => setPage(page + 1)}
                   disabled={page >= pagination.pages}
                   className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
                 >
-                  Next
+                  {t('pagination.next')}
                 </button>
               </div>
             )}

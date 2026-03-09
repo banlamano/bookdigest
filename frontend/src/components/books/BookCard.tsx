@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { OptimizedBookCover } from './OptimizedBookCover';
 import { Clock, Headphones, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '@/components/LanguageProvider';
 
 interface BookCardProps {
   book: {
@@ -23,6 +24,7 @@ interface BookCardProps {
 }
 
 export function BookCard({ book }: BookCardProps) {
+  const { t } = useLanguage();
   return (
     <motion.div
       whileHover={{ y: -5 }}
@@ -39,7 +41,7 @@ export function BookCard({ book }: BookCardProps) {
           />
           {book.isPremium && (
             <div className="absolute top-2 right-2">
-              <span className="badge-premium text-xs px-2 py-1">Premium</span>
+              <span className="badge-premium text-xs px-2 py-1">{t('bookCard.premium')}</span>
             </div>
           )}
           {book.audioUrl && (
@@ -75,7 +77,7 @@ export function BookCard({ book }: BookCardProps) {
 
           <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
             <Clock className="w-4 h-4 mr-1" />
-            <span>{book.readingTime} min read</span>
+            <span>{book.readingTime} {t('bookCard.minRead')}</span>
           </div>
         </div>
       </Link>

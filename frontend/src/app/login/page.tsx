@@ -8,8 +8,10 @@ import { authAPI } from '@/lib/api';
 import { useAuthStore } from '@/store/authStore';
 import toast from 'react-hot-toast';
 import { BookOpen, Mail, Lock, Eye, EyeOff } from 'lucide-react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function LoginPage() {
+  const { t } = useLanguage();
   const router = useRouter();
   const { setAuth } = useAuthStore();
   const [isLoading, setIsLoading] = useState(false);
@@ -26,9 +28,9 @@ export default function LoginPage() {
     try {
       const response = await authAPI.login(formData);
       const { user, token } = response.data.data;
-      
+
       setAuth(user, token);
-      toast.success('Welcome back!');
+      toast.success(t('login.welcomeBack') + '!');
       router.push('/dashboard');
     } catch (error: any) {
       toast.error(error.response?.data?.message || 'Login failed. Please try again.');
@@ -54,9 +56,9 @@ export default function LoginPage() {
               BookDigest
             </span>
           </Link>
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Welcome back</h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">{t('login.welcomeBack')}</h2>
           <p className="mt-2 text-gray-600 dark:text-gray-400">
-            Sign in to continue your learning journey
+            {t('login.subtitle')}
           </p>
         </div>
 
@@ -64,7 +66,7 @@ export default function LoginPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Email address
+                {t('login.emailLabel')}
               </label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -82,7 +84,7 @@ export default function LoginPage() {
 
             <div>
               <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Password
+                {t('login.passwordLabel')}
               </label>
               <div className="relative">
                 <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -111,10 +113,10 @@ export default function LoginPage() {
                   type="checkbox"
                   className="rounded border-gray-300 text-primary-600 focus:ring-primary-500"
                 />
-                <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">Remember me</span>
+                <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">{t('login.rememberMe')}</span>
               </label>
               <Link href="/forgot-password" className="text-sm text-primary-600 hover:text-primary-700">
-                Forgot password?
+                {t('login.forgotPassword')}
               </Link>
             </div>
 
@@ -123,15 +125,15 @@ export default function LoginPage() {
               disabled={isLoading}
               className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {isLoading ? 'Signing in...' : 'Sign in'}
+              {isLoading ? t('login.signingIn') : t('login.signIn')}
             </button>
           </form>
 
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Don't have an account?{' '}
+              {t('login.noAccount')}{' '}
               <Link href="/register" className="text-primary-600 hover:text-primary-700 font-medium">
-                Start free trial
+                {t('login.startTrial')}
               </Link>
             </p>
           </div>

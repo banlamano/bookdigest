@@ -6,10 +6,11 @@ import { booksAPI, categoriesAPI } from '@/lib/api';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import { Search } from 'lucide-react';
 import { BookCard } from '@/components/books/BookCard';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function LibraryClient({ language: initialLanguage }: { language: string }) {
-  const [language] = useState(initialLanguage);
-  
+  const { t } = useLanguage();
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [showPremiumOnly, setShowPremiumOnly] = useState(false);
@@ -21,7 +22,7 @@ export default function LibraryClient({ language: initialLanguage }: { language:
   });
 
   const { data: booksData, isLoading } = useQuery({
-    queryKey: ['books', page, selectedCategory, showPremiumOnly, language],
+    queryKey: ['books', page, selectedCategory, showPremiumOnly, initialLanguage],
     queryFn: () =>
       booksAPI.getAll({
         page,
@@ -40,12 +41,10 @@ export default function LibraryClient({ language: initialLanguage }: { language:
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            {language === 'de' ? 'Buchbibliothek' : 'Book Library'}
+            {t('library.title')}
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
-            {language === 'de' 
-              ? `Durchsuche unsere Sammlung von ${pagination?.total || 500}+ Buchzusammenfassungen`
-              : `Explore our collection of ${pagination?.total || 500}+ book summaries`}
+            {t('library.subtitle')}
           </p>
         </div>
 
@@ -54,7 +53,7 @@ export default function LibraryClient({ language: initialLanguage }: { language:
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="text"
-              placeholder={language === 'de' ? 'Bücher, Autoren, Themen suchen...' : 'Search books, authors, topics...'}
+              placeholder={t('library.searchPlaceholder')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent"
@@ -67,7 +66,7 @@ export default function LibraryClient({ language: initialLanguage }: { language:
               onChange={(e) => setSelectedCategory(e.target.value)}
               className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500"
             >
-              <option value="">{language === 'de' ? 'Alle Kategorien' : 'All Categories'}</option>
+              <option value="">{t('library.allCategories')}</option>
               {categories.map((cat: any) => (
                 <option key={cat.id} value={cat.id}>
                   {cat.name}
@@ -83,14 +82,12 @@ export default function LibraryClient({ language: initialLanguage }: { language:
                 className="rounded border-gray-300 text-primary-600 focus:ring-primary-500"
               />
               <span className="text-sm text-gray-700 dark:text-gray-300">
-                {language === 'de' ? 'Nur Premium' : 'Premium only'}
+                {t('library.premiumOnly')}
               </span>
             </label>
 
             <div className="ml-auto text-sm text-gray-600 dark:text-gray-400">
-              {pagination && (language === 'de' 
-                ? `Zeige ${books.length} von ${pagination.total} Büchern`
-                : `Showing ${books.length} of ${pagination.total} books`)}
+              {pagination && `${t('pagination.showing')} ${books.length} ${t('pagination.ofTotal')} ${pagination.total} ${t('pagination.books')}`}
             </div>
           </div>
         </div>
@@ -108,17 +105,17 @@ export default function LibraryClient({ language: initialLanguage }: { language:
               disabled={page === 1}
               className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              {language === 'de' ? 'Zurück' : 'Previous'}
+              {t('pagination.previous')}
             </button>
             <div className="flex items-center px-4">
-              {language === 'de' ? `Seite ${page} von ${pagination.pages}` : `Page ${page} of ${pagination.pages}`}
+              {t('pagination.page')} {page} {t('pagination.of')} {pagination.pages}
             </div>
             <button
               onClick={() => setPage(page + 1)}
               disabled={page >= pagination.pages}
               className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              {language === 'de' ? 'Weiter' : 'Next'}
+              {t('pagination.next')}
             </button>
           </div>
         )}

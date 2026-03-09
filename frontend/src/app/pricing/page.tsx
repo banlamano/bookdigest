@@ -9,8 +9,10 @@ import toast from 'react-hot-toast';
 import { useState, useEffect } from 'react';
 import { Testimonials } from '@/components/home/Testimonials';
 import { useQuery } from '@tanstack/react-query';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function PricingPage() {
+  const { t } = useLanguage();
   const { isAuthenticated } = useAuthStore();
   const router = useRouter();
   const [isLoading, setIsLoading] = useState<string | null>(null);
@@ -36,7 +38,7 @@ export default function PricingPage() {
 
   const handleSubscribe = async (planType: 'monthly' | 'yearly' | 'team') => {
     if (!isAuthenticated) {
-      toast.error('Please login to subscribe');
+      toast.error(t('pricing.loginToSubscribe'));
       router.push('/login');
       return;
     }
@@ -56,47 +58,47 @@ export default function PricingPage() {
   // Product Hunt launch: keep choices simple (Monthly + Yearly only)
   const plans = [
     {
-      name: 'Free',
+      name: t('pricing.free'),
       price: '€0',
-      period: 'forever',
-      description: 'Perfect for getting started',
+      period: t('pricing.forever'),
+      description: t('pricing.perfectStart'),
       features: [
-        '3 book summaries per month',
-        'Basic reading features',
-        'Limited audio access',
-        'Mobile app access',
+        t('pricing.summariesPerMonth'),
+        t('pricing.basicFeatures'),
+        t('pricing.limitedAudio'),
+        t('pricing.mobileAccess'),
       ],
-      cta: 'Get Started',
+      cta: t('pricing.getStarted'),
       highlighted: false,
       planType: null,
     },
     {
-      name: 'Premium Monthly',
+      name: t('pricing.premiumMonthly'),
       price: '€9.99',
-      period: 'per month',
-      description: 'For serious learners',
+      period: t('pricing.perMonth'),
+      description: t('pricing.seriousLearners'),
       features: [
-        'Unlimited book summaries',
-        'Audio narration (Premium)',
-        'Ad-free experience',
-        'Priority customer support',
-        'Early access to new content',
+        t('pricing.unlimited'),
+        t('pricing.audioNarration'),
+        t('pricing.adFree'),
+        t('pricing.prioritySupport'),
+        t('pricing.earlyAccess'),
       ],
-      cta: 'Get Premium',
+      cta: t('pricing.getPremium'),
       highlighted: true,
       planType: 'monthly' as const,
     },
     {
-      name: 'Premium Yearly',
+      name: t('pricing.premiumYearly'),
       price: '€79.99',
-      period: 'per year',
-      badge: 'Save 33%',
-      description: 'Best value for committed learners',
+      period: t('pricing.perYear'),
+      badge: t('pricing.save33'),
+      description: t('pricing.bestValue'),
       features: [
-        'Everything in Monthly',
-        'Save €40 per year',
+        t('pricing.everythingMonthly'),
+        t('pricing.save40'),
       ],
-      cta: 'Get Premium',
+      cta: t('pricing.getPremium'),
       highlighted: false,
       planType: 'yearly' as const,
     },
@@ -109,7 +111,7 @@ export default function PricingPage() {
         <div className="mb-8">
           <div className="rounded-xl border border-primary-200 bg-primary-50 dark:bg-gray-800 dark:border-gray-700 p-4 text-center">
             <div className="text-sm font-medium text-primary-800 dark:text-primary-200">
-              Product Hunt Launch Deal: Use code <span className="font-bold">PH20</span> for 20% off (Monthly + Yearly)
+              {t('pricing.launchDeal')} <span className="font-bold">PH20</span> {t('pricing.launchDiscount')}
             </div>
           </div>
         </div>
@@ -120,7 +122,7 @@ export default function PricingPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4"
           >
-            Choose Your Plan
+            {t('pricing.choosePlan')}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -128,7 +130,7 @@ export default function PricingPage() {
             transition={{ delay: 0.1 }}
             className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
           >
-            Choose the plan that fits your learning goals. Cancel anytime, no questions asked.
+            {t('pricing.chooseSubtitle')}
           </motion.p>
         </div>
 
@@ -140,11 +142,10 @@ export default function PricingPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className={`card p-8 relative ${
-                plan.highlighted
+              className={`card p-8 relative ${plan.highlighted
                   ? 'ring-2 ring-primary-600 shadow-xl scale-105'
                   : ''
-              }`}
+                }`}
             >
               {plan.badge && (
                 <div className="absolute top-3 left-1/2 z-10 transform -translate-x-1/2">
@@ -181,26 +182,25 @@ export default function PricingPage() {
               {isCurrentPlan(plan.planType) ? (
                 <div className="text-center">
                   <div className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 py-3 rounded-lg font-medium">
-                    ✓ Current Plan
+                    {t('pricing.currentPlan')}
                   </div>
                   <a
                     href="/dashboard"
                     className="text-sm text-primary-600 hover:text-primary-700 mt-2 inline-block"
                   >
-                    Manage Subscription →
+                    {t('pricing.manageSubscription')}
                   </a>
                 </div>
               ) : plan.planType ? (
                 <button
                   onClick={() => handleSubscribe(plan.planType!)}
                   disabled={isLoading === plan.planType}
-                  className={`w-full py-3 rounded-lg font-medium transition-colors ${
-                    plan.highlighted
+                  className={`w-full py-3 rounded-lg font-medium transition-colors ${plan.highlighted
                       ? 'bg-primary-600 hover:bg-primary-700 text-white'
                       : 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white'
-                  } disabled:opacity-50 disabled:cursor-not-allowed`}
+                    } disabled:opacity-50 disabled:cursor-not-allowed`}
                 >
-                  {isLoading === plan.planType ? 'Processing...' : plan.cta}
+                  {isLoading === plan.planType ? t('pricing.processing') : plan.cta}
                 </button>
               ) : (
                 <a
@@ -222,7 +222,7 @@ export default function PricingPage() {
           className="mb-16"
         >
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
-            Free vs Premium Comparison
+            {t('pricing.comparison')}
           </h2>
           <div className="card overflow-hidden">
             <div className="overflow-x-auto">
@@ -230,31 +230,31 @@ export default function PricingPage() {
                 <thead className="bg-gray-50 dark:bg-gray-800">
                   <tr>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">
-                      Feature
+                      {t('pricing.feature')}
                     </th>
                     <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 dark:text-white">
-                      Free
+                      {t('pricing.free')}
                     </th>
                     <th className="px-6 py-4 text-center text-sm font-semibold text-white bg-gradient-to-r from-primary-600 to-secondary-600">
-                      Premium
+                      {t('pricing.premium')}
                     </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
                     <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
-                      Book summaries per month
+                      {t('pricing.summariesMonth')}
                     </td>
                     <td className="px-6 py-4 text-center text-sm text-gray-600 dark:text-gray-400">
-                      3 summaries
+                      {t('pricing.threeSummaries')}
                     </td>
                     <td className="px-6 py-4 text-center text-sm text-primary-600 dark:text-primary-400 font-semibold">
-                      Unlimited
+                      {t('pricing.unlimitedAccess')}
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
                     <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
-                      Audio narration (Premium)
+                      {t('pricing.audioNarration')}
                     </td>
                     <td className="px-6 py-4 text-center">
                       <X className="w-5 h-5 text-red-500 mx-auto" />
@@ -265,7 +265,7 @@ export default function PricingPage() {
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
                     <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
-                      Ad-free experience
+                      {t('pricing.adFree')}
                     </td>
                     <td className="px-6 py-4 text-center">
                       <X className="w-5 h-5 text-red-500 mx-auto" />
@@ -276,10 +276,10 @@ export default function PricingPage() {
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
                     <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
-                      Key insights & action items
+                      {t('pricing.keyInsights')}
                     </td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-sm text-gray-600 dark:text-gray-400">Limited</span>
+                      <span className="text-sm text-gray-600 dark:text-gray-400">{t('pricing.limited')}</span>
                     </td>
                     <td className="px-6 py-4 text-center">
                       <Check className="w-5 h-5 text-green-500 mx-auto" />
@@ -287,7 +287,7 @@ export default function PricingPage() {
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
                     <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
-                      Quotes & highlights
+                      {t('pricing.quotesHighlights')}
                     </td>
                     <td className="px-6 py-4 text-center">
                       <X className="w-5 h-5 text-red-500 mx-auto" />
@@ -298,7 +298,7 @@ export default function PricingPage() {
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
                     <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
-                      Priority support
+                      {t('pricing.prioritySupport')}
                     </td>
                     <td className="px-6 py-4 text-center">
                       <X className="w-5 h-5 text-red-500 mx-auto" />
@@ -309,7 +309,7 @@ export default function PricingPage() {
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
                     <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
-                      Early access to new books
+                      {t('pricing.earlyAccessBooks')}
                     </td>
                     <td className="px-6 py-4 text-center">
                       <X className="w-5 h-5 text-red-500 mx-auto" />
@@ -320,7 +320,7 @@ export default function PricingPage() {
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-800/50">
                     <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-medium">
-                      Mobile app access
+                      {t('pricing.mobileAccess')}
                     </td>
                     <td className="px-6 py-4 text-center">
                       <Check className="w-5 h-5 text-green-500 mx-auto" />
@@ -331,7 +331,7 @@ export default function PricingPage() {
                   </tr>
                   <tr className="bg-gray-50 dark:bg-gray-800">
                     <td className="px-6 py-4 text-sm text-gray-900 dark:text-white font-bold">
-                      Price
+                      {t('pricing.price')}
                     </td>
                     <td className="px-6 py-4 text-center text-2xl font-bold text-gray-900 dark:text-white">
                       €0
@@ -343,7 +343,7 @@ export default function PricingPage() {
                 </tbody>
               </table>
             </div>
-            
+
             {/* CTA Row */}
             <div className="grid grid-cols-2 border-t border-gray-200 dark:border-gray-700">
               <div className="px-6 py-6 text-center">
@@ -351,13 +351,13 @@ export default function PricingPage() {
                   href="/register"
                   className="btn-outline inline-block"
                 >
-                  Start Free
+                  {t('pricing.startFree')}
                 </a>
               </div>
               <div className="px-6 py-6 bg-gradient-to-r from-primary-50 to-secondary-50 dark:from-primary-900/20 dark:to-secondary-900/20 text-center border-l border-gray-200 dark:border-gray-700">
                 {isPremium ? (
                   <div className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 py-3 rounded-lg font-medium">
-                    ✓ You're Premium!
+                    {t('pricing.youArePremium')}
                   </div>
                 ) : (
                   <button
@@ -365,7 +365,7 @@ export default function PricingPage() {
                     disabled={isLoading === 'monthly'}
                     className="btn-primary"
                   >
-                    {isLoading === 'monthly' ? 'Processing...' : 'Get Premium'}
+                    {isLoading === 'monthly' ? t('pricing.processing') : t('pricing.getPremium')}
                   </button>
                 )}
               </div>
@@ -376,16 +376,16 @@ export default function PricingPage() {
         {/* FAQ */}
         <div className="mt-20 text-center">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Frequently Asked Questions
+            {t('pricing.faq')}
           </h2>
           <p className="text-gray-600 dark:text-gray-400 mb-8">
-            Have questions? We're here to help.
+            {t('pricing.faqSubtitle')}
           </p>
           <a
             href="mailto:support@bookdigest.com"
             className="text-primary-600 hover:text-primary-700 font-medium"
           >
-            Contact Support →
+            {t('pricing.contactSupport')}
           </a>
         </div>
       </div>
