@@ -600,29 +600,30 @@ const defaultContext: LanguageContextType = {
 
 const LanguageContext = createContext<LanguageContextType>(defaultContext);
 
+function getInitialLanguage(): Language {
+  if (typeof window === 'undefined') return 'en';
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const urlLang = params.get('lang');
+    if (urlLang === 'en' || urlLang === 'de') return urlLang;
+    const cookieLang = Cookies.get('language') as Language;
+    if (cookieLang === 'en' || cookieLang === 'de') return cookieLang;
+  } catch (e) {}
+  return 'en';
+}
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>('en');
-  const [isReady, setIsReady] = useState(false);
+  const [language, setLanguageState] = useState<Language>(getInitialLanguage);
+  const [isReady, setIsReady] = useState(true);
 
   useEffect(() => {
-    // First check URL query params, then cookies
-    let savedLang: Language = 'en';
-
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search);
-      const urlLang = params.get('lang');
-      if (urlLang === 'en' || urlLang === 'de') {
-        savedLang = urlLang;
-      } else {
-        const cookieLang = Cookies.get('language') as Language;
-        if (cookieLang === 'en' || cookieLang === 'de') {
-          savedLang = cookieLang;
-        }
-      }
+    // Update language when URL changes
+    const params = new URLSearchParams(window.location.search);
+    const urlLang = params.get('lang');
+    if (urlLang === 'en' || urlLang === 'de') {
+      setLanguageState(urlLang);
+      Cookies.set('language', urlLang, { expires: 365 });
     }
-
-    setLanguageState(savedLang);
-    setIsReady(true);
   }, []);
 
   const setLanguage = (lang: Language) => {
