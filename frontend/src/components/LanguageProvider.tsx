@@ -81,25 +81,6 @@ const translations: Record<Language, Record<string, string>> = {
     'book.share': 'Share',
     'book.backToLibrary': 'Back to Library',
 
-    // Pricing
-    'pricing.title': 'Simple, Transparent Pricing',
-    'pricing.subtitle': 'Choose the plan that works for you',
-    'pricing.free': 'Free',
-    'pricing.freePrice': '$0',
-    'pricing.freePeriod': '/month',
-    'pricing.freeFeatures': '3 book summaries/month, Basic features',
-    'pricing.premium': 'Premium',
-    'pricing.premiumPrice': '$9.99',
-    'pricing.premiumPeriod': '/month',
-    'pricing.premiumFeatures': 'Unlimited access, Audio summaries, Offline reading, Priority support',
-    'pricing.getStarted': 'Get Started',
-    'pricing.current': 'Current Plan',
-    'pricing.feature.unlimited': 'Unlimited summaries',
-    'pricing.feature.audio': 'Audio narrations',
-    'pricing.feature.offline': 'Offline reading',
-    'pricing.feature.priority': 'Priority support',
-    'pricing.feature.noAds': 'No ads',
-
     // Auth
     'auth.loginTitle': 'Welcome Back',
     'auth.loginSubtitle': 'Login to access your account',
@@ -207,6 +188,7 @@ const translations: Record<Language, Record<string, string>> = {
     'pricing.chooseSubtitle': 'Choose the plan that fits your learning goals. Cancel anytime, no questions asked.',
     'pricing.launchDeal': 'Product Hunt Launch Deal: Use code',
     'pricing.launchDiscount': 'for 20% off (Monthly + Yearly)',
+    'pricing.free': 'Free',
     'pricing.forever': 'forever',
     'pricing.perfectStart': 'Perfect for getting started',
     'pricing.summariesPerMonth': '3 book summaries per month',
@@ -368,25 +350,6 @@ const translations: Record<Language, Record<string, string>> = {
     'book.share': 'Teilen',
     'book.backToLibrary': 'Zurück zur Bibliothek',
 
-    // Pricing
-    'pricing.title': 'Einfache, transparente Preise',
-    'pricing.subtitle': 'Wähle den Plan, der zu dir passt',
-    'pricing.free': 'Kostenlos',
-    'pricing.freePrice': '0€',
-    'pricing.freePeriod': '/Monat',
-    'pricing.freeFeatures': '3 Buchzusammenfassungen/Monat, Basis-Funktionen',
-    'pricing.premium': 'Premium',
-    'pricing.premiumPrice': '9,99€',
-    'pricing.premiumPeriod': '/Monat',
-    'pricing.premiumFeatures': 'Unbegrenzter Zugang, Audio-Zusammenfassungen, Offline-Lesen, Prioritäts-Support',
-    'pricing.getStarted': 'Jetzt starten',
-    'pricing.current': 'Aktueller Plan',
-    'pricing.feature.unlimited': 'Unbegrenzte Zusammenfassungen',
-    'pricing.feature.audio': 'Audio-Vorlesungen',
-    'pricing.feature.offline': 'Offline-Lesen',
-    'pricing.feature.priority': 'Prioritäts-Support',
-    'pricing.feature.noAds': 'Keine Werbung',
-
     // Auth
     'auth.loginTitle': 'Willkommen zurück',
     'auth.loginSubtitle': 'Melde dich an, um auf dein Konto zuzugreifen',
@@ -492,8 +455,8 @@ const translations: Record<Language, Record<string, string>> = {
     // Pricing page
     'pricing.choosePlan': 'Wähle deinen Plan',
     'pricing.chooseSubtitle': 'Wähle den Plan, der zu deinen Lernzielen passt. Jederzeit kündbar, ohne Wenn und Aber.',
-    'pricing.launchDeal': 'Product Hunt Launch Deal: Nutze den Code',
     'pricing.launchDiscount': 'für 20% Rabatt (Monatlich + Jährlich)',
+    'pricing.free': 'Kostenlos',
     'pricing.forever': 'für immer',
     'pricing.perfectStart': 'Perfekt zum Einstieg',
     'pricing.summariesPerMonth': '3 Buchzusammenfassungen/Monat',
@@ -600,30 +563,29 @@ const defaultContext: LanguageContextType = {
 
 const LanguageContext = createContext<LanguageContextType>(defaultContext);
 
-function getInitialLanguage(): Language {
-  if (typeof window === 'undefined') return 'en';
+function getLanguageFromStorage(): Language | null {
+  if (typeof window === 'undefined') return null;
   try {
     const params = new URLSearchParams(window.location.search);
     const urlLang = params.get('lang');
     if (urlLang === 'en' || urlLang === 'de') return urlLang;
     const cookieLang = Cookies.get('language') as Language;
     if (cookieLang === 'en' || cookieLang === 'de') return cookieLang;
-  } catch (e) {}
-  return 'en';
+  } catch (e) { }
+  return null;
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>(getInitialLanguage);
-  const [isReady, setIsReady] = useState(true);
+  const [language, setLanguageState] = useState<Language>('en');
+  const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    // Update language when URL changes
-    const params = new URLSearchParams(window.location.search);
-    const urlLang = params.get('lang');
-    if (urlLang === 'en' || urlLang === 'de') {
-      setLanguageState(urlLang);
-      Cookies.set('language', urlLang, { expires: 365 });
+    // Read from storage on client-mount to prevent hydration errors
+    const stored = getLanguageFromStorage();
+    if (stored) {
+      setLanguageState(stored);
     }
+    setIsReady(true);
   }, []);
 
   const setLanguage = (lang: Language) => {

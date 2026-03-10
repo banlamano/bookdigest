@@ -15,8 +15,7 @@ export function LanguageSwitcher() {
   const toggleLanguage = () => {
     const newLang = language === 'en' ? 'de' : 'en';
     setLanguage(newLang);
-    // Use URL param - middleware will handle cookie and redirect
-    window.location.href = window.location.pathname + '?lang=' + newLang;
+    // No page reload — rely on React context to propagate the change
   };
 
   if (!mounted) {

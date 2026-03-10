@@ -6,24 +6,13 @@ import { Footer } from '@/components/layout/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { WebsiteStructuredData, OrganizationStructuredData } from '@/components/StructuredData';
 import FAQSchema from '@/components/FAQSchema';
-import dynamic from 'next/dynamic';
+import { Navbar } from '@/components/layout/Navbar';
+import { PWAInstallPrompt } from '@/components/PWAInstallPrompt';
+import EmailCapturePopup from '@/components/EmailCapturePopup';
 
-// Import client-only components with SSR disabled to prevent hydration errors
-// Navbar uses useEffect and theme toggle which cause hydration mismatches
-const Navbar = dynamic(() => import('@/components/layout/Navbar').then(mod => ({ default: mod.Navbar })), {
-  ssr: false,
-});
 
-const PWAInstallPrompt = dynamic(() => import('@/components/PWAInstallPrompt').then(mod => ({ default: mod.PWAInstallPrompt })), {
-  ssr: false,
-});
-
-const EmailCapturePopup = dynamic(() => import('@/components/EmailCapturePopup'), {
-  ssr: false,
-});
-
-const inter = Inter({ 
-  subsets: ['latin'], 
+const inter = Inter({
+  subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap', // Optimize font loading
   preload: true,
@@ -54,7 +43,7 @@ export const metadata: Metadata = {
     'book summary',
     'quick book summaries',
     'fast book summary',
-    
+
     // Category keywords  
     'business books',
     'business book summaries',
@@ -66,14 +55,14 @@ export const metadata: Metadata = {
     'productivity books',
     'leadership books',
     'entrepreneurship books',
-    
+
     // Competitive keywords
     'blinkist alternative',
     'blinkist free',
     'shortform alternative',
     'getabstract alternative',
     'free blinkist',
-    
+
     // Value keywords
     'book insights',
     'executive summaries',
@@ -144,10 +133,10 @@ export default function RootLayout({
         {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+
         {/* DNS prefetch for API and CDN */}
         <link rel="dns-prefetch" href={process.env.NEXT_PUBLIC_API_URL || 'https://bookdigest-lypx.onrender.com'} />
-        
+
         <GoogleAnalytics />
         <WebsiteStructuredData />
         <OrganizationStructuredData />
