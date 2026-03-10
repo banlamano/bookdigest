@@ -1,10 +1,15 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 import { useState } from 'react';
 import { Mail, MessageSquare, Send } from 'lucide-react';
 import toast from 'react-hot-toast';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function ContactPage() {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',

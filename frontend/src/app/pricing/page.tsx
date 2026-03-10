@@ -143,8 +143,8 @@ export default function PricingPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               className={`card p-8 relative ${plan.highlighted
-                  ? 'ring-2 ring-primary-600 shadow-xl scale-105'
-                  : ''
+                ? 'ring-2 ring-primary-600 shadow-xl scale-105'
+                : ''
                 }`}
             >
               {plan.badge && (
@@ -196,8 +196,8 @@ export default function PricingPage() {
                   onClick={() => handleSubscribe(plan.planType!)}
                   disabled={isLoading === plan.planType}
                   className={`w-full py-3 rounded-lg font-medium transition-colors ${plan.highlighted
-                      ? 'bg-primary-600 hover:bg-primary-700 text-white'
-                      : 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white'
+                    ? 'bg-primary-600 hover:bg-primary-700 text-white'
+                    : 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white'
                     } disabled:opacity-50 disabled:cursor-not-allowed`}
                 >
                   {isLoading === plan.planType ? t('pricing.processing') : plan.cta}

@@ -7,8 +7,10 @@ import { BookOpen, Search, Menu, X, Sun, Moon, User, LogOut } from 'lucide-react
 import { useAuthStore } from '@/store/authStore';
 import { useRouter } from 'next/navigation';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export function Navbar() {
+  const { t } = useLanguage();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -40,16 +42,16 @@ export function Navbar() {
             </span>
           </Link>
 
-{/* Desktop Navigation */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/library" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-              Library
+              {t('nav.library')}
             </Link>
             <Link href="/categories" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-              Categories
+              {t('nav.categories')}
             </Link>
             <Link href="/pricing" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-              Pricing
+              {t('nav.pricing')}
             </Link>
             <Link href="/search" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400">
               <Search className="w-5 h-5" />
@@ -58,7 +60,7 @@ export function Navbar() {
 
           {/* Right Side Actions */}
           <div className="hidden md:flex items-center space-x-4">
-{/* Theme Toggle */}
+            {/* Theme Toggle */}
             {mounted && (
               <button
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -89,7 +91,7 @@ export function Navbar() {
                   </div>
                 </button>
 
-{isProfileMenuOpen && (
+                {isProfileMenuOpen && (
                   <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2">
                     <Link
                       href="/dashboard"
@@ -97,25 +99,25 @@ export function Navbar() {
                       onClick={() => setIsProfileMenuOpen(false)}
                     >
                       <User className="w-4 h-4" />
-                      <span>Dashboard</span>
+                      <span>{t('nav.dashboard')}</span>
                     </Link>
                     <button
                       onClick={handleLogout}
                       className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors w-full text-left"
                     >
                       <LogOut className="w-4 h-4" />
-                      <span>Logout</span>
+                      <span>{t('nav.logout')}</span>
                     </button>
                   </div>
                 )}
               </div>
-) : (
+            ) : (
               <>
                 <Link href="/login" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                  Login
+                  {t('nav.login')}
                 </Link>
                 <Link href="/register" className="btn-primary">
-                  Sign Up
+                  {t('nav.register')}
                 </Link>
               </>
             )}
@@ -135,38 +137,38 @@ export function Navbar() {
         </div>
       </div>
 
-{/* Mobile Menu */}
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
           <div className="px-4 py-4 space-y-3">
             <Link href="/library" className="block py-2 text-gray-700 dark:text-gray-300">
-              Library
+              {t('nav.library')}
             </Link>
             <Link href="/categories" className="block py-2 text-gray-700 dark:text-gray-300">
-              Categories
+              {t('nav.categories')}
             </Link>
             <Link href="/pricing" className="block py-2 text-gray-700 dark:text-gray-300">
-              Pricing
+              {t('nav.pricing')}
             </Link>
             <Link href="/search" className="block py-2 text-gray-700 dark:text-gray-300">
-              Search
+              {t('nav.search')}
             </Link>
             {isAuthenticated ? (
               <>
                 <Link href="/dashboard" className="block py-2 text-gray-700 dark:text-gray-300">
-                  Dashboard
+                  {t('nav.dashboard')}
                 </Link>
                 <button onClick={handleLogout} className="block py-2 text-gray-700 dark:text-gray-300 w-full text-left">
-                  Logout
+                  {t('nav.logout')}
                 </button>
               </>
             ) : (
               <>
                 <Link href="/login" className="block py-2 text-gray-700 dark:text-gray-300">
-                  Login
+                  {t('nav.login')}
                 </Link>
                 <Link href="/register" className="btn-primary block text-center">
-                  Sign Up
+                  {t('nav.register')}
                 </Link>
               </>
             )}
