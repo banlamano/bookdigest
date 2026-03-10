@@ -6,7 +6,7 @@ import { ThemeProvider } from 'next-themes';
 import { useState } from 'react';
 import { LanguageProvider } from './LanguageProvider';
 
-export function Providers({ children }: { children: React.ReactNode }) {
+export function Providers({ children, initialLanguage }: { children: React.ReactNode; initialLanguage?: any }) {
   const [queryClient] = useState(
     () =>
       new QueryClient({
@@ -20,14 +20,14 @@ export function Providers({ children }: { children: React.ReactNode }) {
   );
 
   return (
-    <ThemeProvider 
-      attribute="class" 
-      defaultTheme="system" 
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
       enableSystem
       disableTransitionOnChange
       storageKey="bookdigest-theme"
     >
-      <LanguageProvider>
+      <LanguageProvider initialLanguage={initialLanguage}>
         <QueryClientProvider client={queryClient}>
           {children}
           <Toaster

@@ -172,6 +172,26 @@ export function Navbar() {
                 </Link>
               </>
             )}
+
+            <div className="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+              <span className="text-sm font-medium text-gray-600 dark:text-gray-400">{t('nav.settings')}</span>
+              <div className="flex items-center space-x-4">
+                {mounted && (
+                  <button
+                    onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                    className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                    aria-label="Toggle theme"
+                  >
+                    {theme === 'dark' ? (
+                      <Sun className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+                    ) : (
+                      <Moon className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+                    )}
+                  </button>
+                )}
+                <LanguageSwitcher />
+              </div>
+            </div>
           </div>
         </div>
       )}

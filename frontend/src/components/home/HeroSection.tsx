@@ -51,15 +51,15 @@ export function HeroSection({ language: initialLanguage }: HeroSectionProps) {
 
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-gray-900 dark:text-white">500+</div>
+                <div className="text-3xl font-bold text-gray-900 dark:text-white">{t('hero.stats.booksValue')}</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">{t('hero.stats.books')}</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-gray-900 dark:text-white">5–10min</div>
+                <div className="text-3xl font-bold text-gray-900 dark:text-white">{t('hero.stats.readValue')}</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">{t('hero.stats.read')}</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-gray-900 dark:text-white">4.8★</div>
+                <div className="text-3xl font-bold text-gray-900 dark:text-white">{t('hero.stats.ratingValue')}</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">{t('hero.stats.rating')}</div>
               </div>
             </div>

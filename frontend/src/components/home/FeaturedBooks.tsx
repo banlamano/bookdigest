@@ -7,17 +7,19 @@ import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { useEffect } from 'react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 interface FeaturedBooksProps {
   language?: string;
 }
 
 export function FeaturedBooks({ language: initialLanguage }: FeaturedBooksProps) {
+  const { t } = useLanguage();
   const language = initialLanguage || 'en';
 
   const { data, isLoading } = useQuery({
     queryKey: ['featured-books', language],
-    queryFn: () => booksAPI.getAll({ limit: 6 }),
+    queryFn: () => booksAPI.getAll({ limit: 6, language }),
     staleTime: 0,
   });
 
@@ -40,17 +42,17 @@ export function FeaturedBooks({ language: initialLanguage }: FeaturedBooksProps)
         <div className="flex items-center justify-between mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-              {language === 'de' ? 'Empfohlene Zusammenfassungen' : 'Featured Summaries'}
+              {t('featured.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              {language === 'de' ? 'Starte mit unseren beliebtesten Buchzusammenfassungen' : 'Start with our most popular book summaries'}
+              {t('featured.subtitle')}
             </p>
           </div>
           <Link
             href="/library"
             className="hidden md:flex items-center text-primary-600 hover:text-primary-700 font-medium"
           >
-            {language === 'de' ? 'Alle anzeigen' : 'View All'} <ArrowRight className="w-4 h-4 ml-2" />
+            {t('common.viewAll')} <ArrowRight className="w-4 h-4 ml-2" />
           </Link>
         </div>
 
@@ -62,7 +64,7 @@ export function FeaturedBooks({ language: initialLanguage }: FeaturedBooksProps)
 
         <div className="text-center mt-8 md:hidden">
           <Link href="/library" className="btn-outline">
-            {language === 'de' ? 'Alle Bücher' : 'View All Books'}
+            {t('common.viewAll')}
           </Link>
         </div>
       </div>

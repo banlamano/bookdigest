@@ -1,6 +1,7 @@
 'use client';
 
 import { BookOpen } from 'lucide-react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 interface ChapterCardProps {
   chapter: {
@@ -11,6 +12,7 @@ interface ChapterCardProps {
 }
 
 export default function ChapterCard({ chapter }: ChapterCardProps) {
+  const { t } = useLanguage();
   return (
     <div className="p-5 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all duration-300">
       <div className="flex items-start gap-4">
@@ -20,7 +22,7 @@ export default function ChapterCard({ chapter }: ChapterCardProps) {
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
-              Chapter {chapter.number}
+              {t('bookDetail.chapter')} {chapter.number}
             </span>
             <span className="text-gray-400 dark:text-gray-500">•</span>
             <h4 className="font-semibold text-gray-900 dark:text-white">

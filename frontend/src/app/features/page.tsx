@@ -1,103 +1,59 @@
-import { cookies } from 'next/headers';
-import { BookOpen, Headphones, Smartphone, TrendingUp, Award, Globe, Zap, Heart, Clock, Star } from 'lucide-react';
+'use client';
 
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
+import { BookOpen, Headphones, Smartphone, TrendingUp, Award, Globe } from 'lucide-react';
+import { useLanguage } from '@/components/LanguageProvider';
 
-export default async function FeaturesPage() {
-  const cookieStore = cookies();
-  const language = cookieStore.get('language')?.value || 'en';
+export default function FeaturesPage() {
+  const { t } = useLanguage();
 
-  const features = language === 'de' ? [
+  const features = [
     {
       icon: <BookOpen className="w-8 h-8" />,
-      title: '15-Minuten Zusammenfassungen',
-      description: 'Erhalte schnell die wichtigsten Erkenntnisse aus Bestsellern. Perfekt für einen vollen Terminkalender.',
+      title: t('featuresPage.fifteenMinTitle'),
+      description: t('featuresPage.fifteenMinDesc'),
       color: 'from-blue-500 to-cyan-500',
     },
     {
       icon: <Headphones className="w-8 h-8" />,
-      title: 'Audio-Zusammenfassungen',
-      description: 'Höre unterwegs zu. Perfekt für Pendler oder beim Sport.',
+      title: t('featuresPage.audioTitle'),
+      description: t('featuresPage.audioDesc'),
       color: 'from-purple-500 to-pink-500',
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
-      title: 'Mobile App',
-      description: 'Lies jederzeit und überall auf deinem Smartphone oder Tablet.',
+      title: t('featuresPage.mobileTitle'),
+      description: t('featuresPage.mobileDesc'),
       color: 'from-green-500 to-teal-500',
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
-      title: 'Lese-Fortschritt',
-      description: 'Verfolge deinen Lesefortschritt und bleibe motiviert.',
+      title: t('featuresPage.progressTitle'),
+      description: t('featuresPage.progressDesc'),
       color: 'from-orange-500 to-red-500',
     },
     {
       icon: <Award className="w-8 h-8" />,
-      title: 'Qualitätsinhalte',
-      description: 'Von Experten kuratierte Zusammenfassungen für maximale Qualität.',
+      title: t('featuresPage.qualityTitle'),
+      description: t('featuresPage.qualityDesc'),
       color: 'from-yellow-500 to-amber-500',
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: 'Mehrsprachig',
-      description: 'Zusammenfassungen auf Englisch und Deutsch verfügbar.',
-      color: 'from-indigo-500 to-violet-500',
-    },
-  ] : [
-    {
-      icon: <BookOpen className="w-8 h-8" />,
-      title: '15-Minute Summaries',
-      description: 'Get the key insights from bestselling books quickly. Perfect for busy schedules.',
-      color: 'from-blue-500 to-cyan-500',
-    },
-    {
-      icon: <Headphones className="w-8 h-8" />,
-      title: 'Audio Summaries',
-      description: 'Listen on the go. Perfect for commutes or workouts.',
-      color: 'from-purple-500 to-pink-500',
-    },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: 'Mobile App',
-      description: 'Read anywhere on your smartphone or tablet.',
-      color: 'from-green-500 to-teal-500',
-    },
-    {
-      icon: <TrendingUp className="w-8 h-8" />,
-      title: 'Reading Progress',
-      description: 'Track your reading progress and stay motivated.',
-      color: 'from-orange-500 to-red-500',
-    },
-    {
-      icon: <Award className="w-8 h-8" />,
-      title: 'Quality Content',
-      description: 'Expert-curated summaries for maximum quality.',
-      color: 'from-yellow-500 to-amber-500',
-    },
-    {
-      icon: <Globe className="w-8 h-8" />,
-      title: 'Multilingual',
-      description: 'Summaries available in English and German.',
+      title: t('featuresPage.multilingualTitle'),
+      description: t('featuresPage.multilingualDesc'),
       color: 'from-indigo-500 to-violet-500',
     },
   ];
-
-  const title = language === 'de' ? 'Entdecke unsere Funktionen' : 'Discover Our Features';
-  const subtitle = language === 'de' 
-    ? 'Alles was du brauchst, um effizient aus Büchern zu lernen'
-    : 'Everything you need to learn efficiently from books';
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            {title}
+            {t('featuresPage.title')}
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            {subtitle}
+            {t('featuresPage.subtitle')}
           </p>
         </div>
 

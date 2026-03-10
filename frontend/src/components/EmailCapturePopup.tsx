@@ -4,8 +4,10 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Mail, Gift, Sparkles } from 'lucide-react';
 import toast from 'react-hot-toast';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function EmailCapturePopup() {
+  const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -34,7 +36,7 @@ export default function EmailCapturePopup() {
     e.preventDefault();
     
     if (!email || !email.includes('@')) {
-      toast.error('Please enter a valid email address');
+      toast.error(t('emailPopup.errorInvalid'));
       return;
     }
 
@@ -53,18 +55,18 @@ export default function EmailCapturePopup() {
       const data = await response.json();
 
       if (!response.ok || !data.success) {
-        throw new Error(data.message || 'Failed to subscribe');
+        throw new Error(data.message || t('emailPopup.errorGeneric'));
       }
 
       // Save subscription status to localStorage
       localStorage.setItem('emailSubscribed', 'true');
 
-      toast.success('🎉 Success! Check your email for your free summaries!');
+      toast.success(t('emailPopup.success'));
       setIsOpen(false);
       setEmail('');
     } catch (error: any) {
       console.error('Email capture error:', error);
-      toast.error(error.message || 'Something went wrong. Please try again.');
+      toast.error(error.message || t('emailPopup.errorGeneric'));
     } finally {
       setIsSubmitting(false);
     }
@@ -125,13 +127,13 @@ export default function EmailCapturePopup() {
 
               {/* Heading */}
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-3">
-                Get 3 Free Book Summaries!
+                {t('emailPopup.title')}
               </h2>
 
               {/* Subheading */}
               <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
-                Join 10,000+ readers learning from the best books in just 15 minutes.
-                Plus, get early access to Premium with <span className="font-bold text-primary-600">20% off!</span>
+                {t('emailPopup.subtitle')}
+                {' '}{t('emailPopup.discount')} <span className="font-bold text-primary-600">{t('emailPopup.discountAmount')}</span>
               </p>
 
               {/* Benefits */}
@@ -143,7 +145,7 @@ export default function EmailCapturePopup() {
                     </svg>
                   </div>
                   <p className="text-sm text-gray-700 dark:text-gray-300">
-                    <span className="font-semibold">3 hand-picked summaries</span> delivered instantly
+                    <span className="font-semibold">{t('emailPopup.benefit1Bold')}</span> {t('emailPopup.benefit1')}
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -153,7 +155,7 @@ export default function EmailCapturePopup() {
                     </svg>
                   </div>
                   <p className="text-sm text-gray-700 dark:text-gray-300">
-                    <span className="font-semibold">Weekly book recommendations</span> tailored to your interests
+                    <span className="font-semibold">{t('emailPopup.benefit2Bold')}</span> {t('emailPopup.benefit2')}
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -163,7 +165,7 @@ export default function EmailCapturePopup() {
                     </svg>
                   </div>
                   <p className="text-sm text-gray-700 dark:text-gray-300">
-                    <span className="font-semibold">Exclusive early access</span> to Premium (launching soon!)
+                    <span className="font-semibold">{t('emailPopup.benefit3Bold')}</span> {t('emailPopup.benefit3')}
                   </p>
                 </div>
               </div>
@@ -176,7 +178,7 @@ export default function EmailCapturePopup() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email address"
+                    placeholder={t('emailPopup.placeholder')}
                     className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
                     required
                   />
@@ -187,13 +189,13 @@ export default function EmailCapturePopup() {
                   disabled={isSubmitting}
                   className="w-full bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white font-semibold py-3 px-6 rounded-lg transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
-                  {isSubmitting ? 'Subscribing...' : 'Get My Free Summaries →'}
+                  {isSubmitting ? t('emailPopup.submitting') : t('emailPopup.submit')}
                 </button>
               </form>
 
               {/* Trust Badge */}
               <p className="text-xs text-gray-500 dark:text-gray-400 text-center mt-4">
-                🔒 We respect your privacy. Unsubscribe anytime.
+                {t('emailPopup.privacy')}
               </p>
             </div>
           </motion.div>

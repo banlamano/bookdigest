@@ -10,11 +10,24 @@ export const api = axios.create({
   timeout: 10000,
 });
 
-// Get language from URL query param or default to 'en'
+// Get language from URL query param, cookie, or default to 'en'
 function getLanguageFromURL(): string {
   if (typeof window !== 'undefined') {
+    // 1. Try URL parameter
     const params = new URLSearchParams(window.location.search);
-    return params.get('lang') || 'en';
+    const urlLang = params.get('lang');
+    if (urlLang === 'en' || urlLang === 'de') return urlLang;
+
+    // 2. Try Cookie
+    const match = document.cookie.match(/(^|;)\s*language\s*=\s*([^;]+)/);
+    if (match) {
+      const cookieLang = match[2];
+      if (cookieLang === 'en' || cookieLang === 'de') return cookieLang;
+    }
+
+    // 3. Try Browser language if no preference set
+    const browserLang = navigator.language.split('-')[0];
+    if (browserLang === 'de') return 'de';
   }
   return 'en';
 }
@@ -31,29 +44,29 @@ const noCacheHeaders = {
 export const booksAPI = {
   getAll: (params?: any) => {
     const lang = getLanguageFromURL();
-    return api.get('/books', { 
-      params: { ...params, language: lang },
+    return api.get('/books', {
+      params: { language: lang, ...params },
       headers: noCacheHeaders
     });
   },
-  getById: (id: string) => {
+  getById: (id: string, params?: any) => {
     const lang = getLanguageFromURL();
-    return api.get(`/books/${id}`, { 
-      params: { language: lang },
+    return api.get(`/books/${id}`, {
+      params: { language: lang, ...params },
       headers: noCacheHeaders
     });
   },
-  getFeatured: () => {
+  getFeatured: (params?: any) => {
     const lang = getLanguageFromURL();
-    return api.get('/books/featured', { 
-      params: { language: lang },
-      headers: noCacheHeaders 
+    return api.get('/books/featured', {
+      params: { language: lang, ...params },
+      headers: noCacheHeaders
     });
   },
   search: (query: string, params?: any) => {
     const lang = getLanguageFromURL();
-    return api.get('/books/search', { 
-      params: { q: query, language: lang, ...params },
+    return api.get('/books/search', {
+      params: { language: lang, q: query, ...params },
       headers: noCacheHeaders
     });
   },
@@ -68,10 +81,16 @@ export const booksAPI = {
 
 // Categories API
 export const categoriesAPI = {
-  getAll: () => api.get('/categories'),
+  getAll: (params?: any) => {
+    const lang = getLanguageFromURL();
+    return api.get('/categories', {
+      params: { language: lang, ...params },
+      headers: noCacheHeaders
+    });
+  },
   getBooks: (slug: string, params?: any) => {
     const lang = getLanguageFromURL();
-    return api.get(`/categories/${slug}/books`, { 
+    return api.get(`/categories/${slug}/books`, {
       params: { language: lang, ...params },
       headers: noCacheHeaders
     });

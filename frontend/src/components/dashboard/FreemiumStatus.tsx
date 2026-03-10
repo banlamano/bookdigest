@@ -5,8 +5,10 @@ import { userAPI } from '@/lib/api';
 import { BookOpen, Crown, TrendingUp } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function FreemiumStatus() {
+  const { t } = useLanguage();
   const { data, isLoading } = useQuery({
     queryKey: ['freemium-status'],
     queryFn: () => userAPI.getFreemiumStatus(),
@@ -44,10 +46,10 @@ export default function FreemiumStatus() {
       <div className="flex items-start justify-between mb-4">
         <div>
           <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
-            Free Tier Usage
+            {t('freemium.freeTierUsage')}
           </h3>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            {remaining} of {limit} books remaining this month
+            {t('freemium.remainingText').replace('{remaining}', remaining.toString()).replace('{limit}', limit.toString())}
           </p>
         </div>
         <BookOpen className="w-8 h-8 text-orange-500" />
@@ -60,18 +62,17 @@ export default function FreemiumStatus() {
             initial={{ width: 0 }}
             animate={{ width: `${percentage}%` }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
-            className={`h-full rounded-full ${
-              percentage >= 100
+            className={`h-full rounded-full ${percentage >= 100
                 ? 'bg-red-500'
                 : percentage >= 66
-                ? 'bg-orange-500'
-                : 'bg-green-500'
-            }`}
+                  ? 'bg-orange-500'
+                  : 'bg-green-500'
+              }`}
           />
         </div>
         <div className="flex justify-between mt-2 text-xs text-gray-600 dark:text-gray-400">
-          <span>{used} used</span>
-          <span>{limit} total</span>
+          <span>{t('freemium.usedTotal').replace('{used}', used.toString()).split('•')[0].trim()}</span>
+          <span>{t('freemium.usedTotal').replace('{limit}', limit.toString()).split('•')[1].trim()}</span>
         </div>
       </div>
 
@@ -79,29 +80,29 @@ export default function FreemiumStatus() {
       {remaining === 0 ? (
         <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4 mb-4">
           <p className="text-sm text-red-800 dark:text-red-200 mb-3">
-            ⚠️ You've reached your monthly limit. Upgrade to Premium for unlimited access!
+            {t('freemium.limitReached')}
           </p>
           <Link href="/pricing" className="btn-primary w-full text-center block">
             <Crown className="w-4 h-4 mr-2 inline" />
-            Upgrade to Premium
+            {t('freemium.upgradeToPremium')}
           </Link>
         </div>
       ) : remaining === 1 ? (
         <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 mb-4">
           <p className="text-sm text-yellow-800 dark:text-yellow-200 mb-3">
-            ⚡ Only 1 book left this month! Upgrade for unlimited reading.
+            {t('freemium.oneLeft')}
           </p>
           <Link href="/pricing" className="btn-outline w-full text-center block text-yellow-700 border-yellow-700 hover:bg-yellow-50 dark:hover:bg-yellow-900/30">
-            View Premium Plans
+            {t('freemium.viewPremiumPlans')}
           </Link>
         </div>
       ) : (
         <div className="text-center">
           <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
-            Want unlimited access? Upgrade to Premium!
+            {t('freemium.wantUnlimited')}
           </p>
           <Link href="/pricing" className="text-primary-600 hover:text-primary-700 text-sm font-medium inline-flex items-center">
-            See Premium Benefits
+            {t('freemium.seePremiumBenefits')}
             <TrendingUp className="w-4 h-4 ml-1" />
           </Link>
         </div>

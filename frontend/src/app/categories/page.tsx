@@ -19,10 +19,10 @@ const iconMap: { [key: string]: any } = {
 };
 
 export default function CategoriesPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const { data, isLoading } = useQuery({
-    queryKey: ['categories'],
-    queryFn: () => categoriesAPI.getAll(),
+    queryKey: ['categories', language],
+    queryFn: () => categoriesAPI.getAll({ language }),
   });
 
   const categories = data?.data?.data?.categories || [];

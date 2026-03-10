@@ -25,11 +25,14 @@ const translations: Record<Language, Record<string, string>> = {
     // Hero
     'hero.title': 'Learn from the World\'s Best Books in 15 Minutes',
     'hero.subtitle': 'Access 454+ free AI-powered book summaries. Read bestselling business, self-help, psychology & personal development books quickly.',
-    'hero.cta': 'Start Reading Free',
+    'hero.cta': 'Start Free Trial',
     'hero.ctaSecondary': 'Browse Library',
     'hero.stats.books': 'Book Summaries',
+    'hero.stats.booksValue': '500+',
     'hero.stats.read': 'Average Read',
+    'hero.stats.readValue': '5–10min',
     'hero.stats.rating': 'User Rating',
+    'hero.stats.ratingValue': '4.8★',
 
     // Features
     'features.title': 'Why Choose BookDigest?',
@@ -100,21 +103,6 @@ const translations: Record<Language, Record<string, string>> = {
     'auth.registerError': 'Registration failed',
     'auth.continueWithGoogle': 'Continue with Google',
 
-    // Dashboard
-    'dashboard.title': 'My Dashboard',
-    'dashboard.welcome': 'Welcome back',
-    'dashboard.booksRead': 'Books Read',
-    'dashboard.readingTime': 'Reading Time',
-    'dashboard.currentStreak': 'Current Streak',
-    'dashboard.favorites': 'My Favorites',
-    'dashboard.history': 'Reading History',
-    'dashboard.subscription': 'Subscription',
-    'dashboard.minutes': 'min',
-    'dashboard.days': 'days',
-    'dashboard.continueReading': 'Continue Reading',
-    'dashboard.noFavorites': 'No favorites yet',
-    'dashboard.noHistory': 'No reading history yet',
-
     // Footer
     'footer.description': 'Learn from the world\'s best books in minutes. Read or listen on the go.',
     'footer.product': 'Product',
@@ -124,6 +112,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.terms': 'Terms of Service',
     'footer.cookies': 'Cookie Policy',
     'footer.contact': 'Contact Us',
+    'footer.productHunt': 'Check us out on Product Hunt',
     'footer.about': 'About Us',
     'footer.allRights': 'All rights reserved.',
 
@@ -145,28 +134,100 @@ const translations: Record<Language, Record<string, string>> = {
     'common.new': 'New',
     'common.popular': 'Popular',
 
+    // Featured section
+    'featured.title': 'Featured Summaries',
+    'featured.subtitle': 'Start with our most popular book summaries',
+
+    // Features section
+    'featuresSection.title': 'Everything you need to learn faster',
+    'featuresSection.subtitle': 'Powerful features designed to help you get the most out of your reading time',
+    'featuresSection.expertSummaries': 'Expert Summaries',
+    'featuresSection.expertDesc': 'Professionally written summaries that capture the essence of each book.',
+    'featuresSection.audioExperience': 'Audio Experience',
+    'featuresSection.audioDesc': 'Listen to summaries with professional narration while commuting or exercising.',
+    'featuresSection.multiPlatform': 'Multi-Platform',
+    'featuresSection.multiDesc': 'Access your library on web, iOS, and Android. Sync across all devices.',
+    'featuresSection.multipleLanguages': 'Multiple Languages',
+    'featuresSection.langDesc': 'Summaries available in multiple languages to reach a global audience.',
+    'featuresSection.trackProgress': 'Track Progress',
+    'featuresSection.trackDesc': 'Monitor your reading stats, streaks, and achievements.',
+    'featuresSection.personalized': 'Personalized',
+    'featuresSection.personalDesc': 'Get recommendations based on your interests and reading history.',
+
+    // Testimonials
+    'testimonials.title': 'Loved by thousands of learners',
+    'testimonials.subtitle': 'See what our community has to say',
+    'testimonials.sarah': 'BookDigest has transformed how I learn. I can now finish a book in my lunch break and apply the insights immediately to my business.',
+    'testimonials.michael': 'The audio feature is a game-changer. I listen during my commute and have learned more in the past 3 months than the entire last year.',
+    'testimonials.emma': 'Amazing platform! The summaries are incredibly well-written and the key insights are exactly what I need for professional growth.',
+    'testimonials.name1': 'Sarah Johnson',
+    'testimonials.name2': 'Michael Chen',
+    'testimonials.name3': 'Emma Williams',
+    'testimonials.role1': 'Entrepreneur',
+    'testimonials.role2': 'Software Engineer',
+    'testimonials.role3': 'Marketing Manager',
+
+    // CTA Section
+    'cta.title': 'Start your learning journey today',
+    'cta.subtitle': 'Join thousands of learners who are already accelerating their growth with BookDigest',
+    'cta.startTrial': 'Start Free Trial',
+    'cta.viewPricing': 'View Pricing',
+    'cta.trialFeature1': '7-day free trial',
+    'cta.trialFeature2': 'No credit card required',
+    'cta.trialFeature3': 'Cancel anytime',
+
     // Search
-    'search.title': 'Search',
-    'search.placeholder': 'Search for books, authors, or categories...',
+    'search.title': 'Search Books',
+    'search.subtitle': 'Find the perfect book summary for your needs',
+    'search.placeholder': 'Search by title, author, or topic...',
     'search.noResults': 'No results found',
     'search.resultsFor': 'Results for',
-
-    // Subscription
-    'subscription.title': 'Subscription',
-    'subscription.upgrade': 'Upgrade to Premium',
-    'subscription.cancel': 'Cancel Subscription',
-    'subscription.manage': 'Manage Subscription',
-    'subscription.success': 'Subscription successful!',
-    'subscription.canceled': 'Subscription canceled',
+    'search.startTyping': 'Start typing to search for books...',
+    'search.noBooksFound': 'No books found for "{query}"',
+    'search.clearSearch': 'Clear Search',
+    'search.resultsCount': 'Found {count} results for "{query}"',
+    'search.resultsCountSingle': 'Found 1 result for "{query}"',
 
     // Categories page
     'categories.browseByCategory': 'Browse by Category',
     'categories.exploreSubtitle': 'Explore book summaries organized by topic. Find the perfect books to expand your knowledge.',
-    'categories.viewBooks': 'View books →',
+    'categories.viewBooks': 'View Books →',
     'categories.explore': 'Explore',
     'categories.categories': 'Categories',
     'categories.bookSummaries': 'Book Summaries',
-    'categories.avgReadingTime': 'Average Reading Time',
+    'categories.avgReadingTime': 'Avg. Reading Time',
+
+    // Freemium & Login Gate
+    'freemium.freeTierUsage': 'Free Tier Usage',
+    'freemium.remainingText': '{remaining} of {limit} books remaining this month',
+    'freemium.usedTotal': '{used} used • {limit} total',
+    'freemium.limitReached': '⚠️ You\'ve reached your monthly limit. Upgrade to Premium for unlimited access!',
+    'freemium.oneLeft': '⚡ Only 1 book left this month! Upgrade for unlimited reading.',
+    'freemium.wantUnlimited': 'Want unlimited access? Upgrade to Premium!',
+    'freemium.upgradeToPremium': 'Upgrade to Premium',
+    'freemium.viewPremiumPlans': 'View Premium Plans',
+    'freemium.seePremiumBenefits': 'See Premium Benefits',
+    'freemium.premiumMember': 'Premium Member',
+    'freemium.unlimitedAccess': 'Unlimited book access + Audio narration',
+    'freemium.monthlyLimitReached': 'Monthly Limit Reached',
+    'freemium.freePlan': 'Free Plan',
+    'freemium.booksReadText': '{read} of {limit} books read this month',
+    'freemium.remaining': 'remaining',
+    'freemium.upgradeToKeepReading': 'You\'ve reached your monthly limit. Upgrade to keep reading!',
+    'freemium.upgradeForUnlimited': 'Upgrade to Premium for unlimited books + audio narration',
+
+    'loginGate.signInToRead': 'Sign In to Read',
+    'loginGate.createFreeAccountToAccess': 'Create a free account to access this book summary and 2 more this month!',
+    'loginGate.freeAccountIncludes': 'Free Account Includes:',
+    'loginGate.feature1': '3 book summaries per month',
+    'loginGate.feature2': 'Key insights & action items',
+    'loginGate.feature3': 'Bookmark your favorite books',
+    'loginGate.feature4': 'Track your reading progress',
+    'loginGate.createFreeAccount': 'Create Free Account',
+    'loginGate.signIn': 'Sign In',
+    'loginGate.noCreditCard': 'No credit card required • Cancel anytime',
+    'loginGate.wantUnlimited': 'Want unlimited access?',
+    'loginGate.viewPremiumPlansLink': 'View Premium Plans →',
 
     // Category detail
     'categoryDetail.backToCategories': 'Back to Categories',
@@ -179,9 +240,124 @@ const translations: Record<Language, Record<string, string>> = {
     'categoryDetail.page': 'Page',
     'categoryDetail.of': 'of',
 
+    // Dashboard
+    'dashboard.welcome': 'Welcome back, {name}!',
+    'dashboard.reader': 'Reader',
+    'dashboard.continueJourney': 'Continue your learning journey',
+    'dashboard.booksRead': 'Books Read',
+    'dashboard.readingTime': 'Reading Time',
+    'dashboard.currentStreak': 'Current Streak',
+    'dashboard.days': 'days',
+    'dashboard.hours': 'h',
+    'dashboard.achievements': 'Achievements',
+    'dashboard.favorites': 'Your Favorites',
+
+    // Subscription Card
+    'subscriptionCard.premiumPlan': 'Premium Plan',
+    'subscriptionCard.freePlan': 'Free Plan',
+    'subscriptionCard.active': 'Active',
+    'subscriptionCard.activeCanceling': 'Active (Canceling)',
+    'subscriptionCard.renewsOn': 'Renews on',
+    'subscriptionCard.expiresOn': 'Expires on',
+    'subscriptionCard.paymentMethod': 'Payment Method',
+    'subscriptionCard.cardOnFile': 'Card on file',
+    'subscriptionCard.premiumBenefits': 'Your Premium Benefits:',
+    'subscriptionCard.unlimitedSummaries': 'Unlimited book summaries',
+    'subscriptionCard.fullAudio': 'Full audio narration',
+    'subscriptionCard.offlineDownloads': 'Offline downloads',
+    'subscriptionCard.adFree': 'Ad-free experience',
+    'subscriptionCard.cancelWarning': 'Your subscription will be canceled on {date}. You\'ll still have access until then.',
+    'subscriptionCard.cancelSure': 'Are you sure? You\'ll lose access to premium features.',
+    'subscriptionCard.cancelButton': 'Yes, Cancel',
+    'subscriptionCard.canceling': 'Canceling...',
+    'subscriptionCard.keepPremium': 'Keep Premium',
+    'subscriptionCard.cancelSubscription': 'Cancel Subscription',
+    'subscriptionCard.upgradePrompt': 'Upgrade to Premium to unlock unlimited book summaries, audio narration, and more!',
+    'subscriptionCard.upgradeButton': 'Upgrade to Premium',
+    'subscriptionCard.freeIncludes': 'Free Plan Includes:',
+    'subscriptionCard.threeSummaries': '3 book summaries per month',
+    'subscriptionCard.basicFeatures': 'Basic reading features',
+    'subscriptionCard.limitedAudio': 'Limited audio access',
+    'subscriptionCard.cancelSuccess': 'Subscription will be canceled at the end of the billing period',
+
     // Book card
     'bookCard.premium': 'Premium',
     'bookCard.minRead': 'min read',
+
+    // Book Detail
+    'bookDetail.chapter': 'Chapter',
+    'bookDetail.loadingDetails': 'Loading book details...',
+    'bookDetail.backToLibrary': 'Back to Library',
+    'bookDetail.quickRead': 'Quick read',
+    'bookDetail.audioAvailable': 'Audio available',
+    'bookDetail.audioPremium': 'Audio (Premium)',
+    'bookDetail.startReading': 'Start Reading',
+    'bookDetail.buyFullBook': 'Buy Full Book',
+    'bookDetail.bookNotFound': 'Book not found',
+    'bookDetail.somethingWrong': 'Something went wrong',
+    'bookDetail.loginToFavorite': 'Please login to add favorites',
+    'bookDetail.updatedFavorites': 'Updated favorites',
+
+    // Book Content
+    'bookContent.summary': 'Summary',
+    'bookContent.keyInsights': 'Key Insights',
+    'bookContent.quotes': 'Memorable Quotes',
+    'bookContent.chapters': 'Chapter Breakdown',
+    'bookContent.actionItems': 'Action Items',
+    'bookContent.tip': 'Tip',
+    'bookContent.tipDesc': 'Click on any action item to mark it as complete!',
+
+    // Premium Prompt
+    'premiumPrompt.title': '{feature} is a Premium Feature',
+    'premiumPrompt.defaultDesc': 'Upgrade to Premium to unlock {feature} and enjoy unlimited book summaries.',
+    'premiumPrompt.upgrade': 'Upgrade to Premium',
+    'premiumPrompt.browse': 'Browse Books',
+    'premiumPrompt.priceHint': 'Starting at just €9.99/month',
+
+    // About Page
+    'about.title': 'About BookDigest',
+    'about.subtitle': 'Your gateway to learning from the world\'s best books in minutes',
+    'about.missionTitle': 'Our Mission',
+    'about.missionDesc1': 'We believe that everyone should have access to the wisdom contained in the world\'s best books. However, we also understand that time is precious, and not everyone has hours to dedicate to reading full books.',
+    'about.missionDesc2': 'That\'s why we created BookDigest - to distill the essential insights from bestselling books into concise summaries that you can read or listen to on the go.',
+    'about.statsSummaries': 'Book Summaries',
+    'about.statsUsers': 'Active Users',
+    'about.statsRating': 'User Rating',
+    'about.statsTime': 'Avg. Read Time',
+
+    // Contact Page
+    'contact.title': 'Contact Us',
+    'contact.subtitle': 'Have a question or feedback? We\'d love to hear from you.',
+    'contact.formTitle': 'Send us a message',
+    'contact.nameLabel': 'Your Name',
+    'contact.emailLabel': 'Email Address',
+    'contact.subjectLabel': 'Subject',
+    'contact.messageLabel': 'Message',
+    'contact.send': 'Send Message',
+    'contact.sending': 'Sending...',
+    'contact.emailUs': 'Email Us',
+    'contact.generalInquiries': 'For general inquiries:',
+    'contact.feedback': 'Feedback',
+    'contact.valueFeedback': 'We value your feedback:',
+    'contact.responseTime': 'Response Time',
+    'contact.responseDesc': 'We typically respond within 24 hours during business days.',
+    'contact.sentSuccess': 'Message sent! We\'ll get back to you soon.',
+
+    // Features Page
+    'featuresPage.title': 'Discover Our Features',
+    'featuresPage.subtitle': 'Everything you need to learn efficiently from books',
+    'featuresPage.fifteenMinTitle': '15-Minute Summaries',
+    'featuresPage.fifteenMinDesc': 'Get the key insights from bestselling books quickly. Perfect for busy schedules.',
+    'featuresPage.audioTitle': 'Audio Summaries',
+    'featuresPage.audioDesc': 'Listen on the go. Perfect for commutes or workouts.',
+    'featuresPage.mobileTitle': 'Mobile App',
+    'featuresPage.mobileDesc': 'Read anywhere on your smartphone or tablet.',
+    'featuresPage.progressTitle': 'Reading Progress',
+    'featuresPage.progressDesc': 'Track your reading progress and stay motivated.',
+    'featuresPage.qualityTitle': 'Quality Content',
+    'featuresPage.qualityDesc': 'Expert-curated summaries for maximum quality.',
+    'featuresPage.multilingualTitle': 'Multilingual',
+    'featuresPage.multilingualDesc': 'Summaries available in English and German.',
 
     // Pricing page
     'pricing.choosePlan': 'Choose Your Plan',
@@ -261,6 +437,30 @@ const translations: Record<Language, Record<string, string>> = {
     'register.haveAccount': 'Already have an account?',
     'register.signIn': 'Sign in',
 
+    // Forgot Password
+    'forgotPassword.title': 'Forgot Password?',
+    'forgotPassword.subtitle': "No worries! Enter your email and we'll send you reset instructions.",
+    'forgotPassword.emailLabel': 'Email Address',
+    'forgotPassword.sendLink': 'Send Reset Link',
+    'forgotPassword.sending': 'Sending...',
+    'forgotPassword.backToLogin': 'Back to Login',
+    'forgotPassword.successTitle': 'Check Your Email',
+    'forgotPassword.successMsg': "We've sent password reset instructions to",
+    'forgotPassword.didntReceive': "Didn't receive the email? Check your spam folder or try again.",
+
+    // Reset Password
+    'resetPassword.title': 'Reset Password',
+    'resetPassword.subtitle': 'Enter your new password below',
+    'resetPassword.newPassword': 'New Password',
+    'resetPassword.confirmPassword': 'Confirm Password',
+    'resetPassword.resetButton': 'Reset Password',
+    'resetPassword.resetting': 'Resetting...',
+    'resetPassword.successTitle': 'Password Reset!',
+    'resetPassword.successMsg': 'Your password has been successfully reset. Redirecting to login...',
+    'resetPassword.invalidToken': 'Invalid or missing reset token',
+    'resetPassword.mismatch': 'Passwords do not match',
+    'resetPassword.tooShort': 'Password must be at least 6 characters',
+
     // Pagination (shared)
     'pagination.previous': 'Previous',
     'pagination.next': 'Next',
@@ -274,6 +474,39 @@ const translations: Record<Language, Record<string, string>> = {
     'library.allCategories': 'All Categories',
     'library.premiumOnly': 'Premium only',
     'library.searchPlaceholder': 'Search books, authors, topics...',
+
+    // Navbar extras
+    'nav.settings': 'Settings',
+
+    // Email Capture Popup
+    'emailPopup.title': 'Get 3 Free Book Summaries!',
+    'emailPopup.subtitle': 'Join 10,000+ readers learning from the best books in just 15 minutes.',
+    'emailPopup.discount': 'Plus, get early access to Premium with',
+    'emailPopup.discountAmount': '20% off!',
+    'emailPopup.benefit1Bold': '3 hand-picked summaries',
+    'emailPopup.benefit1': 'delivered instantly',
+    'emailPopup.benefit2Bold': 'Weekly book recommendations',
+    'emailPopup.benefit2': 'tailored to your interests',
+    'emailPopup.benefit3Bold': 'Exclusive early access',
+    'emailPopup.benefit3': 'to Premium (launching soon!)',
+    'emailPopup.placeholder': 'Enter your email address',
+    'emailPopup.submit': 'Get My Free Summaries →',
+    'emailPopup.submitting': 'Subscribing...',
+    'emailPopup.privacy': '🔒 We respect your privacy. Unsubscribe anytime.',
+    'emailPopup.success': '🎉 Success! Check your email for your free summaries!',
+    'emailPopup.errorInvalid': 'Please enter a valid email address',
+    'emailPopup.errorGeneric': 'Something went wrong. Please try again.',
+
+    // Blog
+    'blog.title': 'BookDigest Blog',
+    'blog.subtitle': 'Tips, strategies, and insights to help you read more, learn faster, and grow personally.',
+    'blog.readMore': 'Read more →',
+    'blog.comingSoon': 'More articles coming soon! Subscribe to get notified.',
+    'blog.backToBlog': '← Back to Blog',
+    'blog.by': 'By',
+    'blog.ctaTitle': 'Ready to Start Learning?',
+    'blog.ctaSubtitle': 'Access 454+ free book summaries on BookDigest',
+    'blog.ctaButton': 'Get Started Free →',
   },
   de: {
     // Navigation
@@ -294,11 +527,14 @@ const translations: Record<Language, Record<string, string>> = {
     // Hero
     'hero.title': 'Lerne von den besten Büchern der Welt in 15 Minuten',
     'hero.subtitle': 'Zugang zu 450+ kostenlosen KI-gestützten Buchzusammenfassungen. Lies Bestseller aus Wirtschaft, Selbsthilfe, Psychologie und Persönlichkeitsentwicklung.',
-    'hero.cta': 'Kostenlos starten',
+    'hero.cta': 'Kostenlose Testversion starten',
     'hero.ctaSecondary': 'Bibliothek durchsuchen',
     'hero.stats.books': 'Buchzusammenfassungen',
+    'hero.stats.booksValue': '500+',
     'hero.stats.read': 'Durchschnittliche Lesezeit',
+    'hero.stats.readValue': '5–10 Min.',
     'hero.stats.rating': 'Benutzerbewertung',
+    'hero.stats.ratingValue': '4.8★',
 
     // Features
     'features.title': 'Warum BookDigest?',
@@ -369,21 +605,6 @@ const translations: Record<Language, Record<string, string>> = {
     'auth.registerError': 'Registrierung fehlgeschlagen',
     'auth.continueWithGoogle': 'Mit Google fortfahren',
 
-    // Dashboard
-    'dashboard.title': 'Mein Dashboard',
-    'dashboard.welcome': 'Willkommen zurück',
-    'dashboard.booksRead': 'Gelesene Bücher',
-    'dashboard.readingTime': 'Lesezeit',
-    'dashboard.currentStreak': 'Aktuelle Serie',
-    'dashboard.favorites': 'Meine Favoriten',
-    'dashboard.history': 'Leseverlauf',
-    'dashboard.subscription': 'Abonnement',
-    'dashboard.minutes': 'Min',
-    'dashboard.days': 'Tage',
-    'dashboard.continueReading': 'Weiterlesen',
-    'dashboard.noFavorites': 'Noch keine Favoriten',
-    'dashboard.noHistory': 'Noch kein Leseverlauf',
-
     // Footer
     'footer.description': 'Lerne von den besten Büchern der Welt in Minuten. Lies oder höre unterwegs.',
     'footer.product': 'Produkt',
@@ -393,6 +614,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.terms': 'Nutzungsbedingungen',
     'footer.cookies': 'Cookie-Richtlinie',
     'footer.contact': 'Kontakt',
+    'footer.productHunt': 'Besuchen Sie uns auf Product Hunt',
     'footer.about': 'Über uns',
     'footer.allRights': 'Alle Rechte vorbehalten.',
 
@@ -414,11 +636,59 @@ const translations: Record<Language, Record<string, string>> = {
     'common.new': 'Neu',
     'common.popular': 'Beliebt',
 
+    // Featured section
+    'featured.title': 'Empfohlene Zusammenfassungen',
+    'featured.subtitle': 'Starte mit unseren beliebtesten Buchzusammenfassungen',
+
+    // Features section
+    'featuresSection.title': 'Alles was Sie brauchen, um schneller zu lernen',
+    'featuresSection.subtitle': 'Leistungsstarke Funktionen, um das Beste aus Ihrer Lesezeit herauszuholen',
+    'featuresSection.expertSummaries': 'Experten-Zusammenfassungen',
+    'featuresSection.expertDesc': 'Professionell geschriebene Zusammenfassungen, die die Essenz jedes Buches einfangen.',
+    'featuresSection.audioExperience': 'Audio-Erlebnis',
+    'featuresSection.audioDesc': 'Hören Sie sich Zusammenfassungen mit professioneller Erzählung auf dem Weg zur Arbeit oder beim Sport an.',
+    'featuresSection.multiPlatform': 'Multi-Plattform',
+    'featuresSection.multiDesc': 'Greifen Sie im Web, unter iOS und Android auf Ihre Bibliothek zu. Über alle Geräte hinweg synchronisiert.',
+    'featuresSection.multipleLanguages': 'Mehrere Sprachen',
+    'featuresSection.langDesc': 'Zusammenfassungen sind in mehreren Sprachen verfügbar, um ein globales Publikum zu erreichen.',
+    'featuresSection.trackProgress': 'Fortschritt verfolgen',
+    'featuresSection.trackDesc': 'Überwachen Sie Ihre Lese-Statistiken, Strähnen und Erfolge.',
+    'featuresSection.personalized': 'Personalisiert',
+    'featuresSection.personalDesc': 'Erhalten Sie Empfehlungen basierend auf Ihren Interessen und Ihrem Leseverlauf.',
+
+    // Testimonials
+    'testimonials.title': 'Von Tausenden von Lernenden geliebt',
+    'testimonials.subtitle': 'Sehen Sie, was unsere Community zu sagen hat',
+    'testimonials.sarah': 'BookDigest hat meine Art zu lernen verändert. Ich kann jetzt ein Buch in meiner Mittagspause durchlesen und die Erkenntnisse sofort auf mein Geschäft anwenden.',
+    'testimonials.michael': 'Die Audiofunktion ist ein Game-Changer. Ich höre auf dem Weg zur Arbeit zu und habe in den letzten 3 Monaten mehr gelernt als im gesamten letzten Jahr.',
+    'testimonials.emma': 'Erstaunliche Plattform! Die Zusammenfassungen sind unglaublich gut geschrieben und die wichtigsten Erkenntnisse sind genau das, was ich für mein berufliches Wachstum brauche.',
+    'testimonials.name1': 'Sarah Johnson',
+    'testimonials.name2': 'Michael Chen',
+    'testimonials.name3': 'Emma Williams',
+    'testimonials.role1': 'Unternehmerin',
+    'testimonials.role2': 'Software-Entwickler',
+    'testimonials.role3': 'Marketing-Managerin',
+
+    // CTA Section
+    'cta.title': 'Starten Sie Ihre Lernreise noch heute',
+    'cta.subtitle': 'Schließen Sie sich Tausenden von Lernenden an, die ihr Wachstum mit BookDigest bereits beschleunigen',
+    'cta.startTrial': 'Kostenlose Testversion starten',
+    'cta.viewPricing': 'Preise ansehen',
+    'cta.trialFeature1': '7-tägige kostenlose Testversion',
+    'cta.trialFeature2': 'Keine Kreditkarte benötigt',
+    'cta.trialFeature3': 'Jederzeit kündbar',
+
     // Search
-    'search.title': 'Suche',
-    'search.placeholder': 'Suche nach Büchern, Autoren oder Kategorien...',
+    'search.title': 'Bücher suchen',
+    'search.subtitle': 'Finden Sie die perfekte Buchzusammenfassung für Ihre Bedürfnisse',
+    'search.placeholder': 'Suche nach Titel, Autor oder Thema...',
     'search.noResults': 'Keine Ergebnisse gefunden',
     'search.resultsFor': 'Ergebnisse für',
+    'search.startTyping': 'Geben Sie etwas ein, um nach Büchern zu suchen...',
+    'search.noBooksFound': 'Keine Bücher gefunden für "{query}"',
+    'search.clearSearch': 'Suche löschen',
+    'search.resultsCount': '{count} Ergebnisse für "{query}" gefunden',
+    'search.resultsCountSingle': '1 Ergebnis für "{query}" gefunden',
 
     // Subscription
     'subscription.title': 'Abonnement',
@@ -437,6 +707,38 @@ const translations: Record<Language, Record<string, string>> = {
     'categories.bookSummaries': 'Buchzusammenfassungen',
     'categories.avgReadingTime': 'Durchschnittl. Lesezeit',
 
+    // Freemium & Login Gate
+    'freemium.freeTierUsage': 'Gratis-Kontingent Nutzung',
+    'freemium.remainingText': '{remaining} von {limit} Büchern verbleiben diesen Monat',
+    'freemium.usedTotal': '{used} genutzt • {limit} gesamt',
+    'freemium.limitReached': '⚠️ Sie haben Ihr monatliches Limit erreicht. Upgraden Sie auf Premium für unbegrenzten Zugang!',
+    'freemium.oneLeft': '⚡ Nur noch 1 Buch diesen Monat übrig! Upgraden für unbegrenztes Lesen.',
+    'freemium.wantUnlimited': 'Möchten Sie unbegrenzten Zugang? Upgraden Sie auf Premium!',
+    'freemium.upgradeToPremium': 'Auf Premium upgraden',
+    'freemium.viewPremiumPlans': 'Premium-Pläne ansehen',
+    'freemium.seePremiumBenefits': 'Premium-Vorteile ansehen',
+    'freemium.premiumMember': 'Premium-Mitglied',
+    'freemium.unlimitedAccess': 'Unbegrenzter Buchzugang + Audio-Erzählung',
+    'freemium.monthlyLimitReached': 'Monatliches Limit erreicht',
+    'freemium.freePlan': 'Kostenloser Plan',
+    'freemium.booksReadText': '{read} von {limit} Büchern diesen Monat gelesen',
+    'freemium.remaining': 'verbleibend',
+    'freemium.upgradeToKeepReading': 'Sie haben Ihr monatliches Limit erreicht. Upgrade zum Weiterlesen!',
+    'freemium.upgradeForUnlimited': 'Upgrade auf Premium für unbegrenzte Bücher + Audio-Erzählung',
+
+    'loginGate.signInToRead': 'Zum Lesen anmelden',
+    'loginGate.createFreeAccountToAccess': 'Erstellen Sie ein kostenloses Konto, um auf diese Buchzusammenfassung und 2 weitere diesen Monat zuzugreifen!',
+    'loginGate.freeAccountIncludes': 'Kostenloses Konto beinhaltet:',
+    'loginGate.feature1': '3 Buchzusammenfassungen pro Monat',
+    'loginGate.feature2': 'Wichtige Erkenntnisse & Handlungsschritte',
+    'loginGate.feature3': 'Ihre Lieblingsbücher als Lesezeichen speichern',
+    'loginGate.feature4': 'Ihren Lesefortschritt verfolgen',
+    'loginGate.createFreeAccount': 'Kostenloses Konto erstellen',
+    'loginGate.signIn': 'Anmelden',
+    'loginGate.noCreditCard': 'Keine Kreditkarte erforderlich • Jederzeit kündbar',
+    'loginGate.wantUnlimited': 'Möchten Sie unbegrenzten Zugang?',
+    'loginGate.viewPremiumPlansLink': 'Premium-Pläne ansehen →',
+
     // Category detail
     'categoryDetail.backToCategories': 'Zurück zu Kategorien',
     'categoryDetail.booksInCategory': 'Buch in dieser Kategorie',
@@ -448,13 +750,129 @@ const translations: Record<Language, Record<string, string>> = {
     'categoryDetail.page': 'Seite',
     'categoryDetail.of': 'von',
 
+    // Dashboard
+    'dashboard.welcome': 'Willkommen zurück, {name}!',
+    'dashboard.reader': 'Leser',
+    'dashboard.continueJourney': 'Setzen Sie Ihre Lernreise fort',
+    'dashboard.booksRead': 'Gelesene Bücher',
+    'dashboard.readingTime': 'Lesezeit',
+    'dashboard.currentStreak': 'Aktuelle Serie',
+    'dashboard.days': 'Tage',
+    'dashboard.hours': 'Std.',
+    'dashboard.achievements': 'Erfolge',
+    'dashboard.favorites': 'Ihre Favoriten',
+
+    // Subscription Card
+    'subscriptionCard.premiumPlan': 'Premium-Paket',
+    'subscriptionCard.freePlan': 'Kostenloses Paket',
+    'subscriptionCard.active': 'Aktiv',
+    'subscriptionCard.activeCanceling': 'Aktiv (Kündigung läuft)',
+    'subscriptionCard.renewsOn': 'Verlängert sich am',
+    'subscriptionCard.expiresOn': 'Läuft ab am',
+    'subscriptionCard.paymentMethod': 'Zahlungsmethode',
+    'subscriptionCard.cardOnFile': 'Hinterlegte Karte',
+    'subscriptionCard.premiumBenefits': 'Ihre Premium-Vorteile:',
+    'subscriptionCard.unlimitedSummaries': 'Unbegrenzte Buchzusammenfassungen',
+    'subscriptionCard.fullAudio': 'Vollständige Audio-Vertonung',
+    'subscriptionCard.offlineDownloads': 'Offline-Downloads',
+    'subscriptionCard.adFree': 'Werbefreies Erlebnis',
+    'subscriptionCard.cancelWarning': 'Ihr Abonnement wird am {date} gekündigt. Sie haben bis dahin weiterhin Zugriff.',
+    'subscriptionCard.cancelSure': 'Sind Sie sicher? Sie verlieren den Zugriff auf Premium-Funktionen.',
+    'subscriptionCard.cancelButton': 'Ja, kündigen',
+    'subscriptionCard.canceling': 'Wird gekündigt...',
+    'subscriptionCard.keepPremium': 'Premium behalten',
+    'subscriptionCard.cancelSubscription': 'Abonnement kündigen',
+    'subscriptionCard.upgradePrompt': 'Upgrade auf Premium, um unbegrenzte Buchzusammenfassungen, Audio-Vertonungen und mehr freizuschalten!',
+    'subscriptionCard.upgradeButton': 'Upgrade auf Premium',
+    'subscriptionCard.freeIncludes': 'Kostenloses Paket beinhaltet:',
+    'subscriptionCard.threeSummaries': '3 Buchzusammenfassungen pro Monat',
+    'subscriptionCard.basicFeatures': 'Grundlegende Lesefunktionen',
+    'subscriptionCard.limitedAudio': 'Eingeschränkter Audio-Zugriff',
+    'subscriptionCard.cancelSuccess': 'Das Abonnement wird zum Ende des Abrechnungszeitraums gekündigt',
+
     // Book card
     'bookCard.premium': 'Premium',
     'bookCard.minRead': 'Min. Lesezeit',
 
+    // Book Detail
+    'bookDetail.chapter': 'Kapitel',
+    'bookDetail.loadingDetails': 'Buchdetails werden geladen...',
+    'bookDetail.backToLibrary': 'Zurück zur Bibliothek',
+    'bookDetail.quickRead': 'Kurze Lektüre',
+    'bookDetail.audioAvailable': 'Audio verfügbar',
+    'bookDetail.audioPremium': 'Audio (Premium)',
+    'bookDetail.startReading': 'Lesen starten',
+    'bookDetail.buyFullBook': 'Vollständiges Buch kaufen',
+    'bookDetail.bookNotFound': 'Buch nicht gefunden',
+    'bookDetail.somethingWrong': 'Etwas ist schief gelaufen',
+    'bookDetail.loginToFavorite': 'Bitte loggen Sie sich ein, um Favoriten hinzuzufügen',
+    'bookDetail.updatedFavorites': 'Favoriten aktualisiert',
+
+    // Book Content
+    'bookContent.summary': 'Zusammenfassung',
+    'bookContent.keyInsights': 'Wichtige Erkenntnisse',
+    'bookContent.quotes': 'Denkwürdige Zitate',
+    'bookContent.chapters': 'Kapitelübersicht',
+    'bookContent.actionItems': 'Handlungsempfehlungen',
+    'bookContent.tip': 'Tipp',
+    'bookContent.tipDesc': 'Klicken Sie auf ein Element, um es als erledigt zu markieren!',
+
+    // Premium Prompt
+    'premiumPrompt.title': '{feature} ist eine Premium-Funktion',
+    'premiumPrompt.defaultDesc': 'Upgrade auf Premium, um {feature} freizuschalten und unbegrenzte Buchzusammenfassungen zu genießen.',
+    'premiumPrompt.upgrade': 'Upgrade auf Premium',
+    'premiumPrompt.browse': 'Bücher durchsuchen',
+    'premiumPrompt.priceHint': 'Schon ab 9,99 €/Monat',
+
+    // About Page
+    'about.title': 'Über BookDigest',
+    'about.subtitle': 'Dein Tor zum Lernen von den besten Büchern der Welt in Minuten',
+    'about.missionTitle': 'Unsere Mission',
+    'about.missionDesc1': 'Wir glauben, dass jeder Zugang zu der in den besten Büchern der Welt enthaltenen Weisheit haben sollte. Aber wir wissen auch, dass Zeit kostbar ist, und nicht jeder Stunden hat, um ganze Bücher zu lesen.',
+    'about.missionDesc2': 'Deshalb haben wir BookDigest erstellt - um die wesentlichen Erkenntnisse aus Bestsellern in prägnante Zusammenfassungen zu destillieren, die du unterwegs lesen oder hören kannst.',
+    'about.statsSummaries': 'Buchzusammenfassungen',
+    'about.statsUsers': 'Aktive Nutzer',
+    'about.statsRating': 'Nutzerbewertung',
+    'about.statsTime': 'Durchschn. Lesezeit',
+
+    // Contact Page
+    'contact.title': 'Kontaktiere uns',
+    'contact.subtitle': 'Haben Sie eine Frage oder Feedback? Wir würden uns freuen, von Ihnen zu hören.',
+    'contact.formTitle': 'Schreiben Sie uns eine Nachricht',
+    'contact.nameLabel': 'Ihr Name',
+    'contact.emailLabel': 'E-Mail-Adresse',
+    'contact.subjectLabel': 'Betreff',
+    'contact.messageLabel': 'Nachricht',
+    'contact.send': 'Nachricht senden',
+    'contact.sending': 'Wird gesendet...',
+    'contact.emailUs': 'Schreiben Sie uns',
+    'contact.generalInquiries': 'Für allgemeine Anfragen:',
+    'contact.feedback': 'Feedback',
+    'contact.valueFeedback': 'Wir schätzen Ihr Feedback:',
+    'contact.responseTime': 'Reaktionszeit',
+    'contact.responseDesc': 'Wir antworten in der Regel innerhalb von 24 Stunden an Werktagen.',
+    'contact.sentSuccess': 'Nachricht gesendet! Wir melden uns in Kürze bei Ihnen.',
+
+    // Features Page
+    'featuresPage.title': 'Entdecke unsere Funktionen',
+    'featuresPage.subtitle': 'Alles was du brauchst, um effizient aus Büchern zu lernen',
+    'featuresPage.fifteenMinTitle': '15-Minuten Zusammenfassungen',
+    'featuresPage.fifteenMinDesc': 'Erhalte schnell die wichtigsten Erkenntnisse aus Bestsellern. Perfekt für einen vollen Terminkalender.',
+    'featuresPage.audioTitle': 'Audio-Zusammenfassungen',
+    'featuresPage.audioDesc': 'Höre unterwegs zu. Perfekt für Pendler oder beim Sport.',
+    'featuresPage.mobileTitle': 'Mobile App',
+    'featuresPage.mobileDesc': 'Lies jederzeit und überall auf deinem Smartphone oder Tablet.',
+    'featuresPage.progressTitle': 'Lese-Fortschritt',
+    'featuresPage.progressDesc': 'Verfolge deinen Lesefortschritt und bleibe motiviert.',
+    'featuresPage.qualityTitle': 'Qualitätsinhalte',
+    'featuresPage.qualityDesc': 'Von Experten kuratierte Zusammenfassungen für maximale Qualität.',
+    'featuresPage.multilingualTitle': 'Mehrsprachig',
+    'featuresPage.multilingualDesc': 'Zusammenfassungen auf Englisch und Deutsch verfügbar.',
+
     // Pricing page
     'pricing.choosePlan': 'Wähle deinen Plan',
     'pricing.chooseSubtitle': 'Wähle den Plan, der zu deinen Lernzielen passt. Jederzeit kündbar, ohne Wenn und Aber.',
+    'pricing.launchDeal': 'Product Hunt Startangebot: Nutze den Code',
     'pricing.launchDiscount': 'für 20% Rabatt (Monatlich + Jährlich)',
     'pricing.free': 'Kostenlos',
     'pricing.forever': 'für immer',
@@ -529,6 +947,30 @@ const translations: Record<Language, Record<string, string>> = {
     'register.haveAccount': 'Bereits ein Konto?',
     'register.signIn': 'Anmelden',
 
+    // Forgot Password
+    'forgotPassword.title': 'Passwort vergessen?',
+    'forgotPassword.subtitle': 'Keine Sorge! Geben Sie Ihre E-Mail ein und wir senden Ihnen Anweisungen zum Zurücksetzen.',
+    'forgotPassword.emailLabel': 'E-Mail-Adresse',
+    'forgotPassword.sendLink': 'Link zum Zurücksetzen senden',
+    'forgotPassword.sending': 'Wird gesendet...',
+    'forgotPassword.backToLogin': 'Zurück zum Login',
+    'forgotPassword.successTitle': 'E-Mails prüfen',
+    'forgotPassword.successMsg': 'Wir haben Anweisungen zum Zurücksetzen des Passworts gesendet an',
+    'forgotPassword.didntReceive': 'Keine E-Mail erhalten? Prüfen Sie Ihren Spam-Ordner oder versuchen Sie es erneut.',
+
+    // Reset Password
+    'resetPassword.title': 'Passwort zurücksetzen',
+    'resetPassword.subtitle': 'Geben Sie unten Ihr neues Passwort ein',
+    'resetPassword.newPassword': 'Neues Passwort',
+    'resetPassword.confirmPassword': 'Passwort bestätigen',
+    'resetPassword.resetButton': 'Passwort zurücksetzen',
+    'resetPassword.resetting': 'Wird zurückgesetzt...',
+    'resetPassword.successTitle': 'Passwort zurückgesetzt!',
+    'resetPassword.successMsg': 'Ihr Passwort wurde erfolgreich zurückgesetzt. Weiterleitung zum Login...',
+    'resetPassword.invalidToken': 'Ungültiger oder fehlender Reset-Token',
+    'resetPassword.mismatch': 'Passwörter stimmen nicht überein',
+    'resetPassword.tooShort': 'Passwort muss mindestens 6 Zeichen lang sein',
+
     // Pagination (shared)
     'pagination.previous': 'Zurück',
     'pagination.next': 'Weiter',
@@ -542,6 +984,39 @@ const translations: Record<Language, Record<string, string>> = {
     'library.allCategories': 'Alle Kategorien',
     'library.premiumOnly': 'Nur Premium',
     'library.searchPlaceholder': 'Bücher, Autoren, Themen suchen...',
+
+    // Navbar extras
+    'nav.settings': 'Einstellungen',
+
+    // Email Capture Popup
+    'emailPopup.title': '3 kostenlose Buchzusammenfassungen!',
+    'emailPopup.subtitle': 'Schließe dich 10.000+ Lesern an, die in nur 15 Minuten von den besten Büchern lernen.',
+    'emailPopup.discount': 'Zusätzlich erhältst du frühzeitigen Zugang zu Premium mit',
+    'emailPopup.discountAmount': '20% Rabatt!',
+    'emailPopup.benefit1Bold': '3 handverlesene Zusammenfassungen',
+    'emailPopup.benefit1': 'sofort geliefert',
+    'emailPopup.benefit2Bold': 'Wöchentliche Buchempfehlungen',
+    'emailPopup.benefit2': 'auf deine Interessen zugeschnitten',
+    'emailPopup.benefit3Bold': 'Exklusiver Frühzugang',
+    'emailPopup.benefit3': 'zu Premium (bald verfügbar!)',
+    'emailPopup.placeholder': 'Gib deine E-Mail-Adresse ein',
+    'emailPopup.submit': 'Meine kostenlosen Zusammenfassungen holen →',
+    'emailPopup.submitting': 'Wird abonniert...',
+    'emailPopup.privacy': '🔒 Wir respektieren deine Privatsphäre. Jederzeit abbestellbar.',
+    'emailPopup.success': '🎉 Erfolg! Prüfe deine E-Mails für deine kostenlosen Zusammenfassungen!',
+    'emailPopup.errorInvalid': 'Bitte gib eine gültige E-Mail-Adresse ein',
+    'emailPopup.errorGeneric': 'Etwas ist schief gelaufen. Bitte versuche es erneut.',
+
+    // Blog
+    'blog.title': 'BookDigest Blog',
+    'blog.subtitle': 'Tipps, Strategien und Erkenntnisse, die dir helfen, mehr zu lesen, schneller zu lernen und persönlich zu wachsen.',
+    'blog.readMore': 'Mehr lesen →',
+    'blog.comingSoon': 'Weitere Artikel folgen in Kürze! Abonniere, um benachrichtigt zu werden.',
+    'blog.backToBlog': '← Zurück zum Blog',
+    'blog.by': 'Von',
+    'blog.ctaTitle': 'Bereit zum Lernen?',
+    'blog.ctaSubtitle': 'Zugang zu 454+ kostenlosen Buchzusammenfassungen auf BookDigest',
+    'blog.ctaButton': 'Jetzt kostenlos starten →',
   },
 };
 
@@ -575,26 +1050,32 @@ function getLanguageFromStorage(): Language | null {
   return null;
 }
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>('en');
+export function LanguageProvider({ children, initialLanguage = 'en' }: { children: ReactNode; initialLanguage?: Language }) {
+  const [language, setLanguageState] = useState<Language>(initialLanguage);
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    // Read from storage on client-mount to prevent hydration errors
     const stored = getLanguageFromStorage();
     if (stored) {
-      setLanguageState(stored);
+      if (stored !== initialLanguage) {
+        setLanguageState(stored);
+      }
+    } else if (typeof window !== 'undefined' && !Cookies.get('language')) {
+      // If no cookie, try browser language
+      const browserLang = navigator.language.split('-')[0];
+      if (browserLang === 'de' && language !== 'de') {
+        setLanguage('de');
+      }
     }
     setIsReady(true);
-  }, []);
+  }, [initialLanguage]);
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    Cookies.set('language', lang, { expires: 365 });
+    Cookies.set('language', lang, { expires: 365, path: '/' });
   };
 
   const t = (key: string): string => {
-    if (!isReady) return translations.en[key] || key;
     return translations[language][key] || key;
   };
 

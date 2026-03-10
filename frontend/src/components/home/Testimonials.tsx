@@ -2,29 +2,31 @@
 
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export function Testimonials() {
+  const { t } = useLanguage();
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      role: 'Entrepreneur',
+      name: t('testimonials.name1'),
+      role: t('testimonials.role1'),
       avatar: 'SJ',
       rating: 5,
-      text: 'BookDigest has transformed how I learn. I can now finish a book in my lunch break and apply the insights immediately to my business.',
+      text: t('testimonials.sarah'),
     },
     {
-      name: 'Michael Chen',
-      role: 'Software Engineer',
+      name: t('testimonials.name2'),
+      role: t('testimonials.role2'),
       avatar: 'MC',
       rating: 5,
-      text: 'The audio feature is a game-changer. I listen during my commute and have learned more in the past 3 months than the entire last year.',
+      text: t('testimonials.michael'),
     },
     {
-      name: 'Emma Williams',
-      role: 'Marketing Manager',
+      name: t('testimonials.name3'),
+      role: t('testimonials.role3'),
       avatar: 'EW',
       rating: 5,
-      text: 'Amazing platform! The summaries are incredibly well-written and the key insights are exactly what I need for professional growth.',
+      text: t('testimonials.emma'),
     },
   ];
 
@@ -33,10 +35,10 @@ export function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Loved by thousands of learners
+            {t('testimonials.title')}
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400">
-            See what our community has to say
+            {t('testimonials.subtitle')}
           </p>
         </div>
 

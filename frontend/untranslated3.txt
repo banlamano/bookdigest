@@ -1,0 +1,15 @@
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\BreadcrumbSchema.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\ErrorBoundary.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\FAQSchema.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\GoogleAnalytics.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\LoadingMessage.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\StructuredData.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\books\ActionItemCard.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\books\BookCardSkeleton.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\books\ChapterCard.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\books\CollapsibleSection.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\books\InsightCard.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\dashboard\FreemiumStatus.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\freemium\FreemiumStatus.tsx
+C:\Users\Installation\Desktop\Website\BookLearn\frontend\src\components\freemium\LoginGate.tsx
+

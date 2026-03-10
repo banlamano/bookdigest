@@ -1,41 +1,45 @@
+'use client';
+
 import { BookOpen, Headphones, Smartphone, Globe, TrendingUp, Award } from 'lucide-react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export function Features() {
+  const { t } = useLanguage();
   const features = [
     {
       icon: <BookOpen className="w-6 h-6" />,
-      title: 'Expert Summaries',
-      description: 'Professionally written summaries that capture the essence of each book.',
+      title: t('featuresSection.expertSummaries'),
+      description: t('featuresSection.expertDesc'),
       color: 'from-blue-500 to-cyan-500',
     },
     {
       icon: <Headphones className="w-6 h-6" />,
-      title: 'Audio Experience',
-      description: 'Listen to summaries with professional narration while commuting or exercising.',
+      title: t('featuresSection.audioExperience'),
+      description: t('featuresSection.audioDesc'),
       color: 'from-purple-500 to-pink-500',
     },
     {
       icon: <Smartphone className="w-6 h-6" />,
-      title: 'Multi-Platform',
-      description: 'Access your library on web, iOS, and Android. Sync across all devices.',
+      title: t('featuresSection.multiPlatform'),
+      description: t('featuresSection.multiDesc'),
       color: 'from-green-500 to-teal-500',
     },
     {
       icon: <Globe className="w-6 h-6" />,
-      title: 'Multiple Languages',
-      description: 'Summaries available in multiple languages to reach a global audience.',
+      title: t('featuresSection.multipleLanguages'),
+      description: t('featuresSection.langDesc'),
       color: 'from-orange-500 to-red-500',
     },
     {
       icon: <TrendingUp className="w-6 h-6" />,
-      title: 'Track Progress',
-      description: 'Monitor your reading stats, streaks, and achievements.',
+      title: t('featuresSection.trackProgress'),
+      description: t('featuresSection.trackDesc'),
       color: 'from-indigo-500 to-blue-500',
     },
     {
       icon: <Award className="w-6 h-6" />,
-      title: 'Personalized',
-      description: 'Get recommendations based on your interests and reading history.',
+      title: t('featuresSection.personalized'),
+      description: t('featuresSection.personalDesc'),
       color: 'from-pink-500 to-rose-500',
     },
   ];
@@ -45,10 +49,10 @@ export function Features() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Everything you need to learn faster
+            {t('featuresSection.title')}
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Powerful features designed to help you get the most out of your reading time
+            {t('featuresSection.subtitle')}
           </p>
         </div>
 

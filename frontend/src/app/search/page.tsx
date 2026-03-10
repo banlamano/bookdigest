@@ -7,8 +7,10 @@ import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import { Search, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { BookCard } from '@/components/books/BookCard';
+import { useLanguage } from '@/components/LanguageProvider';
 
 export default function SearchPage() {
+  const { t } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
   const [page, setPage] = useState(1);
@@ -51,10 +53,10 @@ export default function SearchPage() {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Search Books
+            {t('search.title')}
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Find the perfect book summary for your needs
+            {t('search.subtitle')}
           </p>
         </motion.div>
 
@@ -64,7 +66,7 @@ export default function SearchPage() {
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="text"
-              placeholder="Search by title, author, or topic..."
+              placeholder={t('search.placeholder')}
               value={searchQuery}
               onChange={(e) => handleSearch(e.target.value)}
               className="w-full pl-12 pr-12 py-4 rounded-xl border-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-primary-500 focus:border-transparent text-lg"
@@ -88,7 +90,7 @@ export default function SearchPage() {
           <div className="text-center py-12">
             <Search className="w-16 h-16 text-gray-300 dark:text-gray-600 mx-auto mb-4" />
             <p className="text-gray-600 dark:text-gray-400">
-              Start typing to search for books...
+              {t('search.startTyping')}
             </p>
           </div>
         ) : isLoading ? (
@@ -100,7 +102,7 @@ export default function SearchPage() {
         ) : books.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              No books found for "{debouncedQuery}"
+              {t('search.noBooksFound').replace('{query}', debouncedQuery)}
             </p>
             <button
               onClick={() => {
@@ -109,14 +111,16 @@ export default function SearchPage() {
               }}
               className="btn-primary"
             >
-              Clear Search
+              {t('search.clearSearch')}
             </button>
           </div>
         ) : (
           <>
             <div className="mb-6">
               <p className="text-gray-600 dark:text-gray-400">
-                Found {pagination?.total || books.length} result{books.length !== 1 ? 's' : ''} for "{debouncedQuery}"
+                {books.length === 1
+                  ? t('search.resultsCountSingle').replace('{query}', debouncedQuery)
+                  : t('search.resultsCount').replace('{count}', (pagination?.total || books.length).toString()).replace('{query}', debouncedQuery)}
               </p>
             </div>
 
@@ -134,17 +138,17 @@ export default function SearchPage() {
                   disabled={page === 1}
                   className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
                 >
-                  Previous
+                  {t('pagination.previous')}
                 </button>
                 <div className="flex items-center px-4">
-                  Page {page} of {pagination.pages}
+                  {t('pagination.page')} {page} {t('pagination.of')} {pagination.pages}
                 </div>
                 <button
                   onClick={() => setPage(page + 1)}
                   disabled={page >= pagination.pages}
                   className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
                 >
-                  Next
+                  {t('pagination.next')}
                 </button>
               </div>
             )}

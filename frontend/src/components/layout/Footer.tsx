@@ -109,7 +109,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-gray-800/60 px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:border-primary-300 hover:text-primary-700 dark:hover:text-primary-300 transition"
             >
-              <span>Check us out on Product Hunt</span>
+              <span>{t('footer.productHunt')}</span>
               <span className="text-gray-400">→</span>
             </a>
           </div>

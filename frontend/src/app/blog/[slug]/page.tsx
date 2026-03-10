@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { cookies } from 'next/headers';
 
 interface BlogPost {
   slug: string;
@@ -327,6 +328,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = blogPosts[params.slug];
+  const cookieStore = cookies();
+  const lang = cookieStore.get('language')?.value || 'en';
 
   if (!post) {
     notFound();
@@ -341,7 +344,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             href="/blog"
             className="text-blue-600 dark:text-blue-400 hover:underline mb-4 inline-block"
           >
-            ← Back to Blog
+            ← {lang === 'de' ? 'Zurück zum Blog' : 'Back to Blog'}
           </Link>
 
           <div className="flex items-center gap-2 mb-4">
@@ -358,7 +361,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           </h1>
 
           <div className="flex items-center gap-4 text-gray-600 dark:text-gray-400">
-            <span>By {post.author}</span>
+            <span>{lang === 'de' ? 'Von' : 'By'} {post.author}</span>
             <span>•</span>
             <time>
               {new Date(post.date).toLocaleDateString('en-US', {
@@ -383,16 +386,16 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         {/* Call to Action */}
         <div className="mt-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-8 text-center">
           <h3 className="text-2xl font-bold text-white mb-4">
-            Ready to Start Learning?
+            {lang === 'de' ? 'Bereit zum Lernen?' : 'Ready to Start Learning?'}
           </h3>
           <p className="text-blue-100 mb-6 text-lg">
-            Access 454+ free book summaries on BookDigest
+            {lang === 'de' ? 'Zugang zu 454+ kostenlosen Buchzusammenfassungen auf BookDigest' : 'Access 454+ free book summaries on BookDigest'}
           </p>
           <Link
             href="/register"
             className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
           >
-            Get Started Free →
+            {lang === 'de' ? 'Jetzt kostenlos starten →' : 'Get Started Free →'}
           </Link>
         </div>
       </div>

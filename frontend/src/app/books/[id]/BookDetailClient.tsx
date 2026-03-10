@@ -38,8 +38,11 @@ const LoadingSpinner = ({ message = "Loading..." }: { message?: string }) => (
   </div>
 );
 
+import { useLanguage } from '@/components/LanguageProvider';
+
 export default function BookDetailClient({ bookId, initialBook, breadcrumbItems }: BookDetailClientProps) {
   // ALL HOOKS MUST BE AT THE TOP - Rules of Hooks!
+  const { t } = useLanguage();
   const router = useRouter();
   const { isAuthenticated, isHydrated } = useAuthStore();
   const queryClient = useQueryClient();
@@ -83,13 +86,13 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
     mutationFn: () => booksAPI.toggleFavorite(bookId),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['book', bookId] });
-      toast.success('Updated favorites');
+      toast.success(t('bookDetail.updatedFavorites'));
     },
   });
 
   const handleFavorite = () => {
     if (!isAuthenticated) {
-      toast.error('Please login to add favorites');
+      toast.error(t('bookDetail.loginToFavorite'));
       router.push('/login');
       return;
     }
@@ -98,17 +101,17 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
 
   // NOW we can do conditional rendering - all hooks are already called
   if (!isMounted || !isHydrated) {
-    return <LoadingSpinner message="Loading..." />;
+    return <LoadingSpinner message={t('common.loading')} />;
   }
-  
+
   // Show loading while fetching data
   if (isLoading) {
-    return <LoadingSpinner message="Loading book details..." />;
+    return <LoadingSpinner message={t('bookDetail.loadingDetails')} />;
   }
 
   // Check authentication (after hydration is complete). Allow public demo books without login.
   if (!isAuthenticated && !isPublicDemo) {
-    return <LoginGate bookTitle={book?.title || initialBook?.title || 'this book'} />;
+    return <LoginGate bookTitle={book?.title || initialBook?.title || t('dashboard.reader')} />;
   }
 
   // Handle freemium limit reached (403) gracefully
@@ -121,11 +124,8 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12">
           <div className="max-w-4xl mx-auto px-4">
             <PremiumFeaturePrompt
-              feature="Unlimited Access"
-              description={
-                message ||
-                "You've reached your free monthly limit. Upgrade to Premium for unlimited reading, key insights, and audio narration."
-              }
+              feature={t('pricing.unlimitedAccess')}
+              description={message}
             />
           </div>
         </div>
@@ -135,21 +135,21 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
     return (
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
         <div className="text-center max-w-md px-4">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Something went wrong</h1>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">{message || 'Please try again.'}</p>
-          <Link href="/library" className="btn-primary">Back to Library</Link>
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{t('bookDetail.somethingWrong')}</h1>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">{message || t('common.error')}</p>
+          <Link href="/library" className="btn-primary">{t('bookDetail.backToLibrary')}</Link>
         </div>
       </div>
     );
   }
 
-  if (!book) { 
+  if (!book) {
     return (
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Book not found</h1>
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{t('bookDetail.bookNotFound')}</h1>
           <Link href="/library" className="btn-primary">
-            Back to Library
+            {t('bookDetail.backToLibrary')}
           </Link>
         </div>
       </div>
@@ -161,7 +161,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
       {/* Structured Data for SEO */}
       <BookStructuredData book={book} />
       <BreadcrumbStructuredData items={breadcrumbItems} />
-      
+
       {isAuthenticated && (
         <ReadingProgressTracker bookId={bookId} bookTitle={book?.title || ''} />
       )}
@@ -172,9 +172,9 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
           className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 mb-6 transition-colors"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
-          Back to Library
+          {t('bookDetail.backToLibrary')}
         </Link>
-        
+
         {/* Freemium Status Banner */}
         {freemiumStatus && (
           <FreemiumStatus
@@ -184,7 +184,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
             limit={freemiumStatus.limit}
           />
         )}
-        
+
         {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -204,7 +204,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                 />
                 {book.isPremium && (
                   <div className="absolute top-4 right-4">
-                    <span className="badge-premium">Premium</span>
+                    <span className="badge-premium">{t('bookCard.premium')}</span>
                   </div>
                 )}
               </div>
@@ -241,12 +241,12 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-400">
                   <Clock className="w-5 h-5 mr-1" />
-                  <span>Quick read</span>
+                  <span>{t('bookDetail.quickRead')}</span>
                 </div>
                 {book.summary && (
                   <div className="flex items-center text-gray-600 dark:text-gray-400">
                     <Headphones className="w-5 h-5 mr-1" />
-                    <span>Audio {freemiumStatus?.isPremium ? 'available' : '(Premium)'}</span>
+                    <span>{freemiumStatus?.isPremium ? t('bookDetail.audioAvailable') : t('bookDetail.audioPremium')}</span>
                   </div>
                 )}
               </div>
@@ -271,7 +271,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
               {book.summary && (
                 <div className="mb-6">
                   {freemiumStatus?.isPremium ? (
-                    <EnhancedAudioPlayer 
+                    <EnhancedAudioPlayer
                       bookTitle={book.title}
                       bookSummary={book.summary}
                       bookId={book.id}
@@ -280,7 +280,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                     <div className="relative">
                       {/* Show disabled audio player preview */}
                       <div className="opacity-50 pointer-events-none">
-                        <EnhancedAudioPlayer 
+                        <EnhancedAudioPlayer
                           bookTitle={book.title}
                           bookSummary={book.summary}
                           bookId={book.id}
@@ -290,15 +290,15 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                       <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-gray-900/50 rounded-lg flex items-center justify-center backdrop-blur-sm">
                         <div className="text-center px-4">
                           <Headphones className="w-10 h-10 text-yellow-400 mx-auto mb-2" />
-                          <h3 className="text-lg font-bold text-white mb-1">Premium Feature</h3>
+                          <h3 className="text-lg font-bold text-white mb-1">{t('subscriptionCard.premiumPlan')}</h3>
                           <p className="text-gray-200 text-sm mb-3">
-                            Listen with AI narration
+                            {t('subscriptionCard.fullAudio')}
                           </p>
-                          <Link 
-                            href="/pricing" 
+                          <Link
+                            href="/pricing"
                             className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 px-5 py-2 rounded-lg font-semibold hover:from-yellow-500 hover:to-yellow-600 transition-all shadow-lg text-sm"
                           >
-                            Upgrade
+                            {t('common.featured')}
                           </Link>
                         </div>
                       </div>
@@ -308,7 +308,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
               )}
 
               <div className="flex gap-4 mt-6 items-stretch">
-                <button 
+                <button
                   onClick={() => {
                     const summarySection = document.getElementById('book-summary');
                     summarySection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -316,7 +316,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                   className="btn-primary flex-1 h-12 inline-flex items-center justify-center"
                 >
                   <Play className="w-5 h-5 mr-2" />
-                  Start Reading
+                  {t('bookDetail.startReading')}
                 </button>
                 {book.amazonLink && (
                   <a
@@ -325,7 +325,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                     rel="noopener noreferrer"
                     className="btn-outline flex-1 h-12 inline-flex items-center justify-center text-center"
                   >
-                    Buy Full Book
+                    {t('bookDetail.buyFullBook')}
                   </a>
                 )}
               </div>
@@ -348,9 +348,9 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
               quotes={book.quotes}
               actionItems={book.actionItems}
             />
-          
+
             {/* Social Share Buttons */}
-            <SocialShareButtons 
+            <SocialShareButtons
               bookTitle={book.title}
               bookAuthor={book.author}
             />

@@ -29,6 +29,7 @@ export default function LibraryClient({ language: initialLanguage }: { language:
         limit: 20,
         category: selectedCategory || undefined,
         isPremium: showPremiumOnly || undefined,
+        language: initialLanguage,
       }),
   });
 

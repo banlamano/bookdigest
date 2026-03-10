@@ -25,7 +25,7 @@ export default function ContactPage() {
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000));
 
-    toast.success('Message sent! We\'ll get back to you soon.');
+    toast.success(t('contact.sentSuccess'));
     setFormData({ name: '', email: '', subject: '', message: '' });
     setIsSubmitting(false);
   };
@@ -36,10 +36,10 @@ export default function ContactPage() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Contact Us
+            {t('contact.title')}
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Have a question or feedback? We'd love to hear from you.
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -47,12 +47,12 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="card p-8">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              Send us a message
+              {t('contact.formTitle')}
             </h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Your Name
+                  {t('contact.nameLabel')}
                 </label>
                 <input
                   type="text"
@@ -67,7 +67,7 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Email Address
+                  {t('contact.emailLabel')}
                 </label>
                 <input
                   type="email"
@@ -82,7 +82,7 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Subject
+                  {t('contact.subjectLabel')}
                 </label>
                 <input
                   type="text"
@@ -91,13 +91,13 @@ export default function ContactPage() {
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                   className="input"
-                  placeholder="How can we help?"
+                  placeholder={t('contact.subjectLabel')}
                 />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Message
+                  {t('contact.messageLabel')}
                 </label>
                 <textarea
                   id="message"
@@ -106,7 +106,7 @@ export default function ContactPage() {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="input"
-                  placeholder="Tell us more..."
+                  placeholder={t('contact.messageLabel')}
                 />
               </div>
 
@@ -116,11 +116,11 @@ export default function ContactPage() {
                 className="w-full btn-primary flex items-center justify-center disabled:opacity-50"
               >
                 {isSubmitting ? (
-                  'Sending...'
+                  t('contact.sending')
                 ) : (
                   <>
                     <Send className="w-5 h-5 mr-2" />
-                    Send Message
+                    {t('contact.send')}
                   </>
                 )}
               </button>
@@ -132,10 +132,10 @@ export default function ContactPage() {
             <div className="card p-8">
               <Mail className="w-12 h-12 text-primary-600 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                Email Us
+                {t('contact.emailUs')}
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-2">
-                For general inquiries:
+                {t('contact.generalInquiries')}
               </p>
               <a href="mailto:support@bookdigest.com" className="text-primary-600 hover:text-primary-700">
                 support@bookdigest.com
@@ -145,10 +145,10 @@ export default function ContactPage() {
             <div className="card p-8">
               <MessageSquare className="w-12 h-12 text-primary-600 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                Feedback
+                {t('contact.feedback')}
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-2">
-                We value your feedback:
+                {t('contact.valueFeedback')}
               </p>
               <a href="mailto:feedback@bookdigest.com" className="text-primary-600 hover:text-primary-700">
                 feedback@bookdigest.com
@@ -157,10 +157,10 @@ export default function ContactPage() {
 
             <div className="card p-8 bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-primary-900/20 dark:to-secondary-900/20">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                Response Time
+                {t('contact.responseTime')}
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                We typically respond within 24 hours during business days.
+                {t('contact.responseDesc')}
               </p>
             </div>
           </div>

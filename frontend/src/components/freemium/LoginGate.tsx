@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { useLanguage } from '@/components/LanguageProvider';
 
 interface LoginGateProps {
   bookTitle: string;
@@ -9,6 +10,7 @@ interface LoginGateProps {
 
 export default function LoginGate({ bookTitle }: LoginGateProps) {
   const router = useRouter();
+  const { t } = useLanguage();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex items-center justify-center p-4">
@@ -23,38 +25,38 @@ export default function LoginGate({ bookTitle }: LoginGateProps) {
 
           {/* Heading */}
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Sign In to Read
+            {t('loginGate.signInToRead')}
           </h1>
-          
+
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-2">
             "{bookTitle}"
           </p>
 
           <p className="text-gray-500 dark:text-gray-400 mb-8">
-            Create a free account to access this book summary and 2 more this month!
+            {t('loginGate.createFreeAccountToAccess')}
           </p>
 
           {/* Benefits */}
           <div className="bg-gray-50 dark:bg-gray-900 rounded-xl p-6 mb-8">
             <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
-              Free Account Includes:
+              {t('loginGate.freeAccountIncludes')}
             </h3>
             <div className="space-y-3 text-left max-w-md mx-auto">
               <div className="flex items-start gap-3">
                 <span className="text-green-500 text-xl flex-shrink-0">✓</span>
-                <span className="text-gray-700 dark:text-gray-300">3 book summaries per month</span>
+                <span className="text-gray-700 dark:text-gray-300">{t('loginGate.feature1')}</span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-green-500 text-xl flex-shrink-0">✓</span>
-                <span className="text-gray-700 dark:text-gray-300">Key insights & action items</span>
+                <span className="text-gray-700 dark:text-gray-300">{t('loginGate.feature2')}</span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-green-500 text-xl flex-shrink-0">✓</span>
-                <span className="text-gray-700 dark:text-gray-300">Bookmark your favorite books</span>
+                <span className="text-gray-700 dark:text-gray-300">{t('loginGate.feature3')}</span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-green-500 text-xl flex-shrink-0">✓</span>
-                <span className="text-gray-700 dark:text-gray-300">Track your reading progress</span>
+                <span className="text-gray-700 dark:text-gray-300">{t('loginGate.feature4')}</span>
               </div>
             </div>
           </div>
@@ -65,30 +67,30 @@ export default function LoginGate({ bookTitle }: LoginGateProps) {
               href={`/register?redirect=/books/${bookTitle}`}
               className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg text-lg"
             >
-              Create Free Account
+              {t('loginGate.createFreeAccount')}
             </Link>
             <Link
               href={`/login?redirect=/books/${bookTitle}`}
               className="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-8 py-4 rounded-lg font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition-all text-lg"
             >
-              Sign In
+              {t('loginGate.signIn')}
             </Link>
           </div>
 
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            No credit card required • Cancel anytime
+            {t('loginGate.noCreditCard')}
           </p>
 
           {/* Premium Upgrade Hint */}
           <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-              Want unlimited access?
+              {t('loginGate.wantUnlimited')}
             </p>
             <Link
               href="/pricing"
               className="text-blue-600 dark:text-blue-400 font-semibold hover:underline"
             >
-              View Premium Plans →
+              {t('loginGate.viewPremiumPlansLink')}
             </Link>
           </div>
         </div>

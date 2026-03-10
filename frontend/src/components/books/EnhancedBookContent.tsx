@@ -15,6 +15,8 @@ interface EnhancedBookContentProps {
   actionItems?: string;
 }
 
+import { useLanguage } from '@/components/LanguageProvider';
+
 export default function EnhancedBookContent({
   summary,
   keyInsights,
@@ -22,6 +24,7 @@ export default function EnhancedBookContent({
   quotes,
   actionItems
 }: EnhancedBookContentProps) {
+  const { t } = useLanguage();
   // Parse JSON strings
   const parsedInsights = keyInsights ? tryParseJSON(keyInsights) : [];
   const parsedChapters = chapters ? tryParseJSON(chapters) : [];
@@ -43,7 +46,7 @@ export default function EnhancedBookContent({
         <div className="flex items-center gap-2 mb-4">
           <Sparkles className="w-6 h-6 text-blue-600 dark:text-blue-400" />
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-            Summary
+            {t('bookContent.summary')}
           </h2>
         </div>
         <div className="prose dark:prose-invert max-w-none">
@@ -58,7 +61,7 @@ export default function EnhancedBookContent({
       {/* Key Insights Section */}
       {parsedInsights.length > 0 && (
         <CollapsibleSection
-          title="Key Insights"
+          title={t('bookContent.keyInsights')}
           icon={<Lightbulb className="w-6 h-6" />}
           badge={parsedInsights.length}
           defaultOpen={true}
@@ -74,7 +77,7 @@ export default function EnhancedBookContent({
       {/* Memorable Quotes Section */}
       {parsedQuotes.length > 0 && (
         <CollapsibleSection
-          title="Memorable Quotes"
+          title={t('bookContent.quotes')}
           icon={<Quote className="w-6 h-6" />}
           badge={parsedQuotes.length}
           defaultOpen={false}
@@ -90,7 +93,7 @@ export default function EnhancedBookContent({
       {/* Chapter Breakdown Section */}
       {parsedChapters.length > 0 && (
         <CollapsibleSection
-          title="Chapter Breakdown"
+          title={t('bookContent.chapters')}
           icon={<BookOpen className="w-6 h-6" />}
           badge={parsedChapters.length}
           defaultOpen={false}
@@ -106,14 +109,14 @@ export default function EnhancedBookContent({
       {/* Action Items Section */}
       {parsedActions.length > 0 && (
         <CollapsibleSection
-          title="Action Items"
+          title={t('bookContent.actionItems')}
           icon={<CheckSquare className="w-6 h-6" />}
           badge={parsedActions.length}
           defaultOpen={false}
         >
           <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
             <p className="text-sm text-gray-700 dark:text-gray-300">
-              💡 <strong>Tip:</strong> Click on any action item to mark it as complete!
+              💡 <strong>{t('bookContent.tip')}:</strong> {t('bookContent.tipDesc')}
             </p>
           </div>
           <div className="space-y-3">
@@ -133,12 +136,12 @@ function tryParseJSON(jsonString: string | any): any[] {
   if (Array.isArray(jsonString)) {
     return jsonString;
   }
-  
+
   // If it's already an object (not a string), try to use it
   if (typeof jsonString === 'object' && jsonString !== null) {
     return Array.isArray(jsonString) ? jsonString : [];
   }
-  
+
   // If it's a string, try to parse it
   if (typeof jsonString === 'string') {
     try {
@@ -149,7 +152,7 @@ function tryParseJSON(jsonString: string | any): any[] {
       return [];
     }
   }
-  
+
   // Otherwise return empty array
   return [];
 }

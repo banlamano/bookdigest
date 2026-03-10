@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { cookies, headers } from 'next/headers';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Providers } from '@/components/Providers';
@@ -127,8 +128,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const cookieStore = cookies();
+  const headerList = headers();
+  const cookieLang = cookieStore.get('language')?.value;
+  const browserLang = headerList.get('accept-language')?.split(',')[0].split('-')[0];
+  const language = cookieLang || (browserLang === 'de' ? 'de' : 'en');
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={language} suppressHydrationWarning>
       <head>
         {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -143,7 +150,7 @@ export default function RootLayout({
         <FAQSchema />
       </head>
       <body className={`${inter.variable} font-sans antialiased`} suppressHydrationWarning>
-        <Providers>
+        <Providers initialLanguage={language as any}>
           <div className="flex min-h-screen flex-col">
             <Navbar />
             <main className="flex-1">{children}</main>
