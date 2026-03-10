@@ -9,13 +9,39 @@ import toast from 'react-hot-toast';
 import { useState, useEffect } from 'react';
 import { Testimonials } from '@/components/home/Testimonials';
 import { useQuery } from '@tanstack/react-query';
-import { useLanguage } from '@/components/LanguageProvider';
+import Cookies from 'js-cookie';
 
 export default function PricingPage() {
-  const { t } = useLanguage();
+  const [language, setLanguage] = useState<'en' | 'de'>('en');
   const { isAuthenticated } = useAuthStore();
   const router = useRouter();
   const [isLoading, setIsLoading] = useState<string | null>(null);
+
+  useEffect(() => {
+    // Read language directly from cookie
+    const savedLang = Cookies.get('language') as 'en' | 'de';
+    if (savedLang === 'en' || savedLang === 'de') {
+      setLanguage(savedLang);
+    }
+  }, []);
+
+  const t = (key: string): string => {
+    const translations: Record<'en' | 'de', Record<string, string>> = {
+      en: {
+        'pricing.title': 'Simple, Transparent Pricing',
+        'pricing.free': 'Free',
+        'pricing.premium': 'Premium',
+        'pricing.choosePlan': 'Choose Your Plan',
+      },
+      de: {
+        'pricing.title': 'Einfache, transparente Preise',
+        'pricing.free': 'Kostenlos',
+        'pricing.premium': 'Premium',
+        'pricing.choosePlan': 'Wähle deinen Plan',
+      }
+    };
+    return translations[language][key] || key;
+  };
 
   // Fetch subscription status
   const { data: subscriptionData } = useQuery({
