@@ -12,13 +12,11 @@ export function LanguageSwitcher() {
     setMounted(true);
   }, []);
 
-  const toggleLanguage = async () => {
+  const toggleLanguage = () => {
     const newLang = language === 'en' ? 'de' : 'en';
     setLanguage(newLang);
-    
-    // Set cookie and reload
-    document.cookie = `language=${newLang};path=/;max-age=31536000`;
-    window.location.reload();
+    // Use URL param - middleware will handle cookie and redirect
+    window.location.href = window.location.pathname + '?lang=' + newLang;
   };
 
   if (!mounted) {

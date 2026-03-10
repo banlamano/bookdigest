@@ -10,6 +10,23 @@ export function middleware(request: NextRequest) {
   response.headers.set('Expires', '0');
   response.headers.set('Surrogate-Control', 'no-store');
   
+  // Handle language from URL query param
+  const url = request.nextUrl;
+  const langParam = url.searchParams.get('lang');
+  
+  if (langParam === 'de' || langParam === 'en') {
+    response.cookies.set('language', langParam, {
+      path: '/',
+      maxAge: 60 * 60 * 24 * 365, // 1 year
+      httpOnly: false,
+    });
+    
+    // Remove lang from URL and redirect
+    const newUrl = url.clone();
+    newUrl.searchParams.delete('lang');
+    return NextResponse.redirect(newUrl);
+  }
+  
   return response;
 }
 
