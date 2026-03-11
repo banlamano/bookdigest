@@ -42,7 +42,7 @@ import { useLanguage } from '@/components/LanguageProvider';
 
 export default function BookDetailClient({ bookId, initialBook, breadcrumbItems }: BookDetailClientProps) {
   // ALL HOOKS MUST BE AT THE TOP - Rules of Hooks!
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const router = useRouter();
   const { isAuthenticated, isHydrated } = useAuthStore();
   const queryClient = useQueryClient();
@@ -68,9 +68,20 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
   });
 
   const book = data?.data?.data?.book || initialBook;
+  const alternateVersionId = data?.data?.data?.alternateVersionId;
   const freemiumStatus = data?.data?.data?.freemiumStatus;
   const requiresPremium = data?.data?.data?.requiresPremium;
   const isPublicDemo = data?.data?.data?.isPublicDemo === true;
+
+  // Auto-switch language version if available and user language differs from book language
+  useEffect(() => {
+    if (isMounted && book && language && book.language && alternateVersionId) {
+      if (book.language !== language) {
+        // User switched language, and an alternate version exists!
+        router.push(`/books/${alternateVersionId}`);
+      }
+    }
+  }, [book, language, alternateVersionId, router, isMounted]);
 
   // Track book views with Google Analytics - MUST be before any return statements
   useEffect(() => {

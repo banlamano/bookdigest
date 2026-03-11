@@ -137,6 +137,42 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       throw new AppError('Book not found', 404);
     }
 
+    // Find alternate language version ID to enable automatic language switching in frontend
+    const { language: preferredLang } = req.query;
+    let alternateVersionId: string | null = null;
+    
+    // Check if the user's preferred language is different from the book's language
+    if (preferredLang && preferredLang !== 'all' && book.language !== preferredLang) {
+      if (book.language === 'en' && preferredLang === 'de') {
+        const deVersion = await prisma.book.findFirst({
+          where: { language: 'de', originalTitle: book.title },
+          select: { id: true }
+        });
+        if (deVersion) alternateVersionId = deVersion.id;
+      } else if (book.language === 'de' && preferredLang === 'en') {
+        const enVersion = await prisma.book.findFirst({
+          where: { language: 'en', title: book.originalTitle || book.title },
+          select: { id: true }
+        });
+        if (enVersion) alternateVersionId = enVersion.id;
+      }
+    } else {
+      // Still provide the other version ID even if they don't explicitly prefer it yet (useful for manual toggles)
+      if (book.language === 'en') {
+        const deVersion = await prisma.book.findFirst({
+          where: { language: 'de', originalTitle: book.title },
+          select: { id: true }
+        });
+        if (deVersion) alternateVersionId = deVersion.id;
+      } else if (book.language === 'de') {
+        const enVersion = await prisma.book.findFirst({
+          where: { language: 'en', title: book.originalTitle || book.title },
+          select: { id: true }
+        });
+        if (enVersion) alternateVersionId = enVersion.id;
+      }
+    }
+
     // If user is not authenticated, return public book data only
     // Product Hunt / marketing: allow one or more public demo books to show full content
     // Set env var: PUBLIC_DEMO_BOOK_IDS="id1,id2" (commas) or PUBLIC_DEMO_BOOK_ID="id"
@@ -158,6 +194,7 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
         data: {
           book,
           isPublicDemo: true,
+          alternateVersionId,
         },
       });
     }
@@ -180,6 +217,7 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
         data: {
           book: publicBook,
           requiresAuth: true,
+          alternateVersionId,
           message: 'Login to access full content'
         },
       });
@@ -237,6 +275,7 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
         status: 'success',
         data: { 
           book, // Return full book data including audioUrl
+          alternateVersionId,
           freemiumStatus: {
             isPremium: false,
             booksRemaining: freemiumStatus.remaining,
@@ -252,6 +291,7 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       status: 'success',
       data: { 
         book,
+        alternateVersionId,
         freemiumStatus: {
           isPremium: true,
           unlimited: true
