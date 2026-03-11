@@ -10,6 +10,42 @@ export const api = axios.create({
   timeout: 10000,
 });
 
+// Add interceptor to append the token to all requests
+api.interceptors.request.use(
+  (config) => {
+    // Safely get token
+    let token = null;
+    if (typeof window !== 'undefined') {
+      // First try to get from js-cookie 
+      const match = document.cookie.match(/(^|;)\s*token\s*=\s*([^;]+)/);
+      if (match) {
+        token = match[2];
+      }
+      
+      // Fallback: try from localStorage zustand state if needed
+      if (!token) {
+        try {
+          const authStorage = localStorage.getItem('auth-storage');
+          if (authStorage) {
+            const parsed = JSON.parse(authStorage);
+            if (parsed?.state?.token) {
+              token = parsed.state.token;
+            }
+          }
+        } catch (e) {
+          console.error("Failed to parse auth-storage", e);
+        }
+      }
+    }
+
+    if (token && config.headers) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+  },
+  (error) => Promise.reject(error)
+);
+
 // Get language from URL query param, cookie, or default to 'en'
 function getLanguageFromURL(): string {
   if (typeof window !== 'undefined') {

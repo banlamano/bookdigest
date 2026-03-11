@@ -100,7 +100,7 @@ export default function EnhancedBookContent({
         >
           <div className="space-y-4">
             {parsedChapters.map((chapter: any, index: number) => (
-              <ChapterCard key={index} chapter={chapter} />
+              <ChapterCard key={index} chapter={chapter} index={index + 1} />
             ))}
           </div>
         </CollapsibleSection>

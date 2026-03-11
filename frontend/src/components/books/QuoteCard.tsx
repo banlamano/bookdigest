@@ -4,15 +4,19 @@ import { useState } from 'react';
 import { Quote, Copy, Check } from 'lucide-react';
 
 interface QuoteCardProps {
-  quote: string;
+  quote: string | { quote: string; context?: string; significance?: string };
   index: number;
 }
 
 export default function QuoteCard({ quote, index }: QuoteCardProps) {
   const [copied, setCopied] = useState(false);
 
+  const quoteText = typeof quote === 'string' ? quote : quote.quote;
+  const context = typeof quote === 'object' && quote.context ? quote.context : null;
+  const significance = typeof quote === 'object' && quote.significance ? quote.significance : null;
+
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(quote);
+    await navigator.clipboard.writeText(quoteText);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -22,9 +26,19 @@ export default function QuoteCard({ quote, index }: QuoteCardProps) {
       <div className="flex items-start gap-4">
         <Quote className="flex-shrink-0 w-8 h-8 text-purple-600 dark:text-purple-400 opacity-50" />
         <div className="flex-1">
-          <p className="text-lg italic text-gray-800 dark:text-gray-200 leading-relaxed">
-            "{quote}"
+          <p className="text-lg italic text-gray-800 dark:text-gray-200 leading-relaxed mb-3">
+            "{quoteText}"
           </p>
+          {(context || significance) && (
+            <div className="mt-4 pt-4 border-t border-purple-100 dark:border-purple-900/30 space-y-2">
+              {context && (
+                <p className="text-sm text-gray-600 dark:text-gray-400"><span className="font-semibold">Kontext:</span> {context}</p>
+              )}
+              {significance && (
+                <p className="text-sm text-gray-600 dark:text-gray-400"><span className="font-semibold">Bedeutung:</span> {significance}</p>
+              )}
+            </div>
+          )}
         </div>
         <button
           onClick={handleCopy}
