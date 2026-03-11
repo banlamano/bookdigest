@@ -46,7 +46,14 @@ export const getAllBooks = async (req: Request, res: Response, next: NextFunctio
     } = req.query;
 
     const skip = (Number(page) - 1) * Number(limit);
-    const where: any = { language };
+    const where: any = {};
+    
+    // For German users, show both English and German books since the German library is still growing
+    if (language === 'de') {
+      where.language = { in: ['en', 'de'] };
+    } else if (language && language !== 'all') {
+      where.language = language;
+    }
 
     if (category) where.categoryId = category;
     // Note: isPremium column removed from schema - all books are accessible based on user subscription
