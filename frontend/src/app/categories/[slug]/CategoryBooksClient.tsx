@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { BreadcrumbStructuredData } from '@/components/StructuredData';
 import { BookCard } from '@/components/books/BookCard';
 import { useLanguage } from '@/components/LanguageProvider';
+import { useEffect } from 'react';
 
 interface CategoryBooksClientProps {
   slug: string;
@@ -25,18 +26,24 @@ export default function CategoryBooksClient({
   initialPagination,
   breadcrumbItems,
 }: CategoryBooksClientProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [page, setPage] = useState(1);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const { data, isLoading } = useQuery({
-    queryKey: ['category-books', slug, page],
-    queryFn: () => categoriesAPI.getBooks(slug, { page, limit: 12 }),
-    enabled: page !== 1, // Only fetch when not on first page
+    queryKey: ['category-books', slug, page, language],
+    queryFn: () => categoriesAPI.getBooks(slug, { page, limit: 12, language }),
+    enabled: isMounted && !!language, 
   });
 
+  // Prioritize live data from useQuery, then fall back to initialData ONLY if languages match
   const category = data?.data?.data?.category || initialCategory;
-  const books = data?.data?.data?.books || initialBooks || [];
-  const pagination = data?.data?.data?.pagination || initialPagination;
+  const books = data?.data?.data?.books || (initialCategory?.language === language ? initialBooks : []);
+  const pagination = data?.data?.data?.pagination || (initialCategory?.language === language ? initialPagination : null);
 
   if (isLoading && page !== 1) {
     return (

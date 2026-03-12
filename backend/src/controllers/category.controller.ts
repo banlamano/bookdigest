@@ -6,11 +6,18 @@ const prisma = new PrismaClient();
 
 export const getAllCategories = async (req: Request, res: Response, next: NextFunction) => {
   try {
+    const { language = 'en' } = req.query;
+    
+    // We fetch all categories, but in the future we could filter by language if needed
     const categories = await prisma.category.findMany({
       orderBy: { order: 'asc' },
       include: {
         _count: {
-          select: { books: true }
+          select: { 
+            books: {
+              where: { language: language as string }
+            } 
+          }
         }
       }
     });
@@ -27,7 +34,7 @@ export const getAllCategories = async (req: Request, res: Response, next: NextFu
 export const getCategoryBooks = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { slug } = req.params;
-    const { page = 1, limit = 20 } = req.query;
+    const { page = 1, limit = 20, language = 'en' } = req.query;
 
     const category = await prisma.category.findUnique({
       where: { slug },
@@ -41,7 +48,10 @@ export const getCategoryBooks = async (req: Request, res: Response, next: NextFu
 
     const [books, total] = await Promise.all([
       prisma.book.findMany({
-        where: { categoryId: category.id },
+        where: { 
+          categoryId: category.id,
+          language: language as string
+        },
         skip,
         take: Number(limit),
         include: {
@@ -49,7 +59,12 @@ export const getCategoryBooks = async (req: Request, res: Response, next: NextFu
         },
         orderBy: { rating: 'desc' },
       }),
-      prisma.book.count({ where: { categoryId: category.id } }),
+      prisma.book.count({ 
+        where: { 
+          categoryId: category.id,
+          language: language as string
+        } 
+      }),
     ]);
 
     res.json({
