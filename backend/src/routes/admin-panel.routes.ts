@@ -23,7 +23,7 @@ const checkAdminAccess = async (req: any, res: any, next: any) => {
       const token = authHeader.substring(7);
       
       try {
-        const decoded = jwt.verify(token, process.env.JWT_SECRET || 'your-super-secret-jwt-key-change-this-in-production') as any;
+        const decoded = jwt.verify(token, process.env.JWT_SECRET || 'default-secret-key') as any;
         
         // Verify user exists and has admin role
         const user = await prisma.user.findUnique({
