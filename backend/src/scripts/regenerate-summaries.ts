@@ -8,7 +8,7 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 dotenv.config(); // Default .env
 
 import { PrismaClient } from '@prisma/client';
-import { aiSummaryService } from '../services/ai-summary-openai.service';
+import { aiSummaryService } from '../services/ai-summary.service';
 
 const prisma = new PrismaClient();
 
@@ -68,7 +68,8 @@ async function regenerateAllSummaries(options: {
         summary: true,
         keyInsights: true,
         publishedYear: true,
-        tags: true
+        tags: true,
+        language: true
       },
       orderBy: { id: 'asc' }
     });
@@ -111,7 +112,8 @@ async function regenerateAllSummaries(options: {
             title: book.title,
             author: book.author,
             categories: categories,
-            publishedDate: book.publishedYear ? `${book.publishedYear}-01-01` : undefined
+            publishedDate: book.publishedYear ? `${book.publishedYear}-01-01` : undefined,
+            language: book.language
           });
 
           // Update database - convert arrays to JSON strings

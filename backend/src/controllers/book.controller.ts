@@ -97,7 +97,12 @@ export const getAllBooks = async (req: Request, res: Response, next: NextFunctio
 // Get featured books
 export const getFeaturedBooks = async (req: Request, res: Response, next: NextFunction) => {
   try {
+    const { language = 'en' } = req.query;
+    
     const books = await prisma.book.findMany({
+      where: {
+        language: language as string
+      },
       take: 10,
       orderBy: { rating: 'desc' },
       include: {
@@ -306,7 +311,7 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
 // Search books
 export const searchBooks = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const { q, page = 1, limit = 20 } = req.query;
+    const { q, page = 1, limit = 20, language = 'en' } = req.query;
 
     if (!q) {
       throw new AppError('Search query is required', 400);
@@ -318,6 +323,7 @@ export const searchBooks = async (req: Request, res: Response, next: NextFunctio
     const [books, total] = await Promise.all([
       prisma.book.findMany({
         where: {
+          language: language as string,
           OR: [
             { title: { contains: searchTerm, mode: 'insensitive' } },
             { author: { contains: searchTerm, mode: 'insensitive' } },
@@ -332,6 +338,7 @@ export const searchBooks = async (req: Request, res: Response, next: NextFunctio
       }),
       prisma.book.count({
         where: {
+          language: language as string,
           OR: [
             { title: { contains: searchTerm, mode: 'insensitive' } },
             { author: { contains: searchTerm, mode: 'insensitive' } },

@@ -1,0 +1,1 @@
+import { PrismaClient } from '@prisma/client'; const prisma = new PrismaClient(); async function main() { const deCount = await prisma.book.count({where: {language: 'de'}}); const enCount = await prisma.book.count({where: {language: 'en'}}); console.log('DE Books:', deCount); console.log('EN Books:', enCount); } main().catch(console.error).finally(() => prisma.$disconnect());

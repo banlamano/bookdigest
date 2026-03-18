@@ -1,0 +1,27 @@
+
+🚀 Starting Summary Regeneration Process...
+
+Configuration:
+- Batch size: 5
+- Delay between batches: 5000ms
+- Force regenerate: true
+- Dry run: false
+⚠️  OPENAI_API_KEY not found in environment variables
+- AI Service available: ❌ NO (will use fallback)
+
+- OPENAI_API_KEY found: ❌ NO
+
+⚠️  ERROR: OPENAI_API_KEY not found in environment variables!
+Please add OPENAI_API_KEY to your Render environment variables.
+
+💥 Process failed: Error: OPENAI_API_KEY is required
+    at regenerateAllSummaries (C:\Users\Installation\Desktop\Website\BookLearn\backend\src\scripts\regenerate-summaries.ts:57:11)
+    at main (C:\Users\Installation\Desktop\Website\BookLearn\backend\src\scripts\regenerate-summaries.ts:293:9)
+    at <anonymous> (C:\Users\Installation\Desktop\Website\BookLearn\backend\src\scripts\regenerate-summaries.ts:296:1)
+    at Object.<anonymous> (C:\Users\Installation\Desktop\Website\BookLearn\backend\src\scripts\regenerate-summaries.ts:304:4)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object.transformer (C:\Users\Installation\Desktop\Website\BookLearn\backend\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)

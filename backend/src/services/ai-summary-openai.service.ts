@@ -7,6 +7,7 @@ interface BookData {
   categories?: string[];
   pageCount?: number;
   publishedDate?: string;
+  language?: string;
 }
 
 interface EnhancedSummary {
@@ -202,13 +203,18 @@ export class AISummaryServiceOpenAI {
   }
 
   private buildPrompt(bookData: BookData, options?: { retry?: boolean }): string {
-    const { title, author, description, categories, pageCount } = bookData;
+    const { title, author, description, categories, pageCount, language } = bookData;
     const retryNote = options?.retry
       ? '\n\nIMPORTANT: Your previous response was rejected because chapters/insights were too short. Fix this by writing LONGER chapter summaries (at least 130 words each) and substantial insight explanations (30+ words each). Do not increase chapter count; increase depth.'
       : '';
+    
+    const isGerman = language === 'de';
+    const langNote = isGerman 
+      ? `\n\nCRITICAL LANGUAGE INSTRUCTION: You MUST write the ENTIRE JSON response (all text fields including summary, explanation, example, impact, title, context, significance, action, outcome, timeframe, difficulty, etc.) completely in GERMAN.`
+      : '';
 
     return `You are an expert book summarizer for a premium book summary service like Blinkist or Shortform.
-Generate a comprehensive, engaging summary for the following book:${retryNote}
+Generate a comprehensive, engaging summary for the following book:${retryNote}${langNote}
 
 Title: ${title}
 Author: ${author}

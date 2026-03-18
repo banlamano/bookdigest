@@ -1,0 +1,10 @@
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+const de = await prisma.book.count({ where: { language: 'de' } });
+const en = await prisma.book.count({ where: { language: 'en' } });
+console.log(`\n📊 Translation Progress:`);
+console.log(`  🇬🇧 English books: ${en}`);
+console.log(`  🇩🇪 German books:  ${de}`);
+console.log(`  📝 Remaining:      ${en - de}`);
+console.log(`  ✅ Progress:       ${Math.round(de/en*100)}%\n`);
+await prisma.$disconnect();

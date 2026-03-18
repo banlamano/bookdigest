@@ -6,6 +6,7 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 
 import { PrismaClient } from '@prisma/client';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import * as crypto from 'node:crypto';
 
 
 const prisma = new PrismaClient();
@@ -17,7 +18,28 @@ if (!apiKey) {
   process.exit(1);
 }
 const genAI = new GoogleGenerativeAI(apiKey);
-const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+
+// Models to rotate through to bypass individual rate limits
+const MODELLIST = [
+  'gemini-2.5-flash',
+  'gemini-2.5-pro',
+  'gemini-2.0-flash',
+  'gemini-2.0-flash-001',
+  'gemini-2.0-flash-lite',
+  'gemini-2.0-flash-lite-001',
+  'gemini-flash-latest', 
+  'gemini-flash-lite-latest',
+  'gemini-pro-latest',
+  'gemini-2.5-flash-lite',
+];
+let currentModelIndex = 0;
+
+function getNextModel() {
+  const modelName = MODELLIST[currentModelIndex];
+  currentModelIndex = (currentModelIndex + 1) % MODELLIST.length;
+  console.log(`  🤖 Using model: ${modelName}`);
+  return genAI.getGenerativeModel({ model: modelName });
+}
 
 interface TranslationStats {
   total: number;
@@ -49,13 +71,24 @@ ${JSON.stringify(payloadToTranslate, null, 2)}`;
 
   let text = '';
   try {
-    const result = await model.generateContent(prompt);
+    const activeModel = getNextModel();
+    const result = await activeModel.generateContent(prompt);
     const response = await result.response;
     text = response.text().trim();
   } catch (error: any) {
-    if ((error.message?.includes('429') || error.message?.includes('quota') || error.message?.includes('503')) && retryCount < 3) {
-      console.log(`  ⚠️ API limit hit. Waiting 60s before retry ${retryCount + 1}/3...`);
-      await new Promise(r => setTimeout(r, 60000));
+    const isRateLimit = error.message?.includes('429') || error.message?.includes('quota') || error.message?.includes('503');
+    
+    if (isRateLimit && retryCount < MODELLIST.length * 2) {
+      console.log(`  ⚠️ API limit hit. Trying next model (attempt ${retryCount + 1})...`);
+      
+      // If we've tried all models once, let's wait a longer time
+      if (retryCount >= MODELLIST.length) {
+        console.log(`  ⏳ All models rate limited. Waiting 3 minutes for quota reset...`);
+        await new Promise(r => setTimeout(r, 180000));
+      } else {
+        await new Promise(r => setTimeout(r, 5000));
+      }
+      
       return translateEntireBook(enBook, retryCount + 1);
     }
     throw error;
@@ -85,8 +118,8 @@ async function translateBook(enBook: any): Promise<void> {
   console.log('  → Translating entire book content at once...');
   const translated = await translateEntireBook(enBook);
   
-  // Delay slightly to stay under the 15 RPM limit safely
-  await new Promise(r => setTimeout(r, 8000));
+  // Delay slightly to stay under limits safely (now with rotation)
+  await new Promise(r => setTimeout(r, 2000));
   
   // Create German version of the book
   const newId = crypto.randomUUID();
@@ -221,8 +254,8 @@ Examples:
     
     // Delay between batches
     if (i + batchSize < booksToProcess.length && !dryRun) {
-      console.log('\n⏳ Waiting 15 seconds before next batch to cool down API limits...');
-      await new Promise(r => setTimeout(r, 15000));
+      console.log('\n⏳ Cooling down API limits (5s)...');
+      await new Promise(r => setTimeout(r, 5000));
     }
   }
 

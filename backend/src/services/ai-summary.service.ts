@@ -7,6 +7,7 @@ interface BookData {
   categories?: string[];
   pageCount?: number;
   publishedDate?: string;
+  language?: string;
 }
 
 interface EnhancedSummary {
@@ -53,8 +54,8 @@ export class AISummaryService {
     if (apiKey) {
       try {
         this.genAI = new GoogleGenerativeAI(apiKey);
-        // Using gemini-1.5-pro - the stable, working model for new API keys
-        this.model = this.genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
+        // Using gemini-2.5-flash - fast and available on free tier
+        this.model = this.genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
       } catch (error) {
         console.error('Failed to initialize Gemini AI:', error);
       }
@@ -67,7 +68,7 @@ export class AISummaryService {
     return this.model !== null;
   }
 
-async generateEnhancedSummary(bookData: BookData, language: SummaryLanguage = 'en'): Promise<EnhancedSummary> {
+  async generateEnhancedSummary(bookData: BookData, language: SummaryLanguage = 'en'): Promise<EnhancedSummary> {
     this.initialize();
     
     if (!this.isAvailable()) {
@@ -279,7 +280,7 @@ Return ONLY the JSON object, no additional text.`;
         {
           title: 'Der Verbindungsfaktor',
           explanation: 'Die Bedeutung von Beziehungen und Gemeinschaft für nachhaltigen Erfolg und Erfüllung erkennen.',
-          example: 'Baen Sie bewusst ein Netzwerk von Menschen auf, die Sie inspirieren, fordern und bei Ihrer Entwicklung unterstützen.',
+          example: 'Bauen Sie bewusst ein Netzwerk von Menschen auf, die Sie inspirieren, fordern und bei Ihrer Entwicklung unterstützen.',
           impact: 'Sie schaffen ein leistungsstarkes Ökosystem, das Ihre Bemühungen verstärkt und neue Möglichkeiten eröffnet.'
         },
         {
@@ -363,163 +364,83 @@ Return ONLY the JSON object, no additional text.`;
     return insights;
   }
 
-  private generateFallbackChapters(title: string, category: string): EnhancedSummary['chapterSummaries'] {
+  private generateFallbackChapters(title: string, category: string, language: SummaryLanguage = 'en'): EnhancedSummary['chapterSummaries'] {
+    if (language === 'de') {
+      return [
+        { chapter: 1, title: 'Einführung: Das Problem', summary: 'Das Eröffnungskapitel stellt die zentrale Herausforderung vor, die das Buch anspricht, und nutzt Forschung und reale Beispiele, um zu zeigen, warum traditionelle Ansätze oft zu kurz greifen.', keyTakeaway: 'Das Problem zu erkennen ist der erste Schritt zur Lösung.' },
+        { chapter: 2, title: 'Das Framework', summary: 'Hier stellt der Autor das Kernmodell vor, das den Rest des Buches strukturiert. Dieses Kapitel bietet das mentale Gerüst, das Leser benötigen.', keyTakeaway: 'Ein solides Framework verwandelt verstreute Informationen in handlungsrelevante Erkenntnisse.' },
+        { chapter: 3, title: 'Das erste Prinzip', summary: 'Das Buch taucht in das erste Hauptprinzip ein, erkundet seine Ursprünge, unterstützende Beweise und praktische Anwendungen mit Fallstudien.', keyTakeaway: 'Grundlegende Prinzipien zu verstehen ermöglicht bessere Entscheidungsfindung.' },
+        { chapter: 4, title: 'Das zweite Prinzip', summary: 'Aufbauend auf dem ersten Prinzip führt dieses Kapitel ein ergänzendes Konzept ein, das eine andere Dimension der Herausforderung anspricht.', keyTakeaway: 'Die Kombination mehrerer Prinzipien erzeugt Synergieeffekte.' },
+        { chapter: 5, title: 'Häufige Hindernisse', summary: 'Eine ehrliche Erkundung der Barrieren und Fallstricke, auf die Leser wahrscheinlich stoßen werden, mit Strategien zur Überwindung.', keyTakeaway: 'Vorgewarnt ist gewappnet – häufige Fallstricke zu kennen hilft, sie zu umgehen.' },
+        { chapter: 6, title: 'Umsetzungsstrategien', summary: 'Dieses Kapitel wechselt von Theorie zu Praxis und bietet konkrete Taktiken, Werkzeuge und Techniken für die Umsetzung.', keyTakeaway: 'Systeme schlagen Ziele – gestalten Sie Ihre Umgebung für unvermeidlichen Erfolg.' },
+        { chapter: 7, title: 'Fallstudien', summary: 'Detaillierte Geschichten von Einzelpersonen und Organisationen, die die Prinzipien des Buches erfolgreich angewandt haben.', keyTakeaway: 'Erfolgsgeschichten aus der Praxis beweisen, dass diese Prinzipien funktionieren.' },
+        { chapter: 8, title: 'Fortgeschrittene Anwendungen', summary: 'Für Leser, die tiefer gehen möchten, erkundet dieses Kapitel anspruchsvollere Anwendungen und Grenzfälle.', keyTakeaway: 'Meisterschaft kommt vom Verständnis nicht nur des Was, sondern auch des Warum und Wann.' },
+        { chapter: 9, title: 'Das lange Spiel', summary: 'Eine nachdenkliche Untersuchung, wie man Momentum über Zeit aufrechterhalten kann, während man Burnout vermeidet.', keyTakeaway: 'Erfolg ist ein Marathon, kein Sprint – passen Sie Ihr Tempo für nachhaltige Exzellenz an.' },
+        { chapter: 10, title: 'Fazit: Ihre nächsten Schritte', summary: 'Das letzte Kapitel fasst die Hauptthemen zusammen und bietet einen klaren Aktionsplan für Leser.', keyTakeaway: 'Die beste Zeit zu beginnen war gestern; die zweitbeste Zeit ist jetzt.' }
+      ];
+    }
+
     return [
-      {
-        chapter: 1,
-        title: 'Introduction: The Problem',
-        summary: 'The opening chapter establishes the central challenge that the book addresses, drawing on research and real-world examples to illustrate why traditional approaches often fall short. The author makes a compelling case for rethinking conventional wisdom.',
-        keyTakeaway: 'Recognizing the problem is the first step toward finding better solutions.'
-      },
-      {
-        chapter: 2,
-        title: 'The Framework',
-        summary: 'Here the author introduces the core framework or model that structures the rest of the book. This chapter provides the mental scaffolding readers need to understand and apply subsequent concepts effectively.',
-        keyTakeaway: 'A solid framework transforms scattered information into actionable insight.'
-      },
-      {
-        chapter: 3,
-        title: 'The First Principle',
-        summary: 'The book dives into the first major principle, exploring its origins, supporting evidence, and practical applications. Real-world case studies demonstrate how this principle has created breakthrough results.',
-        keyTakeaway: 'Understanding foundational principles enables better decision-making in uncertain situations.'
-      },
-      {
-        chapter: 4,
-        title: 'The Second Principle',
-        summary: 'Building on the first principle, this chapter introduces a complementary concept that addresses a different dimension of the challenge. The interplay between these principles creates synergistic effects.',
-        keyTakeaway: 'Combining multiple principles creates compound benefits greater than the sum of parts.'
-      },
-      {
-        chapter: 5,
-        title: 'Common Obstacles',
-        summary: 'An honest exploration of the barriers and pitfalls that readers are likely to encounter when applying these ideas. The author provides strategies for anticipating and overcoming each obstacle.',
-        keyTakeaway: 'Forewarned is forearmed—knowing common pitfalls helps you navigate around them.'
-      },
-      {
-        chapter: 6,
-        title: 'Implementation Strategies',
-        summary: 'This chapter shifts from theory to practice, offering specific tactics, tools, and techniques for putting concepts into action. The focus is on creating sustainable systems rather than relying on willpower.',
-        keyTakeaway: 'Systems beat goals—design your environment to make success inevitable.'
-      },
-      {
-        chapter: 7,
-        title: 'Case Studies',
-        summary: 'Detailed stories of individuals and organizations that successfully applied the book\'s principles, including both their challenges and their breakthroughs. These examples make abstract concepts concrete.',
-        keyTakeaway: 'Real-world success stories prove that these principles work when properly applied.'
-      },
-      {
-        chapter: 8,
-        title: 'Advanced Applications',
-        summary: 'For readers ready to go deeper, this chapter explores more sophisticated applications and edge cases. It shows how the principles scale and adapt to different contexts and complexity levels.',
-        keyTakeaway: 'Mastery comes from understanding not just what to do, but why and when.'
-      },
-      {
-        chapter: 9,
-        title: 'The Long Game',
-        summary: 'A thoughtful examination of how to sustain momentum over time, avoiding burnout while maintaining consistent progress. The author addresses the psychological and practical challenges of long-term commitment.',
-        keyTakeaway: 'Success is a marathon, not a sprint—pace yourself for sustainable excellence.'
-      },
-      {
-        chapter: 10,
-        title: 'Conclusion: Your Next Steps',
-        summary: 'The final chapter synthesizes key themes and provides a clear action plan for readers. It emphasizes that knowledge without action is worthless, and encourages readers to start immediately with small steps.',
-        keyTakeaway: 'The best time to start was yesterday; the second best time is now.'
-      }
+      { chapter: 1, title: 'Introduction: The Problem', summary: 'The opening chapter establishes the central challenge that the book addresses, drawing on research and real-world examples to illustrate why traditional approaches often fall short. The author makes a compelling case for rethinking conventional wisdom.', keyTakeaway: 'Recognizing the problem is the first step toward finding better solutions.' },
+      { chapter: 2, title: 'The Framework', summary: 'Here the author introduces the core framework or model that structures the rest of the book. This chapter provides the mental scaffolding readers need to understand and apply subsequent concepts effectively.', keyTakeaway: 'A solid framework transforms scattered information into actionable insight.' },
+      { chapter: 3, title: 'The First Principle', summary: 'The book dives into the first major principle, exploring its origins, supporting evidence, and practical applications. Real-world case studies demonstrate how this principle has created breakthrough results.', keyTakeaway: 'Understanding foundational principles enables better decision-making in uncertain situations.' },
+      { chapter: 4, title: 'The Second Principle', summary: 'Building on the first principle, this chapter introduces a complementary concept that addresses a different dimension of the challenge. The interplay between these principles creates synergistic effects.', keyTakeaway: 'Combining multiple principles creates compound benefits greater than the sum of parts.' },
+      { chapter: 5, title: 'Common Obstacles', summary: 'An honest exploration of the barriers and pitfalls that readers are likely to encounter when applying these ideas. The author provides strategies for anticipating and overcoming each obstacle.', keyTakeaway: 'Forewarned is forearmed—knowing common pitfalls helps you navigate around them.' },
+      { chapter: 6, title: 'Implementation Strategies', summary: 'This chapter shifts from theory to practice, offering specific tactics, tools, and techniques for putting concepts into action. The focus is on creating sustainable systems rather than relying on willpower.', keyTakeaway: 'Systems beat goals—design your environment to make success inevitable.' },
+      { chapter: 7, title: 'Case Studies', summary: 'Detailed stories of individuals and organizations that successfully applied the book\'s principles, including both their challenges and their breakthroughs. These examples make abstract concepts concrete.', keyTakeaway: 'Real-world success stories prove that these principles work when properly applied.' },
+      { chapter: 8, title: 'Advanced Applications', summary: 'For readers ready to go deeper, this chapter explores more sophisticated applications and edge cases. It shows how the principles scale and adapt to different contexts and complexity levels.', keyTakeaway: 'Mastery comes from understanding not just what to do, but why and when.' },
+      { chapter: 9, title: 'The Long Game', summary: 'A thoughtful examination of how to sustain momentum over time, avoiding burnout while maintaining consistent progress. The author addresses the psychological and practical challenges of long-term commitment.', keyTakeaway: 'Success is a marathon, not a sprint—pace yourself for sustainable excellence.' },
+      { chapter: 10, title: 'Conclusion: Your Next Steps', summary: 'The final chapter synthesizes key themes and provides a clear action plan for readers. It emphasizes that knowledge without action is worthless, and encourages readers to start immediately with small steps.', keyTakeaway: 'The best time to start was yesterday; the second best time is now.' }
     ];
   }
 
-  private generateFallbackQuotes(title: string, author: string, category: string): EnhancedSummary['memorableQuotes'] {
+  private generateFallbackQuotes(title: string, author: string, category: string, language: SummaryLanguage = 'en'): EnhancedSummary['memorableQuotes'] {
+    if (language === 'de') {
+      return [
+        { quote: 'Der Unterschied zwischen dem, wer Sie sind, und dem, wer Sie sein wollen, ist das, was Sie tun.', context: 'Dieses Zitat erscheint bei der Diskussion über die Kluft zwischen Absicht und Handlung.', significance: 'Es durchbricht Ausreden und erinnert uns daran, dass unsere Handlungen, nicht unsere Wünsche, unsere Realität definieren.' },
+        { quote: 'Erfolg ist nicht endgültig, Misserfolg ist nicht fatal: Es ist der Mut weiterzumachen, der zählt.', context: 'Verwendet bei der Diskussion über Resilienz und die Bedeutung von Ausdauer bei Rückschlägen.', significance: 'Dies rahmt sowohl Erfolg als auch Misserfolg als vorübergehende Zustände, mit Fokus auf die kontinuierliche Reise.' },
+        { quote: 'Wir steigen nicht auf das Niveau unserer Erwartungen; wir fallen auf das Niveau unseres Trainings.', context: 'Betonung der Bedeutung von Vorbereitung und Systemen gegenüber Motivation.', significance: 'Es zeigt, warum konsequentes Üben wichtiger ist als momentane Inspiration.' },
+        { quote: 'Der beste Weg, die Zukunft vorherzusagen, ist, sie zu erschaffen.', context: 'Ermutigung zu proaktivem Verhalten und Eigenverantwortung für Ergebnisse.', significance: 'Dies verschiebt den Kontrollort von extern zu intern und ermächtigt Leser.' },
+        { quote: 'Kleine tägliche Verbesserungen sind der Schlüssel zu erstaunlichen langfristigen Ergebnissen.', context: 'Diskussion über den Zinseszinseffekt von konsequentem inkrementellem Fortschritt.', significance: 'Es lässt massive Transformation durch bescheidene tägliche Handlungen erreichbar erscheinen.' }
+      ];
+    }
+
     return [
-      {
-        quote: 'The difference between who you are and who you want to be is what you do.',
-        context: 'This quote appears when discussing the gap between intention and action.',
-        significance: 'It cuts through excuses and reminds us that our actions, not our wishes, define our reality.'
-      },
-      {
-        quote: 'Success is not final, failure is not fatal: it is the courage to continue that counts.',
-        context: 'Used when addressing resilience and the importance of persistence through setbacks.',
-        significance: 'This reframes both success and failure as temporary states, focusing on the ongoing journey.'
-      },
-      {
-        quote: 'We don\'t rise to the level of our expectations; we fall to the level of our training.',
-        context: 'Emphasizing the importance of preparation and systems over motivation.',
-        significance: 'It highlights why consistent practice matters more than momentary inspiration.'
-      },
-      {
-        quote: 'The best way to predict the future is to create it.',
-        context: 'Encouraging proactive behavior and ownership over outcomes.',
-        significance: 'This shifts the locus of control from external to internal, empowering readers.'
-      },
-      {
-        quote: 'Small daily improvements are the key to staggering long-term results.',
-        context: 'Discussing the compound effect of consistent incremental progress.',
-        significance: 'It makes massive transformation feel achievable through modest daily actions.'
-      }
+      { quote: 'The difference between who you are and who you want to be is what you do.', context: 'This quote appears when discussing the gap between intention and action.', significance: 'It cuts through excuses and reminds us that our actions, not our wishes, define our reality.' },
+      { quote: 'Success is not final, failure is not fatal: it is the courage to continue that counts.', context: 'Used when addressing resilience and the importance of persistence through setbacks.', significance: 'This reframes both success and failure as temporary states, focusing on the ongoing journey.' },
+      { quote: 'We don\'t rise to the level of our expectations; we fall to the level of our training.', context: 'Emphasizing the importance of preparation and systems over motivation.', significance: 'It highlights why consistent practice matters more than momentary inspiration.' },
+      { quote: 'The best way to predict the future is to create it.', context: 'Encouraging proactive behavior and ownership over outcomes.', significance: 'This shifts the locus of control from external to internal, empowering readers.' },
+      { quote: 'Small daily improvements are the key to staggering long-term results.', context: 'Discussing the compound effect of consistent incremental progress.', significance: 'It makes massive transformation feel achievable through modest daily actions.' }
     ];
   }
 
-  private generateFallbackActionPlan(category: string): EnhancedSummary['actionPlan'] {
+  private generateFallbackActionPlan(category: string, language: SummaryLanguage = 'en'): EnhancedSummary['actionPlan'] {
+    if (language === 'de') {
+      return [
+        { action: 'Wählen Sie eine wichtige Erkenntnis aus dem Buch und schreiben Sie drei konkrete Wege auf, wie Sie sie diese Woche anwenden können', difficulty: 'easy', timeframe: 'immediate', outcome: 'Klare Richtung und sofortiges Momentum' },
+        { action: 'Blockieren Sie täglich 30 Minuten für fokussierte Arbeit an Ihrem wichtigsten Ziel', difficulty: 'medium', timeframe: 'immediate', outcome: 'Konsequenter Fortschritt bei dem, was am wichtigsten ist' },
+        { action: 'Identifizieren und entfernen Sie ein großes Hindernis oder eine Ablenkung aus Ihrer Umgebung', difficulty: 'easy', timeframe: 'immediate', outcome: 'Reduzierte Reibung und erhöhter Fokus' },
+        { action: 'Finden Sie einen Accountability-Partner oder schließen Sie sich einer Gemeinschaft an, die mit Ihren Zielen übereinstimmt', difficulty: 'medium', timeframe: 'short-term', outcome: 'Unterstützungssystem, das Sie auf Kurs hält' },
+        { action: 'Erstellen Sie einen 90-Tage-Aktionsplan mit konkreten Meilensteinen und Erfolgskennzahlen', difficulty: 'medium', timeframe: 'short-term', outcome: 'Klarer Fahrplan und Fähigkeit, Fortschritt zu messen' },
+        { action: 'Führen Sie eine wöchentliche Überprüfung durch, um zu bewerten, was funktioniert und Ihren Ansatz anzupassen', difficulty: 'easy', timeframe: 'immediate', outcome: 'Kontinuierliche Verbesserung und Kurskorrektur' },
+        { action: 'Investieren Sie in einen Kurs, Coach oder Mentor, um Ihre Lernkurve zu beschleunigen', difficulty: 'hard', timeframe: 'short-term', outcome: 'Expertenberatung und schnellere Kompetenzentwicklung' },
+        { action: 'Bauen Sie eine tägliche Routine auf, die Ihr körperliches, geistiges und emotionales Wohlbefinden unterstützt', difficulty: 'medium', timeframe: 'short-term', outcome: 'Nachhaltige Energie und Resilienz für langfristigen Erfolg' },
+        { action: 'Teilen Sie Ihre Ziele und Erkenntnisse mit anderen und lehren Sie, was Sie gelernt haben', difficulty: 'medium', timeframe: 'short-term', outcome: 'Tieferes Verständnis und positiver Einfluss auf andere' },
+        { action: 'Verpflichten Sie sich, ein Buch pro Monat für das nächste Jahr zu lesen und umzusetzen', difficulty: 'hard', timeframe: 'long-term', outcome: 'Zusammengesetztes Wissen und kontinuierliche persönliche Evolution' }
+      ];
+    }
+
     return [
-      {
-        action: 'Choose one key insight from the book and write down three specific ways you can apply it this week',
-        difficulty: 'easy',
-        timeframe: 'immediate',
-        outcome: 'Clear direction and immediate momentum'
-      },
-      {
-        action: 'Block 30 minutes daily for focused work on your highest-priority goal',
-        difficulty: 'medium',
-        timeframe: 'immediate',
-        outcome: 'Consistent progress on what matters most'
-      },
-      {
-        action: 'Identify and remove one major obstacle or distraction from your environment',
-        difficulty: 'easy',
-        timeframe: 'immediate',
-        outcome: 'Reduced friction and increased focus'
-      },
-      {
-        action: 'Find an accountability partner or join a community aligned with your goals',
-        difficulty: 'medium',
-        timeframe: 'short-term',
-        outcome: 'Support system that keeps you on track'
-      },
-      {
-        action: 'Create a 90-day action plan with specific milestones and success metrics',
-        difficulty: 'medium',
-        timeframe: 'short-term',
-        outcome: 'Clear roadmap and ability to measure progress'
-      },
-      {
-        action: 'Conduct a weekly review to assess what\'s working and adjust your approach',
-        difficulty: 'easy',
-        timeframe: 'immediate',
-        outcome: 'Continuous improvement and course correction'
-      },
-      {
-        action: 'Invest in a course, coach, or mentor to accelerate your learning curve',
-        difficulty: 'hard',
-        timeframe: 'short-term',
-        outcome: 'Expert guidance and faster skill development'
-      },
-      {
-        action: 'Build a daily routine that supports your physical, mental, and emotional wellbeing',
-        difficulty: 'medium',
-        timeframe: 'short-term',
-        outcome: 'Sustainable energy and resilience for long-term success'
-      },
-      {
-        action: 'Share your goals and learnings with others, teaching what you\'ve learned',
-        difficulty: 'medium',
-        timeframe: 'short-term',
-        outcome: 'Deeper understanding and positive influence on others'
-      },
-      {
-        action: 'Commit to reviewing and implementing one book per month for the next year',
-        difficulty: 'hard',
-        timeframe: 'long-term',
-        outcome: 'Compound knowledge and continuous personal evolution'
-      }
+      { action: 'Choose one key insight from the book and write down three specific ways you can apply it this week', difficulty: 'easy', timeframe: 'immediate', outcome: 'Clear direction and immediate momentum' },
+      { action: 'Block 30 minutes daily for focused work on your highest-priority goal', difficulty: 'medium', timeframe: 'immediate', outcome: 'Consistent progress on what matters most' },
+      { action: 'Identify and remove one major obstacle or distraction from your environment', difficulty: 'easy', timeframe: 'immediate', outcome: 'Reduced friction and increased focus' },
+      { action: 'Find an accountability partner or join a community aligned with your goals', difficulty: 'medium', timeframe: 'short-term', outcome: 'Support system that keeps you on track' },
+      { action: 'Create a 90-day action plan with specific milestones and success metrics', difficulty: 'medium', timeframe: 'short-term', outcome: 'Clear roadmap and ability to measure progress' },
+      { action: 'Conduct a weekly review to assess what\'s working and adjust your approach', difficulty: 'easy', timeframe: 'immediate', outcome: 'Continuous improvement and course correction' },
+      { action: 'Invest in a course, coach, or mentor to accelerate your learning curve', difficulty: 'hard', timeframe: 'short-term', outcome: 'Expert guidance and faster skill development' },
+      { action: 'Build a daily routine that supports your physical, mental, and emotional wellbeing', difficulty: 'medium', timeframe: 'short-term', outcome: 'Sustainable energy and resilience for long-term success' },
+      { action: 'Share your goals and learnings with others, teaching what you\'ve learned', difficulty: 'medium', timeframe: 'short-term', outcome: 'Deeper understanding and positive influence on others' },
+      { action: 'Commit to reviewing and implementing one book per month for the next year', difficulty: 'hard', timeframe: 'long-term', outcome: 'Compound knowledge and continuous personal evolution' }
     ];
   }
 
