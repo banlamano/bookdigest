@@ -24,7 +24,7 @@ export default function EnhancedBookContent({
   quotes,
   actionItems
 }: EnhancedBookContentProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   // Parse JSON strings
   const parsedInsights = keyInsights ? tryParseJSON(keyInsights) : [];
   const parsedChapters = chapters ? tryParseJSON(chapters) : [];
@@ -68,7 +68,7 @@ export default function EnhancedBookContent({
         >
           <div className="space-y-4">
             {parsedInsights.map((insight: any, index: number) => (
-              <InsightCard key={index} insight={insight} index={index} />
+              <InsightCard key={index} insight={insight} index={index} language={language} />
             ))}
           </div>
         </CollapsibleSection>

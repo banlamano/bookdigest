@@ -11,9 +11,16 @@ interface InsightCardProps {
     explanation?: string;
   };
   index: number;
+  language?: string;
 }
 
-export default function InsightCard({ insight, index }: InsightCardProps) {
+export default function InsightCard({ insight, index, language = 'en' }: InsightCardProps) {
+  const isDE = language === 'de';
+  const labels = {
+    explanation: isDE ? 'Erklärung' : 'Explanation',
+    impact: isDE ? 'Auswirkung' : 'Impact',
+    example: isDE ? 'Beispiel' : 'Example',
+  };
   return (
     <div className="group relative p-5 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-lg border border-blue-200 dark:border-gray-600 hover:shadow-lg transition-all duration-300">
       <div className="flex items-start gap-4">
@@ -34,14 +41,14 @@ export default function InsightCard({ insight, index }: InsightCardProps) {
           ) : (
             <div className="space-y-3 mt-3">
               {insight.explanation && (
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed"><span className="font-medium text-gray-900 dark:text-gray-200">Erklärung:</span> {insight.explanation}</p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed"><span className="font-medium text-gray-900 dark:text-gray-200">{labels.explanation}:</span> {insight.explanation}</p>
               )}
               {insight.impact && (
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed"><span className="font-medium text-gray-900 dark:text-gray-200">Auswirkung:</span> {insight.impact}</p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed"><span className="font-medium text-gray-900 dark:text-gray-200">{labels.impact}:</span> {insight.impact}</p>
               )}
               {insight.example && (
                 <div className="bg-white/50 dark:bg-gray-900/50 p-3 rounded border-l-2 border-blue-400">
-                  <p className="text-sm text-gray-700 dark:text-gray-300 italic"><span className="font-medium text-gray-900 dark:text-gray-200 not-italic">Beispiel:</span> {insight.example}</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300 italic"><span className="font-medium text-gray-900 dark:text-gray-200 not-italic">{labels.example}:</span> {insight.example}</p>
                 </div>
               )}
             </div>
