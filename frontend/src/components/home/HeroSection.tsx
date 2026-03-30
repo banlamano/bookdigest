@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { BookOpen, Headphones, Clock, TrendingUp } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
+import { useAuthStore } from '@/store/authStore';
+import { useQuery } from '@tanstack/react-query';
+import { paymentAPI } from '@/lib/api';
 
 interface HeroSectionProps {
   language?: string;
@@ -11,6 +14,19 @@ interface HeroSectionProps {
 
 export function HeroSection({ language: initialLanguage }: HeroSectionProps) {
   const { t } = useLanguage();
+  const { isAuthenticated } = useAuthStore();
+
+  const { data: subscriptionData } = useQuery({
+    queryKey: ['subscription-status'],
+    queryFn: () => paymentAPI.getSubscriptionStatus(),
+    enabled: isAuthenticated,
+  });
+
+  const subscriptionType = subscriptionData?.data?.data?.subscriptionType || 'FREE';
+  const subscriptionEnd = subscriptionData?.data?.data?.subscriptionEnd;
+  const isPremium = subscriptionType !== 'FREE' &&
+    subscriptionEnd &&
+    new Date(subscriptionEnd) > new Date();
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-secondary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 lg:py-32">
@@ -41,9 +57,15 @@ export function HeroSection({ language: initialLanguage }: HeroSectionProps) {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-              <Link href="/register" className="btn-primary text-lg px-8 py-3">
-                {t('hero.cta')}
-              </Link>
+              {isPremium ? (
+                <Link href="/library" className="btn-primary text-lg px-8 py-3">
+                  {t('nav.library')}
+                </Link>
+              ) : (
+                <Link href={isAuthenticated ? "/pricing" : "/register"} className="btn-primary text-lg px-8 py-3">
+                  {t('hero.cta')}
+                </Link>
+              )}
               <Link href="/library" className="btn-outline text-lg px-8 py-3">
                 {t('hero.ctaSecondary')}
               </Link>
