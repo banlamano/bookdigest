@@ -2,14 +2,17 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { Play, Pause, RotateCcw, SkipBack, SkipForward, Volume2, VolumeX } from 'lucide-react';
+import { useLanguage } from '@/components/LanguageProvider';
 
 interface EnhancedAudioPlayerProps {
   bookTitle: string;
   bookSummary: string;
   bookId: string;
+  bookLanguage?: string;
 }
 
-export function EnhancedAudioPlayer({ bookTitle, bookSummary, bookId }: EnhancedAudioPlayerProps) {
+export function EnhancedAudioPlayer({ bookTitle, bookSummary, bookId, bookLanguage }: EnhancedAudioPlayerProps) {
+  const { t, language } = useLanguage();
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -20,6 +23,9 @@ export function EnhancedAudioPlayer({ bookTitle, bookSummary, bookId }: Enhanced
   const synthRef = useRef<SpeechSynthesis | null>(null);
   const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Use bookLanguage if provided, otherwise fall back to app language
+  const audioLang = bookLanguage || language || 'en';
 
   useEffect(() => {
     // Initialize speech synthesis
@@ -43,6 +49,27 @@ export function EnhancedAudioPlayer({ bookTitle, bookSummary, bookId }: Enhanced
     if (!text) return 0;
     const words = text.split(/\s+/).length;
     return (words / 150) * 60; // duration in seconds
+  };
+
+  /**
+   * Select the best available voice for the given language.
+   * Prefers Google/Microsoft voices for higher quality.
+   */
+  const selectVoice = (voices: SpeechSynthesisVoice[], lang: string): SpeechSynthesisVoice | undefined => {
+    const langPrefix = lang === 'de' ? 'de' : 'en';
+
+    // Priority 1: Google or Microsoft voice for the target language
+    const premiumVoice = voices.find(
+      v => v.lang.startsWith(langPrefix) && (v.name.includes('Google') || v.name.includes('Microsoft'))
+    );
+    if (premiumVoice) return premiumVoice;
+
+    // Priority 2: Any voice matching the target language
+    const anyMatchingVoice = voices.find(v => v.lang.startsWith(langPrefix));
+    if (anyMatchingVoice) return anyMatchingVoice;
+
+    // Priority 3: Fallback to first available voice
+    return voices[0];
   };
 
   const handlePlay = () => {
@@ -74,15 +101,15 @@ export function EnhancedAudioPlayer({ bookTitle, bookSummary, bookId }: Enhanced
         utterance.rate = playbackRate;
         utterance.pitch = 1;
         utterance.volume = isMuted ? 0 : 1;
+
+        // Set language on the utterance itself
+        utterance.lang = audioLang === 'de' ? 'de-DE' : 'en-US';
         
-        // Try to use a good quality voice
+        // Select the best voice for this language
         const voices = synthRef.current.getVoices();
-        const preferredVoice = voices.find(
-          voice => voice.lang.startsWith('en') && (voice.name.includes('Google') || voice.name.includes('Microsoft'))
-        ) || voices.find(voice => voice.lang.startsWith('en'));
-        
-        if (preferredVoice) {
-          utterance.voice = preferredVoice;
+        const bestVoice = selectVoice(voices, audioLang);
+        if (bestVoice) {
+          utterance.voice = bestVoice;
         }
 
         // Estimate duration
@@ -192,8 +219,8 @@ export function EnhancedAudioPlayer({ bookTitle, bookSummary, bookId }: Enhanced
             <Volume2 className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900 dark:text-white">Audio Narration</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">AI-powered text-to-speech</p>
+            <h3 className="font-semibold text-gray-900 dark:text-white">{t('audio.title')}</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">{t('audio.subtitle')}</p>
           </div>
         </div>
         <button
@@ -278,7 +305,7 @@ export function EnhancedAudioPlayer({ bookTitle, bookSummary, bookId }: Enhanced
       </div>
 
       <div className="mt-4 text-center text-xs text-gray-500 dark:text-gray-400">
-        Press play to listen to the AI narration of this book summary
+        {t('audio.pressPlay')}
       </div>
     </div>
   );

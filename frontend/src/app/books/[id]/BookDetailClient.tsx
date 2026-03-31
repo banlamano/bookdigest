@@ -286,6 +286,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                       bookTitle={book.title}
                       bookSummary={book.summary}
                       bookId={book.id}
+                      bookLanguage={book.language}
                     />
                   ) : (
                     <div className="relative">
@@ -295,6 +296,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                           bookTitle={book.title}
                           bookSummary={book.summary}
                           bookId={book.id}
+                          bookLanguage={book.language}
                         />
                       </div>
                       {/* Premium overlay */}
