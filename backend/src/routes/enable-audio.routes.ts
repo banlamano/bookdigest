@@ -1,9 +1,8 @@
-import { Router } from 'express';
-import { PrismaClient } from '@prisma/client';
+﻿import { Router } from 'express';
+import { prisma } from '../lib/prisma';
 import { authenticate, authorize } from '../middleware/auth.middleware';
 
 const router = Router();
-const prisma = new PrismaClient();
 
 /**
  * Admin-only endpoint to enable audio for all books

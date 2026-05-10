@@ -1,8 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '../lib/prisma';
 import { AppError } from '../middleware/error.middleware';
 
-const prisma = new PrismaClient();
 
 export const getAllCategories = async (req: Request, res: Response, next: NextFunction) => {
   try {

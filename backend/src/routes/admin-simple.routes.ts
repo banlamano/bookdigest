@@ -1,8 +1,7 @@
-import { Router } from 'express';
-import { PrismaClient } from '@prisma/client';
+﻿import { Router } from 'express';
+import { prisma } from '../lib/prisma';
 
 const router = Router();
-const prisma = new PrismaClient();
 
 // Simple admin endpoint to update a book (temporary for fixing books one-by-one)
 // Protected by secret key instead of auth
@@ -68,9 +67,6 @@ router.post('/update-book-simple', async (req, res) => {
 // Update AI covers endpoint
 router.post('/update-covers', async (req, res) => {
   try {
-    const { PrismaClient } = await import('@prisma/client');
-    const prisma = new PrismaClient();
-
     const updates = [
       { id: 'cdd862b4-6956-4430-bf1f-f25df8bab67d', coverUrl: '/ai-covers/cdd862b4-6956-4430-bf1f-f25df8bab67d.svg', title: 'Surge' },
       { id: '58a328fd-20b8-491b-ac33-67b16b9c10e3', coverUrl: '/ai-covers/58a328fd-20b8-491b-ac33-67b16b9c10e3.svg', title: 'The Little Book of Hygge' },
@@ -107,8 +103,6 @@ router.post('/update-covers', async (req, res) => {
         results.push({ title: update.title, status: 'failed', error: error.message });
       }
     }
-
-    await prisma.$disconnect();
 
     res.json({
       success: true,

@@ -1,9 +1,8 @@
-import { Router } from 'express';
-import { PrismaClient } from '@prisma/client';
+﻿import { Router } from 'express';
+import { prisma } from '../lib/prisma';
 import { aiSummaryService } from '../services/ai-summary-openai.service';
 
 const router = Router();
-const prisma = new PrismaClient();
 
 // Admin endpoint to regenerate summaries
 router.post('/regenerate-summaries', async (req, res) => {

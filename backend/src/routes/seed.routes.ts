@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { execSync } from 'child_process';
+import { prisma } from '../lib/prisma';
 
 const router = Router();
 
@@ -36,20 +37,15 @@ router.post('/seed-books', async (req: Request, res: Response) => {
 // Check seed status
 router.get('/seed-status', async (req: Request, res: Response) => {
   try {
-    const { PrismaClient } = require('@prisma/client');
-    const prisma = new PrismaClient();
-    
     const bookCount = await prisma.book.count();
     const categoryCount = await prisma.category.count();
-    
+
     res.json({
       success: true,
       books: bookCount,
       categories: categoryCount,
       seeded: bookCount > 0
     });
-    
-    await prisma.$disconnect();
   } catch (error: any) {
     res.status(500).json({ success: false, message: error.message });
   }

@@ -1,9 +1,8 @@
-import { Router } from 'express';
-import { PrismaClient } from '@prisma/client';
+﻿import { Router } from 'express';
+import { prisma } from '../lib/prisma';
 import { AISummaryService, SummaryLanguage } from '../services/ai-summary.service';
 
 const router = Router();
-const prisma = new PrismaClient();
 const aiService = new AISummaryService();
 
 function authenticate(req: any, res: any, next: any) {

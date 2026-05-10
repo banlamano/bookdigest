@@ -1,10 +1,9 @@
-import { Router } from 'express';
-import { PrismaClient } from '@prisma/client';
+﻿import { Router } from 'express';
+import { prisma } from '../lib/prisma';
 import jwt from 'jsonwebtoken';
 import { logger } from '../utils/logger';
 
 const router = Router();
-const prisma = new PrismaClient();
 
 // Middleware to check admin access - supports both admin key and JWT
 const checkAdminAccess = async (req: any, res: any, next: any) => {

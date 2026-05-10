@@ -26,11 +26,7 @@ import dbInfoRoutes from './routes/db-info.routes';
 import germanRoutes from './routes/german.routes';
 import { errorHandler } from './middleware/error.middleware';
 import { logger } from './utils/logger';
-import { PrismaClient } from '@prisma/client';
-
 dotenv.config();
-
-const prisma = new PrismaClient();
 
 const app: Express = express();
 const PORT = process.env.PORT || 5000;

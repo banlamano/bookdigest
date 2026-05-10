@@ -1,9 +1,8 @@
-import { Router } from 'express';
-import { PrismaClient } from '@prisma/client';
+﻿import { Router } from 'express';
+import { prisma } from '../lib/prisma';
 import axios from 'axios';
 
 const router = Router();
-const prisma = new PrismaClient();
 
 type GoogleVolume = {
   volumeInfo?: {

@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import Stripe from 'stripe';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '../lib/prisma';
 import { AppError } from '../middleware/error.middleware';
 import { EmailService } from '../services/email.service';
 import { logger } from '../utils/logger';
@@ -9,7 +9,6 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: '2023-10-16',
 });
 
-const prisma = new PrismaClient();
 
 // Create checkout session
 export const createCheckoutSession = async (req: Request, res: Response, next: NextFunction) => {

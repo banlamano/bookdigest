@@ -1,10 +1,9 @@
-// API endpoint to add book descriptions from Google Books
+﻿// API endpoint to add book descriptions from Google Books
 import { Router } from 'express';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '../lib/prisma';
 import axios from 'axios';
 
 const router = Router();
-const prisma = new PrismaClient();
 
 interface GoogleBookData {
   volumeInfo?: {

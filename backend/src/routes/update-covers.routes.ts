@@ -1,8 +1,7 @@
-import { Router } from 'express';
-import { PrismaClient } from '@prisma/client';
+﻿import { Router } from 'express';
+import { prisma } from '../lib/prisma';
 
 const router = Router();
-const prisma = new PrismaClient();
 
 // Admin endpoint to update AI covers
 router.post('/update-ai-covers', async (req, res) => {

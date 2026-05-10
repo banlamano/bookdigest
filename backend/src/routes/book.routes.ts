@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { prisma } from '../lib/prisma';
 import {
   getAllBooks,
   getBookById,
@@ -46,8 +47,6 @@ router.put('/:id', authenticate, async (req, res) => {
       });
     }
 
-    const { PrismaClient } = require('@prisma/client');
-    const prisma = new PrismaClient();
 
     // Build update data object
     const updateData: any = {};
@@ -58,8 +57,6 @@ router.put('/:id', authenticate, async (req, res) => {
       where: { id },
       data: updateData,
     });
-
-    await prisma.$disconnect();
 
     res.json({
       success: true,

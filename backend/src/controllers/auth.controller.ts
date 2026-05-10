@@ -1,12 +1,11 @@
 import { Request, Response, NextFunction } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt, { SignOptions } from 'jsonwebtoken';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '../lib/prisma';
 import { AppError } from '../middleware/error.middleware';
 import { logger } from '../utils/logger';
 import { EmailService } from '../services/email.service';
 
-const prisma = new PrismaClient();
 
 // Generate JWT token
 const generateToken = (userId: string, email: string, role: string): string => {

@@ -1,9 +1,8 @@
-import { Router, Request, Response } from 'express';
-import { PrismaClient } from '@prisma/client';
+﻿import { Router, Request, Response } from 'express';
+import { prisma } from '../lib/prisma';
 import { runCoverUpdate } from '../scripts/update-covers-helper';
 
 const router = Router();
-const prisma = new PrismaClient();
 
 // Endpoint to update a single book (for bulk import)
 router.post('/update-book', async (req, res) => {

@@ -1,10 +1,9 @@
 import { Request, Response, NextFunction } from 'express';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '../lib/prisma';
 import { AppError } from '../middleware/error.middleware';
 import { getFreemiumStatus } from '../middleware/freemium.middleware';
 import { logger } from '../utils/logger';
 
-const prisma = new PrismaClient();
 
 // Helper function to check if user has premium access
 async function checkPremiumAccess(userId: string | undefined, bookIsPremium: number): Promise<boolean> {

@@ -1,8 +1,7 @@
-import { Router } from 'express';
-import { PrismaClient } from '@prisma/client';
+﻿import { Router } from 'express';
+import { prisma } from '../lib/prisma';
 
 const router = Router();
-const prisma = new PrismaClient();
 
 // List all books with these titles to find their production IDs
 router.get('/find-books', async (req, res) => {
