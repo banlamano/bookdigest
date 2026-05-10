@@ -209,7 +209,7 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       const publicBook = {
         ...book,
         audioUrl: book.audioUrl, // Show audio feature to drive conversions
-        summary: (book.summary || '').substring(0, 500) + '...', // Truncate summary (null-safe)
+        summary: (book.summary || '').substring(0, 3000) + '...', // Truncate summary (null-safe)
         keyInsights: [], // Hide insights
         chapters: [], // Hide chapters
         quotes: [], // Hide quotes

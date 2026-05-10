@@ -1,0 +1,221 @@
+🚀 Starting AUTOMATIC Premium Expansion Scan...
+🔍 Found 63 books below 1500 word target.
+
+📚 Expanding: "The Bogleheads' Guide to Investing" [de]
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+❌ Fatal error on "The Bogleheads' Guide to Investing": Failed to generate fragment after 5 retries (rate limits).
+
+📚 Expanding: "The Bogleheads' Guide to Investing" [en]
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+❌ Fatal error on "The Bogleheads' Guide to Investing": Failed to generate fragment after 5 retries (rate limits).
+
+📚 Expanding: "True Refuge" [en]
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+❌ Fatal error on "True Refuge": Failed to generate fragment after 5 retries (rate limits).
+
+📚 Expanding: "The Power of Moments" [en]
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+❌ Fatal error on "The Power of Moments": Failed to generate fragment after 5 retries (rate limits).
+
+📚 Expanding: "The Power of Moments" [de]
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+❌ Fatal error on "The Power of Moments": Failed to generate fragment after 5 retries (rate limits).
+
+📚 Expanding: "Redirect" [de]
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+   ⚠️ Rate limited (429). Waiting 90 seconds...
+❌ Fatal error on "Redirect": Failed to generate fragment after 5 retries (rate limits).
+
+📚 Expanding: "Company of One" [en]
+❌ Fatal error on "Company of One": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Powerful" [de]
+❌ Fatal error on "Powerful": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Man Who Mistook His Wife for a Hat" [de]
+❌ Fatal error on "The Man Who Mistook His Wife for a Hat": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Man Who Mistook His Wife for a Hat" [en]
+❌ Fatal error on "The Man Who Mistook His Wife for a Hat": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "True Refuge" [de]
+❌ Fatal error on "True Refuge": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Buddha and the Badass" [de]
+❌ Fatal error on "The Buddha and the Badass": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Monk Who Sold His Ferrari" [de]
+❌ Fatal error on "The Monk Who Sold His Ferrari": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Perennial Seller" [en]
+❌ Fatal error on "Perennial Seller": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Company of One" [de]
+❌ Fatal error on "Company of One": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Small Big" [en]
+❌ Fatal error on "The Small Big": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Buddha and the Badass" [en]
+❌ Fatal error on "The Buddha and the Badass": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Monk Who Sold His Ferrari" [en]
+❌ Fatal error on "The Monk Who Sold His Ferrari": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Powerful" [en]
+❌ Fatal error on "Powerful": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Still Me" [de]
+❌ Fatal error on "Still Me": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "How to Win at the Sport of Business" [en]
+❌ Fatal error on "How to Win at the Sport of Business": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Rosie Result" [en]
+❌ Fatal error on "The Rosie Result": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "After You" [de]
+❌ Fatal error on "After You": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Rosie Project" [en]
+❌ Fatal error on "The Rosie Project": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Redirect" [en]
+❌ Fatal error on "Redirect": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Great Alone" [en]
+❌ Fatal error on "The Great Alone": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "All the Light We Cannot See" [de]
+❌ Fatal error on "All the Light We Cannot See": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Grit" [de]
+❌ Fatal error on "Grit": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Room" [de]
+❌ Fatal error on "Room": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Perennial Seller" [de]
+❌ Fatal error on "Perennial Seller": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Eleanor Oliphant Is Completely Fine" [de]
+❌ Fatal error on "Eleanor Oliphant Is Completely Fine": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Great Alone" [de]
+❌ Fatal error on "The Great Alone": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Where the Crawdads Sing" [de]
+❌ Fatal error on "Where the Crawdads Sing": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "After You" [en]
+❌ Fatal error on "After You": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Four Winds" [en]
+❌ Fatal error on "The Four Winds": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Kite Runner" [en]
+❌ Fatal error on "The Kite Runner": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Me Before You" [de]
+❌ Fatal error on "Me Before You": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Room" [en]
+❌ Fatal error on "Room": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Still Me" [en]
+❌ Fatal error on "Still Me": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Me Before You" [en]
+❌ Fatal error on "Me Before You": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Art of Racing in the Rain" [de]
+❌ Fatal error on "The Art of Racing in the Rain": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Curious Incident of the Dog in the Night-Time" [en]
+❌ Fatal error on "The Curious Incident of the Dog in the Night-Time": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Giver of Stars" [de]
+❌ Fatal error on "The Giver of Stars": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Eleanor Oliphant Is Completely Fine" [en]
+❌ Fatal error on "Eleanor Oliphant Is Completely Fine": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Book Thief" [en]
+❌ Fatal error on "The Book Thief": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Nightingale" [en]
+❌ Fatal error on "The Nightingale": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "A Thousand Splendid Suns" [de]
+❌ Fatal error on "A Thousand Splendid Suns": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "All the Light We Cannot See" [en]
+❌ Fatal error on "All the Light We Cannot See": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Art of Racing in the Rain" [en]
+❌ Fatal error on "The Art of Racing in the Rain": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "And the Mountains Echoed" [en]
+❌ Fatal error on "And the Mountains Echoed": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "A Thousand Splendid Suns" [en]
+❌ Fatal error on "A Thousand Splendid Suns": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Rosie Effect" [en]
+❌ Fatal error on "The Rosie Effect": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "Where the Crawdads Sing" [en]
+❌ Fatal error on "Where the Crawdads Sing": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "And the Mountains Echoed" [de]
+❌ Fatal error on "And the Mountains Echoed": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Kite Runner" [de]
+❌ Fatal error on "The Kite Runner": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Nightingale" [de]
+❌ Fatal error on "The Nightingale": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Book Thief" [de]
+❌ Fatal error on "The Book Thief": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Rosie Effect" [de]
+❌ Fatal error on "The Rosie Effect": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Rosie Project" [de]
+❌ Fatal error on "The Rosie Project": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Curious Incident of the Dog in the Night-Time" [de]
+❌ Fatal error on "The Curious Incident of the Dog in the Night-Time": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Four Winds" [de]
+❌ Fatal error on "The Four Winds": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Rosie Result" [de]
+❌ Fatal error on "The Rosie Result": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+
+📚 Expanding: "The Small Big" [de]
+❌ Fatal error on "The Small Big": [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed

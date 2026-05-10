@@ -389,7 +389,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             {lang === 'de' ? 'Bereit zum Lernen?' : 'Ready to Start Learning?'}
           </h3>
           <p className="text-blue-100 mb-6 text-lg">
-            {lang === 'de' ? 'Zugang zu 454+ kostenlosen Buchzusammenfassungen auf BookDigest' : 'Access 454+ free book summaries on BookDigest'}
+            {lang === 'de' ? 'Zugang zu 900+ kostenlosen Buchzusammenfassungen auf BookDigest' : 'Access 900+ free book summaries on BookDigest'}
           </p>
           <Link
             href="/register"

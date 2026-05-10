@@ -1,0 +1,20 @@
+{
+  "totalBooksWithShortInsights": 2,
+  "totalInsightsChecked": 4859,
+  "books": [
+    {
+      "id": "8232030c-51bf-4929-88bf-07544d46bf7d",
+      "title": "The Giver of Stars",
+      "avgWordsPerInsight": 12,
+      "totalInsights": 10,
+      "veryShortInsights": 10
+    },
+    {
+      "id": "b00c5742-1f8a-45b7-9736-3814b8da0ade",
+      "title": "A Wealth of Common Sense",
+      "avgWordsPerInsight": 17,
+      "totalInsights": 8,
+      "veryShortInsights": 8
+    }
+  ]
+}

@@ -20,8 +20,8 @@ interface BuyOnAmazonButtonProps {
 
 const AFFILIATE_IDS = {
   US: 'bookdigest06-20',
-  UK: 'bookdigest-21',
-  DE: 'bookdigest-21',
+  UK: 'bookdigest06-20',
+  DE: 'bookdigestde-21',
   ES: 'bookdigest-21',
   FR: 'bookdigest-21',
   IT: 'bookdigest-21',
@@ -51,9 +51,17 @@ function sanitizeUrl(url?: string): string | undefined {
 function buildAmazonSearchLink(region: Region, title: string, author?: string, isbn?: string) {
   const domain = AMAZON_DOMAINS[region];
   const tag = AFFILIATE_IDS[region];
-  const query = isbn
-    ? `${title} ${author || ''} ISBN ${isbn}`
-    : `${title} ${author || ''}`;
+  
+  if (isbn) {
+    // If ISBN exists, try direct ASIN/ISBN product page link for highest conversion
+    const cleanIsbn = isbn.replace(/[^0-9X]/gi, '');
+    if (cleanIsbn) {
+      return `https://www.${domain}/dp/${cleanIsbn}?tag=${tag}`;
+    }
+  }
+
+  // Fallback to title search
+  const query = `${title} ${author || ''}`;
   const q = encodeURIComponent(query.trim());
   return `https://www.${domain}/s?k=${q}&tag=${tag}`;
 }

@@ -1,0 +1,30 @@
+{
+  "totalBooksWithShortChapters": 3,
+  "totalChaptersChecked": 11067,
+  "books": [
+    {
+      "id": "b00c5742-1f8a-45b7-9736-3814b8da0ade",
+      "title": "A Wealth of Common Sense",
+      "language": "de",
+      "avgWordsPerChapter": 15,
+      "totalChapters": 8,
+      "veryShortChapters": 8
+    },
+    {
+      "id": "8232030c-51bf-4929-88bf-07544d46bf7d",
+      "title": "The Giver of Stars",
+      "language": "de",
+      "avgWordsPerChapter": 26,
+      "totalChapters": 10,
+      "veryShortChapters": 10
+    },
+    {
+      "id": "ccabac0f-6caa-414a-b8af-f946ac91899f",
+      "title": "So Good They Can't Ignore You",
+      "language": "de",
+      "avgWordsPerChapter": 45,
+      "totalChapters": 8,
+      "veryShortChapters": 0
+    }
+  ]
+}

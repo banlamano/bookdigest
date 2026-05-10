@@ -32,10 +32,10 @@ export const metadata: Metadata = {
     google: 'W1TzMoQfgmIyvk4KRMnXIA1us0ayz_RAow9vRQNXp8A',
   },
   title: {
-    default: 'BookDigest - Free AI Book Summaries | Learn from 1000+ Books in 15 Minutes',
+    default: 'BookDigest - Free AI Book Summaries | Learn from 900+ Books in 15 Minutes',
     template: '%s | BookDigest',
   },
-  description: 'Access 454+ free AI-powered book summaries. Read bestselling business, self-help, psychology & personal development books quickly. Get key insights, quotes & action items from top authors. Better than Blinkist - 100% free.',
+  description: 'Access 900+ free AI-powered book summaries. Read bestselling business, self-help, psychology & personal development books quickly. Get key insights, quotes & action items from top authors. Better than Blinkist - 100% free.',
   keywords: [
     // Primary keywords
     'book summaries',
@@ -100,22 +100,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://book-digest.com',
-    title: 'BookDigest - Free AI Book Summaries | Learn from 1000+ Books in 15 Minutes',
-    description: 'Access 454+ free AI-powered book summaries. Read bestselling business, self-help & psychology books quickly. Better than Blinkist - 100% free with key insights & action items.',
+    title: 'BookDigest - Free AI Book Summaries | Learn from 900+ Books in 15 Minutes',
+    description: 'Access 900+ free AI-powered book summaries. Read bestselling business, self-help & psychology books quickly. Better than Blinkist - 100% free with key insights & action items.',
     siteName: 'BookDigest',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'BookDigest - Free AI-Powered Book Summaries - Learn from 1000+ Books',
+        alt: 'BookDigest - Free AI-Powered Book Summaries - Learn from 900+ Books',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'BookDigest - Free AI Book Summaries',
-    description: '454+ free book summaries. Learn from bestselling books quickly. Better than Blinkist.',
+    description: '900+ free book summaries. Learn from bestselling books quickly. Better than Blinkist.',
     images: ['/og-image.png'],
   },
   alternates: {

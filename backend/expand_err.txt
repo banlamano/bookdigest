@@ -1,0 +1,46 @@
+❌ SKIPPING "How to Win at the Sport of Business" [en]: Failed after 15 attempts for: How to Win at the Sport of Business [en] Summary
+❌ SKIPPING "The Bogleheads' Guide to Investing" [en]: Failed after 15 attempts for: The Bogleheads' Guide to Investing [en] Summary
+❌ SKIPPING "The Bogleheads' Guide to Investing" [de]: Failed after 15 attempts for: The Bogleheads' Guide to Investing [de] Summary
+❌ SKIPPING "The Man Who Mistook His Wife for a Hat" [en]: Failed after 15 attempts for: The Man Who Mistook His Wife for a Hat [en] Summary
+❌ SKIPPING "The Man Who Mistook His Wife for a Hat" [de]: Failed after 15 attempts for: The Man Who Mistook His Wife for a Hat [de] Summary
+   ❌ Unexpected error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+❌ SKIPPING "True Refuge" [en]: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+❌ SKIPPING "True Refuge" [de]: Failed after 15 attempts for: True Refuge [de] Summary
+❌ SKIPPING "The Small Big" [en]: Failed after 15 attempts for: The Small Big [en] Summary
+❌ SKIPPING "The Small Big" [de]: Failed after 15 attempts for: The Small Big [de] Summary
+❌ SKIPPING "The Power of Moments" [en]: Failed after 15 attempts for: The Power of Moments [en] Summary
+❌ SKIPPING "The Power of Moments" [de]: Failed after 15 attempts for: The Power of Moments [de] Summary
+   ❌ Unexpected error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+❌ SKIPPING "The Buddha and the Badass" [en]: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+❌ SKIPPING "The Buddha and the Badass" [de]: Failed after 15 attempts for: The Buddha and the Badass [de] Summary
+   ❌ Unexpected error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+❌ SKIPPING "Grit" [de]: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: fetch failed
+❌ SKIPPING "Redirect" [en]: Failed after 15 attempts for: Redirect [en] Summary
+❌ SKIPPING "Redirect" [de]: Failed after 15 attempts for: Redirect [de] Summary
+❌ SKIPPING "The Monk Who Sold His Ferrari" [en]: Failed after 15 attempts for: The Monk Who Sold His Ferrari [en] Summary
+❌ SKIPPING "The Monk Who Sold His Ferrari" [de]: Failed after 15 attempts for: The Monk Who Sold His Ferrari [de] Summary
+❌ SKIPPING "Perennial Seller" [en]: Failed after 15 attempts for: Perennial Seller [en] Summary
+FATAL: PrismaClientKnownRequestError: 
+Invalid `prisma.book.findFirst()` invocation in
+C:\Users\Installation\Desktop\Website\BookLearn\backend\src\scripts\expand-fragmented.ts:138:42
+
+  135 }
+  136 
+  137 for (const lang of ['en', 'de'] as const) {
+→ 138   const existing = await prisma.book.findFirst(
+Can't reach database server at `aws-1-eu-west-1.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-1-eu-west-1.pooler.supabase.com:6543`.
+    at $n.handleRequestError (C:\Users\Installation\Desktop\Website\BookLearn\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\Installation\Desktop\Website\BookLearn\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\Installation\Desktop\Website\BookLearn\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\Installation\Desktop\Website\BookLearn\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async startProject (C:\Users\Installation\Desktop\Website\BookLearn\backend\src\scripts\expand-fragmented.ts:138:24) {
+  code: 'P1001',
+  clientVersion: '5.22.0',
+  meta: {
+    modelName: 'Book',
+    database_host: 'aws-1-eu-west-1.pooler.supabase.com',
+    database_port: 6543
+  }
+}

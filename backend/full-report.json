@@ -1,0 +1,50 @@
+{
+  "totalBooks": 906,
+  "english": {
+    "label": "English (EN)",
+    "total": 453,
+    "premium": 406,
+    "good": 47,
+    "short": 0,
+    "veryShort": 0,
+    "empty": 0,
+    "avgInsights": "10.7",
+    "avgChapters": "12.3",
+    "avgQuotes": "8.0",
+    "avgActions": "8.0",
+    "shortList": []
+  },
+  "german": {
+    "label": "German (DE)",
+    "total": 453,
+    "premium": 305,
+    "good": 145,
+    "short": 3,
+    "veryShort": 0,
+    "empty": 0,
+    "avgInsights": "10.7",
+    "avgChapters": "12.2",
+    "avgQuotes": "8.0",
+    "avgActions": "8.0",
+    "shortList": [
+      {
+        "title": "A Wealth of Common Sense",
+        "words": 304,
+        "insights": 8,
+        "chapters": 8
+      },
+      {
+        "title": "The Giver of Stars",
+        "words": 356,
+        "insights": 8,
+        "chapters": 8
+      },
+      {
+        "title": "So Good They Can't Ignore You",
+        "words": 371,
+        "insights": 8,
+        "chapters": 8
+      }
+    ]
+  }
+}

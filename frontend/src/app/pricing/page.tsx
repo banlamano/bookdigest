@@ -107,14 +107,7 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary-50 via-white to-secondary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Product Hunt launch banner */}
-        <div className="mb-8">
-          <div className="rounded-xl border border-primary-200 bg-primary-50 dark:bg-gray-800 dark:border-gray-700 p-4 text-center">
-            <div className="text-sm font-medium text-primary-800 dark:text-primary-200">
-              {t('pricing.launchDeal')} <span className="font-bold">PH20</span> {t('pricing.launchDiscount')}
-            </div>
-          </div>
-        </div>
+
         {/* Header */}
         <div className="text-center mb-16">
           <motion.h1

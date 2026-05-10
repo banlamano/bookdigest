@@ -9,6 +9,7 @@ async function run() {
     console.log("Success with admin key!");
   } else {
     console.log(`Failed: ${statsRes.status}`);
+    console.log(await statsRes.text());
   }
 }
 run();

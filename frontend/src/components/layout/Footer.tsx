@@ -21,20 +21,7 @@ export function Footer() {
             <p className="text-sm text-gray-600 dark:text-gray-400">
               {t('footer.description')}
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
+
           </div>
 
           <div>

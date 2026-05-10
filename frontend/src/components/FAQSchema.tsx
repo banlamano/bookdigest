@@ -16,7 +16,7 @@ export default function FAQSchema() {
         name: 'Is BookDigest free to use?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes! BookDigest offers free access to book summaries. We use a freemium model where you can read 3 free book summaries per month. For unlimited access to all 454+ summaries, audio narrations, and premium features, you can upgrade to our premium plan.',
+          text: 'Yes! BookDigest offers free access to book summaries. We use a freemium model where you can read 3 free book summaries per month. For unlimited access to all 900+ summaries, audio narrations, and premium features, you can upgrade to our premium plan.',
         },
       },
       {
@@ -24,7 +24,7 @@ export default function FAQSchema() {
         name: 'How is BookDigest different from Blinkist?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'BookDigest is completely free for basic access (3 summaries/month), while Blinkist requires a paid subscription from the start. We offer 454+ AI-powered book summaries with key insights, quotes, and action items. Our summaries are comprehensive, well-structured, and include features like bookmarking and progress tracking.',
+          text: 'BookDigest is completely free for basic access (3 summaries/month), while Blinkist requires a paid subscription from the start. We offer 900+ AI-powered book summaries with key insights, quotes, and action items. Our summaries are comprehensive, well-structured, and include features like bookmarking and progress tracking.',
         },
       },
       {
@@ -32,7 +32,7 @@ export default function FAQSchema() {
         name: 'How many book summaries are available?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We currently have 454+ AI-generated book summaries covering business, self-help, personal development, psychology, productivity, leadership, entrepreneurship, finance, marketing, and more categories. We regularly add new summaries of bestselling and popular books.',
+          text: 'We currently have 900+ AI-generated book summaries covering business, self-help, personal development, psychology, productivity, leadership, entrepreneurship, finance, marketing, and more categories. We regularly add new summaries of bestselling and popular books.',
         },
       },
       {
@@ -72,7 +72,7 @@ export default function FAQSchema() {
         name: 'How do I get started with BookDigest?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Simply create a free account on BookDigest, browse our library of 454+ book summaries, and start reading! You get 3 free summaries per month. No credit card required to start. You can upgrade to premium anytime for unlimited access to all summaries and audio features.',
+          text: 'Simply create a free account on BookDigest, browse our library of 900+ book summaries, and start reading! You get 3 free summaries per month. No credit card required to start. You can upgrade to premium anytime for unlimited access to all summaries and audio features.',
         },
       },
       {

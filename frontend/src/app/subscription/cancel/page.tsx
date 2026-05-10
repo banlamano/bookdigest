@@ -62,7 +62,7 @@ export default function SubscriptionCancelPage() {
             <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 text-left max-w-md mx-auto">
               <li>✅ Cancel anytime, no questions asked</li>
               <li>✅ Full refund within 7 days</li>
-              <li>✅ Access 454+ book summaries</li>
+              <li>✅ Access 900+ book summaries</li>
               <li>✅ Ad-free experience</li>
             </ul>
           </motion.div>

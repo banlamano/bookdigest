@@ -1,0 +1,16 @@
+🔄 Restoring real summaries from local SQLite...
+   ✅ Restoring REAL content for: "How to Win at the Sport of Business" [en] (93 words)
+   ✅ Restoring REAL content for: "The Bogleheads' Guide to Investing" [en] (76 words)
+   ✅ Restoring REAL content for: "The Man Who Mistook His Wife for a Hat" [en] (83 words)
+   ✅ Restoring REAL content for: "True Refuge" [en] (84 words)
+   ✅ Restoring REAL content for: "The Small Big" [en] (88 words)
+   ✅ Restoring REAL content for: "The Power of Moments" [en] (89 words)
+   ✅ Restoring REAL content for: "The Buddha and the Badass" [en] (87 words)
+   ⏩ SQLite copy is also a template for: "Grit" [en]
+   ✅ Restoring REAL content for: "Redirect" [en] (75 words)
+   ✅ Restoring REAL content for: "The Monk Who Sold His Ferrari" [en] (88 words)
+   ✅ Restoring REAL content for: "Perennial Seller" [en] (87 words)
+   ✅ Restoring REAL content for: "Company of One" [en] (88 words)
+   ✅ Restoring REAL content for: "Powerful" [en] (73 words)
+
+✨ Restore complete. All target books are back to "Real" content (but still short).

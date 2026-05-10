@@ -1,0 +1,28 @@
+| Title | Language | Summary | Insights | Chapters | Total | Status |
+|-------|----------|---------|----------|----------|-------|--------|
+| How to Win at the Sport of Business | en | 119 | 359 | 290 | 768 | ❌ Short |
+| How to Win at the Sport of Business | de | 119 | 359 | 290 | 768 | ❌ Short |
+| The Bogleheads' Guide to Investing | en | 113 | 359 | 290 | 762 | ❌ Short |
+| The Bogleheads' Guide to Investing | de | 113 | 359 | 290 | 762 | ❌ Short |
+| The Man Who Mistook His Wife for a Hat | en | 121 | 359 | 290 | 770 | ❌ Short |
+| The Man Who Mistook His Wife for a Hat | de | 121 | 359 | 290 | 770 | ❌ Short |
+| True Refuge | en | 107 | 359 | 290 | 756 | ❌ Short |
+| True Refuge | de | 107 | 359 | 290 | 756 | ❌ Short |
+| The Small Big | en | 109 | 359 | 290 | 758 | ❌ Short |
+| The Small Big | de | 109 | 359 | 290 | 758 | ❌ Short |
+| The Power of Moments | en | 111 | 359 | 290 | 760 | ❌ Short |
+| The Power of Moments | de | 111 | 359 | 290 | 760 | ❌ Short |
+| The Buddha and the Badass | en | 113 | 359 | 290 | 762 | ❌ Short |
+| The Buddha and the Badass | de | 113 | 359 | 290 | 762 | ❌ Short |
+| Grit | en | 105 | 359 | 290 | 754 | ❌ Short |
+| Grit | de | 105 | 359 | 290 | 754 | ❌ Short |
+| Redirect | en | 105 | 359 | 290 | 754 | ❌ Short |
+| Redirect | de | 105 | 359 | 290 | 754 | ❌ Short |
+| The Monk Who Sold His Ferrari | en | 115 | 359 | 290 | 764 | ❌ Short |
+| The Monk Who Sold His Ferrari | de | 115 | 359 | 290 | 764 | ❌ Short |
+| Perennial Seller | en | 107 | 359 | 290 | 756 | ❌ Short |
+| Perennial Seller | de | 107 | 359 | 290 | 756 | ❌ Short |
+| Company of One | en | 109 | 359 | 290 | 758 | ❌ Short |
+| Company of One | de | 109 | 359 | 290 | 758 | ❌ Short |
+| Powerful | en | 105 | 359 | 290 | 754 | ❌ Short |
+| Powerful | de | 105 | 359 | 290 | 754 | ❌ Short |

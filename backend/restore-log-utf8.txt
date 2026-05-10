@@ -1,0 +1,25 @@
+🔄 Attempting to RESTORE real summaries from local SQLite DB...
+PrismaClientInitializationError: 
+Invalid `sqlite.book.findMany()` invocation in
+C:\Users\Installation\Desktop\Website\BookLearn\backend\src\scripts\restore-backup.ts:39:42
+
+  36 console.log('🔄 Attempting to RESTORE real summaries from local SQLite DB...');
+  37 
+  38 for (const title of SHORT_BOOK_TITLES) {
+→ 39   const localBooks = await sqlite.book.findMany(
+error: Error validating datasource `db`: the URL must start with the protocol `postgresql://` or `postgres://`.
+  -->  schema.prisma:9
+   | 
+ 8 |   provider = "postgresql"
+ 9 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1
+    at $n.handleRequestError (C:\Users\Installation\Desktop\Website\BookLearn\backend\node_modules\@prisma\client\runtime\library.js:121:7615)
+    at $n.handleAndLogRequestError (C:\Users\Installation\Desktop\Website\BookLearn\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\Installation\Desktop\Website\BookLearn\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\Installation\Desktop\Website\BookLearn\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async main (C:\Users\Installation\Desktop\Website\BookLearn\backend\src\scripts\restore-backup.ts:39:24) {
+  clientVersion: '5.22.0',
+  errorCode: undefined
+}

@@ -1,0 +1,83 @@
+{
+  "count": 13,
+  "books": [
+    {
+      "id": "bf21400c-03c6-469b-b00f-f687502914e8",
+      "title": "All the Light We Cannot See",
+      "language": "de",
+      "summaryWords": 1005
+    },
+    {
+      "id": "61cf0b57-5ab3-4146-be3a-7406ef92317d",
+      "title": "The Alchemist",
+      "language": "en",
+      "summaryWords": 507
+    },
+    {
+      "id": "7fe447b2-b6f1-4858-b193-3ab58b86fc74",
+      "title": "Man's Search for Meaning",
+      "language": "en",
+      "summaryWords": 492
+    },
+    {
+      "id": "d70edb81-256b-43e2-9b70-7ab9bed02645",
+      "title": "The Subtle Art of Not Giving a F*ck",
+      "language": "en",
+      "summaryWords": 478
+    },
+    {
+      "id": "8232030c-51bf-4929-88bf-07544d46bf7d",
+      "title": "The Giver of Stars",
+      "language": "de",
+      "summaryWords": 356
+    },
+    {
+      "id": "b00c5742-1f8a-45b7-9736-3814b8da0ade",
+      "title": "A Wealth of Common Sense",
+      "language": "de",
+      "summaryWords": 304
+    },
+    {
+      "id": "154254d5-2451-4f93-9b72-ed1d2a24b59a",
+      "title": "Incognito",
+      "language": "de",
+      "summaryWords": 444
+    },
+    {
+      "id": "ebb97cf9-e2a4-4a46-9b8e-a8c26197b1b6",
+      "title": "The Four Agreements",
+      "language": "de",
+      "summaryWords": 441
+    },
+    {
+      "id": "ccabac0f-6caa-414a-b8af-f946ac91899f",
+      "title": "So Good They Can't Ignore You",
+      "language": "de",
+      "summaryWords": 371
+    },
+    {
+      "id": "1886fa68-b218-4004-ad13-5863dfa8a57b",
+      "title": "Man's Search for Meaning",
+      "language": "de",
+      "summaryWords": 511
+    },
+    {
+      "id": "cef66c60-9179-4ea2-bc2b-244b20414d88",
+      "title": "The Alchemist",
+      "language": "de",
+      "summaryWords": 547
+    },
+    {
+      "id": "a0c92a72-8a72-4670-bf6d-cddbd4503baa",
+      "title": "The Subtle Art of Not Giving a F*ck",
+      "language": "de",
+      "summaryWords": 436
+    },
+    {
+      "id": "0c731895-789e-4f4b-9abe-863ca6ec73d1",
+      "title": "Where the Crawdads Sing",
+      "language": "de",
+      "summaryWords": 1043
+    }
+  ]
+}

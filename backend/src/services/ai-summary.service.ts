@@ -54,8 +54,8 @@ export class AISummaryService {
     if (apiKey) {
       try {
         this.genAI = new GoogleGenerativeAI(apiKey);
-        // Using gemini-2.5-flash - fast and available on free tier
-        this.model = this.genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+        // Using gemini-2.0-flash which is confirmed to work
+        this.model = this.genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
       } catch (error) {
         console.error('Failed to initialize Gemini AI:', error);
       }
@@ -76,21 +76,32 @@ export class AISummaryService {
       return this.generateFallbackSummary(bookData, language);
     }
 
-    try {
-      console.log(`📝 Generating ${language} summary for: ${bookData.title}`);
-      const prompt = this.buildPrompt(bookData, language);
-      const result = await this.model.generateContent(prompt);
-      const response = await result.response;
-      const text = response.text();
-      
-      // Parse the JSON response
-      const summary = this.parseAIResponse(text, bookData);
-      console.log(`✅ ${language} summary generated for: ${bookData.title}`);
-      return summary;
-    } catch (error: any) {
-      console.error('❌ AI summary generation failed:', error.message);
-      return this.generateFallbackSummary(bookData, language);
+    let attempts = 0;
+    while (attempts < 5) {
+      try {
+        console.log(`📝 Generating ${language} summary for: ${bookData.title} (Attempt ${attempts + 1})`);
+        const prompt = this.buildPrompt(bookData, language);
+        const result = await this.model.generateContent(prompt);
+        const response = await result.response;
+        const text = response.text();
+        
+        // Parse the JSON response
+        const summary = this.parseAIResponse(text, bookData);
+        console.log(`✅ ${language} summary generated for: ${bookData.title}`);
+        return summary;
+      } catch (error: any) {
+        if (error.message?.includes('429')) {
+          console.warn(`⏳ Rate limit hit! Waiting 65s...`);
+          await new Promise(resolve => setTimeout(resolve, 65000));
+          attempts++;
+        } else {
+          console.error('❌ AI summary generation failed:', error.message);
+          return this.generateFallbackSummary(bookData, language);
+        }
+      }
     }
+    console.error('❌ AI summary generation failed after 5 retries (rate limits).');
+    return this.generateFallbackSummary(bookData, language);
   }
 
   private buildPrompt(bookData: BookData, language: SummaryLanguage = 'en'): string {
@@ -113,23 +124,23 @@ ${pageCount ? `Pages: ${pageCount}` : ''}
 Create a JSON response with the following structure (MUST be valid JSON):
 
 {
-  "bigIdea": "One punchy paragraph (50-80 words) capturing the book's core message in an engaging way",
-  "whyItMatters": "2-3 paragraphs (150-200 words) explaining relevance, problems solved, and who should read it",
+  "bigIdea": "One punchy paragraph (80-120 words) capturing the book's core message in an engaging way. Make it compelling and specific.",
+  "whyItMatters": "3-4 paragraphs (250-350 words) explaining relevance, problems solved, and who should read it. Be very specific and detailed.",
   "keyInsights": [
     {
-      "title": "Catchy insight title",
-      "explanation": "What this insight means (2-3 sentences)",
-      "example": "Real-world application or example",
-      "impact": "How this changes your perspective or life"
+      "title": "Catchy, specific insight title",
+      "explanation": "What this insight means (4-6 sentences). Be detailed and specific to this book, not generic.",
+      "example": "Concrete real-world application or example from the book (2-3 sentences)",
+      "impact": "How this changes your perspective, behavior, or life (2-3 sentences)"
     }
-    // Include 8-12 insights
+    // Include 8-12 insights (fewer, but deeper and more practical)
   ],
   "chapterSummaries": [
     {
       "chapter": 1,
       "title": "Chapter title or main theme",
-      "summary": "80-100 words covering main argument and supporting evidence",
-      "keyTakeaway": "One sentence capturing the essential point"
+      "summary": "150-250 words covering main argument, supporting evidence, and practical application. Write with depth—this should feel premium.",
+      "keyTakeaway": "One powerful sentence capturing the essential point"
     }
     // Include 8-12 chapters
   ],
@@ -157,6 +168,13 @@ Create a JSON response with the following structure (MUST be valid JSON):
   ],
   "finalTakeaway": "One powerful paragraph summarizing the lasting impact and the one thing to remember"
 }
+
+⚠️ IMPORTANT LENGTH TARGETS:
+- Target total output: 2200-3000 words.
+- Chapters: 150-250 words each.
+- Insights: 80-120 words total per insight.
+- Prefer DEPTH per chapter/insight over adding more items.
+
 
 Make the content:
 - Engaging and conversational (like Blinkist)

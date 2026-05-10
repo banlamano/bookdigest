@@ -107,7 +107,7 @@ export default function CategoriesPage() {
               <div className="text-gray-600 dark:text-gray-400">{t('categories.categories')}</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary-600 mb-2">500+</div>
+              <div className="text-4xl font-bold text-primary-600 mb-2">900+</div>
               <div className="text-gray-600 dark:text-gray-400">{t('categories.bookSummaries')}</div>
             </div>
             <div>

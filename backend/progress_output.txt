@@ -1,0 +1,28 @@
+﻿| Title | Language | Length (Words) | Status |
+|-------|----------|----------------|--------|
+| How to Win at the Sport of Business | en | 119 | ÔØî Still short |
+| How to Win at the Sport of Business | de | 119 | ÔØî Still short |
+| The Bogleheads' Guide to Investing | en | 113 | ÔØî Still short |
+| The Bogleheads' Guide to Investing | de | 113 | ÔØî Still short |
+| The Man Who Mistook His Wife for a Hat | en | 121 | ÔØî Still short |
+| The Man Who Mistook His Wife for a Hat | de | 121 | ÔØî Still short |
+| True Refuge | en | 107 | ÔØî Still short |
+| True Refuge | de | 107 | ÔØî Still short |
+| The Small Big | en | 109 | ÔØî Still short |
+| The Small Big | de | 109 | ÔØî Still short |
+| The Power of Moments | en | 111 | ÔØî Still short |
+| The Power of Moments | de | 111 | ÔØî Still short |
+| The Buddha and the Badass | en | 113 | ÔØî Still short |
+| The Buddha and the Badass | de | 113 | ÔØî Still short |
+| Grit | en | 105 | ÔØî Still short |
+| Grit | de | 105 | ÔØî Still short |
+| Redirect | en | 105 | ÔØî Still short |
+| Redirect | de | 105 | ÔØî Still short |
+| The Monk Who Sold His Ferrari | en | 115 | ÔØî Still short |
+| The Monk Who Sold His Ferrari | de | 115 | ÔØî Still short |
+| Perennial Seller | en | 107 | ÔØî Still short |
+| Perennial Seller | de | 107 | ÔØî Still short |
+| Company of One | en | 109 | ÔØî Still short |
+| Company of One | de | 109 | ÔØî Still short |
+| Powerful | en | 105 | ÔØî Still short |
+| Powerful | de | 105 | ÔØî Still short |

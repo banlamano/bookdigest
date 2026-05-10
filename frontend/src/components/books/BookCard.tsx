@@ -5,6 +5,7 @@ import { OptimizedBookCover } from './OptimizedBookCover';
 import { Clock, Headphones, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/components/LanguageProvider';
+import { generateBookSlug } from '@/lib/slugs';
 
 interface BookCardProps {
   book: {
@@ -31,7 +32,7 @@ export function BookCard({ book }: BookCardProps) {
       transition={{ duration: 0.2 }}
       className="card group cursor-pointer"
     >
-      <Link href={`/books/${book.id}`}>
+      <Link href={`/books/${generateBookSlug(book.title, book.id)}`}>
         <div className="relative aspect-[3/4] overflow-hidden bg-gray-100">
           <OptimizedBookCover
             src={book.coverImage}

@@ -44,7 +44,7 @@ export default function AboutPage() {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">500+</div>
+            <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">900+</div>
             <div className="text-gray-600 dark:text-gray-400">{t('about.statsSummaries')}</div>
           </div>
           <div className="text-center">

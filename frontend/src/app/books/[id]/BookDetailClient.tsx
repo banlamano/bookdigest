@@ -246,27 +246,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
           />
         )}
 
-        {/* Soft sign-up CTA for unauthenticated visitors (post-hydration only) */}
-        {!isPreHydration && !isAuthenticated && !isPublicDemo && (
-          <div className="card p-8 mb-8 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-700">
-            <div className="text-center max-w-lg mx-auto">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                Read the Full Summary for Free
-              </h2>
-              <p className="text-gray-600 dark:text-gray-400 mb-6">
-                Create a free account to unlock key insights, chapter breakdowns, quotes, and action items for this book and hundreds more.
-              </p>
-              <div className="flex gap-4 justify-center flex-wrap">
-                <Link href="/register" className="btn-primary">
-                  Get Started Free
-                </Link>
-                <Link href="/login" className="btn-outline">
-                  Sign In
-                </Link>
-              </div>
-            </div>
-          </div>
-        )}
+
 
         {/* Hero Section */}
         <motion.div
@@ -432,6 +412,8 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
               chapters={book.chapters}
               quotes={book.quotes}
               actionItems={book.actionItems}
+              isAuthenticated={isAuthenticated}
+              isPublicDemo={isPublicDemo}
             />
 
             {/* Social Share Buttons */}

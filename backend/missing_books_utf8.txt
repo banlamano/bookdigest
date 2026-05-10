@@ -1,0 +1,24 @@
+﻿Found 6 missing books:
+[
+  {
+    id: 'f3f622fc-7eb0-4025-93de-249fc7c00fa4',
+    title: 'The Plant Paradox'
+  },
+  {
+    id: 'dba26c66-6778-42f6-876e-affb4e5b2808',
+    title: 'The First 20 Hours'
+  },
+  {
+    id: '23724f91-8080-4f28-a1bd-6056cf2ff1bd',
+    title: 'The One Minute Manager'
+  },
+  { id: 'd3bd08b1-28ce-4209-9cf0-c5039ae7514b', title: 'The Goal' },
+  {
+    id: '62d951ed-5614-442a-a9de-72f05526d374',
+    title: 'The Personal MBA'
+  },
+  {
+    id: '3e1058d1-3cdc-4694-b8e4-af3944125592',
+    title: 'The Power of Vulnerability'
+  }
+]

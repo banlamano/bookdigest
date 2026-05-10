@@ -1,0 +1,12 @@
+﻿| ID | Title | Language | Summary (Start) |
+|----|-------|----------|-----------------|
+| 000856a8-e000-455a-a7ba-de4796d54acd | Your Erroneous Zones | en | In 'Your Erroneous Zones,' Wayne Dyer empowers readers to confront and dismantle self-defeating thou |
+| 002e13f0-0c04-4075-be87-7d2d923f7996 | Peace Is Every Step | en | In 'Peace Is Every Step,' Thich Nhat Hanh invites us to cultivate mindfulness in our daily lives, tr |
+| 0086c246-b4e1-4d91-9bb1-1ddadc63759d | Scaling Up | en | In 'Scaling Up,' Verne Harnish presents a proven framework for businesses to achieve phenomenal grow |
+| 00914cf9-a171-4786-b89d-5b5fcf7c18e3 | The Rosie Project | en | "The Rosie Project" von Graeme Simsion ist ein transformatives Handbuch, das konventionelles Denken  |
+| 0135f732-19bd-465b-bb64-2d866b2866fc | Homo Deus | en | In 'Homo Deus: A Brief History of Tomorrow', Yuval Noah Harari explores the future of humanity as we |
+| 01f2815a-bc76-44aa-991e-e993188e93ad | Britt-Marie Was Here | en | In 'Britt-Marie Was Here,' Fredrik Backman explores themes of reinvention and community through the  |
+| 0212a28a-4c7c-4133-b27a-3420bcffa3ac | Born to Run | en | In 'Born to Run,' Christopher McDougall embarks on a riveting quest to uncover the secrets of the Ta |
+| 02ae7311-7b77-4775-8b9f-b0097c2f6769 | A New Earth | en | In 'A New Earth,' Eckhart Tolle presents a powerful vision for personal and collective transformatio |
+| 02d6c4ad-bc72-4796-9418-d6bc44654c08 | Turn the Ship Around | en | In 'Turn the Ship Around', David Marquet revolutionizes the traditional leader-follower model by adv |
+| 0361606c-1729-462c-888a-7d5d19718338 | The Biology of Belief | en | In 'The Biology of Belief,' Bruce Lipton reveals that our beliefs and perceptions powerfully influen |

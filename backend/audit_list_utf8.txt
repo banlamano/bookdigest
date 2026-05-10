@@ -1,0 +1,19 @@
+﻿--- Word Count Audit ---
+Total English Books:    453
+Books under 1000 words: 13
+Books under 500 words:  1
+
+List of all 13 books under 1000 words:
+1. How to Win at the Sport of Business (446 words)
+2. Redirect (943 words)
+3. The Buddha and the Badass (919 words)
+4. The Bogleheads' Guide to Investing (513 words)
+5. The Monk Who Sold His Ferrari (952 words)
+6. The Power of Moments (875 words)
+7. Perennial Seller (984 words)
+8. Company of One (990 words)
+9. Grit (936 words)
+10. Powerful (999 words)
+11. The Man Who Mistook His Wife for a Hat (588 words)
+12. The Small Big (862 words)
+13. True Refuge (720 words)

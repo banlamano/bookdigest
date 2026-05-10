@@ -27,6 +27,18 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(newUrl);
   }
   
+  // If no language cookie is set, detect from accept-language header
+  if (!request.cookies.has('language')) {
+    const acceptLang = request.headers.get('accept-language') || '';
+    const isGerman = acceptLang.toLowerCase().startsWith('de') || acceptLang.toLowerCase().includes('de-');
+    
+    response.cookies.set('language', isGerman ? 'de' : 'en', {
+      path: '/',
+      maxAge: 60 * 60 * 24 * 365, // 1 year
+      httpOnly: false,
+    });
+  }
+  
   return response;
 }
 

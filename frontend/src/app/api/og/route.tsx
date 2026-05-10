@@ -8,7 +8,7 @@ export async function GET(request: Request) {
     
     // Get parameters for custom OG images
     const title = searchParams.get('title') || 'BookDigest - Free AI Book Summaries';
-    const subtitle = searchParams.get('subtitle') || 'Learn from 1000+ Books in 15 Minutes';
+    const subtitle = searchParams.get('subtitle') || 'Learn from 900+ Books in 15 Minutes';
     const type = searchParams.get('type') || 'default'; // default, book, category
 
     return new ImageResponse(
@@ -151,7 +151,7 @@ export async function GET(request: Request) {
                   display: 'flex',
                 }}
               >
-                ⚡ 454+ Books
+                ⚡ 900+ Books
               </div>
             </div>
           </div>

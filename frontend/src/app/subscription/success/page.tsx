@@ -83,7 +83,7 @@ function SuccessContent() {
                 <div>
                   <p className="font-medium text-gray-900 dark:text-white">Unlimited Books</p>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Access all 454+ summaries
+                    Access all 900+ summaries
                   </p>
                 </div>
               </div>

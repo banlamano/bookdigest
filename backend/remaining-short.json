@@ -1,0 +1,17 @@
+{
+  "count": 2,
+  "books": [
+    {
+      "id": "d70edb81-256b-43e2-9b70-7ab9bed02645",
+      "title": "The Subtle Art of Not Giving a F*ck",
+      "author": "Mark Manson",
+      "words": 478
+    },
+    {
+      "id": "7fe447b2-b6f1-4858-b193-3ab58b86fc74",
+      "title": "Man's Search for Meaning",
+      "author": "Viktor Frankl",
+      "words": 492
+    }
+  ]
+}
