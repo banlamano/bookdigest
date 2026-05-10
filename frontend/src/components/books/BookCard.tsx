@@ -25,14 +25,14 @@ interface BookCardProps {
 }
 
 export function BookCard({ book }: BookCardProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   return (
     <motion.div
       whileHover={{ y: -5 }}
       transition={{ duration: 0.2 }}
       className="card group cursor-pointer"
     >
-      <Link href={`/books/${generateBookSlug(book.title, book.id)}`}>
+      <Link href={`/books/${generateBookSlug(book.title, book.id, language)}`}>
         <div className="relative aspect-[3/4] overflow-hidden bg-gray-100">
           <OptimizedBookCover
             src={book.coverImage}
