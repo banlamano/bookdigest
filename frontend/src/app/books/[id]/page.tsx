@@ -122,18 +122,22 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   }
 
   export default async function BookDetailPage({ params }: { params: { id: string } }) {
-    // Don't fetch book data server-side to avoid hydration issues
-    // Let the client component handle all data fetching with proper auth
+    const cookieStore = cookies();
+    const headerList = headers();
+    const cookieLang = cookieStore.get('language')?.value;
+    const browserLang = headerList.get('accept-language')?.split(',')[0].split('-')[0];
+    const language = cookieLang || (browserLang === 'de' ? 'de' : 'en');
+
+    // Fetch book server-side so Google can index the content
+    const book = await getBook(params.id, language);
+
     const breadcrumbItems = [
       { name: 'Home', url: 'https://book-digest.com' },
-      { name: 'Books', url: 'https://book-digest.com/library' },
-      { name: 'Category', url: 'https://book-digest.com/categories' },
-      { name: 'Book Details', url: `https://book-digest.com/books/${params.id}` },
+      { name: 'Library', url: 'https://book-digest.com/library' },
+      { name: book?.title || 'Book Details', url: `https://book-digest.com/books/${params.id}` },
     ];
 
     return (
-      <>
-        <BookDetailClient bookId={params.id} initialBook={null} breadcrumbItems={breadcrumbItems} />
-      </>
+      <BookDetailClient bookId={params.id} initialBook={book} breadcrumbItems={breadcrumbItems} />
     );
   }

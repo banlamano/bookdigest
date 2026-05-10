@@ -20,7 +20,6 @@ import { BookStructuredData, BreadcrumbStructuredData } from '@/components/Struc
 import SocialShareButtons from '@/components/books/SocialShareButtons';
 import FreemiumStatus from '@/components/freemium/FreemiumStatus';
 import PremiumFeaturePrompt from '@/components/freemium/PremiumFeaturePrompt';
-import LoginGate from '@/components/freemium/LoginGate';
 
 interface BookDetailClientProps {
   bookId: string;
@@ -110,22 +109,20 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
     favoriteMutation.mutate();
   };
 
-  // NOW we can do conditional rendering - all hooks are already called
-  if (!isMounted || !isHydrated) {
+  // SSR: render initialBook content for Google indexing instead of returning a spinner.
+  // Both server and client start with isMounted=false, so this is hydration-safe.
+  const isPreHydration = !isMounted || !isHydrated;
+
+  if (isPreHydration && !initialBook) {
     return <LoadingSpinner message={t('common.loading')} />;
   }
 
-  // Show loading while fetching data
-  if (isLoading) {
+  // Show loading only after hydration and when no data is available yet
+  if (!isPreHydration && isLoading && !book) {
     return <LoadingSpinner message={t('bookDetail.loadingDetails')} />;
   }
 
-  // Check authentication (after hydration is complete). Allow public demo books without login.
-  if (!isAuthenticated && !isPublicDemo) {
-    return <LoginGate bookTitle={book?.title || initialBook?.title || t('dashboard.reader')} />;
-  }
-
-  // Handle freemium limit reached (403) gracefully
+  // Handle API errors gracefully
   if (isError) {
     const status = (error as any)?.response?.status;
     const message = (error as any)?.response?.data?.message || (error as any)?.message;
@@ -143,12 +140,65 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
       );
     }
 
+    // 401: not authenticated — show soft sign-up CTA
+    if (status === 401) {
+      const previewBook = book || initialBook;
+      return (
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12">
+          {previewBook && <BookStructuredData book={previewBook} />}
+          {previewBook && <BreadcrumbStructuredData items={breadcrumbItems} />}
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
+              {previewBook?.title || t('dashboard.reader')}
+            </h1>
+            {previewBook?.author && (
+              <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">{previewBook.author}</p>
+            )}
+            <div className="card p-8 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-700">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Read the Full Summary for Free</h2>
+              <p className="text-gray-600 dark:text-gray-400 mb-6">
+                Create a free account to access key insights, chapter breakdowns, quotes, and action items.
+              </p>
+              <div className="flex gap-4 justify-center flex-wrap">
+                <Link href="/register" className="btn-primary">Get Started Free</Link>
+                <Link href="/login" className="btn-outline">Sign In</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // 404: book does not exist
+    if (status === 404) {
+      return (
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
+          <div className="text-center max-w-md px-4">
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{t('bookDetail.bookNotFound')}</h1>
+            <p className="text-gray-600 dark:text-gray-400 mb-6">This book may have been removed or the link is incorrect.</p>
+            <Link href="/library" className="btn-primary">{t('bookDetail.backToLibrary')}</Link>
+          </div>
+        </div>
+      );
+    }
+
+    // 500 / network error — show retry button
     return (
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
         <div className="text-center max-w-md px-4">
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{t('bookDetail.somethingWrong')}</h1>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">{message || t('common.error')}</p>
-          <Link href="/library" className="btn-primary">{t('bookDetail.backToLibrary')}</Link>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
+            {status >= 500 ? 'The server had a problem loading this book.' : (message || t('common.error'))}
+          </p>
+          <div className="flex gap-4 justify-center">
+            <button
+              onClick={() => window.location.reload()}
+              className="btn-primary"
+            >
+              Try Again
+            </button>
+            <Link href="/library" className="btn-outline">{t('bookDetail.backToLibrary')}</Link>
+          </div>
         </div>
       </div>
     );
@@ -194,6 +244,28 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
             booksRead={freemiumStatus.booksRead}
             limit={freemiumStatus.limit}
           />
+        )}
+
+        {/* Soft sign-up CTA for unauthenticated visitors (post-hydration only) */}
+        {!isPreHydration && !isAuthenticated && !isPublicDemo && (
+          <div className="card p-8 mb-8 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-700">
+            <div className="text-center max-w-lg mx-auto">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+                Read the Full Summary for Free
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400 mb-6">
+                Create a free account to unlock key insights, chapter breakdowns, quotes, and action items for this book and hundreds more.
+              </p>
+              <div className="flex gap-4 justify-center flex-wrap">
+                <Link href="/register" className="btn-primary">
+                  Get Started Free
+                </Link>
+                <Link href="/login" className="btn-outline">
+                  Sign In
+                </Link>
+              </div>
+            </div>
+          </div>
         )}
 
         {/* Hero Section */}

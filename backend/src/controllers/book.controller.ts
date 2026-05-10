@@ -227,35 +227,24 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       });
     }
 
-    // CRITICAL: Track book access for freemium limit enforcement
-    // Check if user has already accessed this book this month
-    const startOfMonth = new Date();
-    startOfMonth.setDate(1);
-    startOfMonth.setHours(0, 0, 0, 0);
-
-    const existingProgress = await prisma.readingProgress.findFirst({
+    // CRITICAL: Track book access for freemium limit enforcement.
+    // Use upsert with composite key to avoid unique-constraint crashes when a user
+    // re-reads a book in a new month (findFirst + create pattern would fail because
+    // the date-filtered findFirst returns null for old records, then create violates @@unique([userId, bookId])).
+    await prisma.readingProgress.upsert({
       where: {
+        userId_bookId: { userId, bookId: id },
+      },
+      update: {}, // record already exists — don't overwrite reading progress
+      create: {
         userId,
         bookId: id,
-        createdAt: {
-          gte: startOfMonth,
-        },
+        progress: 0,
+        currentChapter: 0,
+        timeSpent: 0,
+        isCompleted: 0,
       },
     });
-
-    // If this is a new book access this month, create a progress record
-    if (!existingProgress) {
-      await prisma.readingProgress.create({
-        data: {
-          userId,
-          bookId: id,
-          progress: 0,
-          currentChapter: 0,
-          timeSpent: 0,
-          isCompleted: 0,
-        },
-      });
-    }
 
     // Get user's freemium status (after tracking access)
     const freemiumStatus = await getFreemiumStatus(userId);
