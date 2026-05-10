@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { generateBookSlug } from '@/lib/slugs';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 3600; // Revalidate every hour
@@ -78,7 +79,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const isRecent = (new Date().getTime() - new Date(updatedAt).getTime()) < 30 * 24 * 60 * 60 * 1000; // 30 days
     
     return {
-      url: `${baseUrl}/books/${book.id}`,
+      url: `${baseUrl}/books/${generateBookSlug(book.title, book.id)}`,
       lastModified: new Date(updatedAt),
       changeFrequency: isRecent ? 'weekly' as const : 'monthly' as const,
       priority: isRecent ? 0.8 : 0.7,
