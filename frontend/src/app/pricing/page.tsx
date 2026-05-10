@@ -32,11 +32,11 @@ export default function PricingPage() {
     if (!planType) return false;
     if (planType === 'monthly') return subscriptionType === 'PREMIUM_MONTHLY';
     if (planType === 'yearly') return subscriptionType === 'PREMIUM_YEARLY';
-    if (planType === 'team') return subscriptionType === 'TEAM';
+    if (planType === 'lifetime') return subscriptionType === 'LIFETIME';
     return false;
   };
 
-  const handleSubscribe = async (planType: 'monthly' | 'yearly' | 'team') => {
+  const handleSubscribe = async (planType: 'monthly' | 'yearly' | 'lifetime') => {
     if (!isAuthenticated) {
       toast.error(t('pricing.loginToSubscribe'));
       router.push('/login');
@@ -102,6 +102,21 @@ export default function PricingPage() {
       highlighted: false,
       planType: 'yearly' as const,
     },
+    {
+      name: 'Lifetime Access',
+      price: '€199.99',
+      period: 'one-time',
+      badge: 'Ultimate Value',
+      description: 'Pay once, unlock forever.',
+      features: [
+        t('pricing.everythingMonthly'),
+        'Lifetime AI access',
+        'No recurring fees',
+      ],
+      cta: 'Get Lifetime',
+      highlighted: false,
+      planType: 'lifetime' as const,
+    },
   ];
 
   return (
@@ -128,7 +143,7 @@ export default function PricingPage() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-4 gap-6 mb-16">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.name}

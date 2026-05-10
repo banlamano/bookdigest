@@ -153,7 +153,7 @@ export const userAPI = {
 
 // Payment API
 export const paymentAPI = {
-  createCheckoutSession: (planType: 'monthly' | 'yearly' | 'team') =>
+  createCheckoutSession: (planType: 'monthly' | 'yearly' | 'team' | 'lifetime') =>
     api.post('/payments/create-checkout-session', { planType }),
   getSubscriptionStatus: () => api.get('/payments/subscription-status'),
   cancelSubscription: () => api.post('/payments/cancel-subscription'),

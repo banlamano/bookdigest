@@ -28,6 +28,7 @@ export const createCheckoutSession = async (req: Request, res: Response, next: N
     // Determine price ID based on plan type
     let priceId: string;
     let subscriptionType: string;
+    let mode: Stripe.Checkout.SessionCreateParams.Mode = 'subscription';
 
     switch (planType) {
       case 'monthly':
@@ -38,9 +39,11 @@ export const createCheckoutSession = async (req: Request, res: Response, next: N
         priceId = process.env.STRIPE_PRICE_YEARLY!;
         subscriptionType = 'PREMIUM_YEARLY';
         break;
+      case 'lifetime':
       case 'team':
-        priceId = process.env.STRIPE_PRICE_TEAM!;
-        subscriptionType = 'TEAM';
+        priceId = process.env.STRIPE_PRICE_LIFETIME || process.env.STRIPE_PRICE_TEAM!;
+        subscriptionType = 'LIFETIME';
+        mode = 'payment'; // One time payment
         break;
       default:
         throw new AppError('Invalid plan type', 400);
@@ -56,7 +59,7 @@ export const createCheckoutSession = async (req: Request, res: Response, next: N
           quantity: 1,
         },
       ],
-      mode: 'subscription',
+      mode: mode,
       success_url: `${process.env.CLIENT_URL}/subscription/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${process.env.CLIENT_URL}/subscription/cancel`,
       // Allow customers to apply Stripe promotion codes (e.g. Product Hunt launch discount)
@@ -141,11 +144,18 @@ export const handleWebhook = async (req: Request, res: Response, next: NextFunct
 // Handle checkout completion
 async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
   const { userId, subscriptionType } = session.metadata!;
-  const subscriptionId = session.subscription as string;
+  const subscriptionId = session.subscription as string | undefined;
 
   // Get subscription details
-  const subscription = await stripe.subscriptions.retrieve(subscriptionId);
-  const endDate = new Date(subscription.current_period_end * 1000);
+  let endDate: Date | null = null;
+  if (subscriptionId) {
+    const subscription = await stripe.subscriptions.retrieve(subscriptionId);
+    endDate = new Date(subscription.current_period_end * 1000);
+  } else if (subscriptionType === 'LIFETIME') {
+    // 100 years from now
+    endDate = new Date();
+    endDate.setFullYear(endDate.getFullYear() + 100);
+  }
 
   // Get user details
   const user = await prisma.user.findUnique({
