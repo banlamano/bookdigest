@@ -14,8 +14,8 @@ interface FeaturedBooksProps {
 }
 
 export function FeaturedBooks({ language: initialLanguage }: FeaturedBooksProps) {
-  const { t } = useLanguage();
-  const language = initialLanguage || 'en';
+  const { t, language: currentLanguage } = useLanguage();
+  const language = currentLanguage || initialLanguage || 'en';
 
   const { data, isLoading } = useQuery({
     queryKey: ['featured-books', language],

@@ -47,10 +47,8 @@ export const getAllBooks = async (req: Request, res: Response, next: NextFunctio
     const skip = (Number(page) - 1) * Number(limit);
     const where: any = {};
     
-    // For German users, show both English and German books since the German library is still growing
-    if (language === 'de') {
-      where.language = { in: ['en', 'de'] };
-    } else if (language && language !== 'all') {
+    // Filter by language
+    if (language && language !== 'all') {
       where.language = language;
     }
 

@@ -9,7 +9,8 @@ import { BookCard } from '@/components/books/BookCard';
 import { useLanguage } from '@/components/LanguageProvider';
 
 export default function LibraryClient({ language: initialLanguage }: { language: string }) {
-  const { t } = useLanguage();
+  const { t, language: currentLanguage } = useLanguage();
+  const language = currentLanguage || initialLanguage || 'en';
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -22,14 +23,14 @@ export default function LibraryClient({ language: initialLanguage }: { language:
   });
 
   const { data: booksData, isLoading } = useQuery({
-    queryKey: ['books', page, selectedCategory, showPremiumOnly, initialLanguage],
+    queryKey: ['books', page, selectedCategory, showPremiumOnly, language],
     queryFn: () =>
       booksAPI.getAll({
         page,
         limit: 20,
         category: selectedCategory || undefined,
         isPremium: showPremiumOnly || undefined,
-        language: initialLanguage,
+        language: language,
       }),
   });
 
