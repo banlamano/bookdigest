@@ -56,8 +56,8 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     const browserLang = headerList.get('accept-language')?.split(',')[0].split('-')[0];
     const language = cookieLang || (browserLang === 'de' ? 'de' : 'en');
 
-    const parts = params.id.split('-summary-');
-    const actualId = parts.length > 1 ? parts.slice(1).join('-summary-') : params.id;
+    const parts = params.id.split(/-summary-|-zusammenfassung-/);
+    const actualId = parts.length > 1 ? parts[parts.length - 1] : params.id;
     // Fetch book data for metadata only (won't cause hydration issues)
     const book = await getBook(actualId, language);
 
@@ -130,8 +130,8 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     const browserLang = headerList.get('accept-language')?.split(',')[0].split('-')[0];
     const language = cookieLang || (browserLang === 'de' ? 'de' : 'en');
 
-    const parts = params.id.split('-summary-');
-    const actualId = parts.length > 1 ? parts.slice(1).join('-summary-') : params.id;
+    const parts = params.id.split(/-summary-|-zusammenfassung-/);
+    const actualId = parts.length > 1 ? parts[parts.length - 1] : params.id;
     // Fetch book server-side so Google can index the content
     const book = await getBook(actualId, language);
 
