@@ -13,6 +13,7 @@ interface BookCardProps {
     title: string;
     author: string;
     coverImage: string;
+    language?: string;
     readingTime: number;
     audioUrl?: string;
     rating: number;
@@ -38,6 +39,7 @@ export function BookCard({ book }: BookCardProps) {
             src={book.coverImage}
             title={book.title}
             author={book.author}
+            language={book.language}
             className="group-hover:scale-105 transition-transform duration-300"
           />
           {book.isPremium && (

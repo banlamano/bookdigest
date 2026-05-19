@@ -262,6 +262,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                   src={book.coverImage}
                   title={book.title}
                   author={book.author}
+                  language={book.language}
                   priority
                   className="object-cover"
                 />

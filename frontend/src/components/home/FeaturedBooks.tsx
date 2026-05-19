@@ -28,7 +28,8 @@ export function FeaturedBooks({ language: initialLanguage }: FeaturedBooksProps)
   useEffect(() => {
     if (books.length > 0) {
       books.slice(0, 6).forEach((book: any) => {
-        if (book.coverImage) {
+        // Skip preloading for non-English books — they use generated SVG covers
+        if (book.coverImage && (!book.language || book.language === 'en')) {
           const img = new Image();
           img.src = book.coverImage;
         }
