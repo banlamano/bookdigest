@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt, { SignOptions } from 'jsonwebtoken';
+import crypto from 'crypto';
 import { prisma } from '../lib/prisma';
 import { AppError } from '../middleware/error.middleware';
 import { logger } from '../utils/logger';
@@ -255,7 +256,6 @@ export const forgotPassword = async (req: Request, res: Response, next: NextFunc
     }
 
     // Generate reset token
-    const crypto = require('crypto');
     const resetToken = crypto.randomBytes(32).toString('hex');
     const resetTokenHash = crypto.createHash('sha256').update(resetToken).digest('hex');
     const resetTokenExpiry = new Date(Date.now() + 3600000); // 1 hour
@@ -272,7 +272,6 @@ export const forgotPassword = async (req: Request, res: Response, next: NextFunc
     // Send reset email
     const resetUrl = `${process.env.FRONTEND_URL || 'https://book-digest.com'}/reset-password?token=${resetToken}`;
     
-    const { EmailService } = require('../services/email.service');
     EmailService.sendPasswordResetEmail({
       email: user.email,
       firstName: user.firstName,
@@ -301,7 +300,6 @@ export const resetPassword = async (req: Request, res: Response, next: NextFunct
     }
 
     // Hash the token from URL
-    const crypto = require('crypto');
     const resetTokenHash = crypto.createHash('sha256').update(token).digest('hex');
 
     // Find user with valid token

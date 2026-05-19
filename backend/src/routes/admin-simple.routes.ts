@@ -67,6 +67,13 @@ router.post('/update-book-simple', async (req, res) => {
 // Update AI covers endpoint
 router.post('/update-covers', async (req, res) => {
   try {
+    // Require admin secret
+    const secret = req.body.secret || req.query.secret;
+    const ADMIN_SECRET = process.env.ADMIN_SECRET_KEY || process.env.ADMIN_SECRET;
+    if (!ADMIN_SECRET || secret !== ADMIN_SECRET) {
+      return res.status(401).json({ success: false, message: 'Unauthorized' });
+    }
+
     const updates = [
       { id: 'cdd862b4-6956-4430-bf1f-f25df8bab67d', coverUrl: '/ai-covers/cdd862b4-6956-4430-bf1f-f25df8bab67d.svg', title: 'Surge' },
       { id: '58a328fd-20b8-491b-ac33-67b16b9c10e3', coverUrl: '/ai-covers/58a328fd-20b8-491b-ac33-67b16b9c10e3.svg', title: 'The Little Book of Hygge' },

@@ -4,33 +4,6 @@ import { AppError } from '../middleware/error.middleware';
 import { getFreemiumStatus } from '../middleware/freemium.middleware';
 import { logger } from '../utils/logger';
 
-
-// Helper function to check if user has premium access
-async function checkPremiumAccess(userId: string | undefined, bookIsPremium: number): Promise<boolean> {
-  // If book is not premium, everyone has access
-  if (!bookIsPremium) return true;
-  
-  // If user is not authenticated, no access
-  if (!userId) return false;
-  
-  // Check user's subscription status
-  const user = await prisma.user.findUnique({
-    where: { id: userId },
-    select: { subscriptionType: true, subscriptionEnd: true },
-  });
-  
-  if (!user) return false;
-  
-  // Check if user has active premium subscription
-  const isPremiumUser = user.subscriptionType !== 'FREE';
-  // If no expiration date is set, treat as lifetime premium
-  if (isPremiumUser && !user.subscriptionEnd) return true;
-
-  const subscriptionActive = user.subscriptionEnd ? new Date(user.subscriptionEnd) > new Date() : false;
-  
-  return isPremiumUser && subscriptionActive;
-}
-
 // Get all books with filters and pagination
 export const getAllBooks = async (req: Request, res: Response, next: NextFunction) => {
   try {

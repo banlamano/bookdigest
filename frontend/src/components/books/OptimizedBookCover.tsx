@@ -114,23 +114,13 @@ function makeCoverDataUri(title: string, author?: string) {
 export function OptimizedBookCover({ src, title, author, language, className = '', priority = false }: OptimizedBookCoverProps) {
   const generatedCover = useMemo(() => makeCoverDataUri(title, author), [title, author]);
 
-  // For non-English books, always use generated covers (external covers show English editions)
-  const useGenerated = language && language !== 'en';
-
   // Initialize with a non-empty src so we never render a blank cover.
-  const [imgSrc, setImgSrc] = useState<string>(() => {
-    if (useGenerated) return generatedCover;
-    return src && String(src).trim().length > 0 ? String(src) : generatedCover;
-  });
+  const [imgSrc, setImgSrc] = useState<string>(() => (src && String(src).trim().length > 0 ? String(src) : generatedCover));
 
   useEffect(() => {
-    if (useGenerated) {
-      setImgSrc(generatedCover);
-      return;
-    }
     const next = src && String(src).trim().length > 0 ? String(src) : generatedCover;
     setImgSrc(next);
-  }, [src, generatedCover, useGenerated]);
+  }, [src, generatedCover]);
 
   const handleError = () => {
     // Single, stable fallback (no retries, no blinking)

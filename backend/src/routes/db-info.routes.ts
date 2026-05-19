@@ -3,8 +3,14 @@ import { prisma } from '../lib/prisma';
 
 const router = Router();
 
-// Debug endpoint to show database connection info
+// Debug endpoint to show database connection info (admin only)
 router.get('/db-info', async (req, res) => {
+  const secret = req.query.secret || req.headers['x-admin-key'];
+  const expectedSecret = process.env.ADMIN_SECRET_KEY || process.env.ADMIN_SECRET;
+  if (!expectedSecret || secret !== expectedSecret) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
+
   try {
     const dbUrl = process.env.DATABASE_URL || 'NOT SET';
     // Hide password

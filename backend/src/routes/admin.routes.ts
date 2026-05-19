@@ -7,7 +7,13 @@ const router = Router();
 // Endpoint to update a single book (for bulk import)
 router.post('/update-book', async (req, res) => {
   try {
-    const { id, summary, keyInsights, chapters, quotes, actionItems, coverImage } = req.body;
+    const { id, summary, keyInsights, chapters, quotes, actionItems, coverImage, secret } = req.body;
+
+    // Require admin secret
+    const expectedSecret = process.env.ADMIN_SECRET_KEY || process.env.ADMIN_SECRET;
+    if (!expectedSecret || secret !== expectedSecret) {
+      return res.status(401).json({ error: 'Unauthorized' });
+    }
 
     if (!id) {
       return res.status(400).json({ error: 'Book ID is required' });

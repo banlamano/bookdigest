@@ -36,10 +36,15 @@ async function fetchCoverFromGoogleBooks(title: string, author: string): Promise
   }
 }
 
-// Endpoint to add covers to all books
+// Endpoint to add covers to all books (admin only)
 router.post('/add-covers', async (req, res) => {
-  const { limit = 50, offset = 0 } = req.body;
-  
+  const { limit = 50, offset = 0, secret } = req.body;
+
+  const expectedSecret = process.env.ADMIN_SECRET_KEY || process.env.ADMIN_SECRET;
+  if (!expectedSecret || secret !== expectedSecret) {
+    return res.status(401).json({ status: 'error', message: 'Unauthorized' });
+  }
+
   try {
     console.log(`Adding covers: offset=${offset}, limit=${limit}`);
     

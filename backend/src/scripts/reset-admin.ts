@@ -1,11 +1,18 @@
 import { PrismaClient } from '@prisma/client';
 import bcrypt from 'bcryptjs';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const prisma = new PrismaClient();
 
 async function main() {
-  const email = 'admin@bookdigest.com';
-  const password = 'AdminPassword123!';
+  const email = process.env.ADMIN_EMAIL || 'admin@bookdigest.com';
+  const password = process.env.ADMIN_PASSWORD;
+
+  if (!password) {
+    console.error('❌ ADMIN_PASSWORD environment variable is required. Set it before running this script.');
+    process.exit(1);
+  }
   
   const hashedPassword = await bcrypt.hash(password, 12);
   

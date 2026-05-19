@@ -6,6 +6,13 @@ const router = Router();
 
 // Seed endpoint - only use once!
 router.post('/seed-books', async (req: Request, res: Response) => {
+  // Require admin secret
+  const secret = req.body.secret || req.headers['x-admin-key'];
+  const expectedSecret = process.env.ADMIN_SECRET_KEY || process.env.ADMIN_SECRET;
+  if (!expectedSecret || secret !== expectedSecret) {
+    return res.status(401).json({ success: false, message: 'Unauthorized' });
+  }
+
   try {
     res.setHeader('Content-Type', 'text/plain');
     res.write('🌱 Starting database seed...\n\n');
@@ -34,8 +41,13 @@ router.post('/seed-books', async (req: Request, res: Response) => {
   }
 });
 
-// Check seed status
+// Check seed status (admin only)
 router.get('/seed-status', async (req: Request, res: Response) => {
+  const secret = req.query.secret || req.headers['x-admin-key'];
+  const expectedSecret = process.env.ADMIN_SECRET_KEY || process.env.ADMIN_SECRET;
+  if (!expectedSecret || secret !== expectedSecret) {
+    return res.status(401).json({ success: false, message: 'Unauthorized' });
+  }
   try {
     const bookCount = await prisma.book.count();
     const categoryCount = await prisma.category.count();

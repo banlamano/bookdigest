@@ -3,8 +3,14 @@ import { prisma } from '../lib/prisma';
 
 const router = Router();
 
-// List all books with these titles to find their production IDs
+// List all books with these titles to find their production IDs (admin only)
 router.get('/find-books', async (req, res) => {
+  const secret = req.query.secret || req.headers['x-admin-key'];
+  const expectedSecret = process.env.ADMIN_SECRET_KEY || process.env.ADMIN_SECRET;
+  if (!expectedSecret || secret !== expectedSecret) {
+    return res.status(401).json({ success: false, message: 'Unauthorized' });
+  }
+
   try {
     const titles = [
       'Surge',

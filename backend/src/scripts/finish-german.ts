@@ -26,7 +26,7 @@ const targetBooks = [
 ];
 
 async function expandBook(id: string, title: string) {
-  const model = genAI.getGenerativeModel({ model: 'gemini-flash-latest', safetySettings });
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash', safetySettings });
 
   // Use analytical prompt to avoid recitation blocks
   const prompt = `Du bist ein erfahrener Literaturkritiker. Erstelle eine DETAILLIERTE ANALYTISCHE Zusammenfassung auf DEUTSCH für das Buch "${title}".

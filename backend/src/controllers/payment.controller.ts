@@ -199,16 +199,23 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
 
   // Send payment confirmation email
   if (user) {
-    const planName = subscriptionType === 'PREMIUM_MONTHLY' ? 'Premium Monthly' : 
-                     subscriptionType === 'PREMIUM_YEARLY' ? 'Premium Yearly' : 
-                     'Team Plan';
-    
+    const planName = subscriptionType === 'PREMIUM_MONTHLY' ? 'Premium Monthly' :
+                     subscriptionType === 'PREMIUM_YEARLY' ? 'Premium Yearly' :
+                     'Lifetime Plan';
+
+    // Map Stripe 3-letter code to display symbol
+    const currencySymbolMap: Record<string, string> = {
+      eur: '€', usd: '$', gbp: '£', chf: 'CHF ', cad: 'CA$', aud: 'A$',
+    };
+    const rawCurrency = (session.currency || 'eur').toLowerCase();
+    const currencySymbol = currencySymbolMap[rawCurrency] ?? rawCurrency.toUpperCase() + ' ';
+
     EmailService.sendPaymentConfirmation(
       { email: user.email, firstName: user.firstName },
-      { 
+      {
         amount: (session.amount_total || 0) / 100,
         plan: planName,
-        currency: session.currency?.toUpperCase() || 'EUR'
+        currency: currencySymbol,
       }
     ).catch(err => logger.error('Failed to send payment confirmation email:', err));
   }
@@ -254,27 +261,29 @@ async function handleSubscriptionCanceled(subscription: Stripe.Subscription) {
 
 // Handle payment failed
 async function handlePaymentFailed(invoice: Stripe.Invoice) {
-  const customerId = invoice.customer as string;
-  
-  // Find user by Stripe customer ID
+  const subscriptionId = invoice.subscription as string | undefined;
+
+  if (!subscriptionId) {
+    logger.warn(`Payment failed invoice ${invoice.id} has no associated subscription — skipping user lookup`);
+    return;
+  }
+
+  // Find the user who owns this subscription
   const user = await prisma.user.findFirst({
-    where: { 
-      subscriptionId: {
-        not: null
-      }
-    },
-    select: { id: true, email: true, firstName: true, subscriptionId: true }
+    where: { subscriptionId },
+    select: { id: true, email: true, firstName: true },
   });
-  
+
   if (user) {
-    // Send payment failed email
     EmailService.sendPaymentFailed({
       email: user.email,
-      firstName: user.firstName
+      firstName: user.firstName,
     }).catch(err => logger.error('Failed to send payment failed email:', err));
+  } else {
+    logger.warn(`Payment failed for subscription ${subscriptionId} but no matching user found`);
   }
-  
-  logger.error(`Payment failed for customer ${customerId}`);
+
+  logger.error(`Payment failed for subscription ${subscriptionId}`);
 }
 
 // Get subscription status
