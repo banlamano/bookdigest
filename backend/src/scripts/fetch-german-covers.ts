@@ -7,6 +7,7 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
+const apiKey = process.env.GOOGLE_BOOKS_API_KEY ? `&key=${process.env.GOOGLE_BOOKS_API_KEY}` : '';
 
 async function main() {
   console.log('🇩🇪 Fetching authentic German covers from Google Books API...\n');
@@ -24,7 +25,7 @@ async function main() {
     try {
       // Query Google Books API specifically for German editions
       const query = encodeURIComponent(`intitle:${book.title} inauthor:${book.author}`);
-      const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&langRestrict=de`;
+      const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&langRestrict=de${apiKey}`;
       
       const response = await fetch(url);
       const data: any = await response.json();
@@ -58,7 +59,7 @@ async function main() {
       } else {
         // Fallback: search just by title if author + title fails
         const titleQuery = encodeURIComponent(`intitle:${book.title}`);
-        const titleUrl = `https://www.googleapis.com/books/v1/volumes?q=${titleQuery}&langRestrict=de`;
+        const titleUrl = `https://www.googleapis.com/books/v1/volumes?q=${titleQuery}&langRestrict=de${apiKey}`;
         const titleResponse = await fetch(titleUrl);
         const titleData: any = await titleResponse.json();
         
