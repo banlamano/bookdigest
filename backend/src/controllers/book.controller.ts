@@ -175,12 +175,12 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       .split(',')
       .map(normalizeDemoId)
       .filter(Boolean);
-    const isPublicDemo = demoIds.includes(id);
+    const isPublicDemo = demoIds.includes(book.id);
 
     // Public demo books should always be readable (marketing), even if the user is logged in
     // and has hit their monthly free limit. Also, we should not count demo views towards limits.
     if (isPublicDemo) {
-      logger.info(`Public demo book access: ${id} (userId=${userId || 'anonymous'})`);
+      logger.info(`Public demo book access: ${book.id} (userId=${userId || 'anonymous'})`);
       return res.json({
         status: 'success',
         data: {
@@ -221,12 +221,12 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
     // the date-filtered findFirst returns null for old records, then create violates @@unique([userId, bookId])).
     await prisma.readingProgress.upsert({
       where: {
-        userId_bookId: { userId, bookId: id },
+        userId_bookId: { userId, bookId: book.id },
       },
       update: {}, // record already exists — don't overwrite reading progress
       create: {
         userId,
-        bookId: id,
+        bookId: book.id,
         progress: 0,
         currentChapter: 0,
         timeSpent: 0,
