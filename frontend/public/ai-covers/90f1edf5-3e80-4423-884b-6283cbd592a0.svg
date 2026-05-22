@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-90f1edf5-3e80-4423-884b-6283cbd592a0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-90f1edf5-3e80-4423-884b-6283cbd592a0)" />
+  <g opacity="0.1">
+    <circle cx="392.13345456586535" cy="120.17637297564336" r="27.69297878990718" fill="white" /><circle cx="152.13430829165696" cy="329.46997127949925" r="13.997866799000464" fill="white" /><circle cx="266.5145913482841" cy="281.74780948455106" r="21.79601732971693" fill="white" /><circle cx="337.2504340688592" cy="483.2060021358839" r="26.134318927980196" fill="white" /><circle cx="297.8397246800218" cy="91.54110003624834" r="14.948677185717878" fill="white" /><circle cx="332.5540446769149" cy="36.00865474823311" r="13.337875933557521" fill="white" /><circle cx="345.2717291408269" cy="344.2400259787152" r="26.173027764107395" fill="white" /><circle cx="299.3649904530139" cy="573.1287371683535" r="22.154149567271425" fill="white" /><circle cx="177.46759030140774" cy="367.4565170351532" r="21.45220875545997" fill="white" /><circle cx="133.74735634404735" cy="205.14518484470855" r="16.612943026528075" fill="white" /><circle cx="313.7360475787193" cy="35.51735224714645" r="14.744420008176276" fill="white" /><circle cx="370.39403292633517" cy="193.2341705373503" r="24.087917908768333" fill="white" /><circle cx="216.55251620585702" cy="351.49610058445904" r="15.91669876901743" fill="white" /><circle cx="181.21651070652428" cy="401.7768555822453" r="10.03324949163068" fill="white" /><circle cx="122.03883623792211" cy="177.8263107859545" r="19.24628365434015" fill="white" /><circle cx="209.98467130604374" cy="561.3932221415762" r="13.058722752688412" fill="white" /><circle cx="260.94152622463906" cy="409.42763199671" r="22.52258935924191" fill="white" /><circle cx="216.37222850696762" cy="282.235859993482" r="17.573079047681063" fill="white" /><circle cx="314.06754581550575" cy="94.98313704817143" r="15.573379162844267" fill="white" /><circle cx="304.73411918500494" cy="507.794692267092" r="20.173107624001887" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Surrender Experiment
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Michael Singer
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

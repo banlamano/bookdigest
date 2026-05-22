@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b778dd2a-9329-477d-990a-7e7b87f15ded" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b778dd2a-9329-477d-990a-7e7b87f15ded)" />
+  <g opacity="0.1">
+    <circle cx="376.8642806484323" cy="35.07747820083718" r="23.544014269552598" fill="white" /><circle cx="249.16406811478353" cy="203.51582011132538" r="18.76593285785944" fill="white" /><circle cx="310.82310081418734" cy="351.70899353527005" r="23.914048400652646" fill="white" /><circle cx="181.86375208684083" cy="191.43065879493437" r="10.357694936603997" fill="white" /><circle cx="29.44938091212488" cy="598.313205980791" r="14.001366781627391" fill="white" /><circle cx="145.55437887878347" cy="69.8880280618314" r="21.568617419185337" fill="white" /><circle cx="191.83044191491496" cy="331.3576976828073" r="27.323611174728985" fill="white" /><circle cx="339.62109266192283" cy="36.214688677243934" r="10.057348819231285" fill="white" /><circle cx="19.721079495077287" cy="507.87082889654897" r="19.91369168082526" fill="white" /><circle cx="381.56153306444884" cy="161.2152675509203" r="24.171056799602205" fill="white" /><circle cx="28.783602221775073" cy="308.14527099315404" r="18.047325518690624" fill="white" /><circle cx="387.30278381196297" cy="496.8290993410723" r="12.014399151579338" fill="white" /><circle cx="31.66722626631997" cy="545.4072400624744" r="11.75524691609807" fill="white" /><circle cx="342.20047700276604" cy="292.06164085614904" r="25.78973156885043" fill="white" /><circle cx="166.48468301546995" cy="170.097177480495" r="24.19656894783605" fill="white" /><circle cx="233.81449738526658" cy="187.8664568715174" r="17.55820666625221" fill="white" /><circle cx="396.7241390924801" cy="326.5323202596626" r="18.960959948826204" fill="white" /><circle cx="164.68446562418166" cy="247.511061178066" r="19.30562846259012" fill="white" /><circle cx="135.7409135159451" cy="541.615017177962" r="28.008092262669695" fill="white" /><circle cx="110.70715324923799" cy="14.18292401635588" r="27.926389329457617" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Gesund durch Achtsamkeit:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das vollständige Programm
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        des MBSR
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Jon Kabat-Zinn
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

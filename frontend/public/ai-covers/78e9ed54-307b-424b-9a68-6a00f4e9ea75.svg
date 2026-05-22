@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-78e9ed54-307b-424b-9a68-6a00f4e9ea75" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-78e9ed54-307b-424b-9a68-6a00f4e9ea75)" />
+  <g opacity="0.1">
+    <circle cx="184.76657763567368" cy="467.36493873073096" r="10.006636839733405" fill="white" /><circle cx="398.8382444227747" cy="320.20829686712375" r="11.737218814755517" fill="white" /><circle cx="227.47617051223128" cy="538.114026801207" r="22.408211034447618" fill="white" /><circle cx="287.74198357479884" cy="25.39595406422006" r="25.350533635890752" fill="white" /><circle cx="289.7910818213496" cy="223.44604498668838" r="11.399686260086277" fill="white" /><circle cx="232.58203759770387" cy="233.88332621502096" r="23.88475960737557" fill="white" /><circle cx="84.28501626692535" cy="146.29252389234512" r="12.567395930465244" fill="white" /><circle cx="119.50990838151294" cy="121.55487821155158" r="22.13759158729807" fill="white" /><circle cx="239.77986312575422" cy="219.7200088543872" r="18.55818429270016" fill="white" /><circle cx="358.37449234110824" cy="245.44757914658848" r="23.84072837232267" fill="white" /><circle cx="345.8697804795671" cy="403.77007132511545" r="18.102724763230214" fill="white" /><circle cx="93.04585167970933" cy="100.57857972240578" r="27.59613260970416" fill="white" /><circle cx="215.4680852232171" cy="187.9712979113038" r="21.988380557408295" fill="white" /><circle cx="256.1686237707892" cy="348.21865653933503" r="28.011910486279664" fill="white" /><circle cx="227.65593001145717" cy="540.9237792598062" r="15.753687013565967" fill="white" /><circle cx="264.0730869832878" cy="571.6221624752513" r="13.545511881970572" fill="white" /><circle cx="59.69629151604874" cy="148.99229093496797" r="24.593519302190145" fill="white" /><circle cx="165.76618837027138" cy="261.4615021278875" r="14.474154085523033" fill="white" /><circle cx="259.36045408584374" cy="120.54889346557916" r="11.134330258575005" fill="white" /><circle cx="360.6044223784385" cy="401.25555493670265" r="13.185890663772167" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        So Good They Can&apos;t Ignore
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        You
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Cal Newport
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-7b5d6a16-bad3-4df5-9c82-1fad10c36677" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-7b5d6a16-bad3-4df5-9c82-1fad10c36677)" />
+  <g opacity="0.1">
+    <circle cx="145.3962120946244" cy="60.46289392562414" r="26.537362555249814" fill="white" /><circle cx="72.22785434579157" cy="102.62488155565079" r="26.287290654532175" fill="white" /><circle cx="13.195893867714537" cy="36.81792088005646" r="25.62821820196237" fill="white" /><circle cx="344.8815396106167" cy="419.9249020585961" r="27.557293317807066" fill="white" /><circle cx="363.52690369336875" cy="2.5641228198720167" r="26.901383864685307" fill="white" /><circle cx="95.96571403458016" cy="48.24199275786687" r="17.935333963718886" fill="white" /><circle cx="354.1842735681563" cy="34.96960676219643" r="17.45253729758125" fill="white" /><circle cx="30.98388954215956" cy="339.92785449782167" r="28.870864988458116" fill="white" /><circle cx="30.079863177785924" cy="24.74426559917342" r="23.45498254492536" fill="white" /><circle cx="259.9976064299988" cy="102.4841403297309" r="29.74746809431114" fill="white" /><circle cx="118.5606294530376" cy="215.27702277294125" r="12.754216673494135" fill="white" /><circle cx="79.91515616707096" cy="381.21512162318106" r="24.85071226565413" fill="white" /><circle cx="171.74894536973872" cy="315.2371883832754" r="15.844859198952664" fill="white" /><circle cx="6.830538820469911" cy="322.918136962176" r="22.435989554155473" fill="white" /><circle cx="39.877083790250055" cy="167.5749605050338" r="17.717090214050945" fill="white" /><circle cx="272.60735254900555" cy="150.49928776676614" r="14.199380534756262" fill="white" /><circle cx="34.261251366107004" cy="199.30356187563967" r="27.79527339282874" fill="white" /><circle cx="389.87838314731397" cy="44.89867950257531" r="10.19584633571015" fill="white" /><circle cx="335.5388058518446" cy="565.2882202702539" r="15.258904442828644" fill="white" /><circle cx="172.73234667719092" cy="211.9193649988094" r="20.891119833662273" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Power of Intention
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Wayne Dyer
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

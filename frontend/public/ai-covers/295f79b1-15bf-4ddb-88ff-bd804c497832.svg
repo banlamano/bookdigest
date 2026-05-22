@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-295f79b1-15bf-4ddb-88ff-bd804c497832" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-295f79b1-15bf-4ddb-88ff-bd804c497832)" />
+  <g opacity="0.1">
+    <circle cx="394.20069027856914" cy="72.97330711209153" r="21.625488918703226" fill="white" /><circle cx="327.93080099849027" cy="378.7021314275426" r="22.230552244225358" fill="white" /><circle cx="39.10318093838092" cy="240.11942557176948" r="24.55015604646514" fill="white" /><circle cx="117.18824343912333" cy="265.3401732572199" r="12.852907466670313" fill="white" /><circle cx="230.31586535837613" cy="396.618899383914" r="11.12499285699682" fill="white" /><circle cx="54.58266841141306" cy="232.65476072201503" r="26.132124809931593" fill="white" /><circle cx="340.66254929627394" cy="54.06568145878901" r="22.485640819935604" fill="white" /><circle cx="311.16091309033453" cy="375.9208896846594" r="18.37203991052732" fill="white" /><circle cx="373.89202788983795" cy="14.150298316428799" r="17.205571434194056" fill="white" /><circle cx="195.64176332750995" cy="348.0568677824642" r="25.14220275353772" fill="white" /><circle cx="336.67585889942484" cy="418.77412610223024" r="17.459781716231788" fill="white" /><circle cx="366.50419370344537" cy="224.85801562010028" r="13.361786887100529" fill="white" /><circle cx="360.1206575618896" cy="68.50260354974537" r="20.902927972444978" fill="white" /><circle cx="274.70933075879395" cy="198.8073663471331" r="20.349017376598507" fill="white" /><circle cx="97.3026243757877" cy="566.361686842225" r="13.043010021244942" fill="white" /><circle cx="392.3364244973207" cy="504.1066677295646" r="18.299058137629196" fill="white" /><circle cx="126.59668552985805" cy="385.55535965046437" r="23.09840517285304" fill="white" /><circle cx="307.0557489381533" cy="55.223855181621914" r="13.707261052639284" fill="white" /><circle cx="208.96042534156467" cy="243.0394508386642" r="26.757109653688584" fill="white" /><circle cx="368.18587080059496" cy="98.64028164603329" r="14.631807757408202" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Obesity Code
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Jason Fung
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

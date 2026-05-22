@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b1ac90ab-7888-4334-bf1c-93e3837fb84c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b1ac90ab-7888-4334-bf1c-93e3837fb84c)" />
+  <g opacity="0.1">
+    <circle cx="211.57957920461308" cy="33.62289075746136" r="19.383156161467745" fill="white" /><circle cx="3.46929812398602" cy="198.0400930249897" r="25.338603426445253" fill="white" /><circle cx="109.12942103841759" cy="173.1553160736317" r="11.727874522732408" fill="white" /><circle cx="42.4584993747056" cy="234.14893862949805" r="24.535977270149044" fill="white" /><circle cx="88.36330797434542" cy="534.9417258283257" r="12.295336144220943" fill="white" /><circle cx="340.8972329346273" cy="179.59317302229147" r="24.888651744683774" fill="white" /><circle cx="145.20986953005254" cy="97.74940939169463" r="25.147935643290538" fill="white" /><circle cx="4.017158366540308" cy="12.128646956596745" r="22.581352355937096" fill="white" /><circle cx="248.1252780030347" cy="226.45178120958855" r="10.41695113310056" fill="white" /><circle cx="38.47773026851464" cy="297.1241989736393" r="25.968958530682507" fill="white" /><circle cx="55.20389414611433" cy="444.1275588150372" r="10.264708076470514" fill="white" /><circle cx="312.2553098555738" cy="132.0382824782016" r="21.115048991205775" fill="white" /><circle cx="191.66575883396368" cy="189.2391492340149" r="10.843448944968927" fill="white" /><circle cx="64.18845418568746" cy="503.6794393938407" r="21.595078516734826" fill="white" /><circle cx="365.15296311077077" cy="107.33880849884636" r="14.736049108964293" fill="white" /><circle cx="293.52744417908133" cy="467.90937805884164" r="22.6806804368818" fill="white" /><circle cx="122.50552989089476" cy="283.38944302952365" r="21.64688501137695" fill="white" /><circle cx="390.8112570438749" cy="499.145059657637" r="24.721609526555604" fill="white" /><circle cx="130.75905949195393" cy="576.4005018904835" r="18.8454218904782" fill="white" /><circle cx="74.54384181465548" cy="120.6461498383167" r="22.41788747016086" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Kurze Antworten auf große
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Fragen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Stephen Hawking
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e10c37e0-583b-4d9f-879e-3efbe528cbd7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e10c37e0-583b-4d9f-879e-3efbe528cbd7)" />
+  <g opacity="0.1">
+    <circle cx="36.70388177820887" cy="339.67098255948315" r="16.176731070703887" fill="white" /><circle cx="68.87254490772112" cy="241.9976961864306" r="27.60400453583785" fill="white" /><circle cx="301.75873175336073" cy="223.18814973574706" r="10.283423939064322" fill="white" /><circle cx="293.96252049509224" cy="392.55059463770783" r="24.798421023491134" fill="white" /><circle cx="169.23143683917687" cy="398.94422155047033" r="27.87496599097427" fill="white" /><circle cx="14.545644765097077" cy="182.6250047631246" r="12.475148095186231" fill="white" /><circle cx="197.14313381033017" cy="132.53126248462976" r="13.518832732615547" fill="white" /><circle cx="113.2415946521919" cy="193.32012283614966" r="26.13968093489268" fill="white" /><circle cx="155.3769587754132" cy="68.44158344923639" r="13.26148830340814" fill="white" /><circle cx="83.07380706997236" cy="158.63802709468612" r="20.95537419197997" fill="white" /><circle cx="378.05229395262603" cy="306.8592307545799" r="26.603731285940935" fill="white" /><circle cx="386.90965808146683" cy="531.4685409482262" r="10.144202900310473" fill="white" /><circle cx="119.36419894836794" cy="215.58058884310006" r="14.856865794480282" fill="white" /><circle cx="63.48434937001457" cy="33.25768208061264" r="11.52149965900485" fill="white" /><circle cx="110.97580684531265" cy="319.78124568058183" r="20.48563548603255" fill="white" /><circle cx="364.2162277122222" cy="112.89699348242392" r="20.223391912226887" fill="white" /><circle cx="353.4217508099401" cy="541.5635012062978" r="28.240525539558355" fill="white" /><circle cx="355.95850604266275" cy="70.79472059109628" r="13.752421090830357" fill="white" /><circle cx="362.7756010962619" cy="325.9562963318612" r="11.52481184088294" fill="white" /><circle cx="125.17212788507548" cy="517.9604260449433" r="23.014715113312825" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Stille ist der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Schlüssel
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ryan Holiday
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

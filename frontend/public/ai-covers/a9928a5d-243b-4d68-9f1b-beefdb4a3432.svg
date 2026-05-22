@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a9928a5d-243b-4d68-9f1b-beefdb4a3432" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a9928a5d-243b-4d68-9f1b-beefdb4a3432)" />
+  <g opacity="0.1">
+    <circle cx="309.7346997923256" cy="131.97207037026834" r="11.708767224737148" fill="white" /><circle cx="361.91843937937733" cy="485.6432132307045" r="20.367452317205277" fill="white" /><circle cx="263.3133834259042" cy="136.56471403131079" r="22.983847157481836" fill="white" /><circle cx="320.29401371932227" cy="303.61124890307116" r="18.52991372668806" fill="white" /><circle cx="86.16337096451731" cy="103.32902393752504" r="29.924580792270632" fill="white" /><circle cx="129.3879750767291" cy="380.8340593423258" r="28.60324649768576" fill="white" /><circle cx="36.431901752816344" cy="137.17787967591025" r="18.41710394638644" fill="white" /><circle cx="334.5970405484664" cy="301.48631853004275" r="29.250575610725964" fill="white" /><circle cx="244.43773827117553" cy="533.1616070277789" r="18.518662620411042" fill="white" /><circle cx="256.0548867235761" cy="114.79396766271546" r="29.750917999372316" fill="white" /><circle cx="181.56460375079305" cy="26.16974222593789" r="13.84878178397182" fill="white" /><circle cx="204.51264362128168" cy="462.8441665842137" r="19.6605473406897" fill="white" /><circle cx="77.69596863411428" cy="391.31018582383945" r="22.400143239236364" fill="white" /><circle cx="162.72713251556016" cy="321.72135110418094" r="25.89554110626645" fill="white" /><circle cx="170.87317396213808" cy="389.7243977698097" r="16.77000192648915" fill="white" /><circle cx="231.11516889634234" cy="336.21542143860626" r="22.579585887674405" fill="white" /><circle cx="11.24792867754727" cy="537.4510476762908" r="24.88146152371931" fill="white" /><circle cx="78.49223185942647" cy="429.0527509554445" r="26.35161478423707" fill="white" /><circle cx="312.2713866689097" cy="493.66255520369475" r="17.764981893118186" fill="white" /><circle cx="316.2068120395742" cy="432.47681159697" r="22.496146980345813" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Story of the Human
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Body
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Daniel Lieberman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

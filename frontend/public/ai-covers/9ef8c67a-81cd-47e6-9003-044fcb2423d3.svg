@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9ef8c67a-81cd-47e6-9003-044fcb2423d3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9ef8c67a-81cd-47e6-9003-044fcb2423d3)" />
+  <g opacity="0.1">
+    <circle cx="35.17895174105501" cy="409.3961668258959" r="18.371388493406364" fill="white" /><circle cx="236.26996627844315" cy="46.992938998006586" r="21.886129631843808" fill="white" /><circle cx="193.66607514302876" cy="577.9767811199748" r="10.496200427367107" fill="white" /><circle cx="330.20868964273717" cy="441.8728646407822" r="23.49522534176583" fill="white" /><circle cx="252.13221039754222" cy="301.44764561963973" r="13.149614423307504" fill="white" /><circle cx="316.3495724499331" cy="109.54865526116697" r="22.50679434840223" fill="white" /><circle cx="200.99835657180316" cy="307.3811272842759" r="12.133424512991628" fill="white" /><circle cx="117.67963528988297" cy="581.6396467963764" r="15.460481556313056" fill="white" /><circle cx="252.1827751156435" cy="509.3070202880331" r="10.122483910279039" fill="white" /><circle cx="179.59745715916623" cy="234.86903365737592" r="20.98898793033942" fill="white" /><circle cx="125.77136622518314" cy="11.68311913494704" r="17.018666391543974" fill="white" /><circle cx="98.06568099440346" cy="137.14509240892542" r="10.359258659656279" fill="white" /><circle cx="159.45450516285013" cy="40.41455639490585" r="16.0211330105599" fill="white" /><circle cx="100.66757728426032" cy="362.2311539796888" r="22.92908310534653" fill="white" /><circle cx="319.87280608492455" cy="421.81033031792964" r="21.751870896100915" fill="white" /><circle cx="32.73316349912791" cy="457.3150817778972" r="27.7278881243122" fill="white" /><circle cx="57.65152071839488" cy="43.48560548682811" r="27.63460837135074" fill="white" /><circle cx="33.18171017515512" cy="71.73542365032661" r="12.249655941732254" fill="white" /><circle cx="33.88367146200997" cy="56.15888496046977" r="11.94187188996424" fill="white" /><circle cx="29.21677187535927" cy="34.73224771782897" r="17.187679413610866" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Into the Wild
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Jon Krakauer
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

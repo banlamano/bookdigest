@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8d2f8e1c-7fa5-47ac-b971-db48e5faad0e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8d2f8e1c-7fa5-47ac-b971-db48e5faad0e)" />
+  <g opacity="0.1">
+    <circle cx="284.0894572675797" cy="359.99510922459586" r="12.17470459284013" fill="white" /><circle cx="288.51448202728386" cy="325.0810978278815" r="10.936923566467483" fill="white" /><circle cx="345.8541564799027" cy="421.5993687355992" r="16.4639573918415" fill="white" /><circle cx="151.19907885744234" cy="307.1079749916858" r="26.960044455292092" fill="white" /><circle cx="77.87711243837228" cy="540.320710358535" r="14.981245776759316" fill="white" /><circle cx="17.582551025545712" cy="185.95672729418914" r="19.820399821202447" fill="white" /><circle cx="319.6201798350389" cy="538.2086513437067" r="20.164951488285777" fill="white" /><circle cx="341.68356602559544" cy="85.69010391190398" r="16.91578066584353" fill="white" /><circle cx="319.70270585019523" cy="48.32621827608419" r="24.981654656625473" fill="white" /><circle cx="200.31734321876823" cy="21.196619136659244" r="12.730633428263323" fill="white" /><circle cx="56.389334784946676" cy="413.28533031702375" r="19.569496943078466" fill="white" /><circle cx="268.3293047505784" cy="110.83002050262745" r="17.966761300767267" fill="white" /><circle cx="339.5766056877231" cy="317.39010096761547" r="22.354294658796324" fill="white" /><circle cx="171.7055538071111" cy="233.28835227824678" r="18.28221414639702" fill="white" /><circle cx="74.9210429330204" cy="100.82512617753135" r="14.329178814005347" fill="white" /><circle cx="344.25562624803945" cy="477.7150961311323" r="17.00768305174743" fill="white" /><circle cx="87.18379245657584" cy="417.3349757957369" r="29.26116097102079" fill="white" /><circle cx="122.72105404435712" cy="471.6304417954151" r="10.872584668401284" fill="white" /><circle cx="232.80297945004315" cy="308.99771042575827" r="10.830109394470796" fill="white" /><circle cx="200.72894264156577" cy="189.9566787826849" r="24.468160646869116" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Autobiography of
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Benjamin Franklin
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Benjamin Franklin
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

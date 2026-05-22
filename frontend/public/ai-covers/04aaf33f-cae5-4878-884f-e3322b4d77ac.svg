@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-04aaf33f-cae5-4878-884f-e3322b4d77ac" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-04aaf33f-cae5-4878-884f-e3322b4d77ac)" />
+  <g opacity="0.1">
+    <circle cx="86.57154341906654" cy="337.14621165290674" r="29.88319939233891" fill="white" /><circle cx="199.23191347192915" cy="195.28683339777183" r="19.778362083926226" fill="white" /><circle cx="52.535918334843416" cy="378.6203376688764" r="22.887115328378798" fill="white" /><circle cx="130.16691117949725" cy="384.9527353947448" r="18.22143702119945" fill="white" /><circle cx="23.915183972890517" cy="296.36121466864023" r="12.196475091682249" fill="white" /><circle cx="189.99281450504077" cy="349.85339215535225" r="21.37843248876655" fill="white" /><circle cx="219.6470037942969" cy="68.49074365361494" r="29.648040335925014" fill="white" /><circle cx="44.55904863082263" cy="313.2675207198905" r="13.751069690858177" fill="white" /><circle cx="228.43547604875027" cy="339.22664147421926" r="23.033827881862408" fill="white" /><circle cx="351.01608462847935" cy="278.5165207410082" r="11.34949333228546" fill="white" /><circle cx="20.073767620290404" cy="534.8288995266339" r="12.715966200145344" fill="white" /><circle cx="118.33951721119446" cy="317.769951816993" r="13.034896654447314" fill="white" /><circle cx="229.04592526246788" cy="316.7986536567973" r="28.95224309681015" fill="white" /><circle cx="296.33516224266384" cy="391.50051406540547" r="22.905282374624143" fill="white" /><circle cx="350.69856090139626" cy="122.43700814346745" r="23.163260186052803" fill="white" /><circle cx="385.124512432045" cy="469.7866621789483" r="19.398351370161357" fill="white" /><circle cx="10.067496876998794" cy="593.3681854291762" r="21.932791209836644" fill="white" /><circle cx="365.54844610343537" cy="174.06815747993335" r="22.70423174992127" fill="white" /><circle cx="246.89509698284513" cy="16.742579935988733" r="16.74861385743065" fill="white" /><circle cx="68.9716572648639" cy="584.912718413747" r="12.286481344508008" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Long Walk to Freedom
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Nelson Mandela
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

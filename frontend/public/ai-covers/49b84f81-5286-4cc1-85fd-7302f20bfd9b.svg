@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-49b84f81-5286-4cc1-85fd-7302f20bfd9b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-49b84f81-5286-4cc1-85fd-7302f20bfd9b)" />
+  <g opacity="0.1">
+    <circle cx="281.56551052874204" cy="579.046590010905" r="11.427999301649873" fill="white" /><circle cx="347.65840690249735" cy="5.707583946140926" r="24.51438759598678" fill="white" /><circle cx="179.17498518622557" cy="106.02778671799578" r="25.285946393627604" fill="white" /><circle cx="363.92479063721765" cy="76.6840729757862" r="27.792520931704757" fill="white" /><circle cx="138.41212310101918" cy="544.3905348230925" r="11.210758087098432" fill="white" /><circle cx="316.54787914437776" cy="277.7784133587624" r="23.49223867644398" fill="white" /><circle cx="69.83799757853602" cy="481.5136172206594" r="26.151807750509303" fill="white" /><circle cx="15.814496916627263" cy="357.96928594929784" r="29.62555983633238" fill="white" /><circle cx="260.10388247202656" cy="324.4358425544582" r="27.652601729441464" fill="white" /><circle cx="365.37473244810246" cy="339.77781925953974" r="20.67581964535716" fill="white" /><circle cx="84.14231194739936" cy="278.43717067588" r="21.282140794076554" fill="white" /><circle cx="296.15904599146444" cy="75.1905480303115" r="28.70639192810679" fill="white" /><circle cx="226.02846022722866" cy="171.1948309530498" r="17.32284668921794" fill="white" /><circle cx="283.21045077296503" cy="50.04916124794594" r="10.073982783714817" fill="white" /><circle cx="60.59442524501159" cy="549.210104825589" r="15.946933036217182" fill="white" /><circle cx="212.08415663643314" cy="564.0737221736861" r="17.483268164548605" fill="white" /><circle cx="5.111726401897965" cy="318.0892364769348" r="13.710567164702336" fill="white" /><circle cx="81.4498239967739" cy="361.96256909340207" r="23.370456746026377" fill="white" /><circle cx="389.3194095010815" cy="309.9255206612457" r="19.150941448452627" fill="white" /><circle cx="278.35799515868206" cy="108.80097712120676" r="25.263663223683714" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Decisive
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Chip Heath
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

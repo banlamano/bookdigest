@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ca21e7bb-d1e5-4a9a-951a-612067add7e4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ca21e7bb-d1e5-4a9a-951a-612067add7e4)" />
+  <g opacity="0.1">
+    <circle cx="144.1079730893604" cy="262.1380386133415" r="25.323810500841358" fill="white" /><circle cx="180.80038284786397" cy="338.77795834915685" r="18.5688771174974" fill="white" /><circle cx="390.4980668438947" cy="69.78189018886707" r="17.267808254488624" fill="white" /><circle cx="348.64228365513884" cy="244.7082935755165" r="26.69318768098514" fill="white" /><circle cx="323.89523732578914" cy="40.44564095905281" r="22.354243399215285" fill="white" /><circle cx="22.774768237241005" cy="230.8859786582427" r="20.777528042761908" fill="white" /><circle cx="304.80867184416496" cy="349.88299896731144" r="16.370446754802245" fill="white" /><circle cx="285.6996748794959" cy="457.9372030287735" r="14.95761941008465" fill="white" /><circle cx="148.31846411968175" cy="508.18696430687197" r="14.739059755497465" fill="white" /><circle cx="155.70914891755825" cy="461.7432970499236" r="25.893213883684854" fill="white" /><circle cx="278.38209798088656" cy="573.8995709273365" r="14.76151103174229" fill="white" /><circle cx="25.75892663122734" cy="537.8380386033509" r="28.5769870207694" fill="white" /><circle cx="300.7324115872743" cy="527.7512168247774" r="22.4910110116579" fill="white" /><circle cx="35.661764463951194" cy="243.9860973032393" r="23.18449696561654" fill="white" /><circle cx="69.56972710109409" cy="491.81115633923133" r="14.0583796672093" fill="white" /><circle cx="125.89171877403741" cy="151.0857680130091" r="14.756687097478661" fill="white" /><circle cx="136.32737019502216" cy="362.40856242126574" r="12.698697886234598" fill="white" /><circle cx="274.20497375303523" cy="441.2791867816193" r="29.616491572726627" fill="white" /><circle cx="101.79243208088495" cy="390.21693066685367" r="27.424614954042816" fill="white" /><circle cx="288.5953310452671" cy="243.2580472282666" r="28.231139687216324" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Kraft des positiven
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Denkens
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Norman Vincent Peale
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

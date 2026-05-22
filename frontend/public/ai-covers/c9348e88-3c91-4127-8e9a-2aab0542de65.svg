@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c9348e88-3c91-4127-8e9a-2aab0542de65" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c9348e88-3c91-4127-8e9a-2aab0542de65)" />
+  <g opacity="0.1">
+    <circle cx="29.632338479966336" cy="404.0721533918438" r="12.083675006654763" fill="white" /><circle cx="207.50924088258128" cy="254.34672465852307" r="12.592017142117154" fill="white" /><circle cx="348.81284583074586" cy="48.85675314392455" r="12.166440043350041" fill="white" /><circle cx="40.46941222917986" cy="244.41235645079377" r="22.62132600078723" fill="white" /><circle cx="307.42583517355126" cy="122.6187455775156" r="28.37670351994046" fill="white" /><circle cx="47.23380828750861" cy="426.1742057772737" r="10.445615484904282" fill="white" /><circle cx="339.589424658093" cy="60.93648219019876" r="22.17717494320791" fill="white" /><circle cx="223.47932106882257" cy="264.8708866494935" r="22.112542139882834" fill="white" /><circle cx="376.69947286294973" cy="322.65704112410333" r="10.742853742508963" fill="white" /><circle cx="327.22746455427966" cy="259.80668390626005" r="23.36211223844716" fill="white" /><circle cx="322.26295693461554" cy="85.76497481029752" r="26.303382460277437" fill="white" /><circle cx="175.00298101893415" cy="143.57647539795855" r="15.110101813150225" fill="white" /><circle cx="390.59651006373934" cy="307.87133456616573" r="16.47836722713611" fill="white" /><circle cx="22.675794215164522" cy="190.41073694531184" r="14.804838618676492" fill="white" /><circle cx="249.64232211406002" cy="576.1425263038285" r="16.06643952145336" fill="white" /><circle cx="223.5505207256058" cy="244.96455179266" r="13.02254379865579" fill="white" /><circle cx="391.42092256128274" cy="437.6062202777007" r="20.874418718932475" fill="white" /><circle cx="48.161706204541275" cy="79.17292382783072" r="20.680558007553863" fill="white" /><circle cx="116.9702477156231" cy="480.16977721125994" r="10.053113761149445" fill="white" /><circle cx="305.24964615264935" cy="138.35327428570204" r="17.060224134667482" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Kapitän auf See: Ein
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Offizier der US-Navy
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        zeigt, wie man führt,
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        David Marquet
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

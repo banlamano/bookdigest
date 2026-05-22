@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8052ff12-c1f2-4458-a02c-49d47aefaba2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8052ff12-c1f2-4458-a02c-49d47aefaba2)" />
+  <g opacity="0.1">
+    <circle cx="204.44125109633723" cy="172.44137676169083" r="21.886289896212773" fill="white" /><circle cx="150.88265857719233" cy="543.6433641010142" r="26.38253054431551" fill="white" /><circle cx="386.78535256544257" cy="277.3869977478512" r="10.615557489860642" fill="white" /><circle cx="43.15259049555959" cy="352.8732449575256" r="24.065206582660764" fill="white" /><circle cx="25.417432703762934" cy="590.0804309732018" r="25.378456556671477" fill="white" /><circle cx="282.80298931261507" cy="405.09816620825404" r="19.1764197997944" fill="white" /><circle cx="17.971793215008436" cy="273.99137301486036" r="10.010744326441294" fill="white" /><circle cx="26.30078272284848" cy="433.8772533208602" r="26.64034960051675" fill="white" /><circle cx="201.84826493425788" cy="214.95602533292677" r="13.064706303493862" fill="white" /><circle cx="96.63945461349259" cy="448.1940405439754" r="23.595409858540606" fill="white" /><circle cx="286.43396616576575" cy="262.70015796395455" r="24.085539458886664" fill="white" /><circle cx="79.16879485547908" cy="537.1452848819815" r="17.398284759521765" fill="white" /><circle cx="289.6440511126913" cy="24.07321417511701" r="25.610295430148927" fill="white" /><circle cx="92.07830268770225" cy="541.4244247952823" r="25.59775376958685" fill="white" /><circle cx="209.60319759485392" cy="305.1701377283796" r="26.599278006809364" fill="white" /><circle cx="321.19052927283747" cy="501.89357842117664" r="26.018621536284016" fill="white" /><circle cx="280.48995298926445" cy="315.2915932376248" r="26.52832007539982" fill="white" /><circle cx="239.8131751361435" cy="219.1319769824921" r="22.695587636170476" fill="white" /><circle cx="205.59446744959985" cy="191.4105491937867" r="28.255825597566883" fill="white" /><circle cx="249.44830679038114" cy="369.45948032782553" r="28.508126576203292" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Unangreifbar: Dein Weg in
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        die finanzielle Freiheit
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Tony Robbins
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

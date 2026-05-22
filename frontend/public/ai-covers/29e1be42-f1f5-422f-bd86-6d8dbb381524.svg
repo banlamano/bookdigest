@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-29e1be42-f1f5-422f-bd86-6d8dbb381524" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-29e1be42-f1f5-422f-bd86-6d8dbb381524)" />
+  <g opacity="0.1">
+    <circle cx="297.636690682526" cy="473.71407004336646" r="17.106357054611962" fill="white" /><circle cx="83.46741898216123" cy="120.75400541460975" r="20.778759858552515" fill="white" /><circle cx="311.1095185261839" cy="3.3994181815397484" r="28.18320131162735" fill="white" /><circle cx="244.7820416056946" cy="149.56829280919166" r="16.027052238239044" fill="white" /><circle cx="173.9569242349094" cy="248.45625994180833" r="23.936061181256527" fill="white" /><circle cx="77.56995740837792" cy="24.608769751345605" r="20.48966107535198" fill="white" /><circle cx="178.55453463085854" cy="582.4198042479843" r="25.301666947975196" fill="white" /><circle cx="251.6947557618106" cy="553.9922158957493" r="20.798222492327515" fill="white" /><circle cx="252.85376454310162" cy="508.10801624789224" r="17.676322714851963" fill="white" /><circle cx="116.26290993583956" cy="43.57310982672533" r="23.82744766779755" fill="white" /><circle cx="313.4636124531835" cy="88.63880867899525" r="26.365171039553093" fill="white" /><circle cx="1.004312196293089" cy="586.7287995889391" r="15.65816807204891" fill="white" /><circle cx="274.15075847985696" cy="361.5196816123927" r="10.58132218414132" fill="white" /><circle cx="242.00163030669785" cy="430.8422445112206" r="23.118621211977764" fill="white" /><circle cx="77.2230210396606" cy="239.37842416990506" r="20.34414488040564" fill="white" /><circle cx="373.5164190247342" cy="430.94986883119276" r="15.35746600714189" fill="white" /><circle cx="239.3951614347966" cy="221.21526108440906" r="17.895597538597933" fill="white" /><circle cx="1.0643593710016663" cy="246.69742947435773" r="17.62656696552235" fill="white" /><circle cx="247.01960511227216" cy="402.34968628734487" r="14.795177065395446" fill="white" /><circle cx="395.81100560781414" cy="236.99896182461794" r="26.927147516020558" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Dichotomy of
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Leadership
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jocko Willink
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

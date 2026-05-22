@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-3e2cfafa-2898-4401-92a1-3969f620d3c5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-3e2cfafa-2898-4401-92a1-3969f620d3c5)" />
+  <g opacity="0.1">
+    <circle cx="233.62951047626086" cy="316.1367809296148" r="27.212135337467053" fill="white" /><circle cx="255.25030976728002" cy="493.2248838689557" r="22.794997272281943" fill="white" /><circle cx="76.40453601619738" cy="487.9047104296926" r="18.14407714602016" fill="white" /><circle cx="160.44020033181772" cy="418.0581620360635" r="15.374154003655134" fill="white" /><circle cx="329.2010374637621" cy="106.44870262589625" r="14.988724589355705" fill="white" /><circle cx="11.8834058135449" cy="220.42775628232192" r="10.293453581101424" fill="white" /><circle cx="136.61232192807384" cy="193.08636378519958" r="26.34617764705057" fill="white" /><circle cx="253.96257076677807" cy="138.57581258856953" r="13.908356835008442" fill="white" /><circle cx="14.458847120293239" cy="364.6583768019427" r="25.909121869692733" fill="white" /><circle cx="178.5470549835043" cy="274.8978709820228" r="12.459390391228233" fill="white" /><circle cx="367.7258732559599" cy="597.4504024144823" r="29.10295696191187" fill="white" /><circle cx="171.85046218140218" cy="460.73637248582486" r="13.851710782704139" fill="white" /><circle cx="342.80668175557366" cy="249.15922891371153" r="18.74060838289643" fill="white" /><circle cx="43.782238972671195" cy="391.8628572023514" r="24.356625200853188" fill="white" /><circle cx="58.10113956492713" cy="455.36229479493073" r="14.759373325398284" fill="white" /><circle cx="101.90032712785411" cy="497.99756975386936" r="25.10264713425671" fill="white" /><circle cx="152.07664752302236" cy="455.5344617962388" r="25.222660022025615" fill="white" /><circle cx="278.002724318438" cy="405.29893931139463" r="27.656156988568277" fill="white" /><circle cx="329.1501342705083" cy="108.13859332821802" r="18.494156750300935" fill="white" /><circle cx="11.482585549921298" cy="420.50885051660845" r="13.357855368261395" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Digitaler Minimalismus:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Weniger ist mehr in der
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        digitalen Welt
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Cal Newport
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

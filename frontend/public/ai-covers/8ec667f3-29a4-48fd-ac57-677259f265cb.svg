@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8ec667f3-29a4-48fd-ac57-677259f265cb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8ec667f3-29a4-48fd-ac57-677259f265cb)" />
+  <g opacity="0.1">
+    <circle cx="61.83509409842447" cy="152.9458122127599" r="18.114192495646687" fill="white" /><circle cx="325.51803417270645" cy="441.8792040097345" r="13.729270132026448" fill="white" /><circle cx="222.80765132485163" cy="470.21229837032274" r="27.57913029767658" fill="white" /><circle cx="158.09475420017503" cy="85.78037937336913" r="14.49547164365384" fill="white" /><circle cx="303.35206374765716" cy="16.080235723276726" r="14.89376301276306" fill="white" /><circle cx="277.80039491285373" cy="420.0204302630639" r="29.097151668327943" fill="white" /><circle cx="322.8887814816491" cy="469.05269258550214" r="17.766431327258843" fill="white" /><circle cx="227.17767845359415" cy="559.2820009244675" r="22.92385543378545" fill="white" /><circle cx="396.32052004554674" cy="402.903982395438" r="13.65558259684966" fill="white" /><circle cx="316.7437701677303" cy="236.9779948282856" r="21.195504971770454" fill="white" /><circle cx="245.96183136684613" cy="464.8282406262106" r="12.596412841303406" fill="white" /><circle cx="140.57081912115908" cy="353.2992075504729" r="24.748281124553237" fill="white" /><circle cx="126.315235100591" cy="238.22354349448364" r="19.941309190347425" fill="white" /><circle cx="110.455863954054" cy="428.17172234795987" r="14.558252787931005" fill="white" /><circle cx="107.46902379924398" cy="415.02963142814093" r="25.20103982887273" fill="white" /><circle cx="115.35383357341532" cy="27.020752646538384" r="20.526420519751387" fill="white" /><circle cx="78.96631950428423" cy="547.5433134478877" r="21.75203633942103" fill="white" /><circle cx="103.57037740432564" cy="554.8654476016277" r="17.526778715002084" fill="white" /><circle cx="208.77008614263434" cy="470.4955943279987" r="14.01161498289704" fill="white" /><circle cx="311.52628040262147" cy="307.5564955361931" r="12.68443441037804" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Us Against You
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Fredrik Backman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

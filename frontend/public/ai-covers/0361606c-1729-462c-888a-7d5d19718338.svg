@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0361606c-1729-462c-888a-7d5d19718338" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0361606c-1729-462c-888a-7d5d19718338)" />
+  <g opacity="0.1">
+    <circle cx="103.48061298273402" cy="362.52474852934307" r="14.383530323848744" fill="white" /><circle cx="112.08290551828082" cy="397.3618213153952" r="13.323565059068208" fill="white" /><circle cx="257.7426031151061" cy="185.81083451111618" r="20.158558876286012" fill="white" /><circle cx="68.94087220993032" cy="170.1320815523666" r="26.90977272550116" fill="white" /><circle cx="263.37610341781357" cy="105.74629545453102" r="13.287817682289262" fill="white" /><circle cx="118.51774692924249" cy="179.44380120202683" r="13.529069818539927" fill="white" /><circle cx="264.2928497120445" cy="573.3192758389395" r="22.002317347555916" fill="white" /><circle cx="85.47379291322099" cy="75.4021567975214" r="10.219853113505161" fill="white" /><circle cx="159.76444571595252" cy="8.704905775095995" r="25.06867801218416" fill="white" /><circle cx="170.41405109268695" cy="63.5962997078519" r="25.71408211315746" fill="white" /><circle cx="385.6266567112169" cy="202.66416638777758" r="21.255381560357122" fill="white" /><circle cx="64.26858590591134" cy="467.75826177716544" r="24.172659775754397" fill="white" /><circle cx="252.17451222645403" cy="76.88113732926635" r="14.784910051032" fill="white" /><circle cx="299.10343338223305" cy="338.81915139771667" r="20.98063382728668" fill="white" /><circle cx="154.42216373760883" cy="7.979459290308433" r="12.888131786783596" fill="white" /><circle cx="17.26866599427348" cy="86.52434658174806" r="28.822092703035768" fill="white" /><circle cx="331.93416604084854" cy="130.2490049201248" r="26.88986595554378" fill="white" /><circle cx="257.05868213414396" cy="478.90768224775087" r="20.0896237227645" fill="white" /><circle cx="0.03263008961393865" cy="395.11743757238463" r="26.616543495375467" fill="white" /><circle cx="97.91780757854562" cy="125.56535290569606" r="11.265182746866829" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Biology of Belief
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Bruce Lipton
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

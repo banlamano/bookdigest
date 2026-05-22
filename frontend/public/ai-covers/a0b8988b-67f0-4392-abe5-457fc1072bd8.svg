@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a0b8988b-67f0-4392-abe5-457fc1072bd8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a0b8988b-67f0-4392-abe5-457fc1072bd8)" />
+  <g opacity="0.1">
+    <circle cx="77.28950574501275" cy="416.2263988544693" r="10.002237566770322" fill="white" /><circle cx="226.4401021384234" cy="46.66339243272579" r="29.7757851903626" fill="white" /><circle cx="90.37651254227241" cy="419.81552613298356" r="10.486785294018697" fill="white" /><circle cx="115.37480297506195" cy="359.1800335811569" r="18.092221534023924" fill="white" /><circle cx="284.6412317823681" cy="143.20542271749798" r="17.310497375475997" fill="white" /><circle cx="390.1961135120333" cy="585.1196312014027" r="28.253245146303584" fill="white" /><circle cx="149.37235407684227" cy="184.70678132545274" r="18.23500029974513" fill="white" /><circle cx="84.02023657938264" cy="72.41773073070887" r="11.78996620500972" fill="white" /><circle cx="65.41690510936142" cy="403.3030978276718" r="13.662499591576099" fill="white" /><circle cx="7.546545220318457" cy="514.0930611904847" r="11.646031836175798" fill="white" /><circle cx="317.44580369207074" cy="195.43630257683867" r="27.114771039684292" fill="white" /><circle cx="306.55580987307485" cy="532.4807156081147" r="23.631149618652753" fill="white" /><circle cx="390.7946451221251" cy="579.5853593858789" r="12.678294620486223" fill="white" /><circle cx="16.716140450984575" cy="28.067217118987074" r="21.662892289587383" fill="white" /><circle cx="113.27394671954418" cy="262.8688342266628" r="22.916099103381665" fill="white" /><circle cx="380.1327776539856" cy="295.2452066969275" r="20.868139319815857" fill="white" /><circle cx="347.90869509832123" cy="73.84516881873876" r="18.795592056031467" fill="white" /><circle cx="270.0007803449918" cy="294.686696459682" r="20.574470368930633" fill="white" /><circle cx="17.539069400065046" cy="589.4187544816883" r="25.503383187629467" fill="white" /><circle cx="91.31202837292057" cy="565.5849017159928" r="18.88888771555156" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Weisssein: Verletzliche
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Privilegien – Die
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Schattenseiten der
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robin DiAngelo
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

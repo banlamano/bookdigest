@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-faa03fc6-454c-406c-966e-068ff92f637c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-faa03fc6-454c-406c-966e-068ff92f637c)" />
+  <g opacity="0.1">
+    <circle cx="284.6176979497402" cy="279.00937678730014" r="17.07519676292142" fill="white" /><circle cx="99.9268089299858" cy="517.6453632454788" r="20.89599229741483" fill="white" /><circle cx="140.23089671105788" cy="24.923504260408635" r="20.09144978796506" fill="white" /><circle cx="63.76493634205844" cy="373.9299211009287" r="21.839812107238135" fill="white" /><circle cx="16.76578572751182" cy="398.8903437821706" r="11.964878381015389" fill="white" /><circle cx="86.25161724984194" cy="43.76465586718303" r="23.887247036858888" fill="white" /><circle cx="328.9815637995848" cy="212.37382120006382" r="14.899379523948522" fill="white" /><circle cx="33.66448611563979" cy="591.8156034543317" r="19.68135255280498" fill="white" /><circle cx="0.07827419704020677" cy="477.1034495345193" r="23.282903149728227" fill="white" /><circle cx="350.3121617527206" cy="328.02277256568874" r="14.524350931701788" fill="white" /><circle cx="105.62638966674673" cy="369.42621989262943" r="11.771831933426844" fill="white" /><circle cx="129.4669340771806" cy="266.9687897760816" r="23.455275437224575" fill="white" /><circle cx="150.67661958498434" cy="481.9400315975642" r="28.39062279702789" fill="white" /><circle cx="348.7400520529779" cy="169.32717461411468" r="17.807276145329276" fill="white" /><circle cx="27.42344036010018" cy="108.91215990536436" r="22.09655200251155" fill="white" /><circle cx="276.89890965894944" cy="567.5778043779978" r="16.41639010270014" fill="white" /><circle cx="126.99417794170351" cy="238.64460476962955" r="27.271203785448773" fill="white" /><circle cx="106.01038841486097" cy="570.7256145638049" r="16.943948052193736" fill="white" /><circle cx="32.01540692147038" cy="201.74496915925664" r="13.293884771694412" fill="white" /><circle cx="31.47685083066598" cy="106.16126599193964" r="20.664328801733113" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die wichtigste Lektion
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        für jeden Investor:
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Denken wie ein
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Howard Marks
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

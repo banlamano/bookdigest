@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ab3e02ca-12b0-47dd-a6dd-361200d581b3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ab3e02ca-12b0-47dd-a6dd-361200d581b3)" />
+  <g opacity="0.1">
+    <circle cx="283.22386565149014" cy="325.68585015668833" r="26.59117203129848" fill="white" /><circle cx="383.09911108134867" cy="534.5000818823772" r="11.964414194505137" fill="white" /><circle cx="162.62438692886042" cy="357.19441734491" r="13.82619321850447" fill="white" /><circle cx="205.6136211448696" cy="521.6866800477927" r="29.006258680246816" fill="white" /><circle cx="101.84595230951894" cy="392.6610292523827" r="15.872983164576171" fill="white" /><circle cx="75.83908367420955" cy="533.5601516102602" r="11.971439813057243" fill="white" /><circle cx="223.36261056569532" cy="396.8649562286093" r="14.394069012265804" fill="white" /><circle cx="307.1067493222197" cy="278.7605910354212" r="26.2202942174452" fill="white" /><circle cx="97.4708331861518" cy="145.54344263865997" r="29.342770501344447" fill="white" /><circle cx="32.47918435835455" cy="531.9440607895159" r="22.899051486928986" fill="white" /><circle cx="208.06649974863655" cy="239.15185506465767" r="13.981701897831034" fill="white" /><circle cx="392.2326415731277" cy="152.3711110320668" r="25.591732241126927" fill="white" /><circle cx="264.0245367933239" cy="282.09670519637723" r="26.092627321832868" fill="white" /><circle cx="226.03121493632165" cy="54.72023171792162" r="16.73276619860907" fill="white" /><circle cx="82.99667619506135" cy="450.2034643146044" r="26.03086285502306" fill="white" /><circle cx="217.62697816580098" cy="479.64037960222805" r="22.343361024509022" fill="white" /><circle cx="95.33459774141573" cy="84.3071588379193" r="14.360986139256934" fill="white" /><circle cx="42.54555982780435" cy="362.786987647999" r="29.160092964853458" fill="white" /><circle cx="260.80244949271736" cy="366.8533666002154" r="29.997136048967345" fill="white" /><circle cx="373.71871701804065" cy="481.08293049253126" r="22.03280859074039" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Organisierte Gehirn:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wie wir Klarheit schaffen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        und den Überblick
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Daniel Levitin
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

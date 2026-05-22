@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-14203037-62ca-4b1b-af59-e74f19c0f29e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-14203037-62ca-4b1b-af59-e74f19c0f29e)" />
+  <g opacity="0.1">
+    <circle cx="209.5806663368429" cy="182.96682465809255" r="13.170492357025509" fill="white" /><circle cx="314.3810599473253" cy="297.6756062278238" r="27.148638793400966" fill="white" /><circle cx="263.948156765865" cy="251.61746224750098" r="10.978626750318263" fill="white" /><circle cx="218.76902205311688" cy="436.3859817502644" r="28.43371597818577" fill="white" /><circle cx="123.44499207281147" cy="238.91349465988193" r="15.66777559356468" fill="white" /><circle cx="371.1184860960441" cy="568.9818865978424" r="11.829276161072446" fill="white" /><circle cx="77.02421338910246" cy="143.19141671780028" r="19.424697057735514" fill="white" /><circle cx="289.3620961431165" cy="494.08629481563855" r="22.371551894079857" fill="white" /><circle cx="44.450536538076335" cy="340.7644325776963" r="12.860061317252512" fill="white" /><circle cx="10.785279254278324" cy="450.8349096838691" r="22.652858265528124" fill="white" /><circle cx="393.0758286721606" cy="391.38450527482456" r="13.845194395247024" fill="white" /><circle cx="309.5427188682163" cy="223.69663651039338" r="15.539619620055436" fill="white" /><circle cx="380.85321973152276" cy="35.26587924869573" r="11.338109798591223" fill="white" /><circle cx="60.79755886627196" cy="442.53913474168473" r="17.107474214918998" fill="white" /><circle cx="245.59547808528743" cy="246.292282294237" r="11.566462220778593" fill="white" /><circle cx="209.10396441685717" cy="427.00103445178013" r="18.90974106234707" fill="white" /><circle cx="345.1931045918313" cy="313.657105119931" r="14.286135285043715" fill="white" /><circle cx="196.56342543011252" cy="571.5089837410587" r="29.858330341356695" fill="white" /><circle cx="87.43902333210123" cy="268.49947441543094" r="25.597014575062147" fill="white" /><circle cx="295.66949796189897" cy="530.5770347816882" r="22.837667418973062" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Perennial Seller
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ryan Holiday
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9770818e-367b-4b90-8a33-ee5b57683036" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9770818e-367b-4b90-8a33-ee5b57683036)" />
+  <g opacity="0.1">
+    <circle cx="391.69753460786853" cy="196.03267301131407" r="17.694596754798305" fill="white" /><circle cx="159.94140347651492" cy="312.75805271680576" r="18.04471855829761" fill="white" /><circle cx="374.69501724050303" cy="485.7013659695379" r="11.212047675318004" fill="white" /><circle cx="388.1904423150616" cy="317.56814286511303" r="19.928362370502906" fill="white" /><circle cx="114.18860880621553" cy="296.0064613139233" r="13.989434282408734" fill="white" /><circle cx="166.2442280430993" cy="383.60352372815953" r="28.850474884078356" fill="white" /><circle cx="320.0934228012271" cy="429.6451479489944" r="13.504196026701639" fill="white" /><circle cx="62.94048796580416" cy="13.799357817956937" r="23.459476250117845" fill="white" /><circle cx="19.569046269420774" cy="39.62600384365926" r="24.995566938285002" fill="white" /><circle cx="176.33332605722165" cy="509.8058287101993" r="23.651712014240758" fill="white" /><circle cx="320.2212683454402" cy="489.39490537395767" r="15.668865038906938" fill="white" /><circle cx="290.3422418171594" cy="577.0329972987912" r="10.281537291317179" fill="white" /><circle cx="206.2148314578072" cy="143.40496584117278" r="14.604097644167378" fill="white" /><circle cx="176.13837560316324" cy="217.49797498690236" r="12.513806934993987" fill="white" /><circle cx="34.966107179424725" cy="378.98880913670644" r="11.602412791176773" fill="white" /><circle cx="39.623626399280944" cy="292.60335741696827" r="27.84582735908748" fill="white" /><circle cx="199.06696822894872" cy="544.2017877187099" r="22.751150619034604" fill="white" /><circle cx="137.8820455117335" cy="545.0402552781667" r="16.730735065263456" fill="white" /><circle cx="336.1858087616226" cy="504.6056511620648" r="25.988709449412664" fill="white" /><circle cx="281.7331641247099" cy="267.9845839969312" r="13.201575119844835" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Essentialismus: Die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        konsequente Suche nach
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Weniger
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Greg McKeown
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

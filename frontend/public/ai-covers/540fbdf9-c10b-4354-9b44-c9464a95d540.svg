@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-540fbdf9-c10b-4354-9b44-c9464a95d540" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-540fbdf9-c10b-4354-9b44-c9464a95d540)" />
+  <g opacity="0.1">
+    <circle cx="346.13218167798505" cy="157.35569519699706" r="26.50816751558552" fill="white" /><circle cx="360.04988960948003" cy="386.3161018025323" r="28.432234910580107" fill="white" /><circle cx="208.6184879288801" cy="574.9366240047588" r="10.606592277779633" fill="white" /><circle cx="162.51032798083367" cy="136.28091828104237" r="25.125621741161943" fill="white" /><circle cx="141.78398270432558" cy="24.234550103949815" r="24.60872391322848" fill="white" /><circle cx="20.630108866691764" cy="331.92466935274143" r="11.590417818522996" fill="white" /><circle cx="13.029793198065232" cy="253.91388694505503" r="10.011225679340479" fill="white" /><circle cx="57.3457376575405" cy="528.4483032126171" r="10.200290152390362" fill="white" /><circle cx="98.45184626374896" cy="549.7760181317774" r="24.379967278810888" fill="white" /><circle cx="311.820582500477" cy="72.665074607497" r="10.137960550642344" fill="white" /><circle cx="130.31565204874633" cy="21.09327456833303" r="20.161687969553597" fill="white" /><circle cx="398.61786178365355" cy="56.207829797161835" r="16.350955308164888" fill="white" /><circle cx="211.1236456199305" cy="336.01508244000775" r="10.207254988075524" fill="white" /><circle cx="379.4119594912918" cy="200.91044766880788" r="28.16181733341786" fill="white" /><circle cx="29.562553608941222" cy="18.77166849555212" r="11.045634965830953" fill="white" /><circle cx="280.3123336331455" cy="133.37005569313493" r="11.289600385363286" fill="white" /><circle cx="189.68473989786125" cy="561.5395921607463" r="21.852436077486022" fill="white" /><circle cx="318.3492041421242" cy="353.9373488286121" r="15.05172517224774" fill="white" /><circle cx="149.52647836770288" cy="217.19514830685767" r="14.68455367662308" fill="white" /><circle cx="290.54178571074914" cy="284.17467937748205" r="17.56436973925296" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Und die Berge antworteten
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Khaled Hosseini
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

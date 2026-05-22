@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-60e42253-553a-47fd-b027-c63e825d3210" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-60e42253-553a-47fd-b027-c63e825d3210)" />
+  <g opacity="0.1">
+    <circle cx="286.8091465886283" cy="288.5804421066951" r="11.274380356840716" fill="white" /><circle cx="280.9174464367849" cy="231.7076508013133" r="13.263051442957208" fill="white" /><circle cx="133.54144663294898" cy="92.94550580144632" r="18.113961415534128" fill="white" /><circle cx="250.22315389313542" cy="520.7095456765077" r="13.357706861184852" fill="white" /><circle cx="82.83699785074381" cy="476.24801382389467" r="24.360132906360768" fill="white" /><circle cx="41.258592643327006" cy="364.81498798166945" r="21.11219897853466" fill="white" /><circle cx="356.2849971685963" cy="67.55465015366242" r="28.279187839297784" fill="white" /><circle cx="243.63853610574532" cy="465.1837853061013" r="20.690395433980896" fill="white" /><circle cx="369.0190141089401" cy="132.67274099750094" r="11.827034389927487" fill="white" /><circle cx="262.34157236734126" cy="16.34085508597236" r="10.839182544853776" fill="white" /><circle cx="94.5448489446405" cy="409.77506141534155" r="27.552159903526203" fill="white" /><circle cx="27.184027265515233" cy="329.71411870402784" r="22.485287208392393" fill="white" /><circle cx="210.72345054298847" cy="531.6682674290406" r="26.05283179776694" fill="white" /><circle cx="356.0542010689841" cy="203.6282637007843" r="13.565644255066447" fill="white" /><circle cx="201.45492473104585" cy="450.41337685046557" r="21.864640331962846" fill="white" /><circle cx="370.30161527015895" cy="187.72653356797295" r="18.060645719953207" fill="white" /><circle cx="115.38355330543087" cy="205.0047737108094" r="25.698892682471932" fill="white" /><circle cx="55.303084269172096" cy="339.6627532726166" r="27.039214163764985" fill="white" /><circle cx="336.706810729846" cy="306.3069507009961" r="18.330035799340095" fill="white" /><circle cx="172.24128359469086" cy="474.11290227838936" r="28.01791491760214" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        How to Be an Antiracist:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Über Rassismus aufklären
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        und Diskriminierung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ibram X. Kendi
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

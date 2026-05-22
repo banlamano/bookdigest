@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b50df6eb-1029-448b-8681-c1323fcbfe8d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b50df6eb-1029-448b-8681-c1323fcbfe8d)" />
+  <g opacity="0.1">
+    <circle cx="241.57040164272794" cy="562.9653939874324" r="20.405919399130553" fill="white" /><circle cx="48.61108849036935" cy="555.8962916030295" r="16.797784913223992" fill="white" /><circle cx="393.72826848440394" cy="192.15624248858109" r="16.887004246524032" fill="white" /><circle cx="169.7035501303565" cy="574.1931260399109" r="21.526501289747458" fill="white" /><circle cx="40.49379799801884" cy="92.47675009406684" r="22.24952610519916" fill="white" /><circle cx="356.1538383944518" cy="561.5553306342211" r="10.892803734364458" fill="white" /><circle cx="199.8413374786889" cy="262.29751875179375" r="24.55197731309458" fill="white" /><circle cx="46.78448594297615" cy="563.1016976991349" r="13.966073686783941" fill="white" /><circle cx="232.66145407878565" cy="92.28547846772616" r="19.37707375276147" fill="white" /><circle cx="24.604717055494785" cy="476.688604668207" r="13.290560084961434" fill="white" /><circle cx="38.18316330582512" cy="356.8570850976113" r="14.516052546817077" fill="white" /><circle cx="315.37310636674147" cy="490.6771037538072" r="28.374340420003964" fill="white" /><circle cx="341.30610824033" cy="566.3992705660855" r="17.623170114456887" fill="white" /><circle cx="269.8126905744442" cy="65.63771848652196" r="19.895557891828172" fill="white" /><circle cx="258.72086421314566" cy="569.0199969220001" r="22.03714561937912" fill="white" /><circle cx="367.81814167924983" cy="158.37279788250868" r="25.531369282134595" fill="white" /><circle cx="279.9657923070364" cy="319.048976269779" r="25.99385969069997" fill="white" /><circle cx="375.2677300391639" cy="325.5141529564651" r="26.843015378035787" fill="white" /><circle cx="394.9736419582904" cy="302.4584530836514" r="16.117563727704393" fill="white" /><circle cx="32.31572432883696" cy="464.6689375773503" r="22.315762781382393" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Getting Things Done
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        David Allen
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0b2df526-086c-4a5b-9cb1-1ad318e05aa6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0b2df526-086c-4a5b-9cb1-1ad318e05aa6)" />
+  <g opacity="0.1">
+    <circle cx="152.04259204449357" cy="443.7318524233522" r="19.55938970908989" fill="white" /><circle cx="181.30095955518274" cy="329.13762393320707" r="11.413755216568921" fill="white" /><circle cx="73.27087830267529" cy="564.9469474237748" r="27.233107122407773" fill="white" /><circle cx="69.81816314010811" cy="389.5490409971987" r="21.394341245853923" fill="white" /><circle cx="225.08385924190867" cy="36.77201673261119" r="10.872231913660874" fill="white" /><circle cx="370.4822975222176" cy="388.4187171790587" r="15.561607029016669" fill="white" /><circle cx="383.71930552897277" cy="339.405379385325" r="12.242163363539492" fill="white" /><circle cx="225.6146960018234" cy="299.7165405790698" r="28.93653659058916" fill="white" /><circle cx="130.23261406578573" cy="281.44697058556886" r="13.404264458213461" fill="white" /><circle cx="51.531527095626785" cy="332.06767033188527" r="18.40373224365165" fill="white" /><circle cx="106.69763730172903" cy="210.3252741681637" r="24.002434451225" fill="white" /><circle cx="156.93223754187713" cy="488.8818047268841" r="24.990739925737458" fill="white" /><circle cx="342.2451298126355" cy="20.73631867164163" r="12.845976275725137" fill="white" /><circle cx="120.825070496835" cy="89.8829205164158" r="27.6860416812924" fill="white" /><circle cx="15.509596063538389" cy="533.5026048607263" r="25.67836078709871" fill="white" /><circle cx="263.50324222159685" cy="302.97366715218743" r="17.511220665337888" fill="white" /><circle cx="156.88870046932647" cy="251.63958791705795" r="18.103467007606824" fill="white" /><circle cx="144.709411351888" cy="280.23442981063664" r="15.904527610392076" fill="white" /><circle cx="67.42611362560748" cy="460.9652739295823" r="12.237245916980648" fill="white" /><circle cx="31.846036843106738" cy="13.798860404043012" r="14.949648816604098" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das 80/20-Prinzip: Mehr
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Erfolg mit weniger
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Aufwand
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Richard Koch
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

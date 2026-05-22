@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-432df126-4b54-4a93-bd6d-471d656e9c5d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-432df126-4b54-4a93-bd6d-471d656e9c5d)" />
+  <g opacity="0.1">
+    <circle cx="64.1283420292321" cy="405.96646665267247" r="26.737933922633225" fill="white" /><circle cx="51.46886631270186" cy="30.648278034910838" r="11.997292530272695" fill="white" /><circle cx="355.3116306469127" cy="539.6121820782909" r="14.694364604518908" fill="white" /><circle cx="130.7539242353421" cy="120.43857784728714" r="11.849149385483482" fill="white" /><circle cx="337.7080434775729" cy="84.1946785514206" r="18.036648305727702" fill="white" /><circle cx="15.508475316877846" cy="551.967538716263" r="28.62780105332128" fill="white" /><circle cx="324.1008658912798" cy="468.87609317665914" r="17.471433512511886" fill="white" /><circle cx="76.61393408745857" cy="54.63241168192068" r="22.615217037915382" fill="white" /><circle cx="132.4617808568548" cy="13.005276081084993" r="10.349541503938461" fill="white" /><circle cx="17.82598693205739" cy="140.9623289129427" r="18.22247593151465" fill="white" /><circle cx="105.13267932941055" cy="65.63073726339536" r="12.33362736728557" fill="white" /><circle cx="50.66471727522028" cy="469.2471713341774" r="26.497581558709236" fill="white" /><circle cx="208.13520516519785" cy="296.10894851935626" r="23.099182516206508" fill="white" /><circle cx="113.71386372126469" cy="423.3769196427454" r="10.710327527087085" fill="white" /><circle cx="122.8527045022144" cy="486.7337845569871" r="14.933965591903116" fill="white" /><circle cx="213.0776868785754" cy="146.90677202517224" r="15.672223553206152" fill="white" /><circle cx="37.58031990841238" cy="256.86201371089686" r="16.050866180094943" fill="white" /><circle cx="244.2849510792288" cy="258.1745442969666" r="23.091872538321574" fill="white" /><circle cx="42.194453386578346" cy="330.8292527800594" r="28.922739960835347" fill="white" /><circle cx="49.27670370682864" cy="429.51002279181574" r="28.631880941835945" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        How Not to Die
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Michael Greger
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

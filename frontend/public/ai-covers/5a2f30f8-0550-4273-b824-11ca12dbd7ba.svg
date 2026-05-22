@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5a2f30f8-0550-4273-b824-11ca12dbd7ba" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5a2f30f8-0550-4273-b824-11ca12dbd7ba)" />
+  <g opacity="0.1">
+    <circle cx="7.795571080496089" cy="95.83400693439759" r="12.1980099402206" fill="white" /><circle cx="13.44906023784187" cy="547.4756948241992" r="25.728891271631003" fill="white" /><circle cx="174.27579449419963" cy="358.2632476535015" r="26.221302086021737" fill="white" /><circle cx="399.3672685482546" cy="227.25150458464736" r="11.3526595965077" fill="white" /><circle cx="212.50848651748865" cy="476.22980989003486" r="15.632774933793442" fill="white" /><circle cx="56.23219624744835" cy="307.3908025665765" r="23.38274012867498" fill="white" /><circle cx="71.85158833739197" cy="556.8588079380913" r="24.41065661722975" fill="white" /><circle cx="256.9406959359216" cy="368.1525352606153" r="14.458267693043531" fill="white" /><circle cx="193.99790022000255" cy="46.29595325457221" r="13.628132954208983" fill="white" /><circle cx="299.9037508389391" cy="211.38881175601364" r="16.31147314825015" fill="white" /><circle cx="157.04400213014446" cy="565.2635172199297" r="25.098758534735605" fill="white" /><circle cx="174.65831630859608" cy="53.28932187038426" r="27.190133682307223" fill="white" /><circle cx="205.7010309904165" cy="413.21045902197653" r="19.398601759706935" fill="white" /><circle cx="66.17025776794935" cy="1.8076889639059734" r="25.16935565242477" fill="white" /><circle cx="82.7433567692704" cy="60.05322465347476" r="19.382048449362536" fill="white" /><circle cx="254.40553489137346" cy="461.0077943065804" r="26.684245354746544" fill="white" /><circle cx="346.47807115855016" cy="573.6279477999253" r="13.067758216274505" fill="white" /><circle cx="377.5476519673939" cy="187.2267435384379" r="16.139173366528844" fill="white" /><circle cx="371.2248289750551" cy="306.5528248781522" r="10.306180535907686" fill="white" /><circle cx="356.59114813265876" cy="478.02866739110476" r="24.698945469245984" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Shoe Dog
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Phil Knight
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

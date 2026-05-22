@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a150821e-8d16-4f09-9285-5a2d6dc41afc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a150821e-8d16-4f09-9285-5a2d6dc41afc)" />
+  <g opacity="0.1">
+    <circle cx="243.90241805656606" cy="200.1168949784887" r="20.001779287097346" fill="white" /><circle cx="276.58588372029055" cy="379.3532299431511" r="25.813202510474028" fill="white" /><circle cx="398.33233754415664" cy="215.4476477067486" r="17.228329121426007" fill="white" /><circle cx="100.32812494075642" cy="191.2001110076446" r="25.935544616967746" fill="white" /><circle cx="323.16505103272135" cy="305.1254888121038" r="28.656796535441732" fill="white" /><circle cx="76.00709726427431" cy="43.001375030633085" r="29.080302331408625" fill="white" /><circle cx="108.77826884168509" cy="573.3639671539064" r="21.86733520452025" fill="white" /><circle cx="63.53785021818745" cy="47.705388186313336" r="24.58545809848242" fill="white" /><circle cx="104.58802804712049" cy="535.5200607716915" r="26.04171614888575" fill="white" /><circle cx="297.4637313338843" cy="48.920588916765695" r="21.548343239658546" fill="white" /><circle cx="97.94033647065822" cy="380.01094293586135" r="25.849252551098186" fill="white" /><circle cx="230.4382792722806" cy="267.4736860383574" r="28.000590866882504" fill="white" /><circle cx="323.70063576109635" cy="209.68154227618405" r="29.172910183708275" fill="white" /><circle cx="57.398678481328645" cy="425.00069565246287" r="26.481543212418547" fill="white" /><circle cx="114.97069265983542" cy="599.9677700786535" r="24.62597079799019" fill="white" /><circle cx="27.400451677334292" cy="325.53435275891064" r="19.31497555543504" fill="white" /><circle cx="274.8702202374426" cy="330.35898175470595" r="29.70157592734496" fill="white" /><circle cx="167.98310789199445" cy="89.76156913013173" r="18.956041926760427" fill="white" /><circle cx="341.7677667605926" cy="294.32700878399885" r="13.056269885927668" fill="white" /><circle cx="255.32822495026176" cy="277.53903477808" r="28.245564070863757" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Upside of Stress
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Kelly McGonigal
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

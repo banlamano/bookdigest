@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1a706af7-bdff-4c9f-be3a-125c40632ed8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1a706af7-bdff-4c9f-be3a-125c40632ed8)" />
+  <g opacity="0.1">
+    <circle cx="212.9929308329037" cy="159.28411728915293" r="18.429853024436685" fill="white" /><circle cx="380.7242325923094" cy="265.99788028551603" r="11.700464701989437" fill="white" /><circle cx="152.23031152800863" cy="16.85202967414716" r="18.568945042327673" fill="white" /><circle cx="201.11484120760235" cy="0.019950355201259207" r="21.68991585339633" fill="white" /><circle cx="250.61093378461527" cy="41.51524131638986" r="28.242526876995054" fill="white" /><circle cx="91.28412052236672" cy="13.401234438026854" r="19.235435220563676" fill="white" /><circle cx="239.42250809317102" cy="486.31804896006645" r="13.923157196961753" fill="white" /><circle cx="391.5469184277361" cy="192.50933672646627" r="14.522434634541572" fill="white" /><circle cx="11.65384615496503" cy="370.8120228459973" r="22.850218389358886" fill="white" /><circle cx="271.5157791100408" cy="110.35867817479608" r="16.219541554429725" fill="white" /><circle cx="259.6624267557048" cy="504.49027378555485" r="20.525472086491252" fill="white" /><circle cx="81.9715689751539" cy="214.75381220744057" r="27.826947085325166" fill="white" /><circle cx="46.627027233263576" cy="370.5938391112499" r="10.185374036329232" fill="white" /><circle cx="242.24109785378653" cy="366.6942372370224" r="27.845704286039044" fill="white" /><circle cx="244.50191937142503" cy="8.449493595791303" r="29.61238239805596" fill="white" /><circle cx="69.8960222598938" cy="126.18626721005108" r="23.355056528123683" fill="white" /><circle cx="289.30149786199684" cy="194.1586914490973" r="16.87556911208251" fill="white" /><circle cx="226.84295698665457" cy="114.89324350678656" r="12.39283500734297" fill="white" /><circle cx="267.25819198050635" cy="133.84012338568238" r="24.141366845701008" fill="white" /><circle cx="190.9468632515046" cy="276.7598192592203" r="11.648063894583718" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Make Time: Die besten
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Strategien für mehr
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Fokus, Energie und Zeit –
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Jake Knapp
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

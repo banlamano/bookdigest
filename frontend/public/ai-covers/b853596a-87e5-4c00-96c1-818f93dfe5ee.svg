@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b853596a-87e5-4c00-96c1-818f93dfe5ee" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b853596a-87e5-4c00-96c1-818f93dfe5ee)" />
+  <g opacity="0.1">
+    <circle cx="56.789553808553926" cy="558.0617308190097" r="18.734754673685096" fill="white" /><circle cx="112.3548876940128" cy="54.514197981220704" r="19.210350634130272" fill="white" /><circle cx="197.23873671442814" cy="347.26714788688577" r="24.90766365780793" fill="white" /><circle cx="33.751451854529705" cy="377.5784998156668" r="17.367226880042754" fill="white" /><circle cx="301.33954278302895" cy="413.3449446768987" r="11.801928054465591" fill="white" /><circle cx="379.15264775859214" cy="156.65836243996316" r="18.26193773886025" fill="white" /><circle cx="293.12575171815723" cy="348.45766619588875" r="10.837030760147904" fill="white" /><circle cx="177.20460583471458" cy="360.81546903889273" r="21.275142364085937" fill="white" /><circle cx="150.39107387483187" cy="237.20709676494675" r="21.51595493844929" fill="white" /><circle cx="9.235236743776687" cy="86.1154815708129" r="23.99349825729459" fill="white" /><circle cx="125.24193665310062" cy="301.3999978926587" r="29.044564100699326" fill="white" /><circle cx="153.14512576343643" cy="466.0542969937759" r="23.27728283742783" fill="white" /><circle cx="398.8920957554062" cy="313.0632752096573" r="24.444271942861675" fill="white" /><circle cx="362.3604227971356" cy="330.86520343867176" r="28.726428797839723" fill="white" /><circle cx="282.6459330485092" cy="314.38371170076465" r="14.692852635278552" fill="white" /><circle cx="222.6997950506326" cy="189.8735682251108" r="29.883702108887494" fill="white" /><circle cx="14.107735180429026" cy="275.67976771944325" r="16.98037897940769" fill="white" /><circle cx="315.27127716746844" cy="30.814119539033836" r="19.356753110474457" fill="white" /><circle cx="61.95933172046901" cy="403.2290687058752" r="13.452233444994297" fill="white" /><circle cx="192.6553240919001" cy="589.0898231816333" r="11.762846918019775" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Think Again: Die Kraft
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        des flexiblen Denkens
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Adam Grant
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

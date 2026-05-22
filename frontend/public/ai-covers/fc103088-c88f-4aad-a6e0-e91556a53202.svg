@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-fc103088-c88f-4aad-a6e0-e91556a53202" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-fc103088-c88f-4aad-a6e0-e91556a53202)" />
+  <g opacity="0.1">
+    <circle cx="81.27707348174708" cy="185.28630490073016" r="19.984810396721933" fill="white" /><circle cx="175.24544017515046" cy="186.19682209352345" r="16.30854710843229" fill="white" /><circle cx="290.00447510346385" cy="50.306366847360785" r="21.015920954967058" fill="white" /><circle cx="206.5294795405566" cy="517.0049310846226" r="18.277144891101727" fill="white" /><circle cx="212.9347438249769" cy="269.3515474023304" r="26.62570281318072" fill="white" /><circle cx="80.04591858020676" cy="413.5578161640503" r="13.87869524699559" fill="white" /><circle cx="129.65926289116547" cy="522.1667819412545" r="18.110370448616656" fill="white" /><circle cx="308.3410494584392" cy="216.93534796269898" r="25.06524645767162" fill="white" /><circle cx="360.7066859496275" cy="99.73404757012946" r="20.138867623786087" fill="white" /><circle cx="395.27479851609445" cy="233.26686286898445" r="16.160044238433866" fill="white" /><circle cx="132.8702197109573" cy="266.3747131265828" r="19.09188017815029" fill="white" /><circle cx="98.82722895150904" cy="271.019570060706" r="10.284293435943088" fill="white" /><circle cx="235.7171965492771" cy="436.1533059094778" r="25.346402904377218" fill="white" /><circle cx="335.8803109368518" cy="114.04703618748215" r="23.00045550079811" fill="white" /><circle cx="340.869202633141" cy="356.75360387342215" r="12.45081273147445" fill="white" /><circle cx="151.18913197312352" cy="327.6306119752062" r="27.739949301798895" fill="white" /><circle cx="52.60278162458927" cy="386.98013340419277" r="24.57168875444897" fill="white" /><circle cx="6.391148932111124" cy="503.1625562084364" r="25.24625556192002" fill="white" /><circle cx="88.59039195414869" cy="54.692882883539326" r="10.462992582851047" fill="white" /><circle cx="169.53256097110105" cy="431.99306611936225" r="11.555835672019807" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        No Excuses!
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brian Tracy
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

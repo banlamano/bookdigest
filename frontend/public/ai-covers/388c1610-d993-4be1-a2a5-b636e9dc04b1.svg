@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-388c1610-d993-4be1-a2a5-b636e9dc04b1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-388c1610-d993-4be1-a2a5-b636e9dc04b1)" />
+  <g opacity="0.1">
+    <circle cx="142.19446402161208" cy="39.220438224902175" r="25.28663523560058" fill="white" /><circle cx="110.64651417614027" cy="381.7380777496489" r="15.222946767074463" fill="white" /><circle cx="314.119346635082" cy="471.25405746275925" r="28.365123076729223" fill="white" /><circle cx="366.9943706853643" cy="65.90417267537163" r="22.02126606487895" fill="white" /><circle cx="132.15499906464544" cy="113.7877208834509" r="19.25462978358169" fill="white" /><circle cx="72.53634493485168" cy="121.66553175299899" r="29.562661423247935" fill="white" /><circle cx="141.030482166368" cy="188.63281767052504" r="15.99747247052921" fill="white" /><circle cx="347.206628795097" cy="524.768350202249" r="27.680453989875108" fill="white" /><circle cx="140.66402459250037" cy="370.38668270844306" r="17.434040560974832" fill="white" /><circle cx="311.9632256273063" cy="151.59665424360037" r="20.010371274832455" fill="white" /><circle cx="295.3956360946197" cy="569.8579648682361" r="19.061818698676547" fill="white" /><circle cx="182.333181134426" cy="172.45654878543078" r="23.81687534967809" fill="white" /><circle cx="332.53689661895953" cy="392.772800739341" r="19.258890205680125" fill="white" /><circle cx="301.97420424508215" cy="524.8081259906136" r="11.651475537073496" fill="white" /><circle cx="150.34283007319954" cy="278.8247834678507" r="13.753924730841389" fill="white" /><circle cx="275.9831410563232" cy="265.97485146559825" r="23.761907685474753" fill="white" /><circle cx="39.94807466949677" cy="541.2964803889952" r="21.829603687450067" fill="white" /><circle cx="356.62296221280354" cy="83.69459981735238" r="18.57219616131389" fill="white" /><circle cx="84.84337185539657" cy="175.6158161240383" r="29.19296153857708" fill="white" /><circle cx="59.04372233160187" cy="388.174256864657" r="29.30489651208677" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Unf*ck Yourself
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Gary John Bishop
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

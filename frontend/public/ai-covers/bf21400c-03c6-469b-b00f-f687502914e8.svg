@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-bf21400c-03c6-469b-b00f-f687502914e8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-bf21400c-03c6-469b-b00f-f687502914e8)" />
+  <g opacity="0.1">
+    <circle cx="117.012002195756" cy="206.98690796990363" r="21.159240271875042" fill="white" /><circle cx="267.1793215851034" cy="241.01931536310758" r="15.750695519985168" fill="white" /><circle cx="140.13340303299296" cy="106.30318450827856" r="13.481808531991295" fill="white" /><circle cx="195.11015360825712" cy="534.8173645785938" r="11.668058761538413" fill="white" /><circle cx="167.86005981847993" cy="401.5936255738574" r="19.54886848162713" fill="white" /><circle cx="373.3017562951603" cy="526.626452537586" r="10.550317851126971" fill="white" /><circle cx="87.89376616050104" cy="203.5028752668701" r="15.613265422099456" fill="white" /><circle cx="62.97865980602748" cy="239.42592414721534" r="21.256525204393164" fill="white" /><circle cx="351.9660075328873" cy="353.0745264748326" r="15.019188447399861" fill="white" /><circle cx="195.09948087412909" cy="284.05396504855895" r="19.552246329097297" fill="white" /><circle cx="18.394948672624167" cy="394.4675338856525" r="28.841362769043556" fill="white" /><circle cx="61.574482554941" cy="155.85669844536915" r="28.48146805102379" fill="white" /><circle cx="331.16161769609545" cy="37.26304933325386" r="26.667232599602997" fill="white" /><circle cx="345.5211653515649" cy="462.837467266082" r="20.334147476783457" fill="white" /><circle cx="213.5601895987223" cy="167.91903692472263" r="24.3894969593169" fill="white" /><circle cx="108.5974086151364" cy="59.69073013771398" r="11.282425640280046" fill="white" /><circle cx="301.44642776680905" cy="553.9659431753919" r="23.76862671729195" fill="white" /><circle cx="103.22867007198901" cy="410.2974675045092" r="20.756877406375466" fill="white" /><circle cx="198.84487874652373" cy="431.99903777918746" r="13.868029029756086" fill="white" /><circle cx="41.417387746715484" cy="150.14780175167002" r="27.050954111083975" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Alles Licht, das wir
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        nicht sehen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Anthony Doerr
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

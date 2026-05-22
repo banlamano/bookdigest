@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-054ac3a9-e21c-4093-88e5-c2c367bfa81b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-054ac3a9-e21c-4093-88e5-c2c367bfa81b)" />
+  <g opacity="0.1">
+    <circle cx="385.5425582535601" cy="345.24352342287995" r="19.691996816401414" fill="white" /><circle cx="153.44922793308356" cy="121.97185741521453" r="21.011817108816032" fill="white" /><circle cx="88.11376106296716" cy="424.3707422717773" r="18.31685758199432" fill="white" /><circle cx="328.2676721830071" cy="277.29090252118294" r="18.83782346992946" fill="white" /><circle cx="303.48185401688863" cy="160.0731587259265" r="25.631860032447065" fill="white" /><circle cx="364.06285266453904" cy="235.1658060914094" r="17.443980743347442" fill="white" /><circle cx="317.68459981495687" cy="554.3312409717112" r="27.259252026915306" fill="white" /><circle cx="77.94523267823767" cy="128.9165390753316" r="12.419414744522467" fill="white" /><circle cx="226.23604410071047" cy="531.1650341220284" r="22.016739656525523" fill="white" /><circle cx="380.8409468837212" cy="484.83743500717304" r="19.009738696725584" fill="white" /><circle cx="123.41184382504737" cy="375.2008163571923" r="24.736572078495435" fill="white" /><circle cx="288.8776608427026" cy="51.35601060178949" r="21.44579708143362" fill="white" /><circle cx="292.08165361055677" cy="52.47067754545629" r="26.20473477896219" fill="white" /><circle cx="370.1872925998441" cy="503.12196905715354" r="26.851198505144865" fill="white" /><circle cx="273.5112991331443" cy="211.94580573941565" r="19.51444518441813" fill="white" /><circle cx="273.5339426734343" cy="132.50956041031222" r="24.761331486224" fill="white" /><circle cx="154.6510172092733" cy="352.3580276495071" r="25.584438329953695" fill="white" /><circle cx="281.9382141090375" cy="416.10316081845724" r="12.854037004737153" fill="white" /><circle cx="154.3713554375615" cy="251.23373348040715" r="17.88395983252308" fill="white" /><circle cx="325.2292573443264" cy="414.81621382737575" r="17.628912939660204" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Common Stocks and
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Uncommon Profits
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Philip Fisher
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

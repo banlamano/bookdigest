@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0798c8cc-d584-4442-94b0-6c178f756fa1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0798c8cc-d584-4442-94b0-6c178f756fa1)" />
+  <g opacity="0.1">
+    <circle cx="180.8869366438985" cy="404.67478819899804" r="22.112043540876435" fill="white" /><circle cx="383.2766419144996" cy="248.73032691629402" r="18.347129724148747" fill="white" /><circle cx="181.94215087661817" cy="302.6657311772742" r="11.231114813714761" fill="white" /><circle cx="121.83941660576419" cy="306.44293442274056" r="11.965131372076904" fill="white" /><circle cx="204.44775098012494" cy="530.7574134911137" r="23.714530013078445" fill="white" /><circle cx="71.45249252642279" cy="182.12019042672898" r="29.774040254597544" fill="white" /><circle cx="203.77989760956626" cy="223.77184332424284" r="16.566754664492244" fill="white" /><circle cx="132.67280452215076" cy="343.7555960317706" r="18.680781511324057" fill="white" /><circle cx="49.18908529013333" cy="145.83530231522374" r="12.701163327475049" fill="white" /><circle cx="219.9006825851026" cy="424.24686714322553" r="21.833423811778335" fill="white" /><circle cx="370.6299214163718" cy="44.08960879253399" r="22.925298358064445" fill="white" /><circle cx="184.93490347131737" cy="120.07433475930473" r="23.04940911390115" fill="white" /><circle cx="285.0145880799472" cy="558.7171551796056" r="23.419663792579453" fill="white" /><circle cx="276.41176977207647" cy="378.11971152046664" r="13.208969166758225" fill="white" /><circle cx="230.10793235389738" cy="422.0576803015433" r="11.78832577268534" fill="white" /><circle cx="360.24900758596783" cy="13.650366778493805" r="29.7173908281654" fill="white" /><circle cx="315.589913779119" cy="364.5100364784866" r="28.618997895933568" fill="white" /><circle cx="145.32104299128332" cy="336.0394646049695" r="24.43454126487011" fill="white" /><circle cx="359.7007665013022" cy="401.98545161466876" r="29.056753500911693" fill="white" /><circle cx="26.286186414819348" cy="198.01731461536644" r="29.94719203549391" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Lila Kuh: Verwandle
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Dein Business, indem Du
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        außergewöhnlich bist
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Seth Godin
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

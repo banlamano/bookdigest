@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d9a88705-3570-408f-834d-405d79703125" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d9a88705-3570-408f-834d-405d79703125)" />
+  <g opacity="0.1">
+    <circle cx="295.03130368349764" cy="434.07633246143126" r="18.69559625778041" fill="white" /><circle cx="236.43862030839537" cy="354.4406486153205" r="17.596856070054592" fill="white" /><circle cx="222.16527315962352" cy="280.26928394807834" r="27.753443964954727" fill="white" /><circle cx="40.517165747958295" cy="42.9578238681283" r="10.930716994469813" fill="white" /><circle cx="16.217426185156558" cy="194.4694752181971" r="24.04672365010598" fill="white" /><circle cx="293.29458968722815" cy="374.8256630037234" r="10.82588000964219" fill="white" /><circle cx="283.01277763553554" cy="173.35495676847762" r="25.149198148817742" fill="white" /><circle cx="391.3884852804054" cy="477.94575257450674" r="17.23049027022102" fill="white" /><circle cx="127.69922145726883" cy="116.65579591394373" r="28.03822404342196" fill="white" /><circle cx="280.875701623552" cy="84.55302804745932" r="28.716757530059727" fill="white" /><circle cx="375.54784935912187" cy="136.76928139177772" r="24.37184451114572" fill="white" /><circle cx="194.13614004185905" cy="536.5080488290349" r="26.620352979894257" fill="white" /><circle cx="275.0419855726018" cy="556.3871768875101" r="23.81468517419922" fill="white" /><circle cx="59.69850933364222" cy="378.18526394839387" r="14.173826444980815" fill="white" /><circle cx="81.23939778390738" cy="207.0403125422863" r="22.119316910710694" fill="white" /><circle cx="294.7322129899824" cy="194.65452112756094" r="28.131218028485968" fill="white" /><circle cx="367.3676639830317" cy="594.9767586280882" r="21.35476953879604" fill="white" /><circle cx="96.8369158842739" cy="209.4671459712946" r="13.175864927478866" fill="white" /><circle cx="40.20239864708892" cy="16.017881721802517" r="10.147161768304784" fill="white" /><circle cx="214.1836431142759" cy="105.24527842738757" r="17.10808276256548" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Gung Ho!: Erfolgreich mit
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Begeisterung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ken Blanchard
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-036ba804-ad96-4376-90e4-d270f77c53a4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-036ba804-ad96-4376-90e4-d270f77c53a4)" />
+  <g opacity="0.1">
+    <circle cx="153.35507661081925" cy="88.79327000400525" r="12.595561509884439" fill="white" /><circle cx="71.81888393641086" cy="49.942667457404255" r="27.785622730086395" fill="white" /><circle cx="345.2842313940738" cy="1.0751185463136137" r="13.517950830685859" fill="white" /><circle cx="237.05352611308706" cy="76.20296018121202" r="23.49859263740073" fill="white" /><circle cx="111.24724363447909" cy="163.41266732633412" r="20.4449260907979" fill="white" /><circle cx="75.82096765839759" cy="32.97634585340339" r="13.08095240939365" fill="white" /><circle cx="168.1980734427539" cy="284.667435404131" r="16.04370444594212" fill="white" /><circle cx="311.5565753164992" cy="597.5414840850445" r="10.666037062783232" fill="white" /><circle cx="122.30199429941635" cy="328.9921611399419" r="24.8585879446087" fill="white" /><circle cx="92.81373192255384" cy="220.43901850221332" r="27.582014840146208" fill="white" /><circle cx="354.8062972857444" cy="26.68783929781815" r="16.59844573608295" fill="white" /><circle cx="249.45772899211377" cy="371.10130792058675" r="23.316063094066042" fill="white" /><circle cx="369.03795451729724" cy="219.73872956181893" r="18.78275813089074" fill="white" /><circle cx="349.59487655981604" cy="455.51601132852414" r="19.395662300679987" fill="white" /><circle cx="20.964704351571363" cy="441.960152719369" r="19.60896919503252" fill="white" /><circle cx="369.218404989543" cy="181.29271452885865" r="21.973403024872344" fill="white" /><circle cx="225.7953771577132" cy="369.7697337766659" r="18.90704273495343" fill="white" /><circle cx="84.55909971994969" cy="314.1751354744377" r="13.631397768963485" fill="white" /><circle cx="329.1302432917021" cy="579.6176465891912" r="29.219278878615505" fill="white" /><circle cx="106.69080112436298" cy="85.58818738967433" r="27.71912457430699" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        21 Lessons for the 21st
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Century
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Yuval Noah Harari
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

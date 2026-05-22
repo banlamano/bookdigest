@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f83d887a-4f0c-402d-ace3-55549a7e1d7d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f83d887a-4f0c-402d-ace3-55549a7e1d7d)" />
+  <g opacity="0.1">
+    <circle cx="28.164507589703945" cy="349.7823704290565" r="18.619532375007353" fill="white" /><circle cx="217.81975925996275" cy="314.6953145404096" r="19.686230335841014" fill="white" /><circle cx="54.73899221313254" cy="373.2290826181469" r="21.412711573195267" fill="white" /><circle cx="136.13926657323483" cy="95.43005903661481" r="26.008338215713106" fill="white" /><circle cx="147.52143513616667" cy="45.38244061107377" r="16.484394354816747" fill="white" /><circle cx="60.00926014613634" cy="146.06017783635335" r="25.750317142117172" fill="white" /><circle cx="189.34238234554067" cy="66.42735066181285" r="25.523962115935564" fill="white" /><circle cx="0.4306246800550362" cy="22.689042806698346" r="17.00701311551292" fill="white" /><circle cx="139.36004809675978" cy="165.72491700108176" r="29.52536797536176" fill="white" /><circle cx="177.21985843000226" cy="432.24421914329025" r="19.2604440409855" fill="white" /><circle cx="15.993727155756599" cy="338.52509917405536" r="23.76740971968943" fill="white" /><circle cx="144.47500633551567" cy="362.1042581807264" r="11.924698042385348" fill="white" /><circle cx="107.83075240839737" cy="55.30237841062042" r="11.648503015875756" fill="white" /><circle cx="56.50511508020788" cy="584.1858810563621" r="18.152141372268414" fill="white" /><circle cx="195.99670998874132" cy="344.96265818294575" r="12.174556157947933" fill="white" /><circle cx="334.38331465845897" cy="559.8409750599776" r="17.168546646033235" fill="white" /><circle cx="99.07148079651348" cy="81.83056888095592" r="14.998014294132398" fill="white" /><circle cx="27.825882447070647" cy="340.4202994993436" r="25.62183684690889" fill="white" /><circle cx="154.8532109360815" cy="287.289180929792" r="28.700978670670576" fill="white" /><circle cx="195.43833301297968" cy="453.322457651778" r="10.296747085604354" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        #AskGaryVee: Eine
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Anleitung für Gründer,
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Unternehmer und
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Gary Vaynerchuk
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

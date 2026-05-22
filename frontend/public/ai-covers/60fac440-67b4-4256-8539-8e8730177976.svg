@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-60fac440-67b4-4256-8539-8e8730177976" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-60fac440-67b4-4256-8539-8e8730177976)" />
+  <g opacity="0.1">
+    <circle cx="111.84286562749355" cy="168.25080669034566" r="27.64668674897702" fill="white" /><circle cx="382.50414485008196" cy="477.7448323507561" r="25.550961420758444" fill="white" /><circle cx="240.95867107223293" cy="131.4137503032015" r="19.62094509053504" fill="white" /><circle cx="308.597494420769" cy="187.24858348901805" r="26.54881322492535" fill="white" /><circle cx="82.67706201745048" cy="503.4384151816826" r="14.39478362348547" fill="white" /><circle cx="251.56117946865493" cy="357.6825142290745" r="14.51481343863755" fill="white" /><circle cx="233.78768950481913" cy="272.1894153770954" r="25.803227834035923" fill="white" /><circle cx="333.091422036336" cy="493.72178104477746" r="25.297216812898455" fill="white" /><circle cx="372.42159828600563" cy="279.68976649196486" r="21.571974876109405" fill="white" /><circle cx="280.8242471778372" cy="586.5689897580679" r="29.9891727243958" fill="white" /><circle cx="369.40979546955066" cy="73.4367406641465" r="23.720072178577837" fill="white" /><circle cx="39.99584490674617" cy="136.91407789588348" r="26.254048235680663" fill="white" /><circle cx="354.71449073225443" cy="81.80730843894995" r="25.910425281792705" fill="white" /><circle cx="345.4835035581334" cy="21.24017170796644" r="17.558960214469607" fill="white" /><circle cx="283.7932520417498" cy="17.76829891591052" r="16.127567257316997" fill="white" /><circle cx="47.32562745046525" cy="415.75125789259675" r="28.177524279108233" fill="white" /><circle cx="80.09731369969377" cy="535.56813581639" r="15.768517536029421" fill="white" /><circle cx="298.6810718573334" cy="239.20709369499244" r="27.55222374120194" fill="white" /><circle cx="311.7657305928183" cy="508.4504127118691" r="11.83732994786551" fill="white" /><circle cx="398.555240110665" cy="307.3319020820839" r="28.801661847207296" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Intelligent Investor
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Benjamin Graham
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

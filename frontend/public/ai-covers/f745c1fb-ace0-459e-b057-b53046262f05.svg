@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f745c1fb-ace0-459e-b057-b53046262f05" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f745c1fb-ace0-459e-b057-b53046262f05)" />
+  <g opacity="0.1">
+    <circle cx="1.6020280685708155" cy="308.4930492351539" r="20.49673084875882" fill="white" /><circle cx="185.6677269736478" cy="572.340990434407" r="15.745288836015192" fill="white" /><circle cx="388.4010443778204" cy="189.74067324607697" r="27.09490882901513" fill="white" /><circle cx="275.3406155997665" cy="175.6744712800819" r="13.189894725483224" fill="white" /><circle cx="90.64094277736756" cy="322.882504877617" r="22.47858804157461" fill="white" /><circle cx="164.7688148608851" cy="544.4699134263483" r="26.475339716971398" fill="white" /><circle cx="29.662330512097856" cy="537.3700007899346" r="10.06565086003861" fill="white" /><circle cx="176.97198778867082" cy="18.15637075389269" r="24.593982214047845" fill="white" /><circle cx="59.12864667287412" cy="261.07685132767017" r="13.72353886349648" fill="white" /><circle cx="199.5403408024436" cy="330.827941716682" r="25.906067425783426" fill="white" /><circle cx="105.98168473957989" cy="535.3590790599238" r="18.66810747700621" fill="white" /><circle cx="102.89224595854742" cy="326.0739070017058" r="13.886127429732426" fill="white" /><circle cx="250.59524080726257" cy="147.4417937591952" r="17.698271237347264" fill="white" /><circle cx="19.731918118430293" cy="289.52344069706606" r="25.28874088621939" fill="white" /><circle cx="127.21752698891669" cy="258.04545788592554" r="21.305762974244377" fill="white" /><circle cx="112.77998509060785" cy="337.07902486027626" r="15.680114173269573" fill="white" /><circle cx="233.9250241993588" cy="5.746355496836308" r="24.647310196665533" fill="white" /><circle cx="64.96651481986765" cy="528.6949003532479" r="24.19648049111558" fill="white" /><circle cx="221.62145859532973" cy="555.5700898401437" r="15.845694641276378" fill="white" /><circle cx="21.12215260974817" cy="30.078456041842294" r="28.991358152383178" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        You Are the Placebo
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Joe Dispenza
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

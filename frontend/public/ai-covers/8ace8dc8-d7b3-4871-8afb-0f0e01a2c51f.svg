@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8ace8dc8-d7b3-4871-8afb-0f0e01a2c51f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8ace8dc8-d7b3-4871-8afb-0f0e01a2c51f)" />
+  <g opacity="0.1">
+    <circle cx="26.120326348285204" cy="185.76966978400824" r="13.111902402077721" fill="white" /><circle cx="111.2442105341887" cy="387.56595414152997" r="24.24418289439677" fill="white" /><circle cx="202.18422755864273" cy="559.0234172619525" r="19.260995624782627" fill="white" /><circle cx="262.25963827964705" cy="405.48022882850404" r="11.956372445692962" fill="white" /><circle cx="354.0892285456847" cy="40.62859418620521" r="16.257235145878873" fill="white" /><circle cx="140.84487471712367" cy="274.7753975150538" r="14.57344313685545" fill="white" /><circle cx="21.371567641601573" cy="247.06709635526138" r="18.508791999719605" fill="white" /><circle cx="334.32520934446137" cy="520.1870723413141" r="28.777623105529056" fill="white" /><circle cx="172.10985488392035" cy="403.2950303788036" r="28.53749319398525" fill="white" /><circle cx="76.53658123370599" cy="312.9874722431411" r="16.693494384629453" fill="white" /><circle cx="375.72036391485494" cy="122.33845496007405" r="28.741848875131538" fill="white" /><circle cx="363.23233612366937" cy="385.56344297046445" r="15.932405061079676" fill="white" /><circle cx="87.2392104441683" cy="50.35739502173222" r="20.177103587679916" fill="white" /><circle cx="73.96215059394922" cy="563.8738178269365" r="16.48517262892839" fill="white" /><circle cx="116.95098454219325" cy="78.21065574511692" r="23.599802903643177" fill="white" /><circle cx="340.0464219827621" cy="590.0456105676446" r="28.37000080629013" fill="white" /><circle cx="60.91867501273973" cy="75.86295087834038" r="21.616901327540145" fill="white" /><circle cx="325.2032467724928" cy="345.1778299644825" r="26.189416762155403" fill="white" /><circle cx="95.02832306223601" cy="287.80657308416204" r="21.27065619798876" fill="white" /><circle cx="178.37489110464992" cy="279.4536769341645" r="14.90426357680732" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Rich Dad Poor Dad: Was
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        die Reichen ihren Kindern
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        über Geld beibringen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Robert Kiyosaki
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8901f9b9-c70c-4317-9d3a-04ca8763b249" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8901f9b9-c70c-4317-9d3a-04ca8763b249)" />
+  <g opacity="0.1">
+    <circle cx="194.76041585101228" cy="225.62427076953583" r="17.519694535335844" fill="white" /><circle cx="351.1654795571893" cy="484.6073846036797" r="13.007085398111009" fill="white" /><circle cx="237.10105401061168" cy="569.2362972848144" r="16.80716084552565" fill="white" /><circle cx="382.9855592706413" cy="141.67632711405608" r="21.84994547406143" fill="white" /><circle cx="70.00844610250074" cy="24.356152405121946" r="23.311048865282107" fill="white" /><circle cx="10.921080219069124" cy="439.383894920463" r="13.102623468286755" fill="white" /><circle cx="30.371740412762183" cy="209.3190499220295" r="18.16194327802926" fill="white" /><circle cx="11.937437688159314" cy="42.016589143593784" r="18.32078811534377" fill="white" /><circle cx="145.92743628320446" cy="458.8850465186797" r="21.844866361487732" fill="white" /><circle cx="77.20257737659391" cy="446.251065444771" r="16.01016942295286" fill="white" /><circle cx="366.2632034861952" cy="147.12113819913094" r="14.188599299532797" fill="white" /><circle cx="136.9513684873934" cy="204.35151151730832" r="14.240286860737807" fill="white" /><circle cx="111.70917265730789" cy="179.60702709803866" r="20.424364942046626" fill="white" /><circle cx="389.5588488538856" cy="14.92381341554423" r="28.598513713425916" fill="white" /><circle cx="19.437689358414502" cy="358.8698731867371" r="27.34264202949237" fill="white" /><circle cx="48.43098411564193" cy="199.84163668288153" r="28.499514231879047" fill="white" /><circle cx="286.11026081720894" cy="326.31581898590355" r="24.853371402485397" fill="white" /><circle cx="221.30149463771264" cy="326.8955985362068" r="28.64526726725481" fill="white" /><circle cx="348.05368093099963" cy="473.96757443804904" r="20.76592114947629" fill="white" /><circle cx="49.4164638835334" cy="496.7499927497878" r="16.288925671754992" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Culture Code: Die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Geheimnisse erfolgreicher
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Teams
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Daniel Coyle
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b9066e33-441c-4efc-b0f8-4ed1a1332ea5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b9066e33-441c-4efc-b0f8-4ed1a1332ea5)" />
+  <g opacity="0.1">
+    <circle cx="329.5561046949541" cy="553.4911743666225" r="13.275439954647851" fill="white" /><circle cx="141.32083053221726" cy="101.06251328302763" r="20.246133676629203" fill="white" /><circle cx="37.59044114756884" cy="429.0524606096964" r="18.14117140331335" fill="white" /><circle cx="84.86027297688992" cy="108.33724297337233" r="25.096549627287843" fill="white" /><circle cx="359.39812828342764" cy="298.78287397354217" r="19.020790849457942" fill="white" /><circle cx="379.7774789875987" cy="379.6101902300069" r="20.910596487767258" fill="white" /><circle cx="337.73131118335044" cy="499.8176712813148" r="10.44868914440961" fill="white" /><circle cx="380.3461052316666" cy="5.110213062969637" r="28.393407111659684" fill="white" /><circle cx="308.44264852850387" cy="314.3809788391708" r="19.369636072505454" fill="white" /><circle cx="377.33149541392027" cy="470.9512929588136" r="11.22704079583258" fill="white" /><circle cx="320.7469005166651" cy="240.9100514541214" r="28.983710645239597" fill="white" /><circle cx="382.1699799292648" cy="541.638985680041" r="23.93116624903964" fill="white" /><circle cx="277.43339031461505" cy="221.21181722889932" r="19.335245122832934" fill="white" /><circle cx="87.1432361848552" cy="458.777082811848" r="12.384075922869453" fill="white" /><circle cx="295.82006342958647" cy="170.67474732762525" r="28.04600972202989" fill="white" /><circle cx="319.16634485492096" cy="475.93344794468476" r="19.694663242110323" fill="white" /><circle cx="147.98578800564846" cy="92.35496682217277" r="18.508355815222195" fill="white" /><circle cx="114.05434672561219" cy="201.67239516150124" r="20.19457009210622" fill="white" /><circle cx="298.6044606969729" cy="354.07760137355586" r="19.25392715706907" fill="white" /><circle cx="93.99809190738036" cy="230.32616305647957" r="26.248055860229712" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The War of Art
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Steven Pressfield
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c1eb086f-b794-4a47-825a-a182ae2f3bb6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c1eb086f-b794-4a47-825a-a182ae2f3bb6)" />
+  <g opacity="0.1">
+    <circle cx="187.83235279694472" cy="67.55161110219174" r="13.072333966529595" fill="white" /><circle cx="87.87984917808762" cy="285.1177741196776" r="21.252338454351577" fill="white" /><circle cx="334.7904801177546" cy="149.4834047320618" r="16.38943366979464" fill="white" /><circle cx="394.28336962019927" cy="50.58887378523804" r="27.94120323287823" fill="white" /><circle cx="42.91071505731057" cy="151.5613849666374" r="17.537522871505065" fill="white" /><circle cx="337.36853436137886" cy="350.573453869365" r="24.796762458269555" fill="white" /><circle cx="357.5872801585844" cy="85.28512656741812" r="10.978347773117417" fill="white" /><circle cx="56.82087181716335" cy="33.95148403234454" r="24.372226277741404" fill="white" /><circle cx="302.2130714498741" cy="170.8138163636169" r="28.37406965655086" fill="white" /><circle cx="63.04295277945609" cy="189.35169530190285" r="17.792213216273232" fill="white" /><circle cx="303.8085909735893" cy="526.3181630614705" r="27.921089599977854" fill="white" /><circle cx="234.74705588368718" cy="163.76096340834167" r="11.818491859788924" fill="white" /><circle cx="311.5969460384108" cy="429.612665457118" r="29.418393454367727" fill="white" /><circle cx="43.12469146294306" cy="371.17685003792985" r="24.877958853894437" fill="white" /><circle cx="100.43537028337953" cy="376.80118352679557" r="10.164701664768048" fill="white" /><circle cx="54.02700906603592" cy="413.48473305541654" r="23.749409290253286" fill="white" /><circle cx="117.32494021058545" cy="486.04947352883505" r="16.12456748333633" fill="white" /><circle cx="34.42829084638244" cy="38.62282859785222" r="16.94677441006835" fill="white" /><circle cx="35.5678257204056" cy="202.14279371041553" r="10.431361845451253" fill="white" /><circle cx="141.23406593716211" cy="221.03869961479526" r="11.111223791589284" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Snowball
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Alice Schroeder
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

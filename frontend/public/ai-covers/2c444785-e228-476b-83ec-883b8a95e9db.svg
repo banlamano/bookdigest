@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-2c444785-e228-476b-83ec-883b8a95e9db" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-2c444785-e228-476b-83ec-883b8a95e9db)" />
+  <g opacity="0.1">
+    <circle cx="58.94085729565002" cy="486.394179402081" r="25.11298219955801" fill="white" /><circle cx="2.191784897928528" cy="174.08320000224646" r="28.510624541018753" fill="white" /><circle cx="81.71594494860432" cy="320.8497986972215" r="26.72787527279825" fill="white" /><circle cx="376.0217991424565" cy="267.4257038051234" r="19.897198640467096" fill="white" /><circle cx="284.0383398331778" cy="108.73688897489242" r="22.779458092985447" fill="white" /><circle cx="138.84638942226033" cy="98.291718237231" r="27.911306809964135" fill="white" /><circle cx="186.29325545187382" cy="278.12647060246167" r="28.605343662563644" fill="white" /><circle cx="104.72265344122582" cy="95.92577381169392" r="29.43685668647527" fill="white" /><circle cx="137.96861328571896" cy="476.16115240890923" r="19.423351101418056" fill="white" /><circle cx="42.698367106628375" cy="84.61670498605218" r="12.534687809834438" fill="white" /><circle cx="286.15082265550285" cy="320.2802985777888" r="23.949595811273472" fill="white" /><circle cx="296.4081539966658" cy="84.89593277345735" r="28.957761331835634" fill="white" /><circle cx="102.71709397015015" cy="398.05105479948537" r="14.034332891866184" fill="white" /><circle cx="84.083446794875" cy="292.1729192660841" r="23.246607491436006" fill="white" /><circle cx="363.1286735180878" cy="506.8297577563851" r="11.448819961631937" fill="white" /><circle cx="205.20669405912236" cy="277.93750072309746" r="15.39122746103157" fill="white" /><circle cx="54.60262622643577" cy="122.81880329766783" r="19.052282323082327" fill="white" /><circle cx="351.62237411168144" cy="296.55939984280786" r="20.460176713617315" fill="white" /><circle cx="161.2834267922416" cy="48.263737829192245" r="24.111439651438577" fill="white" /><circle cx="129.9484705766295" cy="326.7321414109036" r="21.341195790142486" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Happiness-Projekt:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Oder: Wie ich lernte, das
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Leben zu genießen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Gretchen Rubin
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0962bdbe-7030-44a0-a820-c1835579ea4c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0962bdbe-7030-44a0-a820-c1835579ea4c)" />
+  <g opacity="0.1">
+    <circle cx="242.41264615294025" cy="532.1735316522971" r="16.995885685584433" fill="white" /><circle cx="173.4238543533444" cy="575.2320355147324" r="13.391153076482102" fill="white" /><circle cx="13.836423840320577" cy="257.12852273961545" r="15.377152280283306" fill="white" /><circle cx="89.49108424184362" cy="367.9834039637401" r="28.53721686643261" fill="white" /><circle cx="270.7267219235204" cy="527.0717116736204" r="28.441075400115395" fill="white" /><circle cx="191.9398528047754" cy="126.18124271989868" r="20.498520819259866" fill="white" /><circle cx="92.18528443610761" cy="44.88620899287643" r="16.05555866247079" fill="white" /><circle cx="286.5982967956001" cy="231.48333509463203" r="17.89114162943396" fill="white" /><circle cx="217.01176411488828" cy="334.55088474919734" r="20.761848814972097" fill="white" /><circle cx="200.6651653103895" cy="232.87792809522983" r="23.790498559402096" fill="white" /><circle cx="192.10322670012056" cy="392.19363400575287" r="17.58871730907828" fill="white" /><circle cx="394.5627799155686" cy="415.27727894486355" r="21.74972500474402" fill="white" /><circle cx="111.02067833387159" cy="307.87613304528116" r="10.84066583379296" fill="white" /><circle cx="296.475658589178" cy="46.407197236063546" r="11.578914469861758" fill="white" /><circle cx="347.90233845232154" cy="258.92999011260946" r="19.891714586962774" fill="white" /><circle cx="63.13458541468657" cy="106.27530691295031" r="21.07225545239814" fill="white" /><circle cx="158.29976902899782" cy="191.27695972572752" r="21.44195950263676" fill="white" /><circle cx="348.7033420725533" cy="538.4419151454638" r="16.09594698127283" fill="white" /><circle cx="42.115625983141754" cy="292.0059555391719" r="27.978399996546145" fill="white" /><circle cx="214.55555331907598" cy="232.00257207326467" r="27.64311561799643" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Auch wenn du Angst hast,
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        tu es trotzdem: Wie man
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        vom Opfer zum Meister
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Susan Jeffers
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f1232fae-e887-41d4-aba5-b7a036113749" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f1232fae-e887-41d4-aba5-b7a036113749)" />
+  <g opacity="0.1">
+    <circle cx="71.5458835847083" cy="415.66475758075336" r="20.46674752064071" fill="white" /><circle cx="324.0249149042789" cy="346.32552974498066" r="12.764648196784208" fill="white" /><circle cx="103.9946530355648" cy="314.1858748742387" r="18.242482366170954" fill="white" /><circle cx="206.46903136374593" cy="313.43353318827525" r="28.35030775033022" fill="white" /><circle cx="372.583556394345" cy="567.5625059971876" r="28.35022202456188" fill="white" /><circle cx="396.2428043265947" cy="323.8996706758596" r="14.329658157704374" fill="white" /><circle cx="89.76438123187921" cy="59.3705242412027" r="11.295273757511568" fill="white" /><circle cx="178.94151122691358" cy="132.29458473328975" r="12.096253187736973" fill="white" /><circle cx="372.3554516049229" cy="265.4621975062594" r="21.6285611300937" fill="white" /><circle cx="273.05432769553414" cy="372.52011138242375" r="10.714071328543406" fill="white" /><circle cx="291.69217003249213" cy="153.15427412334716" r="19.578880084816507" fill="white" /><circle cx="119.46346604995016" cy="130.29606384130773" r="21.505934974618803" fill="white" /><circle cx="371.07149542817706" cy="315.8593635058576" r="24.339871073200236" fill="white" /><circle cx="85.92891836751959" cy="1.7511968880910445" r="23.80599386025084" fill="white" /><circle cx="122.05967867495771" cy="364.15539252438754" r="25.420007855904252" fill="white" /><circle cx="362.3673308330544" cy="267.86150804639084" r="10.209800219633705" fill="white" /><circle cx="313.3691177534119" cy="578.9565495608557" r="14.94237185252799" fill="white" /><circle cx="142.84613489715366" cy="291.1155490681878" r="25.216783074923523" fill="white" /><circle cx="81.34639467778638" cy="510.34199133477614" r="22.63564419049363" fill="white" /><circle cx="288.8316036846658" cy="517.0630769752878" r="14.974814317336417" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Off the Clock
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Laura Vanderkam
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

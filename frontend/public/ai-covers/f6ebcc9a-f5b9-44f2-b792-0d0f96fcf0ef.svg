@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f6ebcc9a-f5b9-44f2-b792-0d0f96fcf0ef" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f6ebcc9a-f5b9-44f2-b792-0d0f96fcf0ef)" />
+  <g opacity="0.1">
+    <circle cx="194.86799314392388" cy="180.48212300255778" r="18.0423530124039" fill="white" /><circle cx="86.11603321991934" cy="285.5079286469713" r="28.45887335521103" fill="white" /><circle cx="196.39758619491715" cy="511.9242879405372" r="21.348529370461755" fill="white" /><circle cx="192.5061792346445" cy="535.6093925252503" r="23.344531557447958" fill="white" /><circle cx="335.40429792909674" cy="284.3961063992332" r="28.36475913350839" fill="white" /><circle cx="245.27716911140956" cy="598.5690975184596" r="20.972480624156606" fill="white" /><circle cx="71.65014125220024" cy="113.16129468817427" r="26.896643096914488" fill="white" /><circle cx="47.50799954131666" cy="594.8427367754093" r="27.27459250680426" fill="white" /><circle cx="15.84397162233131" cy="376.1654710182257" r="24.313879287047016" fill="white" /><circle cx="363.9998435488582" cy="406.0235702418622" r="24.12745461907764" fill="white" /><circle cx="282.75025731240794" cy="282.4915030925714" r="26.615197890155248" fill="white" /><circle cx="335.6373062165917" cy="89.46276724940189" r="11.477551181331336" fill="white" /><circle cx="248.4404406993995" cy="499.1343747235146" r="20.83028019719672" fill="white" /><circle cx="132.27987494242987" cy="202.535285907906" r="26.07120707124948" fill="white" /><circle cx="196.28514764151137" cy="401.75586508485605" r="29.362716983396936" fill="white" /><circle cx="374.40770624921083" cy="263.230233647101" r="20.183263100115663" fill="white" /><circle cx="240.7537654057906" cy="148.26344150907278" r="11.159202265603401" fill="white" /><circle cx="297.82054704762913" cy="552.3467559085914" r="15.282228204194032" fill="white" /><circle cx="304.5615395277999" cy="418.87365835135915" r="12.513550077535182" fill="white" /><circle cx="235.53614693973245" cy="585.7489092669084" r="22.58494807651752" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Now Habit
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Neil Fiore
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

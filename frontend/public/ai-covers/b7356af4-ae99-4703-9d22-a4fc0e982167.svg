@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b7356af4-ae99-4703-9d22-a4fc0e982167" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b7356af4-ae99-4703-9d22-a4fc0e982167)" />
+  <g opacity="0.1">
+    <circle cx="262.34852712574633" cy="218.74151566766088" r="12.01369020583319" fill="white" /><circle cx="119.03019114385955" cy="334.5233814748007" r="13.009035327244051" fill="white" /><circle cx="119.58732096801903" cy="495.3074973125569" r="17.50759124542904" fill="white" /><circle cx="315.85380908305683" cy="597.8355168871184" r="12.71116040199968" fill="white" /><circle cx="8.8901376270623" cy="557.4957314288487" r="27.101154798021632" fill="white" /><circle cx="165.31717161851117" cy="564.2125556927673" r="21.13188526630048" fill="white" /><circle cx="150.4535731958408" cy="470.13631946364296" r="23.120007656500007" fill="white" /><circle cx="272.459686017249" cy="478.7722187016935" r="18.99093405388002" fill="white" /><circle cx="81.50842403540261" cy="391.1508952795716" r="23.372257294984692" fill="white" /><circle cx="60.930260120207876" cy="156.17078378706145" r="16.69579075562603" fill="white" /><circle cx="151.40712111044238" cy="407.7727744348396" r="16.09644535076093" fill="white" /><circle cx="115.9533816904529" cy="414.4376783443442" r="18.465889904003102" fill="white" /><circle cx="8.250610862920826" cy="419.72414387262364" r="18.36769310094677" fill="white" /><circle cx="74.57871282587685" cy="385.2430257007674" r="12.775582451266223" fill="white" /><circle cx="148.34346047799946" cy="487.05852256725206" r="15.547728149606971" fill="white" /><circle cx="347.8196304928476" cy="390.1449143695296" r="25.279869395083377" fill="white" /><circle cx="201.80749386433945" cy="205.71942929576852" r="21.848602902892367" fill="white" /><circle cx="71.79364815622016" cy="241.8685816443447" r="17.86551280344714" fill="white" /><circle cx="59.960849164202926" cy="199.8389548700286" r="10.476401942047612" fill="white" /><circle cx="328.2364132412238" cy="393.4150780962138" r="28.512994286081735" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Kollaps: Warum
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Gesellschaften untergehen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        oder überleben
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jared Diamond
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HISTORY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

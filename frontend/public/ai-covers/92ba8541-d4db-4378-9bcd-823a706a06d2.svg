@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-92ba8541-d4db-4378-9bcd-823a706a06d2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-92ba8541-d4db-4378-9bcd-823a706a06d2)" />
+  <g opacity="0.1">
+    <circle cx="34.54217709038758" cy="156.17783677238035" r="18.23317823800537" fill="white" /><circle cx="391.19724363365253" cy="276.7505332370818" r="21.76279808253986" fill="white" /><circle cx="259.4917428851178" cy="594.6296311573261" r="29.059218543820243" fill="white" /><circle cx="254.8484648301796" cy="418.26795710217465" r="10.620746823197486" fill="white" /><circle cx="206.80423711785147" cy="270.2766853318693" r="22.7514727805045" fill="white" /><circle cx="349.2308646272968" cy="433.8242606153415" r="12.452138606305427" fill="white" /><circle cx="315.04366097111813" cy="501.2292632164906" r="11.060595679156355" fill="white" /><circle cx="207.09578334515504" cy="252.666298345616" r="27.413208946985982" fill="white" /><circle cx="380.12930274000934" cy="160.36143873387016" r="28.176060612489575" fill="white" /><circle cx="190.65155215276266" cy="561.2243765527636" r="29.55644949463633" fill="white" /><circle cx="260.61714662769737" cy="226.99250474173726" r="10.848724365327424" fill="white" /><circle cx="261.6063023750867" cy="459.7053345985278" r="18.13509713307678" fill="white" /><circle cx="195.3989418307102" cy="168.88399342015893" r="27.886979151102786" fill="white" /><circle cx="279.027658404895" cy="595.6592314666884" r="19.92474127326111" fill="white" /><circle cx="224.18585090665493" cy="221.27456761072565" r="29.553459094428195" fill="white" /><circle cx="230.88766185474947" cy="130.41424997889405" r="27.871149188155247" fill="white" /><circle cx="73.57997828195919" cy="501.4903391293159" r="27.823393631716545" fill="white" /><circle cx="332.82594175072717" cy="154.94423748195217" r="14.54629344106165" fill="white" /><circle cx="280.48914888507335" cy="60.46997769595532" r="21.709318114681132" fill="white" /><circle cx="304.11099448406014" cy="35.58507052189823" r="20.631051711859442" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Just Mercy
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Bryan Stevenson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

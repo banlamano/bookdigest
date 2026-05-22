@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8df4d43c-42cf-4c2e-adde-952a4f180037" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8df4d43c-42cf-4c2e-adde-952a4f180037)" />
+  <g opacity="0.1">
+    <circle cx="378.1014147028873" cy="66.90611389362067" r="16.219343272248594" fill="white" /><circle cx="377.58982828244444" cy="470.4979035684337" r="16.33454896523002" fill="white" /><circle cx="299.79515792063773" cy="248.76254934120053" r="11.072258579225727" fill="white" /><circle cx="157.26347029862336" cy="320.2242766725343" r="14.460494118951644" fill="white" /><circle cx="236.32441284580338" cy="563.7408520916712" r="13.223241111016584" fill="white" /><circle cx="338.2883551116856" cy="576.9686959475433" r="29.22720395693671" fill="white" /><circle cx="261.16970313152825" cy="470.97205644729513" r="16.3729260013846" fill="white" /><circle cx="225.2692026308797" cy="48.94522429312511" r="24.20716808251349" fill="white" /><circle cx="188.20800060329015" cy="489.7394023919977" r="28.768976561009268" fill="white" /><circle cx="311.30079774966674" cy="347.177598758652" r="17.707086072631064" fill="white" /><circle cx="59.520903334503885" cy="504.6658929128087" r="28.60139876009131" fill="white" /><circle cx="132.05358642762053" cy="597.7233604386407" r="23.05489075016989" fill="white" /><circle cx="265.32301638779165" cy="106.89855607734124" r="23.93230011714762" fill="white" /><circle cx="177.10079822067607" cy="222.09295867300963" r="13.878903670564995" fill="white" /><circle cx="117.53860197326543" cy="182.8417686595568" r="15.613930848232393" fill="white" /><circle cx="83.43273340511361" cy="447.60917171891293" r="12.849520890970235" fill="white" /><circle cx="366.25888066192664" cy="153.02263926660194" r="23.07087432953443" fill="white" /><circle cx="381.0391943621824" cy="547.1333557417433" r="25.375208541574565" fill="white" /><circle cx="331.7473877087589" cy="284.3146142986721" r="12.034611022848603" fill="white" /><circle cx="194.16080099090362" cy="406.06704662621945" r="18.298019722153136" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Innovators
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Walter Isaacson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

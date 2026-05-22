@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5bb021f3-bd19-498f-8048-ae16be6116a0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5bb021f3-bd19-498f-8048-ae16be6116a0)" />
+  <g opacity="0.1">
+    <circle cx="121.7341744366598" cy="172.23381943111454" r="21.962746656933888" fill="white" /><circle cx="257.3823192818434" cy="20.42900614484857" r="17.92905756692009" fill="white" /><circle cx="258.4144966037359" cy="385.1986449985059" r="10.87504157825634" fill="white" /><circle cx="232.26696174563446" cy="150.9738832710476" r="22.711714417422016" fill="white" /><circle cx="93.11942332951628" cy="144.3061096819003" r="18.114376979340136" fill="white" /><circle cx="110.1609283707448" cy="120.80526878285855" r="18.458805319897728" fill="white" /><circle cx="255.5930607679615" cy="19.44292400105574" r="12.295679363810017" fill="white" /><circle cx="45.384694660635816" cy="281.5847732969803" r="22.253889981329507" fill="white" /><circle cx="291.0693345050444" cy="488.13743335136235" r="29.429439480846508" fill="white" /><circle cx="294.98923201818354" cy="287.4278959419927" r="15.90111387782221" fill="white" /><circle cx="50.68703020990526" cy="580.3792198223332" r="17.871155022300464" fill="white" /><circle cx="220.836120510159" cy="510.2726117157679" r="14.003702177354402" fill="white" /><circle cx="81.65997840363373" cy="438.8794709664625" r="29.39645163032559" fill="white" /><circle cx="214.25413081331536" cy="153.18998247982555" r="17.685608064179597" fill="white" /><circle cx="230.78316162559477" cy="39.599624615163485" r="19.401599709834308" fill="white" /><circle cx="287.79467739703995" cy="129.94880427302678" r="12.754768543056327" fill="white" /><circle cx="130.10198016485833" cy="7.23198291336391" r="17.056045625628872" fill="white" /><circle cx="45.05754813052021" cy="133.19545937464088" r="11.349137325543674" fill="white" /><circle cx="195.13298672547688" cy="594.8318884976992" r="26.34474113696875" fill="white" /><circle cx="397.2413932452651" cy="69.51865180507544" r="24.97554388111449" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Influence
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Robert Cialdini
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

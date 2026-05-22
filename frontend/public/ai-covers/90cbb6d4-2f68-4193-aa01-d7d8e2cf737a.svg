@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-90cbb6d4-2f68-4193-aa01-d7d8e2cf737a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-90cbb6d4-2f68-4193-aa01-d7d8e2cf737a)" />
+  <g opacity="0.1">
+    <circle cx="326.6718976473093" cy="391.9159919420312" r="14.804268585025218" fill="white" /><circle cx="24.667624664141343" cy="545.3445805510624" r="17.48115711516482" fill="white" /><circle cx="42.574580819456955" cy="451.5996349026239" r="14.008762621027483" fill="white" /><circle cx="312.33201995879455" cy="341.0735889837145" r="10.808044338692902" fill="white" /><circle cx="240.37318267468098" cy="465.56026930044794" r="27.332376266702187" fill="white" /><circle cx="322.4281708037311" cy="526.8532955900755" r="17.926226369034403" fill="white" /><circle cx="286.8527029025865" cy="458.58650690442266" r="18.328295039464184" fill="white" /><circle cx="47.770248284501626" cy="543.5582812566528" r="12.283799389927454" fill="white" /><circle cx="127.62635564336856" cy="29.01758578292508" r="11.836343503611266" fill="white" /><circle cx="101.76479122675156" cy="588.623905979197" r="29.394751212263987" fill="white" /><circle cx="393.64046911639895" cy="560.3293365060292" r="23.902052414651926" fill="white" /><circle cx="225.22649074543284" cy="499.04508289713345" r="13.525415453192815" fill="white" /><circle cx="232.2326863973531" cy="438.4880311581991" r="19.317065113779336" fill="white" /><circle cx="326.0485226281694" cy="103.54961485989105" r="27.409594378626583" fill="white" /><circle cx="166.8602750081651" cy="82.64698443096974" r="26.25102186147613" fill="white" /><circle cx="100.49317834249484" cy="259.50329273558265" r="14.382784580301099" fill="white" /><circle cx="302.03903167209666" cy="18.756147103640906" r="23.559649930052533" fill="white" /><circle cx="7.98400054673758" cy="121.18389174926124" r="16.465898495369785" fill="white" /><circle cx="82.73479147211438" cy="162.80594857681984" r="26.192144740192482" fill="white" /><circle cx="140.59418808764605" cy="72.72845778991481" r="24.80432744617733" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Checklist-Strategie:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wie wir die schwierigsten
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Aufgaben meistern
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Atul Gawande
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1a2b85c5-4b33-4b35-8637-92027ae6b7c7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1a2b85c5-4b33-4b35-8637-92027ae6b7c7)" />
+  <g opacity="0.1">
+    <circle cx="351.0434971529485" cy="425.8303655091741" r="24.18783158531285" fill="white" /><circle cx="162.6815036340165" cy="268.3900368445133" r="20.98969837846709" fill="white" /><circle cx="384.763194637865" cy="524.1334423080375" r="12.419612923631831" fill="white" /><circle cx="399.20603002266813" cy="501.06176407017466" r="24.139863534699124" fill="white" /><circle cx="215.6297168143118" cy="213.67166503623375" r="14.33738684917306" fill="white" /><circle cx="65.31611781340936" cy="302.31732987971895" r="15.98924373835427" fill="white" /><circle cx="147.6050649096007" cy="225.02764096401552" r="14.576082275250272" fill="white" /><circle cx="208.3238064791774" cy="198.440474482298" r="20.987440025017495" fill="white" /><circle cx="202.87114863703542" cy="220.22819384328693" r="13.591477739110182" fill="white" /><circle cx="84.23606267261836" cy="460.64313853339127" r="27.204139654832304" fill="white" /><circle cx="182.52422444988187" cy="167.9624272451485" r="23.48078161437905" fill="white" /><circle cx="63.62713642662601" cy="454.26888034797395" r="10.209421923087001" fill="white" /><circle cx="171.5346661775633" cy="324.3209048243084" r="12.251675086826392" fill="white" /><circle cx="339.0997081444993" cy="363.36596278428186" r="25.58075552225944" fill="white" /><circle cx="356.3089714267413" cy="80.02202546000463" r="25.862608578279996" fill="white" /><circle cx="354.69937697611687" cy="357.09905782979916" r="27.04650313988303" fill="white" /><circle cx="36.119715392662584" cy="386.2022934261247" r="23.870968840435825" fill="white" /><circle cx="272.123800849099" cy="195.25539639983006" r="16.23920368711796" fill="white" /><circle cx="381.7594961735735" cy="251.80483931959083" r="18.732139924304942" fill="white" /><circle cx="80.82538676742494" cy="473.48560722872674" r="24.62896409442282" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Miracle Morning
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Hal Elrod
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

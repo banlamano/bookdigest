@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e0c21201-8df1-4b0a-9d9b-c60a465e524d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e0c21201-8df1-4b0a-9d9b-c60a465e524d)" />
+  <g opacity="0.1">
+    <circle cx="176.51411555538084" cy="76.15414848851839" r="25.445465046999754" fill="white" /><circle cx="274.9405522332928" cy="415.9599678316411" r="23.69269059780253" fill="white" /><circle cx="285.9867887962613" cy="434.438011347209" r="21.60552884309654" fill="white" /><circle cx="182.04762215204946" cy="276.4503182817352" r="23.10463822258817" fill="white" /><circle cx="164.92413203503165" cy="518.9671093681985" r="24.253506684384696" fill="white" /><circle cx="351.3175747903079" cy="244.40626470795058" r="23.86534029537064" fill="white" /><circle cx="271.1996295834306" cy="468.8902496097857" r="20.94639280356552" fill="white" /><circle cx="320.268561116692" cy="91.25929345562567" r="26.705668566370466" fill="white" /><circle cx="173.56481133787892" cy="390.12317349890304" r="27.568929582147852" fill="white" /><circle cx="397.710119207445" cy="360.956848902193" r="13.212531335454756" fill="white" /><circle cx="299.12548296574084" cy="586.9474712764085" r="28.966297431399127" fill="white" /><circle cx="84.9853632612156" cy="464.6019466042728" r="24.540799355668092" fill="white" /><circle cx="350.16348888116676" cy="573.6201297672258" r="23.288475859006248" fill="white" /><circle cx="292.2896813089283" cy="212.23613942284152" r="13.72716618848132" fill="white" /><circle cx="277.14818798065744" cy="503.64734754968987" r="11.928597680084472" fill="white" /><circle cx="117.17169372211136" cy="39.367336760646545" r="12.183657305062363" fill="white" /><circle cx="350.8887729906015" cy="492.2613259636956" r="21.45529657810183" fill="white" /><circle cx="133.572057975804" cy="482.509019787343" r="15.37006583174927" fill="white" /><circle cx="58.38359226449463" cy="344.0425836957274" r="11.464122879950494" fill="white" /><circle cx="171.03590611512027" cy="555.3530627544388" r="17.62857407450948" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Lucifer Effect
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Philip Zimbardo
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

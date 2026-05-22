@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-611f2a8d-3e7e-4fcb-b955-c26c687e7f05" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-611f2a8d-3e7e-4fcb-b955-c26c687e7f05)" />
+  <g opacity="0.1">
+    <circle cx="74.6653757508799" cy="169.29069091550255" r="11.491771833177184" fill="white" /><circle cx="255.59148652756778" cy="498.2852261758683" r="12.638464782342018" fill="white" /><circle cx="236.30930825829643" cy="341.9600596048958" r="24.026819964086123" fill="white" /><circle cx="120.54874585781157" cy="518.8061814653169" r="18.333113145361807" fill="white" /><circle cx="139.31226410948497" cy="523.5459512683667" r="28.139022424746795" fill="white" /><circle cx="219.28876546772335" cy="362.93656409798456" r="28.916536132769842" fill="white" /><circle cx="174.9151242967885" cy="366.16137081159235" r="10.892758300963726" fill="white" /><circle cx="311.2923771940443" cy="131.61141549391272" r="14.810025119672801" fill="white" /><circle cx="108.61207250638421" cy="531.9350913828124" r="20.492923569148964" fill="white" /><circle cx="314.18903724898064" cy="291.39198298554254" r="18.983864260133608" fill="white" /><circle cx="178.55017127602179" cy="466.8667873939344" r="19.44725704945006" fill="white" /><circle cx="334.1902453913837" cy="454.63224117360915" r="16.406410393274307" fill="white" /><circle cx="126.72790342630896" cy="370.4381427969437" r="19.767212142031163" fill="white" /><circle cx="199.31486184306374" cy="466.0267186424159" r="24.446315781127648" fill="white" /><circle cx="99.17608523248367" cy="483.80007426660467" r="26.0164981713923" fill="white" /><circle cx="179.70325656612985" cy="61.35217962149453" r="27.454690246538053" fill="white" /><circle cx="270.0440126607088" cy="21.045075525478584" r="12.633010201285405" fill="white" /><circle cx="399.84726136288765" cy="59.89156584607074" r="14.004559117944485" fill="white" /><circle cx="71.74544467502884" cy="367.5689585005784" r="14.671901566404221" fill="white" /><circle cx="200.63348552152962" cy="79.97707846752864" r="21.57910159142775" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The 5 AM Club
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robin Sharma
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

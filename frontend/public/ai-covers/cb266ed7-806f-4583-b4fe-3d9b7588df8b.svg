@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-cb266ed7-806f-4583-b4fe-3d9b7588df8b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-cb266ed7-806f-4583-b4fe-3d9b7588df8b)" />
+  <g opacity="0.1">
+    <circle cx="85.16057188811357" cy="263.08496706121247" r="25.83579670688092" fill="white" /><circle cx="251.67537250052453" cy="381.25511064551716" r="19.35073960608047" fill="white" /><circle cx="226.15929947215642" cy="518.7461062384544" r="14.378019477039008" fill="white" /><circle cx="394.90499978438163" cy="362.48398072382315" r="18.65165956930123" fill="white" /><circle cx="317.1271083806038" cy="423.75387795996085" r="12.034183481682735" fill="white" /><circle cx="32.89602916437926" cy="72.50812554400778" r="27.418844300133433" fill="white" /><circle cx="338.0081698843284" cy="524.8289000098764" r="28.872990516722087" fill="white" /><circle cx="167.2500262883825" cy="215.0306049222011" r="10.16708421137837" fill="white" /><circle cx="281.9478001321299" cy="212.66519490444597" r="24.914944918413624" fill="white" /><circle cx="83.88132191799076" cy="137.8080864083293" r="26.298920808004418" fill="white" /><circle cx="212.9093829887867" cy="9.33747452572906" r="23.49885023612755" fill="white" /><circle cx="359.5712321014612" cy="482.872475572577" r="27.648422212838305" fill="white" /><circle cx="24.20035015984201" cy="282.6731862518117" r="15.940366349489203" fill="white" /><circle cx="168.44980108789323" cy="57.90011271413091" r="11.474469617437496" fill="white" /><circle cx="204.9996631864548" cy="133.4293599272385" r="24.817924559686684" fill="white" /><circle cx="378.44273884631787" cy="162.97731681354867" r="11.816588947465966" fill="white" /><circle cx="387.72018755397363" cy="351.6789060292953" r="21.841566504258964" fill="white" /><circle cx="213.90445408823373" cy="556.1259231162351" r="20.108089193372766" fill="white" /><circle cx="327.0614500072992" cy="254.3566873411957" r="17.513529937541005" fill="white" /><circle cx="87.54879025302071" cy="377.1659354058054" r="10.437301671620814" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die innere Haltung des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Leiters: Warum wir uns
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        oft selbst im Weg stehen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        The Arbinger Institute
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

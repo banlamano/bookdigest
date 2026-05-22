@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1887450e-a974-4624-a50c-c1a0ccec5866" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1887450e-a974-4624-a50c-c1a0ccec5866)" />
+  <g opacity="0.1">
+    <circle cx="137.9084813826474" cy="385.006765527446" r="12.722282101159987" fill="white" /><circle cx="313.7134221119228" cy="11.889476808126531" r="11.503870179146258" fill="white" /><circle cx="167.1143287511243" cy="82.46443426966883" r="19.069657901273274" fill="white" /><circle cx="280.38939913599427" cy="383.1784766436452" r="23.660675872413933" fill="white" /><circle cx="204.67331695520076" cy="483.29815028554424" r="29.854306456767276" fill="white" /><circle cx="208.66302058338414" cy="275.26631770410813" r="16.887902401614703" fill="white" /><circle cx="281.0630140312264" cy="73.6201254558081" r="12.772303968232212" fill="white" /><circle cx="266.4949697643176" cy="235.73634104782238" r="13.545415135877496" fill="white" /><circle cx="326.4417456646693" cy="417.95592155347066" r="22.099046636205795" fill="white" /><circle cx="373.51645371032447" cy="92.6155720373679" r="27.547538208798933" fill="white" /><circle cx="365.3944579459079" cy="338.196129646471" r="24.52578485448953" fill="white" /><circle cx="311.25454577994435" cy="272.7540523023311" r="12.274805738624242" fill="white" /><circle cx="364.2181158817804" cy="255.54446682144768" r="13.836507099115249" fill="white" /><circle cx="278.5415616520467" cy="123.19963345615155" r="29.386128177307732" fill="white" /><circle cx="57.35053569146697" cy="330.40296893799365" r="17.258143319475124" fill="white" /><circle cx="108.71007843874301" cy="334.5977491828617" r="20.14759371705496" fill="white" /><circle cx="135.15693426690723" cy="152.62782009903052" r="15.036073549750444" fill="white" /><circle cx="20.532467272440826" cy="402.41331352192935" r="12.542225179359964" fill="white" /><circle cx="193.40729434007557" cy="200.94001710713462" r="10.726490385981805" fill="white" /><circle cx="233.8917630262123" cy="15.175051946644746" r="24.243955962430025" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Oma lässt grüßen und
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        sagt, es tut ihr leid
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Fredrik Backman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-2ca7acf5-7928-4d7f-8b65-957aa22ad8cf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-2ca7acf5-7928-4d7f-8b65-957aa22ad8cf)" />
+  <g opacity="0.1">
+    <circle cx="357.3910753824534" cy="0.6265202158876049" r="25.925848923188084" fill="white" /><circle cx="148.7482824706214" cy="151.67669030668407" r="21.39391554819018" fill="white" /><circle cx="364.6432504523327" cy="451.0507623602722" r="17.004152392428757" fill="white" /><circle cx="189.854663671908" cy="174.1278945732374" r="11.462283446349577" fill="white" /><circle cx="340.8367400744564" cy="328.4464551263242" r="10.60873346211168" fill="white" /><circle cx="173.21576572885556" cy="295.41843583001463" r="17.66223060678974" fill="white" /><circle cx="115.7903354637325" cy="15.244258531552646" r="27.170855024135328" fill="white" /><circle cx="249.48746019802397" cy="181.11326949789233" r="11.577691499689776" fill="white" /><circle cx="197.36796154705138" cy="186.8712292573689" r="29.598829254646184" fill="white" /><circle cx="361.0342179262317" cy="233.7934607845786" r="24.01767067272804" fill="white" /><circle cx="222.59194233374254" cy="478.9378124995449" r="24.467427684114334" fill="white" /><circle cx="338.8924445156699" cy="337.16225123116726" r="12.816210865975657" fill="white" /><circle cx="19.454332857838263" cy="323.3601237572328" r="20.14343742582004" fill="white" /><circle cx="383.4639067377499" cy="295.1722409476083" r="28.505083064343275" fill="white" /><circle cx="156.13975278137548" cy="535.6252971254057" r="10.895596855100056" fill="white" /><circle cx="148.1097551441829" cy="488.3504764761187" r="29.38388696449493" fill="white" /><circle cx="49.4152173180725" cy="20.602936893458757" r="18.025575744120047" fill="white" /><circle cx="206.74562046866578" cy="40.221115506853586" r="29.813719772713277" fill="white" /><circle cx="124.62561791066969" cy="131.4188389949055" r="28.262607139260258" fill="white" /><circle cx="378.8742131860566" cy="129.49792211058798" r="19.289628749912126" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Who Will Cry When You
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die?
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robin Sharma
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

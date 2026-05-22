@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a68efcb5-6b42-4dd2-aeed-440b55e4d40b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a68efcb5-6b42-4dd2-aeed-440b55e4d40b)" />
+  <g opacity="0.1">
+    <circle cx="196.17108427118666" cy="30.725906180091677" r="16.16162358138994" fill="white" /><circle cx="216.30991877930376" cy="589.6416840783583" r="27.529221938287662" fill="white" /><circle cx="270.3765732710392" cy="460.63932456255196" r="15.082655330717623" fill="white" /><circle cx="146.47959922127745" cy="40.123633393652526" r="23.556949805021397" fill="white" /><circle cx="374.7039473316224" cy="239.6618228506676" r="17.63136603055413" fill="white" /><circle cx="199.54020834678238" cy="201.06448861547494" r="23.296705487282495" fill="white" /><circle cx="389.8852837254205" cy="458.6694404555734" r="25.764927752270506" fill="white" /><circle cx="379.64234212481705" cy="583.6827105562643" r="26.992399268259827" fill="white" /><circle cx="118.99869081219245" cy="436.72307878464903" r="24.604173419793234" fill="white" /><circle cx="340.5028747982414" cy="74.82694301011345" r="13.105184749932668" fill="white" /><circle cx="32.07870364845817" cy="157.1223334015352" r="27.343851416891663" fill="white" /><circle cx="53.15107089530851" cy="186.36565455286274" r="16.893616223148147" fill="white" /><circle cx="196.0059841691306" cy="254.77611701153043" r="18.88861030354697" fill="white" /><circle cx="364.51854486427663" cy="273.23362271200386" r="13.545569635335202" fill="white" /><circle cx="93.08111116133246" cy="21.4665501881637" r="26.962754536844564" fill="white" /><circle cx="3.7665758967715846" cy="558.331218354216" r="25.952897373489293" fill="white" /><circle cx="177.5872863226474" cy="595.9316443198163" r="17.11587150527638" fill="white" /><circle cx="384.20759750454516" cy="446.1220310992321" r="23.097386174826035" fill="white" /><circle cx="48.00186292651212" cy="92.74203438755126" r="28.122281719635687" fill="white" /><circle cx="206.8070538791858" cy="72.19058202017644" r="29.135385588488116" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Color of Law
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Richard Rothstein
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HISTORY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

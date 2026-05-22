@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-efeb479b-1dd8-421c-aa14-9341bb5c13f5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-efeb479b-1dd8-421c-aa14-9341bb5c13f5)" />
+  <g opacity="0.1">
+    <circle cx="172.32048046814654" cy="81.12992927071802" r="26.33590606783978" fill="white" /><circle cx="391.1261100020564" cy="47.06405979796442" r="26.63331324870359" fill="white" /><circle cx="265.5474381634308" cy="51.77138458568107" r="10.413755724950777" fill="white" /><circle cx="39.85920154926275" cy="55.50871213883857" r="20.85670118084552" fill="white" /><circle cx="94.55125962503192" cy="596.2835513384871" r="10.660743216145796" fill="white" /><circle cx="172.15149853307486" cy="136.82544423858113" r="16.159296283561215" fill="white" /><circle cx="181.67819994279958" cy="351.21078620294486" r="23.700137871903898" fill="white" /><circle cx="157.8007874042671" cy="479.65178685717217" r="29.06345215027984" fill="white" /><circle cx="170.41551279045973" cy="470.06101504284794" r="18.382870693003127" fill="white" /><circle cx="21.26038937773158" cy="96.95372419638433" r="12.105589492317936" fill="white" /><circle cx="5.65691891878064" cy="4.684145163866704" r="15.41527099156922" fill="white" /><circle cx="244.78577822951956" cy="586.9705537906652" r="20.05290961315174" fill="white" /><circle cx="50.46493309898903" cy="184.77830389992758" r="23.435663631074668" fill="white" /><circle cx="352.0597466255108" cy="500.8862701577775" r="13.051178640793541" fill="white" /><circle cx="282.323039712761" cy="507.56737902244885" r="13.79649248644519" fill="white" /><circle cx="313.3648933104166" cy="449.45921520283446" r="21.62130329327944" fill="white" /><circle cx="170.41474501826727" cy="177.5358702650626" r="29.057304461077273" fill="white" /><circle cx="386.71490236765067" cy="402.51443512051753" r="26.523059753125803" fill="white" /><circle cx="203.65438360389555" cy="389.07079449642066" r="15.39479346348896" fill="white" /><circle cx="350.0241285297612" cy="370.7177088970243" r="22.807645479901876" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Gewöhnliche Aktien,
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        außergewöhnliche Gewinne:
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Klassiker für
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Philip Fisher
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

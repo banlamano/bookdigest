@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-dcfa1ced-b206-4826-86e6-17f28ec714fc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-dcfa1ced-b206-4826-86e6-17f28ec714fc)" />
+  <g opacity="0.1">
+    <circle cx="296.2095757974215" cy="379.70016438881277" r="21.894804312158115" fill="white" /><circle cx="133.05375266799268" cy="583.0561072473889" r="15.175933685492515" fill="white" /><circle cx="269.8164027503389" cy="225.66579989583752" r="10.88079876849702" fill="white" /><circle cx="243.40748503554707" cy="315.3046907924767" r="23.98591680704329" fill="white" /><circle cx="236.83946767232226" cy="475.8459045280787" r="12.411602160816583" fill="white" /><circle cx="227.92173699090546" cy="477.00514323629386" r="29.920214755756877" fill="white" /><circle cx="337.2454111765891" cy="136.22460901775938" r="26.03117735109056" fill="white" /><circle cx="231.51027616656" cy="595.223282165077" r="14.62975102120566" fill="white" /><circle cx="235.57268687353624" cy="526.5162921894947" r="19.857876378221864" fill="white" /><circle cx="165.49086410204333" cy="11.51555120327199" r="13.737185623831436" fill="white" /><circle cx="230.4420814416297" cy="180.57345943078528" r="29.31710281594546" fill="white" /><circle cx="257.1632919577285" cy="436.4953217800738" r="19.081667462289467" fill="white" /><circle cx="167.90607673465078" cy="91.51798867020906" r="27.66528768829464" fill="white" /><circle cx="143.04593179653756" cy="132.96450409048532" r="14.775730055655043" fill="white" /><circle cx="260.03292276404926" cy="227.74100146704725" r="25.031752653040797" fill="white" /><circle cx="383.7332406706246" cy="265.5914975381659" r="11.536582926497578" fill="white" /><circle cx="82.44697269879691" cy="269.9834582495579" r="26.980406331576724" fill="white" /><circle cx="160.62687870966968" cy="383.0468497182407" r="22.44227970838607" fill="white" /><circle cx="110.35377877738108" cy="347.9480483363782" r="22.92770793018011" fill="white" /><circle cx="293.46247524271905" cy="487.86490966307883" r="25.078922910237125" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Aktien für alle: So macht
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        man ein Vermögen an der
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Börse
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Peter Lynch
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

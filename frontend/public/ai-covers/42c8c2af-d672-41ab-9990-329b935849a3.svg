@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-42c8c2af-d672-41ab-9990-329b935849a3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-42c8c2af-d672-41ab-9990-329b935849a3)" />
+  <g opacity="0.1">
+    <circle cx="11.196824163509467" cy="250.5390992628597" r="19.01370792358092" fill="white" /><circle cx="121.51147504477731" cy="237.18555148358308" r="20.030206819806605" fill="white" /><circle cx="6.571191808992216" cy="514.1264942588749" r="11.663906072678202" fill="white" /><circle cx="31.589596375032336" cy="49.6517715036874" r="17.792504752527208" fill="white" /><circle cx="9.030888106336032" cy="332.1661177331753" r="13.228904317757955" fill="white" /><circle cx="80.97265199740424" cy="510.6412956535165" r="26.087592019705117" fill="white" /><circle cx="198.08303917639364" cy="496.2800057329125" r="11.461805699389611" fill="white" /><circle cx="58.234829511164186" cy="588.1827450424091" r="15.850883920950112" fill="white" /><circle cx="102.18634334704939" cy="38.63004035532855" r="26.994789918752005" fill="white" /><circle cx="331.03714476941906" cy="430.04899541714644" r="25.20966922918099" fill="white" /><circle cx="317.32944227160704" cy="247.98863245091854" r="28.894980726871953" fill="white" /><circle cx="266.8173884674451" cy="391.3496726793139" r="25.15116168032708" fill="white" /><circle cx="44.03894966441398" cy="373.9059808448621" r="22.160403952025497" fill="white" /><circle cx="233.32026330500673" cy="175.44080731911762" r="10.015830693094152" fill="white" /><circle cx="159.3063442254166" cy="277.68660143253743" r="23.39454584744982" fill="white" /><circle cx="79.80870867195944" cy="144.18222770779542" r="25.813087867537142" fill="white" /><circle cx="130.6247540670833" cy="503.4050924392319" r="12.065290503633783" fill="white" /><circle cx="148.41282709774876" cy="332.3472108736801" r="25.874324068656342" fill="white" /><circle cx="134.73153426864656" cy="401.0112913543406" r="16.182877291256766" fill="white" /><circle cx="260.7688551484941" cy="371.0254287965388" r="25.608856672280055" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Flow-Erlebnis:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Jenseits von Angst und
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Langeweile: Im Tun
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Mihaly Csikszentmihalyi
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

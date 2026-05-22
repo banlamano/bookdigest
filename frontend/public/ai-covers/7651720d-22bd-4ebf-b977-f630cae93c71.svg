@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-7651720d-22bd-4ebf-b977-f630cae93c71" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-7651720d-22bd-4ebf-b977-f630cae93c71)" />
+  <g opacity="0.1">
+    <circle cx="40.44375348686091" cy="468.9532170745157" r="25.214767635765053" fill="white" /><circle cx="188.74337419566123" cy="417.13664854580344" r="12.549028187678399" fill="white" /><circle cx="108.38660374616546" cy="518.7782565091164" r="18.736112041672897" fill="white" /><circle cx="390.25927992650884" cy="210.5025395122076" r="12.420110096502185" fill="white" /><circle cx="122.59602721045262" cy="124.84999162641061" r="11.97903247921339" fill="white" /><circle cx="196.21798126343782" cy="177.14604269744257" r="18.426912705039815" fill="white" /><circle cx="136.47501302210742" cy="520.5506719524398" r="12.87030143660344" fill="white" /><circle cx="177.41983144910253" cy="262.75492752926016" r="11.40807408440504" fill="white" /><circle cx="93.54254486975671" cy="565.582669678425" r="21.39627780130479" fill="white" /><circle cx="387.635736279419" cy="596.0621303682946" r="25.71615650716646" fill="white" /><circle cx="60.07552464256807" cy="250.8453023725326" r="13.917180293640207" fill="white" /><circle cx="330.014445272225" cy="276.39352669473203" r="12.771686367997612" fill="white" /><circle cx="388.8016548492494" cy="460.4667752546568" r="10.34873061655694" fill="white" /><circle cx="350.50402289710985" cy="276.2318780642881" r="24.303014600778283" fill="white" /><circle cx="316.59417307334434" cy="86.93099113635894" r="13.102187591018291" fill="white" /><circle cx="206.3278449108607" cy="509.3268499466727" r="22.984251933456587" fill="white" /><circle cx="178.56335884804508" cy="179.71090772512198" r="10.238264183509813" fill="white" /><circle cx="322.5727323122146" cy="240.61450991035525" r="19.72992617929855" fill="white" /><circle cx="0.9252597964114262" cy="241.60438339280137" r="21.151237275855696" fill="white" /><circle cx="68.74293132521126" cy="160.58777918370836" r="17.14480210148416" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Ende des Alterns: Die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        revolutionäre Medizin,
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        die uns jünger und
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        David Sinclair
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

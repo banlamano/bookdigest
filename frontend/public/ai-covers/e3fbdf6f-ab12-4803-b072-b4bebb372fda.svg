@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e3fbdf6f-ab12-4803-b072-b4bebb372fda" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e3fbdf6f-ab12-4803-b072-b4bebb372fda)" />
+  <g opacity="0.1">
+    <circle cx="358.205414649998" cy="415.55735831337097" r="22.715935621459966" fill="white" /><circle cx="253.78764604900695" cy="40.690546282880916" r="21.633844746738554" fill="white" /><circle cx="41.59801586838419" cy="6.767860591068575" r="27.85125490287582" fill="white" /><circle cx="183.41944590121298" cy="312.822967505794" r="24.84140707077241" fill="white" /><circle cx="391.6556941230438" cy="176.62709038718526" r="18.07378253596857" fill="white" /><circle cx="215.61988107530277" cy="431.89361138635667" r="24.144896312664358" fill="white" /><circle cx="197.23498587359182" cy="482.08608809776644" r="27.126654169499858" fill="white" /><circle cx="72.89792153725858" cy="554.815513963534" r="10.985462204642843" fill="white" /><circle cx="66.78527791220334" cy="129.60162649197508" r="18.291622324181798" fill="white" /><circle cx="277.9467069608919" cy="215.75371244981605" r="27.13928750303983" fill="white" /><circle cx="64.03702191863583" cy="498.488842462294" r="23.690357985596457" fill="white" /><circle cx="345.9971262118423" cy="30.585586815414057" r="26.390831486277698" fill="white" /><circle cx="306.12888916948174" cy="149.40134369511185" r="21.049862961626022" fill="white" /><circle cx="40.87489413069725" cy="376.4961875930387" r="15.545382466547672" fill="white" /><circle cx="286.03326405260543" cy="188.0256151231839" r="28.353140483276384" fill="white" /><circle cx="291.0435677667523" cy="255.29646172872202" r="18.560346916614527" fill="white" /><circle cx="9.657384328516061" cy="259.6126571679861" r="20.690810384602067" fill="white" /><circle cx="165.0365143176827" cy="334.59308879635927" r="10.1571199798223" fill="white" /><circle cx="245.7495245205602" cy="561.3223627846191" r="11.884542500182702" fill="white" /><circle cx="357.77287848314825" cy="551.0603494863258" r="20.872308060555834" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Leadership Challenge:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die fünf Praktiken
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        herausragender Führung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        James Kouzes
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

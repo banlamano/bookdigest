@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b373613d-4990-434b-947a-ad3f2ea2dec1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b373613d-4990-434b-947a-ad3f2ea2dec1)" />
+  <g opacity="0.1">
+    <circle cx="360.92428945407875" cy="78.91326047470213" r="26.92270070120099" fill="white" /><circle cx="334.13692357690496" cy="532.7328393324102" r="12.235060129882616" fill="white" /><circle cx="41.717142872157844" cy="389.26846689933456" r="24.575678994417117" fill="white" /><circle cx="315.8644626844047" cy="7.725795727993878" r="23.412993874051345" fill="white" /><circle cx="92.4143112738061" cy="532.5393284878486" r="27.67138296868062" fill="white" /><circle cx="24.15962488210028" cy="159.43555792456547" r="26.879300060645583" fill="white" /><circle cx="55.15760169783226" cy="25.243874320003368" r="13.468704278861354" fill="white" /><circle cx="35.192975428875606" cy="267.0144290807977" r="12.136765683060224" fill="white" /><circle cx="275.4392554889663" cy="532.1555100598991" r="17.35152495396372" fill="white" /><circle cx="228.95875863918116" cy="129.0369260005883" r="16.46292201473422" fill="white" /><circle cx="142.1354888478125" cy="177.07252011581065" r="21.11639647920319" fill="white" /><circle cx="85.38245919795204" cy="440.13919918243676" r="11.88468595442889" fill="white" /><circle cx="173.27445991128724" cy="176.23223600773062" r="26.552410032999056" fill="white" /><circle cx="276.05863367394795" cy="468.5708029076581" r="21.244232586331787" fill="white" /><circle cx="376.53907406891534" cy="433.32150800630154" r="16.83899432028893" fill="white" /><circle cx="274.19248820770736" cy="58.48902762511374" r="27.633381692956814" fill="white" /><circle cx="33.3499871382974" cy="295.99224626656195" r="16.642954927725548" fill="white" /><circle cx="261.55679452422123" cy="191.27902798181205" r="22.50909170965366" fill="white" /><circle cx="343.6211665012346" cy="185.89619677196094" r="27.538043156049042" fill="white" /><circle cx="219.22393504176912" cy="83.10894796656227" r="15.562333837547245" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Innovator&apos;s Dilemma:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wenn neue Technologien
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        alte Firmen zerstören
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Clayton Christensen
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

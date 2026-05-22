@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-cef66c60-9179-4ea2-bc2b-244b20414d88" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-cef66c60-9179-4ea2-bc2b-244b20414d88)" />
+  <g opacity="0.1">
+    <circle cx="222.76016784649997" cy="538.5745455828513" r="13.696597256148726" fill="white" /><circle cx="0.07742840642657178" cy="0.40491952841359424" r="20.43659096314667" fill="white" /><circle cx="218.93968761865983" cy="596.9116663056129" r="11.989558746823306" fill="white" /><circle cx="358.2176690192478" cy="458.6970268289031" r="21.783186645649025" fill="white" /><circle cx="57.22095655752595" cy="419.1697200948719" r="20.381794149463566" fill="white" /><circle cx="202.93496695473027" cy="325.8976617996877" r="13.882098750789753" fill="white" /><circle cx="263.90171392822054" cy="303.2371111789056" r="24.71316000272933" fill="white" /><circle cx="357.8149721419098" cy="495.0195222289513" r="19.765799746009392" fill="white" /><circle cx="50.96175943618731" cy="132.55658589579943" r="20.796376635652358" fill="white" /><circle cx="92.05649054344889" cy="185.3649615690798" r="20.58681237040757" fill="white" /><circle cx="47.385303449055584" cy="379.3932594520875" r="22.02524220921198" fill="white" /><circle cx="6.4835660318421695" cy="398.15806415913664" r="13.774267710138854" fill="white" /><circle cx="254.21401171251995" cy="142.67668820436342" r="26.705966699088123" fill="white" /><circle cx="329.8382867467952" cy="159.7430177687039" r="11.135035992757064" fill="white" /><circle cx="103.22766466964862" cy="385.16642397931656" r="27.791800554659396" fill="white" /><circle cx="119.65823387631644" cy="406.71179369614214" r="14.454707727648923" fill="white" /><circle cx="227.852536238788" cy="204.62357986597524" r="13.545846752763492" fill="white" /><circle cx="200.82592864797206" cy="17.390632599769052" r="13.820578372536009" fill="white" /><circle cx="194.52420695598502" cy="584.7437174686579" r="14.967881986731328" fill="white" /><circle cx="217.5558235200753" cy="112.50740420005867" r="28.73008568314456" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Alchimist
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Paulo Coelho
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

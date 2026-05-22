@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-cbcbe326-5da6-4093-b9eb-545cd9653dfa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-cbcbe326-5da6-4093-b9eb-545cd9653dfa)" />
+  <g opacity="0.1">
+    <circle cx="213.1188382600142" cy="85.41410109642018" r="23.69452718057583" fill="white" /><circle cx="324.03122267734943" cy="126.90784951441294" r="18.414579806282017" fill="white" /><circle cx="3.6677062115640258" cy="483.34820191527166" r="24.10881393551975" fill="white" /><circle cx="45.25453566747055" cy="285.0307574472637" r="20.971822525395975" fill="white" /><circle cx="226.48651099258478" cy="550.8739447795047" r="28.567670791640836" fill="white" /><circle cx="343.9293791990738" cy="293.13184972357186" r="23.327980149397778" fill="white" /><circle cx="325.1481070305983" cy="297.5357306519728" r="27.34667406313087" fill="white" /><circle cx="272.5575951079143" cy="271.3913450978064" r="25.02329615791537" fill="white" /><circle cx="325.7877057463163" cy="418.81675491674986" r="27.164022266073825" fill="white" /><circle cx="59.44320243578463" cy="195.19784569916564" r="27.493034998586285" fill="white" /><circle cx="298.12551484012045" cy="30.66282910964444" r="29.955654858757978" fill="white" /><circle cx="175.3786329688929" cy="598.917348919989" r="10.20475995876113" fill="white" /><circle cx="360.5862192469637" cy="267.85323044196934" r="27.90208445552759" fill="white" /><circle cx="278.79982684089566" cy="405.38394708607564" r="18.49410924988252" fill="white" /><circle cx="218.26311573357006" cy="427.7878273884688" r="22.756063029624407" fill="white" /><circle cx="327.0353683384794" cy="21.046005265742895" r="29.268646678696935" fill="white" /><circle cx="94.74595840591245" cy="18.95483194521992" r="19.57465244672914" fill="white" /><circle cx="121.88445266352286" cy="568.7914448214964" r="14.489268118943041" fill="white" /><circle cx="393.54697168421075" cy="558.1460361974977" r="27.457258203400187" fill="white" /><circle cx="43.64834627549219" cy="407.3062714180168" r="27.90868598140507" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Leader Eat Last: Warum
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        manche Teams
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        zusammenhalten und andere
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Simon Sinek
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

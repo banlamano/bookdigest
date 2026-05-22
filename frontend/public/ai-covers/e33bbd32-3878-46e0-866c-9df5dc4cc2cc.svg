@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e33bbd32-3878-46e0-866c-9df5dc4cc2cc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e33bbd32-3878-46e0-866c-9df5dc4cc2cc)" />
+  <g opacity="0.1">
+    <circle cx="350.12189982640166" cy="92.52359784626458" r="19.641460739101618" fill="white" /><circle cx="320.46854813422385" cy="255.6637185660439" r="17.127859636814946" fill="white" /><circle cx="330.30213812412927" cy="586.0668501826917" r="18.71227092047223" fill="white" /><circle cx="344.36375087732966" cy="65.44694827318493" r="17.913836564564356" fill="white" /><circle cx="128.0761806939978" cy="39.96342282446979" r="14.758206569331742" fill="white" /><circle cx="360.8113667010055" cy="127.7557557145323" r="17.216266507427267" fill="white" /><circle cx="391.43493479973756" cy="449.8130391889021" r="19.274275785827502" fill="white" /><circle cx="65.23908984292785" cy="383.1661451770881" r="22.465422351007106" fill="white" /><circle cx="191.86722156509575" cy="569.0863675083316" r="18.669149642363905" fill="white" /><circle cx="166.12992108170496" cy="103.95878506684633" r="19.820080359785486" fill="white" /><circle cx="360.6519563534608" cy="113.68608508768048" r="10.044362160899238" fill="white" /><circle cx="162.95367932951947" cy="432.8246222176892" r="14.533979696323144" fill="white" /><circle cx="150.92415254631794" cy="355.7406522361739" r="16.228939824712064" fill="white" /><circle cx="173.12606400679917" cy="554.4400552219108" r="20.97452892202653" fill="white" /><circle cx="191.3185645880046" cy="126.38045062111603" r="13.597854092401276" fill="white" /><circle cx="225.76053358932785" cy="595.2531526420314" r="26.927196282708795" fill="white" /><circle cx="168.5650018416252" cy="292.73341736043716" r="12.65795995490108" fill="white" /><circle cx="268.25370589308875" cy="582.2159131322519" r="27.035487981443932" fill="white" /><circle cx="327.93521648606276" cy="169.91846065207747" r="23.16792056967413" fill="white" /><circle cx="39.99795791039351" cy="460.97978066569544" r="22.88700217156549" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Daring Greatly
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brené Brown
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

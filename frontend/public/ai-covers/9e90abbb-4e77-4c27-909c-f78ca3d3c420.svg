@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9e90abbb-4e77-4c27-909c-f78ca3d3c420" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9e90abbb-4e77-4c27-909c-f78ca3d3c420)" />
+  <g opacity="0.1">
+    <circle cx="287.04648753528494" cy="322.07261859376973" r="24.605077544062677" fill="white" /><circle cx="169.43594811853995" cy="94.69084709030993" r="20.301916075834868" fill="white" /><circle cx="181.18585800892285" cy="419.51631982888114" r="12.847251645093298" fill="white" /><circle cx="69.81295237923591" cy="485.94816537680856" r="10.249945826769384" fill="white" /><circle cx="360.64635118623346" cy="286.25654869452876" r="11.053372784860212" fill="white" /><circle cx="385.5209592515697" cy="576.2942115224172" r="10.412342605353686" fill="white" /><circle cx="292.4648902441357" cy="226.34138138148032" r="15.260049336784201" fill="white" /><circle cx="216.71641645107846" cy="89.65980549946305" r="11.468784196743442" fill="white" /><circle cx="214.53899103498654" cy="557.7027413427077" r="27.14293181750073" fill="white" /><circle cx="392.9186727721783" cy="589.0967028018141" r="21.00544107090103" fill="white" /><circle cx="20.87576293544009" cy="2.3100976355387326" r="20.784195732912018" fill="white" /><circle cx="369.05557639520794" cy="156.1147315315367" r="20.617120650697068" fill="white" /><circle cx="155.99292044665214" cy="334.8061621885781" r="29.72780720826465" fill="white" /><circle cx="117.43570444324854" cy="130.13366465488295" r="19.63752277147153" fill="white" /><circle cx="161.17626055862831" cy="171.09820846888294" r="11.696812743680471" fill="white" /><circle cx="184.25744952449708" cy="311.47648525195217" r="17.54400388896071" fill="white" /><circle cx="203.10427649624216" cy="513.3748932933075" r="25.88234798741877" fill="white" /><circle cx="235.4654086665115" cy="526.7280392175346" r="26.036536053676148" fill="white" /><circle cx="265.5096776937847" cy="104.7786198875083" r="22.953527277271846" fill="white" /><circle cx="37.55486336465705" cy="269.05873838135545" r="16.20908772330431" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Peaks and Valleys
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Spencer Johnson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9af1e1a5-3e81-4491-b497-50ef507e7dc1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9af1e1a5-3e81-4491-b497-50ef507e7dc1)" />
+  <g opacity="0.1">
+    <circle cx="206.60905765051433" cy="4.448230655196106" r="13.04777535485298" fill="white" /><circle cx="53.972817292258625" cy="184.12451456170692" r="17.558317302993" fill="white" /><circle cx="109.46881328645577" cy="588.8766908858381" r="12.887753487761806" fill="white" /><circle cx="84.80815476579701" cy="130.30937756248585" r="16.426523510521612" fill="white" /><circle cx="177.60566593648778" cy="520.8513180069967" r="26.015737974675343" fill="white" /><circle cx="75.61069193653611" cy="282.0016279477011" r="18.908107822649818" fill="white" /><circle cx="145.94289496545483" cy="172.6281453231267" r="10.496518785153654" fill="white" /><circle cx="34.014480230461075" cy="584.8375020829759" r="23.16666905578301" fill="white" /><circle cx="291.39322851744436" cy="173.5385905001723" r="18.412913343409013" fill="white" /><circle cx="312.07503790368065" cy="204.1028008797008" r="10.073598775717777" fill="white" /><circle cx="337.18416693752187" cy="485.4225464515468" r="18.6438786094768" fill="white" /><circle cx="369.8289061036135" cy="69.54199962681487" r="22.480710585209913" fill="white" /><circle cx="200.73413887518242" cy="130.0160521892854" r="10.297731652924638" fill="white" /><circle cx="261.3332547177784" cy="435.0821338159737" r="18.468907945957746" fill="white" /><circle cx="397.1232019224557" cy="456.8978773656299" r="17.51907673574693" fill="white" /><circle cx="141.81089253249462" cy="578.0294750900099" r="14.034005699232829" fill="white" /><circle cx="361.26895588001395" cy="81.16836274264283" r="23.114074191967358" fill="white" /><circle cx="72.67297133763266" cy="341.2194082839435" r="10.349008398007092" fill="white" /><circle cx="334.90277598016627" cy="551.0110776558575" r="18.220823597749067" fill="white" /><circle cx="256.2104765043033" cy="382.1607408501852" r="14.554153035739816" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Man Who Mistook His
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wife for a Hat
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Oliver Sacks
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

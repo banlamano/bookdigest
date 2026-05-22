@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-bee00887-4562-4ccc-8e1b-404b9086e061" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-bee00887-4562-4ccc-8e1b-404b9086e061)" />
+  <g opacity="0.1">
+    <circle cx="13.586587613589929" cy="319.8180851099035" r="26.366804407164462" fill="white" /><circle cx="306.013183821804" cy="228.0741300174756" r="26.397923114202854" fill="white" /><circle cx="323.91793725955324" cy="181.73713622438973" r="10.419689487725938" fill="white" /><circle cx="342.6498688046732" cy="424.50245033226" r="21.776912146437866" fill="white" /><circle cx="95.78052143103525" cy="553.3102713245058" r="20.910626305232334" fill="white" /><circle cx="291.31721812488667" cy="183.5862277563274" r="17.944189473422" fill="white" /><circle cx="329.47378031088243" cy="599.1148198741504" r="18.498139991608227" fill="white" /><circle cx="385.5617235616689" cy="144.8826781942652" r="29.420698168932006" fill="white" /><circle cx="116.76276028063243" cy="471.24127016821774" r="20.0248313320995" fill="white" /><circle cx="382.98743895561256" cy="31.617913447864844" r="10.150005757271895" fill="white" /><circle cx="238.60152142766077" cy="232.00657245791507" r="16.65538236007972" fill="white" /><circle cx="369.8529175437185" cy="328.53049346994595" r="11.071449342931231" fill="white" /><circle cx="38.35294713597164" cy="193.6757526242331" r="10.216794693240015" fill="white" /><circle cx="151.2627215431175" cy="72.53726636523258" r="12.756284153805272" fill="white" /><circle cx="398.15009895554874" cy="417.25190418685435" r="22.424423283650686" fill="white" /><circle cx="231.05396010261825" cy="584.7278566118412" r="26.29174405871745" fill="white" /><circle cx="93.59541276184716" cy="41.49927949194041" r="15.539439736959386" fill="white" /><circle cx="83.17720338862475" cy="303.72148971171356" r="26.469515164921145" fill="white" /><circle cx="266.9989574176743" cy="71.79146294353554" r="13.033255511675781" fill="white" /><circle cx="377.58110944717566" cy="178.131623787445" r="21.45807071646377" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Guns, Germs, and Steel
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jared Diamond
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HISTORY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

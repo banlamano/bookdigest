@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-522a3210-9716-4ed8-9d2a-df0e68059381" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-522a3210-9716-4ed8-9d2a-df0e68059381)" />
+  <g opacity="0.1">
+    <circle cx="79.17022676199022" cy="424.8619569716756" r="18.874101550158368" fill="white" /><circle cx="168.59210416925404" cy="163.94651220602657" r="11.874785962652158" fill="white" /><circle cx="111.08765994771343" cy="77.54655683731148" r="23.503505688523532" fill="white" /><circle cx="302.5241993976838" cy="526.458159979665" r="19.066525297820014" fill="white" /><circle cx="125.16630972459217" cy="141.25443184478732" r="14.667485578743708" fill="white" /><circle cx="246.50118839374596" cy="470.4379269518045" r="24.072085689504256" fill="white" /><circle cx="295.2088714170235" cy="102.36912761730797" r="25.348163426056484" fill="white" /><circle cx="83.00146363266813" cy="112.27718849328345" r="20.725914423382555" fill="white" /><circle cx="181.50171386399245" cy="552.2788588195652" r="12.571822995150658" fill="white" /><circle cx="106.19795485386567" cy="188.24545386322703" r="23.641263816886887" fill="white" /><circle cx="268.75650040725236" cy="593.2223795459233" r="16.324889677923395" fill="white" /><circle cx="351.35094173298717" cy="8.165051972627335" r="15.455373883700556" fill="white" /><circle cx="211.4068392454866" cy="509.44498361095714" r="15.411417738799107" fill="white" /><circle cx="254.67115620105113" cy="362.7279632199955" r="13.041711140605585" fill="white" /><circle cx="151.17701830753668" cy="595.5791272779605" r="29.358426119005014" fill="white" /><circle cx="143.43434909306953" cy="68.96135995532262" r="28.117846560510287" fill="white" /><circle cx="281.59076249234477" cy="426.80103046022776" r="16.29934387792343" fill="white" /><circle cx="243.39082194412885" cy="89.86036252299839" r="18.933562783463813" fill="white" /><circle cx="197.59207563114396" cy="181.4914408878675" r="18.924952160145065" fill="white" /><circle cx="221.9516607688457" cy="66.90143665199213" r="17.191476361282763" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Farbe des Gesetzes
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Richard Rothstein
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HISTORY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

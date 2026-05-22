@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-3dd1c43c-0f2c-4dd0-901e-3fb4f167ea7a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-3dd1c43c-0f2c-4dd0-901e-3fb4f167ea7a)" />
+  <g opacity="0.1">
+    <circle cx="124.99035998955338" cy="114.37866672772294" r="15.826464199028436" fill="white" /><circle cx="93.42557221243197" cy="121.08445149826699" r="23.641667672031375" fill="white" /><circle cx="169.1483470536233" cy="446.32447865734906" r="29.8941735601182" fill="white" /><circle cx="376.0512680569707" cy="15.437510038305202" r="23.21501343614767" fill="white" /><circle cx="218.27793792052455" cy="198.40875590284998" r="17.713641502534507" fill="white" /><circle cx="131.21621122255726" cy="115.2169705644824" r="21.284239167678475" fill="white" /><circle cx="33.3751536938792" cy="368.83986679401704" r="20.182654953888942" fill="white" /><circle cx="46.23827983014483" cy="138.88454265016918" r="25.288827171469546" fill="white" /><circle cx="282.65677915590095" cy="424.790293653072" r="10.128064160079171" fill="white" /><circle cx="11.943993572972067" cy="232.69746749958531" r="21.165020261163374" fill="white" /><circle cx="169.4957021355291" cy="87.25431775564813" r="17.767424976199557" fill="white" /><circle cx="327.52807583320805" cy="355.09372803888857" r="11.269436684672893" fill="white" /><circle cx="371.0905273919704" cy="515.9435127074031" r="27.919830866234413" fill="white" /><circle cx="229.0248237419525" cy="196.37683444320027" r="12.204661046948802" fill="white" /><circle cx="360.3400546006678" cy="69.11601345681915" r="16.214102994761106" fill="white" /><circle cx="211.78526086577105" cy="385.89559252881236" r="22.075814546511445" fill="white" /><circle cx="28.93691895372057" cy="236.12372334784902" r="23.755933699769262" fill="white" /><circle cx="300.9366549940183" cy="218.36029373915068" r="29.033390116651443" fill="white" /><circle cx="288.94939839917646" cy="398.72044659912854" r="12.552094928437732" fill="white" /><circle cx="2.9295227344388053" cy="521.3046309811043" r="24.551523681207897" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Gespräche mit Gott: Ein
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        ungewöhnlicher Dialog
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Neale Donald Walsch
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

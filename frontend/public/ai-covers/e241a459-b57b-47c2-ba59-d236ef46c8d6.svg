@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e241a459-b57b-47c2-ba59-d236ef46c8d6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e241a459-b57b-47c2-ba59-d236ef46c8d6)" />
+  <g opacity="0.1">
+    <circle cx="238.26208401233623" cy="493.4552478906641" r="22.19590148819495" fill="white" /><circle cx="69.61142460130185" cy="156.34860605158622" r="11.900011211748556" fill="white" /><circle cx="287.16458923717494" cy="110.71525830228592" r="17.07385244312962" fill="white" /><circle cx="296.7558757131651" cy="596.0676025256406" r="24.67735760266403" fill="white" /><circle cx="248.75941310969333" cy="339.1164072191742" r="26.58144440247786" fill="white" /><circle cx="383.55048633408904" cy="445.91757925771896" r="25.596553204525627" fill="white" /><circle cx="222.51696428997727" cy="290.39570302979456" r="29.38432944535425" fill="white" /><circle cx="149.71999454589883" cy="334.46961608046024" r="14.816264927016025" fill="white" /><circle cx="227.54855802138616" cy="418.4947099191029" r="25.77445248865588" fill="white" /><circle cx="79.169859327149" cy="321.6566167301297" r="17.838723359308535" fill="white" /><circle cx="39.81985823844556" cy="592.1377305548863" r="24.005428167206528" fill="white" /><circle cx="133.64253535846237" cy="148.75301244835424" r="23.332177999796137" fill="white" /><circle cx="140.3494738069509" cy="9.296603644004598" r="28.25812507019237" fill="white" /><circle cx="57.931890956149346" cy="15.765580381229839" r="28.755976741451615" fill="white" /><circle cx="326.674373398234" cy="544.704350479069" r="28.81331393222393" fill="white" /><circle cx="225.6522433465633" cy="347.7415292471922" r="27.561640487893023" fill="white" /><circle cx="240.4125655610799" cy="348.4283873084112" r="16.894768077922066" fill="white" /><circle cx="385.98214312104176" cy="494.5562471462653" r="21.70292066213191" fill="white" /><circle cx="66.18597145811691" cy="370.5984686130231" r="27.232118629280293" fill="white" /><circle cx="257.49225137310015" cy="381.3805714846808" r="12.728388650540854" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Scrum
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Jeff Sutherland
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

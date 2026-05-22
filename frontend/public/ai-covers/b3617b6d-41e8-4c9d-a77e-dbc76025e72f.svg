@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b3617b6d-41e8-4c9d-a77e-dbc76025e72f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b3617b6d-41e8-4c9d-a77e-dbc76025e72f)" />
+  <g opacity="0.1">
+    <circle cx="220.44637485208733" cy="250.29924764400957" r="27.75420670041894" fill="white" /><circle cx="242.89079065845533" cy="430.6066854503181" r="21.629568860564987" fill="white" /><circle cx="63.06061953779767" cy="564.1327355603709" r="18.115226619051118" fill="white" /><circle cx="6.097582828725123" cy="83.85560139962863" r="22.782439028275792" fill="white" /><circle cx="55.96206850216498" cy="279.2945599381944" r="12.566760667844239" fill="white" /><circle cx="21.836536011830532" cy="307.44564627909864" r="16.380579168884296" fill="white" /><circle cx="364.59141891710874" cy="90.1047434331418" r="19.444340986817643" fill="white" /><circle cx="232.05121943140784" cy="309.93528897802594" r="22.674307101600043" fill="white" /><circle cx="63.93685618923115" cy="49.945279850404376" r="11.530235243932573" fill="white" /><circle cx="110.26235824136998" cy="41.57769216080893" r="20.606519737606877" fill="white" /><circle cx="61.110195775169494" cy="220.64452142857937" r="27.386480939610657" fill="white" /><circle cx="241.6101981022987" cy="569.9357782505649" r="12.737220027634521" fill="white" /><circle cx="265.0315988312828" cy="327.9576305704652" r="10.41956938038192" fill="white" /><circle cx="146.65011528996015" cy="501.5115418002863" r="10.407899740151763" fill="white" /><circle cx="341.45803643250605" cy="368.1796260143545" r="17.298898947860735" fill="white" /><circle cx="304.28295187291667" cy="50.17966331511297" r="13.63520377617349" fill="white" /><circle cx="169.22132217006748" cy="581.2164336107512" r="23.38653371588837" fill="white" /><circle cx="353.68350725549374" cy="21.45854834726808" r="28.38439941574226" fill="white" /><circle cx="229.17878345547075" cy="515.3882241146398" r="13.48522042706463" fill="white" /><circle cx="177.85046224672442" cy="266.06105625488885" r="24.37254599877719" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Hooked: Wie man Produkte
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        und Dienstleistungen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        entwickelt, die süchtig
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Nir Eyal
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

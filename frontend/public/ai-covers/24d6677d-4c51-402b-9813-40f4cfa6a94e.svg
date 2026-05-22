@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-24d6677d-4c51-402b-9813-40f4cfa6a94e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-24d6677d-4c51-402b-9813-40f4cfa6a94e)" />
+  <g opacity="0.1">
+    <circle cx="112.93563278010352" cy="457.59410724706646" r="19.64282497850875" fill="white" /><circle cx="127.01234390919649" cy="492.2397114702737" r="16.170992382734845" fill="white" /><circle cx="320.83474726930103" cy="152.50523762524045" r="15.782885013656852" fill="white" /><circle cx="293.64293533911035" cy="178.21610510870855" r="24.544316062717453" fill="white" /><circle cx="164.48662865888616" cy="206.62883835172937" r="11.478588911743202" fill="white" /><circle cx="399.69199691679296" cy="77.18058614283376" r="12.0851272863821" fill="white" /><circle cx="115.83244511805289" cy="386.69285450791693" r="12.391784044512757" fill="white" /><circle cx="97.3663576300686" cy="331.01189228617545" r="13.928190480671498" fill="white" /><circle cx="397.64343518840917" cy="591.8890135425972" r="19.15371768049472" fill="white" /><circle cx="391.2024237202122" cy="321.0016986840351" r="27.762805390756387" fill="white" /><circle cx="24.97584304429674" cy="459.51598827181743" r="26.93890350996063" fill="white" /><circle cx="356.12921699811244" cy="468.26262389319106" r="20.286258827433045" fill="white" /><circle cx="238.7199812852575" cy="213.511794932955" r="13.882820479833404" fill="white" /><circle cx="54.5249119979379" cy="416.02155153140137" r="22.86540185959135" fill="white" /><circle cx="355.89194128452755" cy="197.64311851007952" r="14.264901885829186" fill="white" /><circle cx="222.49612447426318" cy="427.5398295173287" r="20.40839133046242" fill="white" /><circle cx="393.6546222544663" cy="425.7606120921003" r="12.83022264375231" fill="white" /><circle cx="308.2011380564812" cy="578.4194535973493" r="10.976007576511966" fill="white" /><circle cx="119.57448538419837" cy="371.1248781433401" r="27.306294584214402" fill="white" /><circle cx="329.99751883259404" cy="578.430888936718" r="11.363909733901277" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Multipliers
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Liz Wiseman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

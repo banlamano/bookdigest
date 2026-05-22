@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0a32ce3e-3f40-4de4-a810-835bdff7c14d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0a32ce3e-3f40-4de4-a810-835bdff7c14d)" />
+  <g opacity="0.1">
+    <circle cx="300.5482922924609" cy="498.65587374963303" r="17.911440002478578" fill="white" /><circle cx="194.2098047218606" cy="434.7947092394888" r="28.6547927092801" fill="white" /><circle cx="50.552342658552305" cy="551.7521487462475" r="27.835415348371356" fill="white" /><circle cx="312.65813753039725" cy="394.9880732694415" r="10.361765364634348" fill="white" /><circle cx="364.23045494413867" cy="175.56207086590194" r="28.197408422079025" fill="white" /><circle cx="87.06224369624857" cy="211.94576171179617" r="28.2253873778478" fill="white" /><circle cx="199.85393524301057" cy="267.8915186570126" r="26.96239431136479" fill="white" /><circle cx="320.6572246581947" cy="392.3495793494828" r="23.087920675506155" fill="white" /><circle cx="269.16082736732386" cy="265.40332892055284" r="15.673386062287895" fill="white" /><circle cx="78.90625207478203" cy="141.36209068041134" r="24.204434705955368" fill="white" /><circle cx="215.08536341591218" cy="470.1543300237824" r="21.152901202404855" fill="white" /><circle cx="335.19928769646395" cy="329.3552993104541" r="16.09982747652502" fill="white" /><circle cx="136.72392761014845" cy="343.7076719127139" r="27.09574252330252" fill="white" /><circle cx="35.0771125452968" cy="277.5556132564061" r="18.935022524130147" fill="white" /><circle cx="226.2460032464062" cy="172.10195101362388" r="19.49712664072564" fill="white" /><circle cx="111.3466962685453" cy="383.6215936097457" r="20.70509536107143" fill="white" /><circle cx="254.056002237023" cy="177.0317584521717" r="25.522623505708435" fill="white" /><circle cx="276.2716408644345" cy="510.46877047208903" r="28.794089793694962" fill="white" /><circle cx="162.26460012098408" cy="281.7365123386472" r="27.13073436788351" fill="white" /><circle cx="311.3649078110287" cy="570.2190352468278" r="11.653833698011827" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Führung ist Sprache: Wie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        wir mit 6 Worten unsere
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Denkweise ändern und
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        David Marquet
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

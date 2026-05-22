@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f86ec33c-555e-4463-984f-741b27b281b1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f86ec33c-555e-4463-984f-741b27b281b1)" />
+  <g opacity="0.1">
+    <circle cx="124.92266619075308" cy="449.25265749342685" r="12.157146742173877" fill="white" /><circle cx="61.8107087426893" cy="530.9120084867292" r="19.587659236935263" fill="white" /><circle cx="317.11074464131" cy="388.97030961021767" r="15.599980732975133" fill="white" /><circle cx="219.62716259599117" cy="394.48423779893164" r="25.338535015866" fill="white" /><circle cx="277.78672535048526" cy="327.83732372058716" r="19.5510846414578" fill="white" /><circle cx="343.88085263009856" cy="315.41534385843954" r="21.585773963410432" fill="white" /><circle cx="14.01596556529121" cy="297.11071618950854" r="29.52130451694244" fill="white" /><circle cx="127.32342898955484" cy="112.42722478448842" r="24.746801278335003" fill="white" /><circle cx="345.028749093466" cy="329.3016617863784" r="23.602254374816695" fill="white" /><circle cx="12.502821275299647" cy="319.112289949136" r="17.285401498935684" fill="white" /><circle cx="144.29624252828236" cy="260.2770874500532" r="20.741700475708033" fill="white" /><circle cx="119.55693568385155" cy="266.85467030793137" r="26.21532427910344" fill="white" /><circle cx="184.97504148975287" cy="276.61834803839014" r="10.713160124312848" fill="white" /><circle cx="111.45320990088527" cy="70.5451236373786" r="11.070140199721102" fill="white" /><circle cx="292.4326733714467" cy="33.780721840315266" r="12.968467629930789" fill="white" /><circle cx="256.43732837085776" cy="316.61997035996694" r="14.006178530927766" fill="white" /><circle cx="248.7666210898975" cy="90.31194755228348" r="29.756868531641075" fill="white" /><circle cx="378.8520887701303" cy="425.5129144802034" r="16.0112835005428" fill="white" /><circle cx="322.98904504452713" cy="461.4458996742935" r="21.11495591228779" fill="white" /><circle cx="171.1254707388293" cy="90.0307253927115" r="29.759191787097368" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Dare to Lead: Neue Wege
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        zu mutiger Führung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brené Brown
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

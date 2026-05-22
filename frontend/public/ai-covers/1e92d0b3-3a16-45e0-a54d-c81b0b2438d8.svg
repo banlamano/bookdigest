@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1e92d0b3-3a16-45e0-a54d-c81b0b2438d8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1e92d0b3-3a16-45e0-a54d-c81b0b2438d8)" />
+  <g opacity="0.1">
+    <circle cx="28.170217193972256" cy="99.77268185217333" r="12.791340604163766" fill="white" /><circle cx="53.05100248122186" cy="468.0973129194118" r="13.817030997616282" fill="white" /><circle cx="340.2634707568261" cy="244.2690971740189" r="29.492910583446864" fill="white" /><circle cx="100.55173968485408" cy="64.97874028397574" r="17.88735210045721" fill="white" /><circle cx="31.243535261365764" cy="447.2727862742234" r="27.412477617965447" fill="white" /><circle cx="125.66505379213373" cy="480.806040153286" r="23.608175004090516" fill="white" /><circle cx="338.13551578477103" cy="12.250574908242463" r="22.65209314064233" fill="white" /><circle cx="30.388198742665608" cy="78.6480599241427" r="16.28815742681297" fill="white" /><circle cx="265.3033659269873" cy="453.0790487956407" r="22.166118502019337" fill="white" /><circle cx="256.87375041862657" cy="477.96556619723077" r="14.972551615741914" fill="white" /><circle cx="150.60847181253018" cy="401.86128300309576" r="28.949263632341776" fill="white" /><circle cx="343.156981916395" cy="63.9835736814675" r="13.469521819894911" fill="white" /><circle cx="343.18847293598077" cy="43.454997219408085" r="12.271236965736016" fill="white" /><circle cx="124.48507551141334" cy="398.0436789131015" r="17.42692166414188" fill="white" /><circle cx="352.48461204109236" cy="279.7013131389592" r="24.44089217192905" fill="white" /><circle cx="319.11220619950353" cy="236.6845652644382" r="18.89605724346693" fill="white" /><circle cx="13.50017143488782" cy="490.97976610220707" r="27.953775488469116" fill="white" /><circle cx="259.07614556920294" cy="495.9123785394084" r="28.5194411439227" fill="white" /><circle cx="145.56714961362792" cy="312.39160599811675" r="28.183374860086992" fill="white" /><circle cx="159.69329099327427" cy="147.1196428795776" r="23.041813356030758" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Wissenschaft des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Reichwerdens
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Wallace Wattles
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

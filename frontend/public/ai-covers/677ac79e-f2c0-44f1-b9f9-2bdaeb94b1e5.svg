@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-677ac79e-f2c0-44f1-b9f9-2bdaeb94b1e5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-677ac79e-f2c0-44f1-b9f9-2bdaeb94b1e5)" />
+  <g opacity="0.1">
+    <circle cx="318.0773874768819" cy="443.27387956993374" r="18.62576030981584" fill="white" /><circle cx="374.4322413426857" cy="400.7789732542225" r="29.574956296207777" fill="white" /><circle cx="340.7974977836495" cy="236.83871783850324" r="20.495534476604362" fill="white" /><circle cx="301.97730699535776" cy="523.1125541443649" r="25.205027730480047" fill="white" /><circle cx="14.006427926404585" cy="537.2356070159169" r="27.834317773001192" fill="white" /><circle cx="300.5168797765841" cy="539.8860997399005" r="18.60814400142369" fill="white" /><circle cx="392.8598141477716" cy="420.16891111220775" r="24.459278446140253" fill="white" /><circle cx="82.01619352622296" cy="418.95734658251916" r="25.09554929585704" fill="white" /><circle cx="280.8237433916268" cy="90.12045849288532" r="13.081573720278161" fill="white" /><circle cx="65.91039508129785" cy="585.1654498716321" r="21.336143637282525" fill="white" /><circle cx="343.281922305023" cy="328.72658564949" r="12.427030288461882" fill="white" /><circle cx="297.2199524589908" cy="244.03916258850361" r="15.853272944640931" fill="white" /><circle cx="318.93567720975994" cy="499.5996471098253" r="15.663803380770595" fill="white" /><circle cx="47.7009065111921" cy="357.72377057362485" r="18.554718304947425" fill="white" /><circle cx="224.23550982649715" cy="138.54760037475708" r="15.599124312458184" fill="white" /><circle cx="129.06480695812164" cy="309.9068331628448" r="16.892455952282297" fill="white" /><circle cx="241.76587664371306" cy="425.6633554288598" r="24.04707339513227" fill="white" /><circle cx="12.998917327070725" cy="389.5510279564042" r="11.773483090507327" fill="white" /><circle cx="152.50143131672948" cy="89.73994144830321" r="17.006624028991673" fill="white" /><circle cx="330.9583507876372" cy="169.4263285625023" r="17.40288441390938" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Börsenerfolg ist kein
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Zufall
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Burton Malkiel
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

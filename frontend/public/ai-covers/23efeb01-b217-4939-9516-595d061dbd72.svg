@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-23efeb01-b217-4939-9516-595d061dbd72" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-23efeb01-b217-4939-9516-595d061dbd72)" />
+  <g opacity="0.1">
+    <circle cx="272.2404508633757" cy="341.86275499112156" r="12.174895146810481" fill="white" /><circle cx="172.8059240754816" cy="323.4803436207162" r="28.26295388252536" fill="white" /><circle cx="99.34179118479425" cy="168.3931280494561" r="19.10611164537751" fill="white" /><circle cx="382.4171438644413" cy="553.895718342844" r="19.812444201177442" fill="white" /><circle cx="171.07291160034794" cy="466.226422983537" r="22.93267978447456" fill="white" /><circle cx="109.56378681242533" cy="423.7467056203561" r="20.754369454991394" fill="white" /><circle cx="77.13561285518958" cy="396.1476853114138" r="16.243567091392713" fill="white" /><circle cx="257.62201586018824" cy="44.219968982728176" r="15.454892999840911" fill="white" /><circle cx="207.94489269933698" cy="86.7549252070421" r="17.03185314399584" fill="white" /><circle cx="396.6591125111021" cy="61.93919713301601" r="28.25966848093056" fill="white" /><circle cx="94.02193128541158" cy="81.53035399398614" r="22.99448423733686" fill="white" /><circle cx="292.1192762278523" cy="348.5948704481375" r="11.506233783756851" fill="white" /><circle cx="373.35211803309176" cy="573.337915120014" r="12.800639213124857" fill="white" /><circle cx="283.66329126140226" cy="24.554916142371887" r="16.61653737770959" fill="white" /><circle cx="371.7609739210359" cy="371.3216652709707" r="14.599116531796932" fill="white" /><circle cx="247.73679864390766" cy="437.0712602956679" r="27.910813705123246" fill="white" /><circle cx="349.5565653884316" cy="550.7622823212547" r="21.789194677712015" fill="white" /><circle cx="67.1057386160907" cy="97.66041648005661" r="23.79951167836129" fill="white" /><circle cx="195.25546543284568" cy="527.6732810209186" r="16.713165717397487" fill="white" /><circle cx="106.65383051109059" cy="242.14671598686982" r="28.272532922627395" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The End of Alzheimer&apos;s
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Dale Bredesen
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e2419f79-99bc-4e3d-bee7-2e21318a221d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e2419f79-99bc-4e3d-bee7-2e21318a221d)" />
+  <g opacity="0.1">
+    <circle cx="196.3908889611563" cy="20.377192036510827" r="17.95923964011221" fill="white" /><circle cx="140.0061228863746" cy="341.6782864451671" r="21.256769525523616" fill="white" /><circle cx="88.76191248459494" cy="322.54901861994745" r="13.738056705649557" fill="white" /><circle cx="9.69112524012723" cy="411.9218247489962" r="27.713185057867523" fill="white" /><circle cx="360.87625838088195" cy="184.00163356403402" r="21.70550403770357" fill="white" /><circle cx="257.981943768998" cy="211.12535601253387" r="23.17843041965447" fill="white" /><circle cx="47.21002216468499" cy="497.0704354021548" r="16.33942271607723" fill="white" /><circle cx="188.7912746311955" cy="39.90492027389938" r="26.236716862819684" fill="white" /><circle cx="262.6599056242712" cy="439.3708607343619" r="19.170869347222208" fill="white" /><circle cx="387.9599672503049" cy="74.17063039328514" r="21.58815253272342" fill="white" /><circle cx="74.82007221817449" cy="403.63047779742504" r="28.42063285516935" fill="white" /><circle cx="61.6859138981055" cy="598.4433319154709" r="12.907674285555608" fill="white" /><circle cx="119.8697847934441" cy="581.9421221855314" r="21.93379920194617" fill="white" /><circle cx="290.6252314416994" cy="457.97916994987435" r="26.473237683394135" fill="white" /><circle cx="217.18099625063383" cy="475.2969198667676" r="23.897495137884142" fill="white" /><circle cx="268.5111911856122" cy="280.638558471405" r="12.186331223699206" fill="white" /><circle cx="245.77002246796428" cy="192.8646205918002" r="24.347411325688764" fill="white" /><circle cx="16.031548321565083" cy="420.893172487148" r="17.375039827912072" fill="white" /><circle cx="67.56099589329861" cy="366.6213448763722" r="27.18075508408866" fill="white" /><circle cx="225.01607101102016" cy="474.2550735443922" r="16.49051198095067" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Advantage
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Patrick Lencioni
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

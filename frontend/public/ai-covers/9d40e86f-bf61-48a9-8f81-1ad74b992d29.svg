@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9d40e86f-bf61-48a9-8f81-1ad74b992d29" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9d40e86f-bf61-48a9-8f81-1ad74b992d29)" />
+  <g opacity="0.1">
+    <circle cx="256.8887655360248" cy="523.2451824877147" r="16.805549079604916" fill="white" /><circle cx="30.27589828424455" cy="420.827076568415" r="12.752479350562782" fill="white" /><circle cx="43.07010381456187" cy="528.579271913429" r="25.913086399890226" fill="white" /><circle cx="104.93113567430372" cy="566.816173098997" r="20.02667235820425" fill="white" /><circle cx="139.38380045913772" cy="116.03571722693822" r="27.442330643158176" fill="white" /><circle cx="291.57797477483666" cy="597.6914123247305" r="22.208201530011543" fill="white" /><circle cx="373.8985799338255" cy="381.2476743850029" r="26.419190464499046" fill="white" /><circle cx="216.88036812528" cy="382.3979604464544" r="20.00090042039226" fill="white" /><circle cx="315.30975902475905" cy="142.77308875918516" r="18.397950216636417" fill="white" /><circle cx="397.5474197379507" cy="418.6531416199411" r="20.365175682909573" fill="white" /><circle cx="306.115243937157" cy="479.62793443746386" r="27.84625749232315" fill="white" /><circle cx="53.426887650739815" cy="191.05743836309634" r="12.767027177583305" fill="white" /><circle cx="25.19866876453478" cy="334.7254329185719" r="12.37299562140491" fill="white" /><circle cx="90.46567257794722" cy="545.5885513077509" r="16.74069053881701" fill="white" /><circle cx="384.02511091683016" cy="567.5392140599233" r="24.89983016010321" fill="white" /><circle cx="136.03930985637334" cy="118.88622207178317" r="20.87707980139676" fill="white" /><circle cx="248.86437184624347" cy="536.3556103748198" r="14.457183504158147" fill="white" /><circle cx="245.16617082804544" cy="54.879333794072394" r="12.654394307023928" fill="white" /><circle cx="129.4107623871745" cy="134.3911379070613" r="23.722974696536895" fill="white" /><circle cx="15.588599264570568" cy="63.90221634534701" r="22.5691955011073" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Immortal Life of
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Henrietta Lacks
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Rebecca Skloot
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

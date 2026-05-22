@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1678deb6-de5a-4af7-b508-fc1d9890229e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1678deb6-de5a-4af7-b508-fc1d9890229e)" />
+  <g opacity="0.1">
+    <circle cx="241.64390132214066" cy="356.9094660361445" r="26.473903210836784" fill="white" /><circle cx="206.4602283236674" cy="413.24936636175096" r="25.276422425902986" fill="white" /><circle cx="292.9380790584174" cy="99.06909392738561" r="17.62751767618069" fill="white" /><circle cx="166.72158164243075" cy="159.56377806897174" r="16.681290819629005" fill="white" /><circle cx="59.258089305555075" cy="463.9571220474314" r="29.496772527630107" fill="white" /><circle cx="363.9579215245048" cy="390.956763089931" r="19.416945489699565" fill="white" /><circle cx="368.0450539653814" cy="278.80388962375855" r="13.230387457926213" fill="white" /><circle cx="144.5510393347532" cy="199.78910411458838" r="16.404138433440814" fill="white" /><circle cx="66.22558508915075" cy="391.6932006876915" r="10.986448543738225" fill="white" /><circle cx="393.9405604501183" cy="481.6061669295964" r="12.531061331058659" fill="white" /><circle cx="115.78067075462161" cy="440.32786981402927" r="18.966444758818447" fill="white" /><circle cx="328.9810232050968" cy="306.57757293305417" r="21.06743542404271" fill="white" /><circle cx="388.5410770403766" cy="151.85596061547173" r="28.45298368784953" fill="white" /><circle cx="150.69874758640114" cy="310.08610950358286" r="10.417167855534395" fill="white" /><circle cx="310.49147987358145" cy="67.72097619753134" r="24.076946810718134" fill="white" /><circle cx="364.22840390642835" cy="359.41513304483743" r="18.61502436946796" fill="white" /><circle cx="213.46404543258149" cy="221.52519608672628" r="15.548569123361872" fill="white" /><circle cx="138.65829729198254" cy="488.8088328429459" r="20.17781028952657" fill="white" /><circle cx="389.7536597631404" cy="153.72328012130322" r="15.956504241095594" fill="white" /><circle cx="228.67549060819212" cy="193.23789219047646" r="26.900797118301238" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        To Sell Is Human
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Daniel Pink
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

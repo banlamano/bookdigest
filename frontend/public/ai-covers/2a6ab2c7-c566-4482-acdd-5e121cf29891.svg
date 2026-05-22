@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-2a6ab2c7-c566-4482-acdd-5e121cf29891" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-2a6ab2c7-c566-4482-acdd-5e121cf29891)" />
+  <g opacity="0.1">
+    <circle cx="275.45649066470884" cy="282.5212509225926" r="10.424768456126364" fill="white" /><circle cx="126.81284785213035" cy="266.7185173013837" r="27.432897088649426" fill="white" /><circle cx="386.27597575539386" cy="125.31488762991465" r="24.944628449525418" fill="white" /><circle cx="258.99949967791736" cy="149.57135767236664" r="20.587125099882137" fill="white" /><circle cx="283.4891820765062" cy="360.40489687395694" r="17.13572375466552" fill="white" /><circle cx="376.26596435188304" cy="74.15855705833954" r="20.16867483618013" fill="white" /><circle cx="71.73684544810253" cy="336.4905686059607" r="25.293038801484187" fill="white" /><circle cx="228.90648223813952" cy="349.59209684551143" r="24.742378546911638" fill="white" /><circle cx="390.3396517578578" cy="81.56085526968828" r="27.9339724646625" fill="white" /><circle cx="288.95061010215903" cy="553.6871690407629" r="15.25773547227514" fill="white" /><circle cx="351.58287555889973" cy="212.77355938982663" r="20.83903835587492" fill="white" /><circle cx="377.18911787020994" cy="345.3636580624794" r="15.505965093816894" fill="white" /><circle cx="62.79396956332128" cy="122.69978655819851" r="18.143328319647424" fill="white" /><circle cx="351.15317047664416" cy="558.8117410226963" r="25.604946105141472" fill="white" /><circle cx="276.61030755019937" cy="190.44343157746485" r="29.236922473561634" fill="white" /><circle cx="246.65127892587742" cy="312.9504154622551" r="21.56541239777095" fill="white" /><circle cx="39.99486120284872" cy="467.13611787277773" r="29.032407228749197" fill="white" /><circle cx="4.46802192513176" cy="270.80894786624395" r="10.783823685481359" fill="white" /><circle cx="143.1417051932256" cy="527.7406232656562" r="27.972310453077537" fill="white" /><circle cx="130.63298849890782" cy="465.22832771694664" r="19.785284778540607" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Magic: Ein Jahr
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        voller Wunder
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Rhonda Byrne
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

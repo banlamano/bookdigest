@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-6ed5d43f-6e32-4fd8-a135-dd1861d89b57" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-6ed5d43f-6e32-4fd8-a135-dd1861d89b57)" />
+  <g opacity="0.1">
+    <circle cx="335.1276181640052" cy="516.0778758453074" r="28.81086582831993" fill="white" /><circle cx="369.94022134827384" cy="176.86445772071212" r="25.449694119908504" fill="white" /><circle cx="232.45416180203392" cy="439.7489488059058" r="11.115022014151668" fill="white" /><circle cx="132.963842337934" cy="445.0336147298285" r="12.408563999246054" fill="white" /><circle cx="314.8763378506811" cy="582.3774707967245" r="29.426817384942844" fill="white" /><circle cx="228.52886068924002" cy="164.78391941029315" r="16.488133734123437" fill="white" /><circle cx="102.62529047665589" cy="107.36784322917256" r="21.07934923557752" fill="white" /><circle cx="165.5848879182372" cy="158.55793866110614" r="14.568276555762303" fill="white" /><circle cx="135.52466321559055" cy="344.6290969320072" r="17.188252450028816" fill="white" /><circle cx="67.3725553023774" cy="208.30537229406812" r="15.130029193423425" fill="white" /><circle cx="118.51560223367458" cy="136.84145363063266" r="23.598093685765157" fill="white" /><circle cx="216.5430126672788" cy="583.8085316753179" r="25.59349704627963" fill="white" /><circle cx="44.4901953869163" cy="493.58588377962496" r="25.22116195603885" fill="white" /><circle cx="362.29700885213634" cy="271.32148783301443" r="16.939761161676298" fill="white" /><circle cx="221.71247730945507" cy="265.68879906841323" r="26.30723517398566" fill="white" /><circle cx="383.73242997416094" cy="189.93469145438277" r="25.984228626115677" fill="white" /><circle cx="116.41844940695995" cy="310.1680046801294" r="27.43211762945389" fill="white" /><circle cx="290.6391563748525" cy="180.32034611266445" r="10.994090981132416" fill="white" /><circle cx="234.32459042030627" cy="9.781595334390648" r="19.140627131405054" fill="white" /><circle cx="192.30737877075063" cy="369.95820360054915" r="29.28900256915516" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Good Strategy Bad
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Strategy
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Richard Rumelt
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

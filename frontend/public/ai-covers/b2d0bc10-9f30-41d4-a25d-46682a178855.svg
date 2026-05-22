@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b2d0bc10-9f30-41d4-a25d-46682a178855" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b2d0bc10-9f30-41d4-a25d-46682a178855)" />
+  <g opacity="0.1">
+    <circle cx="256.68698156982816" cy="147.2480768971284" r="15.260562540549929" fill="white" /><circle cx="76.77451607607782" cy="442.932615767436" r="17.067918401692225" fill="white" /><circle cx="11.754316278923627" cy="17.460204630442067" r="21.890911094485297" fill="white" /><circle cx="207.7979139481107" cy="60.805393723572145" r="29.349537888804264" fill="white" /><circle cx="39.85690919167304" cy="523.1922763621311" r="20.087125968628698" fill="white" /><circle cx="226.06658014220287" cy="581.5447506247107" r="24.823126394287783" fill="white" /><circle cx="152.7861185983136" cy="108.79740327355367" r="28.5809508195145" fill="white" /><circle cx="284.25600348381766" cy="513.9945397524114" r="22.921666612561623" fill="white" /><circle cx="228.23714841669712" cy="312.4086639574587" r="17.714689875954527" fill="white" /><circle cx="72.74159369530362" cy="245.76857771074867" r="19.04604970573664" fill="white" /><circle cx="123.0088870387839" cy="207.61309132991542" r="24.285394260343498" fill="white" /><circle cx="370.6387526322957" cy="273.33735360936157" r="16.55817458738298" fill="white" /><circle cx="376.2041493633312" cy="76.35408741972154" r="12.529535146532197" fill="white" /><circle cx="37.50114905638111" cy="490.47567205918" r="26.032431167050657" fill="white" /><circle cx="170.75125895642938" cy="592.5873300020204" r="21.321887983737707" fill="white" /><circle cx="169.82707987592818" cy="489.6532183578348" r="26.746309790809246" fill="white" /><circle cx="172.6025299680691" cy="194.67615498319273" r="16.13703120460475" fill="white" /><circle cx="362.8087024558114" cy="105.85939015770187" r="21.826310925832622" fill="white" /><circle cx="26.69657084585961" cy="349.3545825073919" r="27.070938037702476" fill="white" /><circle cx="333.20844672571855" cy="368.61037533317983" r="10.423281913896954" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das kleine Handbuch des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        vernünftigen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Investierens: Die
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        John Bogle
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

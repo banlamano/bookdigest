@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ad27a74a-25cc-46cf-a772-508748084dd0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ad27a74a-25cc-46cf-a772-508748084dd0)" />
+  <g opacity="0.1">
+    <circle cx="42.24923644298286" cy="290.87441163443" r="19.183542901799175" fill="white" /><circle cx="285.8172773353246" cy="64.25463036889363" r="23.288812708288162" fill="white" /><circle cx="211.17588101610423" cy="416.9910630677175" r="13.604083293330714" fill="white" /><circle cx="6.369095267006664" cy="76.64237315895276" r="18.23400808286463" fill="white" /><circle cx="137.08730310468198" cy="529.3683436747488" r="22.333183695899784" fill="white" /><circle cx="12.461590017327406" cy="322.49121978033344" r="26.051690046459257" fill="white" /><circle cx="18.93078255467713" cy="209.01071511435956" r="19.725466159155687" fill="white" /><circle cx="11.018521033632744" cy="195.8673591386002" r="24.670302712883306" fill="white" /><circle cx="33.997678305639845" cy="189.74218338977747" r="11.983989144929721" fill="white" /><circle cx="270.3328558379901" cy="223.78591907615288" r="24.31086127957709" fill="white" /><circle cx="316.2016455147554" cy="54.60823166566469" r="15.466441148122268" fill="white" /><circle cx="394.90755461833356" cy="522.828154547447" r="20.62879006971729" fill="white" /><circle cx="252.59895151778505" cy="361.52842302679096" r="15.98630539573459" fill="white" /><circle cx="241.72216885257973" cy="239.62180765373435" r="24.397655173837503" fill="white" /><circle cx="173.56856789137285" cy="500.7177838086918" r="24.946215208377964" fill="white" /><circle cx="78.23750246181444" cy="356.0107544212265" r="27.41535063008949" fill="white" /><circle cx="286.4556309501709" cy="122.83232449719286" r="10.597547335572964" fill="white" /><circle cx="150.13710630079498" cy="283.96304508506904" r="17.241225890397878" fill="white" /><circle cx="47.80527260164176" cy="311.2376530340457" r="20.99992773145528" fill="white" /><circle cx="230.41623149802803" cy="202.02858118399166" r="29.34834289296439" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Vertrauen: Die einzige
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Strategie, die wirklich
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        zählt
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Stephen M.R. Covey
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

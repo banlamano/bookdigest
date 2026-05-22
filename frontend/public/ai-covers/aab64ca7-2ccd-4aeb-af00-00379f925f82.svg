@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-aab64ca7-2ccd-4aeb-af00-00379f925f82" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-aab64ca7-2ccd-4aeb-af00-00379f925f82)" />
+  <g opacity="0.1">
+    <circle cx="105.31351349245756" cy="489.8959516571158" r="12.824560909245854" fill="white" /><circle cx="304.7450166509412" cy="48.77078194572526" r="29.056249001789944" fill="white" /><circle cx="80.67206526587158" cy="13.795121104750407" r="23.107623025009634" fill="white" /><circle cx="307.55235682078523" cy="87.46270712339101" r="11.045667947260442" fill="white" /><circle cx="260.29522691815805" cy="64.01586699597226" r="10.458900258859089" fill="white" /><circle cx="32.06887432143404" cy="436.91551700243537" r="13.58493211736304" fill="white" /><circle cx="330.5678017624617" cy="295.34415018879724" r="25.24481161210751" fill="white" /><circle cx="235.6399617960766" cy="67.2439303338796" r="19.485361455824673" fill="white" /><circle cx="45.38686141998327" cy="560.471287541254" r="26.974940704285842" fill="white" /><circle cx="32.70202326305025" cy="578.1404421737365" r="15.16678244236778" fill="white" /><circle cx="196.61797459366693" cy="10.028474318229641" r="20.159196812713965" fill="white" /><circle cx="208.64462922823606" cy="239.38260422184845" r="13.10771409820667" fill="white" /><circle cx="45.63152134781214" cy="236.36951693353413" r="11.909240201259784" fill="white" /><circle cx="237.51420465670745" cy="298.0749605335642" r="29.796176201617687" fill="white" /><circle cx="265.3704724504977" cy="7.723427557224061" r="26.916794171486544" fill="white" /><circle cx="177.36284239374208" cy="61.359765514783994" r="17.375841641483316" fill="white" /><circle cx="118.05887516370927" cy="93.12888598776227" r="15.045426307697225" fill="white" /><circle cx="112.54106446757501" cy="556.7562028172499" r="21.56043818639901" fill="white" /><circle cx="227.93516806958505" cy="173.236748935358" r="11.601407047925074" fill="white" /><circle cx="37.46148542045753" cy="570.4753833493576" r="19.059406737033008" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Road Less Traveled
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        M. Scott Peck
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -9,50 +9,30 @@
       <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
     </filter>
   </defs>
-  
   <rect width="400" height="600" fill="url(#grad-0365165a-d499-4b47-9573-255c1dbe4ef4)" />
-  
   <g opacity="0.1">
-    <circle cx="366.5808188315169" cy="186.62185826454987" r="23.38322414503523" fill="white" /><circle cx="210.70196073790694" cy="60.785594341201985" r="18.03442949318093" fill="white" /><circle cx="233.62450203670102" cy="226.83667492258286" r="14.000889719316625" fill="white" /><circle cx="216.6631149744629" cy="162.45510488685605" r="26.119611278941427" fill="white" /><circle cx="166.2310543294482" cy="575.9697903510416" r="25.934289285550577" fill="white" /><circle cx="80.77140114887986" cy="584.9123959887178" r="25.42751088131427" fill="white" /><circle cx="72.37377515516665" cy="323.7427982592211" r="12.314242815819302" fill="white" /><circle cx="308.9291255999089" cy="26.73789204746719" r="11.407591969275169" fill="white" /><circle cx="27.331973625424368" cy="312.26560052215194" r="21.946058391376226" fill="white" /><circle cx="85.65040435904491" cy="589.4605876099346" r="24.378570219121585" fill="white" /><circle cx="123.34909690164207" cy="140.41613109662597" r="22.152426080629205" fill="white" /><circle cx="204.23265151990813" cy="471.21811962055" r="12.558551831428824" fill="white" /><circle cx="76.82980757232963" cy="114.59134559312022" r="21.56781336171835" fill="white" /><circle cx="242.66682858277954" cy="539.0677150449465" r="23.9055104246547" fill="white" /><circle cx="134.39631499229446" cy="405.6775540786286" r="25.609930128387546" fill="white" /><circle cx="282.2332796593288" cy="339.05545876589656" r="29.626431160106378" fill="white" /><circle cx="271.9359289096474" cy="241.5999552705453" r="22.229879699531494" fill="white" /><circle cx="366.31112432797016" cy="444.23652610962995" r="24.678261094795992" fill="white" /><circle cx="193.29278429419693" cy="480.18937466007566" r="27.96406584459303" fill="white" /><circle cx="241.98754798777432" cy="442.7213977447989" r="17.75347058680486" fill="white" />
+    <circle cx="303.17635635764805" cy="542.6631945075125" r="17.170149071829247" fill="white" /><circle cx="257.87992948115823" cy="395.9265472737592" r="22.73774071529958" fill="white" /><circle cx="75.35740059988814" cy="209.36964444717526" r="26.12764037217972" fill="white" /><circle cx="398.9193634050356" cy="248.42343429289215" r="11.851753005871064" fill="white" /><circle cx="308.8579527850581" cy="58.8343472249542" r="20.10082332399179" fill="white" /><circle cx="347.8735579090018" cy="266.56874520749477" r="29.17372310955499" fill="white" /><circle cx="40.27140682323282" cy="373.19615731930986" r="20.532286168767158" fill="white" /><circle cx="217.0440470819616" cy="381.8974744861305" r="18.71113128587848" fill="white" /><circle cx="59.373040600651805" cy="308.70343124140607" r="13.133500947824409" fill="white" /><circle cx="36.74038577492" cy="453.86087845324556" r="20.91196147295777" fill="white" /><circle cx="392.2572465632953" cy="583.718958217642" r="13.22277347814223" fill="white" /><circle cx="281.26666030083703" cy="108.70955227084147" r="21.58795131546562" fill="white" /><circle cx="320.11248896449916" cy="119.6196141250808" r="23.473907295908628" fill="white" /><circle cx="280.0585829204742" cy="513.4739947605467" r="23.131107690204324" fill="white" /><circle cx="236.19641739304714" cy="106.44307648629405" r="14.130212204681222" fill="white" /><circle cx="33.08501478397816" cy="354.7222647791894" r="19.53282587641064" fill="white" /><circle cx="104.2940467392084" cy="568.1046575874295" r="15.42441596936519" fill="white" /><circle cx="203.47419776078794" cy="342.3404455032282" r="23.118974489836376" fill="white" /><circle cx="157.19873037278288" cy="38.126623034402975" r="10.108662748067944" fill="white" /><circle cx="188.14599090964933" cy="77.88379272863351" r="12.078037893309991" fill="white" />
   </g>
-  
   <g filter="url(#shadow)">
     
       <text x="200" y="120" 
-            font-family="Arial, sans-serif" 
-            font-size="36" 
-            font-weight="bold" 
-            fill="white" 
-            text-anchor="middle">
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
         The Unfair Advantage
       </text>
-    
   </g>
-  
   <g filter="url(#shadow)">
     
       <text x="200" y="480" 
-            font-family="Arial, sans-serif" 
-            font-size="22" 
-            fill="#60a5fa" 
-            text-anchor="middle">
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
         Ash Ali
       </text>
-    
   </g>
-  
   <g>
-    <rect x="20" y="20" width="126" height="35" 
-          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
     <text x="83" y="42" 
-          font-family="Arial, sans-serif" 
-          font-size="14" 
-          font-weight="bold"
-          fill="white" 
-          text-anchor="middle">
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
       BUSINESS
     </text>
   </g>
-  
   <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
 </svg>

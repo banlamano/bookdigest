@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-188c778e-aefb-4038-8558-2db6ff872fc1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-188c778e-aefb-4038-8558-2db6ff872fc1)" />
+  <g opacity="0.1">
+    <circle cx="180.20613264128306" cy="306.86751668370806" r="16.223420482801195" fill="white" /><circle cx="42.33717142931766" cy="574.64766249603" r="22.821591591196203" fill="white" /><circle cx="396.76464439749066" cy="323.8862390874317" r="25.481378305328562" fill="white" /><circle cx="151.5604579646112" cy="275.5452507944764" r="21.4823520890099" fill="white" /><circle cx="173.43475997204837" cy="324.2135140081881" r="19.929555912461687" fill="white" /><circle cx="208.44781103480017" cy="428.96241921922496" r="16.169613568007946" fill="white" /><circle cx="331.8901146923304" cy="128.4165625519244" r="14.154898743612412" fill="white" /><circle cx="197.16002900019572" cy="237.40383487877884" r="27.973940348798997" fill="white" /><circle cx="380.118295571449" cy="126.91741979945638" r="18.220433409752168" fill="white" /><circle cx="120.48774101052308" cy="416.5233553133291" r="24.661639398000258" fill="white" /><circle cx="21.3188662607096" cy="191.05603011656575" r="25.66394228834709" fill="white" /><circle cx="152.32953886012933" cy="429.7294463098914" r="21.353512475874723" fill="white" /><circle cx="215.6867824500943" cy="316.09708895750276" r="18.30982303747119" fill="white" /><circle cx="141.1722523817069" cy="561.5772806029039" r="28.86678580235637" fill="white" /><circle cx="194.92022438947853" cy="71.78174798735914" r="26.945649934657695" fill="white" /><circle cx="174.3965465304202" cy="442.0849118093098" r="16.149558105567195" fill="white" /><circle cx="118.15293910330338" cy="81.40505465935277" r="14.266451296636703" fill="white" /><circle cx="211.02474092737617" cy="548.8683956878635" r="22.362396597034838" fill="white" /><circle cx="54.34090324344485" cy="32.6880949637727" r="21.977173597388916" fill="white" /><circle cx="28.38876370213219" cy="453.5036294085071" r="23.8885292649503" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Against the Gods
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Peter Bernstein
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

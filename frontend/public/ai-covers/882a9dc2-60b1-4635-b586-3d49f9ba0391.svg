@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-882a9dc2-60b1-4635-b586-3d49f9ba0391" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-882a9dc2-60b1-4635-b586-3d49f9ba0391)" />
+  <g opacity="0.1">
+    <circle cx="362.5011230364401" cy="12.081773449381284" r="13.233558575312665" fill="white" /><circle cx="249.5134211991572" cy="206.47480007081847" r="21.3765724581904" fill="white" /><circle cx="21.088160010720316" cy="176.93458859181547" r="22.009029421739356" fill="white" /><circle cx="43.20185294562569" cy="232.3181304303052" r="15.924451830083925" fill="white" /><circle cx="329.72488325058333" cy="226.5459516504545" r="27.959254591787527" fill="white" /><circle cx="310.8649856850356" cy="56.060615088509145" r="13.124406252797417" fill="white" /><circle cx="389.1278164693804" cy="485.04939526376245" r="11.444428316459351" fill="white" /><circle cx="243.1238783641977" cy="213.01981146309728" r="28.032601249115288" fill="white" /><circle cx="396.0221412171941" cy="317.6984031193346" r="17.612388390447904" fill="white" /><circle cx="361.7570879835466" cy="11.250508454309216" r="16.74113442203574" fill="white" /><circle cx="255.8907481379971" cy="449.46036030130017" r="19.014991367164598" fill="white" /><circle cx="242.87602153050517" cy="7.458251871461519" r="17.39917701967881" fill="white" /><circle cx="195.7669319245916" cy="541.8516947357048" r="22.6498442475572" fill="white" /><circle cx="330.8840075737395" cy="310.3111239947462" r="27.85967516918508" fill="white" /><circle cx="0.49130333128473147" cy="323.2799596549644" r="12.437180490700225" fill="white" /><circle cx="42.44539997809942" cy="405.84480721314304" r="13.679775233428346" fill="white" /><circle cx="372.29797476174343" cy="401.85638056023686" r="14.676703204627053" fill="white" /><circle cx="310.80953297401055" cy="90.00412392909409" r="24.206903775504998" fill="white" /><circle cx="205.02848933129144" cy="82.00407589162617" r="16.680257211386767" fill="white" /><circle cx="232.6002068132586" cy="102.57825253444297" r="27.84411277151678" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Speed of Trust
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Stephen M.R. Covey
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

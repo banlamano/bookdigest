@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b5de4c06-8eda-4341-886d-d1265076bb17" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b5de4c06-8eda-4341-886d-d1265076bb17)" />
+  <g opacity="0.1">
+    <circle cx="376.9796473029805" cy="559.181361809238" r="19.52365016764067" fill="white" /><circle cx="323.3373332050234" cy="294.28137238960386" r="29.753821638651356" fill="white" /><circle cx="224.83082091350042" cy="168.8084529428179" r="15.577586894175187" fill="white" /><circle cx="119.78637050709241" cy="576.7244333016841" r="11.343845534565457" fill="white" /><circle cx="34.44275579624572" cy="203.19938553692884" r="25.53794509132075" fill="white" /><circle cx="247.93300907870065" cy="390.939902843213" r="24.201570876466416" fill="white" /><circle cx="73.19446761584119" cy="271.8112642602557" r="21.338161937962177" fill="white" /><circle cx="286.25456502953074" cy="296.4338311213992" r="24.474366754746804" fill="white" /><circle cx="302.13027119354456" cy="443.15670273661857" r="13.833368544894864" fill="white" /><circle cx="24.101138750359308" cy="477.70792973157796" r="29.111347144891496" fill="white" /><circle cx="374.7084052551828" cy="159.01203248400319" r="23.628013157011054" fill="white" /><circle cx="340.660916208822" cy="36.11072165426164" r="12.320057832388008" fill="white" /><circle cx="361.62013815902554" cy="304.072414537756" r="26.783484667800394" fill="white" /><circle cx="94.12343117131385" cy="138.019882153694" r="10.317544963284897" fill="white" /><circle cx="300.29687858425154" cy="320.4664205963493" r="14.70715393121678" fill="white" /><circle cx="320.0875029203557" cy="336.4997503451488" r="18.806131370304787" fill="white" /><circle cx="305.8030718151071" cy="343.1210611181509" r="13.751207308992292" fill="white" /><circle cx="33.085046576874255" cy="161.993506604557" r="27.987248208885486" fill="white" /><circle cx="199.72876849442892" cy="271.3549314508096" r="17.92333462739729" fill="white" /><circle cx="100.91158565578237" cy="493.87156719923047" r="21.69688708711851" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Predictable Revenue
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Aaron Ross
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-de28ce35-5ad2-4011-9601-cfe725186fa2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-de28ce35-5ad2-4011-9601-cfe725186fa2)" />
+  <g opacity="0.1">
+    <circle cx="23.467686788164066" cy="117.47843263232953" r="14.975802923276788" fill="white" /><circle cx="332.24019278808464" cy="494.8326744685764" r="12.712436069078946" fill="white" /><circle cx="234.86425425553588" cy="592.139860326746" r="28.015359755875124" fill="white" /><circle cx="99.25814377762916" cy="235.97250516272078" r="16.400735478593255" fill="white" /><circle cx="130.33959384292496" cy="387.22534096496906" r="22.180253096947858" fill="white" /><circle cx="294.1566710576235" cy="227.39626952022144" r="15.581032281356501" fill="white" /><circle cx="128.33730956229616" cy="483.0526011083812" r="26.712103577539192" fill="white" /><circle cx="182.93230214889093" cy="397.0469024692601" r="17.478522097310055" fill="white" /><circle cx="282.4586991394907" cy="521.0641771125345" r="13.90336121791494" fill="white" /><circle cx="38.59186006449966" cy="343.0385635502256" r="19.931626226230055" fill="white" /><circle cx="354.45204071737703" cy="86.52918744221421" r="26.383576612277054" fill="white" /><circle cx="244.42083410935163" cy="414.8446074255068" r="25.93171095944605" fill="white" /><circle cx="193.76721511361973" cy="1.7469203055097138" r="22.59812800205175" fill="white" /><circle cx="267.9125805457036" cy="147.03184642336973" r="25.737381845139307" fill="white" /><circle cx="366.15281656671993" cy="536.9376736304843" r="21.849647992547872" fill="white" /><circle cx="60.17252583521731" cy="153.93583341936034" r="16.21341504765533" fill="white" /><circle cx="258.9922748307569" cy="325.19870117411693" r="26.42640826536305" fill="white" /><circle cx="158.22669225864047" cy="44.67413240716374" r="26.618568030963463" fill="white" /><circle cx="98.91424047989995" cy="421.5303428859128" r="23.661291918591214" fill="white" /><circle cx="302.0729952176393" cy="271.3028033197852" r="21.197009661706073" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Macht der Ansteckung:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Was Produkte, Ideen und
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Botschaften
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jonah Berger
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

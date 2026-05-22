@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-88195aac-2a42-4b30-ae92-78d4e72f159e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-88195aac-2a42-4b30-ae92-78d4e72f159e)" />
+  <g opacity="0.1">
+    <circle cx="28.07218233392028" cy="283.9570318486413" r="12.833872554721546" fill="white" /><circle cx="135.7711336613368" cy="48.51460924430035" r="29.432670426738312" fill="white" /><circle cx="192.05663630643434" cy="241.50337428655735" r="19.131833100806666" fill="white" /><circle cx="177.2140209585706" cy="23.347023641225185" r="21.969592288711695" fill="white" /><circle cx="109.73667334247406" cy="300.83108227566953" r="17.53181850572777" fill="white" /><circle cx="129.38679214298242" cy="61.40228451565648" r="28.86718207517791" fill="white" /><circle cx="241.56415198564315" cy="125.07987284638618" r="25.320321133991598" fill="white" /><circle cx="118.36484568717522" cy="65.33765165836252" r="23.600232584483038" fill="white" /><circle cx="257.89447146859214" cy="6.222012382703523" r="17.216174564940168" fill="white" /><circle cx="274.9772520779613" cy="140.1551329793356" r="19.4411585937058" fill="white" /><circle cx="178.30592115197342" cy="340.5317979555318" r="22.44951125279785" fill="white" /><circle cx="189.52762919769285" cy="182.79566799560737" r="11.86798605467682" fill="white" /><circle cx="4.2054341451281285" cy="347.9162338644813" r="18.231902118959486" fill="white" /><circle cx="120.84859320337688" cy="298.3439619803105" r="23.462773705343267" fill="white" /><circle cx="106.7988200581063" cy="552.32591730742" r="12.236959220138822" fill="white" /><circle cx="81.22433516044056" cy="394.39012010860034" r="16.877350245845115" fill="white" /><circle cx="9.602401853320863" cy="163.14998448200967" r="26.04792012661719" fill="white" /><circle cx="111.88391734525847" cy="16.577092709694075" r="24.11396015555868" fill="white" /><circle cx="129.9321592919874" cy="23.55336627410114" r="16.079192356731173" fill="white" /><circle cx="94.50566687666813" cy="144.69990471989976" r="19.339963107337386" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Algorithms to Live By
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brian Christian
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-3389429b-cd11-4780-9ea1-87ac5cc46f03" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-3389429b-cd11-4780-9ea1-87ac5cc46f03)" />
+  <g opacity="0.1">
+    <circle cx="129.29857742838783" cy="8.290532334902046" r="25.544191820039114" fill="white" /><circle cx="221.78398530217333" cy="28.23007786969538" r="24.314988071983556" fill="white" /><circle cx="356.82026733198705" cy="55.69369326672937" r="13.130800384575746" fill="white" /><circle cx="33.67153003099625" cy="35.29623967579296" r="21.52968772772544" fill="white" /><circle cx="398.09033318625166" cy="555.6977392054033" r="28.328173097973757" fill="white" /><circle cx="134.39632980425716" cy="510.03709277932677" r="12.134617760754157" fill="white" /><circle cx="29.7495279034397" cy="217.79732686757725" r="10.686147875934235" fill="white" /><circle cx="151.90425907698102" cy="562.2728722438966" r="21.942303386022402" fill="white" /><circle cx="163.95912763296292" cy="399.4133486457456" r="14.256336586506396" fill="white" /><circle cx="394.70197568446565" cy="183.49074255671135" r="22.582762426410252" fill="white" /><circle cx="353.9014840923549" cy="378.3581888640404" r="12.243915495092885" fill="white" /><circle cx="20.69166617607423" cy="389.8552692906681" r="13.039139635456326" fill="white" /><circle cx="88.95443535746872" cy="473.81700243738914" r="29.376342396832285" fill="white" /><circle cx="42.8639011951383" cy="15.841905863582472" r="24.896048633667082" fill="white" /><circle cx="337.14792424509676" cy="334.3428544112022" r="26.55663857751514" fill="white" /><circle cx="241.89008614377988" cy="1.9122568753547897" r="22.628777583383396" fill="white" /><circle cx="238.2266627642651" cy="470.79784452500843" r="13.59916328195013" fill="white" /><circle cx="191.88983962037946" cy="337.0402948211165" r="16.17081578813886" fill="white" /><circle cx="152.36681116723796" cy="341.92133507210764" r="26.39986784700403" fill="white" /><circle cx="86.77990278511025" cy="330.5797161798151" r="22.468932020581896" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Alzheimer-Lösung: Das
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        erste Programm zur
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Prävention und Umkehr von
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Dale Bredesen
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

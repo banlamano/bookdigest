@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-49e4ad34-2f50-4b93-80d2-96585432c097" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-49e4ad34-2f50-4b93-80d2-96585432c097)" />
+  <g opacity="0.1">
+    <circle cx="36.50966612202669" cy="492.67981398033044" r="25.88891042428527" fill="white" /><circle cx="197.285623678375" cy="86.94295144632129" r="18.26161193562032" fill="white" /><circle cx="201.07926355498927" cy="247.15415252957064" r="11.706340297435654" fill="white" /><circle cx="245.45037077333615" cy="151.22929446780472" r="10.234012300441336" fill="white" /><circle cx="14.288487167270647" cy="68.59596407663946" r="15.44605092916984" fill="white" /><circle cx="124.4729085538574" cy="558.1139010109795" r="27.55249560945623" fill="white" /><circle cx="75.82193576545899" cy="33.01805506566784" r="24.412418668302323" fill="white" /><circle cx="353.0129118830445" cy="447.98812159334295" r="16.67862426217514" fill="white" /><circle cx="370.45278685269216" cy="559.5678333661854" r="22.8018370313032" fill="white" /><circle cx="312.2358580514014" cy="538.7389545792873" r="26.296417588022337" fill="white" /><circle cx="141.43373663549332" cy="552.6646172119408" r="29.360342682578853" fill="white" /><circle cx="233.15656357017184" cy="288.4610725263326" r="13.008613071036127" fill="white" /><circle cx="312.0788384548471" cy="591.5080629322525" r="23.944207519779155" fill="white" /><circle cx="317.4266586510299" cy="236.2093531270321" r="12.780355331253725" fill="white" /><circle cx="204.0939699393364" cy="147.76572827665447" r="20.871985468410244" fill="white" /><circle cx="376.28613802391413" cy="120.54936529554412" r="12.261695557352034" fill="white" /><circle cx="234.22678606260536" cy="345.12384673471803" r="24.89686183664265" fill="white" /><circle cx="187.25630533205947" cy="117.58425106218017" r="27.70294106956882" fill="white" /><circle cx="142.33157851584167" cy="487.3664948605312" r="16.268829748552236" fill="white" /><circle cx="59.85334990749007" cy="501.67405321259594" r="16.192538132954347" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Smarter Faster Better
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Charles Duhigg
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

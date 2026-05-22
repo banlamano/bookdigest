@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d37dc470-a6e3-48ee-82bb-3b223ef38c3f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d37dc470-a6e3-48ee-82bb-3b223ef38c3f)" />
+  <g opacity="0.1">
+    <circle cx="59.957594491613484" cy="128.28514016905294" r="20.597816922445148" fill="white" /><circle cx="228.29614338013263" cy="582.6496786809527" r="20.15285711212516" fill="white" /><circle cx="324.0857463373969" cy="193.47332308226152" r="11.41880407751766" fill="white" /><circle cx="127.45290123026311" cy="208.53739546279576" r="25.03250547694693" fill="white" /><circle cx="47.118879613761955" cy="240.86234957091563" r="20.53601024902433" fill="white" /><circle cx="173.8682537092749" cy="232.28498990779283" r="21.363982233755934" fill="white" /><circle cx="10.101173090722648" cy="23.48854160631393" r="14.06545930057726" fill="white" /><circle cx="196.16910284414294" cy="425.2278319341449" r="29.823792477711958" fill="white" /><circle cx="314.2578843868556" cy="458.1080652545508" r="29.16870354709687" fill="white" /><circle cx="309.4439953818745" cy="487.4941005477481" r="20.983240856645125" fill="white" /><circle cx="321.2623385603584" cy="120.04090162732611" r="10.653200065141462" fill="white" /><circle cx="321.33889026297686" cy="43.069255979631535" r="23.179229418519085" fill="white" /><circle cx="356.5372167145561" cy="538.9837976770541" r="15.125151279005667" fill="white" /><circle cx="56.87482357858173" cy="298.037345754528" r="19.23946660987679" fill="white" /><circle cx="158.6894715014981" cy="428.649590868404" r="23.855389079159124" fill="white" /><circle cx="324.14864465691244" cy="576.4309320209153" r="23.364676400829133" fill="white" /><circle cx="4.0896111159663295" cy="422.22219342394305" r="24.687359456592034" fill="white" /><circle cx="140.670458574514" cy="469.6319219461942" r="23.74994812157574" fill="white" /><circle cx="211.80338264852608" cy="369.1988261288605" r="13.04932889541333" fill="white" /><circle cx="116.3093062103648" cy="379.6142434408864" r="14.401325768042767" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        #AskGaryVee
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Gary Vaynerchuk
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

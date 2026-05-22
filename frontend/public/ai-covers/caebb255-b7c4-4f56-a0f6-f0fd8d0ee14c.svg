@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-caebb255-b7c4-4f56-a0f6-f0fd8d0ee14c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-caebb255-b7c4-4f56-a0f6-f0fd8d0ee14c)" />
+  <g opacity="0.1">
+    <circle cx="176.61232536344195" cy="229.33481670892397" r="21.419607428638145" fill="white" /><circle cx="72.3685200574355" cy="417.1346463744835" r="28.00601119003526" fill="white" /><circle cx="168.2663552818082" cy="595.1009586829653" r="21.12445853871772" fill="white" /><circle cx="322.69633953322995" cy="116.62104906302733" r="28.78962769890054" fill="white" /><circle cx="284.2749812960578" cy="296.65941483997113" r="11.563329393914117" fill="white" /><circle cx="211.67759558365265" cy="432.55134857056845" r="12.046411389267755" fill="white" /><circle cx="240.78026873079125" cy="40.407269005381565" r="22.03331009610237" fill="white" /><circle cx="148.85305548022262" cy="294.2653457101086" r="28.94079879598138" fill="white" /><circle cx="92.72941139362408" cy="34.46386669287389" r="17.881737510267143" fill="white" /><circle cx="79.34862833858651" cy="109.80266135719306" r="27.860882212975994" fill="white" /><circle cx="99.3566494093896" cy="226.31619447750307" r="17.655919184019446" fill="white" /><circle cx="398.5656735296923" cy="545.5484720450818" r="12.216651547314942" fill="white" /><circle cx="210.13014072101535" cy="363.8306382378989" r="22.12285166997808" fill="white" /><circle cx="127.07544886807653" cy="337.8168120109259" r="27.436213775947166" fill="white" /><circle cx="172.36633922203018" cy="259.54798751445503" r="14.921398740971188" fill="white" /><circle cx="142.76862351462674" cy="504.64923612925554" r="18.065664574524842" fill="white" /><circle cx="318.1438200061177" cy="541.2109344161927" r="11.408992405010652" fill="white" /><circle cx="61.00296152914444" cy="553.515518780811" r="16.598106914492305" fill="white" /><circle cx="338.7771786300347" cy="216.1733733355201" r="13.980259207033388" fill="white" /><circle cx="5.470343918624065" cy="577.6006777811596" r="23.626321215266323" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Redirect: Die Psychologie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        des Neuanfangs
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Timothy Wilson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

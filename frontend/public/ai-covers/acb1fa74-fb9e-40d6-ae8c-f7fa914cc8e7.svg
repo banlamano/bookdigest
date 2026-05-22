@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-acb1fa74-fb9e-40d6-ae8c-f7fa914cc8e7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-acb1fa74-fb9e-40d6-ae8c-f7fa914cc8e7)" />
+  <g opacity="0.1">
+    <circle cx="372.27022971663064" cy="43.18433980202832" r="21.83019737951075" fill="white" /><circle cx="199.53541656901214" cy="12.108487809242652" r="28.22052139440704" fill="white" /><circle cx="45.50661762199062" cy="522.0095276715249" r="20.432527718939873" fill="white" /><circle cx="71.43924059975446" cy="475.2395429532017" r="18.636320922205798" fill="white" /><circle cx="367.6085142498876" cy="292.8433637806391" r="28.907040112696105" fill="white" /><circle cx="12.456919445268744" cy="153.05834096950676" r="21.330775839685515" fill="white" /><circle cx="8.922187602017306" cy="499.3875687061753" r="17.82152821056146" fill="white" /><circle cx="294.063046060158" cy="46.456060182271955" r="23.74542236386794" fill="white" /><circle cx="216.80160591178534" cy="7.791005369463422" r="20.773036484294053" fill="white" /><circle cx="389.14797077427414" cy="142.77658201772937" r="10.114559573776635" fill="white" /><circle cx="246.35189179549744" cy="414.54364098867205" r="28.19273806777296" fill="white" /><circle cx="374.26278862085815" cy="121.40723744032374" r="20.208950926571827" fill="white" /><circle cx="386.16439220872047" cy="165.65882204738503" r="20.370858211102007" fill="white" /><circle cx="91.02787828525956" cy="472.8977298048591" r="22.649918370159735" fill="white" /><circle cx="304.0181954829027" cy="111.90635918835123" r="12.331733563536131" fill="white" /><circle cx="138.94021111507467" cy="329.50135142868146" r="10.784325287381035" fill="white" /><circle cx="24.773289501076867" cy="232.8485298540437" r="15.956936187434644" fill="white" /><circle cx="238.00071314102027" cy="530.1103028279498" r="22.118847085042113" fill="white" /><circle cx="60.20852918267017" cy="384.16336434800155" r="26.31233771958999" fill="white" /><circle cx="5.7116241218574615" cy="511.28311417213547" r="15.01325273569978" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The 33 Strategies of War
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robert Greene
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

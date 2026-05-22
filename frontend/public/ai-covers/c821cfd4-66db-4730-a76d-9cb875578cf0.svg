@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c821cfd4-66db-4730-a76d-9cb875578cf0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c821cfd4-66db-4730-a76d-9cb875578cf0)" />
+  <g opacity="0.1">
+    <circle cx="386.46097996833834" cy="464.0097709324418" r="12.299721685716772" fill="white" /><circle cx="121.03913238017489" cy="277.0211326422518" r="10.384860631605283" fill="white" /><circle cx="174.25904820677087" cy="389.4141770817659" r="15.824109345445317" fill="white" /><circle cx="370.0937748815842" cy="596.0601814109053" r="16.69117993821164" fill="white" /><circle cx="38.45265869186591" cy="54.43635117316219" r="17.67660958602432" fill="white" /><circle cx="270.1458382652034" cy="40.02842000586926" r="12.077232966199992" fill="white" /><circle cx="208.30672063346515" cy="98.60871150084863" r="23.710839750627294" fill="white" /><circle cx="340.31402405840737" cy="524.1822238300721" r="18.126348093493363" fill="white" /><circle cx="336.6881550932718" cy="63.062499535033936" r="17.115441770342898" fill="white" /><circle cx="373.81113446821763" cy="420.24021355171743" r="25.924080830461435" fill="white" /><circle cx="105.27988597188242" cy="70.60100473478698" r="17.122993528101336" fill="white" /><circle cx="270.76997318796" cy="532.1178734586692" r="18.983412354699936" fill="white" /><circle cx="317.71976251826004" cy="479.8938602440305" r="11.125671956637248" fill="white" /><circle cx="307.5830948449198" cy="127.62200741691123" r="13.171996718168245" fill="white" /><circle cx="368.0344561817345" cy="203.32149877011474" r="11.462220234495685" fill="white" /><circle cx="106.76614092820999" cy="359.2848165870092" r="19.019028380790946" fill="white" /><circle cx="112.63383071595432" cy="39.80513837855393" r="26.419280867729988" fill="white" /><circle cx="362.18577122608144" cy="4.012170148857241" r="20.77271088604217" fill="white" /><circle cx="47.24152505983046" cy="244.9972627631463" r="18.75866657735679" fill="white" /><circle cx="71.29303015897163" cy="34.27085815162092" r="25.190529537492033" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wenn alles zerbricht,
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        fängt etwas Neues an:
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Buddhistische
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Pema Chödrön
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c10cab81-2a42-4296-938b-970cbba051a2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c10cab81-2a42-4296-938b-970cbba051a2)" />
+  <g opacity="0.1">
+    <circle cx="89.38535031974433" cy="398.3199418061812" r="24.39922847351704" fill="white" /><circle cx="310.41030121694985" cy="164.2308155882182" r="21.72902128288424" fill="white" /><circle cx="317.96103032329006" cy="573.1089351283935" r="17.36159177271736" fill="white" /><circle cx="116.33576765350169" cy="594.3172154569149" r="27.844065013343805" fill="white" /><circle cx="25.637103917170066" cy="45.566432781638476" r="28.746924222672526" fill="white" /><circle cx="349.2972439215696" cy="289.6024916075433" r="18.833241062679548" fill="white" /><circle cx="19.361592623051884" cy="536.2744045630201" r="16.305333898577334" fill="white" /><circle cx="341.7439667138089" cy="312.5496668775775" r="19.518907426180384" fill="white" /><circle cx="284.81875858671685" cy="302.12132767000656" r="25.44879662868064" fill="white" /><circle cx="127.11062803920696" cy="127.63628733480739" r="25.37031802879052" fill="white" /><circle cx="104.5604557056612" cy="391.6929337995897" r="28.629543475146285" fill="white" /><circle cx="234.92577037637776" cy="583.0333831518251" r="15.447743340770737" fill="white" /><circle cx="382.0574898257843" cy="263.0833449779369" r="11.861535491492596" fill="white" /><circle cx="382.8711783324037" cy="564.3497279088796" r="15.71651053528644" fill="white" /><circle cx="264.78214572735646" cy="41.41380394564192" r="12.152356238297973" fill="white" /><circle cx="177.5771847937485" cy="58.84762644571293" r="16.337092459464518" fill="white" /><circle cx="148.92282919716044" cy="506.47329118784285" r="19.510982026484083" fill="white" /><circle cx="240.42054274698023" cy="565.8830213566562" r="24.852306458168638" fill="white" /><circle cx="16.978229151654347" cy="268.71326744650383" r="18.374536217107078" fill="white" /><circle cx="300.94413031887024" cy="405.0929567285059" r="21.506221285525314" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die UltraMind-Lösung: Das
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        bahnbrechende Programm
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        für ein gesundes Gehirn
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Mark Hyman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

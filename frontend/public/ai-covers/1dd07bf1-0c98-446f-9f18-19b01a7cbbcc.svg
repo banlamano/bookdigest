@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1dd07bf1-0c98-446f-9f18-19b01a7cbbcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1dd07bf1-0c98-446f-9f18-19b01a7cbbcc)" />
+  <g opacity="0.1">
+    <circle cx="307.4945882218359" cy="559.7456073553408" r="24.36348585188572" fill="white" /><circle cx="296.07920133626567" cy="97.14661645652049" r="12.04631222643181" fill="white" /><circle cx="339.0092811932992" cy="246.00889669466758" r="20.432765982539387" fill="white" /><circle cx="113.30884210210259" cy="582.0432335170915" r="12.045516176031885" fill="white" /><circle cx="133.4132058735162" cy="310.3487343949273" r="16.681877417120933" fill="white" /><circle cx="21.80160807831659" cy="478.1063730461696" r="10.63348962073124" fill="white" /><circle cx="375.5026913627125" cy="130.82333642878078" r="23.481126828616947" fill="white" /><circle cx="105.43698522167087" cy="168.88315602565632" r="24.446284059588407" fill="white" /><circle cx="320.54353910697284" cy="37.576131643594124" r="11.95762578526621" fill="white" /><circle cx="239.98840163792718" cy="2.572954120411808" r="10.812553343435702" fill="white" /><circle cx="306.35251094305437" cy="111.14257903265825" r="26.135893221403084" fill="white" /><circle cx="192.8488542424261" cy="163.0841688579257" r="27.479285907664984" fill="white" /><circle cx="308.2576929369729" cy="12.556752474572042" r="29.086113463798835" fill="white" /><circle cx="307.0775608656008" cy="331.30339171960907" r="12.015163854392107" fill="white" /><circle cx="51.49119876184778" cy="570.929989215544" r="19.31167755612453" fill="white" /><circle cx="219.66734086038434" cy="84.89820052591203" r="29.391394412178514" fill="white" /><circle cx="64.52097693104064" cy="560.8083660415651" r="28.964710726425658" fill="white" /><circle cx="170.1751919587997" cy="218.0254528245466" r="18.469396508559903" fill="white" /><circle cx="23.57240886828982" cy="294.467076341638" r="24.550189455458817" fill="white" /><circle cx="164.71913735609024" cy="266.81940327640723" r="15.239206214447297" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die sieben geistigen
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Gesetze des Erfolgs: Ein
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        praktischer Wegweiser zur
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Deepak Chopra
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

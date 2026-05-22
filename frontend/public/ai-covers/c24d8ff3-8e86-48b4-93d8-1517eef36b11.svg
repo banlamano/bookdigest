@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c24d8ff3-8e86-48b4-93d8-1517eef36b11" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c24d8ff3-8e86-48b4-93d8-1517eef36b11)" />
+  <g opacity="0.1">
+    <circle cx="382.85614838529267" cy="275.33773862730897" r="18.554715942492585" fill="white" /><circle cx="278.7604172846666" cy="506.25472289783323" r="16.414473582493677" fill="white" /><circle cx="181.24418144959856" cy="493.20559153586544" r="28.31988166955831" fill="white" /><circle cx="343.0580086301419" cy="446.63991165681057" r="22.853807821849724" fill="white" /><circle cx="50.16957410581364" cy="551.5061214085907" r="23.460603720712633" fill="white" /><circle cx="200.98065280185494" cy="235.345336192723" r="14.822892783650277" fill="white" /><circle cx="345.1524028959818" cy="434.9905977329423" r="21.43144599336363" fill="white" /><circle cx="188.12762865335407" cy="210.6749083404757" r="24.736358198771907" fill="white" /><circle cx="386.00459439459473" cy="265.5982182281143" r="22.506082414592353" fill="white" /><circle cx="213.98121597248974" cy="408.3349604657327" r="21.133793967623493" fill="white" /><circle cx="86.4671274880949" cy="469.5462544019398" r="23.167463164259885" fill="white" /><circle cx="155.4914957598784" cy="433.2339371965154" r="29.45761235743037" fill="white" /><circle cx="224.36498669109116" cy="591.8785242555556" r="19.429996122310225" fill="white" /><circle cx="100.35308674361696" cy="383.37182564386717" r="26.04614301409201" fill="white" /><circle cx="376.251440910946" cy="151.06898486610635" r="11.178569194616578" fill="white" /><circle cx="231.97526244319278" cy="33.43824739185004" r="27.71030061426635" fill="white" /><circle cx="303.8515285071448" cy="482.60186342317377" r="27.21656758108319" fill="white" /><circle cx="365.57345245984317" cy="326.67837705085003" r="19.03094069154914" fill="white" /><circle cx="388.04187786435944" cy="79.45365891329739" r="25.461061264800225" fill="white" /><circle cx="244.6744666607619" cy="507.39952355081925" r="11.876490981602647" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Anatomy of Peace
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        The Arbinger Institute
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

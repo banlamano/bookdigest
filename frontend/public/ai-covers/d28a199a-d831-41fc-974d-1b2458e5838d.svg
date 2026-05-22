@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d28a199a-d831-41fc-974d-1b2458e5838d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d28a199a-d831-41fc-974d-1b2458e5838d)" />
+  <g opacity="0.1">
+    <circle cx="118.61315611524792" cy="305.98432892697673" r="13.90498392864356" fill="white" /><circle cx="18.781316177787623" cy="243.34797994263553" r="17.630074121815394" fill="white" /><circle cx="367.7856886964445" cy="532.3979196725627" r="25.52149011661989" fill="white" /><circle cx="99.2572832871688" cy="321.5216472791403" r="25.57230817139061" fill="white" /><circle cx="185.7224569896331" cy="487.8127370996134" r="10.361918531100505" fill="white" /><circle cx="92.35887222438946" cy="51.7224674309356" r="19.656193826356738" fill="white" /><circle cx="277.5037221741971" cy="502.1611769476699" r="19.87047934486162" fill="white" /><circle cx="177.63656856941358" cy="153.7961702053152" r="23.548292194984427" fill="white" /><circle cx="71.51659749260504" cy="100.13399108057266" r="27.301911954234416" fill="white" /><circle cx="284.7179058881002" cy="483.8679060082368" r="14.17085481023083" fill="white" /><circle cx="319.3672283473126" cy="571.3957816747765" r="17.091570845050136" fill="white" /><circle cx="146.2369897585735" cy="572.4452698857027" r="27.555137361551722" fill="white" /><circle cx="365.3941149479719" cy="417.2286080432907" r="27.694813549756848" fill="white" /><circle cx="327.2818328927855" cy="538.3289936862571" r="20.13948370772362" fill="white" /><circle cx="213.93494243804142" cy="513.9322630301151" r="26.332668090573264" fill="white" /><circle cx="141.51946620218342" cy="120.86668388579531" r="20.1107976623613" fill="white" /><circle cx="318.1902157832242" cy="509.6202547889219" r="24.83802958599424" fill="white" /><circle cx="60.823834396468925" cy="292.6279954204842" r="19.180114713632868" fill="white" /><circle cx="87.30484223607209" cy="536.1148346789732" r="15.761457931994807" fill="white" /><circle cx="97.13704943102867" cy="369.2487655537576" r="21.020472484472542" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Macht der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Veränderung: Wie Sie
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wandel möglich machen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Chip Heath
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

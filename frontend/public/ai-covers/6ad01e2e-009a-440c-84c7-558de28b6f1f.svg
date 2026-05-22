@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-6ad01e2e-009a-440c-84c7-558de28b6f1f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-6ad01e2e-009a-440c-84c7-558de28b6f1f)" />
+  <g opacity="0.1">
+    <circle cx="274.23902331121235" cy="537.5357119221118" r="17.914662804270264" fill="white" /><circle cx="67.6624617266013" cy="78.09615861163846" r="15.068414909758886" fill="white" /><circle cx="358.5135707172797" cy="313.21650450833476" r="13.828223513597724" fill="white" /><circle cx="124.13740080172397" cy="217.0744039837738" r="27.80060038166819" fill="white" /><circle cx="253.55539862178495" cy="529.8753003245841" r="18.54667705687109" fill="white" /><circle cx="262.0838718102019" cy="0.8348315546904406" r="25.35630318740558" fill="white" /><circle cx="317.6881819081617" cy="165.46942850564326" r="10.1718701419596" fill="white" /><circle cx="82.89692134673379" cy="415.2692215698325" r="20.888357306724828" fill="white" /><circle cx="51.449207342585844" cy="278.20369489447" r="15.998261222594302" fill="white" /><circle cx="109.33544627460137" cy="303.256740522707" r="10.370535255804612" fill="white" /><circle cx="124.99917934332503" cy="201.90783368207522" r="25.946938598227263" fill="white" /><circle cx="134.50178134943695" cy="494.63812960506897" r="29.89331122245137" fill="white" /><circle cx="290.1548184652132" cy="202.10109236621042" r="15.474993378016041" fill="white" /><circle cx="350.87580394598655" cy="550.3343795416215" r="24.469310524482495" fill="white" /><circle cx="147.76954900626208" cy="108.55034272188884" r="10.042239281186625" fill="white" /><circle cx="197.75106019033254" cy="99.93262271881045" r="24.247877322618166" fill="white" /><circle cx="321.73682769438756" cy="18.435608340646127" r="14.406473509286661" fill="white" /><circle cx="318.655631745148" cy="567.9571871919675" r="15.884657976798717" fill="white" /><circle cx="389.74791773860875" cy="46.564409692146704" r="29.326105396681136" fill="white" /><circle cx="37.46142153978802" cy="383.5775085887962" r="23.335688401837352" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Pre-Suasion
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robert Cialdini
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

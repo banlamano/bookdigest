@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-71b1dfd5-2493-4729-a62f-18efb9ad21ef" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-71b1dfd5-2493-4729-a62f-18efb9ad21ef)" />
+  <g opacity="0.1">
+    <circle cx="198.64900820891802" cy="523.4758407629124" r="25.116237113527536" fill="white" /><circle cx="350.23322068399654" cy="26.06185663504157" r="11.731724711804333" fill="white" /><circle cx="208.71246320264163" cy="18.037289021177582" r="19.693553430943346" fill="white" /><circle cx="273.1959740584974" cy="449.03844074269335" r="25.417165347331874" fill="white" /><circle cx="250.32443310271213" cy="139.5982053846391" r="27.134571679930893" fill="white" /><circle cx="154.929614808189" cy="480.9841245323808" r="15.132968273683652" fill="white" /><circle cx="123.7593061749092" cy="552.5859042792096" r="21.51344351174748" fill="white" /><circle cx="122.8369336633353" cy="502.5463375253035" r="28.98215631074363" fill="white" /><circle cx="29.289160329343655" cy="334.7144674150865" r="12.759165159676488" fill="white" /><circle cx="397.96797394356463" cy="386.98507351726573" r="25.972730143597644" fill="white" /><circle cx="62.61221198088221" cy="201.62778116746668" r="22.53397910368836" fill="white" /><circle cx="75.65454356604357" cy="33.78357545392561" r="13.283727355635278" fill="white" /><circle cx="384.18301670069053" cy="331.28588125880566" r="25.22702867507548" fill="white" /><circle cx="85.27433745171832" cy="543.3746392763833" r="20.585516302187283" fill="white" /><circle cx="212.9113154331582" cy="369.39944549421807" r="23.80534326113625" fill="white" /><circle cx="194.8249492045433" cy="501.5967680213624" r="10.536030944768218" fill="white" /><circle cx="305.2425897718966" cy="254.95188196810912" r="23.97377995077116" fill="white" /><circle cx="160.94583144581867" cy="536.5990299308515" r="15.870203457908936" fill="white" /><circle cx="160.45965130939973" cy="10.223161933921432" r="13.301335057947218" fill="white" /><circle cx="117.50881172031042" cy="406.3463543075588" r="26.302028212282966" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Ungezähmte: Eine
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Geschichte aus den Bergen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Amerikas
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Tara Westover
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

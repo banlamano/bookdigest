@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-19fa4d7a-7141-42f4-8385-16af06cd5202" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-19fa4d7a-7141-42f4-8385-16af06cd5202)" />
+  <g opacity="0.1">
+    <circle cx="206.11378934319205" cy="579.3986192395284" r="26.972054670416735" fill="white" /><circle cx="237.14216832197715" cy="296.116604099372" r="12.433195027693976" fill="white" /><circle cx="115.89122625986587" cy="152.52106751794236" r="19.065402738680042" fill="white" /><circle cx="393.152561507929" cy="437.3257546690879" r="29.28233794728871" fill="white" /><circle cx="20.972740868426154" cy="546.937828569472" r="29.701690898470574" fill="white" /><circle cx="191.72894652467193" cy="177.565512810171" r="16.2596449387546" fill="white" /><circle cx="89.34894259117212" cy="213.0430843208918" r="21.635750688898057" fill="white" /><circle cx="132.56029215765562" cy="354.8853164439357" r="19.810959679623682" fill="white" /><circle cx="352.07972743862297" cy="72.59563269738665" r="21.13886700239023" fill="white" /><circle cx="35.99136013230289" cy="486.9896176246081" r="23.456400530306084" fill="white" /><circle cx="244.54727162883617" cy="116.3492205848517" r="27.70590617801872" fill="white" /><circle cx="289.2404277078013" cy="432.325236068717" r="13.494832942507431" fill="white" /><circle cx="129.80593589418982" cy="170.11543863660478" r="17.487877051972976" fill="white" /><circle cx="109.31927314647947" cy="448.3358606863634" r="11.01497879490032" fill="white" /><circle cx="120.72582225388402" cy="19.308277641409987" r="10.780559298685159" fill="white" /><circle cx="58.60491474200735" cy="126.41587971976446" r="28.81526917903095" fill="white" /><circle cx="128.95706141285496" cy="35.56878644247894" r="12.328332070320604" fill="white" /><circle cx="35.20588956916595" cy="68.0947842868747" r="16.624799662159738" fill="white" /><circle cx="359.0761028337603" cy="346.81120896106177" r="23.82474607565565" fill="white" /><circle cx="309.9326084067333" cy="277.49261878134257" r="23.521766934235863" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Teacher Man
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Frank McCourt
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-6f14a8f4-cecf-42c2-9caf-da9501df22f8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-6f14a8f4-cecf-42c2-9caf-da9501df22f8)" />
+  <g opacity="0.1">
+    <circle cx="142.11278311444545" cy="438.75888325459493" r="25.558889274280894" fill="white" /><circle cx="331.4494923134724" cy="60.176613927373815" r="27.976274896228375" fill="white" /><circle cx="50.191301045845506" cy="216.91300418519216" r="21.373350443608253" fill="white" /><circle cx="198.79864196105677" cy="269.7515928326402" r="21.215750013251597" fill="white" /><circle cx="317.0151335102907" cy="453.9135588645773" r="15.536604650220681" fill="white" /><circle cx="150.38651959785042" cy="256.6238376186788" r="23.96570145631594" fill="white" /><circle cx="161.0921726837586" cy="250.61457731159825" r="15.004726182520251" fill="white" /><circle cx="300.0119169965311" cy="435.2860611988107" r="28.81374248688307" fill="white" /><circle cx="339.9695666483205" cy="7.080256823665554" r="26.350550761884243" fill="white" /><circle cx="399.61048020950625" cy="149.95401393216133" r="14.023036838192915" fill="white" /><circle cx="63.88703070630228" cy="216.59862621716098" r="23.820998113425148" fill="white" /><circle cx="287.2999361466664" cy="375.29923815948973" r="11.52854923564009" fill="white" /><circle cx="221.4550606108184" cy="458.3713277545835" r="14.870358561110347" fill="white" /><circle cx="25.04048007808879" cy="595.1304550489383" r="13.038577540356346" fill="white" /><circle cx="56.332969483015205" cy="566.832872625788" r="12.212018459282683" fill="white" /><circle cx="301.5821063034904" cy="419.87689243557986" r="16.896746553304343" fill="white" /><circle cx="202.7669628439127" cy="353.59635186218406" r="18.94774531583652" fill="white" /><circle cx="24.226947845442304" cy="16.711984432140838" r="26.746074845786836" fill="white" /><circle cx="181.69897295377532" cy="487.7121051855156" r="24.11088005408595" fill="white" /><circle cx="183.62675030728198" cy="526.9093846324444" r="15.783681565166503" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Allesverkäufer: Jeff
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Bezos und das Imperium
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        von Amazon
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brad Stone
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

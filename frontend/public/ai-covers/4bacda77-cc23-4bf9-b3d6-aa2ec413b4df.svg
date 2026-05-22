@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-4bacda77-cc23-4bf9-b3d6-aa2ec413b4df" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-4bacda77-cc23-4bf9-b3d6-aa2ec413b4df)" />
+  <g opacity="0.1">
+    <circle cx="236.823337521427" cy="516.6094288419055" r="14.951320780491699" fill="white" /><circle cx="339.78181974840055" cy="599.1020035554338" r="21.43446375340551" fill="white" /><circle cx="263.7003311923936" cy="595.391662203892" r="29.412614542212342" fill="white" /><circle cx="218.6538483044182" cy="46.4043170997515" r="27.579592403205197" fill="white" /><circle cx="134.51140613649426" cy="224.55474683982553" r="17.753099006526256" fill="white" /><circle cx="83.47549617663348" cy="108.05164360333093" r="10.142538795685338" fill="white" /><circle cx="203.5758818505328" cy="473.94284876399155" r="10.046735488865199" fill="white" /><circle cx="91.03588777153023" cy="401.088278549883" r="26.892686573388115" fill="white" /><circle cx="274.25073918237126" cy="442.97331275507736" r="10.260734724112606" fill="white" /><circle cx="104.86178347695554" cy="584.088186590233" r="28.233023465551387" fill="white" /><circle cx="20.17579614069969" cy="32.484906258637515" r="28.809122908427092" fill="white" /><circle cx="298.7828377906397" cy="328.02685016247" r="19.806092467964028" fill="white" /><circle cx="234.08295579829704" cy="227.64848734969382" r="25.86526930224036" fill="white" /><circle cx="34.79736977569483" cy="271.85194604185887" r="28.199354534003756" fill="white" /><circle cx="357.7541589685183" cy="168.07789533406753" r="12.87550575619247" fill="white" /><circle cx="123.22579280408506" cy="500.4470406797446" r="17.66728156708514" fill="white" /><circle cx="393.7143944847715" cy="503.8789493416821" r="17.08398692004129" fill="white" /><circle cx="37.10306211104202" cy="285.0169923565903" r="23.34704205578349" fill="white" /><circle cx="167.85114856916186" cy="544.9185964937848" r="16.554898777550477" fill="white" /><circle cx="330.6878760886575" cy="221.5721276033698" r="27.174702500784242" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        How to Win Friends and
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Influence People
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Dale Carnegie
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

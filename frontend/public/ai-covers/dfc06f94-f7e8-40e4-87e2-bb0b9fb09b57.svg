@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-dfc06f94-f7e8-40e4-87e2-bb0b9fb09b57" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-dfc06f94-f7e8-40e4-87e2-bb0b9fb09b57)" />
+  <g opacity="0.1">
+    <circle cx="213.45961970164797" cy="167.0183920914446" r="23.510602444295166" fill="white" /><circle cx="396.0109276459141" cy="175.76530744942505" r="15.950260121816232" fill="white" /><circle cx="211.14003694865949" cy="279.4137050163847" r="18.789221053839274" fill="white" /><circle cx="391.51925987491796" cy="215.14862678490837" r="25.958937230720128" fill="white" /><circle cx="244.9785253533565" cy="194.8200712629727" r="13.09103228406716" fill="white" /><circle cx="335.85489438660505" cy="557.9300252994365" r="17.70551765686115" fill="white" /><circle cx="275.9024255430482" cy="81.25712441290926" r="13.284196184877997" fill="white" /><circle cx="298.46275889354285" cy="51.21756815600678" r="20.11436741482261" fill="white" /><circle cx="116.19076113014049" cy="386.115319909007" r="26.88841632367802" fill="white" /><circle cx="306.3840256073824" cy="272.9777389044097" r="14.479035224984585" fill="white" /><circle cx="178.47286445634478" cy="470.72664603604613" r="14.948388391408855" fill="white" /><circle cx="25.72288065499051" cy="599.2581234936733" r="21.876720114280104" fill="white" /><circle cx="157.55992000774972" cy="371.4455641782494" r="13.16552834737821" fill="white" /><circle cx="329.65938523716676" cy="3.9000737955528386" r="14.346527801254092" fill="white" /><circle cx="87.04004320311812" cy="66.16981816796661" r="27.734405478082977" fill="white" /><circle cx="52.69688936114019" cy="141.58015218192978" r="10.338566540919569" fill="white" /><circle cx="147.76994710520373" cy="54.27219659336116" r="24.9381970474507" fill="white" /><circle cx="213.65938795434846" cy="100.88067851278497" r="12.588008666320246" fill="white" /><circle cx="153.9591984140058" cy="438.83464129098644" r="14.95636439670109" fill="white" /><circle cx="385.690138228736" cy="38.95782340966514" r="25.909622143247784" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Maybe You Should Talk to
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Someone
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Lori Gottlieb
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

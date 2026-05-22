@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-815db7aa-b14f-4eba-b792-554cef60c634" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-815db7aa-b14f-4eba-b792-554cef60c634)" />
+  <g opacity="0.1">
+    <circle cx="172.85576426617695" cy="5.093532513229437" r="20.05997162575523" fill="white" /><circle cx="28.280905064505113" cy="310.2295938414687" r="16.50084679427458" fill="white" /><circle cx="288.60962090331793" cy="449.34713809445867" r="16.59451562349538" fill="white" /><circle cx="142.36248448471133" cy="36.171126394713184" r="16.118104702239496" fill="white" /><circle cx="230.29278856856496" cy="310.3768121239095" r="25.230853166221024" fill="white" /><circle cx="302.9812588249382" cy="552.1591120979484" r="23.234120636317478" fill="white" /><circle cx="13.080896935488973" cy="322.0974081217379" r="15.365764550961948" fill="white" /><circle cx="386.0404124160236" cy="386.42371354121474" r="29.103688367532193" fill="white" /><circle cx="336.023451264954" cy="471.9482601158051" r="23.784484100895128" fill="white" /><circle cx="222.42479165399192" cy="550.061619079046" r="26.918479766654492" fill="white" /><circle cx="394.8066619356564" cy="218.12449503609437" r="24.371233194247782" fill="white" /><circle cx="96.56738474679449" cy="515.2496566749911" r="14.375140351280539" fill="white" /><circle cx="131.45674317409993" cy="144.9676981149869" r="24.602176724723194" fill="white" /><circle cx="187.96091069961932" cy="292.2691399407472" r="21.145094729151303" fill="white" /><circle cx="286.6451392707967" cy="174.31136020964738" r="24.647954165214742" fill="white" /><circle cx="157.94637579570002" cy="401.49010116713714" r="14.830992105956557" fill="white" /><circle cx="186.59203330789938" cy="424.8048702953537" r="22.91155434620321" fill="white" /><circle cx="298.90888618075064" cy="121.50665499328386" r="26.926372835403058" fill="white" /><circle cx="398.2831995187534" cy="163.7442390184391" r="26.56874760227335" fill="white" /><circle cx="34.50510648280489" cy="66.87168140057653" r="19.799035712495236" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Code des Lebens
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Siddhartha Mukherjee
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-000856a8-e000-455a-a7ba-de4796d54acd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-000856a8-e000-455a-a7ba-de4796d54acd)" />
+  <g opacity="0.1">
+    <circle cx="181.58080766624587" cy="33.23092654651738" r="20.362873065704136" fill="white" /><circle cx="30.438022677872254" cy="533.6823788718041" r="12.42488845975577" fill="white" /><circle cx="277.6320124181551" cy="372.32724590572707" r="26.501779521721943" fill="white" /><circle cx="88.35980694998314" cy="85.20425407250234" r="14.932637549537633" fill="white" /><circle cx="19.354633820177767" cy="4.969610656497947" r="12.03379411678062" fill="white" /><circle cx="328.6673922661743" cy="354.1475323844215" r="21.001862972634946" fill="white" /><circle cx="345.9801090225068" cy="159.22780548600093" r="29.07671312497089" fill="white" /><circle cx="398.7407343349666" cy="180.5229144463658" r="17.61619287807217" fill="white" /><circle cx="148.8244748253462" cy="0.5900317843527514" r="24.656350360267954" fill="white" /><circle cx="335.0434030786365" cy="104.67025675669117" r="12.449021093699027" fill="white" /><circle cx="122.85625884607695" cy="255.76466829840132" r="17.421780801349716" fill="white" /><circle cx="354.43214495449763" cy="428.53753873913564" r="24.14025277828818" fill="white" /><circle cx="58.695132979393705" cy="406.03017108288077" r="14.117760025859694" fill="white" /><circle cx="100.40907148143239" cy="486.4376115123569" r="27.299686247976595" fill="white" /><circle cx="189.00615760550252" cy="135.9165151771759" r="23.327605534457902" fill="white" /><circle cx="363.4030096188653" cy="535.5131614404712" r="13.969305140243979" fill="white" /><circle cx="311.70773837699886" cy="391.2260288451111" r="25.346166249219547" fill="white" /><circle cx="24.271222397988666" cy="194.88429547832516" r="16.591622321460946" fill="white" /><circle cx="57.52778717486429" cy="317.7258943536875" r="17.5006693905416" fill="white" /><circle cx="399.89309766978505" cy="300.58902194904925" r="11.53287034659984" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Your Erroneous Zones
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Wayne Dyer
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

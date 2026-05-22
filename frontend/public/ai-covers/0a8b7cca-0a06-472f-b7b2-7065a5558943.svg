@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0a8b7cca-0a06-472f-b7b2-7065a5558943" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0a8b7cca-0a06-472f-b7b2-7065a5558943)" />
+  <g opacity="0.1">
+    <circle cx="13.547239280337164" cy="470.62518016230956" r="19.309598722559947" fill="white" /><circle cx="313.3763535724362" cy="140.82242126437328" r="21.82328534536546" fill="white" /><circle cx="64.87534097860342" cy="591.376394734015" r="25.5432249897921" fill="white" /><circle cx="304.49986313998403" cy="502.47808614070783" r="15.762728129266833" fill="white" /><circle cx="201.4729081349824" cy="253.44812713578102" r="25.469634931670456" fill="white" /><circle cx="46.82200995060075" cy="216.78432436981913" r="13.571923786718457" fill="white" /><circle cx="199.04294286812137" cy="534.8585639902276" r="15.71378427052924" fill="white" /><circle cx="238.1809334226836" cy="74.26577626339741" r="14.44145380613455" fill="white" /><circle cx="245.10625519918142" cy="569.2416672332591" r="20.758127938403163" fill="white" /><circle cx="91.47020613173255" cy="287.8797618434758" r="12.987266540397389" fill="white" /><circle cx="14.185063166006362" cy="325.3252492940592" r="28.74504666970565" fill="white" /><circle cx="208.81690392655221" cy="96.77583659285429" r="15.497953693335507" fill="white" /><circle cx="54.282107513115285" cy="61.57675943952845" r="15.144482787042495" fill="white" /><circle cx="15.1823673717145" cy="271.17256406644435" r="28.359841266848054" fill="white" /><circle cx="316.4222393534702" cy="239.45455169217084" r="16.689474517772222" fill="white" /><circle cx="358.65868739818154" cy="435.8533886802194" r="25.601252576396206" fill="white" /><circle cx="48.51686382444584" cy="359.11311550004757" r="26.944209028413546" fill="white" /><circle cx="190.0633440306836" cy="538.9466477640566" r="15.383739105655444" fill="white" /><circle cx="341.17648513073766" cy="138.43479016040607" r="28.189601987592003" fill="white" /><circle cx="339.9836082636926" cy="288.32082438864296" r="27.17260473749223" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        ...trotzdem Ja zum Leben
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        sagen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Viktor Frankl
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

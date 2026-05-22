@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a29e6ffb-dbd6-4c23-b010-6f519c899c0b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a29e6ffb-dbd6-4c23-b010-6f519c899c0b)" />
+  <g opacity="0.1">
+    <circle cx="295.1288829103382" cy="384.74007719269235" r="16.55498336190591" fill="white" /><circle cx="244.3063936399482" cy="229.76014699815525" r="20.646735337632027" fill="white" /><circle cx="307.5551596626295" cy="138.80499368677366" r="13.49636274551769" fill="white" /><circle cx="371.3359345437859" cy="532.5336552186483" r="21.13223195946656" fill="white" /><circle cx="355.00571997612514" cy="334.2736165507884" r="18.541655549736074" fill="white" /><circle cx="201.40287339414436" cy="240.65176451129636" r="24.009500998928495" fill="white" /><circle cx="268.35763421849515" cy="77.25142615675178" r="19.09369467918379" fill="white" /><circle cx="17.74246092617031" cy="400.2478005292209" r="25.002680733734792" fill="white" /><circle cx="31.54757004051234" cy="482.4506593519917" r="13.853842995470679" fill="white" /><circle cx="216.19055100084458" cy="273.5066994266547" r="17.08543692131134" fill="white" /><circle cx="10.25410454288238" cy="76.66064405289576" r="24.00164981481376" fill="white" /><circle cx="264.9598229899888" cy="43.62187615105677" r="16.731514755161676" fill="white" /><circle cx="45.32391311696302" cy="52.95899147818197" r="29.67890009729702" fill="white" /><circle cx="75.11600803713456" cy="548.1909608704764" r="16.40094168574765" fill="white" /><circle cx="388.00860649826564" cy="393.6564485400514" r="28.239824090813105" fill="white" /><circle cx="140.56406458524327" cy="94.9150512766499" r="24.73254156396852" fill="white" /><circle cx="386.7318338588808" cy="271.9320235100976" r="14.827982767311894" fill="white" /><circle cx="276.6730772042766" cy="584.959134448406" r="11.43512333603323" fill="white" /><circle cx="322.8186676870563" cy="330.17601821819676" r="24.909660785242814" fill="white" /><circle cx="75.13065377901968" cy="288.1103005778874" r="18.629718167276614" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Undoing Project
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Michael Lewis
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

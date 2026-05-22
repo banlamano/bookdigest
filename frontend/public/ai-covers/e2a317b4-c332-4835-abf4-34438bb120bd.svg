@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e2a317b4-c332-4835-abf4-34438bb120bd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e2a317b4-c332-4835-abf4-34438bb120bd)" />
+  <g opacity="0.1">
+    <circle cx="296.5194535262491" cy="101.21269122144906" r="29.498091782214015" fill="white" /><circle cx="144.28928175799837" cy="363.4351905968343" r="27.8111246666081" fill="white" /><circle cx="174.57857566289002" cy="16.60727579025525" r="25.84520252882529" fill="white" /><circle cx="233.58341916051072" cy="224.06437402910348" r="19.649614555682817" fill="white" /><circle cx="141.01560081324337" cy="137.81290821017382" r="19.522083039150935" fill="white" /><circle cx="235.5888288321243" cy="402.7747585425941" r="24.58689815980144" fill="white" /><circle cx="362.12706392182935" cy="131.36883232845372" r="28.353727358737423" fill="white" /><circle cx="240.0367400597687" cy="416.23819551887874" r="11.764343367636236" fill="white" /><circle cx="131.03480130796345" cy="566.8397215878697" r="16.56318416836517" fill="white" /><circle cx="314.2310345108417" cy="323.3927308264738" r="12.298098481652474" fill="white" /><circle cx="23.213176855648232" cy="379.1624091012431" r="24.00714662243726" fill="white" /><circle cx="106.27910318505256" cy="570.6443321567796" r="16.946472968819673" fill="white" /><circle cx="168.11207533212817" cy="383.79539719085545" r="18.16962391856917" fill="white" /><circle cx="147.15369148126732" cy="524.1865332507768" r="21.689987370447756" fill="white" /><circle cx="304.4032351751804" cy="20.63966088339859" r="19.63379786638736" fill="white" /><circle cx="160.96845056984574" cy="253.86904031515596" r="13.109493670977361" fill="white" /><circle cx="177.54107606307636" cy="280.2922105353102" r="22.805096263201744" fill="white" /><circle cx="20.92975845267988" cy="278.69674053636413" r="14.080074575816647" fill="white" /><circle cx="381.320462907846" cy="264.9472970208423" r="20.904417173701198" fill="white" /><circle cx="128.4588174298598" cy="384.626375998261" r="16.608466233415385" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Rework
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jason Fried
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

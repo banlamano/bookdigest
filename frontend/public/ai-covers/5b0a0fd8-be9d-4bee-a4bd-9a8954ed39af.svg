@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5b0a0fd8-be9d-4bee-a4bd-9a8954ed39af" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5b0a0fd8-be9d-4bee-a4bd-9a8954ed39af)" />
+  <g opacity="0.1">
+    <circle cx="65.56200490193956" cy="479.2557480046196" r="27.521712833894753" fill="white" /><circle cx="186.47686753314642" cy="521.6390338433587" r="25.658784822093452" fill="white" /><circle cx="294.5207436569839" cy="454.00927373535825" r="20.803885380800153" fill="white" /><circle cx="231.15953655126563" cy="402.1977207060349" r="26.366681839201803" fill="white" /><circle cx="239.68524402214996" cy="200.33284054563302" r="25.89561469303844" fill="white" /><circle cx="303.411548609295" cy="224.1942887192089" r="16.70205302769479" fill="white" /><circle cx="247.7699080454306" cy="563.7157369050041" r="28.601289988104014" fill="white" /><circle cx="41.82911000186786" cy="258.81590396760856" r="14.29561915178197" fill="white" /><circle cx="275.80418141266745" cy="455.793805048649" r="25.114461663624674" fill="white" /><circle cx="378.9137813371716" cy="148.42551107526566" r="24.322305866737665" fill="white" /><circle cx="295.0116732693478" cy="507.62334998133343" r="11.314381254285768" fill="white" /><circle cx="322.5662719849919" cy="564.3465171798248" r="27.74404255350426" fill="white" /><circle cx="347.78412730295054" cy="93.20097239391045" r="11.593508545378906" fill="white" /><circle cx="161.45059260714646" cy="280.2203906913447" r="28.191745206755616" fill="white" /><circle cx="61.12450217757184" cy="142.47936840872575" r="22.744676405196174" fill="white" /><circle cx="96.37263459641203" cy="414.21684125931984" r="17.38537270219497" fill="white" /><circle cx="233.5954896551641" cy="42.525805116099136" r="13.485991165293536" fill="white" /><circle cx="275.6063727380498" cy="338.34979887010377" r="13.484876273601733" fill="white" /><circle cx="357.3504135856434" cy="147.3806593963221" r="17.94583976156659" fill="white" /><circle cx="48.05551871272557" cy="340.5019937632898" r="22.06818839534244" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Big Magic: Nimm dein
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Leben in die Hand und es
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        wird dir gelingen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Elizabeth Gilbert
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

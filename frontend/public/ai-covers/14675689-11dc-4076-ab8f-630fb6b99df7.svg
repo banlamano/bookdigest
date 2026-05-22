@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-14675689-11dc-4076-ab8f-630fb6b99df7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-14675689-11dc-4076-ab8f-630fb6b99df7)" />
+  <g opacity="0.1">
+    <circle cx="382.55994110572027" cy="231.14449151653355" r="13.017284132910284" fill="white" /><circle cx="92.18695145093525" cy="303.38878251800423" r="17.516157289260487" fill="white" /><circle cx="261.68433544005643" cy="274.59588267083666" r="21.280234476438174" fill="white" /><circle cx="216.44751723839514" cy="129.02306408918483" r="17.32066363321899" fill="white" /><circle cx="353.33883922696646" cy="491.23559688927963" r="25.89285128599497" fill="white" /><circle cx="231.32465164635923" cy="124.37534922000711" r="22.374189491340417" fill="white" /><circle cx="9.077343110250258" cy="245.6391299288458" r="22.03645459435731" fill="white" /><circle cx="344.344195489592" cy="214.6373117041542" r="14.28755448274201" fill="white" /><circle cx="58.359159561807374" cy="94.02839419910399" r="28.093693059585064" fill="white" /><circle cx="224.23435450030195" cy="552.6066910090115" r="14.699951041732671" fill="white" /><circle cx="156.18699567451455" cy="180.33865033850716" r="21.896003999304938" fill="white" /><circle cx="67.16012923202692" cy="128.2091271272185" r="17.644873834903784" fill="white" /><circle cx="197.65597155109177" cy="289.9242919180793" r="27.288817991775403" fill="white" /><circle cx="88.40416044475047" cy="23.631758929623548" r="28.168377522931404" fill="white" /><circle cx="12.366146863100846" cy="487.70307883069546" r="19.42743464691448" fill="white" /><circle cx="128.49979298247428" cy="589.173733247857" r="26.502765364713554" fill="white" /><circle cx="96.57373830234914" cy="546.9742319285515" r="19.21562345098707" fill="white" /><circle cx="32.68439927969675" cy="444.5792099530992" r="27.558880536971728" fill="white" /><circle cx="332.93063798656334" cy="467.8796730332069" r="22.54950927634226" fill="white" /><circle cx="136.8801684297673" cy="493.8015565834523" r="24.188228106995794" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Spark
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        John Ratey
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

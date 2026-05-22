@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-02ae7311-7b77-4775-8b9f-b0097c2f6769" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-02ae7311-7b77-4775-8b9f-b0097c2f6769)" />
+  <g opacity="0.1">
+    <circle cx="351.09846122778526" cy="250.3652708023617" r="29.773629824452343" fill="white" /><circle cx="38.987806296160784" cy="326.80459726358544" r="26.522389062478833" fill="white" /><circle cx="371.3356356521076" cy="109.7346112250617" r="13.592822389137941" fill="white" /><circle cx="269.1824762935461" cy="445.9528863425761" r="16.03976815284976" fill="white" /><circle cx="52.22171887769189" cy="388.7077895863508" r="11.861199321275162" fill="white" /><circle cx="112.14918900321425" cy="381.18662788172935" r="16.69667607242524" fill="white" /><circle cx="255.24264952299123" cy="58.24226835911392" r="28.247919846980107" fill="white" /><circle cx="361.4902060607329" cy="202.44121642579412" r="10.70596627936133" fill="white" /><circle cx="231.59145328785365" cy="294.23967917551414" r="15.256768865081902" fill="white" /><circle cx="110.60445160456163" cy="418.44897615857843" r="19.177175771586768" fill="white" /><circle cx="336.5091354846518" cy="455.11632264197067" r="29.134475901689378" fill="white" /><circle cx="252.99833252660005" cy="167.98768565252135" r="21.49160732807144" fill="white" /><circle cx="64.6716590684528" cy="340.1501776650766" r="18.80382486570713" fill="white" /><circle cx="324.19253269536995" cy="24.410870754832548" r="20.90817047801055" fill="white" /><circle cx="298.6039278902846" cy="392.76477631157854" r="19.83002041801825" fill="white" /><circle cx="289.9896807625853" cy="365.2035980253717" r="28.445574774976432" fill="white" /><circle cx="335.4508223914017" cy="375.2201989374777" r="26.238066492972006" fill="white" /><circle cx="12.67740276948457" cy="464.9000649212199" r="22.60443552456266" fill="white" /><circle cx="154.3545733701122" cy="260.60705241192613" r="14.126461084591961" fill="white" /><circle cx="135.47377834657027" cy="490.29162172223334" r="15.390962981826569" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        A New Earth
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Eckhart Tolle
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

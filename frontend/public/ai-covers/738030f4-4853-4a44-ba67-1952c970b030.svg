@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-738030f4-4853-4a44-ba67-1952c970b030" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-738030f4-4853-4a44-ba67-1952c970b030)" />
+  <g opacity="0.1">
+    <circle cx="269.29556323483274" cy="381.87528853019916" r="11.264877603655755" fill="white" /><circle cx="150.64543834292277" cy="196.2098222030814" r="21.49295479768218" fill="white" /><circle cx="36.60754408257061" cy="124.13711711548254" r="22.206436988373987" fill="white" /><circle cx="21.372062972537485" cy="96.68696322233734" r="11.174786499642844" fill="white" /><circle cx="169.2763943453786" cy="354.39583931618847" r="10.289764337586163" fill="white" /><circle cx="278.8241458960331" cy="98.98578710448305" r="23.215411169271817" fill="white" /><circle cx="286.5538694831133" cy="435.7459298301917" r="23.816270216732278" fill="white" /><circle cx="140.94602223970048" cy="557.5017949200857" r="20.04760078566179" fill="white" /><circle cx="70.6827283789277" cy="188.4064429716338" r="15.038669678656579" fill="white" /><circle cx="154.143783958959" cy="258.8160967576106" r="23.122948810422105" fill="white" /><circle cx="268.760509338625" cy="444.9617179474436" r="15.506480645773546" fill="white" /><circle cx="57.30441023444004" cy="314.69556518983063" r="19.06213716689224" fill="white" /><circle cx="285.8790999845899" cy="211.77210490996012" r="25.833127852704322" fill="white" /><circle cx="103.27328795889517" cy="155.14110024139228" r="17.50971168476368" fill="white" /><circle cx="16.92839432199671" cy="543.831861790319" r="21.26870739158234" fill="white" /><circle cx="205.03859427700536" cy="217.62173023181577" r="29.98491078780671" fill="white" /><circle cx="319.1217629531357" cy="109.6379838532162" r="15.933610583042075" fill="white" /><circle cx="110.57663633325672" cy="317.06854398355745" r="18.157033118336713" fill="white" /><circle cx="353.8157011047526" cy="98.60913456703557" r="25.06565578939749" fill="white" /><circle cx="392.86327691176587" cy="593.436868826349" r="20.610321774820157" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Playing to Win
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        A.G. Lafley
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

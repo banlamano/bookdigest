@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-872019e2-26d2-4462-8cce-a12a57ca340c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-872019e2-26d2-4462-8cce-a12a57ca340c)" />
+  <g opacity="0.1">
+    <circle cx="306.51476720164885" cy="175.45181463162422" r="20.63926464738359" fill="white" /><circle cx="87.35580241374498" cy="74.39286424240072" r="24.22268538128289" fill="white" /><circle cx="372.7123393154614" cy="56.47210495997377" r="27.625355935153582" fill="white" /><circle cx="106.50638298319328" cy="519.7085000733583" r="23.5905413737497" fill="white" /><circle cx="7.438252221562847" cy="371.77328234251" r="16.635088461360688" fill="white" /><circle cx="371.4920594731284" cy="303.21773675790547" r="29.24513960986522" fill="white" /><circle cx="50.34667685538441" cy="166.72829873054204" r="15.970831322153211" fill="white" /><circle cx="4.193832330244085" cy="543.5147996456797" r="13.825337493326295" fill="white" /><circle cx="46.054400952894255" cy="108.90662781105065" r="27.70281033206739" fill="white" /><circle cx="389.33025407944655" cy="68.44361010074121" r="17.226759722428696" fill="white" /><circle cx="11.05595950517464" cy="188.35044237095585" r="13.74520175857041" fill="white" /><circle cx="41.63357709304574" cy="244.45162036472612" r="27.819086527313203" fill="white" /><circle cx="147.42631055642659" cy="231.4858564771869" r="20.59697325552537" fill="white" /><circle cx="33.296820555869154" cy="227.5674987302081" r="29.038763918375427" fill="white" /><circle cx="48.380544104050884" cy="157.45458707698538" r="24.42013238830831" fill="white" /><circle cx="85.57752621756829" cy="289.30556473051445" r="17.023227403968313" fill="white" /><circle cx="90.18936663844283" cy="390.82201308014686" r="13.389627226711307" fill="white" /><circle cx="76.52767847249397" cy="11.979397717868444" r="20.340604053135227" fill="white" /><circle cx="168.47982007572008" cy="525.8272692097624" r="13.08592718990744" fill="white" /><circle cx="197.07535375281302" cy="147.06097167430553" r="15.248565708190252" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Mit dem Herzen eines
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Buddha: Die heilende
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Kraft der Akzeptanz
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Tara Brach
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

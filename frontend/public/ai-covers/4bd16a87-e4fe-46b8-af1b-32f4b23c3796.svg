@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-4bd16a87-e4fe-46b8-af1b-32f4b23c3796" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-4bd16a87-e4fe-46b8-af1b-32f4b23c3796)" />
+  <g opacity="0.1">
+    <circle cx="256.5510669687209" cy="346.1412020443769" r="27.324027811475567" fill="white" /><circle cx="25.008123753621625" cy="500.7986135988069" r="13.629884532265596" fill="white" /><circle cx="279.5286791860706" cy="82.8331052605152" r="24.395423326088153" fill="white" /><circle cx="247.302390136754" cy="364.2368130640336" r="17.599931698393764" fill="white" /><circle cx="328.10130935634135" cy="31.280546790658036" r="26.050415205203784" fill="white" /><circle cx="347.8490409829568" cy="236.52752387116828" r="23.990047065535958" fill="white" /><circle cx="337.043619211804" cy="54.40746198414912" r="26.264152682179613" fill="white" /><circle cx="286.44892876870813" cy="423.29662998258306" r="15.937631873271423" fill="white" /><circle cx="22.816417739819972" cy="259.8970537471461" r="23.22952934712589" fill="white" /><circle cx="393.42771703260337" cy="173.52455349040093" r="29.92822482098378" fill="white" /><circle cx="271.04001499984685" cy="201.88393711664105" r="26.21757079621374" fill="white" /><circle cx="2.089671954092065" cy="113.67981385339661" r="20.06488964901042" fill="white" /><circle cx="97.14944632201971" cy="316.35347977521695" r="16.746139363937257" fill="white" /><circle cx="84.04988747302049" cy="146.19536640605335" r="18.186412783249526" fill="white" /><circle cx="381.28140618527044" cy="148.84605201983706" r="25.278785304006398" fill="white" /><circle cx="100.75205497794877" cy="538.0621719555687" r="25.925797058171106" fill="white" /><circle cx="322.2582758329928" cy="264.17745053223257" r="23.11920904920644" fill="white" /><circle cx="84.55428504897387" cy="133.68399095975147" r="24.64774776633" fill="white" /><circle cx="166.24869854570358" cy="320.47357679954564" r="17.972849652558573" fill="white" /><circle cx="310.39281638193376" cy="240.5205326730397" r="19.402591813258482" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Mäusestrategie für
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Manager: Veränderungen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        erfolgreich begegnen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Spencer Johnson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

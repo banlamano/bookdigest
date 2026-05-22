@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-100e906d-7498-4f95-85a4-20fe89f9138a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-100e906d-7498-4f95-85a4-20fe89f9138a)" />
+  <g opacity="0.1">
+    <circle cx="258.6510662238789" cy="20.907477523643635" r="17.858890984010475" fill="white" /><circle cx="272.2771529475303" cy="476.3858561239174" r="26.89717469080084" fill="white" /><circle cx="80.46990047049158" cy="314.94336807902255" r="25.16686551049427" fill="white" /><circle cx="63.26758493605378" cy="96.28635140812169" r="15.383752039695281" fill="white" /><circle cx="241.28928027389534" cy="131.89300785741608" r="17.43358370894878" fill="white" /><circle cx="387.92198284461017" cy="293.1707277309797" r="25.23161478011768" fill="white" /><circle cx="308.5372199465156" cy="112.62117984311952" r="27.01942306471822" fill="white" /><circle cx="352.01619778538856" cy="2.2044339374574173" r="25.350900048187206" fill="white" /><circle cx="57.04540611418323" cy="386.9530157837891" r="23.22794236980684" fill="white" /><circle cx="216.89403178691532" cy="580.4742929182897" r="10.80656877916777" fill="white" /><circle cx="273.95912756672686" cy="119.89378355242961" r="13.271271490300027" fill="white" /><circle cx="388.3109037735351" cy="556.6911390616707" r="16.88594413115561" fill="white" /><circle cx="146.87203920439615" cy="376.5132412704573" r="10.598545027459622" fill="white" /><circle cx="136.49210638143597" cy="7.3475595053033915" r="17.499554264611763" fill="white" /><circle cx="163.36394330839033" cy="283.77737805321" r="25.476443390389182" fill="white" /><circle cx="144.49805681937065" cy="161.72911209597035" r="12.991960637434183" fill="white" /><circle cx="162.73036215616364" cy="399.55207520997595" r="15.28752447987413" fill="white" /><circle cx="327.5331602030981" cy="6.486408679939548" r="18.199941475706613" fill="white" /><circle cx="51.575627029523474" cy="513.801997195092" r="16.5275732587622" fill="white" /><circle cx="273.69428418986234" cy="134.71496865123066" r="20.795655515943686" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        A Wealth of Common Sense
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Ben Carlson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

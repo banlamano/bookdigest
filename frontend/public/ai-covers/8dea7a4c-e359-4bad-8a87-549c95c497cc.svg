@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8dea7a4c-e359-4bad-8a87-549c95c497cc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8dea7a4c-e359-4bad-8a87-549c95c497cc)" />
+  <g opacity="0.1">
+    <circle cx="364.32137506280463" cy="159.55572844206617" r="11.982323419294463" fill="white" /><circle cx="325.6375098865116" cy="387.4501292975879" r="15.98132664018394" fill="white" /><circle cx="232.9712146616959" cy="362.886018470247" r="17.885752723045044" fill="white" /><circle cx="164.69448046057224" cy="321.35056384235037" r="10.304596159764968" fill="white" /><circle cx="149.1552750694839" cy="246.17809362818127" r="20.349725950702506" fill="white" /><circle cx="279.86428112220995" cy="584.569774026263" r="13.622840383654154" fill="white" /><circle cx="256.1732986525731" cy="337.04416818469343" r="17.220836731737876" fill="white" /><circle cx="251.03575941962438" cy="342.23066086445283" r="17.671755111071533" fill="white" /><circle cx="198.69125171067986" cy="194.4183334456924" r="16.985682143731758" fill="white" /><circle cx="274.4188137772849" cy="415.60558889011236" r="12.524908172286036" fill="white" /><circle cx="172.96166414228514" cy="63.12570536032176" r="28.13158657666069" fill="white" /><circle cx="84.44670530830467" cy="23.39328599056547" r="15.658615749514011" fill="white" /><circle cx="193.1170571692801" cy="589.2554843639357" r="11.250986018617155" fill="white" /><circle cx="359.5643068592014" cy="544.3940962717002" r="24.693416825402085" fill="white" /><circle cx="117.737108293748" cy="159.27698893542376" r="15.185602407998077" fill="white" /><circle cx="253.4186191198341" cy="0.7496505993631608" r="23.54267134538697" fill="white" /><circle cx="394.3386229522043" cy="340.2545035105289" r="17.262318597411443" fill="white" /><circle cx="344.27428572414334" cy="248.5588014158961" r="17.466985972544514" fill="white" /><circle cx="395.89294358296826" cy="585.8506219164426" r="16.320091078967764" fill="white" /><circle cx="167.88486286621668" cy="308.20804017364003" r="25.5059866470664" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Can&apos;t Hurt Me: Bezwinge
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        deinen Geist und trotze
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        allen Widrigkeiten
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        David Goggins
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

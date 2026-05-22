@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-63c32b35-ce48-442a-8463-4035b2c306b3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-63c32b35-ce48-442a-8463-4035b2c306b3)" />
+  <g opacity="0.1">
+    <circle cx="153.77301152930784" cy="591.5113629157441" r="17.901949837676035" fill="white" /><circle cx="191.57881212432252" cy="103.12758937190655" r="26.821609752266212" fill="white" /><circle cx="141.98659091356865" cy="367.0405674020942" r="11.111010988148557" fill="white" /><circle cx="284.5922061255313" cy="423.59733935088803" r="18.249765439227858" fill="white" /><circle cx="144.57910091390792" cy="35.644857445307785" r="18.524449455373258" fill="white" /><circle cx="155.8583262538861" cy="524.433146802593" r="27.51832332700659" fill="white" /><circle cx="227.89953614487644" cy="115.3339328681441" r="12.131640274533426" fill="white" /><circle cx="190.62692234090952" cy="106.8225360074903" r="28.903676628986645" fill="white" /><circle cx="360.37508152074815" cy="113.341080135019" r="15.377315452062195" fill="white" /><circle cx="17.543578093914647" cy="149.9661997161047" r="11.542847524164051" fill="white" /><circle cx="324.4893975436449" cy="383.47581612588596" r="19.51146622706874" fill="white" /><circle cx="261.9809384519531" cy="33.47102263617066" r="26.02416609380063" fill="white" /><circle cx="164.50408288813384" cy="168.76429961681845" r="18.077517209373852" fill="white" /><circle cx="106.10553856068958" cy="199.39895466614334" r="17.63144127403475" fill="white" /><circle cx="247.61050544148335" cy="270.57506199229846" r="12.700206782719373" fill="white" /><circle cx="44.91292487121794" cy="504.81368861239173" r="23.60767221021637" fill="white" /><circle cx="57.83244898628701" cy="80.78474961651551" r="18.139437282072848" fill="white" /><circle cx="269.7823477803964" cy="492.6837507696092" r="11.40629154277267" fill="white" /><circle cx="172.91396532405003" cy="379.15956007975825" r="10.614215581924052" fill="white" /><circle cx="270.1061410519662" cy="295.49659483765225" r="21.49731220561634" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Buffett: Die Geschichte
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        eines amerikanischen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Kapitalisten
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Roger Lowenstein
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

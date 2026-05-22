@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-434981ae-0f99-4b6e-8b51-f437110376ae" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-434981ae-0f99-4b6e-8b51-f437110376ae)" />
+  <g opacity="0.1">
+    <circle cx="217.87446857113832" cy="11.060633843187183" r="18.17816711405159" fill="white" /><circle cx="160.2321167668903" cy="521.8319044997803" r="15.426032518653646" fill="white" /><circle cx="344.29770848364905" cy="345.50128269912256" r="10.433302621667009" fill="white" /><circle cx="368.411802717995" cy="559.5582964803218" r="17.942605920704967" fill="white" /><circle cx="359.40110330768545" cy="101.5680785243261" r="28.054237759568178" fill="white" /><circle cx="362.13012552966944" cy="140.63226189409787" r="17.394173946183805" fill="white" /><circle cx="341.10501872739167" cy="111.8009569157641" r="12.533082566846684" fill="white" /><circle cx="172.32920556975796" cy="346.00345125244235" r="25.59704119626017" fill="white" /><circle cx="14.679973829832038" cy="255.03349063949474" r="21.64515719500583" fill="white" /><circle cx="257.7041322721437" cy="198.5322043306835" r="14.885375041744997" fill="white" /><circle cx="248.0046250888383" cy="572.8542801994801" r="10.41804655957247" fill="white" /><circle cx="331.4792225303638" cy="469.97545491238174" r="20.967286981240424" fill="white" /><circle cx="286.96231604809736" cy="124.74611224604534" r="20.17192602788366" fill="white" /><circle cx="176.9715201645232" cy="395.7475918338756" r="25.163696068383658" fill="white" /><circle cx="161.26990578201736" cy="462.7055437131718" r="20.13358149591447" fill="white" /><circle cx="136.83495881075748" cy="321.51885303688846" r="26.59273157704262" fill="white" /><circle cx="137.09144796030208" cy="458.5901678874825" r="26.04666793204673" fill="white" /><circle cx="126.36539303952601" cy="405.42227213811077" r="11.86763982997138" fill="white" /><circle cx="289.0917305089551" cy="161.2299381281304" r="23.295298441085993" fill="white" /><circle cx="175.1979169934461" cy="108.75584755377207" r="23.527333618879723" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Tag mit den 25
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Stunden: Die 4 Säulen des
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Zeitmanagements für mehr
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Stephen Covey
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

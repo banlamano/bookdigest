@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-012ac0d7-8960-4b3b-a84f-aa94239020c0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-012ac0d7-8960-4b3b-a84f-aa94239020c0)" />
+  <g opacity="0.1">
+    <circle cx="259.50867912804136" cy="287.8567927756082" r="24.104009645968613" fill="white" /><circle cx="315.1821628087036" cy="581.4962997512544" r="27.980947117702364" fill="white" /><circle cx="180.57148115316107" cy="562.1766670851994" r="13.237802286078782" fill="white" /><circle cx="384.5045657307043" cy="206.38679473124824" r="22.298903944558795" fill="white" /><circle cx="358.95434037705553" cy="273.12012064300757" r="23.056035546372968" fill="white" /><circle cx="378.99141928326634" cy="400.03581025807114" r="14.111681995068944" fill="white" /><circle cx="220.75004936797322" cy="567.4014542094712" r="28.63362924961564" fill="white" /><circle cx="325.2731227732578" cy="144.24655525394823" r="26.49250565787941" fill="white" /><circle cx="52.893566883507944" cy="438.1249453756774" r="24.560146642980445" fill="white" /><circle cx="207.35161379279913" cy="98.28866171311086" r="20.984666661865354" fill="white" /><circle cx="103.06229079204523" cy="42.3058657132823" r="18.108258733422232" fill="white" /><circle cx="265.7362401192886" cy="286.69436337566117" r="23.58064530031528" fill="white" /><circle cx="260.0285742292573" cy="139.11582405549814" r="10.527037638768935" fill="white" /><circle cx="390.61902837914937" cy="306.0623997382173" r="25.81254647170134" fill="white" /><circle cx="84.04428907184966" cy="503.4577962129137" r="19.98960641079352" fill="white" /><circle cx="358.74220366455177" cy="97.53732937708091" r="19.728051875771452" fill="white" /><circle cx="13.077657908258322" cy="107.3843727942532" r="22.28061371244958" fill="white" /><circle cx="186.60839936752066" cy="517.7767906478534" r="14.466566021246363" fill="white" /><circle cx="183.84359189048644" cy="58.08715791398926" r="23.34087319334411" fill="white" /><circle cx="187.70297955119761" cy="232.7065725822141" r="14.352713049100743" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Enzos Welt: Die Kunst des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Rennfahrens im Regen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Garth Stein
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

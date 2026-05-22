@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9cd97360-6c09-475e-8b56-8fe9cacf51ee" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9cd97360-6c09-475e-8b56-8fe9cacf51ee)" />
+  <g opacity="0.1">
+    <circle cx="80.9058335411002" cy="138.17987048773813" r="21.35139607355825" fill="white" /><circle cx="74.53429774271561" cy="486.86567133384386" r="18.906790186035916" fill="white" /><circle cx="84.82053502507955" cy="341.0535217640061" r="14.509426639013192" fill="white" /><circle cx="53.95004949179896" cy="110.97573313913853" r="27.73331626442744" fill="white" /><circle cx="110.15064937125283" cy="335.15039677361983" r="25.16033659271801" fill="white" /><circle cx="387.7847054716636" cy="184.36753546478104" r="27.00850351719439" fill="white" /><circle cx="50.37191940940593" cy="196.73736090015618" r="10.137277711690611" fill="white" /><circle cx="315.4784492849774" cy="541.2808072273109" r="24.004038836202692" fill="white" /><circle cx="131.2204372669885" cy="177.05059066237035" r="14.115517557228706" fill="white" /><circle cx="98.68379832440172" cy="89.082325305" r="25.45001712543609" fill="white" /><circle cx="1.4692252854330068" cy="62.75681554070336" r="10.185866582578644" fill="white" /><circle cx="280.9394678876985" cy="562.6112406030293" r="25.524476817500243" fill="white" /><circle cx="125.8888911768854" cy="252.04188758954396" r="25.015745117983858" fill="white" /><circle cx="34.11186904309207" cy="430.6442058704763" r="20.798929113099256" fill="white" /><circle cx="136.6868695236082" cy="386.3156658314384" r="25.776770658270276" fill="white" /><circle cx="191.64934596431075" cy="63.62926897803363" r="28.18957933524795" fill="white" /><circle cx="289.30403195733186" cy="235.2589995360115" r="20.927255960163635" fill="white" /><circle cx="7.65003773555839" cy="1.8009826540945628" r="22.619091623052093" fill="white" /><circle cx="240.11374580361084" cy="511.819545074423" r="20.269152528990148" fill="white" /><circle cx="146.23103226181482" cy="197.62913287893852" r="28.731956239825273" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das kleine Handbuch des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Value Investing: So
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        finden Sie die besten
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Christopher Browne
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-214d01a5-4380-4a39-af43-038c0af56ade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-214d01a5-4380-4a39-af43-038c0af56ade)" />
+  <g opacity="0.1">
+    <circle cx="216.80593843059214" cy="256.68925406003444" r="23.681543547279315" fill="white" /><circle cx="145.69171064404443" cy="220.4941515426609" r="13.849702350972208" fill="white" /><circle cx="31.721662561228705" cy="573.4461893216477" r="14.393903844587989" fill="white" /><circle cx="221.96213055307456" cy="139.05662672699356" r="16.719481678184277" fill="white" /><circle cx="260.65911269143373" cy="151.14438701621725" r="23.53915762054202" fill="white" /><circle cx="21.709197914789556" cy="352.5552902668043" r="29.220310277813237" fill="white" /><circle cx="388.47840293970404" cy="495.90553265076056" r="27.323405654573033" fill="white" /><circle cx="262.36508670457437" cy="83.3234561188805" r="27.876382774769453" fill="white" /><circle cx="324.4308011596728" cy="152.06468726662854" r="23.647086936315873" fill="white" /><circle cx="5.241676622240021" cy="289.62363034527016" r="15.338366596139743" fill="white" /><circle cx="273.13683350293735" cy="107.44655931126923" r="20.38237211038894" fill="white" /><circle cx="3.1046513644930496" cy="472.14069117283543" r="15.016959986861519" fill="white" /><circle cx="301.41869963699054" cy="429.05847201365515" r="15.314419753799665" fill="white" /><circle cx="258.53034674878256" cy="175.68674111467024" r="12.343289726349525" fill="white" /><circle cx="148.78711853139953" cy="558.5456853517904" r="23.757100119192067" fill="white" /><circle cx="287.4680477643708" cy="171.59852800539815" r="10.908946892593834" fill="white" /><circle cx="360.80001080123753" cy="564.3735491289762" r="18.086324796479794" fill="white" /><circle cx="339.12993935421116" cy="455.69232615799797" r="14.361782490248308" fill="white" /><circle cx="335.781247051944" cy="296.5059488149459" r="27.91455102306142" fill="white" /><circle cx="258.84438723251156" cy="278.260389259379" r="20.60913164969139" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Four Tendencies
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Gretchen Rubin
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

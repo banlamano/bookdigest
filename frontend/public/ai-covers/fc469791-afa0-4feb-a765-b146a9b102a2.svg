@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-fc469791-afa0-4feb-a765-b146a9b102a2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-fc469791-afa0-4feb-a765-b146a9b102a2)" />
+  <g opacity="0.1">
+    <circle cx="242.4111301358964" cy="140.4596272035993" r="11.84976748555718" fill="white" /><circle cx="261.81004267299824" cy="360.39170005491627" r="11.919124488271965" fill="white" /><circle cx="375.05366529548587" cy="542.2384544539174" r="14.31970626206623" fill="white" /><circle cx="110.36174720062904" cy="3.6995486814706435" r="28.362933809338394" fill="white" /><circle cx="247.00124050388052" cy="405.2741182853452" r="18.904259829121276" fill="white" /><circle cx="296.20587239184994" cy="157.7073497144081" r="17.69181159032081" fill="white" /><circle cx="116.12898920419768" cy="465.30575267001745" r="23.535962417653742" fill="white" /><circle cx="160.1007963906804" cy="189.5488936234454" r="17.569895594358904" fill="white" /><circle cx="251.2759955453155" cy="138.57707839796495" r="24.468441333273944" fill="white" /><circle cx="308.0232752841485" cy="260.85777823626086" r="20.928602531081104" fill="white" /><circle cx="366.56699445183006" cy="433.51806520261135" r="29.138573767432373" fill="white" /><circle cx="247.4763308508937" cy="483.63973929263915" r="10.502775519545427" fill="white" /><circle cx="120.4922924110774" cy="462.4145189931187" r="11.177166768160447" fill="white" /><circle cx="260.086842660115" cy="455.99501764021795" r="14.273632339084783" fill="white" /><circle cx="41.941687263004425" cy="7.4619902190067755" r="26.10037766328088" fill="white" /><circle cx="20.860469413386397" cy="116.06254208424399" r="19.041653418952166" fill="white" /><circle cx="28.374448434854127" cy="398.90325990436986" r="11.13947323114395" fill="white" /><circle cx="1.8616031086818197" cy="407.6257205502402" r="20.097957082114426" fill="white" /><circle cx="108.3940703336217" cy="64.67355774632249" r="12.419369818553395" fill="white" /><circle cx="146.02190705182133" cy="67.82858654410693" r="18.376939694758875" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Verkörperter Schrecken:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Traumaspuren in Gehirn,
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Geist und Körper und wie
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Bessel van der Kolk
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

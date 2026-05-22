@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-bafa5884-d41d-483c-96f5-e1e10f221122" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-bafa5884-d41d-483c-96f5-e1e10f221122)" />
+  <g opacity="0.1">
+    <circle cx="27.56728134316755" cy="58.348419504247964" r="18.07669026893988" fill="white" /><circle cx="246.3050786683391" cy="239.49906442103125" r="12.18243807911291" fill="white" /><circle cx="349.9574963424986" cy="510.1441466475301" r="18.821195277599905" fill="white" /><circle cx="186.94438317666547" cy="499.2617956228626" r="28.17318031789766" fill="white" /><circle cx="114.63453560496978" cy="598.6117150609012" r="18.758327422509495" fill="white" /><circle cx="271.90085080760247" cy="106.36367448457682" r="13.400489472677933" fill="white" /><circle cx="249.7970389622281" cy="391.2008337754356" r="11.797445250810764" fill="white" /><circle cx="329.36360298406356" cy="416.4485302914953" r="15.5455592797864" fill="white" /><circle cx="329.6176503645635" cy="192.83078488502838" r="15.902134880836927" fill="white" /><circle cx="305.17763394900425" cy="294.3425387021488" r="28.691578670643523" fill="white" /><circle cx="293.68339351186216" cy="137.7263139367344" r="25.631507124177023" fill="white" /><circle cx="314.0842072358492" cy="386.27798422642917" r="19.38572427197071" fill="white" /><circle cx="187.53030987601917" cy="569.6431124130606" r="29.538656334071042" fill="white" /><circle cx="88.14063993959795" cy="435.76243993178673" r="25.762832837933857" fill="white" /><circle cx="255.20385866686834" cy="585.0641423511495" r="17.966136090055013" fill="white" /><circle cx="83.99320264307093" cy="345.0264045038719" r="29.339962764425454" fill="white" /><circle cx="23.66191961324251" cy="97.01670309581019" r="12.84927608651207" fill="white" /><circle cx="116.971172346364" cy="567.9774007612519" r="19.17933417441451" fill="white" /><circle cx="148.77313824703887" cy="61.519231032844466" r="27.91165739580692" fill="white" /><circle cx="89.31964753519183" cy="316.92683864508916" r="22.169258946909217" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Broke Millennial
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Erin Lowry
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

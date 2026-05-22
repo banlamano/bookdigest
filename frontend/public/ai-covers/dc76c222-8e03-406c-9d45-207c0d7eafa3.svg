@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-dc76c222-8e03-406c-9d45-207c0d7eafa3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-dc76c222-8e03-406c-9d45-207c0d7eafa3)" />
+  <g opacity="0.1">
+    <circle cx="216.79064362566209" cy="123.07362484775027" r="25.247842046098683" fill="white" /><circle cx="346.7334826057614" cy="344.5136938887126" r="12.64917715446021" fill="white" /><circle cx="7.083497870238364" cy="378.3050190752193" r="16.380562158653966" fill="white" /><circle cx="37.16119231752435" cy="530.8990462419519" r="14.570772198997467" fill="white" /><circle cx="122.56749094580628" cy="122.60085961263916" r="20.845887520619804" fill="white" /><circle cx="166.84521815855544" cy="126.08190790034514" r="22.648832787961688" fill="white" /><circle cx="189.9899925538639" cy="292.71631070762373" r="12.780552272626334" fill="white" /><circle cx="63.419221322352385" cy="131.48418900421163" r="24.012555217607527" fill="white" /><circle cx="93.94639570212959" cy="434.801260102378" r="24.17426393184337" fill="white" /><circle cx="123.75723195271692" cy="314.2440666320274" r="23.880253960851725" fill="white" /><circle cx="161.83187070680373" cy="494.1593899209523" r="19.104487316659196" fill="white" /><circle cx="331.53717265352145" cy="142.35667775638584" r="12.35385409277206" fill="white" /><circle cx="369.91275812228537" cy="556.7056504350769" r="10.510385108135129" fill="white" /><circle cx="60.75395605215639" cy="318.2658187025207" r="13.092795673177509" fill="white" /><circle cx="174.51147138108914" cy="385.7338374514397" r="21.908732236677697" fill="white" /><circle cx="291.07868796029425" cy="225.26523532891954" r="17.245079343353737" fill="white" /><circle cx="19.648465551653295" cy="337.36595209802584" r="10.944522763208697" fill="white" /><circle cx="393.65184158810854" cy="447.63545645963944" r="21.410045243032613" fill="white" /><circle cx="210.65147707768176" cy="283.98237916612356" r="15.582408239688606" fill="white" /><circle cx="298.7968209002178" cy="74.84514032459673" r="23.32056531992957" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Schwierige Gespräche: Was
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        auf dem Spiel steht, wie
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Sie kommunizieren und wie
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Kerry Patterson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

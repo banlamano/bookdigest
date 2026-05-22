@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-462ebc64-110a-4f29-b357-9473c3874d5f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-462ebc64-110a-4f29-b357-9473c3874d5f)" />
+  <g opacity="0.1">
+    <circle cx="257.9627085951533" cy="293.51339344275465" r="13.910646235378113" fill="white" /><circle cx="184.95150681940626" cy="163.76009030950155" r="10.590708740609184" fill="white" /><circle cx="253.43708403114107" cy="272.46836330318297" r="16.08147766107499" fill="white" /><circle cx="105.42991066957006" cy="394.7461117320548" r="21.473728360434578" fill="white" /><circle cx="121.80616693036703" cy="410.2366760733423" r="10.875389369047145" fill="white" /><circle cx="291.11548036798655" cy="287.50010462697827" r="11.476699878559263" fill="white" /><circle cx="239.74628173475577" cy="313.6023799952243" r="14.011614768713494" fill="white" /><circle cx="241.40239598635094" cy="76.41002211781097" r="28.481977791115952" fill="white" /><circle cx="130.46401132952136" cy="119.75781087647621" r="19.142878254672866" fill="white" /><circle cx="367.65693078275336" cy="268.19006842081467" r="14.510351723097486" fill="white" /><circle cx="145.81399383317634" cy="436.9372035893407" r="14.407465153673458" fill="white" /><circle cx="122.33113279629202" cy="233.72140534100814" r="25.151178651624452" fill="white" /><circle cx="45.67316759838484" cy="123.73709011533447" r="10.263398091173322" fill="white" /><circle cx="323.90489445020233" cy="143.74529904079546" r="20.92481011344061" fill="white" /><circle cx="296.5339204842121" cy="224.29228397326034" r="15.697315061493507" fill="white" /><circle cx="365.21364199253605" cy="75.92142854038721" r="23.961547570558174" fill="white" /><circle cx="239.35480341186417" cy="166.98241885043421" r="22.14175527433317" fill="white" /><circle cx="389.766604668529" cy="413.5766617279998" r="18.531773427459232" fill="white" /><circle cx="228.51068070025855" cy="500.825226300582" r="28.848563943268225" fill="white" /><circle cx="389.64309053448227" cy="12.660817098024712" r="26.913066248134207" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Way to Love
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Anthony de Mello
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

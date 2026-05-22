@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a466c516-ef1f-4a00-ba4f-82cc6c36f832" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a466c516-ef1f-4a00-ba4f-82cc6c36f832)" />
+  <g opacity="0.1">
+    <circle cx="206.64056856652397" cy="71.94991579504679" r="11.258787015163207" fill="white" /><circle cx="398.598239143214" cy="231.5444150374545" r="28.5770927378921" fill="white" /><circle cx="190.4349310113664" cy="537.0131093185047" r="22.951767975788634" fill="white" /><circle cx="116.39442641047948" cy="38.47453590311281" r="27.97774728421126" fill="white" /><circle cx="336.4167275328946" cy="158.83358342314546" r="14.176324922551897" fill="white" /><circle cx="278.5655388551773" cy="367.94665635208315" r="15.468708083878948" fill="white" /><circle cx="273.04198588032193" cy="57.83579012242368" r="19.59510993922288" fill="white" /><circle cx="362.54904464898425" cy="285.72377577254736" r="15.72657071680476" fill="white" /><circle cx="350.38155286546936" cy="591.0723710078018" r="13.689930915915378" fill="white" /><circle cx="137.2159251673438" cy="405.9299351213524" r="18.906084402556605" fill="white" /><circle cx="52.4186606060574" cy="80.4200968156986" r="24.82746539720715" fill="white" /><circle cx="9.989099575947424" cy="557.6980832126219" r="11.976802226672238" fill="white" /><circle cx="175.72190850635278" cy="224.47473155037017" r="10.947075222486678" fill="white" /><circle cx="164.96206415653117" cy="256.5214659074271" r="24.53179298784952" fill="white" /><circle cx="189.41195873344907" cy="0.5349227254987765" r="13.705464214326774" fill="white" /><circle cx="174.0921140176682" cy="347.93013309933775" r="24.651833181965515" fill="white" /><circle cx="376.85698844158895" cy="338.0355730201042" r="23.54535054805058" fill="white" /><circle cx="44.03882649809505" cy="310.1655870009" r="19.17446357284091" fill="white" /><circle cx="73.54587878290472" cy="71.01311204992773" r="22.341195760927626" fill="white" /><circle cx="180.1799269246083" cy="414.8748903463795" r="22.826241017271027" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Zwischen mir und der Welt
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Ta-Nehisi Coates
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

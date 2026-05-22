@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-034175ef-42cb-4986-92de-7b477294186b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-034175ef-42cb-4986-92de-7b477294186b)" />
+  <g opacity="0.1">
+    <circle cx="277.9059047774598" cy="412.94649339974814" r="26.842925161844818" fill="white" /><circle cx="62.49781853527474" cy="579.1444322420707" r="17.1013487316844" fill="white" /><circle cx="184.09380171073124" cy="486.2278372761589" r="29.21617581811625" fill="white" /><circle cx="336.0982383782015" cy="337.55862943475296" r="18.43237918754899" fill="white" /><circle cx="143.58535170734567" cy="439.8409168087262" r="19.87937359356101" fill="white" /><circle cx="258.2675160054762" cy="210.60565791006226" r="29.457845740191082" fill="white" /><circle cx="292.09290037718296" cy="30.24046246804959" r="14.160882265629573" fill="white" /><circle cx="224.82651290992567" cy="239.44758378306955" r="17.44880369463619" fill="white" /><circle cx="197.7371826763742" cy="383.47073857184483" r="29.67895782509308" fill="white" /><circle cx="4.486243920166499" cy="209.33787536295856" r="26.18259568397847" fill="white" /><circle cx="117.4920017393073" cy="64.58921123597905" r="25.041476639198663" fill="white" /><circle cx="302.3860027196565" cy="337.7126860675099" r="28.42237169270711" fill="white" /><circle cx="178.4403342599079" cy="487.75221981998874" r="29.79695408891972" fill="white" /><circle cx="160.73352315262986" cy="142.72503760555804" r="10.220547550467312" fill="white" /><circle cx="269.2877088555854" cy="564.7955681491209" r="10.542436487303242" fill="white" /><circle cx="94.08654165204267" cy="205.96457193161334" r="12.25463262803691" fill="white" /><circle cx="216.0293462636735" cy="3.021425705312475" r="28.350845295224744" fill="white" /><circle cx="193.04669203900494" cy="88.15846730767643" r="18.727388844281897" fill="white" /><circle cx="366.1587537266293" cy="289.02919256150915" r="14.350933197116749" fill="white" /><circle cx="33.1780124188938" cy="1.338825215780881" r="28.36445091966963" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Ein Mann namens Ove
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Fredrik Backman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ec2dfe3c-70df-471d-bde5-9b7dff3967d5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ec2dfe3c-70df-471d-bde5-9b7dff3967d5)" />
+  <g opacity="0.1">
+    <circle cx="373.6503991909535" cy="568.8928247881933" r="27.523856142888828" fill="white" /><circle cx="148.06171883103744" cy="162.14747306962252" r="24.887248625826963" fill="white" /><circle cx="218.42858501145662" cy="445.600214792638" r="26.011764939447737" fill="white" /><circle cx="193.1281584242802" cy="344.8942524308876" r="16.207076681842725" fill="white" /><circle cx="30.40734567554928" cy="568.0670517944085" r="24.948073311253793" fill="white" /><circle cx="314.395452293232" cy="500.33545282777794" r="15.18429366946732" fill="white" /><circle cx="46.60027230905661" cy="132.16805977583863" r="25.462333861371576" fill="white" /><circle cx="211.13741298759422" cy="414.6931847967618" r="21.922308647347606" fill="white" /><circle cx="386.09666217712146" cy="114.18431081276151" r="14.359159324144347" fill="white" /><circle cx="237.05947712023715" cy="402.1336588748545" r="18.13112575736904" fill="white" /><circle cx="56.255240650400125" cy="164.22364991754011" r="10.777233651739106" fill="white" /><circle cx="14.026988874882518" cy="387.16654597381637" r="27.525895364753346" fill="white" /><circle cx="164.08859125828883" cy="389.9763239173247" r="10.869507233392437" fill="white" /><circle cx="246.31663279592738" cy="328.98088251586466" r="14.04710324672078" fill="white" /><circle cx="83.6795587315482" cy="227.11039073147967" r="18.195582009500278" fill="white" /><circle cx="236.335021118383" cy="345.21442118770153" r="14.718771506369094" fill="white" /><circle cx="135.12573118082045" cy="200.99946852809677" r="24.99588426475345" fill="white" /><circle cx="83.45884668639071" cy="353.627594321772" r="19.243526066167618" fill="white" /><circle cx="48.29502074892433" cy="259.44013764141687" r="28.94760492137106" fill="white" /><circle cx="243.12815809106246" cy="571.5527490029413" r="16.990824204310577" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        No Mud, No Lotus
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Thich Nhat Hanh
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

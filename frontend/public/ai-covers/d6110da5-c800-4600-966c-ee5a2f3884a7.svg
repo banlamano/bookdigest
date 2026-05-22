@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d6110da5-c800-4600-966c-ee5a2f3884a7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d6110da5-c800-4600-966c-ee5a2f3884a7)" />
+  <g opacity="0.1">
+    <circle cx="368.7696093696254" cy="422.07153984178024" r="24.130306064917324" fill="white" /><circle cx="248.8793670223374" cy="88.84900021251273" r="13.781834941211091" fill="white" /><circle cx="192.4452034136638" cy="83.40786048072732" r="12.525645428404552" fill="white" /><circle cx="109.58382000709221" cy="154.65990217665438" r="10.751354827107653" fill="white" /><circle cx="335.73744869639586" cy="430.7441288247548" r="29.774774574118005" fill="white" /><circle cx="79.5966848996565" cy="269.32180440666093" r="22.962884660406402" fill="white" /><circle cx="353.55888405075984" cy="54.92937437251266" r="15.999323668737752" fill="white" /><circle cx="248.89768453876283" cy="592.8367985704167" r="27.203196878897028" fill="white" /><circle cx="239.60560441051376" cy="561.7189884429868" r="24.557318209230488" fill="white" /><circle cx="320.4545782709578" cy="102.46913646656495" r="24.987080930541538" fill="white" /><circle cx="202.0386735237259" cy="33.704795217031936" r="13.022865444596412" fill="white" /><circle cx="137.17458231449106" cy="112.03453802910582" r="23.917617296193306" fill="white" /><circle cx="247.49550885604762" cy="455.6501577131525" r="21.907934587481236" fill="white" /><circle cx="80.34016665191537" cy="6.195807172409995" r="23.064695810468873" fill="white" /><circle cx="139.1731732617057" cy="174.6785907129808" r="23.20017989157325" fill="white" /><circle cx="46.8041895930666" cy="288.79700700585244" r="19.07035606759525" fill="white" /><circle cx="56.97842451533113" cy="568.164799181004" r="21.951931257557753" fill="white" /><circle cx="31.847214506172694" cy="162.73699629760105" r="13.262476350921105" fill="white" /><circle cx="224.37910497478737" cy="311.9205335079486" r="24.43875002080624" fill="white" /><circle cx="84.09037740761956" cy="330.8959007779804" r="20.029552510222324" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Lykke: Die kleine
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Schatzsuche nach dem
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Glück
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Meik Wiking
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

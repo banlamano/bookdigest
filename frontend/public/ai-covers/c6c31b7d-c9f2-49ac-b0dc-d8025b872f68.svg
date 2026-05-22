@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c6c31b7d-c9f2-49ac-b0dc-d8025b872f68" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c6c31b7d-c9f2-49ac-b0dc-d8025b872f68)" />
+  <g opacity="0.1">
+    <circle cx="247.4215312891916" cy="231.67986482242793" r="27.730431840300266" fill="white" /><circle cx="91.4886822278615" cy="249.40235822243483" r="21.470691582358654" fill="white" /><circle cx="351.8618631258353" cy="532.5025724669872" r="14.328554173906731" fill="white" /><circle cx="225.5882867064369" cy="204.00609524487254" r="17.943245496373315" fill="white" /><circle cx="180.60280106976" cy="350.19553992657" r="11.232244756352692" fill="white" /><circle cx="87.30133426169813" cy="386.78316691408423" r="21.86620955570123" fill="white" /><circle cx="243.71898940210372" cy="165.11845283661967" r="13.064801643611032" fill="white" /><circle cx="116.39004558420423" cy="338.0499594332956" r="13.178193447507923" fill="white" /><circle cx="40.98027398009974" cy="141.8563882095069" r="16.81614027837084" fill="white" /><circle cx="287.3236589792627" cy="544.3601870781196" r="24.28320625282702" fill="white" /><circle cx="316.9248857108117" cy="526.5677412995271" r="21.165076834964843" fill="white" /><circle cx="312.37791360566723" cy="301.58456238507887" r="14.674988953113331" fill="white" /><circle cx="268.7600656382783" cy="103.42696196249096" r="21.11035836945822" fill="white" /><circle cx="288.58786125563955" cy="259.67640959992457" r="29.80208913849281" fill="white" /><circle cx="57.01860035864685" cy="385.6898896920624" r="17.58409279223398" fill="white" /><circle cx="253.52864086909506" cy="421.3443117010058" r="27.005190329463524" fill="white" /><circle cx="273.4990487622439" cy="290.4432572328835" r="24.68361242751074" fill="white" /><circle cx="16.707553468840608" cy="400.3745632906367" r="16.919956141567564" fill="white" /><circle cx="263.180225004772" cy="238.1049573659832" r="23.062499564086874" fill="white" /><circle cx="382.9551323690933" cy="258.18902739854616" r="23.40002343738916" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Verfangen im rosa
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Raumschiff: Wie Farben,
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Namen und Alltagsdinge
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Adam Alter
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

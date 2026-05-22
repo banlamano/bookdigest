@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e7aad93f-1cc2-4e4c-a09b-8ce8b243d6ff" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e7aad93f-1cc2-4e4c-a09b-8ce8b243d6ff)" />
+  <g opacity="0.1">
+    <circle cx="183.69992562738133" cy="324.79568622251224" r="23.405593229188355" fill="white" /><circle cx="112.64187862690687" cy="446.20988607882055" r="23.256419597742557" fill="white" /><circle cx="289.20787253554346" cy="284.6487102443515" r="11.281196624138659" fill="white" /><circle cx="23.87535093770108" cy="457.99926713537474" r="22.41942482860764" fill="white" /><circle cx="301.17052144026616" cy="333.38447673131026" r="28.090109015327393" fill="white" /><circle cx="114.24132002187636" cy="59.23531423465167" r="29.827114768051267" fill="white" /><circle cx="59.021222830841104" cy="24.808060360377215" r="11.85440831756466" fill="white" /><circle cx="69.44871868127262" cy="562.241208230283" r="27.91694915649294" fill="white" /><circle cx="279.76487758083397" cy="426.36272116314717" r="18.446508450252743" fill="white" /><circle cx="100.24965291314274" cy="472.0776483511236" r="27.900391634460206" fill="white" /><circle cx="95.28322530701749" cy="145.64873501645576" r="19.911056719829567" fill="white" /><circle cx="195.10003256520227" cy="345.7292009647719" r="26.358471496384748" fill="white" /><circle cx="95.2372308952445" cy="381.5713627352047" r="25.451591871457122" fill="white" /><circle cx="392.58196880878313" cy="586.3088911495933" r="22.28248203908127" fill="white" /><circle cx="273.07094519232555" cy="379.4428518233807" r="23.628663135053543" fill="white" /><circle cx="260.387023016599" cy="486.81791631115" r="25.61135454815673" fill="white" /><circle cx="281.09401380662473" cy="442.6096047075911" r="14.85801027214751" fill="white" /><circle cx="334.89853528151394" cy="1.9449884124401073" r="16.383396454212004" fill="white" /><circle cx="326.9241572081383" cy="138.4729194283311" r="15.612310599306085" fill="white" /><circle cx="383.5304993605669" cy="107.01617869771707" r="10.861422604448297" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Code-Knacker:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Jennifer Doudna,
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Genom-Editierung und die
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Walter Isaacson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

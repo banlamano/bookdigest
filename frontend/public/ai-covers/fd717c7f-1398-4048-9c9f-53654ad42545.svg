@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-fd717c7f-1398-4048-9c9f-53654ad42545" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-fd717c7f-1398-4048-9c9f-53654ad42545)" />
+  <g opacity="0.1">
+    <circle cx="13.539467443066311" cy="328.7935589982842" r="26.854468168447006" fill="white" /><circle cx="214.01595232149631" cy="489.96380966764383" r="24.189541156707673" fill="white" /><circle cx="104.481179723612" cy="72.1640047721674" r="27.504247986718852" fill="white" /><circle cx="52.594607962755326" cy="374.4053626734454" r="26.36765583970415" fill="white" /><circle cx="115.70959169439234" cy="287.33710378813305" r="11.231954687455907" fill="white" /><circle cx="259.80471728425044" cy="595.6045322138876" r="24.644020856446005" fill="white" /><circle cx="352.70837039423964" cy="597.9761587203753" r="14.955551940623932" fill="white" /><circle cx="182.8046658443676" cy="13.485882706807395" r="29.2839062950967" fill="white" /><circle cx="158.9966578110734" cy="494.44722585732785" r="21.304920087840785" fill="white" /><circle cx="77.37686405919581" cy="114.80702659160518" r="22.311836750377026" fill="white" /><circle cx="393.559328941058" cy="36.60138228398857" r="12.01417429101349" fill="white" /><circle cx="325.9200943193027" cy="590.1097439041138" r="25.89094847638645" fill="white" /><circle cx="390.5091660663411" cy="144.1745323236654" r="19.88403971229996" fill="white" /><circle cx="151.75262132595063" cy="426.64093940810676" r="14.342014496367801" fill="white" /><circle cx="46.72911697062263" cy="135.92613288764096" r="21.451818258632393" fill="white" /><circle cx="176.1269978854313" cy="500.03694653226376" r="14.841457829819003" fill="white" /><circle cx="131.20630892917816" cy="515.2247221669521" r="19.370510576904643" fill="white" /><circle cx="368.73818782280546" cy="276.8264232419111" r="26.856525634720345" fill="white" /><circle cx="233.24895884759354" cy="318.92908511437975" r="12.770693880847976" fill="white" /><circle cx="146.8397123032893" cy="101.4044762921134" r="26.365031374405326" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        101 Essays That Will
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Change The Way You Think
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brianna Wiest
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

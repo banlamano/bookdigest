@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b6e2e8b7-d565-4038-adec-41f82771a4b3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b6e2e8b7-d565-4038-adec-41f82771a4b3)" />
+  <g opacity="0.1">
+    <circle cx="37.99936244050435" cy="262.09154195640554" r="29.239548461289175" fill="white" /><circle cx="27.96690621257847" cy="108.14901260442437" r="24.790984416099267" fill="white" /><circle cx="313.5566882517699" cy="511.6570248333067" r="10.713999529838901" fill="white" /><circle cx="103.94647455235595" cy="109.12287677585984" r="24.86088710086367" fill="white" /><circle cx="17.96787302633951" cy="279.1135138784982" r="21.12087952153665" fill="white" /><circle cx="88.04305812137554" cy="359.46244132790014" r="13.443964841549754" fill="white" /><circle cx="127.96501604488562" cy="120.33078483896969" r="16.969171124736768" fill="white" /><circle cx="48.645804311550876" cy="21.955297687110175" r="10.350637603579774" fill="white" /><circle cx="381.6937911166458" cy="127.60189350850546" r="13.962740753787635" fill="white" /><circle cx="169.76182021706117" cy="370.1781581886804" r="27.35993429443248" fill="white" /><circle cx="110.40868860229129" cy="551.4582719194561" r="12.399906398240326" fill="white" /><circle cx="156.52325486102643" cy="530.7959745440604" r="11.158849080121067" fill="white" /><circle cx="179.54977122525202" cy="492.5511846621423" r="17.43556976210496" fill="white" /><circle cx="1.392152520722778" cy="151.9273762093295" r="19.687223076939407" fill="white" /><circle cx="158.03748928689134" cy="549.9600616722499" r="25.46064207707676" fill="white" /><circle cx="398.05955020794755" cy="335.96060549105545" r="26.39514833974081" fill="white" /><circle cx="14.024989020032175" cy="257.07390584591144" r="22.62291853099626" fill="white" /><circle cx="167.7496268195102" cy="246.65455630599945" r="16.090594079176093" fill="white" /><circle cx="56.13055362234043" cy="540.4837512907385" r="28.005647985841314" fill="white" /><circle cx="114.66890750493674" cy="521.2925035807742" r="20.389683432474882" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Zinseszinseffekt:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Dein Weg zu mehr Erfolg,
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Vermögen und einem
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Darren Hardy
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

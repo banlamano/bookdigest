@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-00914cf9-a171-4786-b89d-5b5fcf7c18e3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-00914cf9-a171-4786-b89d-5b5fcf7c18e3)" />
+  <g opacity="0.1">
+    <circle cx="237.66846310859736" cy="35.20374727871838" r="25.47446564816154" fill="white" /><circle cx="14.945924380536768" cy="509.63073418003887" r="21.057649528671234" fill="white" /><circle cx="279.5661877991876" cy="334.308721621546" r="21.210622072161954" fill="white" /><circle cx="73.68441502762431" cy="377.5422338201555" r="12.530709936735917" fill="white" /><circle cx="57.47302281174211" cy="258.7560236815617" r="20.764538677411696" fill="white" /><circle cx="114.672598019905" cy="18.710645097350476" r="11.509893814072589" fill="white" /><circle cx="363.22884501373267" cy="307.4013568601718" r="19.577393697400773" fill="white" /><circle cx="291.5993815524433" cy="128.7816499300705" r="29.440396919227926" fill="white" /><circle cx="17.772425242297984" cy="151.39293905423762" r="15.146272276492002" fill="white" /><circle cx="147.91972039693485" cy="459.3528886900404" r="15.10180916736916" fill="white" /><circle cx="391.65789933865005" cy="5.906490622711913" r="26.148546250767307" fill="white" /><circle cx="125.1633934997018" cy="301.5677059093498" r="13.25450175535601" fill="white" /><circle cx="199.78856274277322" cy="148.1643255592743" r="13.893383604002436" fill="white" /><circle cx="142.007509619128" cy="182.4096073097715" r="24.031030281097138" fill="white" /><circle cx="205.12826387082143" cy="428.33372524079726" r="13.579821813437885" fill="white" /><circle cx="51.96069373222309" cy="350.85858808649647" r="25.204619080032693" fill="white" /><circle cx="384.62312836631787" cy="163.98521249790215" r="24.01037693526694" fill="white" /><circle cx="11.139151736121233" cy="549.8358514882315" r="17.937213258170836" fill="white" /><circle cx="188.38643870652118" cy="360.7097997141754" r="12.787109304478417" fill="white" /><circle cx="257.81744645374397" cy="148.66445486227255" r="15.78027683842529" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Rosie Project
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Graeme Simsion
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

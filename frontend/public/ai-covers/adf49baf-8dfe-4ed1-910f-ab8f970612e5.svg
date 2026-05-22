@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-adf49baf-8dfe-4ed1-910f-ab8f970612e5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-adf49baf-8dfe-4ed1-910f-ab8f970612e5)" />
+  <g opacity="0.1">
+    <circle cx="192.78054820546" cy="241.2558070755489" r="12.655470934251955" fill="white" /><circle cx="210.59535775944255" cy="73.03195374390101" r="18.587796576422576" fill="white" /><circle cx="20.452380148092033" cy="130.96213390180836" r="26.189428218305846" fill="white" /><circle cx="71.83489485797887" cy="436.50043112927233" r="18.86092877652678" fill="white" /><circle cx="357.5407593548294" cy="371.2076458660279" r="24.284784313454207" fill="white" /><circle cx="362.8352047055855" cy="428.69188115676246" r="20.612468356584746" fill="white" /><circle cx="71.56997266021361" cy="127.02731681035446" r="26.440724819411994" fill="white" /><circle cx="185.8425413623581" cy="476.121456822859" r="14.531754328222657" fill="white" /><circle cx="263.15185302972844" cy="427.47374587706975" r="21.191443365872395" fill="white" /><circle cx="87.9257204755386" cy="537.7513162209256" r="10.441352953907838" fill="white" /><circle cx="360.6478225483768" cy="450.5129912796738" r="19.555533795174213" fill="white" /><circle cx="324.58522129731244" cy="34.109525613618196" r="17.48590617324456" fill="white" /><circle cx="220.5974035801753" cy="229.45266005550337" r="20.996497571825383" fill="white" /><circle cx="376.7108493013074" cy="138.98858611833293" r="25.74995759685856" fill="white" /><circle cx="294.14769682727325" cy="333.7754475956402" r="10.674975463620932" fill="white" /><circle cx="277.2917374487137" cy="394.1478302697575" r="11.573667651704627" fill="white" /><circle cx="120.96647944169901" cy="416.7129927821177" r="15.412077250702401" fill="white" /><circle cx="92.10623772284352" cy="180.69128021807057" r="19.100556407008483" fill="white" /><circle cx="49.45812947398309" cy="226.42615155836992" r="25.28310713021464" fill="white" /><circle cx="32.366453055020905" cy="511.1977852530868" r="28.477697690590603" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The 21 Irrefutable Laws
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        of Leadership
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        John Maxwell
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

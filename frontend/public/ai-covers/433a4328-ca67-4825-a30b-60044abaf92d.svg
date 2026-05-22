@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-433a4328-ca67-4825-a30b-60044abaf92d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-433a4328-ca67-4825-a30b-60044abaf92d)" />
+  <g opacity="0.1">
+    <circle cx="77.99226897400283" cy="222.9294709561453" r="16.07625517241278" fill="white" /><circle cx="306.22753224389305" cy="274.06017635813345" r="26.000584325377247" fill="white" /><circle cx="155.99288269120444" cy="170.42061602981744" r="29.123866256946712" fill="white" /><circle cx="83.53531528946228" cy="224.5303358282424" r="19.12118940129337" fill="white" /><circle cx="5.8321551823518725" cy="533.8589845417245" r="23.51998878126635" fill="white" /><circle cx="376.5344974021943" cy="260.9125040437729" r="29.09581523172477" fill="white" /><circle cx="37.898898775637456" cy="364.90562919944057" r="13.188814326474212" fill="white" /><circle cx="117.62266012912602" cy="506.0336855686646" r="24.52505623241204" fill="white" /><circle cx="305.93398470656814" cy="155.06917612292563" r="26.686144661539597" fill="white" /><circle cx="167.96026169488636" cy="5.750422726805193" r="21.644070111287874" fill="white" /><circle cx="260.01735647889024" cy="464.1936749469916" r="20.647179858640406" fill="white" /><circle cx="263.9896345694722" cy="349.28796600496383" r="17.49545427048428" fill="white" /><circle cx="262.4975884401752" cy="29.57546391470136" r="26.024766922795138" fill="white" /><circle cx="100.75199640763466" cy="407.05605469546174" r="21.870351975336384" fill="white" /><circle cx="138.96824767377743" cy="41.251578536219256" r="16.344063508925895" fill="white" /><circle cx="25.438466838413156" cy="537.81628422895" r="16.57914073231183" fill="white" /><circle cx="348.93586301520935" cy="352.35229354125346" r="11.078003093557637" fill="white" /><circle cx="223.6952820213086" cy="11.121548483236076" r="29.162392667328923" fill="white" /><circle cx="203.52775821817528" cy="546.6989720988199" r="15.86031466725304" fill="white" /><circle cx="82.16937013785177" cy="488.05894991149876" r="11.263813865611777" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Breaking The Habit of
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Being Yourself
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Joe Dispenza
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-2d4ebd6c-6aed-4d46-b7f6-113b5a09902c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-2d4ebd6c-6aed-4d46-b7f6-113b5a09902c)" />
+  <g opacity="0.1">
+    <circle cx="279.9987873626832" cy="370.32253799470277" r="18.902543454963308" fill="white" /><circle cx="141.05108784823014" cy="32.964144735775825" r="21.356601165906923" fill="white" /><circle cx="134.1263671600809" cy="366.6823158896377" r="15.051194513347745" fill="white" /><circle cx="14.43990877089174" cy="377.08324756720646" r="17.767536143751833" fill="white" /><circle cx="319.8358564162263" cy="310.48702028824664" r="18.041339350362236" fill="white" /><circle cx="289.4848040901136" cy="442.2379293748456" r="10.149905719960184" fill="white" /><circle cx="67.86339696698546" cy="430.9205256449218" r="26.90736357912057" fill="white" /><circle cx="234.63020205961035" cy="571.1291843822537" r="18.398020406960768" fill="white" /><circle cx="44.449163346809286" cy="231.3890994647781" r="12.861367114066823" fill="white" /><circle cx="358.8240451618869" cy="481.1755691518299" r="14.783954823671364" fill="white" /><circle cx="141.28483126207615" cy="379.32842556437816" r="19.466184402059834" fill="white" /><circle cx="107.7001385623357" cy="89.09562409920527" r="10.932231927309406" fill="white" /><circle cx="388.3239666784326" cy="379.5578472133528" r="20.626372857495063" fill="white" /><circle cx="364.98917348394104" cy="114.73870167585476" r="22.480004493746016" fill="white" /><circle cx="337.51275377052605" cy="388.80221015992174" r="18.69204061701308" fill="white" /><circle cx="115.82171926410085" cy="342.95816771998875" r="23.72777096706423" fill="white" /><circle cx="132.01853812129664" cy="385.59103290728035" r="24.87626148925424" fill="white" /><circle cx="256.6649792116835" cy="170.4077713035977" r="10.096235105804453" fill="white" /><circle cx="341.07516180347545" cy="276.4246474508106" r="16.800382069272114" fill="white" /><circle cx="250.33919863348828" cy="273.62719872467494" r="29.102354348069937" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Outsiders: Acht
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        unkonventionelle CEOs und
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        ihre radikale
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        William Thorndike
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

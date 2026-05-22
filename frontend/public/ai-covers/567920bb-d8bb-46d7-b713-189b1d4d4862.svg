@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-567920bb-d8bb-46d7-b713-189b1d4d4862" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-567920bb-d8bb-46d7-b713-189b1d4d4862)" />
+  <g opacity="0.1">
+    <circle cx="165.119046566992" cy="475.59521864281265" r="25.529726496940228" fill="white" /><circle cx="59.79219272866367" cy="174.0399360913166" r="22.004711531796058" fill="white" /><circle cx="342.4764172697777" cy="159.01694336055192" r="12.168461114284169" fill="white" /><circle cx="62.087178164102674" cy="355.2777293808387" r="13.668076087279337" fill="white" /><circle cx="112.48817417659657" cy="330.2761243386312" r="28.814609607476584" fill="white" /><circle cx="184.8603744925513" cy="202.99635976654668" r="20.868834665087178" fill="white" /><circle cx="272.51465095523866" cy="200.66316898580857" r="27.788260209123315" fill="white" /><circle cx="200.43111861136697" cy="174.53829019022106" r="28.815043521311917" fill="white" /><circle cx="164.89330004145805" cy="567.3627555450852" r="22.54991824945666" fill="white" /><circle cx="214.55253881928851" cy="467.57540215238333" r="14.055427292153084" fill="white" /><circle cx="374.6927789140992" cy="574.460374912576" r="19.67842192583759" fill="white" /><circle cx="205.0591971292474" cy="53.619212911686766" r="20.51839369809912" fill="white" /><circle cx="322.37207257653967" cy="63.92636253755677" r="23.269797533760713" fill="white" /><circle cx="390.43761705769293" cy="478.43317578667717" r="25.30898561892237" fill="white" /><circle cx="21.78134958193434" cy="505.3631615660443" r="13.027694194416142" fill="white" /><circle cx="223.53870837172155" cy="266.22783027863966" r="23.248601770710984" fill="white" /><circle cx="331.31184802070715" cy="86.95144742499814" r="22.385943975294104" fill="white" /><circle cx="136.09995479485048" cy="509.6353101211206" r="10.00635041388959" fill="white" /><circle cx="26.32416668171831" cy="55.529739565148795" r="24.530622349860394" fill="white" /><circle cx="61.83870022602322" cy="197.71934436517185" r="12.965479700176253" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Sprint
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Jake Knapp
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

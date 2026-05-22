@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5bc6d158-f68c-4ec2-979f-cd3b9d7ccb38" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5bc6d158-f68c-4ec2-979f-cd3b9d7ccb38)" />
+  <g opacity="0.1">
+    <circle cx="385.8287217706809" cy="57.21797339985106" r="17.715345735424197" fill="white" /><circle cx="265.5441677859117" cy="585.3422783002205" r="18.752940001639843" fill="white" /><circle cx="360.24543926579963" cy="540.5313089916732" r="15.874448939764793" fill="white" /><circle cx="6.007653644473976" cy="419.59268933250445" r="13.76243949832854" fill="white" /><circle cx="120.43570545072538" cy="57.82866931484496" r="25.292016472832675" fill="white" /><circle cx="71.3844282083235" cy="27.69233447438082" r="26.933720100181645" fill="white" /><circle cx="370.448267092081" cy="491.49190607962765" r="10.67309666656907" fill="white" /><circle cx="287.795895542905" cy="1.2859359752511956" r="24.730498829765956" fill="white" /><circle cx="276.13811730022167" cy="12.447669768543236" r="21.9371036928437" fill="white" /><circle cx="30.521800750925898" cy="4.367318736097814" r="22.51709627386763" fill="white" /><circle cx="29.2705869992568" cy="89.0357202373639" r="18.3564743184535" fill="white" /><circle cx="164.07924406954712" cy="21.369555662617756" r="16.51974964360366" fill="white" /><circle cx="363.8117646296797" cy="69.5567356511886" r="14.879774554207332" fill="white" /><circle cx="130.6373805279061" cy="190.60065059369117" r="11.15550290805344" fill="white" /><circle cx="381.1149441528157" cy="453.66133954528993" r="18.44331590884886" fill="white" /><circle cx="335.3463402044068" cy="288.47957298189067" r="12.433869118598121" fill="white" /><circle cx="374.26321724606146" cy="456.8445107796655" r="12.209074955115906" fill="white" /><circle cx="112.59816116458543" cy="315.4194705450897" r="19.576436766086047" fill="white" /><circle cx="323.20862763652" cy="29.450849686076054" r="27.95399225802903" fill="white" /><circle cx="193.62681260449946" cy="55.22793802564132" r="20.09728175840789" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Prinzipien des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Erfolgs: Von Wirtschaft
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        und Leben
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ray Dalio
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

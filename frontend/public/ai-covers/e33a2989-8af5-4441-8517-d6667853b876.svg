@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e33a2989-8af5-4441-8517-d6667853b876" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e33a2989-8af5-4441-8517-d6667853b876)" />
+  <g opacity="0.1">
+    <circle cx="169.04669301924028" cy="275.84426126013483" r="15.264023196659021" fill="white" /><circle cx="0.1008612570990497" cy="289.5929018953427" r="17.948177141494448" fill="white" /><circle cx="18.937305021556217" cy="1.3682420969875597" r="24.90029739399913" fill="white" /><circle cx="141.48568597258097" cy="571.7774457546166" r="24.660561260523828" fill="white" /><circle cx="295.24626520570763" cy="298.25352208968377" r="17.28963284734446" fill="white" /><circle cx="391.9881747692256" cy="229.29702576326017" r="11.350907182819114" fill="white" /><circle cx="97.02121290043321" cy="59.0849313167024" r="12.681040814622609" fill="white" /><circle cx="46.4830470935782" cy="579.7055328428348" r="11.246669042080464" fill="white" /><circle cx="63.47521846029069" cy="253.81889058158117" r="27.261637674191725" fill="white" /><circle cx="223.19394319885558" cy="152.6083284649432" r="22.177947351162146" fill="white" /><circle cx="170.9917410418277" cy="336.69279622590295" r="29.180531718672135" fill="white" /><circle cx="365.5225075389149" cy="253.70095530280378" r="21.80885332603325" fill="white" /><circle cx="288.2045394586268" cy="483.73009297647894" r="25.060443196612574" fill="white" /><circle cx="87.94938156757333" cy="117.94308131502274" r="22.302943685842227" fill="white" /><circle cx="77.2685345925885" cy="518.3543759787524" r="13.578700438062336" fill="white" /><circle cx="331.816775485701" cy="535.1522767293249" r="22.89743562339757" fill="white" /><circle cx="245.02033546065752" cy="19.07474004519345" r="22.857730839428676" fill="white" /><circle cx="96.09039161035557" cy="399.16596722323095" r="28.358114024163328" fill="white" /><circle cx="359.228641793318" cy="267.92353315219174" r="26.83026374162224" fill="white" /><circle cx="70.58251054360127" cy="384.93464248753077" r="15.638224493961353" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die weite Wildnis
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Kristin Hannah
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

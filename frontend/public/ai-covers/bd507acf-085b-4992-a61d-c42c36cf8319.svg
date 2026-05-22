@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-bd507acf-085b-4992-a61d-c42c36cf8319" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-bd507acf-085b-4992-a61d-c42c36cf8319)" />
+  <g opacity="0.1">
+    <circle cx="386.2106727008362" cy="257.2060928851126" r="17.93719290791511" fill="white" /><circle cx="98.79485203408711" cy="243.43015481625244" r="29.5682421570574" fill="white" /><circle cx="266.5381057551364" cy="585.0253816994359" r="28.391093541213756" fill="white" /><circle cx="40.22531719328253" cy="228.04409812680356" r="12.255493143313117" fill="white" /><circle cx="137.90422190265704" cy="310.849911041953" r="29.64247025139227" fill="white" /><circle cx="384.28757381405205" cy="453.4945591912316" r="20.303249721842793" fill="white" /><circle cx="214.93572202976523" cy="376.06778129049985" r="12.61757143288918" fill="white" /><circle cx="192.55843065431648" cy="512.2865796601516" r="19.458989731391746" fill="white" /><circle cx="200.87299999956133" cy="365.0313651575794" r="28.06399580121092" fill="white" /><circle cx="23.654244028550764" cy="489.66874283693204" r="22.011798080613655" fill="white" /><circle cx="268.14193179660475" cy="289.08271446222864" r="25.93530918658631" fill="white" /><circle cx="75.72810665609424" cy="524.7673374820239" r="22.793098206812797" fill="white" /><circle cx="376.94413905866196" cy="364.79328536213404" r="25.591105642214803" fill="white" /><circle cx="143.53704599851346" cy="284.65146270852983" r="23.685637838337296" fill="white" /><circle cx="212.91987264575997" cy="494.8537555410177" r="20.369963346587017" fill="white" /><circle cx="147.10126104349587" cy="58.92525419731713" r="12.781311018362778" fill="white" /><circle cx="56.76160434829325" cy="472.62610004100844" r="26.42280399576593" fill="white" /><circle cx="334.5194722575102" cy="104.99783705712203" r="13.369750547962134" fill="white" /><circle cx="198.51949082222683" cy="364.4964559905962" r="16.468869953117515" fill="white" /><circle cx="349.3152183990799" cy="272.06282429494655" r="15.294363278645998" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Pumpkin Plan
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Mike Michalowicz
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8628437c-195f-4664-9341-8f3e4ffc5da8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8628437c-195f-4664-9341-8f3e4ffc5da8)" />
+  <g opacity="0.1">
+    <circle cx="172.60427715093928" cy="82.25993188305338" r="13.32813121342923" fill="white" /><circle cx="289.2184586445553" cy="576.3465213795253" r="29.632086080806705" fill="white" /><circle cx="133.02232539309804" cy="312.9124525697023" r="28.117704906342592" fill="white" /><circle cx="359.00900506986267" cy="4.110218191145298" r="13.655840855207744" fill="white" /><circle cx="232.7188365126614" cy="319.2434689187354" r="26.37061310286168" fill="white" /><circle cx="103.30081500741564" cy="258.2674735175468" r="22.701755899195867" fill="white" /><circle cx="156.76396655689985" cy="88.63262321711262" r="25.91502079926745" fill="white" /><circle cx="320.1010768727189" cy="121.43470327669405" r="10.967650296515828" fill="white" /><circle cx="228.01865008927683" cy="80.31912440010476" r="16.87593917977724" fill="white" /><circle cx="268.4637460092126" cy="186.52108207684591" r="21.33813252107558" fill="white" /><circle cx="392.4348424401178" cy="562.8918601578761" r="29.327130283979447" fill="white" /><circle cx="371.5043504799965" cy="552.9885251033049" r="18.438533341439403" fill="white" /><circle cx="365.06731181186194" cy="112.86197011363099" r="19.058977760985297" fill="white" /><circle cx="197.00680929692479" cy="162.65405068371012" r="29.06014511389364" fill="white" /><circle cx="110.37287418532422" cy="167.86129105040362" r="23.08270847690377" fill="white" /><circle cx="195.22626923438168" cy="468.7349160607634" r="24.355034946394863" fill="white" /><circle cx="88.93357676722285" cy="364.5583449506021" r="26.800595414169916" fill="white" /><circle cx="240.6872195288801" cy="459.1552418327566" r="24.583818644810506" fill="white" /><circle cx="372.751741067735" cy="247.16085717291514" r="20.303099193637696" fill="white" /><circle cx="135.97687437703138" cy="406.94278290703164" r="18.094333682549543" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Start Small, Stay Small
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Rob Walling
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

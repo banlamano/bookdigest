@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a0c92a72-8a72-4670-bf6d-cddbd4503baa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a0c92a72-8a72-4670-bf6d-cddbd4503baa)" />
+  <g opacity="0.1">
+    <circle cx="246.16471570170333" cy="499.8263350129251" r="19.51787994352031" fill="white" /><circle cx="378.71515135524237" cy="93.42038680831467" r="15.052689510321514" fill="white" /><circle cx="365.3438833823053" cy="591.0418748803271" r="21.361178202213935" fill="white" /><circle cx="339.8149349222601" cy="363.78799615245316" r="14.484983637388954" fill="white" /><circle cx="213.27710936329294" cy="250.83288086767823" r="25.805614378381005" fill="white" /><circle cx="225.39730985535317" cy="588.5337070468435" r="20.671761171136005" fill="white" /><circle cx="128.8704935408206" cy="530.898372196526" r="27.198084414578812" fill="white" /><circle cx="160.03085836821208" cy="66.39559141804665" r="23.600375244089847" fill="white" /><circle cx="131.67690746792607" cy="504.07277418056964" r="10.297693019710298" fill="white" /><circle cx="102.78284942819514" cy="375.15055297792645" r="12.974395228286486" fill="white" /><circle cx="26.30174585431866" cy="563.754256343084" r="13.457924836516945" fill="white" /><circle cx="338.3500583944466" cy="354.72417275362466" r="19.096565802959653" fill="white" /><circle cx="211.982316638506" cy="220.39215652213844" r="13.898048179941968" fill="white" /><circle cx="123.52481500990163" cy="517.1162105036942" r="14.21153223392134" fill="white" /><circle cx="51.27180993627913" cy="576.2303980689929" r="13.188905695966904" fill="white" /><circle cx="34.70725030410655" cy="99.33844186034202" r="20.392555532245485" fill="white" /><circle cx="13.770325426814667" cy="511.8645674645043" r="25.165016806338468" fill="white" /><circle cx="339.39222121839805" cy="334.3157947687409" r="24.18517561643604" fill="white" /><circle cx="374.706164929418" cy="168.0175864873146" r="13.468593397207755" fill="white" /><circle cx="216.35436446133855" cy="247.5916965937237" r="27.158947516832633" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die subtile Kunst des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Daraufscheißens: Ein
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        nicht ganz so
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Mark Manson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

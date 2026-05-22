@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-3382c529-f824-4c23-9195-08f79e432bc7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-3382c529-f824-4c23-9195-08f79e432bc7)" />
+  <g opacity="0.1">
+    <circle cx="367.453100369605" cy="32.11321188959795" r="11.178564816273557" fill="white" /><circle cx="368.18494368717205" cy="347.4138335923179" r="13.90284134472868" fill="white" /><circle cx="35.477099470739226" cy="114.67452710838772" r="23.955596880722005" fill="white" /><circle cx="265.5388913565342" cy="128.77572857748578" r="29.206071894964413" fill="white" /><circle cx="372.50462421253434" cy="442.8799619742966" r="17.58271027000917" fill="white" /><circle cx="366.1567791699941" cy="152.55602290195057" r="26.768156270327196" fill="white" /><circle cx="380.3859421553576" cy="106.69312710030974" r="23.091024098942988" fill="white" /><circle cx="84.44074320111304" cy="520.3987820750222" r="16.387054266043126" fill="white" /><circle cx="81.27807300528333" cy="63.55780331162213" r="28.130208915524058" fill="white" /><circle cx="202.02715141020963" cy="486.6983164917655" r="22.009441474106275" fill="white" /><circle cx="185.91547625594998" cy="571.8822317012172" r="25.78132935787574" fill="white" /><circle cx="217.801080158145" cy="215.7561145956236" r="11.469020300103448" fill="white" /><circle cx="125.95358460668793" cy="256.2343728751223" r="23.459974690564387" fill="white" /><circle cx="274.559470765027" cy="128.86814168337077" r="25.9129746527439" fill="white" /><circle cx="156.3499736166119" cy="173.74927260418187" r="21.99017127361818" fill="white" /><circle cx="371.05516155305315" cy="468.9090538962854" r="11.525073563015681" fill="white" /><circle cx="62.59088285336598" cy="250.56490787973001" r="26.554542938372528" fill="white" /><circle cx="148.882002806377" cy="534.1668916679585" r="15.648574725963522" fill="white" /><circle cx="283.50062944560017" cy="290.55258224897386" r="20.949609900685704" fill="white" /><circle cx="388.9720468191977" cy="235.60524442675722" r="15.135953107764754" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die magische Formel: Wie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Sie den Markt schlagen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Joel Greenblatt
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

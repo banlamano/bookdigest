@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-19479e2a-7a85-4ac1-ae67-11475df54c03" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-19479e2a-7a85-4ac1-ae67-11475df54c03)" />
+  <g opacity="0.1">
+    <circle cx="347.04847107376787" cy="464.0437747661644" r="25.42936055569953" fill="white" /><circle cx="131.08588818433034" cy="223.0105725317535" r="21.23127344068198" fill="white" /><circle cx="347.29838643772507" cy="559.2673835620043" r="24.513441409145877" fill="white" /><circle cx="129.84843333340987" cy="556.1387321693037" r="24.815928972965516" fill="white" /><circle cx="222.34362934329943" cy="390.75068830908293" r="26.204054128530604" fill="white" /><circle cx="234.69190595409302" cy="512.3443017980651" r="26.608165728385934" fill="white" /><circle cx="72.15805652262266" cy="206.03547170523834" r="10.757721517735924" fill="white" /><circle cx="354.90201664615006" cy="582.8360846926819" r="26.222130844061418" fill="white" /><circle cx="176.37406734914038" cy="28.429534489154594" r="18.57709662090935" fill="white" /><circle cx="14.428539728321166" cy="491.09742943506325" r="16.944957974711603" fill="white" /><circle cx="380.1425684527892" cy="466.5040558145311" r="14.859468539402709" fill="white" /><circle cx="166.43007537795737" cy="189.04402370490064" r="29.16971638289622" fill="white" /><circle cx="206.47879276865257" cy="210.58946791299772" r="14.379005189473615" fill="white" /><circle cx="367.67704682781186" cy="510.5072050954875" r="16.010500178021022" fill="white" /><circle cx="291.886004794572" cy="248.37217028656636" r="12.146036106207623" fill="white" /><circle cx="107.26462419186622" cy="446.4364443843198" r="15.685092677319336" fill="white" /><circle cx="394.4560071089597" cy="231.91429402666608" r="28.734701734975374" fill="white" /><circle cx="245.3308612556719" cy="110.15863655337293" r="12.341291158987929" fill="white" /><circle cx="217.80084251938635" cy="333.10454577600177" r="15.645948175778878" fill="white" /><circle cx="301.6070379616781" cy="335.19587692277366" r="17.034349628123525" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Peak: Die Wissenschaft
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        vom
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Höchstleistungs-Stoffwechsel
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Marc Bubbs
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

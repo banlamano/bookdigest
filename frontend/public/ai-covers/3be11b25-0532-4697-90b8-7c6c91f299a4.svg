@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-3be11b25-0532-4697-90b8-7c6c91f299a4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-3be11b25-0532-4697-90b8-7c6c91f299a4)" />
+  <g opacity="0.1">
+    <circle cx="362.7397102196573" cy="567.6879137959198" r="24.06188407840444" fill="white" /><circle cx="55.248898745440385" cy="565.8149515646402" r="13.214294864633136" fill="white" /><circle cx="86.33403462451601" cy="65.5237928679431" r="12.259800884384319" fill="white" /><circle cx="98.85302639745407" cy="469.1016855342501" r="13.428129819341963" fill="white" /><circle cx="278.5114441008862" cy="22.458069108678423" r="23.58602067734473" fill="white" /><circle cx="187.7677851066569" cy="231.25510571494488" r="26.05039082412988" fill="white" /><circle cx="170.67488485616477" cy="329.1166428898988" r="20.0278648831661" fill="white" /><circle cx="157.33253518575464" cy="10.749498145294755" r="19.13407821956769" fill="white" /><circle cx="148.49983145733057" cy="461.7822599316254" r="16.594552531808397" fill="white" /><circle cx="128.22369402241347" cy="161.94529031807448" r="19.667728959744906" fill="white" /><circle cx="186.21093212521913" cy="539.0425380590519" r="22.697253677434965" fill="white" /><circle cx="269.49638929356735" cy="201.24938650027812" r="28.33101290296007" fill="white" /><circle cx="164.39408478968494" cy="154.9017731592152" r="25.384697763281913" fill="white" /><circle cx="363.2352557991959" cy="134.82872194887034" r="11.079474251779471" fill="white" /><circle cx="365.417187947757" cy="246.06010083325415" r="11.063612818138493" fill="white" /><circle cx="52.60697692464822" cy="39.29831300308977" r="15.797294335053309" fill="white" /><circle cx="234.66710091963841" cy="151.4237602714011" r="15.107752306690651" fill="white" /><circle cx="6.682015533712438" cy="459.15938806088855" r="20.959316006979584" fill="white" /><circle cx="21.883881405201812" cy="357.6697186188781" r="11.869047893790546" fill="white" /><circle cx="380.6232208257951" cy="28.75112822052943" r="11.171545843962056" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Educated
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Tara Westover
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

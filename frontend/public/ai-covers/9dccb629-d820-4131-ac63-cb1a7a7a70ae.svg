@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9dccb629-d820-4131-ac63-cb1a7a7a70ae" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9dccb629-d820-4131-ac63-cb1a7a7a70ae)" />
+  <g opacity="0.1">
+    <circle cx="298.2601227260775" cy="585.1118576146532" r="13.22952849854209" fill="white" /><circle cx="193.4024176008752" cy="60.32182886560924" r="11.691297216965221" fill="white" /><circle cx="213.77427667178912" cy="35.716765270329674" r="18.29539997284428" fill="white" /><circle cx="57.21198349404779" cy="593.5523057957002" r="10.571720292324002" fill="white" /><circle cx="381.51703146680217" cy="225.6356173890581" r="10.463670655216816" fill="white" /><circle cx="11.510342912419214" cy="111.50401899545368" r="13.287670638963355" fill="white" /><circle cx="66.25820098088519" cy="581.5971829950723" r="21.444151999823788" fill="white" /><circle cx="296.8636914445876" cy="486.6710097028218" r="24.25572339570081" fill="white" /><circle cx="319.6019510447453" cy="238.75473416657192" r="23.202292934616636" fill="white" /><circle cx="9.314049935531665" cy="392.29381375612746" r="10.347489480774307" fill="white" /><circle cx="317.3660948983695" cy="78.63170622497265" r="17.27842978872774" fill="white" /><circle cx="318.04898812571196" cy="67.66015584014633" r="29.388936008278893" fill="white" /><circle cx="202.24673254672828" cy="342.8209246405166" r="27.279467117929133" fill="white" /><circle cx="111.43679772039219" cy="91.26160644473704" r="20.76853014963893" fill="white" /><circle cx="375.4169164942017" cy="510.4332179821917" r="18.686710062763368" fill="white" /><circle cx="308.6788392551975" cy="179.38813442539802" r="12.055131376619473" fill="white" /><circle cx="390.11386337912984" cy="167.09813290637373" r="27.520059036549867" fill="white" /><circle cx="287.46052104103035" cy="17.351196949879565" r="13.461741477423452" fill="white" /><circle cx="56.14638492064068" cy="586.129257186936" r="28.197286586192455" fill="white" /><circle cx="147.78644077992547" cy="389.14232713441066" r="13.130926644043297" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Willpower Instinct
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Kelly McGonigal
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-41f8452a-aaba-4abe-a233-1e5f5f234230" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-41f8452a-aaba-4abe-a233-1e5f5f234230)" />
+  <g opacity="0.1">
+    <circle cx="372.41395732366635" cy="541.8882418685646" r="16.341648923725636" fill="white" /><circle cx="108.85677108579218" cy="422.65245639535294" r="15.363115569139028" fill="white" /><circle cx="240.3723435766169" cy="468.2370260468889" r="14.769516914295352" fill="white" /><circle cx="14.093825930025572" cy="547.6913356187848" r="11.747224246733461" fill="white" /><circle cx="11.56258444908742" cy="70.26007531831024" r="18.932434104278634" fill="white" /><circle cx="95.18434168184524" cy="503.9205980714289" r="22.67441341483856" fill="white" /><circle cx="186.61651654797157" cy="145.93283545921147" r="28.321856592434933" fill="white" /><circle cx="263.27483592928667" cy="143.46560234290598" r="12.855703102156582" fill="white" /><circle cx="143.97460326951474" cy="6.808482010231498" r="28.063551727315772" fill="white" /><circle cx="100.232584395707" cy="315.03874173447286" r="20.084921855834814" fill="white" /><circle cx="384.7861739339189" cy="563.5400196006922" r="10.13458974236553" fill="white" /><circle cx="143.0817921372258" cy="325.5344735851195" r="19.169191458876917" fill="white" /><circle cx="270.288435233583" cy="186.87633893506566" r="17.88485176550398" fill="white" /><circle cx="25.112639976276483" cy="349.76848711155844" r="25.180731485525815" fill="white" /><circle cx="153.14007800652865" cy="256.36652480474976" r="16.863203875005993" fill="white" /><circle cx="91.59426691877677" cy="183.79047899810394" r="23.191911840673296" fill="white" /><circle cx="309.25136270988895" cy="269.52274734487986" r="16.246161394796573" fill="white" /><circle cx="360.9717298371746" cy="302.8103229869757" r="24.963333249926254" fill="white" /><circle cx="301.0176655047286" cy="479.2693162427463" r="27.25815490112913" fill="white" /><circle cx="166.03724860540945" cy="111.92655080780514" r="12.29162060509619" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das große Buch vom
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Schlaf: Die neuesten
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Erkenntnisse der
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Matthew Walker
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

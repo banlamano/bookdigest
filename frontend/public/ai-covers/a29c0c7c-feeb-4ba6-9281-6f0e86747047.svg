@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a29c0c7c-feeb-4ba6-9281-6f0e86747047" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a29c0c7c-feeb-4ba6-9281-6f0e86747047)" />
+  <g opacity="0.1">
+    <circle cx="159.03325130583758" cy="57.61338966923595" r="24.162742570794947" fill="white" /><circle cx="362.52948154583737" cy="224.76446703087802" r="26.268251909387978" fill="white" /><circle cx="388.06879362164176" cy="389.44470090136684" r="28.60029764093635" fill="white" /><circle cx="189.9204823884399" cy="360.8852903517393" r="18.09424765341041" fill="white" /><circle cx="93.46212254740092" cy="471.0774837185178" r="11.739339581031743" fill="white" /><circle cx="321.86723114253823" cy="559.1222196439207" r="13.332216831282702" fill="white" /><circle cx="362.0231217891618" cy="229.05290182834676" r="26.114962774397632" fill="white" /><circle cx="273.61102120709126" cy="36.62970782444055" r="24.76815251358953" fill="white" /><circle cx="178.62943429082665" cy="394.05551463841886" r="28.43894293965323" fill="white" /><circle cx="254.1949224735085" cy="413.0210634065369" r="28.131887861572213" fill="white" /><circle cx="83.15150385742238" cy="524.615908497954" r="16.953033675608964" fill="white" /><circle cx="11.699175896660208" cy="107.98705412920214" r="13.097469944405766" fill="white" /><circle cx="92.12299348123531" cy="409.66663610254153" r="12.087901965933575" fill="white" /><circle cx="317.55802618556777" cy="80.40532724746024" r="19.820500805561565" fill="white" /><circle cx="35.49210006212813" cy="63.545782890316474" r="21.36925842777339" fill="white" /><circle cx="307.7100423087307" cy="211.37037704023626" r="28.973282390346522" fill="white" /><circle cx="210.9322633678825" cy="248.93847351995873" r="20.199400021394744" fill="white" /><circle cx="181.7256266180426" cy="515.2577287769222" r="19.24723589585698" fill="white" /><circle cx="228.25533144621573" cy="52.03463653589675" r="16.22888516271901" fill="white" /><circle cx="188.68814134900984" cy="81.00042956839826" r="25.310551167511115" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        John Adams: Die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Biographie
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        David McCullough
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

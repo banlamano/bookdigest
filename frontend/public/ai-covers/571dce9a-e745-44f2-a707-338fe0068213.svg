@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-571dce9a-e745-44f2-a707-338fe0068213" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-571dce9a-e745-44f2-a707-338fe0068213)" />
+  <g opacity="0.1">
+    <circle cx="211.1958897915085" cy="178.5547139245417" r="21.09062499312544" fill="white" /><circle cx="279.6319699247165" cy="258.6902845733024" r="22.33761609774071" fill="white" /><circle cx="69.75788456720231" cy="37.27624974970178" r="12.01205308096733" fill="white" /><circle cx="321.9165727731356" cy="510.2836172552885" r="12.027940883252818" fill="white" /><circle cx="160.55987599537906" cy="553.5622769307819" r="24.45323754036412" fill="white" /><circle cx="42.259564649775115" cy="420.08307461168147" r="28.844233388193206" fill="white" /><circle cx="355.5072608512117" cy="490.54725877760353" r="25.003137465128937" fill="white" /><circle cx="203.74114869804268" cy="476.5326644954545" r="11.189742740690471" fill="white" /><circle cx="214.86073991560826" cy="74.76400845725242" r="17.986090037608662" fill="white" /><circle cx="190.66968035878665" cy="397.10724651367235" r="24.535783318836213" fill="white" /><circle cx="50.17009740385632" cy="161.69542341692434" r="21.001162307439415" fill="white" /><circle cx="153.09274975969353" cy="590.7640505059113" r="16.736931314748364" fill="white" /><circle cx="221.1294724963777" cy="355.8162902756723" r="25.408627683629334" fill="white" /><circle cx="243.4646027594054" cy="446.48077003878706" r="19.316825923684817" fill="white" /><circle cx="30.04874475714141" cy="219.54461760000444" r="21.41743627098764" fill="white" /><circle cx="224.21065586844594" cy="0.6018958357154824" r="27.602878645349445" fill="white" /><circle cx="360.9944831765584" cy="572.0798454168323" r="24.42628781977178" fill="white" /><circle cx="29.2716678273123" cy="173.95826880899594" r="21.57906722937166" fill="white" /><circle cx="137.96804067853955" cy="498.60792852390665" r="26.676164507146858" fill="white" /><circle cx="271.6627918329523" cy="596.936525616982" r="29.151379226797836" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Kaste: Die Ursprünge
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        unseres Unbehagens
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Isabel Wilkerson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HISTORY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

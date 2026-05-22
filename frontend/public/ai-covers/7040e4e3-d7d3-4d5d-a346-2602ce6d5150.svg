@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-7040e4e3-d7d3-4d5d-a346-2602ce6d5150" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-7040e4e3-d7d3-4d5d-a346-2602ce6d5150)" />
+  <g opacity="0.1">
+    <circle cx="79.97553635378539" cy="466.81557511639124" r="10.444087848766408" fill="white" /><circle cx="73.01125158106446" cy="565.2853383156869" r="19.5583788102739" fill="white" /><circle cx="292.9833026449876" cy="511.5617829245928" r="14.925588060078814" fill="white" /><circle cx="209.35046089840307" cy="83.91613473041308" r="23.11979533961603" fill="white" /><circle cx="165.0687183308344" cy="541.2607783622549" r="15.349690422203473" fill="white" /><circle cx="376.9088901006859" cy="33.41651419259013" r="27.657637870790143" fill="white" /><circle cx="44.36311426211632" cy="289.73289895591233" r="24.75193466212385" fill="white" /><circle cx="108.96313245269252" cy="155.2474545288904" r="20.90739619092186" fill="white" /><circle cx="131.64742549491746" cy="266.59252747540387" r="16.13072972304967" fill="white" /><circle cx="321.00071659584046" cy="490.2774238102757" r="12.339087158191543" fill="white" /><circle cx="380.16062966927666" cy="307.8899452119057" r="25.081836442564043" fill="white" /><circle cx="388.85615962786864" cy="191.95743134425553" r="22.091906554941442" fill="white" /><circle cx="355.8075503620652" cy="512.0419719364234" r="19.488063461513043" fill="white" /><circle cx="225.97218520660994" cy="190.1723185946733" r="14.109542268813328" fill="white" /><circle cx="359.882713093871" cy="189.27952108268485" r="29.454518105694056" fill="white" /><circle cx="199.11269371515604" cy="575.8360471171741" r="29.074860801592436" fill="white" /><circle cx="48.42439282655513" cy="167.60327890759024" r="12.285767237091427" fill="white" /><circle cx="166.1248774394745" cy="82.2968479408238" r="12.533362890883765" fill="white" /><circle cx="83.13914356246426" cy="94.98984158237984" r="26.693534330687687" fill="white" /><circle cx="100.71862887120969" cy="81.4162528307668" r="15.181980436793655" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Unscripted
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        MJ DeMarco
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

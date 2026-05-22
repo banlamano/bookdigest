@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1877c5a5-57e6-489a-b5e2-059786507fa1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1877c5a5-57e6-489a-b5e2-059786507fa1)" />
+  <g opacity="0.1">
+    <circle cx="82.57336008536727" cy="141.07006454872868" r="10.585386898255136" fill="white" /><circle cx="252.34849952281704" cy="563.1425384583429" r="23.84488315263873" fill="white" /><circle cx="49.40730909439499" cy="557.4293563591567" r="19.92280138000556" fill="white" /><circle cx="48.82629176924507" cy="381.5287657899814" r="25.798877401364653" fill="white" /><circle cx="137.89058640765361" cy="109.19993423958178" r="26.622320734178828" fill="white" /><circle cx="362.50186307860594" cy="198.81146750290122" r="12.820776225811866" fill="white" /><circle cx="276.3536811030831" cy="357.5983320368577" r="17.682154868761167" fill="white" /><circle cx="383.29987815233125" cy="375.6956731848476" r="26.582347166441572" fill="white" /><circle cx="212.03126678737112" cy="528.7995598537933" r="16.09722651684592" fill="white" /><circle cx="374.9759794039176" cy="280.92175745442376" r="21.505532370835738" fill="white" /><circle cx="125.96705928986785" cy="432.3299276686403" r="24.25094215674299" fill="white" /><circle cx="308.4688088791409" cy="597.62710723816" r="10.632501128707064" fill="white" /><circle cx="160.3646070275237" cy="101.64665744380783" r="22.699241483946437" fill="white" /><circle cx="65.76827238706304" cy="358.98292559000276" r="18.003923495376092" fill="white" /><circle cx="265.42112054822996" cy="403.45991054618753" r="25.235516493910836" fill="white" /><circle cx="175.18487558214937" cy="509.51874846721927" r="13.715854947624198" fill="white" /><circle cx="275.00559221190355" cy="107.37488481741053" r="29.27707295339301" fill="white" /><circle cx="171.90512221690514" cy="372.45919881" r="16.121606218718266" fill="white" /><circle cx="290.7996376378205" cy="350.33314560798226" r="14.641480632563976" fill="white" /><circle cx="361.68118890565063" cy="40.545258678445165" r="28.113236594227857" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Richest Man in
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Babylon
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        George Clason
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

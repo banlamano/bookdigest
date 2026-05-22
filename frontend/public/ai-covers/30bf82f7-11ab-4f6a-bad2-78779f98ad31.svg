@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-30bf82f7-11ab-4f6a-bad2-78779f98ad31" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-30bf82f7-11ab-4f6a-bad2-78779f98ad31)" />
+  <g opacity="0.1">
+    <circle cx="381.04337030811445" cy="517.7203896755638" r="17.42008076751337" fill="white" /><circle cx="309.21746640865456" cy="399.7061629564386" r="14.871934216382643" fill="white" /><circle cx="372.4281062460145" cy="147.13410849256414" r="26.073534759989812" fill="white" /><circle cx="283.96736509638146" cy="522.0903862533042" r="25.488707248526772" fill="white" /><circle cx="357.70273142069186" cy="134.47066134040128" r="26.848905180662975" fill="white" /><circle cx="139.67250428845546" cy="110.61055417268028" r="18.038942969445653" fill="white" /><circle cx="222.7790250003753" cy="518.7626271910995" r="21.866952815585666" fill="white" /><circle cx="354.96900856755303" cy="127.96470587782665" r="10.62911240129846" fill="white" /><circle cx="94.40126474872397" cy="371.30124551639835" r="27.520039698599838" fill="white" /><circle cx="20.612928849965595" cy="173.65119366117304" r="25.801330929662242" fill="white" /><circle cx="241.86559219204034" cy="569.114873468206" r="22.21154440511706" fill="white" /><circle cx="356.86061586634656" cy="436.24883350966854" r="25.440765878971753" fill="white" /><circle cx="305.86084058035743" cy="333.50376119482104" r="29.392229818765813" fill="white" /><circle cx="338.31032197271077" cy="16.541659002274667" r="25.57202600728671" fill="white" /><circle cx="7.520807637018567" cy="114.43519237951254" r="10.686629832526362" fill="white" /><circle cx="288.7504062491188" cy="330.8947734083603" r="20.011083388457973" fill="white" /><circle cx="375.1486295968968" cy="556.2291823610374" r="27.689237586721394" fill="white" /><circle cx="257.8214008815229" cy="584.2577750275536" r="17.23271847578647" fill="white" /><circle cx="24.926264990843983" cy="208.5848840690983" r="25.66212802621094" fill="white" /><circle cx="85.21149867439158" cy="417.89698360696667" r="11.890250714124111" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Profit First
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Mike Michalowicz
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

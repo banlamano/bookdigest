@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-56742d3f-0f78-4bf5-92c3-c72909c44dc6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-56742d3f-0f78-4bf5-92c3-c72909c44dc6)" />
+  <g opacity="0.1">
+    <circle cx="365.1677200566036" cy="3.9744640117843177" r="29.168525015559563" fill="white" /><circle cx="60.694590619265696" cy="486.6100866674732" r="28.117237227274224" fill="white" /><circle cx="228.96851207077398" cy="497.4335167516218" r="13.80303016030065" fill="white" /><circle cx="208.47913659931453" cy="506.7776033578676" r="11.823247168317161" fill="white" /><circle cx="82.76991762006682" cy="57.346503766235045" r="26.574342182433696" fill="white" /><circle cx="316.19529836761893" cy="573.0688274770805" r="11.85300388755065" fill="white" /><circle cx="330.11899896903986" cy="155.85111562775228" r="15.500363925182839" fill="white" /><circle cx="175.0580050175254" cy="416.7400023795297" r="13.968365071831215" fill="white" /><circle cx="213.68317823293364" cy="290.3570478527854" r="13.890745071045332" fill="white" /><circle cx="19.307388077861454" cy="491.56908434748954" r="20.27163355252372" fill="white" /><circle cx="154.85115980017176" cy="551.1916668987974" r="13.179380004455805" fill="white" /><circle cx="93.06311459654744" cy="475.32733807800537" r="27.664957226877355" fill="white" /><circle cx="372.22060093947755" cy="130.56694741403854" r="27.683079800135214" fill="white" /><circle cx="152.77794378764503" cy="206.297125178765" r="11.87320513854565" fill="white" /><circle cx="2.593674947225244" cy="336.22660147454513" r="12.921935727163955" fill="white" /><circle cx="232.0061799908248" cy="237.60901665820094" r="11.823291539192063" fill="white" /><circle cx="74.98137313776212" cy="59.74396220673586" r="15.03117910496731" fill="white" /><circle cx="212.45765069228227" cy="466.4795638781672" r="24.166030787239677" fill="white" /><circle cx="398.35241076729045" cy="239.44052537885597" r="14.15511293294691" fill="white" /><circle cx="306.1842234711653" cy="551.9716583224058" r="27.160935288988096" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Indistractable
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Nir Eyal
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

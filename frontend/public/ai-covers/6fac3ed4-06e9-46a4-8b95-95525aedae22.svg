@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-6fac3ed4-06e9-46a4-8b95-95525aedae22" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-6fac3ed4-06e9-46a4-8b95-95525aedae22)" />
+  <g opacity="0.1">
+    <circle cx="351.50186898205493" cy="40.84230395424322" r="27.26879638216331" fill="white" /><circle cx="357.0179060296243" cy="124.7033391882094" r="28.618381611081617" fill="white" /><circle cx="266.34823997904687" cy="333.29685611757833" r="17.502227465366786" fill="white" /><circle cx="360.73284315472176" cy="342.3445759665351" r="16.25508581170837" fill="white" /><circle cx="268.98319388844715" cy="372.95697119649435" r="17.476252137743614" fill="white" /><circle cx="280.7991242303349" cy="374.1858068094399" r="24.67696720975667" fill="white" /><circle cx="294.06855559086245" cy="431.66876428835457" r="25.377082236011848" fill="white" /><circle cx="347.07568341327135" cy="310.0697007182022" r="26.871229536792562" fill="white" /><circle cx="182.04003110958382" cy="0.9156444355868265" r="24.59893895518759" fill="white" /><circle cx="43.67683554123944" cy="108.91889761690825" r="10.634356118477072" fill="white" /><circle cx="302.90102506783" cy="458.93061441634916" r="16.810823280595496" fill="white" /><circle cx="178.959317210118" cy="192.42657192412736" r="24.370521524831233" fill="white" /><circle cx="367.44509018101616" cy="300.2833029550552" r="17.31989911310513" fill="white" /><circle cx="24.885026041325453" cy="208.49769413328093" r="14.236772965070784" fill="white" /><circle cx="363.3583318923078" cy="200.7034451939989" r="26.37047630400307" fill="white" /><circle cx="13.51750130860112" cy="579.0694842789451" r="18.8548625901063" fill="white" /><circle cx="373.17006151580665" cy="123.30849183428842" r="21.64615943427438" fill="white" /><circle cx="354.5330650000883" cy="107.17773576398638" r="13.524968347151445" fill="white" /><circle cx="397.20797512180417" cy="459.8678176615198" r="25.87648616388222" fill="white" /><circle cx="199.53858567870552" cy="535.0138174711047" r="22.553933218636068" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Switch
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Chip Heath
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

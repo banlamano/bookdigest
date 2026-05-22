@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-2ecd0d5c-6844-48a6-9067-ac2ea6e477e9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-2ecd0d5c-6844-48a6-9067-ac2ea6e477e9)" />
+  <g opacity="0.1">
+    <circle cx="165.80817729651218" cy="52.36692307897353" r="11.879046897106866" fill="white" /><circle cx="45.562175558326686" cy="495.10093949018807" r="10.76156325324678" fill="white" /><circle cx="386.96604616247106" cy="412.4430885345344" r="15.832982239986231" fill="white" /><circle cx="158.8190795772483" cy="174.51076958415018" r="11.329491723653902" fill="white" /><circle cx="28.18523821821257" cy="54.38726513368379" r="27.96732396607778" fill="white" /><circle cx="71.75630911018808" cy="425.2772204739636" r="26.081825096905725" fill="white" /><circle cx="398.45149659742907" cy="176.41743243412697" r="22.689194885773798" fill="white" /><circle cx="189.75832767099874" cy="57.70209530202419" r="13.003562163747922" fill="white" /><circle cx="77.68063831291671" cy="147.76433654358175" r="11.683964982621426" fill="white" /><circle cx="381.75539352747194" cy="217.1823792522991" r="21.527817803102046" fill="white" /><circle cx="36.52939056400734" cy="422.489132176954" r="12.488993974123314" fill="white" /><circle cx="81.8634331198607" cy="64.70898542815726" r="20.800348871923962" fill="white" /><circle cx="147.47895296303645" cy="594.4520590805414" r="29.630955090035602" fill="white" /><circle cx="193.68183558137085" cy="399.3672729029712" r="12.924148933849954" fill="white" /><circle cx="336.1671611999114" cy="156.0378091942645" r="17.08631946715805" fill="white" /><circle cx="339.93939192198883" cy="454.41786726414585" r="19.11911827354485" fill="white" /><circle cx="113.01813070873288" cy="85.59866633530982" r="17.577364558128423" fill="white" /><circle cx="236.91462647993734" cy="12.922736313816241" r="15.656828529157123" fill="white" /><circle cx="372.8146380643919" cy="536.7388676719366" r="28.624279256902977" fill="white" /><circle cx="3.2415884467946743" cy="253.43481311723596" r="10.788062551461174" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Meditation für unruhige
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Skeptiker
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Dan Harris
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0e784a04-c59d-400b-a441-5bc7c96a62a3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0e784a04-c59d-400b-a441-5bc7c96a62a3)" />
+  <g opacity="0.1">
+    <circle cx="249.2351003389969" cy="11.862797944667115" r="10.350398113421935" fill="white" /><circle cx="22.626736580236482" cy="494.775284393459" r="27.126584112175912" fill="white" /><circle cx="391.34249432775755" cy="534.7009256755468" r="29.1955922160569" fill="white" /><circle cx="312.1582907388501" cy="576.4922461054068" r="23.30721997093181" fill="white" /><circle cx="186.30414764736275" cy="367.86069319060437" r="15.48361701864938" fill="white" /><circle cx="43.997992374560056" cy="444.1607883949817" r="15.543799170960916" fill="white" /><circle cx="145.31143448000105" cy="222.92820953535295" r="27.304668115595177" fill="white" /><circle cx="16.251446310142015" cy="185.89822732338374" r="13.285776220486476" fill="white" /><circle cx="194.8899164098185" cy="53.30735666819122" r="22.367002854892185" fill="white" /><circle cx="7.421281244771416" cy="499.9426110842723" r="12.767987126671397" fill="white" /><circle cx="153.4935750279467" cy="94.74924167072632" r="20.370215912571048" fill="white" /><circle cx="381.8158791494048" cy="567.0178773953824" r="13.104329426333985" fill="white" /><circle cx="376.85180446001186" cy="266.93127065877684" r="14.67720205973422" fill="white" /><circle cx="287.1661182399658" cy="288.1098722042705" r="18.00598542549463" fill="white" /><circle cx="84.40595466115819" cy="237.63336235083165" r="23.26248640792505" fill="white" /><circle cx="70.02210029270412" cy="433.85226020319067" r="20.744009281402963" fill="white" /><circle cx="262.25650743710673" cy="346.59410055826385" r="21.678699564857194" fill="white" /><circle cx="383.75959154708056" cy="93.09477416068599" r="19.025632456327514" fill="white" /><circle cx="339.51747668179115" cy="180.16547432401111" r="21.93200123666743" fill="white" /><circle cx="227.75694237193215" cy="414.5354551225074" r="29.63197673059752" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Raving Fans
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ken Blanchard
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

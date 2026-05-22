@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f011969a-e184-4529-a607-e0dfb9fb2525" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f011969a-e184-4529-a607-e0dfb9fb2525)" />
+  <g opacity="0.1">
+    <circle cx="336.77316622725834" cy="99.12957935538846" r="21.59502366243283" fill="white" /><circle cx="308.74106804365306" cy="107.7718366036638" r="27.02386186938644" fill="white" /><circle cx="121.03527661699277" cy="27.483674648205692" r="10.456851153529907" fill="white" /><circle cx="252.2313444041283" cy="210.74094698807207" r="11.329998760531499" fill="white" /><circle cx="235.3141245354831" cy="183.01361469743574" r="13.707411214426141" fill="white" /><circle cx="52.59677186314282" cy="436.4740638727371" r="16.969730282646015" fill="white" /><circle cx="52.41555022603555" cy="37.25226875838552" r="26.672453834014455" fill="white" /><circle cx="264.5495630357645" cy="422.5066983293177" r="28.15697898520571" fill="white" /><circle cx="171.09771700106137" cy="331.74283738811476" r="18.302065230083322" fill="white" /><circle cx="397.24946505318366" cy="553.5687782671083" r="13.79957231399597" fill="white" /><circle cx="221.8006762455511" cy="502.1800101937233" r="28.149794823319066" fill="white" /><circle cx="375.05897546360274" cy="270.0472654899652" r="17.863371144886315" fill="white" /><circle cx="44.20095829659174" cy="400.73386102223884" r="18.626696698797595" fill="white" /><circle cx="338.83991768438244" cy="255.82801278408445" r="24.55627932849601" fill="white" /><circle cx="30.590380151078598" cy="594.0745590416121" r="13.703569784285307" fill="white" /><circle cx="258.6835607084503" cy="190.7681363320514" r="22.443915415861387" fill="white" /><circle cx="157.72035920258253" cy="98.94460334299661" r="14.071396541349571" fill="white" /><circle cx="300.4499849659281" cy="544.5230562246255" r="24.417830859948218" fill="white" /><circle cx="378.90198876215237" cy="236.42894124868187" r="19.59362488542831" fill="white" /><circle cx="233.6353085316534" cy="150.30982627109236" r="17.979237321021618" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Vergiss das Sorry!:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Entdecke dein Potenzial,
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        entfalte deine Stärken
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Rachel Hollis
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

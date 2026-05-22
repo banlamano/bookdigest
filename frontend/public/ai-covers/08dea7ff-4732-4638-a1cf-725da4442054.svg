@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-08dea7ff-4732-4638-a1cf-725da4442054" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-08dea7ff-4732-4638-a1cf-725da4442054)" />
+  <g opacity="0.1">
+    <circle cx="319.3482355930688" cy="214.4044788840847" r="24.47443290021366" fill="white" /><circle cx="89.1159942779697" cy="289.9659622344055" r="20.82885451771696" fill="white" /><circle cx="212.73963321347122" cy="439.4145530962849" r="12.760343700994401" fill="white" /><circle cx="241.68586777763403" cy="329.9156576107744" r="16.24135816054658" fill="white" /><circle cx="194.54563849286086" cy="118.92578653808971" r="15.890944053856002" fill="white" /><circle cx="380.7655592290356" cy="542.1012191877592" r="21.342262083965252" fill="white" /><circle cx="346.62679055679166" cy="299.8927974288553" r="14.79254632706116" fill="white" /><circle cx="292.9552543570649" cy="419.0696387291564" r="11.296324964190115" fill="white" /><circle cx="371.8036800028867" cy="178.2227535018788" r="21.26241015117663" fill="white" /><circle cx="180.67153385150166" cy="72.16572685087404" r="21.532886018597125" fill="white" /><circle cx="326.0741408878976" cy="163.4659785485648" r="21.14728238193551" fill="white" /><circle cx="392.8751558774762" cy="430.6042499096847" r="14.40416206221773" fill="white" /><circle cx="271.2290850938965" cy="245.3684688820913" r="11.748225272389853" fill="white" /><circle cx="299.9533536205231" cy="305.6171301720293" r="15.521954253330506" fill="white" /><circle cx="329.6373408727702" cy="385.8645337583594" r="12.078729689195253" fill="white" /><circle cx="385.3565351292934" cy="339.73442226914256" r="14.32033614342995" fill="white" /><circle cx="209.48606164497443" cy="189.82850656707203" r="20.991190320487807" fill="white" /><circle cx="382.5808123771798" cy="208.13470800933072" r="12.131084718881109" fill="white" /><circle cx="172.94097787560275" cy="236.03003510231403" r="27.849016025930197" fill="white" /><circle cx="136.67926038226037" cy="178.1578299741402" r="17.22590512624371" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Third Chimpanzee
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jared Diamond
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HISTORY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1c24aa66-60b7-493d-8ec3-edc7e2e9f2f8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1c24aa66-60b7-493d-8ec3-edc7e2e9f2f8)" />
+  <g opacity="0.1">
+    <circle cx="324.58626828739807" cy="122.00560518564538" r="25.732298371642713" fill="white" /><circle cx="123.0218268772671" cy="398.14833496238606" r="29.55537107849388" fill="white" /><circle cx="315.11481292773374" cy="243.34783522871416" r="20.469217677369457" fill="white" /><circle cx="109.79679367806479" cy="410.7083870484442" r="11.343276428834336" fill="white" /><circle cx="368.4857051535986" cy="330.8256245489971" r="23.97253710934119" fill="white" /><circle cx="243.28492363865126" cy="485.46948594556125" r="23.64280769741471" fill="white" /><circle cx="336.99649389547983" cy="295.2519907486188" r="22.79261359866357" fill="white" /><circle cx="226.03751699071367" cy="437.4894288587037" r="21.560406032705515" fill="white" /><circle cx="46.13386184657462" cy="173.87479068152197" r="10.944624801564169" fill="white" /><circle cx="125.98753396410997" cy="69.0502350458004" r="10.625668222418593" fill="white" /><circle cx="22.96486418238861" cy="99.2268687768319" r="28.12215033053058" fill="white" /><circle cx="31.71481376980556" cy="165.0860102380499" r="10.625046139025958" fill="white" /><circle cx="356.33953407041685" cy="0.19096772243762938" r="29.627752594177924" fill="white" /><circle cx="245.38003916645295" cy="174.8381977957944" r="26.339075627635005" fill="white" /><circle cx="281.47583894775005" cy="472.8375917453333" r="10.559405039031311" fill="white" /><circle cx="319.92282911030793" cy="555.3060402243949" r="23.24771532541937" fill="white" /><circle cx="131.33435574261486" cy="30.718012298746224" r="28.41985392212936" fill="white" /><circle cx="337.0450111863297" cy="201.69821376648767" r="18.6200402670425" fill="white" /><circle cx="145.2176758383699" cy="35.186522540988776" r="29.073089732033" fill="white" /><circle cx="275.64751120195876" cy="553.3128731956929" r="27.647563792896324" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Kreativitäts-AG: Wie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        man brillante Ideen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        fördert und das Ungewisse
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ed Catmull
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

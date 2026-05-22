@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ccb7fed9-8d31-4fed-ae6e-2fcacae6a26c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ccb7fed9-8d31-4fed-ae6e-2fcacae6a26c)" />
+  <g opacity="0.1">
+    <circle cx="142.77192859325902" cy="91.19031314282068" r="27.545427355336848" fill="white" /><circle cx="353.5601683394745" cy="111.82845907153678" r="11.819626937904292" fill="white" /><circle cx="77.44412597696031" cy="511.0962858784457" r="11.342548597397208" fill="white" /><circle cx="159.07051888652654" cy="163.5395902640352" r="22.087630580074364" fill="white" /><circle cx="214.58169634798344" cy="395.9468887212927" r="28.64233209888947" fill="white" /><circle cx="95.783542700369" cy="168.52559415824106" r="27.76638889461703" fill="white" /><circle cx="187.95661270053148" cy="294.8038746363613" r="20.701612359615595" fill="white" /><circle cx="146.65282534595357" cy="538.685645431741" r="18.251645132693096" fill="white" /><circle cx="93.73963916887237" cy="144.11211734020742" r="17.571588516301546" fill="white" /><circle cx="302.8013520616752" cy="593.9271469461286" r="27.519099382802256" fill="white" /><circle cx="9.134201809301956" cy="106.13942984982816" r="12.150528906750468" fill="white" /><circle cx="260.5779439287963" cy="585.588116739677" r="18.0949407117962" fill="white" /><circle cx="232.29184354325932" cy="399.123526781091" r="25.54563514988957" fill="white" /><circle cx="315.51230649692565" cy="198.32849675801057" r="26.70977183215907" fill="white" /><circle cx="19.539573414146226" cy="400.6059731060298" r="17.04224106192997" fill="white" /><circle cx="276.5537858403716" cy="343.98296851319736" r="28.619315143782103" fill="white" /><circle cx="281.45131035061166" cy="539.2186214355593" r="11.242235580841884" fill="white" /><circle cx="190.07814234469177" cy="157.53673616843344" r="19.67685045020837" fill="white" /><circle cx="221.3699678478915" cy="168.95211294271724" r="21.732796016920943" fill="white" /><circle cx="187.25450820037875" cy="156.08393942371058" r="22.787600968775273" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Code of the
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Extraordinary Mind
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Vishen Lakhiani
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

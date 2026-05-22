@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0b158dfd-2e83-46b9-9abe-a56f5f5ee335" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0b158dfd-2e83-46b9-9abe-a56f5f5ee335)" />
+  <g opacity="0.1">
+    <circle cx="182.03663912886813" cy="588.9533500264793" r="28.88042090819232" fill="white" /><circle cx="340.31981587163307" cy="55.529040054496726" r="26.17162704947658" fill="white" /><circle cx="23.189537152402593" cy="13.745553966251922" r="18.60010479689342" fill="white" /><circle cx="160.15138881535518" cy="279.44759111352084" r="12.585866901690995" fill="white" /><circle cx="203.05251327102428" cy="383.6035260770712" r="23.48946704492785" fill="white" /><circle cx="309.97623380058917" cy="335.5918334528869" r="10.737512709951085" fill="white" /><circle cx="276.9410236516536" cy="55.31091834666761" r="19.636516254389257" fill="white" /><circle cx="254.15500670893897" cy="79.94871025668857" r="26.376162331195957" fill="white" /><circle cx="300.08374220646704" cy="7.588582487608564" r="10.093695540062464" fill="white" /><circle cx="384.9161603191911" cy="321.6800803797345" r="29.543422509432233" fill="white" /><circle cx="105.42488994469777" cy="86.97278097331885" r="26.660351037426015" fill="white" /><circle cx="333.5910389468439" cy="136.3749666323888" r="10.335123344341397" fill="white" /><circle cx="316.2667252216734" cy="161.97978572443233" r="11.86807774577437" fill="white" /><circle cx="328.3529044715929" cy="370.60706799560563" r="12.752638899201727" fill="white" /><circle cx="145.3912675550247" cy="247.71252335901963" r="18.95698643554208" fill="white" /><circle cx="45.34739491965274" cy="289.35435400522346" r="20.750090926061272" fill="white" /><circle cx="110.99775841391244" cy="113.34915127614265" r="27.597302407213547" fill="white" /><circle cx="215.1283906399013" cy="80.80239004796982" r="11.02061903829686" fill="white" /><circle cx="305.72795509650547" cy="546.4271417682413" r="20.394558156946758" fill="white" /><circle cx="173.2980256446158" cy="536.6802019399756" r="10.16135342426654" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Schlankformel: Das
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        revolutionäre
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        4-Wochen-Programm zum
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Jason Fung
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

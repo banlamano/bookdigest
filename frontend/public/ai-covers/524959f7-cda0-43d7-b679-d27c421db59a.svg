@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-524959f7-cda0-43d7-b679-d27c421db59a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-524959f7-cda0-43d7-b679-d27c421db59a)" />
+  <g opacity="0.1">
+    <circle cx="23.6253053251283" cy="492.50974284272667" r="17.034469910107088" fill="white" /><circle cx="242.25783704495632" cy="283.3357376658355" r="29.8182537990332" fill="white" /><circle cx="363.40458055188674" cy="357.0681490132387" r="18.996846712163844" fill="white" /><circle cx="47.489068859014516" cy="354.92770508122953" r="29.91984955915801" fill="white" /><circle cx="312.55858570757675" cy="285.2407915320006" r="27.96822149555335" fill="white" /><circle cx="34.17942702224428" cy="580.0932190269334" r="12.089428835334102" fill="white" /><circle cx="293.78396593593766" cy="304.57507277407285" r="20.592564888193188" fill="white" /><circle cx="358.7992138750619" cy="240.42985568680817" r="21.88647533829346" fill="white" /><circle cx="66.73130169947088" cy="55.87961523164713" r="27.361077995522514" fill="white" /><circle cx="32.63534848652498" cy="298.18966701870045" r="15.214546112385028" fill="white" /><circle cx="117.95847247925342" cy="420.6691310010934" r="10.527136314092939" fill="white" /><circle cx="62.2275624541524" cy="352.61097302274476" r="18.94698324747782" fill="white" /><circle cx="302.4147580349926" cy="89.85661864598731" r="16.396037843220185" fill="white" /><circle cx="274.94587162449915" cy="336.4631970373992" r="21.110843850836154" fill="white" /><circle cx="393.5941685578333" cy="206.78187698831945" r="23.284390064307594" fill="white" /><circle cx="205.3596230909238" cy="238.04950480091648" r="25.44027838264858" fill="white" /><circle cx="281.2380827597361" cy="420.91983122572105" r="29.49925178656518" fill="white" /><circle cx="66.51737104593711" cy="286.43236119328566" r="22.918107416412028" fill="white" /><circle cx="255.61711731434644" cy="176.75065780164266" r="17.178999661336636" fill="white" /><circle cx="367.19818032320387" cy="363.7418154185605" r="25.23974823890327" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Personal MBA: Was Sie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        an den besten
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Business-Schools nicht
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Josh Kaufman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

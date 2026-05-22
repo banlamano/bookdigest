@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d9375905-2b01-434d-9dc7-018afd3c4e03" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d9375905-2b01-434d-9dc7-018afd3c4e03)" />
+  <g opacity="0.1">
+    <circle cx="188.256242149386" cy="49.70346803304919" r="26.617721859213855" fill="white" /><circle cx="75.6803963210468" cy="257.4429656513809" r="24.12370422332883" fill="white" /><circle cx="193.07654547659223" cy="73.5436544451823" r="17.73972518629287" fill="white" /><circle cx="312.5219681203899" cy="548.9523592868537" r="18.513711232301134" fill="white" /><circle cx="42.969446863458984" cy="18.810045578437418" r="10.506363119851894" fill="white" /><circle cx="325.81529002080265" cy="42.12561446131522" r="27.79383214882199" fill="white" /><circle cx="312.15778402729063" cy="199.15891466266226" r="14.052351680017052" fill="white" /><circle cx="52.917028161169895" cy="108.43965307269576" r="11.20437146117506" fill="white" /><circle cx="82.03325675474606" cy="599.8617243314371" r="16.271258846008585" fill="white" /><circle cx="88.79011113186937" cy="404.8739266106416" r="10.29834411796622" fill="white" /><circle cx="303.4816945588255" cy="244.1252705911454" r="23.727011733224764" fill="white" /><circle cx="211.64885776287926" cy="433.2926676017418" r="18.17227921628315" fill="white" /><circle cx="238.54299950142814" cy="13.482996991049445" r="28.31558815300399" fill="white" /><circle cx="142.03165570959172" cy="194.49004300749425" r="28.723885786871715" fill="white" /><circle cx="202.60816756208123" cy="2.915699569827046" r="20.10244371234349" fill="white" /><circle cx="40.77389732260013" cy="185.58217263029002" r="29.199122493497118" fill="white" /><circle cx="83.79738613742376" cy="297.1539076909172" r="17.811763664569696" fill="white" /><circle cx="86.13043616871315" cy="397.7614395306183" r="24.431960937338687" fill="white" /><circle cx="264.91430858661266" cy="382.7627919135306" r="19.041985212558597" fill="white" /><circle cx="221.86128442302015" cy="168.41760099063188" r="19.59901974507455" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Mitten ins Herz
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Anthony de Mello
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

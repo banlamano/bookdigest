@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-bf63ddf0-271c-430d-a630-5908b99083d9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-bf63ddf0-271c-430d-a630-5908b99083d9)" />
+  <g opacity="0.1">
+    <circle cx="48.6201509812731" cy="402.2316394646686" r="20.164697678717864" fill="white" /><circle cx="74.97711302244548" cy="546.0658743344143" r="12.65040851125561" fill="white" /><circle cx="27.056162106357682" cy="357.5209133926739" r="26.93428798315184" fill="white" /><circle cx="128.30392254460534" cy="104.43725464286426" r="18.44654338956739" fill="white" /><circle cx="259.2038105133865" cy="263.0536598411323" r="18.2040661281265" fill="white" /><circle cx="119.34720675833472" cy="417.6494544321018" r="29.87653494087631" fill="white" /><circle cx="361.45194378729116" cy="10.028108247742784" r="23.400331219503762" fill="white" /><circle cx="296.79899554665" cy="303.01241331842397" r="11.252713619705784" fill="white" /><circle cx="232.618905162911" cy="45.94993054281746" r="18.030149654507476" fill="white" /><circle cx="311.23875125969454" cy="224.5823616624232" r="19.071116270472025" fill="white" /><circle cx="325.48012649705856" cy="498.4675484700694" r="23.883027334840992" fill="white" /><circle cx="385.93361748024233" cy="431.13569787139824" r="28.93568682879206" fill="white" /><circle cx="372.17005111998316" cy="111.6110231190288" r="18.380049866880018" fill="white" /><circle cx="265.4188597598551" cy="495.15574477171265" r="29.790428949471213" fill="white" /><circle cx="115.33004787837294" cy="438.61642323264573" r="13.225822110001422" fill="white" /><circle cx="139.00221783593736" cy="107.73706630686624" r="27.649413541966872" fill="white" /><circle cx="61.69213864895493" cy="390.78951185108855" r="16.797341916490957" fill="white" /><circle cx="13.596962589429973" cy="315.5195366153245" r="23.61921579110134" fill="white" /><circle cx="277.3612784793742" cy="413.95230422969536" r="10.187385114640048" fill="white" /><circle cx="301.6375757671618" cy="120.87428149891302" r="17.102865357453407" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die 4-Stunden-Woche: Mehr
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Zeit, mehr Geld, mehr
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Leben
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Tim Ferriss
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

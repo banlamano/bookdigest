@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a3f577a4-6cda-45fd-9b4b-50b166949abb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a3f577a4-6cda-45fd-9b4b-50b166949abb)" />
+  <g opacity="0.1">
+    <circle cx="67.68563550954374" cy="555.66442494753" r="16.29693887070716" fill="white" /><circle cx="83.49001573210329" cy="373.1374725958996" r="14.794098353253098" fill="white" /><circle cx="196.42733929155258" cy="258.06893230450487" r="25.983690910433033" fill="white" /><circle cx="174.00955219541473" cy="569.3523156879883" r="23.89558356650234" fill="white" /><circle cx="234.95263260554933" cy="260.2395260357036" r="29.46825981512568" fill="white" /><circle cx="87.47518691463068" cy="536.7884281472093" r="11.422755129535718" fill="white" /><circle cx="28.228039504811875" cy="372.48356010660206" r="16.026400941147354" fill="white" /><circle cx="357.1983917306373" cy="33.04350291283355" r="23.832462686554383" fill="white" /><circle cx="106.51464373516335" cy="172.8893092495499" r="10.895340504160968" fill="white" /><circle cx="100.34494447272708" cy="76.44184263775489" r="15.518458243720199" fill="white" /><circle cx="357.37135457462887" cy="270.8987344525774" r="10.639664224095508" fill="white" /><circle cx="142.93084756693318" cy="403.0850151637164" r="19.93178501384744" fill="white" /><circle cx="177.02635034242414" cy="270.3783623543452" r="26.434111150891088" fill="white" /><circle cx="38.29640029427597" cy="183.5827244126876" r="20.615052739488906" fill="white" /><circle cx="177.42155641871372" cy="470.1601442287722" r="26.172009614186514" fill="white" /><circle cx="86.03096913222159" cy="289.9260173751635" r="13.937591303634328" fill="white" /><circle cx="144.25182743509936" cy="21.628432457716308" r="18.57887082410487" fill="white" /><circle cx="259.33483858534987" cy="23.072702231824493" r="14.166962145512674" fill="white" /><circle cx="112.87390975282409" cy="580.9767394891469" r="20.914678494604413" fill="white" /><circle cx="393.82486869520505" cy="161.93834767186237" r="20.423722830294185" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Quiet
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Susan Cain
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

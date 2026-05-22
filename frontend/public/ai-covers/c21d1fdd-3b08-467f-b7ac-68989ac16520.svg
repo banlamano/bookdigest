@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c21d1fdd-3b08-467f-b7ac-68989ac16520" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c21d1fdd-3b08-467f-b7ac-68989ac16520)" />
+  <g opacity="0.1">
+    <circle cx="56.46408850311917" cy="411.18653425975117" r="11.54809140145856" fill="white" /><circle cx="132.86437572123867" cy="519.5713239164832" r="14.096164077400314" fill="white" /><circle cx="291.1190188619003" cy="539.7160583571558" r="29.76718337342945" fill="white" /><circle cx="250.93940419291548" cy="539.2679023207548" r="24.981033739695214" fill="white" /><circle cx="107.70564623663992" cy="308.0783465035185" r="17.389947409215278" fill="white" /><circle cx="395.7295001724657" cy="515.5987121669667" r="14.352324167733169" fill="white" /><circle cx="47.76758902797016" cy="200.78898571820923" r="26.65559677438376" fill="white" /><circle cx="13.046623908492938" cy="369.18577577598666" r="24.92740909390833" fill="white" /><circle cx="114.43016150360958" cy="139.502749685622" r="24.00250853512341" fill="white" /><circle cx="278.65430021846606" cy="236.18913153327543" r="18.175663335385728" fill="white" /><circle cx="323.83745967064243" cy="160.13244792130615" r="21.91408175580051" fill="white" /><circle cx="164.16419553746883" cy="538.1901082180422" r="21.426196386492663" fill="white" /><circle cx="98.99274273423461" cy="458.86269328035894" r="14.259435628477721" fill="white" /><circle cx="355.11374884006216" cy="83.33265510604184" r="17.286151922628587" fill="white" /><circle cx="145.48187923399462" cy="551.2471618360474" r="12.375800129969265" fill="white" /><circle cx="168.88964242534277" cy="426.2101492797606" r="24.05900815718277" fill="white" /><circle cx="253.574211223597" cy="439.90292531843056" r="13.514569299449965" fill="white" /><circle cx="122.69186261707183" cy="191.78818715996283" r="27.00800842497982" fill="white" /><circle cx="144.3333544247317" cy="356.89116353102713" r="29.863274638992692" fill="white" /><circle cx="176.30844538771663" cy="289.5126313258182" r="14.824231179084125" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Peak
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Marc Bubbs
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

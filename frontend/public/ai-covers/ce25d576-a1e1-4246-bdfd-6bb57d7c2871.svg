@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ce25d576-a1e1-4246-bdfd-6bb57d7c2871" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ce25d576-a1e1-4246-bdfd-6bb57d7c2871)" />
+  <g opacity="0.1">
+    <circle cx="224.21909076676246" cy="120.03601053974621" r="10.73579719160951" fill="white" /><circle cx="110.96894691661024" cy="239.09612831518058" r="26.69505108805621" fill="white" /><circle cx="390.05018660132225" cy="266.61782501869567" r="10.078903524076432" fill="white" /><circle cx="60.17514881708448" cy="169.9979377085952" r="19.355643035813063" fill="white" /><circle cx="317.32177517641486" cy="58.290598926922634" r="11.964976293297813" fill="white" /><circle cx="285.0392683561133" cy="468.73694007456504" r="17.032349515425985" fill="white" /><circle cx="243.44210740002944" cy="311.6322949219213" r="10.545389892074159" fill="white" /><circle cx="58.92604137451638" cy="462.0784449617095" r="24.979182175975474" fill="white" /><circle cx="79.9227375029389" cy="368.9869930817464" r="29.11587322971187" fill="white" /><circle cx="345.16514337607055" cy="559.1589529586354" r="23.67195276036268" fill="white" /><circle cx="229.10780072158428" cy="500.0498707358377" r="28.23160135512325" fill="white" /><circle cx="189.5726580807006" cy="179.17884788207138" r="20.271453171514473" fill="white" /><circle cx="227.8065381119228" cy="549.9967552993469" r="16.76166815614161" fill="white" /><circle cx="20.604834153592712" cy="129.68877022002312" r="27.641307969662595" fill="white" /><circle cx="287.9037586682806" cy="152.52521725941088" r="25.897000303184853" fill="white" /><circle cx="99.00940455658605" cy="61.14227274178516" r="13.093035247756868" fill="white" /><circle cx="370.6515700953238" cy="520.9039508017933" r="13.677864339140092" fill="white" /><circle cx="268.4067894853968" cy="47.500030853978735" r="13.60585109929068" fill="white" /><circle cx="238.07905358053313" cy="481.9175351139515" r="28.05691885645985" fill="white" /><circle cx="234.08731211538773" cy="29.168521940992996" r="20.625505611561074" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Work Clean: Die Methode
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        der Spitzengastronomie
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        für mehr Effizienz im
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Dan Charnas
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

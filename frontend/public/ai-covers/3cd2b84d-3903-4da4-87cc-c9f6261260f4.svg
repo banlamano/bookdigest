@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-3cd2b84d-3903-4da4-87cc-c9f6261260f4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-3cd2b84d-3903-4da4-87cc-c9f6261260f4)" />
+  <g opacity="0.1">
+    <circle cx="55.414079127864554" cy="575.339764256573" r="19.30447251615835" fill="white" /><circle cx="234.61041827997508" cy="165.2625314160983" r="17.831517947914833" fill="white" /><circle cx="326.30266890063956" cy="536.4783749146359" r="23.30833582586029" fill="white" /><circle cx="70.95591497214335" cy="147.48135037631198" r="26.200480133711288" fill="white" /><circle cx="47.7899996831638" cy="360.58117972699256" r="21.602113431342914" fill="white" /><circle cx="125.5734616928081" cy="148.35691328139146" r="29.072286143831146" fill="white" /><circle cx="120.48437715337248" cy="191.50099098777414" r="17.396047730088938" fill="white" /><circle cx="219.24817623786845" cy="146.6613237971402" r="12.877174821386548" fill="white" /><circle cx="139.91075824763283" cy="353.45549013281965" r="24.01529427738043" fill="white" /><circle cx="192.37353181668882" cy="139.71569200208833" r="25.48736459335602" fill="white" /><circle cx="252.1368676783558" cy="133.51939010886394" r="18.31596124771909" fill="white" /><circle cx="199.09053704216814" cy="51.51543641868488" r="19.23929956578848" fill="white" /><circle cx="339.31568759781084" cy="189.03264993835984" r="14.0090173005193" fill="white" /><circle cx="207.76280891164643" cy="158.6930718477417" r="25.117988649312167" fill="white" /><circle cx="285.66061051515317" cy="8.398207865100593" r="28.939858145662168" fill="white" /><circle cx="253.09816896955232" cy="503.20619488568394" r="27.860337680500763" fill="white" /><circle cx="52.8364695608023" cy="247.55771220515734" r="10.465241202472534" fill="white" /><circle cx="315.3975318549179" cy="132.68224198914257" r="13.633664252154285" fill="white" /><circle cx="5.859855910710499" cy="392.62036386171434" r="13.89464040858657" fill="white" /><circle cx="100.43415242835945" cy="68.40773281414201" r="15.555703886350889" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Still: Die Kraft der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Introvertierten in einer
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        lauten Welt
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Susan Cain
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

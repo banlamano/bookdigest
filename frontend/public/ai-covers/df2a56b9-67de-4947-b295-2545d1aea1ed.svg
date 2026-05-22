@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-df2a56b9-67de-4947-b295-2545d1aea1ed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-df2a56b9-67de-4947-b295-2545d1aea1ed)" />
+  <g opacity="0.1">
+    <circle cx="376.0077416219187" cy="239.7477149130715" r="13.171386108459773" fill="white" /><circle cx="374.5438876389319" cy="428.50251997142317" r="24.51981753794925" fill="white" /><circle cx="38.84969201484023" cy="284.98569818906464" r="12.04045649018352" fill="white" /><circle cx="116.31441897981975" cy="450.0377343271749" r="26.39030065151286" fill="white" /><circle cx="122.00905677918277" cy="69.03795078411407" r="27.977711460418305" fill="white" /><circle cx="118.8948973069857" cy="176.5603695177652" r="25.180658745134192" fill="white" /><circle cx="308.15936553004354" cy="257.92232122856666" r="22.6539827398639" fill="white" /><circle cx="195.20653246265863" cy="134.61198037702007" r="13.7474928280606" fill="white" /><circle cx="213.78968326296612" cy="425.7218651018454" r="19.822877056900417" fill="white" /><circle cx="0.2430335094719016" cy="237.81617384047956" r="19.339494880826635" fill="white" /><circle cx="277.2669143153228" cy="369.6853892679081" r="29.184217092339395" fill="white" /><circle cx="293.5820497231149" cy="532.5573690220906" r="19.64996370807525" fill="white" /><circle cx="379.92593862230575" cy="460.0800490756273" r="16.508987883378126" fill="white" /><circle cx="344.93371469152225" cy="279.3911913357802" r="12.528330196274677" fill="white" /><circle cx="14.93312696015292" cy="458.23788037125115" r="10.072221261277402" fill="white" /><circle cx="83.13693820539952" cy="566.8269943457051" r="18.40604468675216" fill="white" /><circle cx="18.032339548758493" cy="557.8630367547166" r="19.509424233980322" fill="white" /><circle cx="0.4934117062554755" cy="373.99949314365915" r="14.398333202638355" fill="white" /><circle cx="285.85343680800645" cy="173.1168350353367" r="13.535980753806534" fill="white" /><circle cx="265.50930988993275" cy="204.37973689583043" r="25.115159150722267" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        How Not to Die: Entdecken
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Sie Nahrungsmittel, die
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Ihr Leben verlängern –
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Michael Greger
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

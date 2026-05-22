@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c473364f-0869-4650-9c41-5b92bc3a0513" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c473364f-0869-4650-9c41-5b92bc3a0513)" />
+  <g opacity="0.1">
+    <circle cx="372.5789837105912" cy="340.5166012693706" r="14.061096429411515" fill="white" /><circle cx="67.00842535419889" cy="312.25223135354923" r="27.621665730479133" fill="white" /><circle cx="83.71388039628695" cy="319.0401334346597" r="29.09588405750191" fill="white" /><circle cx="256.0573994317439" cy="308.62654414123114" r="24.632195485923084" fill="white" /><circle cx="126.92768161591647" cy="265.5031876333481" r="15.935023832285122" fill="white" /><circle cx="291.7033910862974" cy="363.15492622259137" r="18.08964368267545" fill="white" /><circle cx="175.8276250169302" cy="399.61636593884435" r="21.0162266253178" fill="white" /><circle cx="45.06608160920749" cy="479.3466113487677" r="29.439478297788146" fill="white" /><circle cx="42.68022459475169" cy="419.40131078841915" r="24.877798779005243" fill="white" /><circle cx="105.84823174901442" cy="11.605022419455446" r="20.568687320151934" fill="white" /><circle cx="246.5534267015633" cy="435.229370904396" r="28.819374633993498" fill="white" /><circle cx="225.69317093603382" cy="15.970616301561558" r="17.591609876167205" fill="white" /><circle cx="392.4165064192152" cy="421.63239696718506" r="13.704849255015844" fill="white" /><circle cx="158.9293944178255" cy="565.6223582742736" r="16.662158385341183" fill="white" /><circle cx="24.208482248308584" cy="352.5123451945162" r="15.074243190861953" fill="white" /><circle cx="384.1373032523654" cy="94.39420330051458" r="15.273145724794192" fill="white" /><circle cx="3.822918477258508" cy="431.36615557799274" r="20.35425721633122" fill="white" /><circle cx="189.80957381282732" cy="106.07505907060082" r="20.434279010787378" fill="white" /><circle cx="44.54873582561496" cy="564.6019516251354" r="12.222316116864295" fill="white" /><circle cx="212.6116939862007" cy="191.10508726353723" r="23.045297855321877" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Meisterschaft: Entdecke
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        und meistere deine
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Bestimmung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robert Greene
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

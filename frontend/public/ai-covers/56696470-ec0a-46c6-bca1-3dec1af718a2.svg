@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-56696470-ec0a-46c6-bca1-3dec1af718a2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-56696470-ec0a-46c6-bca1-3dec1af718a2)" />
+  <g opacity="0.1">
+    <circle cx="66.65546526081911" cy="130.24164142020334" r="22.521314001526413" fill="white" /><circle cx="5.092648525993049" cy="111.08049020100015" r="18.21303809945453" fill="white" /><circle cx="17.977872076033073" cy="451.7773128264702" r="17.787377023436065" fill="white" /><circle cx="392.7521869913819" cy="565.9361895707297" r="28.043448746869693" fill="white" /><circle cx="238.28642647951574" cy="479.70762481381286" r="26.65064931894326" fill="white" /><circle cx="271.92076287135467" cy="367.1059301658009" r="24.414070939187802" fill="white" /><circle cx="393.56440897118813" cy="512.9416895281" r="29.476434816281138" fill="white" /><circle cx="231.2217564189441" cy="230.68549880340072" r="20.736278230125336" fill="white" /><circle cx="121.09754802752958" cy="163.13749592663177" r="15.962682406276492" fill="white" /><circle cx="133.8300877125669" cy="349.28022984807865" r="26.516347115709202" fill="white" /><circle cx="275.93488524979597" cy="50.27550193775711" r="11.659867026213613" fill="white" /><circle cx="317.0212169473422" cy="274.13210883078057" r="10.382987809896154" fill="white" /><circle cx="313.0071983231157" cy="89.19302823027118" r="12.472097743074979" fill="white" /><circle cx="87.54954368547172" cy="317.74282164120166" r="14.04857050903611" fill="white" /><circle cx="357.44735310422817" cy="518.00694747019" r="27.54726612340133" fill="white" /><circle cx="128.33611662228336" cy="169.97272807381512" r="20.80104247578863" fill="white" /><circle cx="101.20637454133589" cy="5.838116529819604" r="18.426676182012272" fill="white" /><circle cx="397.31190649801005" cy="135.14676136870276" r="23.817580856380882" fill="white" /><circle cx="355.7274540645891" cy="593.8503513368582" r="13.850894416708933" fill="white" /><circle cx="381.75154784156973" cy="262.2673750836176" r="17.310339865742236" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Waking Up: Spiritualität
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        ohne Religion
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Sam Harris
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

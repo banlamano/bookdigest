@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f7e79032-6076-48b2-ad32-e39d87849b8e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f7e79032-6076-48b2-ad32-e39d87849b8e)" />
+  <g opacity="0.1">
+    <circle cx="243.64651519955447" cy="67.93886183197554" r="14.259986147114194" fill="white" /><circle cx="103.82282287601687" cy="13.671286718681097" r="11.261735777417144" fill="white" /><circle cx="62.29196529516465" cy="109.65615022894204" r="19.120219924140567" fill="white" /><circle cx="337.27705733551534" cy="418.43741441103475" r="14.481631182666918" fill="white" /><circle cx="387.30127737716066" cy="314.52371720820196" r="29.931506057715698" fill="white" /><circle cx="263.0024823356522" cy="57.11827103273921" r="15.54204217147185" fill="white" /><circle cx="309.0243629007915" cy="86.19236869896653" r="11.610157393018468" fill="white" /><circle cx="373.0081496549905" cy="520.7918029471267" r="25.49871674679997" fill="white" /><circle cx="244.8422202640947" cy="435.29991304971713" r="17.777567566561586" fill="white" /><circle cx="62.7036068755094" cy="392.9228726876151" r="20.662019327208704" fill="white" /><circle cx="364.8358715016331" cy="533.559501905783" r="19.42157136512026" fill="white" /><circle cx="239.18037455108103" cy="89.7925458193962" r="10.515178980006306" fill="white" /><circle cx="389.8390221705743" cy="285.2820056596187" r="15.20159663936415" fill="white" /><circle cx="298.07412734415385" cy="39.58992458922914" r="24.786257997816772" fill="white" /><circle cx="251.29895460804144" cy="507.5416638803287" r="13.55543216557793" fill="white" /><circle cx="285.39973565565094" cy="251.2980178322228" r="29.789517231463655" fill="white" /><circle cx="48.20883435675598" cy="443.07906886469135" r="22.369700051053208" fill="white" /><circle cx="298.29571800205616" cy="597.6907878394878" r="20.688633408704483" fill="white" /><circle cx="307.3863840496941" cy="275.6012840169568" r="20.472994364122023" fill="white" /><circle cx="40.73810158885216" cy="212.7876360433627" r="21.081497194806467" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Delivering Happiness
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Tony Hsieh
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

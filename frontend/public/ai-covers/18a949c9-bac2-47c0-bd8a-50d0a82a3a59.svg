@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-18a949c9-bac2-47c0-bd8a-50d0a82a3a59" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-18a949c9-bac2-47c0-bd8a-50d0a82a3a59)" />
+  <g opacity="0.1">
+    <circle cx="102.97109275753198" cy="168.13714275053184" r="18.482285540413272" fill="white" /><circle cx="184.5059091652065" cy="487.1882081086082" r="24.179751987427643" fill="white" /><circle cx="335.03092158829844" cy="203.3830552860319" r="13.843018278607824" fill="white" /><circle cx="183.33759654791731" cy="67.99795741154573" r="29.299239211930445" fill="white" /><circle cx="33.54201306610576" cy="301.4399804898995" r="12.459155419517028" fill="white" /><circle cx="167.92182710442432" cy="374.7357789094132" r="10.980141088973545" fill="white" /><circle cx="242.8684249573152" cy="14.416735366275525" r="26.987319628001828" fill="white" /><circle cx="325.3688364134978" cy="531.8889799717844" r="14.670646274635788" fill="white" /><circle cx="107.94537592235662" cy="459.00705374109737" r="13.39259786235122" fill="white" /><circle cx="177.59874334051707" cy="319.2935656766363" r="23.815484104500882" fill="white" /><circle cx="121.52588165707682" cy="97.23757480037062" r="20.17512774588949" fill="white" /><circle cx="348.2795934478447" cy="311.95927981923774" r="16.750164158683077" fill="white" /><circle cx="229.43979532844452" cy="350.69856524389536" r="19.895931425133895" fill="white" /><circle cx="75.7319382368237" cy="314.3412912532925" r="23.814394536703" fill="white" /><circle cx="387.3153092665897" cy="478.593888973776" r="12.09689886329344" fill="white" /><circle cx="65.42386994354348" cy="443.22857058042405" r="14.5320550981529" fill="white" /><circle cx="75.13760161239892" cy="134.84546196041256" r="22.47865339872915" fill="white" /><circle cx="63.745620659720444" cy="572.0595548072212" r="25.33095859821287" fill="white" /><circle cx="200.40825315131752" cy="64.88523776231405" r="15.961095910781395" fill="white" /><circle cx="134.7205165503196" cy="188.5269133438644" r="28.796434316921346" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Girl, wach auf!: Du bist
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        nicht für jeden gemacht –
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        aber für etwas Großes
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Rachel Hollis
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

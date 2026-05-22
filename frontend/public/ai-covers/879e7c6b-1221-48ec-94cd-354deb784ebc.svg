@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-879e7c6b-1221-48ec-94cd-354deb784ebc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-879e7c6b-1221-48ec-94cd-354deb784ebc)" />
+  <g opacity="0.1">
+    <circle cx="312.8271869664382" cy="160.74512800595835" r="16.703452704737924" fill="white" /><circle cx="221.52522143351726" cy="161.17269605676475" r="14.720222851382157" fill="white" /><circle cx="268.28588603287693" cy="252.7773845968132" r="13.15106131358215" fill="white" /><circle cx="294.49086188552116" cy="319.2347366632767" r="21.134101699924585" fill="white" /><circle cx="15.959503599169045" cy="214.38530975661877" r="12.270205731090805" fill="white" /><circle cx="225.61802083143817" cy="559.6847812599892" r="22.420232001000464" fill="white" /><circle cx="16.16589919338991" cy="123.37515056304713" r="21.837836890386424" fill="white" /><circle cx="206.8888737449922" cy="474.5249640928057" r="12.353859695119294" fill="white" /><circle cx="352.0936891578242" cy="195.78208294602243" r="19.20839018194962" fill="white" /><circle cx="361.37064715182674" cy="217.01923403995903" r="11.980856978488621" fill="white" /><circle cx="120.88713806338708" cy="263.37348046479457" r="28.470961613819185" fill="white" /><circle cx="27.630880030872085" cy="85.112990132944" r="27.977921551847654" fill="white" /><circle cx="333.06255776410336" cy="100.27950536445222" r="17.196649648114803" fill="white" /><circle cx="279.7553907846506" cy="175.7747160029089" r="23.795164315082037" fill="white" /><circle cx="131.77364733492598" cy="34.48812359266535" r="15.839536342395753" fill="white" /><circle cx="324.2073318862622" cy="172.50615107497177" r="23.23202654466793" fill="white" /><circle cx="197.1877871021169" cy="441.05618612699163" r="14.198324602378866" fill="white" /><circle cx="106.71690960749171" cy="486.6541202152485" r="10.81448198773673" fill="white" /><circle cx="172.72146554147355" cy="514.1700802917622" r="20.462692231222736" fill="white" /><circle cx="397.09733140876216" cy="203.40908831178393" r="29.466732309706153" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        White Fragility
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robin DiAngelo
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

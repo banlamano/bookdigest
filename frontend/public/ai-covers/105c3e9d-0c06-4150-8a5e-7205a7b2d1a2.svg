@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-105c3e9d-0c06-4150-8a5e-7205a7b2d1a2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-105c3e9d-0c06-4150-8a5e-7205a7b2d1a2)" />
+  <g opacity="0.1">
+    <circle cx="227.9175269335502" cy="251.95952318448403" r="12.649893422709166" fill="white" /><circle cx="107.83615399294729" cy="528.8709297698522" r="17.716848313718423" fill="white" /><circle cx="316.10022954247296" cy="155.6931436718233" r="14.045535883929885" fill="white" /><circle cx="42.249985539622955" cy="539.7873263486858" r="24.528780623313843" fill="white" /><circle cx="368.20839422266414" cy="21.853377020827903" r="11.115391074677559" fill="white" /><circle cx="268.3421933392246" cy="585.7885379564505" r="27.598006008905934" fill="white" /><circle cx="17.533401322906393" cy="571.5505671630195" r="18.562115630924076" fill="white" /><circle cx="175.98385492290726" cy="319.61278321323346" r="19.559308315092732" fill="white" /><circle cx="193.0424469593337" cy="562.138361687118" r="16.564452055109108" fill="white" /><circle cx="329.95292711219537" cy="273.40055020311615" r="29.724645679360236" fill="white" /><circle cx="89.3139216979201" cy="217.81908993067262" r="20.454361141546173" fill="white" /><circle cx="40.296447455494324" cy="19.89380691192384" r="20.614899605576987" fill="white" /><circle cx="202.80661851400598" cy="257.7391449043438" r="12.215890738929598" fill="white" /><circle cx="254.6405709017911" cy="539.1680249986914" r="21.45578822418329" fill="white" /><circle cx="386.79711877282557" cy="204.269470843177" r="23.807358891385633" fill="white" /><circle cx="7.407993661452039" cy="533.7051159768774" r="27.061958885160305" fill="white" /><circle cx="218.46168972746062" cy="426.05208581857784" r="12.174177521837317" fill="white" /><circle cx="366.70128194120366" cy="47.62987342039722" r="29.462120607463508" fill="white" /><circle cx="279.2381942222104" cy="34.19146088160012" r="21.908729414504425" fill="white" /><circle cx="378.74533620047634" cy="45.775185213434845" r="22.24013683671589" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Good to Great
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jim Collins
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

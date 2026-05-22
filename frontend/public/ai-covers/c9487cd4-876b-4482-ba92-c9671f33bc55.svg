@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c9487cd4-876b-4482-ba92-c9671f33bc55" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c9487cd4-876b-4482-ba92-c9671f33bc55)" />
+  <g opacity="0.1">
+    <circle cx="348.9509383706645" cy="178.0298616654766" r="12.727674751505123" fill="white" /><circle cx="242.68140537847015" cy="177.88209534460682" r="22.201095340768802" fill="white" /><circle cx="68.21818284319438" cy="498.4181919621012" r="24.271724910276205" fill="white" /><circle cx="316.0628155358215" cy="361.34883652738785" r="14.80496985763499" fill="white" /><circle cx="353.07809232327327" cy="363.7011250478005" r="21.89028474413654" fill="white" /><circle cx="132.4194117684337" cy="345.4892188019081" r="12.022137327202582" fill="white" /><circle cx="182.4975010521704" cy="313.4155446450354" r="18.274322977377366" fill="white" /><circle cx="130.13199550968486" cy="595.4076839624399" r="17.855660410698132" fill="white" /><circle cx="135.33066736697162" cy="483.5945595803974" r="26.99296773685016" fill="white" /><circle cx="175.9773447118687" cy="334.6639506265115" r="11.664516731549988" fill="white" /><circle cx="232.2451619716567" cy="433.3670298680491" r="15.142081804431871" fill="white" /><circle cx="163.53390545097852" cy="451.62605618694676" r="13.728071522220908" fill="white" /><circle cx="315.8015797068603" cy="21.040172139995338" r="17.762962893867726" fill="white" /><circle cx="250.66241245602546" cy="113.2827723561114" r="16.17791383681746" fill="white" /><circle cx="296.23125843940676" cy="135.30827478801973" r="27.525509339687737" fill="white" /><circle cx="57.043790336099406" cy="360.66315393976214" r="25.12151357654022" fill="white" /><circle cx="171.67879151225569" cy="584.0706348597935" r="28.569644627660363" fill="white" /><circle cx="52.18668987752801" cy="489.57425775324947" r="21.32305722343989" fill="white" /><circle cx="356.55167777784357" cy="71.84332007712631" r="23.783198101261327" fill="white" /><circle cx="35.663495975815266" cy="391.38851172927247" r="20.048411346067663" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Raum
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Emma Donoghue
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

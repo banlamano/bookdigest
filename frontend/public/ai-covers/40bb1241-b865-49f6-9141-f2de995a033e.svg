@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-40bb1241-b865-49f6-9141-f2de995a033e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-40bb1241-b865-49f6-9141-f2de995a033e)" />
+  <g opacity="0.1">
+    <circle cx="11.905253807207483" cy="254.19455346708116" r="25.563852012775335" fill="white" /><circle cx="219.60707452329413" cy="434.0548716125783" r="20.754176937967106" fill="white" /><circle cx="379.99457188944757" cy="476.72143186014284" r="12.219012120754186" fill="white" /><circle cx="0.3994388978100005" cy="361.8681567527587" r="10.473929906307074" fill="white" /><circle cx="349.3268139461308" cy="141.71919095239147" r="20.120273553051568" fill="white" /><circle cx="331.86833441181705" cy="451.8511235189606" r="18.265250896980575" fill="white" /><circle cx="74.15754915277337" cy="181.48691984405914" r="26.70842341863468" fill="white" /><circle cx="334.1307307409168" cy="380.224344749265" r="26.768015933195848" fill="white" /><circle cx="217.27585784797014" cy="362.04899172412195" r="21.12978129651421" fill="white" /><circle cx="385.82925254104146" cy="22.498972994513935" r="12.704436461595654" fill="white" /><circle cx="339.2819378812396" cy="475.91294218441004" r="13.823407021011873" fill="white" /><circle cx="338.1006784016778" cy="267.49345810239595" r="24.781925896759045" fill="white" /><circle cx="210.39789666312748" cy="154.52277425782677" r="12.605838534190488" fill="white" /><circle cx="301.9673172316663" cy="38.47610515925331" r="16.1259141495161" fill="white" /><circle cx="109.95316959264865" cy="510.3894581886975" r="14.131352114319958" fill="white" /><circle cx="237.5004509739327" cy="530.3873281958606" r="10.703192831002688" fill="white" /><circle cx="8.371063711632587" cy="438.8563668530955" r="21.866662888847372" fill="white" /><circle cx="26.983224902161986" cy="101.27925954409764" r="20.028151815592054" fill="white" /><circle cx="171.01386899077568" cy="250.95688278986245" r="25.71667149014135" fill="white" /><circle cx="10.15985696543269" cy="215.22836065004535" r="12.516177868277245" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Born a Crime
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Trevor Noah
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

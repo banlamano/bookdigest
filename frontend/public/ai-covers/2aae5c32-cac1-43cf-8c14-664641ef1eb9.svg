@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-2aae5c32-cac1-43cf-8c14-664641ef1eb9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-2aae5c32-cac1-43cf-8c14-664641ef1eb9)" />
+  <g opacity="0.1">
+    <circle cx="11.328021010433664" cy="555.6367638826772" r="25.95495021047025" fill="white" /><circle cx="246.26024899781544" cy="34.70995708158349" r="12.223776719859165" fill="white" /><circle cx="376.7296738245626" cy="399.8733959929589" r="23.295750484398248" fill="white" /><circle cx="219.22085527216956" cy="143.8018874895101" r="29.301055130629145" fill="white" /><circle cx="334.04198281907486" cy="26.522123509765706" r="27.466275701610403" fill="white" /><circle cx="288.08071252341523" cy="68.53269197593714" r="23.084056397027638" fill="white" /><circle cx="342.7314462351581" cy="91.51928588036495" r="10.958182663561857" fill="white" /><circle cx="263.9426953420069" cy="258.6530537213849" r="29.043939611469472" fill="white" /><circle cx="130.47074342101882" cy="357.1171202088679" r="20.45806003743461" fill="white" /><circle cx="240.7211079364032" cy="363.74069588644886" r="17.360652378227144" fill="white" /><circle cx="219.87072410025146" cy="316.31436323520415" r="24.181646262583357" fill="white" /><circle cx="11.482529720455226" cy="220.711035176255" r="28.68228128474558" fill="white" /><circle cx="262.67395486740446" cy="150.4019757034153" r="28.54239468814345" fill="white" /><circle cx="85.90028798635588" cy="569.8420399506206" r="18.05802020233201" fill="white" /><circle cx="229.76141107001524" cy="63.502616954218524" r="29.38450917642928" fill="white" /><circle cx="239.6874178907366" cy="250.60608710661793" r="19.838985339543758" fill="white" /><circle cx="163.1477116539156" cy="538.1924585146443" r="12.403460918322777" fill="white" /><circle cx="301.69707433464913" cy="392.9558136928327" r="17.99104453029741" fill="white" /><circle cx="390.8474556667796" cy="311.6597482695239" r="13.014546262996266" fill="white" /><circle cx="178.62581317149906" cy="90.59818602786804" r="13.816195467277906" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Meister-Algorithmus:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wie künstliche
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Intelligenz unser Leben
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Pedro Domingos
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

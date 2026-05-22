@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-36867325-a3b4-45f8-a164-a2d5b39fdd0b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-36867325-a3b4-45f8-a164-a2d5b39fdd0b)" />
+  <g opacity="0.1">
+    <circle cx="167.84019032692314" cy="442.23133866038734" r="16.286708188626083" fill="white" /><circle cx="7.182593701511619" cy="562.476144928115" r="11.578232195345885" fill="white" /><circle cx="319.07979100404987" cy="319.6100459464299" r="29.338025338258507" fill="white" /><circle cx="321.3368271454199" cy="531.1471114151085" r="21.52035650147099" fill="white" /><circle cx="115.97562950610273" cy="246.59240408206605" r="11.92320640733257" fill="white" /><circle cx="154.501966254713" cy="19.132193085463722" r="28.252643378594176" fill="white" /><circle cx="196.2127499463865" cy="74.96306033554492" r="21.906647626857833" fill="white" /><circle cx="269.3433843533039" cy="506.31071962436766" r="18.61911082832105" fill="white" /><circle cx="70.075922189329" cy="276.3321316125944" r="12.261703664439851" fill="white" /><circle cx="249.4082433250228" cy="464.16430028269735" r="10.915528109043354" fill="white" /><circle cx="261.41392793321677" cy="430.5850343557072" r="29.321498644202318" fill="white" /><circle cx="72.0510689505585" cy="237.58454809126349" r="13.966211020236717" fill="white" /><circle cx="234.4482782462415" cy="303.100858704355" r="23.420988885604466" fill="white" /><circle cx="345.1716882087104" cy="146.13706734432253" r="28.38555345221781" fill="white" /><circle cx="2.2759356501909966" cy="102.8822963403989" r="13.752990016665672" fill="white" /><circle cx="137.9284507904651" cy="431.7663298363376" r="10.13573618383375" fill="white" /><circle cx="127.24613714162683" cy="430.7433773810189" r="18.580604898023477" fill="white" /><circle cx="276.5287121571393" cy="426.94290290471173" r="25.461806685008064" fill="white" /><circle cx="131.6677643953676" cy="248.5905635378358" r="11.249280438405393" fill="white" /><circle cx="275.962869346315" cy="107.96846638681126" r="20.675664154496744" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Second Machine Age:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Arbeit, Fortschritt und
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wohlstand in einer Zeit
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Erik Brynjolfsson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

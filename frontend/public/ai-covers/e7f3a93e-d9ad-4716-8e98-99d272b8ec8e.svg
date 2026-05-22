@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e7f3a93e-d9ad-4716-8e98-99d272b8ec8e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e7f3a93e-d9ad-4716-8e98-99d272b8ec8e)" />
+  <g opacity="0.1">
+    <circle cx="12.996961181977573" cy="36.42704081958308" r="28.43360405563001" fill="white" /><circle cx="232.0670815158191" cy="419.11510014213565" r="27.958454522632504" fill="white" /><circle cx="284.78297615526" cy="584.0286016563493" r="21.40749183867664" fill="white" /><circle cx="61.77717682642698" cy="169.7619432270958" r="26.926199712357846" fill="white" /><circle cx="259.0071300122437" cy="179.42298853180313" r="25.419664793339635" fill="white" /><circle cx="223.813248972314" cy="7.696315226595352" r="24.222732134821683" fill="white" /><circle cx="398.67283299353454" cy="503.66046125255417" r="25.503306237024876" fill="white" /><circle cx="162.3081906615154" cy="11.266253899611867" r="18.666918405868124" fill="white" /><circle cx="153.0903361470061" cy="7.127312233110028" r="14.217701768959309" fill="white" /><circle cx="386.8573072135582" cy="389.5233673073545" r="20.124809297129225" fill="white" /><circle cx="81.18219755003993" cy="433.1025153348803" r="16.475779655053806" fill="white" /><circle cx="187.8561768823701" cy="73.12454299543651" r="28.96660705841127" fill="white" /><circle cx="247.7232671316795" cy="486.2412670323829" r="20.7624813191863" fill="white" /><circle cx="230.6767860593315" cy="249.03269562790024" r="25.8889918263014" fill="white" /><circle cx="237.11672851453125" cy="160.12008887059451" r="21.579948139008568" fill="white" /><circle cx="40.05469266169608" cy="261.43097041153027" r="27.788325749325857" fill="white" /><circle cx="10.95141579227894" cy="411.70629771490724" r="13.707863165716478" fill="white" /><circle cx="206.41551106818125" cy="496.32500205475355" r="24.709124375295197" fill="white" /><circle cx="204.30531152842678" cy="444.1812881310358" r="11.757011797469517" fill="white" /><circle cx="357.520881139124" cy="155.4621714098946" r="29.332445430935657" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Richtig gehen: Vom Glück,
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Schritt für Schritt im
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Hier und Jetzt anzukommen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Thich Nhat Hanh
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

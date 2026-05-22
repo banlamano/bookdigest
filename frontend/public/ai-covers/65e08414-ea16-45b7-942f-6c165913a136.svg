@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-65e08414-ea16-45b7-942f-6c165913a136" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-65e08414-ea16-45b7-942f-6c165913a136)" />
+  <g opacity="0.1">
+    <circle cx="214.5162834991164" cy="450.2538237701697" r="24.770994076982767" fill="white" /><circle cx="121.11564586632055" cy="395.6695564831451" r="22.58055989010996" fill="white" /><circle cx="163.5052385644662" cy="549.7149565700714" r="21.94607044364966" fill="white" /><circle cx="311.53210196805514" cy="87.51300430092653" r="12.744140039727235" fill="white" /><circle cx="20.96762864560531" cy="63.09072057435443" r="24.374238555244144" fill="white" /><circle cx="214.25834376637388" cy="234.3843952365842" r="23.435941402404264" fill="white" /><circle cx="229.36360187698975" cy="105.22614135434748" r="13.417390357234586" fill="white" /><circle cx="296.4494572091233" cy="170.57332063907825" r="18.988250554017643" fill="white" /><circle cx="203.82283809148083" cy="276.30704769966275" r="27.238774702353222" fill="white" /><circle cx="316.2997907280642" cy="223.05752912361632" r="22.089615016968907" fill="white" /><circle cx="96.50277948818928" cy="460.9635393559867" r="22.69417609156264" fill="white" /><circle cx="160.00885976695028" cy="177.12690072187513" r="27.61710834262124" fill="white" /><circle cx="157.24243192201564" cy="137.2058449341447" r="25.64901968837302" fill="white" /><circle cx="311.1508946681721" cy="473.7220123737726" r="13.223102432551316" fill="white" /><circle cx="192.34850858662563" cy="96.06402963108309" r="12.636133305226856" fill="white" /><circle cx="86.54552663305925" cy="299.4220312074013" r="12.843044817252892" fill="white" /><circle cx="121.24019082629043" cy="324.37869708490655" r="14.917774135387809" fill="white" /><circle cx="171.5063976760682" cy="229.20578950402006" r="21.82998325110063" fill="white" /><circle cx="75.59660799369014" cy="223.13875934756913" r="11.366544944789785" fill="white" /><circle cx="178.0333160841403" cy="86.76747834304726" r="25.27267358764187" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Psychology of Selling
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brian Tracy
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

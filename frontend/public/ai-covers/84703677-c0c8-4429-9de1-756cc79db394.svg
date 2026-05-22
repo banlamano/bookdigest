@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-84703677-c0c8-4429-9de1-756cc79db394" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-84703677-c0c8-4429-9de1-756cc79db394)" />
+  <g opacity="0.1">
+    <circle cx="0.6222651773497123" cy="230.8539786265667" r="21.034686408415606" fill="white" /><circle cx="141.79323725260295" cy="155.6567849336529" r="24.416021409592684" fill="white" /><circle cx="38.45638678428984" cy="510.76444218878044" r="27.891061645374286" fill="white" /><circle cx="368.4115810588234" cy="470.5453472364633" r="20.28388411442376" fill="white" /><circle cx="181.97070342726852" cy="90.79090247172448" r="23.862323497705155" fill="white" /><circle cx="108.21994888705157" cy="98.05532933055679" r="18.332538662822103" fill="white" /><circle cx="324.08230529969455" cy="197.66985967494637" r="22.187151915928418" fill="white" /><circle cx="252.03797498656058" cy="558.907472929505" r="20.503212896099576" fill="white" /><circle cx="93.02865631075501" cy="187.96741453672087" r="10.307191389891043" fill="white" /><circle cx="30.941975128525854" cy="9.851008299547836" r="22.220541346549716" fill="white" /><circle cx="287.6536906281031" cy="357.84922154397896" r="26.482998983155806" fill="white" /><circle cx="166.29625402489086" cy="560.9806067682988" r="29.23562156971379" fill="white" /><circle cx="176.0024267783196" cy="422.5902699484394" r="29.95380933872562" fill="white" /><circle cx="343.2424337679282" cy="332.79273469711785" r="28.229235997592358" fill="white" /><circle cx="340.77056623042165" cy="245.04342260083175" r="13.51850896679787" fill="white" /><circle cx="263.23599479838606" cy="444.86261999642244" r="28.26308008698883" fill="white" /><circle cx="133.130979769833" cy="535.7047566342565" r="11.894206196144385" fill="white" /><circle cx="205.7572124532649" cy="38.32236857582805" r="19.671242015770325" fill="white" /><circle cx="53.76812405448135" cy="3.2881269518035605" r="18.48488881795237" fill="white" /><circle cx="394.33324665576464" cy="517.3456405749653" r="15.83222249768044" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Art of the Start 2.0
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Guy Kawasaki
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

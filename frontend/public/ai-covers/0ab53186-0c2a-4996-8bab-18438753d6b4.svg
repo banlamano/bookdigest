@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0ab53186-0c2a-4996-8bab-18438753d6b4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0ab53186-0c2a-4996-8bab-18438753d6b4)" />
+  <g opacity="0.1">
+    <circle cx="247.1793749103698" cy="549.6654534207246" r="29.79090580618774" fill="white" /><circle cx="62.044534158203255" cy="92.07901889891134" r="17.740767932588305" fill="white" /><circle cx="328.18448959448045" cy="158.44616513599604" r="18.86188955038503" fill="white" /><circle cx="118.72684825795457" cy="289.40779620191495" r="26.47095891018266" fill="white" /><circle cx="367.31010726309455" cy="360.98360822620714" r="13.755894312724866" fill="white" /><circle cx="18.38329468584874" cy="478.29901941985224" r="23.581529651109694" fill="white" /><circle cx="284.23837799152903" cy="213.20688206344775" r="29.685447410713067" fill="white" /><circle cx="339.8396239511524" cy="248.21936807510903" r="19.305157135678105" fill="white" /><circle cx="365.08388357785736" cy="487.13846096586184" r="14.443788813611958" fill="white" /><circle cx="299.73393844991733" cy="160.52511426190367" r="24.49170174862535" fill="white" /><circle cx="130.687364680014" cy="377.76620125940866" r="11.152365173242822" fill="white" /><circle cx="85.88073721098696" cy="352.7716886339597" r="25.75510362019978" fill="white" /><circle cx="363.6650135362798" cy="545.8792499096397" r="13.920760624823513" fill="white" /><circle cx="291.4354980484686" cy="234.41547807823758" r="12.527546871953879" fill="white" /><circle cx="138.97796211252916" cy="459.87959409751363" r="27.04970664319484" fill="white" /><circle cx="242.40028954351885" cy="548.8007547026419" r="21.020083390606473" fill="white" /><circle cx="329.300914316026" cy="490.34640015267865" r="21.28240007544784" fill="white" /><circle cx="347.2510157862176" cy="151.677350386267" r="15.36081278771885" fill="white" /><circle cx="315.8055689570977" cy="531.7266528580013" r="18.541987590337154" fill="white" /><circle cx="391.57140051507156" cy="587.9665679478736" r="22.892998803923973" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Extreme Ownership: Wie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Navy SEALs führen und
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        gewinnen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jocko Willink
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

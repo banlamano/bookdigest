@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1e299b5d-7aac-47d9-9135-e4d71c08da51" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1e299b5d-7aac-47d9-9135-e4d71c08da51)" />
+  <g opacity="0.1">
+    <circle cx="357.8909573668482" cy="37.90654389939585" r="22.421263268814926" fill="white" /><circle cx="164.62506792592424" cy="118.74230644660888" r="23.84210090007832" fill="white" /><circle cx="102.66226570854032" cy="322.74123239305504" r="26.966641109173032" fill="white" /><circle cx="129.78015012394812" cy="45.1401185378475" r="19.382939863409575" fill="white" /><circle cx="363.6758572597272" cy="83.72423892360644" r="28.653209560834455" fill="white" /><circle cx="384.34039214630457" cy="511.39596133719505" r="26.307690138541183" fill="white" /><circle cx="40.861323599276524" cy="527.4476173048786" r="19.616292717226834" fill="white" /><circle cx="371.44777619377766" cy="388.9575148034889" r="16.336834666513866" fill="white" /><circle cx="363.9811091320156" cy="504.6929191982376" r="12.489440743602138" fill="white" /><circle cx="274.2102339794316" cy="256.48275850405736" r="22.78012604939486" fill="white" /><circle cx="92.53120231661502" cy="284.98705957366053" r="15.190839775063038" fill="white" /><circle cx="297.5988160120243" cy="528.9258324550209" r="18.863397079181073" fill="white" /><circle cx="286.0029294778836" cy="454.56218930243773" r="26.1067765282673" fill="white" /><circle cx="87.72369473908496" cy="110.33026085655553" r="12.900069227084451" fill="white" /><circle cx="294.29749070279087" cy="109.1743982845951" r="17.072355228430496" fill="white" /><circle cx="2.3308495872016444" cy="435.722414239714" r="28.012364787130927" fill="white" /><circle cx="207.89527193104297" cy="426.2100818627002" r="28.04807625565359" fill="white" /><circle cx="260.9070755783385" cy="504.76645863952456" r="25.45860935439283" fill="white" /><circle cx="22.79582546754866" cy="357.0003264862392" r="28.200460655503598" fill="white" /><circle cx="388.9649168286585" cy="528.2005507559213" r="16.38091869657338" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Kaiser aller
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Krankheiten: Eine
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Biographie des Krebses
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Siddhartha Mukherjee
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

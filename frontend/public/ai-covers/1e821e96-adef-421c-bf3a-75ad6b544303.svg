@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1e821e96-adef-421c-bf3a-75ad6b544303" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1e821e96-adef-421c-bf3a-75ad6b544303)" />
+  <g opacity="0.1">
+    <circle cx="54.66844182686437" cy="75.59921026760365" r="22.66248614214384" fill="white" /><circle cx="245.54195989677896" cy="436.0228672311498" r="21.606272939960704" fill="white" /><circle cx="71.63868013259118" cy="367.71663288460644" r="17.968897439900125" fill="white" /><circle cx="293.5641409872802" cy="35.258876602172485" r="15.480654116759453" fill="white" /><circle cx="294.9634533221774" cy="197.36492750109866" r="19.829045731927685" fill="white" /><circle cx="99.90997725037323" cy="127.54851253668129" r="21.052557275541382" fill="white" /><circle cx="148.44307379245123" cy="376.9301496453482" r="18.540936880770825" fill="white" /><circle cx="132.9559133557102" cy="223.3335544490654" r="16.416049827771026" fill="white" /><circle cx="87.36344473454851" cy="305.890767823683" r="21.687491246958277" fill="white" /><circle cx="218.1803041547855" cy="248.68157770427788" r="26.060448104201626" fill="white" /><circle cx="47.54093771698593" cy="471.55910287104444" r="28.230836969066026" fill="white" /><circle cx="95.27545507436481" cy="227.9239443902978" r="27.15391045754368" fill="white" /><circle cx="353.90598044112295" cy="39.029371352491715" r="26.53657944362092" fill="white" /><circle cx="85.21075053472566" cy="487.8810315502791" r="15.874876208392228" fill="white" /><circle cx="311.6054707136984" cy="39.67263308298967" r="27.248828516190187" fill="white" /><circle cx="60.413070500217316" cy="341.27236045741046" r="20.768569101353584" fill="white" /><circle cx="177.2814348431337" cy="126.30006812328303" r="20.440258394960193" fill="white" /><circle cx="176.72561432343588" cy="345.2607683747994" r="27.554123428571454" fill="white" /><circle cx="244.3929641679313" cy="447.90442691063424" r="26.724395653004954" fill="white" /><circle cx="171.46840183136996" cy="57.77404095120775" r="22.943522489748943" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das 12-Wochen-Ziel: So
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        erreichen Sie in 12
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wochen mehr als andere in
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Brian Moran
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

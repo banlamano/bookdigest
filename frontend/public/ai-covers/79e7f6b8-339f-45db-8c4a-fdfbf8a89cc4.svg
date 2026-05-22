@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-79e7f6b8-339f-45db-8c4a-fdfbf8a89cc4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-79e7f6b8-339f-45db-8c4a-fdfbf8a89cc4)" />
+  <g opacity="0.1">
+    <circle cx="156.7265215698201" cy="237.29412412202186" r="13.2968358254528" fill="white" /><circle cx="321.83444555027586" cy="452.97654752409693" r="28.779749841095402" fill="white" /><circle cx="137.82217075401428" cy="472.8374993205612" r="17.234694483352584" fill="white" /><circle cx="358.2548350887954" cy="374.08527014041465" r="23.946189361979073" fill="white" /><circle cx="149.4415496900717" cy="475.14804516358595" r="11.7137563316554" fill="white" /><circle cx="372.40959126687727" cy="374.63524761883616" r="27.634960563945498" fill="white" /><circle cx="183.61697418287392" cy="531.015691531507" r="27.929049603972043" fill="white" /><circle cx="207.8254943588739" cy="483.8712701708884" r="21.776930967426495" fill="white" /><circle cx="255.62920483600155" cy="435.3390848085862" r="28.512182150163913" fill="white" /><circle cx="250.53081309654743" cy="14.032694335234574" r="23.937747700153622" fill="white" /><circle cx="109.4716998894135" cy="486.1079142597146" r="28.48547792023394" fill="white" /><circle cx="260.1734886819214" cy="127.5805582593738" r="18.079178254281544" fill="white" /><circle cx="249.99603311997038" cy="361.65829082340866" r="27.136082340962574" fill="white" /><circle cx="299.1042611102905" cy="542.6439653358902" r="17.070219540822038" fill="white" /><circle cx="247.80116741268236" cy="399.1486381685837" r="23.041662147330154" fill="white" /><circle cx="306.2369732874575" cy="140.43047697534547" r="28.805971225957762" fill="white" /><circle cx="260.93926733734617" cy="238.26351429333448" r="11.286315497652375" fill="white" /><circle cx="110.02989778440786" cy="446.0390501627574" r="20.11965149709702" fill="white" /><circle cx="144.3517393707229" cy="436.6878322505191" r="26.1147288276583" fill="white" /><circle cx="273.65264207350907" cy="470.43375945105555" r="16.326838055944883" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Böses Gemüse: Wie gesunde
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Nahrungsmittel uns krank
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        machen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Steven Gundry
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

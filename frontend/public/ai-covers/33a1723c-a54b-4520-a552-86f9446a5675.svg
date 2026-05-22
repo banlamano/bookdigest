@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-33a1723c-a54b-4520-a552-86f9446a5675" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-33a1723c-a54b-4520-a552-86f9446a5675)" />
+  <g opacity="0.1">
+    <circle cx="32.202677084294606" cy="291.2422227108644" r="12.526708324759852" fill="white" /><circle cx="308.8177013563422" cy="379.85882383285013" r="20.935804660412824" fill="white" /><circle cx="381.9292481112661" cy="284.52601626722014" r="13.896908135346894" fill="white" /><circle cx="106.30860562453428" cy="58.58348079579241" r="27.831360630611044" fill="white" /><circle cx="390.5283937605417" cy="283.47146955707416" r="15.168303876624783" fill="white" /><circle cx="116.40531731108817" cy="355.1161497444087" r="23.536394692478083" fill="white" /><circle cx="373.9703099414306" cy="410.0413745852263" r="12.340389157794247" fill="white" /><circle cx="196.13961251476857" cy="40.913160432872964" r="11.44804833906363" fill="white" /><circle cx="39.76331251827734" cy="568.4057932803885" r="18.685015485269933" fill="white" /><circle cx="160.7572069945654" cy="279.8737402897941" r="26.71223584917106" fill="white" /><circle cx="253.31063282005744" cy="429.5074762893272" r="21.08332060750743" fill="white" /><circle cx="285.9156870050605" cy="484.89861202230236" r="12.145980330259366" fill="white" /><circle cx="11.419812376897953" cy="16.085536840551875" r="23.728241158362096" fill="white" /><circle cx="319.97057900581814" cy="108.37478412075754" r="27.683241373254525" fill="white" /><circle cx="116.01002334676767" cy="411.8511937188307" r="24.32070847286974" fill="white" /><circle cx="353.56674485987907" cy="200.53617969283115" r="20.056000272174614" fill="white" /><circle cx="67.89479223947743" cy="327.7029365539287" r="15.432100045934478" fill="white" /><circle cx="380.45703119747367" cy="555.4557574991873" r="13.5721187500737" fill="white" /><circle cx="220.42376032755124" cy="488.59694773197646" r="21.625353783899957" fill="white" /><circle cx="100.44360252989293" cy="525.5452541853613" r="10.201129046053998" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Reise des Künstlers
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Steven Pressfield
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

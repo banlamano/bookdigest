@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-20165850-c280-43af-9e4c-2f57c00af27b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-20165850-c280-43af-9e4c-2f57c00af27b)" />
+  <g opacity="0.1">
+    <circle cx="56.90689585537881" cy="29.507111467906633" r="20.17576376684527" fill="white" /><circle cx="313.0489958338843" cy="587.7954261400605" r="12.80144230727284" fill="white" /><circle cx="215.27115420267756" cy="25.730797901543333" r="14.307786711723775" fill="white" /><circle cx="273.85084975547875" cy="313.79893650629253" r="17.37533439677982" fill="white" /><circle cx="55.32336103208579" cy="428.3672902146975" r="11.450196572014812" fill="white" /><circle cx="338.91041217313585" cy="162.96662539160945" r="14.312388099415625" fill="white" /><circle cx="65.53656371189524" cy="342.5872958013694" r="29.48304238469019" fill="white" /><circle cx="249.23004895122153" cy="143.41867151391006" r="19.51591934533777" fill="white" /><circle cx="199.45555838787948" cy="384.7232318392585" r="11.303352817721375" fill="white" /><circle cx="351.28022811350155" cy="562.8721476559458" r="21.34904505444466" fill="white" /><circle cx="52.372753789572535" cy="244.4280514138186" r="15.43589603485825" fill="white" /><circle cx="94.30976240398495" cy="174.62841513673212" r="13.934217137366103" fill="white" /><circle cx="21.607230054850078" cy="594.3320101426997" r="13.852214227020019" fill="white" /><circle cx="210.61722227744025" cy="16.143300030445197" r="26.81336960866436" fill="white" /><circle cx="215.85919185562727" cy="578.7361387131677" r="13.867610220710436" fill="white" /><circle cx="126.9250196106877" cy="67.19752440326239" r="24.803626396897723" fill="white" /><circle cx="115.63267332264226" cy="61.33932545893224" r="22.35167933815113" fill="white" /><circle cx="370.2199654206557" cy="454.1468882502928" r="25.445253630430614" fill="white" /><circle cx="68.71438912192751" cy="9.469765311610502" r="18.595130693302266" fill="white" /><circle cx="305.05364777427377" cy="309.7616787298487" r="27.75535974961285" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Blue Ocean Strategy
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        W. Chan Kim
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d71fc4a0-4bad-4c19-99cd-e20074123d24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d71fc4a0-4bad-4c19-99cd-e20074123d24)" />
+  <g opacity="0.1">
+    <circle cx="159.4482007783619" cy="392.646584637707" r="26.156137131639944" fill="white" /><circle cx="257.83838262949905" cy="101.80107969391705" r="25.799222628774412" fill="white" /><circle cx="350.6862642516369" cy="22.95971908750607" r="17.125045531740568" fill="white" /><circle cx="360.52258988249014" cy="328.0754479931571" r="23.672532460350624" fill="white" /><circle cx="78.39274831602995" cy="2.563448690796255" r="14.427433121887903" fill="white" /><circle cx="152.54265519080633" cy="374.74349334141425" r="16.582745704846136" fill="white" /><circle cx="337.91847599593785" cy="497.40710339606244" r="18.763402666277557" fill="white" /><circle cx="170.3274147729411" cy="309.00733144764064" r="17.209328883994672" fill="white" /><circle cx="295.14605467303807" cy="545.5718302346602" r="13.240424369881511" fill="white" /><circle cx="192.00009021291544" cy="335.3244682406763" r="28.175668989621013" fill="white" /><circle cx="108.00548245604813" cy="223.416277091124" r="29.373833962626644" fill="white" /><circle cx="323.839302348411" cy="46.80699126925776" r="17.88523130437109" fill="white" /><circle cx="339.3802967176609" cy="23.69110949987143" r="27.04767235649736" fill="white" /><circle cx="373.00764296058196" cy="9.372011419278369" r="27.45963620247335" fill="white" /><circle cx="248.12065405451725" cy="383.977452587461" r="29.940874000562072" fill="white" /><circle cx="341.486860514695" cy="18.370423390940083" r="22.104068470263968" fill="white" /><circle cx="163.35763980230328" cy="596.3759142731946" r="10.860730688895227" fill="white" /><circle cx="36.23694819481056" cy="332.6369454665542" r="19.14180979010559" fill="white" /><circle cx="262.71373346410826" cy="508.5948955624238" r="15.779183440396094" fill="white" /><circle cx="3.1081469761807146" cy="407.2961495531442" r="19.38312966494116" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Hyperfocus: Mehr
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        erreichen durch weniger
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Arbeit
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Chris Bailey
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

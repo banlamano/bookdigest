@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-dba26c66-6778-42f6-876e-affb4e5b2808" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-dba26c66-6778-42f6-876e-affb4e5b2808)" />
+  <g opacity="0.1">
+    <circle cx="339.71257950440696" cy="364.12769849114045" r="27.155198097495962" fill="white" /><circle cx="102.58126285378077" cy="303.4101323977412" r="18.76144812411256" fill="white" /><circle cx="316.5619007835675" cy="361.18706184982534" r="23.631300916672682" fill="white" /><circle cx="179.42291623109315" cy="44.70568738994973" r="13.046718307046984" fill="white" /><circle cx="84.24582481874813" cy="318.73058664815284" r="14.117561640560304" fill="white" /><circle cx="238.21245045214664" cy="154.14497321934036" r="23.66699091506542" fill="white" /><circle cx="251.016250169562" cy="451.2596946452684" r="22.8126355326811" fill="white" /><circle cx="304.1516596112888" cy="416.78279698360933" r="19.870903614327787" fill="white" /><circle cx="62.48673954288999" cy="318.49149715429235" r="17.82147828501078" fill="white" /><circle cx="146.7845317092402" cy="599.3307191006335" r="10.484377485287927" fill="white" /><circle cx="325.9450989072898" cy="188.61104440387686" r="18.774204111416118" fill="white" /><circle cx="0.9919704087299586" cy="45.34931584421598" r="13.91625435888688" fill="white" /><circle cx="92.5819445817126" cy="498.99407854147216" r="10.872475845292175" fill="white" /><circle cx="158.8140834893661" cy="490.2246057019736" r="10.595325707221422" fill="white" /><circle cx="353.74742538172984" cy="550.9124320813037" r="12.559216410504725" fill="white" /><circle cx="30.622427227416615" cy="452.45360945783233" r="25.60725231972853" fill="white" /><circle cx="202.05600403642046" cy="269.8032051884133" r="21.10019322805025" fill="white" /><circle cx="350.0192219478323" cy="349.4676576139313" r="21.756245823450886" fill="white" /><circle cx="363.8186893847843" cy="95.9827664261631" r="13.734772055380052" fill="white" /><circle cx="230.95920475726018" cy="241.6519300133078" r="27.651517588912323" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The First 20 Hours
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Josh Kaufman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

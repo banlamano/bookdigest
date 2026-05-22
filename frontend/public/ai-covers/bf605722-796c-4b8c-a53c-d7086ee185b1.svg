@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-bf605722-796c-4b8c-a53c-d7086ee185b1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-bf605722-796c-4b8c-a53c-d7086ee185b1)" />
+  <g opacity="0.1">
+    <circle cx="349.47893799978635" cy="57.330213300007" r="23.61924031329989" fill="white" /><circle cx="41.65261621709604" cy="584.9459625986501" r="17.748183012831955" fill="white" /><circle cx="267.4622151213121" cy="357.3947177704976" r="11.05017004655127" fill="white" /><circle cx="315.5834371145854" cy="6.743271949656138" r="28.547146678850616" fill="white" /><circle cx="261.7824211817397" cy="140.9626338971581" r="11.935366423969729" fill="white" /><circle cx="102.5714586055623" cy="287.66628618365706" r="14.451780984901053" fill="white" /><circle cx="164.40583085581483" cy="278.4012903581147" r="12.925174781180647" fill="white" /><circle cx="356.5770014278897" cy="368.76421162977186" r="11.838439543916992" fill="white" /><circle cx="239.53266508441732" cy="173.43812718182306" r="12.175147017513485" fill="white" /><circle cx="47.66179608947256" cy="517.1263111630597" r="14.65524667602011" fill="white" /><circle cx="235.20705434317847" cy="250.93258192515094" r="28.12058950225599" fill="white" /><circle cx="137.64905128129595" cy="111.16716131490716" r="27.289978659026477" fill="white" /><circle cx="123.9873762211805" cy="410.49393933074595" r="19.758574036764028" fill="white" /><circle cx="58.50863284314109" cy="149.24021238960646" r="29.697065118246762" fill="white" /><circle cx="241.79202784798784" cy="539.4619347192291" r="14.394796535651334" fill="white" /><circle cx="67.52099792771374" cy="38.28113166726508" r="26.47392967476343" fill="white" /><circle cx="345.13950914506097" cy="345.5300770679457" r="22.561533295346297" fill="white" /><circle cx="17.30552776132135" cy="469.60232654498606" r="15.520030315024961" fill="white" /><circle cx="353.21128014144415" cy="182.89954066855395" r="23.472688202336244" fill="white" /><circle cx="258.3581103272829" cy="406.75904582759074" r="18.889056379635953" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Traumdeutung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Sigmund Freud
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

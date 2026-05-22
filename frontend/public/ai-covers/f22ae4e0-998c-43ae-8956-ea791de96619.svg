@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f22ae4e0-998c-43ae-8956-ea791de96619" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f22ae4e0-998c-43ae-8956-ea791de96619)" />
+  <g opacity="0.1">
+    <circle cx="258.7233737857438" cy="423.3790398378712" r="21.172770543037608" fill="white" /><circle cx="310.3124613402008" cy="222.14692290618564" r="18.36993682617021" fill="white" /><circle cx="363.1491119977187" cy="465.18060710219777" r="26.40367269428281" fill="white" /><circle cx="81.41456313265039" cy="505.86048575695406" r="20.381713874421514" fill="white" /><circle cx="1.3980544773394943" cy="223.86115962156563" r="10.717812388560631" fill="white" /><circle cx="241.53608310068034" cy="188.2826160468622" r="29.562583422774512" fill="white" /><circle cx="32.18554233518982" cy="111.16445704412239" r="23.245395594195507" fill="white" /><circle cx="135.01409600460863" cy="11.656235281463601" r="27.440983184466464" fill="white" /><circle cx="385.9210575425703" cy="73.73851874211512" r="11.623864148354961" fill="white" /><circle cx="307.67211007760073" cy="523.2471270614653" r="14.983940463392877" fill="white" /><circle cx="133.29103994619075" cy="58.38113644053591" r="14.392167233119109" fill="white" /><circle cx="297.6499376224675" cy="437.6150063084138" r="10.098805479139374" fill="white" /><circle cx="379.16556771296854" cy="378.7084094679583" r="14.964078485102355" fill="white" /><circle cx="158.0048551786846" cy="97.98498992545856" r="21.926049780684146" fill="white" /><circle cx="230.4081980368937" cy="549.503723246533" r="12.361420162332584" fill="white" /><circle cx="223.2286204701718" cy="313.4295761687593" r="13.462310202533132" fill="white" /><circle cx="80.18218416002969" cy="155.24573505628575" r="15.453274740158225" fill="white" /><circle cx="374.53703438338033" cy="280.3208732668893" r="23.993471071121945" fill="white" /><circle cx="62.176031489628556" cy="447.90509970799366" r="22.981219878177747" fill="white" /><circle cx="336.5285780885899" cy="573.6606017343312" r="27.25315570325343" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Drunk Tank Pink
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Adam Alter
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

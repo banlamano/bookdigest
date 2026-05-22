@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-be3fb65e-995b-4b8a-a2cc-267d2743a990" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-be3fb65e-995b-4b8a-a2cc-267d2743a990)" />
+  <g opacity="0.1">
+    <circle cx="17.782584183601724" cy="295.3402188238105" r="26.650072638757273" fill="white" /><circle cx="261.02972255520154" cy="541.3914142929854" r="27.99290574848708" fill="white" /><circle cx="178.48608243106946" cy="249.12958096227743" r="25.583939245325453" fill="white" /><circle cx="306.6632467213089" cy="226.83587482561057" r="27.77882165372898" fill="white" /><circle cx="382.8271132624854" cy="553.935311770284" r="25.052594784310465" fill="white" /><circle cx="287.9073420004634" cy="131.74161338908556" r="19.633188203198472" fill="white" /><circle cx="339.668588730893" cy="54.072025393909364" r="12.435822052521353" fill="white" /><circle cx="158.7428297205407" cy="307.3071938951292" r="17.907613550254283" fill="white" /><circle cx="338.6758444666086" cy="301.83908266448526" r="12.472172450970145" fill="white" /><circle cx="42.404104081658424" cy="70.6515386613203" r="23.29272910151913" fill="white" /><circle cx="182.42572560006565" cy="15.641201367435542" r="23.912174110286983" fill="white" /><circle cx="60.32874922029632" cy="278.4537709106552" r="22.796387556947366" fill="white" /><circle cx="234.0833307869503" cy="95.53056625160154" r="24.434063488865576" fill="white" /><circle cx="51.153311272569994" cy="177.4858351176006" r="11.741229270675102" fill="white" /><circle cx="205.05332328049835" cy="303.68064033105475" r="29.82204197968558" fill="white" /><circle cx="234.49248862005493" cy="392.83138258087257" r="29.638738137754387" fill="white" /><circle cx="174.73226546977162" cy="410.57383295166585" r="12.145592826980751" fill="white" /><circle cx="362.8384762298973" cy="0.7121049934402102" r="15.120276603296388" fill="white" /><circle cx="391.55477199214255" cy="588.5929763842131" r="29.172568217143603" fill="white" /><circle cx="110.6063977839792" cy="509.4700396976084" r="17.368323223444722" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Ein ganz normaler
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Millionär: Die
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        erstaunlichen Geheimnisse
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Thomas Stanley
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

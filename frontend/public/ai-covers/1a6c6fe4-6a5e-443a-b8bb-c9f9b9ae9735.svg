@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1a6c6fe4-6a5e-443a-b8bb-c9f9b9ae9735" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1a6c6fe4-6a5e-443a-b8bb-c9f9b9ae9735)" />
+  <g opacity="0.1">
+    <circle cx="293.37149272230414" cy="157.80842276612682" r="26.158688573692807" fill="white" /><circle cx="155.91096548022296" cy="176.94961309110897" r="20.863706206211404" fill="white" /><circle cx="132.73675823755786" cy="321.2680821118873" r="15.680960615561117" fill="white" /><circle cx="328.1593359319839" cy="76.16413090463429" r="19.625400391468794" fill="white" /><circle cx="340.3434556285569" cy="344.6026376204976" r="24.02161830731525" fill="white" /><circle cx="359.30847032635796" cy="236.96745883069656" r="14.426550197189405" fill="white" /><circle cx="319.1103729484123" cy="265.37064472150485" r="19.63339751864385" fill="white" /><circle cx="397.00608037112" cy="63.090965065275874" r="25.134749759734078" fill="white" /><circle cx="153.27051752611172" cy="530.9920016099161" r="28.493636661954916" fill="white" /><circle cx="286.66857356315074" cy="198.26825093792223" r="23.033531356918218" fill="white" /><circle cx="10.350606744596114" cy="423.63918401619327" r="14.690913095403724" fill="white" /><circle cx="157.26804368683395" cy="289.7456029046913" r="20.645417193729998" fill="white" /><circle cx="266.3601565444824" cy="306.1631889850158" r="14.050891650867857" fill="white" /><circle cx="375.56825897598645" cy="550.8278959913686" r="22.673935232523405" fill="white" /><circle cx="211.73242605214577" cy="366.02616726310106" r="20.22297286847819" fill="white" /><circle cx="98.48557151171163" cy="459.0921516254046" r="24.050448678827703" fill="white" /><circle cx="280.8221227491396" cy="386.9256481906559" r="29.130310736991937" fill="white" /><circle cx="283.3964296785143" cy="264.9521963318442" r="26.009297452377147" fill="white" /><circle cx="107.01570391952728" cy="1.1635447605584215" r="25.823832885719185" fill="white" /><circle cx="327.073293114732" cy="236.99094022764788" r="15.855827319685293" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Du musst nicht von allen
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        gemocht werden: Vom Mut,
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        glücklich zu sein
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ichiro Kishimi
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

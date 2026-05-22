@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-6b40dd45-01e9-4c71-942f-2133f939757e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-6b40dd45-01e9-4c71-942f-2133f939757e)" />
+  <g opacity="0.1">
+    <circle cx="295.9028070336139" cy="507.99646351206576" r="10.471805071730094" fill="white" /><circle cx="398.7515035142606" cy="265.8229016684311" r="25.985606338523" fill="white" /><circle cx="153.9060532180681" cy="371.32831976300986" r="11.210119607137027" fill="white" /><circle cx="260.07762986770155" cy="430.86026577016025" r="13.704214681038254" fill="white" /><circle cx="106.18948252726916" cy="466.8910267768215" r="18.95971527721789" fill="white" /><circle cx="18.887935867681716" cy="99.26035391450543" r="21.254231243027505" fill="white" /><circle cx="47.9288408480258" cy="541.8184098455283" r="18.59141249651746" fill="white" /><circle cx="18.168998036598882" cy="228.25169765367988" r="19.08491163087636" fill="white" /><circle cx="202.02005289075248" cy="148.6705391928302" r="11.251455975021399" fill="white" /><circle cx="240.78248542779778" cy="272.6395363848136" r="21.284173709782593" fill="white" /><circle cx="136.93059452251748" cy="82.77160356295337" r="13.691803673602745" fill="white" /><circle cx="67.24641218945374" cy="386.9806502004748" r="14.373351875106534" fill="white" /><circle cx="340.2868887750226" cy="235.8458190896209" r="21.57798567186056" fill="white" /><circle cx="256.9714227489939" cy="58.08221042611574" r="15.025720567575057" fill="white" /><circle cx="399.0005805623091" cy="244.6570759878794" r="20.85438040844499" fill="white" /><circle cx="178.73518782378656" cy="346.6579498887892" r="12.920107291259997" fill="white" /><circle cx="305.56280408628413" cy="502.86363522931595" r="15.689483562680453" fill="white" /><circle cx="96.09459114526153" cy="386.39408244620046" r="17.690751507686226" fill="white" /><circle cx="111.04257139145402" cy="92.80357443843874" r="21.720955283912907" fill="white" /><circle cx="206.96679165899187" cy="231.73967168811978" r="29.12330644504976" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Alexander Hamilton
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Ron Chernow
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

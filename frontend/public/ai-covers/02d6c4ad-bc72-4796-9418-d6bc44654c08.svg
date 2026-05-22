@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-02d6c4ad-bc72-4796-9418-d6bc44654c08" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-02d6c4ad-bc72-4796-9418-d6bc44654c08)" />
+  <g opacity="0.1">
+    <circle cx="252.371940176923" cy="126.18812011585348" r="10.180748906115154" fill="white" /><circle cx="223.0126249117462" cy="510.5690240601346" r="13.931466091859273" fill="white" /><circle cx="367.8321840101196" cy="545.3029055820795" r="28.800704361860078" fill="white" /><circle cx="179.56363761623894" cy="289.5468932895851" r="16.767280995792817" fill="white" /><circle cx="118.45229176545385" cy="394.6649534511384" r="12.485594716724329" fill="white" /><circle cx="248.9542560476068" cy="598.3153938590897" r="22.303380942060382" fill="white" /><circle cx="271.59303723434965" cy="556.7572019486944" r="28.241540576590207" fill="white" /><circle cx="191.95787872538497" cy="223.0735158195158" r="12.620413345192034" fill="white" /><circle cx="107.38655219104412" cy="196.47754772304577" r="29.21024295074694" fill="white" /><circle cx="334.7003668587275" cy="447.4316320973788" r="22.020540098271013" fill="white" /><circle cx="122.38070544070095" cy="228.2892976637251" r="28.20034689980953" fill="white" /><circle cx="337.0178397984281" cy="196.36669807896604" r="25.109637427321267" fill="white" /><circle cx="359.13503011097373" cy="34.28243383471139" r="27.56146680277184" fill="white" /><circle cx="296.94143838965465" cy="469.09830017867546" r="12.521024555033764" fill="white" /><circle cx="47.996233186246194" cy="510.36700509456495" r="28.645532521179856" fill="white" /><circle cx="229.4455836878323" cy="547.0282017513746" r="21.648952799340627" fill="white" /><circle cx="96.96236894466894" cy="160.9336807619357" r="13.574093199413923" fill="white" /><circle cx="93.95381607244344" cy="174.20063199565635" r="12.362969893038082" fill="white" /><circle cx="327.95331581607275" cy="172.28690563832052" r="14.229058458005209" fill="white" /><circle cx="190.6823645657298" cy="224.57621655615355" r="24.104458254942067" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Turn the Ship Around
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        David Marquet
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

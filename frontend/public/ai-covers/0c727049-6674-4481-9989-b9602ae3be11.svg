@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0c727049-6674-4481-9989-b9602ae3be11" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0c727049-6674-4481-9989-b9602ae3be11)" />
+  <g opacity="0.1">
+    <circle cx="154.32333064154258" cy="24.034738178508697" r="20.096602232436254" fill="white" /><circle cx="271.2750984124909" cy="27.927814971953026" r="14.401566070759772" fill="white" /><circle cx="65.40470615039618" cy="396.80061734017346" r="12.169449801375276" fill="white" /><circle cx="138.66662248652977" cy="594.2150649483367" r="15.068363899748025" fill="white" /><circle cx="227.94843549740528" cy="273.17201948479726" r="22.489067266684415" fill="white" /><circle cx="216.93913368998477" cy="157.06095715031935" r="24.108272765366852" fill="white" /><circle cx="331.28710455543444" cy="379.4328514864528" r="26.192886183520216" fill="white" /><circle cx="57.254423576753766" cy="197.29734057704061" r="28.915308738038267" fill="white" /><circle cx="372.6029530666716" cy="171.32794860311202" r="23.751752594661994" fill="white" /><circle cx="218.21682205550914" cy="397.7332285002323" r="26.420473905354388" fill="white" /><circle cx="32.42647338008133" cy="4.595788319163674" r="11.623394507432149" fill="white" /><circle cx="5.587534351108259" cy="173.6760638584822" r="24.779961003501633" fill="white" /><circle cx="215.91622775538926" cy="565.3524952607081" r="16.50952138277668" fill="white" /><circle cx="75.17197476230382" cy="340.7226523575668" r="23.10650116301535" fill="white" /><circle cx="91.7140029712146" cy="18.776863846526616" r="17.90782056315077" fill="white" /><circle cx="398.5757623189049" cy="417.23250080796504" r="17.255320714770043" fill="white" /><circle cx="46.1222625090469" cy="88.78229094679415" r="26.34182432001364" fill="white" /><circle cx="386.0797889259098" cy="146.75596449019437" r="16.557754524798977" fill="white" /><circle cx="396.81814026207724" cy="189.15688955143037" r="10.06216926069885" fill="white" /><circle cx="257.0919969981942" cy="441.50748927180473" r="13.131504515069405" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Anatomie des Friedens:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Herzstück der
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Konfliktlösung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        The Arbinger Institute
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-619820a7-2746-4b6d-89e2-1f613b4470dc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-619820a7-2746-4b6d-89e2-1f613b4470dc)" />
+  <g opacity="0.1">
+    <circle cx="230.22215642437484" cy="190.17359346414017" r="16.50276319413905" fill="white" /><circle cx="313.5214229573612" cy="573.0061366814151" r="26.462321117703706" fill="white" /><circle cx="74.41058332572723" cy="486.7415569317154" r="16.919266512967848" fill="white" /><circle cx="215.05013082478007" cy="90.33708341395123" r="19.72480017053526" fill="white" /><circle cx="156.2615511828179" cy="20.261626188735104" r="18.45036030335593" fill="white" /><circle cx="185.90827331953602" cy="530.8683850764934" r="22.087769645830207" fill="white" /><circle cx="215.8033345162158" cy="291.2267035517657" r="16.365422375047736" fill="white" /><circle cx="45.8582014565351" cy="160.40182346258044" r="13.821779282383224" fill="white" /><circle cx="46.77378590472823" cy="537.5023091858818" r="27.562649477905758" fill="white" /><circle cx="147.5032500909594" cy="245.42018196980737" r="11.449330191742622" fill="white" /><circle cx="86.86992184065727" cy="585.2210184489277" r="25.772576404653194" fill="white" /><circle cx="357.29760322251997" cy="525.970587823542" r="14.212122421446626" fill="white" /><circle cx="78.4373714960025" cy="88.9751768253292" r="13.116181345186817" fill="white" /><circle cx="338.83890412848973" cy="407.6633923245659" r="26.229535886382227" fill="white" /><circle cx="115.85665502826315" cy="226.46390638106845" r="24.115199130853266" fill="white" /><circle cx="395.00914383492204" cy="572.0175315887933" r="19.43872079315349" fill="white" /><circle cx="139.92757002315628" cy="458.56796884335523" r="26.000014160780424" fill="white" /><circle cx="318.02634091757625" cy="234.2392010722896" r="23.821671237921482" fill="white" /><circle cx="199.32101602560124" cy="169.56957778163158" r="18.1855472834731" fill="white" /><circle cx="159.61624509106232" cy="417.6068356626251" r="28.044643876585514" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Surge: Der Aufschwung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Mike Michalowicz
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

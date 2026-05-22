@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-eeebad81-0b16-4b38-b55f-8cdf0b30e9b6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-eeebad81-0b16-4b38-b55f-8cdf0b30e9b6)" />
+  <g opacity="0.1">
+    <circle cx="264.3603285774313" cy="291.7334576174204" r="17.492035726766737" fill="white" /><circle cx="89.22815817040899" cy="228.4934541713214" r="14.736116872875705" fill="white" /><circle cx="392.9665875834458" cy="100.78060099556394" r="27.929304139638333" fill="white" /><circle cx="248.13868129731108" cy="391.9008394319997" r="18.52648098816664" fill="white" /><circle cx="81.69589012177308" cy="350.423512489734" r="27.78909029881108" fill="white" /><circle cx="146.80262427192022" cy="522.1692593455336" r="21.94534327689937" fill="white" /><circle cx="158.15792737191003" cy="305.727016838417" r="27.339273136381678" fill="white" /><circle cx="204.10567454795228" cy="64.67129721497118" r="21.877281676872602" fill="white" /><circle cx="371.72138364274963" cy="297.1732409205259" r="19.209601644530288" fill="white" /><circle cx="196.53107951060272" cy="198.80585883721088" r="25.551724267232753" fill="white" /><circle cx="358.2239371943738" cy="508.64353048305236" r="17.466858363095493" fill="white" /><circle cx="168.6048473220515" cy="400.2365555844762" r="15.957917100102073" fill="white" /><circle cx="188.57534494471304" cy="216.22283999853903" r="11.36180450787576" fill="white" /><circle cx="26.435964883747154" cy="142.89016056258" r="22.29283021083086" fill="white" /><circle cx="353.716624492476" cy="599.8908879619702" r="21.551660432325892" fill="white" /><circle cx="360.62133515109514" cy="398.02321403127365" r="10.086546670834704" fill="white" /><circle cx="358.97785676033277" cy="445.1058160416246" r="22.2071808957781" fill="white" /><circle cx="207.78215626634875" cy="228.33183831018985" r="27.13733969995631" fill="white" /><circle cx="393.79383441354656" cy="274.34823428928223" r="25.81234041065474" fill="white" /><circle cx="89.74979037521011" cy="482.71166651028824" r="26.144099776897953" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Sapiens
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Yuval Noah Harari
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

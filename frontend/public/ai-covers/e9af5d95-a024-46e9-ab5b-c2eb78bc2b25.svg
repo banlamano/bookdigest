@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e9af5d95-a024-46e9-ab5b-c2eb78bc2b25" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e9af5d95-a024-46e9-ab5b-c2eb78bc2b25)" />
+  <g opacity="0.1">
+    <circle cx="187.45533287261958" cy="307.85524528836123" r="11.545653114230799" fill="white" /><circle cx="282.81903966822415" cy="42.742159857651416" r="25.319488972134323" fill="white" /><circle cx="157.13070383814033" cy="31.564355811866385" r="10.631708129824137" fill="white" /><circle cx="21.3207987136097" cy="400.5181563998535" r="19.89819968076638" fill="white" /><circle cx="270.81434596582926" cy="256.14314637959365" r="15.236753254293179" fill="white" /><circle cx="35.137711502111515" cy="482.71648377840245" r="20.24843536925033" fill="white" /><circle cx="336.5026759967349" cy="84.53710835065105" r="15.591058031334779" fill="white" /><circle cx="6.119030792457902" cy="263.719954992689" r="11.91024403191702" fill="white" /><circle cx="218.44767988113466" cy="268.4054288695954" r="18.315650403809173" fill="white" /><circle cx="41.405964370842696" cy="235.97889522818477" r="24.346096007564427" fill="white" /><circle cx="213.31049716889834" cy="171.59303149428155" r="17.899734123492955" fill="white" /><circle cx="224.7572250573254" cy="418.1466827198022" r="14.150719722455145" fill="white" /><circle cx="17.796828628542194" cy="384.0419494356911" r="10.240401436299322" fill="white" /><circle cx="116.07451038568644" cy="523.7932624710726" r="15.330533544139648" fill="white" /><circle cx="227.65350545936133" cy="582.1226963325175" r="26.065036396478234" fill="white" /><circle cx="322.1835128585842" cy="174.7080291901305" r="27.9757151257533" fill="white" /><circle cx="233.2559693291225" cy="85.00151683639486" r="25.78659172275801" fill="white" /><circle cx="329.5199030436016" cy="144.0643176931269" r="29.60193654016505" fill="white" /><circle cx="113.59489246027161" cy="430.6345956141599" r="21.649240051189963" fill="white" /><circle cx="82.63822016565858" cy="117.78070286362879" r="12.239899877751892" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Financial Freedom: Der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        7-Stufen-Plan für deine
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        finanzielle
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Grant Sabatier
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

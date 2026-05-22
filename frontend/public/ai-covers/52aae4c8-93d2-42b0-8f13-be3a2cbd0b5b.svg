@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-52aae4c8-93d2-42b0-8f13-be3a2cbd0b5b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-52aae4c8-93d2-42b0-8f13-be3a2cbd0b5b)" />
+  <g opacity="0.1">
+    <circle cx="377.7463624569676" cy="544.7977385740159" r="26.240622609141067" fill="white" /><circle cx="198.99884924006415" cy="504.7793201815419" r="24.319970899354992" fill="white" /><circle cx="312.30252530324265" cy="25.343976802901057" r="17.83527293494905" fill="white" /><circle cx="150.82903171223995" cy="363.11986096307317" r="12.98771825007201" fill="white" /><circle cx="337.8821560987324" cy="79.44194373621643" r="18.82602580949687" fill="white" /><circle cx="382.51374472390427" cy="249.80320445409188" r="24.24195326946147" fill="white" /><circle cx="46.874368405156865" cy="417.44664433058847" r="26.19855970801107" fill="white" /><circle cx="209.7705354999947" cy="232.206570921061" r="15.538038347752138" fill="white" /><circle cx="393.1842264395137" cy="584.6263122346312" r="20.411499809411485" fill="white" /><circle cx="238.30265490619368" cy="563.765994653289" r="18.940309006519737" fill="white" /><circle cx="58.55482362386266" cy="155.6935847225282" r="14.079593002544804" fill="white" /><circle cx="348.0481938618452" cy="28.99510152269089" r="19.447747864222507" fill="white" /><circle cx="30.335016521905978" cy="501.7881446367787" r="22.0119961788523" fill="white" /><circle cx="225.950139624006" cy="381.06684716542037" r="11.708164585881423" fill="white" /><circle cx="132.63863989277945" cy="491.1017822242888" r="18.423738318681405" fill="white" /><circle cx="222.66179115630285" cy="139.54566982909498" r="25.602303619927188" fill="white" /><circle cx="21.447846577048544" cy="144.74980602096787" r="29.381262738464738" fill="white" /><circle cx="260.8523553502051" cy="588.1720047648369" r="19.72626716339561" fill="white" /><circle cx="94.87541805954476" cy="419.280191363774" r="28.45256897089134" fill="white" /><circle cx="276.2261357371235" cy="431.8294925923333" r="11.246962612553986" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        10% glücklicher: Wie ich
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        die Stimme in meinem Kopf
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        zähmte, Stress reduzierte
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Dan Harris
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

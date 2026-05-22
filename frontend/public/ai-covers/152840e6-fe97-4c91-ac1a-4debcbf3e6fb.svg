@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-152840e6-fe97-4c91-ac1a-4debcbf3e6fb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-152840e6-fe97-4c91-ac1a-4debcbf3e6fb)" />
+  <g opacity="0.1">
+    <circle cx="213.40462749554732" cy="37.1848775133244" r="17.167899282290513" fill="white" /><circle cx="79.9070550605502" cy="9.458429156532254" r="17.142766530435743" fill="white" /><circle cx="328.11043534440137" cy="462.3115047289111" r="28.60604996405131" fill="white" /><circle cx="87.2451358932064" cy="43.75918824266303" r="22.12764201941758" fill="white" /><circle cx="230.29125998756433" cy="437.8792850921421" r="17.272843016590066" fill="white" /><circle cx="97.8303360514717" cy="490.2414105721531" r="14.527525513125081" fill="white" /><circle cx="319.2392417294993" cy="79.021012433077" r="12.556876664646452" fill="white" /><circle cx="75.41848147083346" cy="354.979457579605" r="18.006796252932602" fill="white" /><circle cx="285.18878362137514" cy="182.15579611913765" r="25.011222912932325" fill="white" /><circle cx="195.2928992687143" cy="81.1783518116791" r="22.85068506502939" fill="white" /><circle cx="39.04045189549574" cy="154.96487579011432" r="25.78869477825272" fill="white" /><circle cx="391.83857194202017" cy="156.2877021093816" r="12.916430507204824" fill="white" /><circle cx="363.4414939909823" cy="329.2134945429629" r="19.002609474968025" fill="white" /><circle cx="174.56963378073795" cy="44.027427851281466" r="22.64088836251435" fill="white" /><circle cx="181.85976881572827" cy="432.82795613903664" r="22.278374004167425" fill="white" /><circle cx="108.74449612837327" cy="195.53736779743033" r="21.66391256938649" fill="white" /><circle cx="117.11366415415294" cy="580.9771412146354" r="14.816485650049314" fill="white" /><circle cx="105.34598998428186" cy="371.9140918149832" r="14.998242577980792" fill="white" /><circle cx="285.05802587272495" cy="321.0511926839461" r="17.87268484308185" fill="white" /><circle cx="263.96790832412256" cy="365.05975796852664" r="22.91000029121828" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der ideale Teamplayer:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wie Sie die drei
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        unverzichtbaren
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Patrick Lencioni
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

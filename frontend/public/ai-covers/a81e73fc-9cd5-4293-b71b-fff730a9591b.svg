@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a81e73fc-9cd5-4293-b71b-fff730a9591b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a81e73fc-9cd5-4293-b71b-fff730a9591b)" />
+  <g opacity="0.1">
+    <circle cx="324.04287521898027" cy="7.702940646897671" r="11.539711650667531" fill="white" /><circle cx="368.85628643026365" cy="92.58655388186175" r="17.455398039755696" fill="white" /><circle cx="332.57206309760255" cy="424.29286802339396" r="11.610883948249564" fill="white" /><circle cx="323.8066327528613" cy="484.21633836819404" r="22.183810717788994" fill="white" /><circle cx="7.019153438571868" cy="587.0900200508029" r="18.77239359815466" fill="white" /><circle cx="293.1954953018268" cy="252.32360072441463" r="18.33215410515383" fill="white" /><circle cx="127.52019475615847" cy="73.58852449097559" r="21.616663581530723" fill="white" /><circle cx="147.02924896096076" cy="274.41027753159284" r="10.744984471405278" fill="white" /><circle cx="66.94733319262083" cy="588.4032615542038" r="21.992285925291434" fill="white" /><circle cx="261.52142394756703" cy="160.1080283231169" r="12.554892932388018" fill="white" /><circle cx="219.50168173705958" cy="83.30845067159365" r="13.651727450088947" fill="white" /><circle cx="381.1509607081275" cy="184.90452125132023" r="10.783368861809084" fill="white" /><circle cx="54.719372075791604" cy="462.10276526345353" r="28.7931229791849" fill="white" /><circle cx="101.16011893458091" cy="498.92545182040925" r="26.356921840922876" fill="white" /><circle cx="62.045628242887396" cy="379.46207571307485" r="27.929407089749414" fill="white" /><circle cx="287.85715040491453" cy="389.2883049408522" r="13.054800566601054" fill="white" /><circle cx="276.1634919324519" cy="391.1779541289585" r="18.7650046349361" fill="white" /><circle cx="240.8420706093274" cy="150.4733322553712" r="20.219174259054626" fill="white" /><circle cx="310.87818221106625" cy="229.69101543155054" r="17.288036288194892" fill="white" /><circle cx="341.8156574553045" cy="112.00995377760674" r="17.02853840768701" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        As a Man Thinketh
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        James Allen
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

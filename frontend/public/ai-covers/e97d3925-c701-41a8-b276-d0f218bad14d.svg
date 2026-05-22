@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e97d3925-c701-41a8-b276-d0f218bad14d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e97d3925-c701-41a8-b276-d0f218bad14d)" />
+  <g opacity="0.1">
+    <circle cx="366.76259535765496" cy="283.37387757421186" r="19.619450359489754" fill="white" /><circle cx="189.03434187930995" cy="416.9214746600873" r="16.852625894219962" fill="white" /><circle cx="253.8065083757997" cy="49.21223255318816" r="18.505673057510663" fill="white" /><circle cx="100.3572568491053" cy="254.53500165603688" r="24.414695688849342" fill="white" /><circle cx="71.25806687586325" cy="297.07631501669397" r="27.10481771891701" fill="white" /><circle cx="28.28286702877425" cy="231.06412882802948" r="10.177353497515256" fill="white" /><circle cx="8.77959230945482" cy="287.60887312584435" r="10.75046173019918" fill="white" /><circle cx="67.01924089121914" cy="266.2358754046293" r="26.85792100340289" fill="white" /><circle cx="289.2231999503582" cy="51.184736290639044" r="15.325648569548132" fill="white" /><circle cx="48.45687430255716" cy="51.21691048515906" r="10.578234323754065" fill="white" /><circle cx="161.1365060526202" cy="516.8261817016444" r="19.64966476108912" fill="white" /><circle cx="393.93975047311136" cy="18.205297097832297" r="22.233904369782717" fill="white" /><circle cx="30.9793249815963" cy="570.6598152006329" r="24.57216823642841" fill="white" /><circle cx="28.115765752614188" cy="426.3113822635411" r="22.877161510163926" fill="white" /><circle cx="57.13249252289327" cy="410.9781635287935" r="13.39433581319479" fill="white" /><circle cx="251.24784203324361" cy="495.40939430151934" r="19.418780907175098" fill="white" /><circle cx="392.88307738115674" cy="589.5794012908063" r="24.302737041690747" fill="white" /><circle cx="67.17993735809156" cy="396.9550540984134" r="15.090960032331777" fill="white" /><circle cx="226.29024845595563" cy="375.9229977474974" r="26.759092567503682" fill="white" /><circle cx="340.5184118181387" cy="275.34159256040834" r="27.380553362195755" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Still Me
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Jojo Moyes
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

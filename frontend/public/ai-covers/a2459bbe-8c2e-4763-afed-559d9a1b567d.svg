@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a2459bbe-8c2e-4763-afed-559d9a1b567d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a2459bbe-8c2e-4763-afed-559d9a1b567d)" />
+  <g opacity="0.1">
+    <circle cx="138.55041230672578" cy="242.86208809477884" r="13.209748474426844" fill="white" /><circle cx="251.9357650945965" cy="460.9407877125534" r="24.516598846309705" fill="white" /><circle cx="159.24172858863002" cy="138.51119780080822" r="12.78978702868847" fill="white" /><circle cx="334.8679928081963" cy="113.52372920408196" r="24.603775412060962" fill="white" /><circle cx="259.52101584252324" cy="511.26063657399874" r="23.56502489729882" fill="white" /><circle cx="116.34017191209902" cy="453.2561410354806" r="21.810527110737567" fill="white" /><circle cx="68.68364768606496" cy="221.49287825870675" r="15.393140767620528" fill="white" /><circle cx="250.47691981816632" cy="553.3261325191328" r="15.836625163739411" fill="white" /><circle cx="212.1351304266884" cy="517.4969007465149" r="19.016993421919537" fill="white" /><circle cx="174.29307702327102" cy="463.12657710988685" r="15.979592563683235" fill="white" /><circle cx="341.58927566427406" cy="529.6388961188316" r="25.887162538578554" fill="white" /><circle cx="93.02301726514854" cy="576.8664856295586" r="25.083704113348922" fill="white" /><circle cx="198.5525742418678" cy="580.7573524656491" r="28.959423252038427" fill="white" /><circle cx="133.66004543991687" cy="417.30294818719346" r="26.087727941720573" fill="white" /><circle cx="77.59000329005836" cy="482.11528266808665" r="29.14739617196784" fill="white" /><circle cx="332.5149976493485" cy="203.78919593023278" r="15.88233658545671" fill="white" /><circle cx="190.03188091362367" cy="385.2033797355588" r="10.035049595976286" fill="white" /><circle cx="386.4874041544003" cy="599.6807838676573" r="17.538710618169674" fill="white" /><circle cx="378.64730022131374" cy="401.19296713671974" r="24.187512113459693" fill="white" /><circle cx="388.4575027258057" cy="434.63380014252954" r="19.854105113071206" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Gifts of Imperfection
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brené Brown
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8f70ade7-1eba-46fc-ae72-1a8a94ee964a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8f70ade7-1eba-46fc-ae72-1a8a94ee964a)" />
+  <g opacity="0.1">
+    <circle cx="0.028298095751289054" cy="205.68692143852698" r="17.735288634577323" fill="white" /><circle cx="340.1515926139521" cy="513.3136783820452" r="12.40592267809437" fill="white" /><circle cx="106.03015536010241" cy="47.372123175014316" r="10.84315013997998" fill="white" /><circle cx="298.83557114364055" cy="49.479863212614994" r="28.404884951043062" fill="white" /><circle cx="131.10607515678194" cy="149.29844359098036" r="25.946518483344676" fill="white" /><circle cx="199.80905285200575" cy="581.1221312899784" r="21.536145468539807" fill="white" /><circle cx="357.37731473286004" cy="581.0248735254626" r="11.695463721858006" fill="white" /><circle cx="297.23169141132814" cy="162.21277231421638" r="23.87955019859794" fill="white" /><circle cx="151.98400427471483" cy="567.8744412917819" r="12.406450638199516" fill="white" /><circle cx="128.51690031111045" cy="189.81772263684056" r="15.699475503391596" fill="white" /><circle cx="395.23071739510965" cy="177.22449291695713" r="25.39258586624974" fill="white" /><circle cx="168.63545877182466" cy="278.92032989752494" r="29.20401075051128" fill="white" /><circle cx="100.90040012582544" cy="138.99389898477332" r="14.765413469908985" fill="white" /><circle cx="123.23590692568254" cy="59.37269352064525" r="22.982251510547144" fill="white" /><circle cx="383.11139536785447" cy="29.50482653652586" r="24.93104762136631" fill="white" /><circle cx="217.76696310121696" cy="253.2683619232172" r="18.973349533442324" fill="white" /><circle cx="77.25068026100158" cy="502.91065570545265" r="12.16001745568111" fill="white" /><circle cx="196.62188009847674" cy="36.20827747691957" r="28.24563886210311" fill="white" /><circle cx="104.21679695952521" cy="25.304863400433053" r="12.521506326713007" fill="white" /><circle cx="118.43196773442659" cy="232.54223113742324" r="14.060268653722758" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Organized Mind
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Daniel Levitin
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

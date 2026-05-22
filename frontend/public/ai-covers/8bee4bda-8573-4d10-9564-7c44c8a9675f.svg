@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8bee4bda-8573-4d10-9564-7c44c8a9675f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8bee4bda-8573-4d10-9564-7c44c8a9675f)" />
+  <g opacity="0.1">
+    <circle cx="52.62208395476322" cy="225.39021701829068" r="23.40055206797052" fill="white" /><circle cx="2.2398849504866813" cy="285.2321738435928" r="17.323730340079354" fill="white" /><circle cx="138.66922793900193" cy="112.78418594628603" r="28.540214355461696" fill="white" /><circle cx="188.79149660674187" cy="70.96964449650413" r="12.731085460448753" fill="white" /><circle cx="217.5104006237422" cy="246.65041593537455" r="26.41113087562723" fill="white" /><circle cx="189.2769221335123" cy="426.3780412801963" r="15.69673996967374" fill="white" /><circle cx="391.4872660403075" cy="168.49550907745305" r="12.802871750076362" fill="white" /><circle cx="8.120268808937992" cy="277.8111443910498" r="26.267513367468624" fill="white" /><circle cx="344.6603525695209" cy="334.1006404148437" r="24.357177967763885" fill="white" /><circle cx="283.81960632702703" cy="133.9997457246755" r="17.09134539872885" fill="white" /><circle cx="105.37653576495379" cy="207.74704844464924" r="24.046463147683202" fill="white" /><circle cx="116.1172690278506" cy="583.714628383982" r="10.59589554546331" fill="white" /><circle cx="283.7541243466508" cy="451.970776243963" r="25.91522156245469" fill="white" /><circle cx="167.61543157600966" cy="459.7218556795088" r="20.47226229130215" fill="white" /><circle cx="169.22837167522272" cy="356.4616045884171" r="13.603863366593744" fill="white" /><circle cx="341.15750424196733" cy="198.62506113559047" r="26.317404193851" fill="white" /><circle cx="255.63426762284308" cy="455.44858158047003" r="19.107485016407935" fill="white" /><circle cx="194.2294498080617" cy="464.27978094400106" r="25.61305639805936" fill="white" /><circle cx="329.5150196506088" cy="158.38897265983582" r="13.416563820096147" fill="white" /><circle cx="273.51063622983895" cy="133.22051067069626" r="23.148546810903582" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Outliers
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Malcolm Gladwell
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

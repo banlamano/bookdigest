@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-71931feb-0ae3-41cd-bcf1-447b6eca5245" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-71931feb-0ae3-41cd-bcf1-447b6eca5245)" />
+  <g opacity="0.1">
+    <circle cx="234.62519662224685" cy="427.0024416038162" r="25.308551526829362" fill="white" /><circle cx="148.15769997735774" cy="70.84425774608603" r="21.22283413361952" fill="white" /><circle cx="359.66031396681217" cy="514.9633667196678" r="12.909281483306536" fill="white" /><circle cx="56.913559678883054" cy="122.90391022321201" r="14.265594841176261" fill="white" /><circle cx="8.726073705694581" cy="451.68814315583796" r="10.654117590266711" fill="white" /><circle cx="265.36147020796307" cy="439.56893217615584" r="24.64100518496148" fill="white" /><circle cx="394.63152819912114" cy="501.03875906911645" r="23.30015781725809" fill="white" /><circle cx="357.87899996058957" cy="100.7897180183392" r="29.393063096262978" fill="white" /><circle cx="123.36786348542499" cy="568.3511687510702" r="25.90844026923451" fill="white" /><circle cx="216.14240175915103" cy="589.5561024071247" r="15.517516650727242" fill="white" /><circle cx="322.5671506296163" cy="565.6055313744428" r="11.913247475135044" fill="white" /><circle cx="308.43940606037694" cy="287.74835985199115" r="23.61397759877647" fill="white" /><circle cx="338.46464382506014" cy="319.8959108340259" r="10.63376271164927" fill="white" /><circle cx="128.34309679630235" cy="87.34426667162771" r="28.455900924780163" fill="white" /><circle cx="254.70869140337186" cy="11.13176071189972" r="17.49340288656305" fill="white" /><circle cx="145.50957800085152" cy="288.98895798127376" r="22.55242711656576" fill="white" /><circle cx="227.83438157532797" cy="385.23256177515816" r="17.022362765244953" fill="white" /><circle cx="328.1543343764366" cy="438.8389485478958" r="13.381143235574772" fill="white" /><circle cx="164.91656190490608" cy="250.48571752609098" r="17.0124396177574" fill="white" /><circle cx="213.59103837693291" cy="133.14799640763738" r="26.93507768886921" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        You Can Be a Stock Market
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Genius
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Joel Greenblatt
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

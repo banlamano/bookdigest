@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5c6ca6aa-f68f-4189-853e-df771861cace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5c6ca6aa-f68f-4189-853e-df771861cace)" />
+  <g opacity="0.1">
+    <circle cx="328.3573192931212" cy="405.4143225744316" r="25.234526971921415" fill="white" /><circle cx="48.65462497824722" cy="352.6345460689545" r="23.31988844235905" fill="white" /><circle cx="352.91747410548527" cy="456.63796927652675" r="20.973486150507803" fill="white" /><circle cx="67.45430930419035" cy="28.995156382393606" r="15.28059338117102" fill="white" /><circle cx="379.4964665844789" cy="296.7769011597738" r="24.90861701471781" fill="white" /><circle cx="318.96863214847116" cy="473.94638455109657" r="21.283451528064674" fill="white" /><circle cx="76.5848836581867" cy="574.2377993903058" r="27.6820973151709" fill="white" /><circle cx="220.6251908832833" cy="337.66350731136646" r="27.285682562627468" fill="white" /><circle cx="390.97426969782856" cy="387.9411586528522" r="23.964137854099512" fill="white" /><circle cx="253.70572608009076" cy="113.37333640320249" r="18.120441343090732" fill="white" /><circle cx="252.4801712891347" cy="283.6935816599963" r="18.396364933793116" fill="white" /><circle cx="197.79832007233688" cy="82.31042966366098" r="28.095585648790554" fill="white" /><circle cx="258.43598282055956" cy="165.49794796735955" r="20.76339105376632" fill="white" /><circle cx="3.790941314073226" cy="415.43235040491703" r="20.0726203970041" fill="white" /><circle cx="344.3234410023002" cy="229.9533065435455" r="29.057262667281808" fill="white" /><circle cx="141.55782673861864" cy="582.4386348855242" r="15.529074416153293" fill="white" /><circle cx="184.58851732346994" cy="287.7180068228311" r="28.365854993089194" fill="white" /><circle cx="286.019952381718" cy="231.0651000286492" r="21.62201227011144" fill="white" /><circle cx="389.40201092237294" cy="324.6416261787839" r="11.838558653709423" fill="white" /><circle cx="129.17303138012838" cy="476.26766359985936" r="10.42630580174592" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Awaken the Giant Within
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Tony Robbins
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

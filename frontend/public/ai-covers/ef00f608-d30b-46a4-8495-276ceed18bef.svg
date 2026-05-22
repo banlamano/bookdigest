@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ef00f608-d30b-46a4-8495-276ceed18bef" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ef00f608-d30b-46a4-8495-276ceed18bef)" />
+  <g opacity="0.1">
+    <circle cx="322.5547150112966" cy="282.58247713951516" r="24.217708138825593" fill="white" /><circle cx="226.6780071888857" cy="79.3877377711406" r="19.707362172662677" fill="white" /><circle cx="47.23059006809014" cy="349.6971106091413" r="18.09789639581468" fill="white" /><circle cx="54.502001488398164" cy="122.19503709826336" r="28.02044138698048" fill="white" /><circle cx="309.0829892752149" cy="132.1344928165862" r="21.579888849817067" fill="white" /><circle cx="309.32237686306576" cy="589.4535302123309" r="15.590358916416625" fill="white" /><circle cx="151.89809151402764" cy="51.828660251549174" r="13.563984285197675" fill="white" /><circle cx="115.20278197252756" cy="466.6153648485352" r="16.307148617597914" fill="white" /><circle cx="367.7668644018509" cy="499.99529923305437" r="20.118724699684076" fill="white" /><circle cx="113.42874100216966" cy="226.80385089797937" r="18.777874335880814" fill="white" /><circle cx="2.408984504954681" cy="84.68916433436738" r="14.010937428100828" fill="white" /><circle cx="183.0630008803267" cy="400.5713885437447" r="21.89988441365079" fill="white" /><circle cx="53.66645173650695" cy="288.3918824665164" r="19.197171152837498" fill="white" /><circle cx="325.608247302441" cy="490.25798727762646" r="22.375699571790758" fill="white" /><circle cx="297.79367182867327" cy="205.28021810771565" r="29.907334072659026" fill="white" /><circle cx="184.92469174967675" cy="368.74058857615586" r="23.3222919845242" fill="white" /><circle cx="205.4652073749878" cy="367.09361374823726" r="13.393586172572842" fill="white" /><circle cx="290.7786871837941" cy="427.7247299697307" r="17.08164057471619" fill="white" /><circle cx="181.24898060072962" cy="0.8116121430878032" r="27.340096666714242" fill="white" /><circle cx="351.8127554138561" cy="500.2684530857492" r="16.373506540513954" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Kosmos: Eine Reise durch
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        das Universum
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Carl Sagan
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

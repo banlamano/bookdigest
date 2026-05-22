@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-098fa1c2-601f-48ad-aae0-ca4aacdaac57" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-098fa1c2-601f-48ad-aae0-ca4aacdaac57)" />
+  <g opacity="0.1">
+    <circle cx="256.04069243875125" cy="46.88785869932999" r="28.1143672764895" fill="white" /><circle cx="341.20369730728345" cy="3.5657811982068965" r="12.892498959477653" fill="white" /><circle cx="181.32945607526216" cy="503.4160516473781" r="15.783583901375827" fill="white" /><circle cx="68.87968496349055" cy="272.7747253443549" r="26.963361514167214" fill="white" /><circle cx="191.12449285191664" cy="218.9477960075637" r="18.590129118496073" fill="white" /><circle cx="136.96352973843221" cy="413.29626125537595" r="17.911607052458443" fill="white" /><circle cx="41.816130246630536" cy="191.09166955414167" r="26.727594410466406" fill="white" /><circle cx="182.41996526146943" cy="313.09183739540396" r="10.190110088037581" fill="white" /><circle cx="291.1628837954884" cy="5.764011925681101" r="13.716560823359629" fill="white" /><circle cx="260.3322288918085" cy="431.6618579810933" r="13.480227461410037" fill="white" /><circle cx="195.37524761031918" cy="14.794088095574832" r="15.669153219395856" fill="white" /><circle cx="190.21683770861796" cy="599.6103149762055" r="19.431123723040145" fill="white" /><circle cx="380.2495696107972" cy="9.175553174480044" r="16.30063206029048" fill="white" /><circle cx="349.67348808820293" cy="206.19562955084976" r="27.489992007030825" fill="white" /><circle cx="40.190342369686775" cy="96.60765660200663" r="14.942646173472077" fill="white" /><circle cx="236.3348724765329" cy="285.22752422341824" r="17.25698160068342" fill="white" /><circle cx="301.54098974141357" cy="490.827605907822" r="24.897112094108273" fill="white" /><circle cx="244.49739227996452" cy="525.0778027425714" r="10.14260647474552" fill="white" /><circle cx="235.7496006839582" cy="556.1777457121339" r="17.77873538656987" fill="white" /><circle cx="229.89683709904378" cy="563.0789281469296" r="21.362676494044084" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        You Are a Badass
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jen Sincero
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

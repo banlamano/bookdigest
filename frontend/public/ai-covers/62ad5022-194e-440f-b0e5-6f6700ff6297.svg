@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-62ad5022-194e-440f-b0e5-6f6700ff6297" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-62ad5022-194e-440f-b0e5-6f6700ff6297)" />
+  <g opacity="0.1">
+    <circle cx="395.3873297475154" cy="40.73914075982823" r="23.313701805006822" fill="white" /><circle cx="190.86025975215168" cy="241.58747551208967" r="18.142355578513687" fill="white" /><circle cx="372.7807465471181" cy="472.81045739307575" r="27.76144925938801" fill="white" /><circle cx="137.87138217592405" cy="366.66070122708953" r="25.29243238225329" fill="white" /><circle cx="278.60197676424235" cy="498.22394700399406" r="24.747230653846444" fill="white" /><circle cx="252.33992509276223" cy="35.95541052160465" r="22.256207939113715" fill="white" /><circle cx="247.09415688835077" cy="386.50443428161816" r="21.387920869426274" fill="white" /><circle cx="84.8517671267596" cy="386.4254960756911" r="23.760161722925687" fill="white" /><circle cx="215.3455073337999" cy="402.0527295231851" r="18.448735014393023" fill="white" /><circle cx="380.45664817352105" cy="146.18687360173" r="20.573409297178546" fill="white" /><circle cx="347.117014076894" cy="378.34517735329234" r="12.30916115238194" fill="white" /><circle cx="143.1540443545957" cy="117.19904804657652" r="14.07459584736207" fill="white" /><circle cx="399.9639976514878" cy="495.0490305840304" r="28.81572689940614" fill="white" /><circle cx="393.8031613648206" cy="280.2934514217581" r="15.584029675475648" fill="white" /><circle cx="272.3203000895131" cy="514.5581387153744" r="29.297078873609696" fill="white" /><circle cx="185.1931739698832" cy="318.06936437276096" r="12.028560422075403" fill="white" /><circle cx="39.98830464363423" cy="351.80379780379565" r="25.436006282435432" fill="white" /><circle cx="271.84982271071954" cy="523.8981999205525" r="15.183546991509612" fill="white" /><circle cx="292.62853387543186" cy="510.5419727335208" r="14.277308770810729" fill="white" /><circle cx="349.97664403014477" cy="374.2630337149195" r="21.698402966680867" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wettbewerbsstrategie:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Methoden zur Analyse von
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Branchen und Konkurrenten
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Michael Porter
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

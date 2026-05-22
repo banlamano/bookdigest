@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9f2edc2e-0b2e-4adf-a17f-0efcbea5dd1f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9f2edc2e-0b2e-4adf-a17f-0efcbea5dd1f)" />
+  <g opacity="0.1">
+    <circle cx="18.063505921447344" cy="580.3134005223518" r="14.465786863555525" fill="white" /><circle cx="105.73785549258616" cy="439.0450542336776" r="29.760241546368142" fill="white" /><circle cx="282.8652357141935" cy="86.90331642023312" r="25.624860151557638" fill="white" /><circle cx="263.83868645682367" cy="305.24990030555307" r="24.925390686172648" fill="white" /><circle cx="126.48913520755687" cy="354.25947705365206" r="28.670566465543132" fill="white" /><circle cx="129.466684726356" cy="181.95848060119263" r="26.803888757115363" fill="white" /><circle cx="41.682553309704275" cy="14.407810834858847" r="24.05764266357118" fill="white" /><circle cx="84.68625618190524" cy="491.4478061054358" r="24.4545945394715" fill="white" /><circle cx="360.2776792309369" cy="318.3900722241129" r="26.442000151086987" fill="white" /><circle cx="341.96555902454736" cy="101.56332067701197" r="26.834433441605064" fill="white" /><circle cx="36.21911611418223" cy="388.22703825637524" r="12.111057430130234" fill="white" /><circle cx="30.774148754004436" cy="110.86085959774476" r="10.03248747978732" fill="white" /><circle cx="97.30335082139376" cy="313.2733544343433" r="15.128109402011143" fill="white" /><circle cx="283.49082197911713" cy="239.10431194526808" r="27.311427732849502" fill="white" /><circle cx="178.30289780394915" cy="428.12255130958073" r="14.425704442583676" fill="white" /><circle cx="344.89876379971747" cy="568.2108941840793" r="15.675273895879664" fill="white" /><circle cx="160.96438724729913" cy="186.4261419044531" r="13.991217870231353" fill="white" /><circle cx="368.8863069828232" cy="141.98168914205698" r="10.445317823365059" fill="white" /><circle cx="395.2789675193499" cy="467.75051919443666" r="27.907511874768403" fill="white" /><circle cx="390.5995300725496" cy="75.20343573417061" r="17.866591786613565" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The New Jim Crow:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Masseninhaftierung und
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        die Entstehung einer
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Michelle Alexander
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HISTORY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e0b6d65b-1ac1-4ae1-8589-6bcc236eb7e0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e0b6d65b-1ac1-4ae1-8589-6bcc236eb7e0)" />
+  <g opacity="0.1">
+    <circle cx="274.19193448523214" cy="91.40119420498509" r="10.196524961186842" fill="white" /><circle cx="274.5270512635062" cy="473.8940765160229" r="14.504230880560494" fill="white" /><circle cx="349.51001037364307" cy="467.271933333033" r="27.35181506470664" fill="white" /><circle cx="383.78139886806434" cy="33.2837210179533" r="14.58925427009185" fill="white" /><circle cx="262.9777246643889" cy="57.24975167233446" r="26.937140011311968" fill="white" /><circle cx="302.6765825345297" cy="415.46778610630946" r="26.93387426619471" fill="white" /><circle cx="200.29506268083747" cy="359.38795255007966" r="12.192931226133055" fill="white" /><circle cx="299.01896605185055" cy="58.56004237124566" r="23.712773398920426" fill="white" /><circle cx="233.53558220876124" cy="87.68320966470868" r="19.17801325580455" fill="white" /><circle cx="380.14853659004444" cy="261.42668101915467" r="18.440885402163055" fill="white" /><circle cx="78.67327664862822" cy="566.7450918669686" r="14.07108299005005" fill="white" /><circle cx="361.67908360534983" cy="266.04857227768855" r="23.9762190368157" fill="white" /><circle cx="16.903914830774625" cy="77.69798740861349" r="14.630043662203809" fill="white" /><circle cx="220.43645818578455" cy="367.977631280523" r="14.806950516788937" fill="white" /><circle cx="267.86794884300866" cy="118.82505240482861" r="13.924607447180918" fill="white" /><circle cx="235.9611793516577" cy="160.41218376943647" r="18.682021464482865" fill="white" /><circle cx="398.0676095139831" cy="105.65190826390871" r="29.95226424844438" fill="white" /><circle cx="34.51265178260221" cy="126.97733920373429" r="24.131051496204215" fill="white" /><circle cx="19.980552423074727" cy="508.1048997744583" r="26.703963296490926" fill="white" /><circle cx="309.80929345985226" cy="160.22675107269663" r="13.565019813675786" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Culture Code
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Daniel Coyle
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

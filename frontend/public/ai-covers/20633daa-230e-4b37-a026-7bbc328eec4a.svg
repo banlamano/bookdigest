@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-20633daa-230e-4b37-a026-7bbc328eec4a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-20633daa-230e-4b37-a026-7bbc328eec4a)" />
+  <g opacity="0.1">
+    <circle cx="181.87628859247363" cy="14.992090696591266" r="12.778154178971722" fill="white" /><circle cx="59.72170900941305" cy="466.9672079038631" r="17.04147751575764" fill="white" /><circle cx="86.7379983186289" cy="76.0219076092272" r="16.847208144913097" fill="white" /><circle cx="163.60617270581722" cy="179.83513725961208" r="16.026228453751244" fill="white" /><circle cx="93.94694524248894" cy="324.60629814022957" r="26.313239099128836" fill="white" /><circle cx="308.3460628810582" cy="153.7530418504146" r="27.57496211893868" fill="white" /><circle cx="183.65940244902183" cy="113.62814745378044" r="27.140718983407503" fill="white" /><circle cx="172.79441459930572" cy="412.3452259569584" r="20.248065612578213" fill="white" /><circle cx="118.79670038212052" cy="433.7188812395276" r="15.061914229321463" fill="white" /><circle cx="288.35350299260074" cy="369.6761654637605" r="10.323443720786642" fill="white" /><circle cx="84.83789857871527" cy="3.0417823627498564" r="18.15500109826587" fill="white" /><circle cx="94.1530386773962" cy="450.7106480457329" r="20.522319028400666" fill="white" /><circle cx="43.49490948079677" cy="420.04996638427195" r="21.6347223148615" fill="white" /><circle cx="33.45962515892764" cy="161.98588142407564" r="26.589127817433507" fill="white" /><circle cx="164.4197926745104" cy="64.06392926974331" r="12.589999248386663" fill="white" /><circle cx="187.02442199960453" cy="363.37851070378855" r="25.4679802923612" fill="white" /><circle cx="18.113962817006257" cy="522.5953863681436" r="29.209096734944676" fill="white" /><circle cx="320.05328681304405" cy="51.87429313350891" r="10.228581056977555" fill="white" /><circle cx="344.1675559700744" cy="44.71269633522543" r="26.07130768598518" fill="white" /><circle cx="240.83415354219952" cy="181.49572170100325" r="26.700665974885425" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The China Study
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        T. Colin Campbell
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f88c8352-331b-4b77-a60a-2d1b72cef873" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f88c8352-331b-4b77-a60a-2d1b72cef873)" />
+  <g opacity="0.1">
+    <circle cx="28.161834609124227" cy="262.3852083991289" r="12.471629104922055" fill="white" /><circle cx="387.5197664510659" cy="590.3124412029882" r="17.790456716070967" fill="white" /><circle cx="47.863174750602425" cy="229.62249133741238" r="12.016538144924354" fill="white" /><circle cx="43.45161392706181" cy="565.6293833625721" r="16.668204662891124" fill="white" /><circle cx="211.1498421385727" cy="57.55339571183677" r="20.48522257803174" fill="white" /><circle cx="307.39828833014377" cy="530.3801985715638" r="17.330354406858852" fill="white" /><circle cx="285.4821699049651" cy="36.07820682852898" r="16.531033313710125" fill="white" /><circle cx="288.97513822726563" cy="440.64869938994985" r="24.325060133683156" fill="white" /><circle cx="100.1655241982657" cy="121.35985619445555" r="21.879434397637162" fill="white" /><circle cx="365.80811773267527" cy="322.5525128363226" r="29.71959263000111" fill="white" /><circle cx="153.98269136985652" cy="249.99975831516775" r="29.031913240829144" fill="white" /><circle cx="95.21854627069484" cy="505.3847620608701" r="29.90468998985773" fill="white" /><circle cx="127.34792100269598" cy="17.784809550196744" r="15.932235996909663" fill="white" /><circle cx="64.18725949189805" cy="542.1728984437176" r="20.299018151871486" fill="white" /><circle cx="311.8934458330918" cy="165.6001575967187" r="17.50907869218566" fill="white" /><circle cx="69.77234075154848" cy="473.8565344158213" r="17.220250916485483" fill="white" /><circle cx="217.38135660573988" cy="310.3861340715794" r="28.95243165923259" fill="white" /><circle cx="53.04500293858978" cy="176.61106071845094" r="18.562183447097997" fill="white" /><circle cx="21.678074284580084" cy="560.8364266489021" r="26.531613329982" fill="white" /><circle cx="202.82491391865943" cy="162.55353141360828" r="17.95644433478462" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wahre Herzensgüte: Die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        revolutionäre Kunst des
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Glücks
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Sharon Salzberg
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

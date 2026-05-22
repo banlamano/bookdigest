@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b6de4254-40ed-4191-a36d-3658d72a6d54" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b6de4254-40ed-4191-a36d-3658d72a6d54)" />
+  <g opacity="0.1">
+    <circle cx="93.49966752180254" cy="575.838028287641" r="16.835881705395114" fill="white" /><circle cx="31.71990933161446" cy="405.80598807702063" r="20.55820284692946" fill="white" /><circle cx="240.29654037145147" cy="177.1723747640502" r="13.157744353775202" fill="white" /><circle cx="54.8200728205761" cy="124.83667682121535" r="12.891746045402462" fill="white" /><circle cx="78.0748906945986" cy="33.269698947272516" r="14.032499905282457" fill="white" /><circle cx="170.470348132586" cy="374.3026796403642" r="22.6854069620451" fill="white" /><circle cx="209.98767531136914" cy="395.5314553271006" r="14.705038244123214" fill="white" /><circle cx="230.24091862683704" cy="235.68798040750843" r="20.23892511480291" fill="white" /><circle cx="290.14255370786407" cy="85.1694431833796" r="13.543009019914379" fill="white" /><circle cx="147.54168230739276" cy="323.17591489864253" r="24.257097554353244" fill="white" /><circle cx="324.886986697407" cy="341.6978293154068" r="24.614195573671623" fill="white" /><circle cx="322.624249150694" cy="152.33038967824174" r="17.91359882624578" fill="white" /><circle cx="354.2913807634447" cy="217.2851698254256" r="15.626447108177041" fill="white" /><circle cx="290.97650917862353" cy="393.3458329919112" r="16.449144626050966" fill="white" /><circle cx="325.27523738260345" cy="298.36020411734813" r="12.44574234062746" fill="white" /><circle cx="110.33578638420298" cy="260.92523667090455" r="20.013133677622584" fill="white" /><circle cx="150.92804727650483" cy="366.4118877334045" r="17.424275016323474" fill="white" /><circle cx="16.55234280452067" cy="479.4330309481062" r="17.689677816410214" fill="white" /><circle cx="86.51831629406423" cy="100.4782318855237" r="14.357862866239843" fill="white" /><circle cx="168.3499557251843" cy="249.19246756612498" r="29.53686710441241" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Creativity Inc
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ed Catmull
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

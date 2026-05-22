@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-55ff9b1b-20c3-4f21-a917-f278d2cd5722" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-55ff9b1b-20c3-4f21-a917-f278d2cd5722)" />
+  <g opacity="0.1">
+    <circle cx="106.67325349732515" cy="296.65883606406396" r="21.045522016638195" fill="white" /><circle cx="368.1551978778225" cy="594.9525551374642" r="15.474949631114999" fill="white" /><circle cx="171.57706432303087" cy="213.78038700560506" r="19.48647811619519" fill="white" /><circle cx="332.0232849840483" cy="407.15432185791855" r="14.673925061545905" fill="white" /><circle cx="392.00231666508046" cy="16.04839188510192" r="24.15670224514796" fill="white" /><circle cx="297.3437811486771" cy="437.7798338493838" r="28.12243911853966" fill="white" /><circle cx="329.4254094213133" cy="313.41352628759483" r="15.579359680643247" fill="white" /><circle cx="291.51971195940627" cy="223.22714108313988" r="24.955960165354973" fill="white" /><circle cx="275.48748555001714" cy="171.74787104206845" r="28.51541301205068" fill="white" /><circle cx="287.637763783995" cy="259.81365876292375" r="19.773232152965704" fill="white" /><circle cx="80.94769121091932" cy="332.6835223903172" r="24.333379355096113" fill="white" /><circle cx="174.03365781630757" cy="111.75699002691857" r="14.903494101476984" fill="white" /><circle cx="346.6810954880793" cy="438.48721664559065" r="18.540334810043" fill="white" /><circle cx="147.63004933290915" cy="433.6883454012489" r="17.61150961847173" fill="white" /><circle cx="161.4489434669602" cy="282.04568579997243" r="14.562344899196706" fill="white" /><circle cx="43.328587997419454" cy="502.38461257700345" r="26.038994795519216" fill="white" /><circle cx="285.4603613992397" cy="227.2172288205158" r="16.449912831177095" fill="white" /><circle cx="124.81734708360057" cy="440.36333446098905" r="29.818451494651516" fill="white" /><circle cx="319.1947240430162" cy="436.9115027305134" r="20.12831441617675" fill="white" /><circle cx="31.99783260101121" cy="450.1259805148774" r="12.721977146591295" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        168 Stunden: Wie man mehr
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Zeit für das Wichtige
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        findet
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Laura Vanderkam
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a9b1bb2c-6784-4f10-98e0-9fda2c2d9324" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a9b1bb2c-6784-4f10-98e0-9fda2c2d9324)" />
+  <g opacity="0.1">
+    <circle cx="210.2665333890064" cy="262.2068768963642" r="24.09936276458498" fill="white" /><circle cx="102.99280179682415" cy="91.27262776401439" r="26.048394836848594" fill="white" /><circle cx="265.19924441840186" cy="562.2837455634532" r="21.216527910443837" fill="white" /><circle cx="246.31533583036963" cy="500.71254584462184" r="18.121419399504376" fill="white" /><circle cx="276.51662876544634" cy="318.229745550522" r="29.41745713077872" fill="white" /><circle cx="357.67319717352154" cy="51.50542527696027" r="27.242539354076023" fill="white" /><circle cx="233.52176476750623" cy="39.360834204535045" r="22.908532922359733" fill="white" /><circle cx="31.053049523369005" cy="375.78449883257434" r="28.377827040026805" fill="white" /><circle cx="341.451719763109" cy="325.27862063945486" r="27.927209634568047" fill="white" /><circle cx="117.5272532807119" cy="269.51908080232977" r="10.005064549387367" fill="white" /><circle cx="192.62857616872301" cy="267.9962421775247" r="15.906711454792541" fill="white" /><circle cx="389.6412452673909" cy="128.11356906566695" r="24.167367169884294" fill="white" /><circle cx="44.90030394153184" cy="460.40042124897644" r="12.637340957810785" fill="white" /><circle cx="142.54659386983383" cy="26.840933098760967" r="23.512625663985354" fill="white" /><circle cx="282.48310448820695" cy="446.83639889666136" r="19.569471926124685" fill="white" /><circle cx="49.918453984390695" cy="83.65926320965298" r="15.822945747488573" fill="white" /><circle cx="248.73418622436532" cy="386.38854810678436" r="29.651417139781884" fill="white" /><circle cx="207.1339539738382" cy="522.6806134285945" r="23.466062469515364" fill="white" /><circle cx="352.67622823120644" cy="189.52303749013126" r="13.19889926908197" fill="white" /><circle cx="142.92860689424546" cy="497.072099788377" r="24.646382816932952" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Denke GROSS!: Die Magie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        des erfolgreichen Denkens
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        David Schwartz
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

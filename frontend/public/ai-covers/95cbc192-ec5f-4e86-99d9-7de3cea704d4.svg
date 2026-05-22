@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-95cbc192-ec5f-4e86-99d9-7de3cea704d4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-95cbc192-ec5f-4e86-99d9-7de3cea704d4)" />
+  <g opacity="0.1">
+    <circle cx="182.43101919054746" cy="391.34222448679435" r="28.58318149946306" fill="white" /><circle cx="251.60755703917545" cy="72.481035314672" r="10.572137168825" fill="white" /><circle cx="324.2686670668111" cy="335.01851134912806" r="19.798670374609877" fill="white" /><circle cx="265.83134415344483" cy="193.79650518784345" r="18.95663390092821" fill="white" /><circle cx="62.01672697962985" cy="461.9240686336158" r="27.867803630213963" fill="white" /><circle cx="266.3721345082559" cy="492.50823129326176" r="29.437130910216624" fill="white" /><circle cx="48.670063504369665" cy="279.8509286368993" r="13.803702229014585" fill="white" /><circle cx="316.9753337437481" cy="98.86120418922957" r="29.74076059055917" fill="white" /><circle cx="328.04069657766746" cy="584.8581670333048" r="11.326280166460354" fill="white" /><circle cx="349.39147065149155" cy="341.2049081949042" r="18.506481972683233" fill="white" /><circle cx="77.41817477720403" cy="85.17547656536341" r="28.765194173124126" fill="white" /><circle cx="354.607353839729" cy="594.5087624952085" r="16.560004471583444" fill="white" /><circle cx="350.6990578354614" cy="60.95478502634537" r="22.053926887214203" fill="white" /><circle cx="365.5851561012845" cy="381.13237503443276" r="26.834572815534415" fill="white" /><circle cx="190.47007784316256" cy="377.26107046587924" r="20.251685028513585" fill="white" /><circle cx="320.98145161565037" cy="383.1969685383242" r="22.109227077362277" fill="white" /><circle cx="183.9134835090087" cy="454.31643834701237" r="23.739202280989808" fill="white" /><circle cx="236.76233171496136" cy="173.31028776141227" r="24.027656148846983" fill="white" /><circle cx="336.3936031623309" cy="373.30813282214217" r="11.59952011384621" fill="white" /><circle cx="295.41431482545795" cy="178.09552324483008" r="25.436664107066726" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Play Bigger
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Al Ramadan
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

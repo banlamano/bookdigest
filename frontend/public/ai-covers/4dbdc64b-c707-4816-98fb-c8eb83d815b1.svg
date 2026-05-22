@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-4dbdc64b-c707-4816-98fb-c8eb83d815b1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-4dbdc64b-c707-4816-98fb-c8eb83d815b1)" />
+  <g opacity="0.1">
+    <circle cx="309.39574746394914" cy="175.26442987475198" r="15.490090348803488" fill="white" /><circle cx="262.7386399817571" cy="503.64927440106317" r="21.664960193864676" fill="white" /><circle cx="45.291346184225475" cy="352.61772566031283" r="20.481975196338734" fill="white" /><circle cx="82.08823889820671" cy="1.4134666564803222" r="11.964600507297616" fill="white" /><circle cx="77.0671920714611" cy="508.33367870581804" r="25.102646731576364" fill="white" /><circle cx="128.94126385689844" cy="368.16909725345033" r="24.92749795791802" fill="white" /><circle cx="108.2824422594999" cy="537.6274196172936" r="12.209243144928001" fill="white" /><circle cx="332.0323552268222" cy="76.57305535610408" r="19.661659146689562" fill="white" /><circle cx="388.47740360109833" cy="279.20465138848" r="11.439999620720908" fill="white" /><circle cx="23.013278088400966" cy="584.0527223147815" r="12.780251094317137" fill="white" /><circle cx="349.94454483018325" cy="38.30973549416321" r="15.15646112785548" fill="white" /><circle cx="382.7040505994395" cy="497.79563319138947" r="20.271920300497577" fill="white" /><circle cx="90.30582584971097" cy="148.40351507458152" r="23.965179215709043" fill="white" /><circle cx="277.4475686264935" cy="274.2020464540977" r="28.72251788891822" fill="white" /><circle cx="294.73071843039344" cy="55.31897077951513" r="11.014839781267947" fill="white" /><circle cx="250.37835749886597" cy="528.2357671199786" r="22.396769225052928" fill="white" /><circle cx="365.4368177100901" cy="284.33493687416814" r="13.99179849459941" fill="white" /><circle cx="327.2749236291767" cy="27.66665787362097" r="28.080413917373015" fill="white" /><circle cx="390.85908355638685" cy="266.59193699006244" r="16.83933224601597" fill="white" /><circle cx="182.31631863985393" cy="204.8647251820958" r="25.601327162747857" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Total Money Makeover: Ein
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        bewährter Plan für
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        finanzielle Freiheit
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Dave Ramsey
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

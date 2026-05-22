@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-376bac2b-9865-49c3-afc1-61baf64a26cf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-376bac2b-9865-49c3-afc1-61baf64a26cf)" />
+  <g opacity="0.1">
+    <circle cx="348.13516463643145" cy="214.45169522607773" r="14.750122367290516" fill="white" /><circle cx="199.39275238310347" cy="409.4075867902511" r="11.553098585714404" fill="white" /><circle cx="205.84574918216987" cy="516.8177819450196" r="23.296987423983424" fill="white" /><circle cx="368.5637996485389" cy="371.1722998579554" r="17.722392300058992" fill="white" /><circle cx="159.9882414341294" cy="274.1442517265841" r="10.823209510229317" fill="white" /><circle cx="107.49055048644776" cy="476.92691234321876" r="27.263568223548617" fill="white" /><circle cx="18.43739082733684" cy="146.81159823779592" r="18.74716127851086" fill="white" /><circle cx="359.8557813295961" cy="145.876530424347" r="27.82532509740865" fill="white" /><circle cx="14.46928145984856" cy="528.4078393447293" r="15.772458630012077" fill="white" /><circle cx="253.40604981853141" cy="367.1759223727511" r="25.79826821284633" fill="white" /><circle cx="39.82049522655555" cy="222.84740555276613" r="10.736010810476305" fill="white" /><circle cx="283.2982486467628" cy="52.082609975449486" r="28.552249204914474" fill="white" /><circle cx="147.68779981357935" cy="370.2944884114588" r="11.827015467915933" fill="white" /><circle cx="289.82087147946584" cy="584.728170017372" r="18.651192623499732" fill="white" /><circle cx="288.8218490632747" cy="229.249743290264" r="25.2302077038089" fill="white" /><circle cx="224.63661076494822" cy="17.476650959234163" r="20.458166724330702" fill="white" /><circle cx="103.83771674040779" cy="100.42468982971478" r="23.376190099912364" fill="white" /><circle cx="145.4333240149004" cy="579.9352172756353" r="17.486431502637082" fill="white" /><circle cx="74.20723584774755" cy="133.200880271827" r="20.58972969794658" fill="white" /><circle cx="169.76741924851692" cy="120.48360191111863" r="29.276615767267725" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Einstein: Sein Leben –
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Sein Universum
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Walter Isaacson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

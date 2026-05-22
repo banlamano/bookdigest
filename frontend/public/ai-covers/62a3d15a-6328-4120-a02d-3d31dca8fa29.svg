@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-62a3d15a-6328-4120-a02d-3d31dca8fa29" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-62a3d15a-6328-4120-a02d-3d31dca8fa29)" />
+  <g opacity="0.1">
+    <circle cx="15.94760179559378" cy="382.3067358965301" r="27.299309859698948" fill="white" /><circle cx="245.03993441112192" cy="40.18874036052631" r="29.99963151321786" fill="white" /><circle cx="57.6020140248616" cy="298.1098395044894" r="17.08203078517772" fill="white" /><circle cx="89.47740138102537" cy="357.18977325926824" r="25.797434850247736" fill="white" /><circle cx="102.31562017643259" cy="201.16151830236632" r="20.58413404815994" fill="white" /><circle cx="337.79535491351555" cy="590.5252678544794" r="27.38457200352705" fill="white" /><circle cx="316.52583775821165" cy="418.86389142739506" r="16.07593586555833" fill="white" /><circle cx="360.79726696171616" cy="546.7962927304801" r="17.592450217755058" fill="white" /><circle cx="334.3919929820936" cy="126.5650394854422" r="10.305022931625054" fill="white" /><circle cx="136.51363304327032" cy="34.91854314209824" r="19.191724877058306" fill="white" /><circle cx="9.640001769138928" cy="287.5036980453182" r="18.657863310738854" fill="white" /><circle cx="119.77636084277101" cy="25.753294823735075" r="13.735712557312226" fill="white" /><circle cx="146.22437818373135" cy="320.257471560951" r="24.57387789829303" fill="white" /><circle cx="156.34886440758103" cy="277.0143741741682" r="24.490124390881313" fill="white" /><circle cx="205.56909085167115" cy="182.84300255983982" r="13.576726618756169" fill="white" /><circle cx="11.087531750507784" cy="576.4554885619611" r="18.0696429838362" fill="white" /><circle cx="347.4287653139279" cy="69.0647823006185" r="11.058473127233677" fill="white" /><circle cx="226.28018859133948" cy="377.1197491494082" r="28.88350190141335" fill="white" /><circle cx="104.28858174450761" cy="74.44136201969829" r="28.294102468877988" fill="white" /><circle cx="200.21664906226437" cy="437.84063927145525" r="12.370195730839605" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Kunst, das Ding
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        durchzuziehen:
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Überwindung der
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Steven Pressfield
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a096aea4-abfb-4c5f-b1c5-9a0183ef5e60" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a096aea4-abfb-4c5f-b1c5-9a0183ef5e60)" />
+  <g opacity="0.1">
+    <circle cx="360.2372648058993" cy="313.406643490637" r="14.056239881259664" fill="white" /><circle cx="214.94566197782513" cy="149.76579107821286" r="25.677164782407083" fill="white" /><circle cx="113.4822726104662" cy="450.25421978955256" r="15.389604086805097" fill="white" /><circle cx="224.6636888359928" cy="535.5741395748214" r="10.54309231904697" fill="white" /><circle cx="308.8516761360811" cy="577.2674466032388" r="26.30379650126592" fill="white" /><circle cx="178.1969228696755" cy="576.8913982234487" r="29.501420238162666" fill="white" /><circle cx="272.238809154217" cy="562.999152273686" r="24.511616003677684" fill="white" /><circle cx="123.23327201266463" cy="267.7120342880616" r="26.257474245490286" fill="white" /><circle cx="234.98011608772802" cy="547.0466626088862" r="19.196322064291934" fill="white" /><circle cx="298.4749860777739" cy="150.780454342732" r="23.076315747570725" fill="white" /><circle cx="223.749513928609" cy="593.0052876420394" r="24.17216248197488" fill="white" /><circle cx="110.68821227210645" cy="548.7590145993767" r="20.00881952148208" fill="white" /><circle cx="63.69844730622791" cy="530.2698821492818" r="29.551971412448268" fill="white" /><circle cx="17.1922243176164" cy="334.1931223406338" r="10.949851365228529" fill="white" /><circle cx="305.93076971510465" cy="191.3129295031471" r="12.027350772140654" fill="white" /><circle cx="60.145112532543536" cy="502.0590958366135" r="29.304454394759752" fill="white" /><circle cx="181.9867293047078" cy="28.05658819049239" r="29.71715096272042" fill="white" /><circle cx="209.5216962522415" cy="332.36260182723817" r="16.392944697388494" fill="white" /><circle cx="368.3637723053243" cy="18.127065250296948" r="27.68739951880565" fill="white" /><circle cx="362.5451113759074" cy="85.9544407961578" r="22.637356346588255" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Geben und Nehmen: Warum
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        wir mit Großzügigkeit am
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        weitesten kommen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Adam Grant
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

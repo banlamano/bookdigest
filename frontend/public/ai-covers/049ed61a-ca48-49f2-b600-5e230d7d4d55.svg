@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-049ed61a-ca48-49f2-b600-5e230d7d4d55" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-049ed61a-ca48-49f2-b600-5e230d7d4d55)" />
+  <g opacity="0.1">
+    <circle cx="12.811392521396137" cy="67.09291952981931" r="19.82952931205519" fill="white" /><circle cx="285.07308196521944" cy="364.4196021010861" r="22.555440792192016" fill="white" /><circle cx="90.58661501646395" cy="396.5460912759873" r="20.22342460304686" fill="white" /><circle cx="285.8853632774033" cy="235.84701881160944" r="23.078089851828203" fill="white" /><circle cx="131.90873110219363" cy="388.2032159773799" r="25.07471368871438" fill="white" /><circle cx="20.555515669606493" cy="122.18398878779193" r="12.64911674831916" fill="white" /><circle cx="104.80810829528622" cy="374.5040408886781" r="10.807673545092866" fill="white" /><circle cx="228.398562912385" cy="23.16324010317001" r="18.047020405608293" fill="white" /><circle cx="283.81070406307464" cy="68.95314299922009" r="26.014452913821415" fill="white" /><circle cx="189.35869497309733" cy="254.2767656107265" r="10.45259967935017" fill="white" /><circle cx="332.3406571554079" cy="187.59523670705738" r="20.707209237951666" fill="white" /><circle cx="134.52890200887464" cy="592.6604132514435" r="11.35171588082776" fill="white" /><circle cx="298.46750844118145" cy="220.0460637924148" r="17.134625257049738" fill="white" /><circle cx="127.69576740245002" cy="68.69867508577796" r="25.0925840237076" fill="white" /><circle cx="175.4099689683199" cy="320.1897544626061" r="25.545170885907154" fill="white" /><circle cx="45.9315931441826" cy="422.4025323015317" r="15.642699910289824" fill="white" /><circle cx="21.30164832492745" cy="468.2637340344026" r="25.213637434227103" fill="white" /><circle cx="346.06780261770547" cy="353.10291315544214" r="21.987962300263003" fill="white" /><circle cx="206.09271754245353" cy="558.0255714747135" r="15.983393503380858" fill="white" /><circle cx="336.5919809630556" cy="592.33520532418" r="21.35401184223845" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Happiness Hypothesis
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Jonathan Haidt
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

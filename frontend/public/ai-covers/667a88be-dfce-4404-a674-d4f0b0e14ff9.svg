@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-667a88be-dfce-4404-a674-d4f0b0e14ff9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-667a88be-dfce-4404-a674-d4f0b0e14ff9)" />
+  <g opacity="0.1">
+    <circle cx="327.7265213458989" cy="494.1203177918342" r="14.643698261273087" fill="white" /><circle cx="300.1475888735498" cy="555.6373420574411" r="23.231755535508082" fill="white" /><circle cx="339.62810581084017" cy="382.38743482759344" r="13.687697251213127" fill="white" /><circle cx="183.5620391064054" cy="249.10255819734743" r="10.106694981803937" fill="white" /><circle cx="281.65239679284014" cy="568.574758492126" r="14.507347339818551" fill="white" /><circle cx="393.2177157246927" cy="335.29202707849436" r="16.998150769711458" fill="white" /><circle cx="142.49341742773396" cy="149.50856494372638" r="29.838749404002858" fill="white" /><circle cx="262.4580573032707" cy="57.14430281868073" r="15.716998490593767" fill="white" /><circle cx="119.43626948378747" cy="88.49216418679116" r="15.620227290844035" fill="white" /><circle cx="134.4179250698786" cy="242.5572011273269" r="26.58977960366512" fill="white" /><circle cx="53.0925547457731" cy="562.7749459094882" r="19.50330175694556" fill="white" /><circle cx="260.05607542297685" cy="35.43339842054554" r="22.77678499913226" fill="white" /><circle cx="10.929330143160598" cy="280.12009792210375" r="16.848781470328348" fill="white" /><circle cx="319.23484436846417" cy="465.1074432554264" r="29.04074424433897" fill="white" /><circle cx="93.11266212978792" cy="424.6736160816925" r="28.996998048937908" fill="white" /><circle cx="35.66276147770839" cy="219.2199268707376" r="23.57548928464349" fill="white" /><circle cx="194.79980203511985" cy="170.30178601687456" r="17.07097871697275" fill="white" /><circle cx="369.32606668358744" cy="323.9916971542075" r="28.606046515435754" fill="white" /><circle cx="262.79076565648086" cy="107.73542558931462" r="27.340432034591956" fill="white" /><circle cx="326.2342037232715" cy="333.9540133060809" r="28.516666178688773" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der große Trip
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Cheryl Strayed
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

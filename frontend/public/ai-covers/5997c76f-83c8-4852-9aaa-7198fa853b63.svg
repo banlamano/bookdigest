@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5997c76f-83c8-4852-9aaa-7198fa853b63" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5997c76f-83c8-4852-9aaa-7198fa853b63)" />
+  <g opacity="0.1">
+    <circle cx="111.40394773165592" cy="44.2453200574471" r="23.00810325121146" fill="white" /><circle cx="256.68216052482376" cy="183.14511539910006" r="21.0441694338589" fill="white" /><circle cx="21.28414193179062" cy="423.3555940131794" r="29.020002580161275" fill="white" /><circle cx="96.03621859839637" cy="388.3769574713386" r="13.104967470193724" fill="white" /><circle cx="222.4542640774778" cy="339.03695753145837" r="18.463245506185874" fill="white" /><circle cx="356.80790406816743" cy="382.49896780660634" r="22.092301525419806" fill="white" /><circle cx="309.9502085978963" cy="24.677920546730103" r="12.349204595992745" fill="white" /><circle cx="358.20069045962737" cy="365.9086277309192" r="20.905866499271113" fill="white" /><circle cx="382.5338310248783" cy="59.15117742428089" r="18.46185328093483" fill="white" /><circle cx="179.07037882392098" cy="587.2888964441601" r="11.143869223779026" fill="white" /><circle cx="89.47047245823474" cy="271.3346433266134" r="14.77532021329532" fill="white" /><circle cx="233.12763495539653" cy="282.1144447978673" r="25.899119739751903" fill="white" /><circle cx="113.78860381596998" cy="485.14539981809975" r="10.191086571418744" fill="white" /><circle cx="45.858612998496405" cy="449.1252155630369" r="19.233383730412484" fill="white" /><circle cx="203.8993023228404" cy="131.04012712458947" r="24.447932368836092" fill="white" /><circle cx="358.66901474945763" cy="224.77598260708584" r="26.59553391887118" fill="white" /><circle cx="187.82691727282327" cy="54.17030321534846" r="26.252891413172176" fill="white" /><circle cx="123.23706332455413" cy="241.13085787836684" r="28.582020766998525" fill="white" /><circle cx="2.7082701239323104" cy="437.57324260182" r="18.583352182345685" fill="white" /><circle cx="291.71554704480644" cy="253.35758201650944" r="16.833869235801142" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Homo Deus: Eine kurze
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Geschichte von Morgen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Yuval Noah Harari
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

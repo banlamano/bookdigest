@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8232030c-51bf-4929-88bf-07544d46bf7d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8232030c-51bf-4929-88bf-07544d46bf7d)" />
+  <g opacity="0.1">
+    <circle cx="65.41723839198367" cy="146.5696549825333" r="28.748574188793594" fill="white" /><circle cx="72.8596210153969" cy="15.395935567843" r="27.626709432218487" fill="white" /><circle cx="41.92962606565045" cy="198.26879645421192" r="25.84360246088019" fill="white" /><circle cx="369.41230040438785" cy="38.84483897943301" r="10.318601065587956" fill="white" /><circle cx="136.83077154221718" cy="518.3189790664744" r="16.511590126227027" fill="white" /><circle cx="125.52384700027295" cy="573.3939862792841" r="26.85790884510751" fill="white" /><circle cx="180.40224613440662" cy="59.65230998244295" r="21.026842362569063" fill="white" /><circle cx="104.4859808941938" cy="253.07004265884004" r="20.98754083289935" fill="white" /><circle cx="359.5726492771733" cy="118.10133556190792" r="27.477927319285488" fill="white" /><circle cx="171.4350462686567" cy="15.030724414243402" r="17.726982521707644" fill="white" /><circle cx="114.44621937183466" cy="343.4923928255091" r="25.237941972282684" fill="white" /><circle cx="399.71798329267165" cy="564.9445870382634" r="12.302618209649792" fill="white" /><circle cx="184.5022965969028" cy="64.11219394257874" r="12.721300866506894" fill="white" /><circle cx="81.04505731142422" cy="109.63999623434326" r="16.14715177300273" fill="white" /><circle cx="75.45553746454732" cy="457.76007706442385" r="18.949700608323127" fill="white" /><circle cx="327.4419010280049" cy="216.5559767231152" r="11.01020933229802" fill="white" /><circle cx="383.45239868145296" cy="443.5381127676219" r="21.800155335676617" fill="white" /><circle cx="397.5092329692064" cy="428.40928127352436" r="28.254300663603996" fill="white" /><circle cx="375.34097122985537" cy="101.89470283148074" r="28.94956866060465" fill="white" /><circle cx="297.55632423011843" cy="70.90575619664772" r="14.104198409754547" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Eine Handvoll Sterne
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Jojo Moyes
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

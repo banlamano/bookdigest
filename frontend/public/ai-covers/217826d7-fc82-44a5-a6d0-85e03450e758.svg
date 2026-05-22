@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-217826d7-fc82-44a5-a6d0-85e03450e758" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-217826d7-fc82-44a5-a6d0-85e03450e758)" />
+  <g opacity="0.1">
+    <circle cx="118.53914907971297" cy="403.7214047297458" r="19.87096691289654" fill="white" /><circle cx="238.63846261730285" cy="464.0338280576744" r="28.1840102889389" fill="white" /><circle cx="313.57697947962106" cy="396.6232921792612" r="11.84407820995046" fill="white" /><circle cx="320.14643890428914" cy="261.0868480358658" r="18.775062149620958" fill="white" /><circle cx="307.76776593347387" cy="140.72202685107155" r="26.523437904627162" fill="white" /><circle cx="209.46795521728174" cy="460.02692480994904" r="15.288696307477336" fill="white" /><circle cx="186.93427747801127" cy="47.28778309246751" r="12.964678467133258" fill="white" /><circle cx="109.2299200999058" cy="570.3566247370192" r="14.69389090921023" fill="white" /><circle cx="27.863973119776063" cy="525.5157569352797" r="13.477828180519298" fill="white" /><circle cx="173.0283085263272" cy="588.8123075509861" r="15.649985948962444" fill="white" /><circle cx="321.7664477456809" cy="36.80044693345253" r="25.337541159817473" fill="white" /><circle cx="102.33290393354592" cy="415.12407330765745" r="21.713860980786087" fill="white" /><circle cx="23.199280009108225" cy="576.5943593915404" r="15.715824830781989" fill="white" /><circle cx="233.26001956878147" cy="468.6794119693349" r="21.97219322956849" fill="white" /><circle cx="394.89005254351815" cy="397.7056358583228" r="13.003604180997572" fill="white" /><circle cx="383.45682983889293" cy="491.9381626871144" r="27.762214614431123" fill="white" /><circle cx="281.0642006562714" cy="494.5131189007326" r="26.16490051116214" fill="white" /><circle cx="44.00229458585834" cy="292.04955204133137" r="23.274366346724737" fill="white" /><circle cx="280.7340336686723" cy="34.80871299107293" r="23.833389397491693" fill="white" /><circle cx="143.4257932021529" cy="532.9349068154019" r="21.53569023125554" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The 12 Week Year
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Brian Moran
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

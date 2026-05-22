@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-6bd9fe1e-f111-4cd5-9142-d78a315c875a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-6bd9fe1e-f111-4cd5-9142-d78a315c875a)" />
+  <g opacity="0.1">
+    <circle cx="9.076014153758116" cy="17.789654554146917" r="23.26810281305188" fill="white" /><circle cx="203.75533926189973" cy="17.530000801735945" r="25.98370620554563" fill="white" /><circle cx="180.04478082819583" cy="56.5663329025855" r="19.766926971368207" fill="white" /><circle cx="119.8443967075654" cy="252.64287138881514" r="11.838608243880788" fill="white" /><circle cx="285.7727905085409" cy="576.5811210784979" r="21.451043658523304" fill="white" /><circle cx="387.9107290556657" cy="27.039841193713833" r="15.039698363120731" fill="white" /><circle cx="13.651097513368038" cy="170.7210304905572" r="14.618073659637833" fill="white" /><circle cx="262.02367925581797" cy="24.05752584291767" r="20.844257243313137" fill="white" /><circle cx="205.51562365881466" cy="365.61667249930525" r="24.469055247483094" fill="white" /><circle cx="321.42767598670883" cy="489.1281825120173" r="29.024417237536962" fill="white" /><circle cx="333.42237292170256" cy="76.95851499425488" r="10.524585125987304" fill="white" /><circle cx="218.43593971535" cy="501.23665425451475" r="26.85047754782911" fill="white" /><circle cx="163.10221740379367" cy="407.48763589271607" r="14.782009055339238" fill="white" /><circle cx="232.43584710519838" cy="165.16327398662852" r="29.28309712940103" fill="white" /><circle cx="41.71040842442339" cy="258.11601940335225" r="18.58512841302987" fill="white" /><circle cx="254.57116315842038" cy="566.8410476759168" r="11.778014357724253" fill="white" /><circle cx="27.259538772598724" cy="498.41722187459726" r="13.2883881014006" fill="white" /><circle cx="371.91143347488105" cy="4.965718290553056" r="22.62131286400876" fill="white" /><circle cx="395.73537685718713" cy="538.7879650576496" r="29.61561415065125" fill="white" /><circle cx="133.1396244028991" cy="77.56387420708938" r="29.10739541747554" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Ego Is the Enemy
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ryan Holiday
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

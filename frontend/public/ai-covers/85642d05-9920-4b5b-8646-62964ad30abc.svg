@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-85642d05-9920-4b5b-8646-62964ad30abc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-85642d05-9920-4b5b-8646-62964ad30abc)" />
+  <g opacity="0.1">
+    <circle cx="209.43221578048826" cy="222.85556363421236" r="29.944556116484502" fill="white" /><circle cx="96.44992908405445" cy="171.218315137175" r="27.95867816927132" fill="white" /><circle cx="394.8990494823669" cy="588.572493891292" r="27.19943489430381" fill="white" /><circle cx="239.72915379999517" cy="88.51428345455416" r="24.465525201589443" fill="white" /><circle cx="2.501087907301258" cy="291.01601371754475" r="11.705702323468278" fill="white" /><circle cx="46.454212864549845" cy="46.623952931214355" r="21.912425962700418" fill="white" /><circle cx="394.6885330658634" cy="54.13080118140985" r="15.989286072163864" fill="white" /><circle cx="316.4985927274621" cy="260.933082954625" r="10.550614919917969" fill="white" /><circle cx="232.26728383308242" cy="35.893579472939564" r="11.415668818251866" fill="white" /><circle cx="234.75635264776886" cy="559.187680496124" r="27.238215543852235" fill="white" /><circle cx="331.948275539905" cy="377.2481672834297" r="11.159896651364447" fill="white" /><circle cx="148.36616434609704" cy="42.79505678407236" r="23.23238825344886" fill="white" /><circle cx="261.2210803109202" cy="188.3413816334227" r="11.668622216032947" fill="white" /><circle cx="230.5256766333807" cy="558.4666305926019" r="15.51862295183864" fill="white" /><circle cx="231.237660925901" cy="544.9894839478884" r="28.015753309032434" fill="white" /><circle cx="266.4002247870577" cy="477.96968418351105" r="12.887113740590081" fill="white" /><circle cx="203.61106047976944" cy="480.82204487556896" r="14.780989758266319" fill="white" /><circle cx="393.76454578510953" cy="64.60989861655231" r="20.97012143559975" fill="white" /><circle cx="261.4237876056815" cy="532.9341017492906" r="22.820410432358372" fill="white" /><circle cx="327.14007313330995" cy="206.7966826690542" r="12.809719243803174" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Full Catastrophe Living
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Jon Kabat-Zinn
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

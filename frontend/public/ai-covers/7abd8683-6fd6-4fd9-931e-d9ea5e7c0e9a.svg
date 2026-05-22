@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-7abd8683-6fd6-4fd9-931e-d9ea5e7c0e9a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-7abd8683-6fd6-4fd9-931e-d9ea5e7c0e9a)" />
+  <g opacity="0.1">
+    <circle cx="384.87047273560626" cy="402.58793865507516" r="18.21280766787588" fill="white" /><circle cx="11.99210983924166" cy="9.137851744920233" r="22.942225056604883" fill="white" /><circle cx="161.16188791028515" cy="235.25001895265865" r="11.928634902744955" fill="white" /><circle cx="288.08826293101373" cy="165.16677626869503" r="28.1018521792665" fill="white" /><circle cx="324.4640079128828" cy="397.6483230600784" r="19.892425766386275" fill="white" /><circle cx="340.0572327117421" cy="258.6626377094351" r="11.057688542339166" fill="white" /><circle cx="321.24393848763566" cy="400.3390372366401" r="10.59893460004059" fill="white" /><circle cx="186.95740006108696" cy="208.57230376581938" r="18.968258775479242" fill="white" /><circle cx="244.87975659982482" cy="96.3139614319428" r="24.36875107038876" fill="white" /><circle cx="360.9991300806433" cy="166.60588456922153" r="14.871343656193117" fill="white" /><circle cx="312.05404977769933" cy="29.15839858631879" r="20.3135712423625" fill="white" /><circle cx="328.4241367612476" cy="141.17913825122264" r="12.43059144418972" fill="white" /><circle cx="49.230586855199036" cy="300.5550743915996" r="11.956898036342455" fill="white" /><circle cx="368.70581857543374" cy="284.3870076259168" r="10.667540078476854" fill="white" /><circle cx="261.07901759303155" cy="220.4084832931412" r="22.937958268421088" fill="white" /><circle cx="71.5261469389549" cy="492.19281813974453" r="14.719876681197793" fill="white" /><circle cx="241.82746199655548" cy="230.25468119599387" r="18.6849036051075" fill="white" /><circle cx="11.31949614051031" cy="346.0271346522209" r="14.753364699806305" fill="white" /><circle cx="118.43122928340462" cy="23.42931001099928" r="29.77989613173993" fill="white" /><circle cx="376.83725468571043" cy="381.7008507003155" r="26.441677822834254" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Art of Racing in the
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Rain
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Garth Stein
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

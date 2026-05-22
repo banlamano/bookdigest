@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-733d35de-1018-41fd-a853-d8cfa7f86aab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-733d35de-1018-41fd-a853-d8cfa7f86aab)" />
+  <g opacity="0.1">
+    <circle cx="278.2437848710418" cy="409.40796202999815" r="12.837029033593755" fill="white" /><circle cx="73.67442359150141" cy="132.56036303236948" r="25.36538082192199" fill="white" /><circle cx="231.038686632727" cy="448.86123490094235" r="22.730010884673682" fill="white" /><circle cx="79.77772624938098" cy="365.4827384444856" r="14.943253022826076" fill="white" /><circle cx="188.5013990236781" cy="58.53870188122314" r="18.462393396050516" fill="white" /><circle cx="193.40706159092903" cy="293.3468640072747" r="21.73168078780698" fill="white" /><circle cx="366.5694239737443" cy="286.1366290538511" r="26.899603091866705" fill="white" /><circle cx="109.84367803450326" cy="385.94729156718097" r="21.661425751050846" fill="white" /><circle cx="227.17483649894072" cy="138.73123500529755" r="27.18399392097623" fill="white" /><circle cx="16.424842602916414" cy="324.0886227762497" r="22.727392038115596" fill="white" /><circle cx="31.606304008496842" cy="555.8373469809221" r="28.90994320733688" fill="white" /><circle cx="31.065084929204765" cy="498.2820660215278" r="23.97831311057488" fill="white" /><circle cx="283.4666168539405" cy="12.057781955092995" r="11.924652242333995" fill="white" /><circle cx="382.8052001957765" cy="114.3724580941686" r="25.87465300225551" fill="white" /><circle cx="88.35314576658652" cy="101.69741014005909" r="23.346022900509627" fill="white" /><circle cx="359.76092360166655" cy="50.19424078238579" r="19.663106285947656" fill="white" /><circle cx="359.5007396501435" cy="142.8794953228184" r="28.69823505828502" fill="white" /><circle cx="325.24437970151826" cy="148.31635957937078" r="21.39637826708185" fill="white" /><circle cx="17.606098544998883" cy="174.50572129436358" r="19.296408219320263" fill="white" /><circle cx="14.989147542729553" cy="57.70550294775838" r="10.159988580467143" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Only the Paranoid Survive
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Andrew Grove
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

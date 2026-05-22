@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c01d6d52-00df-4b0f-a090-c8ec37897ce0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c01d6d52-00df-4b0f-a090-c8ec37897ce0)" />
+  <g opacity="0.1">
+    <circle cx="363.15520440828027" cy="188.57962232025167" r="26.944135138633662" fill="white" /><circle cx="382.45928218894437" cy="1.8755561414321997" r="26.290843827275825" fill="white" /><circle cx="372.32609950045367" cy="202.2616201551403" r="20.474694353418208" fill="white" /><circle cx="387.8640726942903" cy="191.86178593579092" r="27.352236434683167" fill="white" /><circle cx="376.1481045716198" cy="95.92609581281168" r="26.54450427350849" fill="white" /><circle cx="38.97990656165145" cy="248.3480669803201" r="14.720123535319445" fill="white" /><circle cx="276.3999889558614" cy="438.16339107820284" r="29.814007203420292" fill="white" /><circle cx="212.71947907407474" cy="417.6804384775821" r="16.36662344826986" fill="white" /><circle cx="201.02669669119612" cy="279.255556018732" r="18.47155000905238" fill="white" /><circle cx="22.182373233880305" cy="572.1876088062592" r="23.190596874590963" fill="white" /><circle cx="187.9607269071288" cy="175.8804279167103" r="20.22397921989518" fill="white" /><circle cx="205.62230540560344" cy="161.36250056786986" r="16.68569939982014" fill="white" /><circle cx="177.89999620901688" cy="459.3361332021049" r="24.618637647904603" fill="white" /><circle cx="366.9953141398888" cy="348.71841218809067" r="26.132780763655457" fill="white" /><circle cx="319.26052996801866" cy="466.3019491863688" r="24.79872636305297" fill="white" /><circle cx="14.712736559414097" cy="122.33744865387108" r="20.914739881900196" fill="white" /><circle cx="23.026308646578066" cy="404.109990238198" r="28.044281640355702" fill="white" /><circle cx="52.51962747489492" cy="332.0853919325463" r="10.232116420103686" fill="white" /><circle cx="229.30255486327363" cy="375.1176730375615" r="10.561202074272769" fill="white" /><circle cx="11.089927000656541" cy="562.8709987139422" r="22.975114147588677" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Kunst der Verführung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robert Greene
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

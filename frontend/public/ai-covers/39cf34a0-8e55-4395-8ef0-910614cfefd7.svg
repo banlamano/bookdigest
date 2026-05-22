@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-39cf34a0-8e55-4395-8ef0-910614cfefd7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-39cf34a0-8e55-4395-8ef0-910614cfefd7)" />
+  <g opacity="0.1">
+    <circle cx="87.20355133629245" cy="571.1869846606147" r="29.4238763755126" fill="white" /><circle cx="201.0398648203915" cy="0.9134152193598144" r="11.010712498327365" fill="white" /><circle cx="220.471215543616" cy="423.64248331795403" r="14.30216326182854" fill="white" /><circle cx="306.06371167914705" cy="454.5790820431509" r="23.558577742439375" fill="white" /><circle cx="127.81330304301078" cy="298.5473522350478" r="15.610884218333878" fill="white" /><circle cx="309.34638926680805" cy="417.5554409650449" r="23.4921809600351" fill="white" /><circle cx="130.20140189846688" cy="50.375670175605094" r="29.128433940432107" fill="white" /><circle cx="332.07269704501584" cy="126.8611970806513" r="28.571496150145638" fill="white" /><circle cx="73.6584642348423" cy="351.416326143195" r="13.900834426536777" fill="white" /><circle cx="229.2073351675294" cy="593.0372263336649" r="13.115018088477035" fill="white" /><circle cx="32.127657223892435" cy="150.92056632137883" r="19.41379670227427" fill="white" /><circle cx="283.94405599852246" cy="10.205039087168277" r="27.232202118682288" fill="white" /><circle cx="140.64223818307968" cy="239.7681626119887" r="21.921872243630347" fill="white" /><circle cx="237.64516837196376" cy="308.95747040219794" r="21.976212286900683" fill="white" /><circle cx="18.331054064456342" cy="525.7402501888381" r="17.83151760543235" fill="white" /><circle cx="289.4530410537916" cy="201.98453977338968" r="20.674670708369867" fill="white" /><circle cx="181.54776892369543" cy="376.6589183789028" r="20.760932836892216" fill="white" /><circle cx="43.50863449526159" cy="408.2395960474609" r="22.729079938442123" fill="white" /><circle cx="41.63999974719612" cy="8.860712003001915" r="11.586680535062888" fill="white" /><circle cx="136.22061026291638" cy="503.0372561192937" r="19.749736760453604" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Sixth Extinction
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Elizabeth Kolbert
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

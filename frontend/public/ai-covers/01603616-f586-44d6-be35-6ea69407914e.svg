@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-01603616-f586-44d6-be35-6ea69407914e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-01603616-f586-44d6-be35-6ea69407914e)" />
+  <g opacity="0.1">
+    <circle cx="333.8136484848138" cy="378.53612778614007" r="29.809976906666023" fill="white" /><circle cx="290.0458286882827" cy="143.64384230482347" r="17.73668266772497" fill="white" /><circle cx="286.66438632138755" cy="6.2938098441079005" r="21.49322307453088" fill="white" /><circle cx="356.4887265826484" cy="535.2551633564622" r="26.557671611338158" fill="white" /><circle cx="345.1135596838488" cy="513.679134477811" r="23.095962110266008" fill="white" /><circle cx="198.5937125180797" cy="285.1054164888649" r="11.592672046912202" fill="white" /><circle cx="126.24756042756636" cy="211.3092269348277" r="23.136273946148606" fill="white" /><circle cx="197.319438358509" cy="298.3591790666259" r="15.687776299078317" fill="white" /><circle cx="164.4990224758384" cy="255.6946034425256" r="10.107843924717837" fill="white" /><circle cx="265.0555979193397" cy="44.418077037110784" r="19.160234463089807" fill="white" /><circle cx="124.4245603814576" cy="493.17497551628327" r="22.377953564072374" fill="white" /><circle cx="161.8534646098728" cy="396.77197803004316" r="25.12019410109981" fill="white" /><circle cx="262.84598130393255" cy="582.9311776049975" r="29.29765857340379" fill="white" /><circle cx="191.47684373794897" cy="400.24546290686595" r="13.314702456232135" fill="white" /><circle cx="39.71899035616624" cy="581.1549260145573" r="25.780289539934458" fill="white" /><circle cx="191.7470583216029" cy="30.667930385874342" r="24.8088164086101" fill="white" /><circle cx="56.58386138870135" cy="377.4393955315166" r="16.22598836714395" fill="white" /><circle cx="332.76396882963826" cy="121.273302556809" r="19.673496750916357" fill="white" /><circle cx="380.341326264446" cy="452.976986575695" r="18.22180355968505" fill="white" /><circle cx="375.4675075796134" cy="236.9600047601756" r="15.381419227610188" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Brain Rules: 12 Regeln
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        für erfolgreiches Lernen,
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Arbeiten und Leben
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        John Medina
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

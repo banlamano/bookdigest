@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e7b035ea-653c-4a51-a861-54aec0b9fe95" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e7b035ea-653c-4a51-a861-54aec0b9fe95)" />
+  <g opacity="0.1">
+    <circle cx="18.25532690129874" cy="236.17100241222926" r="21.764345113171032" fill="white" /><circle cx="94.85005417741017" cy="569.4862137135165" r="26.00996496746066" fill="white" /><circle cx="349.45878418014985" cy="376.9089246925625" r="24.86463965104558" fill="white" /><circle cx="78.6385142716422" cy="73.53419605054926" r="24.195860854785963" fill="white" /><circle cx="2.840407793746902" cy="415.1662602861522" r="20.183268065255422" fill="white" /><circle cx="210.93414826671219" cy="575.0578125899066" r="18.067558006411176" fill="white" /><circle cx="215.5231527922152" cy="484.55894889426855" r="27.791303740058687" fill="white" /><circle cx="352.90364266830966" cy="1.734281385551495" r="20.160819025781777" fill="white" /><circle cx="270.242337887504" cy="294.7297736553621" r="14.227154023800734" fill="white" /><circle cx="342.263487138208" cy="43.40894210352106" r="14.971151260253057" fill="white" /><circle cx="362.69019939582284" cy="344.4771960190438" r="10.573147513900192" fill="white" /><circle cx="287.7447213077999" cy="383.66404384291155" r="15.787337585706942" fill="white" /><circle cx="358.9462302800662" cy="206.62686587671453" r="28.078854931245246" fill="white" /><circle cx="240.37409547552372" cy="168.73656918826018" r="13.818394977429149" fill="white" /><circle cx="289.5180132851683" cy="84.90669808334647" r="17.8418063471684" fill="white" /><circle cx="355.09651361005535" cy="445.59332539566054" r="24.624602556446643" fill="white" /><circle cx="262.8767335925271" cy="193.9931814894623" r="26.800051163394144" fill="white" /><circle cx="367.4401966669132" cy="423.09462073698" r="19.00459808232802" fill="white" /><circle cx="314.9545696252763" cy="129.63585042107303" r="12.200605598885605" fill="white" /><circle cx="96.97585505624389" cy="582.3468341408469" r="13.721558840694179" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Steve Jobs: Die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        autorisierte Biografie
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        des Apple-Gründers
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Walter Isaacson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

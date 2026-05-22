@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-436fc5b5-6f1b-4789-89df-464fb5cfa442" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-436fc5b5-6f1b-4789-89df-464fb5cfa442)" />
+  <g opacity="0.1">
+    <circle cx="103.64767313780176" cy="280.4690430247802" r="22.206877858860413" fill="white" /><circle cx="300.94667283020215" cy="199.3253973370093" r="11.847051402605418" fill="white" /><circle cx="1.8493778079026413" cy="1.8287720995015189" r="25.155071616932766" fill="white" /><circle cx="303.9704329690921" cy="447.2723537016099" r="16.69243613219538" fill="white" /><circle cx="252.64054738145796" cy="154.768732395784" r="17.84617550519545" fill="white" /><circle cx="180.66770243898952" cy="101.84628276032643" r="28.643061429810054" fill="white" /><circle cx="27.447787722236463" cy="145.32664451553578" r="22.35164569258935" fill="white" /><circle cx="112.17307594082233" cy="224.00347169130163" r="14.252870513247819" fill="white" /><circle cx="300.95361049816614" cy="458.02189417852975" r="19.316080704407753" fill="white" /><circle cx="346.979780916929" cy="518.1529608273811" r="10.557003059803591" fill="white" /><circle cx="287.38596101180497" cy="380.5538944637422" r="10.09007234667907" fill="white" /><circle cx="102.6922648312747" cy="201.35200623384546" r="18.30744383877646" fill="white" /><circle cx="350.63132641054915" cy="511.48598046102654" r="18.16660719766512" fill="white" /><circle cx="210.3494264507423" cy="186.38560517765927" r="13.22651118349831" fill="white" /><circle cx="179.25334357572572" cy="448.5387963929146" r="16.16810443969259" fill="white" /><circle cx="389.5555035702217" cy="435.69116991216487" r="24.699056116519884" fill="white" /><circle cx="259.2862427596242" cy="469.41624775832554" r="17.023103724815257" fill="white" /><circle cx="124.47056137353543" cy="305.1276349342548" r="12.88304127022948" fill="white" /><circle cx="32.80318717670339" cy="388.33913216264773" r="20.893657749931364" fill="white" /><circle cx="268.90108638362193" cy="168.6315806417902" r="19.48170560142941" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Essays of Warren
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Buffett
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Lawrence Cunningham
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

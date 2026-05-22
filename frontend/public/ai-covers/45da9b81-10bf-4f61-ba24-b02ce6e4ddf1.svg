@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-45da9b81-10bf-4f61-ba24-b02ce6e4ddf1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-45da9b81-10bf-4f61-ba24-b02ce6e4ddf1)" />
+  <g opacity="0.1">
+    <circle cx="328.2993752909912" cy="288.8318440923775" r="28.670612050745266" fill="white" /><circle cx="237.92124046208855" cy="429.59244901874354" r="22.175392404595208" fill="white" /><circle cx="198.55343466645115" cy="545.9457669811358" r="29.12682387219856" fill="white" /><circle cx="280.7973234978238" cy="509.60902814895184" r="28.93525265637607" fill="white" /><circle cx="342.8721398594072" cy="353.32666037669065" r="22.359208646307103" fill="white" /><circle cx="248.66931882564148" cy="33.33521313426879" r="20.177548111874103" fill="white" /><circle cx="68.24496534087929" cy="595.0209137150234" r="12.609438813945966" fill="white" /><circle cx="146.53885388851805" cy="540.4366208855646" r="26.310325671039926" fill="white" /><circle cx="61.54933296465646" cy="508.2384242132496" r="17.928987990627068" fill="white" /><circle cx="348.4808151870408" cy="540.652467917992" r="15.933502785347919" fill="white" /><circle cx="258.42390213744847" cy="296.56573984361233" r="21.362648705162755" fill="white" /><circle cx="45.98140466560929" cy="325.35081099637233" r="23.87789284920307" fill="white" /><circle cx="208.40367042923918" cy="201.84204956461983" r="24.447666216297925" fill="white" /><circle cx="255.33930316608422" cy="133.3798984318486" r="11.377607678296899" fill="white" /><circle cx="9.36175225597724" cy="158.7878711173991" r="21.792993104952302" fill="white" /><circle cx="25.32166344481088" cy="375.00101219302593" r="23.575785438946156" fill="white" /><circle cx="359.4760380377619" cy="139.3337087671122" r="23.32172505465556" fill="white" /><circle cx="314.61464626220965" cy="138.9594802395913" r="15.14816451779927" fill="white" /><circle cx="250.7298877173444" cy="260.524646582433" r="10.68204350671814" fill="white" /><circle cx="227.0695669125152" cy="424.4032985504741" r="10.469637236301706" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The One Thing
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Gary Keller
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

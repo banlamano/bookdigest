@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-63999951-9e8e-48fb-b387-2df2aa5c864f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-63999951-9e8e-48fb-b387-2df2aa5c864f)" />
+  <g opacity="0.1">
+    <circle cx="371.3410693406261" cy="593.5449163116374" r="18.397599420682564" fill="white" /><circle cx="101.73091131178649" cy="592.7764776762068" r="12.268246719381965" fill="white" /><circle cx="358.3744057905507" cy="550.1863770899838" r="26.96983060645554" fill="white" /><circle cx="28.222519443330096" cy="438.459380017235" r="26.20116567483376" fill="white" /><circle cx="304.6978815087849" cy="354.90364596197935" r="29.913212457284587" fill="white" /><circle cx="135.0007653075377" cy="118.5096932805846" r="21.978044488040602" fill="white" /><circle cx="63.004756639685546" cy="86.80190407869202" r="25.516380777396975" fill="white" /><circle cx="315.14163802328613" cy="92.2262304811264" r="29.414127081731653" fill="white" /><circle cx="7.688563167517071" cy="208.58928987197584" r="10.735653242974518" fill="white" /><circle cx="243.58114198651245" cy="251.5819770800576" r="23.862810747339246" fill="white" /><circle cx="34.49157703847114" cy="118.28338496851039" r="28.259608278664967" fill="white" /><circle cx="372.6337056043264" cy="450.7090887609634" r="24.869491014595145" fill="white" /><circle cx="237.06907809278266" cy="383.1189781266255" r="12.060428099363893" fill="white" /><circle cx="52.745084633940294" cy="243.77718808769532" r="28.16646029494366" fill="white" /><circle cx="256.12536136684247" cy="441.4172863299116" r="21.461488129864854" fill="white" /><circle cx="301.2399640230583" cy="287.6147145739094" r="21.428833382316412" fill="white" /><circle cx="17.315048708143223" cy="406.41919641508923" r="13.755618542238546" fill="white" /><circle cx="347.68792464221707" cy="69.78799942474092" r="12.884483110691892" fill="white" /><circle cx="119.03841290783919" cy="542.2678156581482" r="23.05674325970705" fill="white" /><circle cx="236.86093537337095" cy="86.76109920304728" r="29.53096936852124" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Flow
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Mihaly Csikszentmihalyi
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

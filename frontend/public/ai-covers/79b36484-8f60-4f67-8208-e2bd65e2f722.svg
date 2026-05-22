@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-79b36484-8f60-4f67-8208-e2bd65e2f722" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-79b36484-8f60-4f67-8208-e2bd65e2f722)" />
+  <g opacity="0.1">
+    <circle cx="375.14257203416355" cy="284.11132630826074" r="27.325316266362695" fill="white" /><circle cx="38.83632349439914" cy="122.53646440353543" r="25.21284086788782" fill="white" /><circle cx="281.53592401646375" cy="293.3199438344452" r="27.318508817321874" fill="white" /><circle cx="293.82033878992064" cy="506.85759016119624" r="28.746057858042533" fill="white" /><circle cx="275.5267396388221" cy="518.7803157581479" r="11.576663191689004" fill="white" /><circle cx="218.4528951955025" cy="458.90018327995955" r="28.042095610239983" fill="white" /><circle cx="340.39611758642167" cy="78.72527504457867" r="13.954786759129332" fill="white" /><circle cx="312.3272815561664" cy="38.389269947098235" r="23.856736187562063" fill="white" /><circle cx="323.5595431523035" cy="424.1733163708342" r="17.159509959620152" fill="white" /><circle cx="370.9743027017578" cy="572.0184989591712" r="21.05322022081952" fill="white" /><circle cx="90.9798747499897" cy="385.0816779906302" r="25.64435323962941" fill="white" /><circle cx="69.28821805213943" cy="2.023522386519372" r="18.32952326262152" fill="white" /><circle cx="146.35554401464236" cy="490.4548573668931" r="24.09230046475323" fill="white" /><circle cx="82.81122778781089" cy="250.4257618293505" r="19.035971589032123" fill="white" /><circle cx="183.83500219184708" cy="220.54076271721706" r="15.798266842348223" fill="white" /><circle cx="353.79195031883796" cy="213.95337220572029" r="10.792512176579962" fill="white" /><circle cx="63.62826709336322" cy="151.91719894348273" r="29.709500261872282" fill="white" /><circle cx="196.25285882734747" cy="385.5830058415851" r="28.019312021647387" fill="white" /><circle cx="102.55494183286116" cy="306.50740724706634" r="13.799617176651712" fill="white" /><circle cx="70.81592664362594" cy="96.39116809187946" r="11.860637847674589" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Beating the Street
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Peter Lynch
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

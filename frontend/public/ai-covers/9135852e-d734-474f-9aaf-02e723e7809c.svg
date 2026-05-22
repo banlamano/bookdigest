@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9135852e-d734-474f-9aaf-02e723e7809c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9135852e-d734-474f-9aaf-02e723e7809c)" />
+  <g opacity="0.1">
+    <circle cx="365.08743533126113" cy="2.0360942901126666" r="15.830172634221398" fill="white" /><circle cx="74.20069668661978" cy="434.1772458197375" r="12.215455864548147" fill="white" /><circle cx="349.55394171600153" cy="375.82843705541603" r="26.376392081820185" fill="white" /><circle cx="328.5268611316327" cy="512.2289549533225" r="13.856542646599738" fill="white" /><circle cx="375.4393628970094" cy="414.9019316153616" r="24.051394337807004" fill="white" /><circle cx="264.893516029335" cy="534.4426627265291" r="17.563989584988924" fill="white" /><circle cx="10.112405322703388" cy="167.9491373729872" r="18.0557588376331" fill="white" /><circle cx="219.74247323164798" cy="276.52477871605964" r="15.928513284144925" fill="white" /><circle cx="222.99755526371467" cy="220.51882313486595" r="22.364743490679835" fill="white" /><circle cx="240.12524373555686" cy="285.18987845655346" r="20.963166768929472" fill="white" /><circle cx="257.09630575774537" cy="195.16299840286754" r="24.997370915687213" fill="white" /><circle cx="8.753486193199222" cy="596.8163444064046" r="17.34353459212339" fill="white" /><circle cx="160.47341851798507" cy="567.3722011967544" r="13.830579870249654" fill="white" /><circle cx="192.2178134501824" cy="64.71307172404366" r="20.079199984726067" fill="white" /><circle cx="344.4275988154246" cy="256.35174663278946" r="12.469951348126525" fill="white" /><circle cx="5.739423878261052" cy="273.71295047173356" r="27.053481761121642" fill="white" /><circle cx="97.40636662409617" cy="488.6821893842526" r="29.33036351328669" fill="white" /><circle cx="21.572788457671564" cy="540.096195645309" r="23.164129883474665" fill="white" /><circle cx="201.45586992034748" cy="479.76671891299287" r="12.814715880474893" fill="white" /><circle cx="14.092010574457081" cy="439.43020733894997" r="11.549967841096523" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der automatische Kunde
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        John Warrillow
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

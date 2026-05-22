@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-53bf7613-ded9-4181-bf74-f8b4cc544154" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-53bf7613-ded9-4181-bf74-f8b4cc544154)" />
+  <g opacity="0.1">
+    <circle cx="299.48603451752325" cy="18.885993253258327" r="29.53056646833052" fill="white" /><circle cx="349.21193989976763" cy="517.3877461621241" r="29.942574473015174" fill="white" /><circle cx="189.43821689955845" cy="365.8106877697762" r="24.856303585714628" fill="white" /><circle cx="303.6923349613302" cy="41.78870403152206" r="13.249289934744748" fill="white" /><circle cx="76.26609961469364" cy="15.920457124724985" r="14.749715428852884" fill="white" /><circle cx="317.0382948408552" cy="379.11610675845884" r="20.68264219541777" fill="white" /><circle cx="361.74286883219906" cy="342.3246852666495" r="11.235049909526031" fill="white" /><circle cx="310.1547888934571" cy="235.8554131537969" r="27.75446237646777" fill="white" /><circle cx="163.35739780650954" cy="326.851272784978" r="19.12075183609107" fill="white" /><circle cx="295.17251311585346" cy="108.89953844145327" r="29.727467131927597" fill="white" /><circle cx="159.15273263795262" cy="169.56230281094224" r="21.087662283651888" fill="white" /><circle cx="238.58148400169802" cy="48.94051600349813" r="18.27169632249413" fill="white" /><circle cx="204.57539557006234" cy="343.5206276215185" r="19.527445822595517" fill="white" /><circle cx="48.18858908644867" cy="110.67046749738367" r="21.58983384923272" fill="white" /><circle cx="59.85081739205342" cy="496.225861183281" r="19.092119946930126" fill="white" /><circle cx="257.20415176188055" cy="289.53685782480824" r="18.770310127568393" fill="white" /><circle cx="340.4298220147448" cy="392.33665879235673" r="17.91681077157888" fill="white" /><circle cx="265.4561243633793" cy="95.69346527543058" r="15.81544814385663" fill="white" /><circle cx="59.87783762837901" cy="509.2941791097694" r="10.428652711053655" fill="white" /><circle cx="138.0240210140515" cy="56.24894802591416" r="15.054724357079907" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Index Card
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Helaine Olen
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

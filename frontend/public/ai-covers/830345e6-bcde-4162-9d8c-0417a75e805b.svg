@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-830345e6-bcde-4162-9d8c-0417a75e805b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-830345e6-bcde-4162-9d8c-0417a75e805b)" />
+  <g opacity="0.1">
+    <circle cx="136.84605293753899" cy="3.4457244234630036" r="18.58551318792465" fill="white" /><circle cx="120.45512824131225" cy="27.995979883024937" r="18.25504585448346" fill="white" /><circle cx="251.16814428809198" cy="413.4358745393351" r="18.691059350078344" fill="white" /><circle cx="287.8031923269403" cy="361.2499452689704" r="26.624560270894133" fill="white" /><circle cx="374.5332541605292" cy="138.87541300226397" r="23.919113640192503" fill="white" /><circle cx="60.24855075346247" cy="488.5284139307114" r="18.25901179836615" fill="white" /><circle cx="257.7264840181711" cy="113.71886667717968" r="10.123163665669901" fill="white" /><circle cx="183.9969763217505" cy="172.03854840614918" r="24.78730084266256" fill="white" /><circle cx="72.61877352062535" cy="359.5309606094443" r="17.642998311613713" fill="white" /><circle cx="90.56276106820214" cy="360.376221469521" r="29.598477733503405" fill="white" /><circle cx="372.55876314506395" cy="208.5833285905466" r="11.713477702586712" fill="white" /><circle cx="176.37258729710413" cy="24.767477704711503" r="10.541716782554913" fill="white" /><circle cx="228.671675576911" cy="101.34285079647938" r="14.418431538317119" fill="white" /><circle cx="56.521235336185114" cy="2.310283957702297" r="13.164508457459211" fill="white" /><circle cx="103.75010559460165" cy="338.7984737058773" r="24.833103262018977" fill="white" /><circle cx="387.67642179463456" cy="594.3728485179442" r="17.33745657310814" fill="white" /><circle cx="297.7410851043141" cy="349.86294232149356" r="17.31750598532699" fill="white" /><circle cx="313.16766748303843" cy="329.9147914210837" r="16.843502700465134" fill="white" /><circle cx="33.55583215748137" cy="245.47384968908798" r="11.629944826445051" fill="white" /><circle cx="382.2657839912427" cy="346.1679305290253" r="16.38231805194866" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Befreiung der Seele:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Eine Reise zu
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Gelassenheit, innerem
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Michael Singer
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

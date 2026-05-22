@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b13fb52c-edd4-421d-8401-3311ce80f726" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b13fb52c-edd4-421d-8401-3311ce80f726)" />
+  <g opacity="0.1">
+    <circle cx="126.556225423908" cy="16.455898759206143" r="20.23535449962008" fill="white" /><circle cx="86.4940977401905" cy="126.86816523045326" r="22.955891235599154" fill="white" /><circle cx="157.32483701207923" cy="96.81722451928974" r="12.418664104369322" fill="white" /><circle cx="395.5269990291355" cy="354.51618113950616" r="17.624859921367506" fill="white" /><circle cx="78.44766470306013" cy="323.6703050432792" r="15.491604790115607" fill="white" /><circle cx="79.43181964070484" cy="423.1812536917676" r="15.809292309098579" fill="white" /><circle cx="352.28682153655586" cy="308.5993164754044" r="12.307275527478206" fill="white" /><circle cx="2.8178989762537743" cy="486.0641831025771" r="16.013513825308646" fill="white" /><circle cx="274.6460997241091" cy="128.06938894351242" r="22.410605025717878" fill="white" /><circle cx="331.8704359425944" cy="176.72166875872338" r="26.929400634874682" fill="white" /><circle cx="92.18800828431881" cy="230.61286262441044" r="21.398207624463254" fill="white" /><circle cx="384.5877657892387" cy="5.100517137548821" r="17.080284791849124" fill="white" /><circle cx="89.38886555326069" cy="523.7817576901326" r="10.59463234456777" fill="white" /><circle cx="140.15238309834723" cy="599.7696613282607" r="15.437128281208254" fill="white" /><circle cx="87.57126377115205" cy="76.11196280907421" r="16.66987491004151" fill="white" /><circle cx="213.44184833349505" cy="547.9824688413393" r="10.960720601438801" fill="white" /><circle cx="294.3338084715343" cy="367.61070549296767" r="22.400721891244466" fill="white" /><circle cx="179.34195709324516" cy="239.0686898926162" r="25.38781836807291" fill="white" /><circle cx="28.19236237353553" cy="442.5344763817496" r="26.105316588588067" fill="white" /><circle cx="220.6906318262458" cy="210.25980264291195" r="23.349925264826" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Thank You Economy
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Gary Vaynerchuk
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

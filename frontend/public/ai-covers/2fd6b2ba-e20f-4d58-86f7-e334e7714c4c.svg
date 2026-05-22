@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-2fd6b2ba-e20f-4d58-86f7-e334e7714c4c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-2fd6b2ba-e20f-4d58-86f7-e334e7714c4c)" />
+  <g opacity="0.1">
+    <circle cx="356.1778632105414" cy="247.2917046358563" r="17.381603308412522" fill="white" /><circle cx="353.0983369836884" cy="125.89577721175931" r="14.932966040530752" fill="white" /><circle cx="391.3253756019924" cy="382.2877692872386" r="21.420809731394307" fill="white" /><circle cx="137.42854125440306" cy="206.50395986172296" r="28.808519833844727" fill="white" /><circle cx="89.48161935005467" cy="325.0706622247065" r="22.76021496051674" fill="white" /><circle cx="54.63867394635828" cy="510.7996233812927" r="29.069385669358358" fill="white" /><circle cx="254.39141079044555" cy="58.12163150439251" r="19.993287976005696" fill="white" /><circle cx="294.87680711227193" cy="308.4004821569943" r="20.52915507843465" fill="white" /><circle cx="227.97726328912788" cy="245.31829028675972" r="23.679283469273" fill="white" /><circle cx="219.3634174472474" cy="243.46599111614682" r="14.230544247063007" fill="white" /><circle cx="333.2768210285531" cy="194.68028707760956" r="19.974880162107045" fill="white" /><circle cx="206.05486321581324" cy="82.64686140928636" r="16.494886758777533" fill="white" /><circle cx="338.69832319115056" cy="129.18367897237331" r="15.498840005346693" fill="white" /><circle cx="106.00138654383748" cy="18.57912605978229" r="14.222532382348817" fill="white" /><circle cx="188.70688847134304" cy="355.08533826637773" r="25.62769211180479" fill="white" /><circle cx="37.466682577174296" cy="330.82353998866915" r="22.711573172466476" fill="white" /><circle cx="384.90151646973493" cy="310.18615832550796" r="24.210845901724657" fill="white" /><circle cx="49.752387109010954" cy="432.7051214930076" r="10.129331712888463" fill="white" /><circle cx="136.184498307603" cy="595.8732361061176" r="11.685959664230445" fill="white" /><circle cx="33.12878582661942" cy="333.7310713050519" r="20.222175359369793" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Magic Cleaning: Wie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        richtiges Aufräumen Ihr
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Leben verändert
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Marie Kondo
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

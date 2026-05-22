@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-05c092d1-49d0-4e6e-920d-91e2ca2b15c1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-05c092d1-49d0-4e6e-920d-91e2ca2b15c1)" />
+  <g opacity="0.1">
+    <circle cx="83.42958193206549" cy="570.9397082655893" r="18.04480224868187" fill="white" /><circle cx="272.0242134243414" cy="36.16073938528448" r="19.091031152380666" fill="white" /><circle cx="176.8023509704895" cy="2.646375919617916" r="14.002335697755456" fill="white" /><circle cx="159.96343278940554" cy="16.277741921036725" r="19.831173692633186" fill="white" /><circle cx="132.9640951472109" cy="172.70639282452078" r="27.769610880478858" fill="white" /><circle cx="295.62278239887485" cy="553.9740224734961" r="14.789745643051035" fill="white" /><circle cx="377.66948354438756" cy="68.00964977404" r="17.50922572505781" fill="white" /><circle cx="108.4662542572413" cy="115.98516070400495" r="23.659286152149818" fill="white" /><circle cx="81.9137416364447" cy="374.1909041396087" r="17.306394486763203" fill="white" /><circle cx="282.25357356002985" cy="472.0828861844239" r="17.55736378442183" fill="white" /><circle cx="200.72398961144938" cy="435.81471552552364" r="27.40112043218371" fill="white" /><circle cx="205.22894339077635" cy="599.6956324877697" r="17.18708551928767" fill="white" /><circle cx="196.40602349763506" cy="190.6263445775671" r="12.008398075826578" fill="white" /><circle cx="76.8470991045433" cy="580.1371959363851" r="27.448594812276223" fill="white" /><circle cx="310.51664024917625" cy="85.73679257266056" r="28.411531537028146" fill="white" /><circle cx="334.24845241640344" cy="107.2316462653237" r="28.358588394143304" fill="white" /><circle cx="229.39688375764447" cy="50.47677242439359" r="19.527487742412028" fill="white" /><circle cx="330.9141516118315" cy="410.92629584502856" r="26.998533355365502" fill="white" /><circle cx="374.10266877566056" cy="275.5461404312984" r="23.595772282966827" fill="white" /><circle cx="73.09789459571587" cy="38.564698602139046" r="18.424750169877942" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Profit First: Mach zuerst
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        deinen Gewinn! Das
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        einfache System für
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Mike Michalowicz
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

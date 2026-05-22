@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-2ad86d45-c2ac-4b3c-8fe0-0281223c5bea" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-2ad86d45-c2ac-4b3c-8fe0-0281223c5bea)" />
+  <g opacity="0.1">
+    <circle cx="187.9864396033018" cy="17.89287301461244" r="19.303629482012617" fill="white" /><circle cx="231.6644618226672" cy="42.9593998029121" r="11.398483737771986" fill="white" /><circle cx="239.5373156287182" cy="79.5781847195594" r="22.925739565781672" fill="white" /><circle cx="356.9410981540607" cy="236.88648754651936" r="18.968150500804448" fill="white" /><circle cx="175.9026719805904" cy="465.4575182373473" r="22.46213951643087" fill="white" /><circle cx="66.11706973862277" cy="287.7639633824904" r="23.573832485470067" fill="white" /><circle cx="160.87640254723556" cy="1.5903565755309934" r="27.040023172913354" fill="white" /><circle cx="317.13872259235137" cy="79.09764238337176" r="17.761057690387783" fill="white" /><circle cx="288.31701174860854" cy="23.846327325548344" r="27.088709846918533" fill="white" /><circle cx="332.7567585557319" cy="268.59100968416607" r="27.125505184343854" fill="white" /><circle cx="39.00545562748192" cy="141.99750405091507" r="24.41714432939159" fill="white" /><circle cx="289.82831191008984" cy="41.527323495235336" r="10.924822419064737" fill="white" /><circle cx="227.7221463361549" cy="500.65808146203716" r="12.336412312256344" fill="white" /><circle cx="52.87599147820221" cy="480.49313608474006" r="29.70726743883152" fill="white" /><circle cx="94.93947280613288" cy="515.5034857172648" r="12.299839589047165" fill="white" /><circle cx="119.25120327344713" cy="83.6152158377453" r="14.34191070892586" fill="white" /><circle cx="275.0833817198868" cy="465.4816570751561" r="27.341105149890538" fill="white" /><circle cx="162.65322928466244" cy="438.7883704666191" r="21.995652417146776" fill="white" /><circle cx="65.06967751278094" cy="235.93052603233048" r="25.144113421738187" fill="white" /><circle cx="220.9341123848117" cy="590.6626003028961" r="26.437796680498447" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Remote
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jason Fried
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9b8b6f6d-ff76-48fa-99a1-282d88ce5add" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9b8b6f6d-ff76-48fa-99a1-282d88ce5add)" />
+  <g opacity="0.1">
+    <circle cx="254.471388009211" cy="458.4698343814329" r="26.243626313902823" fill="white" /><circle cx="195.00815583749053" cy="150.27629972387825" r="16.52529820181508" fill="white" /><circle cx="328.05951878943176" cy="234.1009770240486" r="28.482263968531342" fill="white" /><circle cx="216.7769442867352" cy="330.9809387943247" r="14.886143738463641" fill="white" /><circle cx="209.81117300267474" cy="23.81663552295614" r="17.989778315340875" fill="white" /><circle cx="172.14250606952132" cy="292.8667933052119" r="13.812958860636327" fill="white" /><circle cx="53.690406381850764" cy="28.75586417582423" r="23.536492617431136" fill="white" /><circle cx="6.782610219382956" cy="266.98643070867314" r="11.748536563133454" fill="white" /><circle cx="233.04242839661615" cy="28.054513987707864" r="28.88761623876594" fill="white" /><circle cx="80.24906095143218" cy="105.09609681233121" r="13.491237640676543" fill="white" /><circle cx="377.2062273799133" cy="215.93445594563573" r="12.329684948527584" fill="white" /><circle cx="246.8573026454497" cy="237.43235321153887" r="20.505059946096765" fill="white" /><circle cx="229.29784990506735" cy="482.743610061842" r="22.775189846206985" fill="white" /><circle cx="316.99794020751733" cy="535.9352269607277" r="19.852069172259224" fill="white" /><circle cx="70.73477356774322" cy="473.35736304392253" r="16.801597361813283" fill="white" /><circle cx="370.28219439308106" cy="62.60630821607407" r="19.37621010753952" fill="white" /><circle cx="212.94293012256503" cy="599.2737337899945" r="20.13075342709128" fill="white" /><circle cx="44.97143678963225" cy="463.2550010733404" r="22.698568067465317" fill="white" /><circle cx="263.6521726043168" cy="263.13518130668854" r="16.331554743918005" fill="white" /><circle cx="219.24289113270575" cy="151.25438808161954" r="22.940786867328995" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Gegenwart: Wie du dir
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        das größte Geschenk in
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        deinem Leben machst
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Spencer Johnson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

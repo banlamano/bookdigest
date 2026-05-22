@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-596f5142-44b2-4db0-9e76-9089d9692018" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-596f5142-44b2-4db0-9e76-9089d9692018)" />
+  <g opacity="0.1">
+    <circle cx="259.5708357283575" cy="194.7795897034268" r="10.919883241769321" fill="white" /><circle cx="215.11258211776902" cy="469.00708371625166" r="22.011589632008455" fill="white" /><circle cx="78.33935683643483" cy="71.23530226826287" r="13.333160941760058" fill="white" /><circle cx="101.36415736145601" cy="194.72803288461648" r="10.467710701866404" fill="white" /><circle cx="141.1646389763723" cy="6.0460827845131515" r="29.656068415684373" fill="white" /><circle cx="298.8812100649164" cy="94.63737663626259" r="21.099906202734072" fill="white" /><circle cx="225.16132414966026" cy="462.7497094205017" r="13.26627847404547" fill="white" /><circle cx="201.99882648403715" cy="426.3579450668906" r="15.120559829729592" fill="white" /><circle cx="181.34424694412684" cy="476.5746828606728" r="17.539343534496773" fill="white" /><circle cx="358.25206313607845" cy="138.16385843765815" r="25.94428557602357" fill="white" /><circle cx="150.05534122209156" cy="15.828299580216543" r="10.529173315008487" fill="white" /><circle cx="95.71143337852254" cy="404.57350661148587" r="28.79835696197337" fill="white" /><circle cx="76.83785046616802" cy="289.0175897321004" r="24.335534544806073" fill="white" /><circle cx="256.0642450692926" cy="303.3128918980839" r="22.903555702724475" fill="white" /><circle cx="294.5449636795533" cy="269.7872698404555" r="22.542704186134998" fill="white" /><circle cx="346.64564398853474" cy="449.0797348670974" r="15.626972115399091" fill="white" /><circle cx="270.36391991794835" cy="337.1359646796887" r="10.027010762451514" fill="white" /><circle cx="353.6204065791581" cy="424.46610976206665" r="11.933770920534439" fill="white" /><circle cx="353.49995194021704" cy="565.1963028653198" r="12.229716922800426" fill="white" /><circle cx="361.91196631628713" cy="224.36947655366" r="10.729769928861149" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Thinking, Fast and Slow
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Daniel Kahneman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

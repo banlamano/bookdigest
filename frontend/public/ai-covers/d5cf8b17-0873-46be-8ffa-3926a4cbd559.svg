@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d5cf8b17-0873-46be-8ffa-3926a4cbd559" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d5cf8b17-0873-46be-8ffa-3926a4cbd559)" />
+  <g opacity="0.1">
+    <circle cx="387.5247941040299" cy="495.00887536944435" r="26.246175512325006" fill="white" /><circle cx="394.2326010264964" cy="24.997417187240643" r="22.218144931880783" fill="white" /><circle cx="368.87686156736396" cy="45.592216499214075" r="18.94149196407605" fill="white" /><circle cx="127.3513884297504" cy="287.36231441020897" r="10.24053849333641" fill="white" /><circle cx="174.602798780876" cy="242.25068426621365" r="21.25970982935618" fill="white" /><circle cx="170.61665550737524" cy="444.97963812958983" r="16.110624362384385" fill="white" /><circle cx="79.91880193109138" cy="322.5450006911095" r="27.95579760738145" fill="white" /><circle cx="192.2805352631411" cy="353.6962532073855" r="27.262547473208446" fill="white" /><circle cx="236.05455701468526" cy="288.2951396248974" r="20.997172303662957" fill="white" /><circle cx="86.34146461288559" cy="159.24296167840518" r="20.25056354259701" fill="white" /><circle cx="272.36582908413567" cy="374.1193556169185" r="15.001431571256148" fill="white" /><circle cx="68.53575488200275" cy="554.0359161042483" r="29.81010014359604" fill="white" /><circle cx="362.0531540858858" cy="71.34511592124704" r="24.711940936628242" fill="white" /><circle cx="34.51221961801942" cy="250.18249181226196" r="21.63839556569392" fill="white" /><circle cx="289.8901119375746" cy="484.8277251153918" r="13.016731610086453" fill="white" /><circle cx="224.18696765522793" cy="134.36533679328403" r="25.0999366437347" fill="white" /><circle cx="57.20290477573911" cy="372.0706329976903" r="15.377078042941111" fill="white" /><circle cx="173.48493134212353" cy="275.0404622087949" r="22.349311153382406" fill="white" /><circle cx="204.7255710332618" cy="423.71811844352345" r="16.26209832643589" fill="white" /><circle cx="350.2045640365508" cy="359.096371714935" r="10.650142294079512" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The 5 Choices
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Kory Kogon
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

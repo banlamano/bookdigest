@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-4da307fe-3717-45f8-87aa-33a8970c6bd8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-4da307fe-3717-45f8-87aa-33a8970c6bd8)" />
+  <g opacity="0.1">
+    <circle cx="260.3542805142124" cy="128.62288580077896" r="20.208366093427315" fill="white" /><circle cx="19.760976905092065" cy="102.60548455159051" r="23.02144171489438" fill="white" /><circle cx="84.09246070813094" cy="341.2977226699031" r="25.5200752886267" fill="white" /><circle cx="168.78715663970954" cy="351.6475608534031" r="12.62562717851418" fill="white" /><circle cx="272.6173449155517" cy="132.70752788243038" r="14.5909349261381" fill="white" /><circle cx="129.25373630446217" cy="67.69770065276313" r="22.81718710750151" fill="white" /><circle cx="84.44087782966245" cy="237.70923374609433" r="11.144638934640323" fill="white" /><circle cx="272.50112400820177" cy="151.32335731238436" r="12.36097560082623" fill="white" /><circle cx="287.12089771432875" cy="31.83617802833274" r="22.12989122693559" fill="white" /><circle cx="99.42186651126778" cy="365.66557089782253" r="17.101263937077412" fill="white" /><circle cx="297.34575611966557" cy="462.8662442323924" r="19.076554916037622" fill="white" /><circle cx="38.56547660948797" cy="498.88162995432225" r="19.941140890986627" fill="white" /><circle cx="251.28469675993847" cy="489.77537576618045" r="18.149271238553993" fill="white" /><circle cx="280.11188729639247" cy="273.5498204090738" r="24.292341331097347" fill="white" /><circle cx="388.50098753149143" cy="378.99319675179737" r="15.133593311976373" fill="white" /><circle cx="117.0864423612632" cy="499.32416928481894" r="11.989241899678422" fill="white" /><circle cx="242.05638591026894" cy="565.7250487211456" r="28.083707214764594" fill="white" /><circle cx="134.74732640168065" cy="310.0751071341446" r="16.54740692813376" fill="white" /><circle cx="190.01572991161845" cy="478.365461794172" r="11.02161579378234" fill="white" /><circle cx="134.91433101143878" cy="304.90421169285906" r="28.454869319374282" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Kastanienbraune Haut,
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        lichter Tag
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Isabel Wilkerson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HISTORY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

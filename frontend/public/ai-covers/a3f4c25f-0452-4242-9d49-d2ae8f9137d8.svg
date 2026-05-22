@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a3f4c25f-0452-4242-9d49-d2ae8f9137d8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a3f4c25f-0452-4242-9d49-d2ae8f9137d8)" />
+  <g opacity="0.1">
+    <circle cx="268.8982420096087" cy="532.4494233800345" r="21.442844544150624" fill="white" /><circle cx="286.081780177387" cy="433.9961250207163" r="21.91558501423666" fill="white" /><circle cx="233.46694498625183" cy="324.4221589109412" r="23.705085966954677" fill="white" /><circle cx="43.10151311987261" cy="582.4200367160556" r="29.90608957735206" fill="white" /><circle cx="132.2742138205495" cy="265.2806179413319" r="16.630557638979035" fill="white" /><circle cx="173.57126677328884" cy="261.26685124879907" r="25.021666885963263" fill="white" /><circle cx="235.262881532705" cy="342.94200665947244" r="15.81731154311358" fill="white" /><circle cx="171.58554605320114" cy="273.32792223034204" r="11.10306046265341" fill="white" /><circle cx="86.19901196422379" cy="540.5610947665036" r="20.928078539736735" fill="white" /><circle cx="326.7206542858302" cy="477.45062596372196" r="24.990564932182686" fill="white" /><circle cx="187.40892478266576" cy="95.52253805667843" r="18.744870462290887" fill="white" /><circle cx="399.9393031036208" cy="427.0082580381623" r="13.564287166588894" fill="white" /><circle cx="371.76573095026043" cy="158.2646738647318" r="28.538959651650696" fill="white" /><circle cx="366.5974744288528" cy="47.62287684996793" r="18.92647158866919" fill="white" /><circle cx="288.53482580328654" cy="519.657332262286" r="16.98878582934687" fill="white" /><circle cx="290.86886624217055" cy="387.5226454859148" r="29.93266314571608" fill="white" /><circle cx="29.10305426086337" cy="279.47713883763737" r="21.85770022075652" fill="white" /><circle cx="128.8680409087474" cy="463.79656801770585" r="17.54220000531027" fill="white" /><circle cx="295.697598223323" cy="381.6411851094038" r="29.255437642069175" fill="white" /><circle cx="338.3010648527669" cy="175.43888505481368" r="10.71274663577865" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Rosie-Resultat
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Graeme Simsion
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

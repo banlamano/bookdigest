@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-60380982-fe34-45d0-9a1d-b97068943002" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-60380982-fe34-45d0-9a1d-b97068943002)" />
+  <g opacity="0.1">
+    <circle cx="308.64748291596663" cy="338.95391535996305" r="19.073272060682775" fill="white" /><circle cx="324.06373840888773" cy="463.0230542636019" r="26.72700372480482" fill="white" /><circle cx="18.715767643199488" cy="86.9259576221816" r="23.580046922426693" fill="white" /><circle cx="46.115759997631976" cy="250.00096717208052" r="21.9974540054734" fill="white" /><circle cx="86.99141324696464" cy="324.3239818331156" r="17.492110451349347" fill="white" /><circle cx="382.4036183269485" cy="192.22690873930287" r="23.470089536416328" fill="white" /><circle cx="315.4172524250003" cy="38.28094915034996" r="26.929285537669937" fill="white" /><circle cx="48.301212126810356" cy="87.15747989745601" r="19.10442426157674" fill="white" /><circle cx="196.19193900631956" cy="328.1243213175428" r="17.4059359043993" fill="white" /><circle cx="367.11937184487806" cy="570.8221635864398" r="22.93578562247163" fill="white" /><circle cx="338.3847025325957" cy="97.9670999975403" r="16.819926855081967" fill="white" /><circle cx="347.6196588927733" cy="184.30772635323297" r="20.03178850460963" fill="white" /><circle cx="296.63116691158405" cy="376.6922674239326" r="25.112344883999214" fill="white" /><circle cx="168.1231517937995" cy="25.1392097164036" r="15.744405171423008" fill="white" /><circle cx="338.8989738854879" cy="54.3622630633376" r="27.81895678263787" fill="white" /><circle cx="282.08323860024643" cy="516.8159399526145" r="23.101355579860897" fill="white" /><circle cx="268.2037742038477" cy="358.78004422450203" r="10.820465611259566" fill="white" /><circle cx="331.565822596298" cy="155.93423440094222" r="13.574430304412537" fill="white" /><circle cx="74.95003952607071" cy="579.7457427042717" r="19.862844111143588" fill="white" /><circle cx="151.31821216972935" cy="543.8200210032936" r="21.690874374060105" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Trust Me I&apos;m Lying:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Geständnisse eines
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Medienmanipulators
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ryan Holiday
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

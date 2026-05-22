@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1e96f365-8c83-4369-8fe8-b9dbbab515a2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1e96f365-8c83-4369-8fe8-b9dbbab515a2)" />
+  <g opacity="0.1">
+    <circle cx="151.0920107101145" cy="103.9552575160791" r="13.51383298701921" fill="white" /><circle cx="149.58116395568916" cy="540.8298671716134" r="10.344714495139499" fill="white" /><circle cx="142.5449240155855" cy="427.73043471615205" r="12.828547446478884" fill="white" /><circle cx="29.811263339827356" cy="421.8014372999195" r="10.722273978076233" fill="white" /><circle cx="324.7966030785216" cy="205.08031138484958" r="29.400504529960358" fill="white" /><circle cx="116.2400673545505" cy="461.69718246674273" r="11.237510454892195" fill="white" /><circle cx="72.53078916229381" cy="565.3843985486662" r="29.10279828665367" fill="white" /><circle cx="68.68389236580792" cy="520.6089023455099" r="18.551801672573845" fill="white" /><circle cx="101.71704037339677" cy="524.0754570689847" r="21.289153229529546" fill="white" /><circle cx="335.5631638040091" cy="300.74435046212375" r="25.225557279221533" fill="white" /><circle cx="41.89435699777131" cy="176.01739704834645" r="16.780607766583184" fill="white" /><circle cx="293.3454823555127" cy="356.7933410305837" r="14.37740351542977" fill="white" /><circle cx="344.9925178599932" cy="223.62897870580088" r="21.220622176708773" fill="white" /><circle cx="228.94588754540362" cy="312.0464511848994" r="14.729237958580663" fill="white" /><circle cx="94.95756727304384" cy="522.4575426393192" r="16.722435244735294" fill="white" /><circle cx="220.05968171909194" cy="233.44614913262956" r="16.220208712112694" fill="white" /><circle cx="28.636562515147148" cy="417.84638898651565" r="21.430945864580604" fill="white" /><circle cx="121.02815758138176" cy="536.0271143454694" r="16.921558243700414" fill="white" /><circle cx="142.88963812845265" cy="291.10876318225615" r="10.538111046353833" fill="white" /><circle cx="89.8035652344598" cy="115.99603115742423" r="14.117284386564808" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Why We Sleep
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Matthew Walker
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

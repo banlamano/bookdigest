@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-781ddff7-e87f-44af-a821-d11362b26d8f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-781ddff7-e87f-44af-a821-d11362b26d8f)" />
+  <g opacity="0.1">
+    <circle cx="203.50075432183488" cy="368.3193618525668" r="20.099824949750058" fill="white" /><circle cx="190.50166114071828" cy="526.8802710944906" r="19.6881196381903" fill="white" /><circle cx="163.14482477504387" cy="105.56668454203113" r="26.458584291696077" fill="white" /><circle cx="171.36161663389547" cy="368.55247977547873" r="26.840803987421857" fill="white" /><circle cx="153.758867242002" cy="124.20791417968617" r="18.246024242460297" fill="white" /><circle cx="277.8173887636172" cy="505.21059477955407" r="10.837558330797496" fill="white" /><circle cx="377.284916537451" cy="511.1036633685434" r="19.71186358587165" fill="white" /><circle cx="159.86437745855508" cy="126.1957302078589" r="28.799673646178857" fill="white" /><circle cx="273.18794347978405" cy="547.7262295168398" r="29.49906288602382" fill="white" /><circle cx="356.9553830364891" cy="437.5337829703443" r="24.251181862478035" fill="white" /><circle cx="261.92644450793387" cy="498.32294732451777" r="19.568312254465837" fill="white" /><circle cx="1.5127029392421498" cy="202.9963854897047" r="27.490743487534417" fill="white" /><circle cx="56.509288650007065" cy="543.230732171902" r="13.252181804779962" fill="white" /><circle cx="224.90831643184018" cy="149.37834271847558" r="17.155909350431145" fill="white" /><circle cx="72.2955842274827" cy="541.8149881822125" r="27.5815657562429" fill="white" /><circle cx="164.62547471445674" cy="45.26271385059686" r="17.7850797186606" fill="white" /><circle cx="51.733318333594354" cy="82.25272045870192" r="28.515126546756264" fill="white" /><circle cx="176.07687699375464" cy="377.56928727198533" r="23.582674231841025" fill="white" /><circle cx="301.1282824880576" cy="145.4899067352639" r="15.25520740016974" fill="white" /><circle cx="40.13640377156569" cy="299.48023404211256" r="20.034103151675197" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Steve Jobs
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Walter Isaacson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

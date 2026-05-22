@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-4cf98121-1cb1-49e0-8f1a-83a934df2a21" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-4cf98121-1cb1-49e0-8f1a-83a934df2a21)" />
+  <g opacity="0.1">
+    <circle cx="363.55589097425207" cy="1.2861026944665621" r="21.492727950524063" fill="white" /><circle cx="0.6304539624756078" cy="105.85239483086922" r="16.91792359350474" fill="white" /><circle cx="104.8209292236812" cy="418.2438371463861" r="20.497113384561388" fill="white" /><circle cx="53.69921148639958" cy="365.6311668478568" r="26.221507657183693" fill="white" /><circle cx="156.16723006848775" cy="515.7756642215886" r="13.950237160987678" fill="white" /><circle cx="140.10623528966403" cy="526.5455142161886" r="21.270072420294298" fill="white" /><circle cx="195.3177001166524" cy="166.4592264969088" r="10.466433167362954" fill="white" /><circle cx="157.42564913607023" cy="59.323916714155864" r="26.05487749038717" fill="white" /><circle cx="368.79535779033773" cy="172.45626973221087" r="24.333803829901562" fill="white" /><circle cx="162.2832106788923" cy="125.20472271567333" r="19.294445852862324" fill="white" /><circle cx="241.95880168780914" cy="469.1315274809406" r="27.429372201862016" fill="white" /><circle cx="395.0935326379555" cy="132.30865776048321" r="11.65758328135071" fill="white" /><circle cx="126.48107962926866" cy="97.47987435820329" r="18.51372738937168" fill="white" /><circle cx="386.9607304755198" cy="553.9232586609395" r="23.619868062853175" fill="white" /><circle cx="91.36659958968596" cy="312.6596737535875" r="10.848087573107545" fill="white" /><circle cx="208.9020747800717" cy="420.38921607796124" r="12.95490521230179" fill="white" /><circle cx="356.3107227023862" cy="252.53381721453218" r="13.860351432786196" fill="white" /><circle cx="208.37644926122306" cy="171.00598721714988" r="26.97462578231788" fill="white" /><circle cx="145.10816585884822" cy="232.4360776800147" r="17.33476968541246" fill="white" /><circle cx="362.712423302923" cy="365.379823226149" r="17.537818138812334" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Power Prinzip:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Befreie die gigantische
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Kraft in dir!
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Tony Robbins
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

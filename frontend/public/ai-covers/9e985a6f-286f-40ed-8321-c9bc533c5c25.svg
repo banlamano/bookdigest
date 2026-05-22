@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9e985a6f-286f-40ed-8321-c9bc533c5c25" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9e985a6f-286f-40ed-8321-c9bc533c5c25)" />
+  <g opacity="0.1">
+    <circle cx="291.20552262282325" cy="73.07453941871034" r="27.850611815742482" fill="white" /><circle cx="138.29916190861815" cy="182.402582795565" r="17.030514000663644" fill="white" /><circle cx="352.66365811315995" cy="151.65438456140495" r="20.67814150529228" fill="white" /><circle cx="285.1282831991723" cy="384.9903777020281" r="16.557906286640005" fill="white" /><circle cx="301.4997585254778" cy="288.63157559308326" r="26.66083677270259" fill="white" /><circle cx="124.09343143179336" cy="276.32452123862623" r="13.036554529942093" fill="white" /><circle cx="182.3221280411842" cy="525.3171226916116" r="21.786463282210676" fill="white" /><circle cx="353.2785216159853" cy="258.28142919611673" r="29.884759063578763" fill="white" /><circle cx="70.65466596768543" cy="216.31118504988078" r="14.383853165773864" fill="white" /><circle cx="9.089535759248424" cy="313.5848321107478" r="25.83983490844972" fill="white" /><circle cx="67.4609371175411" cy="242.60941913255277" r="29.139062690860694" fill="white" /><circle cx="156.58073263470004" cy="161.83289301218883" r="24.73103670130086" fill="white" /><circle cx="341.1787099845987" cy="67.56616663203442" r="17.183188474701122" fill="white" /><circle cx="301.096846086373" cy="154.8496376703813" r="10.914942110697002" fill="white" /><circle cx="163.21783695755184" cy="500.2045664908128" r="25.638564724435682" fill="white" /><circle cx="97.7222986148357" cy="64.90759321255904" r="29.680077721015824" fill="white" /><circle cx="1.107067034990017" cy="95.89668467318874" r="11.423802919690644" fill="white" /><circle cx="338.22936464903097" cy="512.1419238302018" r="15.702558253354402" fill="white" /><circle cx="151.63893465753085" cy="530.6117388197238" r="26.297748870720362" fill="white" /><circle cx="347.3040544885169" cy="224.55069899970616" r="11.776601292275261" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Predictable Revenue: Der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Salesforce.com-Bestseller:
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wie Sie Ihr Unternehmen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Aaron Ross
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

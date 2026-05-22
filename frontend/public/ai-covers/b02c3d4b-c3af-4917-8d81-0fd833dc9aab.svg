@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b02c3d4b-c3af-4917-8d81-0fd833dc9aab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b02c3d4b-c3af-4917-8d81-0fd833dc9aab)" />
+  <g opacity="0.1">
+    <circle cx="68.67862014808352" cy="311.37233352026243" r="14.62705988523396" fill="white" /><circle cx="341.3507650762238" cy="520.4797444950786" r="12.858820268425992" fill="white" /><circle cx="266.3657339265621" cy="425.1719164270744" r="11.317774135447092" fill="white" /><circle cx="338.24581597797163" cy="241.78574221718296" r="20.091317281772852" fill="white" /><circle cx="117.25791339536995" cy="460.4505340572425" r="27.894505061631506" fill="white" /><circle cx="307.7222774801485" cy="281.45752081243546" r="15.910954394448847" fill="white" /><circle cx="209.97198631412166" cy="315.79730234862564" r="26.42367559389329" fill="white" /><circle cx="296.1502509286634" cy="530.1659741018821" r="12.401977190889067" fill="white" /><circle cx="89.2521749409818" cy="289.72866728417625" r="15.375523625977845" fill="white" /><circle cx="119.0409398631627" cy="58.44476671616401" r="12.450443018375125" fill="white" /><circle cx="14.512494016979227" cy="314.95525104730274" r="10.402866695090383" fill="white" /><circle cx="68.80162642458684" cy="324.1704682184188" r="23.23545946921016" fill="white" /><circle cx="249.4919174504832" cy="134.10215823385371" r="15.113734974864585" fill="white" /><circle cx="254.02921938165926" cy="533.4696294251314" r="26.981469619421464" fill="white" /><circle cx="15.171680497843454" cy="555.305616937892" r="28.698432539126856" fill="white" /><circle cx="74.67704647151496" cy="76.5088946246569" r="10.614945969457523" fill="white" /><circle cx="272.7891702074586" cy="114.65618134365656" r="23.776383829845045" fill="white" /><circle cx="13.269783698820126" cy="148.79340138141825" r="24.892264694091253" fill="white" /><circle cx="182.3557357010178" cy="200.64472845456066" r="11.284795267164924" fill="white" /><circle cx="22.11314659717578" cy="439.6754012820931" r="13.478986259757464" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Start Where You Are
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Pema Chödrön
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

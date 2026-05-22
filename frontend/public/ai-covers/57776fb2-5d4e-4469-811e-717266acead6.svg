@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-57776fb2-5d4e-4469-811e-717266acead6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-57776fb2-5d4e-4469-811e-717266acead6)" />
+  <g opacity="0.1">
+    <circle cx="341.0660565146577" cy="305.50875622646186" r="15.651979598104148" fill="white" /><circle cx="312.1453310860341" cy="369.05966333603664" r="28.464333330231877" fill="white" /><circle cx="348.3205645899339" cy="405.0204719753298" r="11.798878658063296" fill="white" /><circle cx="286.2933659835393" cy="590.6022089777778" r="17.425193971031778" fill="white" /><circle cx="27.142844657753294" cy="465.7839442361369" r="17.18113791227987" fill="white" /><circle cx="324.7218285723706" cy="307.0468490630918" r="28.854693747305436" fill="white" /><circle cx="368.6795997687723" cy="593.7054566897257" r="16.408107919928213" fill="white" /><circle cx="160.02859049268469" cy="177.25099319676096" r="18.026674496587283" fill="white" /><circle cx="35.295163755343225" cy="500.60374599028586" r="16.69343850273146" fill="white" /><circle cx="204.77700293168485" cy="597.7891561603856" r="17.809431850542172" fill="white" /><circle cx="274.6470546794297" cy="200.06622786658573" r="28.04250266793761" fill="white" /><circle cx="32.63505237376209" cy="322.9602444490235" r="22.076542449543552" fill="white" /><circle cx="393.1281523354318" cy="134.3849190541867" r="29.5394378233599" fill="white" /><circle cx="302.4580960848748" cy="375.74741426415716" r="13.377629024653206" fill="white" /><circle cx="329.36484098978747" cy="36.316535218291854" r="22.137184803681155" fill="white" /><circle cx="274.3027321354564" cy="57.368457878500045" r="17.669376934525257" fill="white" /><circle cx="75.05127384316191" cy="245.7691119050011" r="21.62323188108545" fill="white" /><circle cx="16.036317934476063" cy="93.94324158334233" r="18.185885647032364" fill="white" /><circle cx="187.48146131279069" cy="477.2632477630146" r="15.674506163894705" fill="white" /><circle cx="361.55836666387063" cy="264.986648815433" r="18.334188431294706" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Berg in dir
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brianna Wiest
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

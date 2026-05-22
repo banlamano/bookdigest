@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c861429e-31a2-4070-9e04-316adaa4145b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c861429e-31a2-4070-9e04-316adaa4145b)" />
+  <g opacity="0.1">
+    <circle cx="249.61193378523623" cy="315.20232853899927" r="23.726336267370293" fill="white" /><circle cx="54.16856024304582" cy="402.1053421868559" r="20.789713888721465" fill="white" /><circle cx="226.7462582480897" cy="227.6314599731714" r="24.84430385756682" fill="white" /><circle cx="292.2623343900824" cy="513.1820350805978" r="24.83878340655366" fill="white" /><circle cx="382.91739320671" cy="109.47659990808631" r="19.383927916414983" fill="white" /><circle cx="24.439971344392973" cy="57.28107237867002" r="28.317744709902183" fill="white" /><circle cx="142.11662578386864" cy="509.6827564644919" r="20.16376258435435" fill="white" /><circle cx="343.57798109817924" cy="360.3076995121268" r="23.33291032298836" fill="white" /><circle cx="351.9236479254696" cy="409.33284010855414" r="11.949814179975695" fill="white" /><circle cx="67.27235864279191" cy="7.825912725178341" r="14.489128749656476" fill="white" /><circle cx="7.765638615436288" cy="256.2139975454338" r="29.79347367720965" fill="white" /><circle cx="246.55442494046628" cy="310.2095527929204" r="10.255129587178978" fill="white" /><circle cx="92.88190536800309" cy="546.3502991470206" r="16.92844520099367" fill="white" /><circle cx="213.90572662143094" cy="113.33941521302773" r="28.14123705526402" fill="white" /><circle cx="144.4987066238252" cy="229.7629478241683" r="22.708143264481286" fill="white" /><circle cx="334.8363442184585" cy="384.46897145029027" r="23.475305719550366" fill="white" /><circle cx="96.85174032171741" cy="485.65302156696777" r="28.64995744494617" fill="white" /><circle cx="329.7323678686712" cy="588.1238779012906" r="13.322811158202887" fill="white" /><circle cx="84.99550335345272" cy="17.145617606002684" r="17.329665244494056" fill="white" /><circle cx="99.43763709373866" cy="578.5151181707394" r="11.146268321714516" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Emperor of All
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Maladies
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Siddhartha Mukherjee
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

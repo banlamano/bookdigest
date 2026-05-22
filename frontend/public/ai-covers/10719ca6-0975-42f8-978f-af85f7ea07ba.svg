@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-10719ca6-0975-42f8-978f-af85f7ea07ba" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-10719ca6-0975-42f8-978f-af85f7ea07ba)" />
+  <g opacity="0.1">
+    <circle cx="156.6272509438916" cy="558.8268423688195" r="27.42648681030426" fill="white" /><circle cx="99.68581473024507" cy="346.57376644566784" r="10.6343523045299" fill="white" /><circle cx="253.7347900929269" cy="155.4735593942666" r="19.687739873426516" fill="white" /><circle cx="104.18040696087911" cy="556.7910307745299" r="17.066905398679218" fill="white" /><circle cx="58.42759953822152" cy="448.50566991617654" r="25.44196933102102" fill="white" /><circle cx="323.39952961557145" cy="483.49140429184456" r="16.92737422972616" fill="white" /><circle cx="84.3853773318219" cy="419.7301530508088" r="24.753201545791253" fill="white" /><circle cx="355.6579076423357" cy="307.2281499467133" r="29.768272913202228" fill="white" /><circle cx="154.61164059707224" cy="259.3286950245798" r="19.470039507191785" fill="white" /><circle cx="145.676769811923" cy="321.9365842591708" r="24.51887232894407" fill="white" /><circle cx="225.74365752712043" cy="14.743150741107925" r="11.685129437903612" fill="white" /><circle cx="8.252911004582897" cy="15.512329604456765" r="23.20709387638839" fill="white" /><circle cx="104.11877281866069" cy="432.9346650538238" r="16.120077858683317" fill="white" /><circle cx="347.293527548524" cy="118.73736159887294" r="16.938981304266747" fill="white" /><circle cx="137.10905272103412" cy="551.1990946527766" r="19.563087885994193" fill="white" /><circle cx="165.46254020711623" cy="272.1975377797268" r="17.920869520360043" fill="white" /><circle cx="4.009028223339017" cy="226.77473681824273" r="26.322302098772884" fill="white" /><circle cx="63.09149717963942" cy="85.94011258816306" r="23.623491848535654" fill="white" /><circle cx="167.87962349673774" cy="532.6568233767646" r="24.433618047819692" fill="white" /><circle cx="49.49246722441467" cy="456.1960743132839" r="16.03705540584227" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Psychologie des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Überzeugens: Von den 50
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        wirkungsvollsten
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Noah Goldstein
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

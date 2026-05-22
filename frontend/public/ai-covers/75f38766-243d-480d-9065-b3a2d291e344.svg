@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-75f38766-243d-480d-9065-b3a2d291e344" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-75f38766-243d-480d-9065-b3a2d291e344)" />
+  <g opacity="0.1">
+    <circle cx="333.82469602754077" cy="112.02341189168104" r="10.112996055835593" fill="white" /><circle cx="368.15656519566033" cy="319.07840151599464" r="10.435925481482753" fill="white" /><circle cx="109.93589384892535" cy="246.93790671681612" r="28.29175240893281" fill="white" /><circle cx="155.23882091352874" cy="195.66670787080105" r="27.961670959430766" fill="white" /><circle cx="320.92387600621805" cy="564.3425592050672" r="26.03973136179893" fill="white" /><circle cx="350.53061802267706" cy="461.63777688540466" r="19.621604378691117" fill="white" /><circle cx="264.33954666285524" cy="20.721663577859516" r="12.402295463460874" fill="white" /><circle cx="222.9553030516194" cy="211.33709833314066" r="24.128807487521478" fill="white" /><circle cx="181.2747767126757" cy="400.5536853038051" r="23.542586450752815" fill="white" /><circle cx="26.52178244182979" cy="314.20928715526657" r="25.817685989839518" fill="white" /><circle cx="155.39236945639504" cy="294.3349478491221" r="10.175943641470813" fill="white" /><circle cx="95.64644152067383" cy="542.3406489370054" r="22.0543795833917" fill="white" /><circle cx="31.950827198424214" cy="362.5728664585013" r="28.227568637236892" fill="white" /><circle cx="309.2657905163669" cy="178.93591250306875" r="10.405992386098218" fill="white" /><circle cx="164.55946569003905" cy="554.2502045914081" r="19.58482026603634" fill="white" /><circle cx="246.08345249104562" cy="471.40833259177754" r="21.607584364814702" fill="white" /><circle cx="232.434787126717" cy="429.53265060256217" r="24.39955618079923" fill="white" /><circle cx="243.67654712981684" cy="580.1070805996129" r="19.77492348693213" fill="white" /><circle cx="194.94948207398352" cy="331.97375885060075" r="21.856313707625453" fill="white" /><circle cx="30.955650221894793" cy="146.68555704781306" r="19.901107138788827" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Mythos vom
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Unternehmertum: Warum die
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        meisten kleinen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Michael Gerber
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

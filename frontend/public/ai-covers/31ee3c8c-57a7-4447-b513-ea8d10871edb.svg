@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-31ee3c8c-57a7-4447-b513-ea8d10871edb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-31ee3c8c-57a7-4447-b513-ea8d10871edb)" />
+  <g opacity="0.1">
+    <circle cx="333.54262263285466" cy="364.62111934729165" r="19.39396432469122" fill="white" /><circle cx="106.17187626139514" cy="98.84148143592158" r="26.37843065414713" fill="white" /><circle cx="289.2677908131422" cy="482.15372410773006" r="18.99547107276927" fill="white" /><circle cx="91.30103680275599" cy="198.29908250381825" r="19.72126262829455" fill="white" /><circle cx="253.60329351053514" cy="344.8255277246484" r="21.958905835510947" fill="white" /><circle cx="275.293527918096" cy="462.38715101639195" r="14.609356667164766" fill="white" /><circle cx="7.279871984944153" cy="140.2356878412474" r="20.87920356764345" fill="white" /><circle cx="195.60736671961808" cy="440.78988723065004" r="28.38580409489508" fill="white" /><circle cx="38.38383254223392" cy="193.04771170265164" r="15.974023404803663" fill="white" /><circle cx="280.07267361194596" cy="8.028100842968545" r="22.306127975138395" fill="white" /><circle cx="214.35270752379796" cy="410.07898292376177" r="27.073647951001107" fill="white" /><circle cx="53.36553274696642" cy="216.91000278984626" r="17.97210239463092" fill="white" /><circle cx="387.54576491320915" cy="103.3351918979601" r="20.943215713026902" fill="white" /><circle cx="218.36143355197242" cy="331.94264465354115" r="14.393911942509046" fill="white" /><circle cx="381.15102172784856" cy="535.5297937077557" r="25.503098535170423" fill="white" /><circle cx="68.08486163916099" cy="283.8968454193308" r="14.904354628693374" fill="white" /><circle cx="372.02595062487194" cy="304.00380978872823" r="22.721929079667916" fill="white" /><circle cx="124.27990080937113" cy="229.20123690526663" r="13.95470169249915" fill="white" /><circle cx="210.43333224473363" cy="334.5944330867689" r="29.62206828663798" fill="white" /><circle cx="141.33239678988338" cy="352.7172242684234" r="23.793193069292457" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die ungebundene Seele:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Eine Reise jenseits von
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Angst und Begrenzung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Michael Singer
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ae017b6a-a698-44de-a9b7-0f6af04918da" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ae017b6a-a698-44de-a9b7-0f6af04918da)" />
+  <g opacity="0.1">
+    <circle cx="49.75974353141708" cy="458.9413524411612" r="20.259846144875866" fill="white" /><circle cx="99.37822802009025" cy="588.7371025900505" r="16.27300401105134" fill="white" /><circle cx="247.6057628266187" cy="444.49056040595826" r="12.901923721240857" fill="white" /><circle cx="2.979545559610308" cy="251.99549029234632" r="11.825271818732187" fill="white" /><circle cx="335.3736241304868" cy="449.32848167119175" r="15.111771006897834" fill="white" /><circle cx="198.93639116281977" cy="282.58361407019174" r="22.32782507358099" fill="white" /><circle cx="308.3874285251893" cy="49.48842307574457" r="18.51295408516556" fill="white" /><circle cx="222.94449643618145" cy="30.36267273286455" r="18.60963326351719" fill="white" /><circle cx="356.66220309493167" cy="185.57523042474753" r="19.670621907814407" fill="white" /><circle cx="232.95300639178157" cy="404.0569253433596" r="24.04498467877719" fill="white" /><circle cx="210.04693988746044" cy="461.62383147444297" r="10.562580280561795" fill="white" /><circle cx="216.82540346089948" cy="446.2899113860145" r="24.446119184412904" fill="white" /><circle cx="67.7722539490909" cy="311.342603539089" r="22.525530009110575" fill="white" /><circle cx="162.87876604719358" cy="329.3619704704114" r="28.652640082556164" fill="white" /><circle cx="202.1432345914504" cy="110.67203897662907" r="14.935604494961774" fill="white" /><circle cx="165.01428961006278" cy="61.747405566689075" r="25.30222103108584" fill="white" /><circle cx="197.63177186084212" cy="58.16507193908218" r="12.893365059357196" fill="white" /><circle cx="94.34876474248072" cy="39.600351143807465" r="26.95428361667577" fill="white" /><circle cx="211.91312344243903" cy="500.60981820694104" r="14.472886130997782" fill="white" /><circle cx="69.10389679159192" cy="231.1115361430682" r="21.636020786345334" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Disziplin ohne Drama: Wie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Sie Ihr Kind liebevoll
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        erziehen und die
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Daniel Siegel
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

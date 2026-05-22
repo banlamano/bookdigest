@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-3e53fba5-98c1-4f62-a573-146e9f109d56" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-3e53fba5-98c1-4f62-a573-146e9f109d56)" />
+  <g opacity="0.1">
+    <circle cx="292.3802299614807" cy="243.8738108411756" r="14.306559302414136" fill="white" /><circle cx="241.58705576523337" cy="331.1154218675976" r="13.379514781801232" fill="white" /><circle cx="262.73279453247136" cy="6.850541069995519" r="11.288785289112447" fill="white" /><circle cx="190.1065072454512" cy="344.2399965235408" r="25.27798929039775" fill="white" /><circle cx="103.5187756980378" cy="269.0899335799943" r="12.154775067304485" fill="white" /><circle cx="246.1293199790161" cy="242.1747837011707" r="22.69416176402585" fill="white" /><circle cx="109.49165881371749" cy="182.28619070633306" r="19.85473981074751" fill="white" /><circle cx="91.02788150820022" cy="81.1506559074901" r="18.887523199645727" fill="white" /><circle cx="93.65641636391469" cy="280.8168584160175" r="29.937266587015152" fill="white" /><circle cx="368.99444550115163" cy="485.8009000381726" r="18.065815608147844" fill="white" /><circle cx="193.7655844686581" cy="493.90345482096274" r="18.136162223423305" fill="white" /><circle cx="269.2350906908172" cy="403.9005809222435" r="17.58935065237951" fill="white" /><circle cx="367.8151201622682" cy="457.20686576838295" r="25.013739842431022" fill="white" /><circle cx="213.4211800357888" cy="446.48508752711393" r="16.148921182691137" fill="white" /><circle cx="127.92084848783341" cy="14.557893209351924" r="19.54441113177763" fill="white" /><circle cx="44.64389692254463" cy="507.3093470536949" r="12.854022685557457" fill="white" /><circle cx="316.4588333778183" cy="292.9838741435287" r="17.387420917165375" fill="white" /><circle cx="213.7833437627185" cy="173.64861563500548" r="29.41500718029451" fill="white" /><circle cx="311.2619619128248" cy="276.46195579200656" r="24.044599542582574" fill="white" /><circle cx="268.73309273288857" cy="50.61128520223812" r="25.215817658693005" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Geschichte des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        menschlichen Körpers:
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Evolution, Gesundheit und
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Daniel Lieberman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

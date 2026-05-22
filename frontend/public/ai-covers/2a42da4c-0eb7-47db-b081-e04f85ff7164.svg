@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-2a42da4c-0eb7-47db-b081-e04f85ff7164" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-2a42da4c-0eb7-47db-b081-e04f85ff7164)" />
+  <g opacity="0.1">
+    <circle cx="60.36319719268626" cy="143.12186785218222" r="29.6852704909501" fill="white" /><circle cx="301.6928687671451" cy="176.02083858550523" r="15.741790323943619" fill="white" /><circle cx="53.130012823597816" cy="589.1554758314556" r="23.679031043163988" fill="white" /><circle cx="186.03292168665894" cy="369.37696491523377" r="26.667936442517238" fill="white" /><circle cx="89.65818614311232" cy="118.74317188792469" r="21.07828026656445" fill="white" /><circle cx="249.9349654780513" cy="65.22167006179014" r="28.29506976572256" fill="white" /><circle cx="105.10800829663202" cy="80.42124823462599" r="25.607666138812952" fill="white" /><circle cx="163.7341762640566" cy="244.30359206869923" r="15.263069306102528" fill="white" /><circle cx="34.76210783485616" cy="596.2023974401196" r="12.77999114053538" fill="white" /><circle cx="368.25805722856546" cy="385.43646976927596" r="14.533342028532218" fill="white" /><circle cx="49.23627413207332" cy="139.21130566323424" r="10.607073634240722" fill="white" /><circle cx="107.93573739136617" cy="519.3033186492426" r="10.690387639478246" fill="white" /><circle cx="176.9906826330383" cy="299.43702397597474" r="22.651869500588084" fill="white" /><circle cx="79.89945059085164" cy="426.5446295525365" r="26.021168937981578" fill="white" /><circle cx="389.86809280461216" cy="305.9481175883628" r="18.600671487979508" fill="white" /><circle cx="186.62174268352527" cy="593.0921954347574" r="14.819113536009434" fill="white" /><circle cx="289.6052110901679" cy="442.39734789714925" r="20.772127029318522" fill="white" /><circle cx="169.80277776013796" cy="198.9424248281656" r="12.960086145255595" fill="white" /><circle cx="207.18450352682743" cy="480.3510495104472" r="20.819682498402685" fill="white" /><circle cx="168.43939670649314" cy="151.10919227478956" r="15.810373741378507" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Ich will über Rassismus
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        reden
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ijeoma Oluo
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

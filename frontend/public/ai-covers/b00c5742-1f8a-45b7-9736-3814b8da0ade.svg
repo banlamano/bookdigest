@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b00c5742-1f8a-45b7-9736-3814b8da0ade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b00c5742-1f8a-45b7-9736-3814b8da0ade)" />
+  <g opacity="0.1">
+    <circle cx="96.7016561936394" cy="160.67198603972616" r="10.582138282389256" fill="white" /><circle cx="174.65248931627855" cy="350.5774489962012" r="10.59782741554945" fill="white" /><circle cx="102.51435407638137" cy="247.15205560649898" r="15.78162762253716" fill="white" /><circle cx="116.54893940273574" cy="301.556003163199" r="13.031475366568827" fill="white" /><circle cx="275.3202003080156" cy="246.27871511350753" r="12.920198405656524" fill="white" /><circle cx="142.62643292538567" cy="368.354908484385" r="27.3208906859777" fill="white" /><circle cx="304.9482114071979" cy="340.1983424247446" r="27.019201627285863" fill="white" /><circle cx="281.1928262997631" cy="67.77566413472245" r="19.767500926763432" fill="white" /><circle cx="316.5316688351791" cy="230.8671542509891" r="29.9253042705546" fill="white" /><circle cx="317.0859499637785" cy="325.97964376526136" r="20.023660079725765" fill="white" /><circle cx="3.5920160041694515" cy="193.50169763651417" r="27.591633069656133" fill="white" /><circle cx="279.6691420251112" cy="350.50655185067325" r="27.383203450045226" fill="white" /><circle cx="181.25721198513727" cy="42.18104355910401" r="16.730747705770394" fill="white" /><circle cx="87.36936751711264" cy="332.2823468726016" r="23.937411385515773" fill="white" /><circle cx="278.1660820638967" cy="155.53280773705563" r="18.315860276779656" fill="white" /><circle cx="155.16754600944057" cy="357.32027775430316" r="28.915329064765857" fill="white" /><circle cx="151.22804839640528" cy="518.2284101242284" r="17.31878251285161" fill="white" /><circle cx="362.58112951143676" cy="330.42556457563506" r="25.57400855871858" fill="white" /><circle cx="25.02142705490762" cy="28.802265340683796" r="14.661937131542317" fill="white" /><circle cx="24.796496374956554" cy="370.67317953397196" r="17.160276867191214" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Eine Fülle an gesundem
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Menschenverstand
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Ben Carlson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-40969451-3477-4cb7-920a-0782daa5dbea" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-40969451-3477-4cb7-920a-0782daa5dbea)" />
+  <g opacity="0.1">
+    <circle cx="181.94560818540884" cy="372.1429986230848" r="12.013904931422276" fill="white" /><circle cx="120.9989447968312" cy="105.60389581847338" r="14.05451137206341" fill="white" /><circle cx="242.16497020629544" cy="364.64790326051303" r="26.323854491166735" fill="white" /><circle cx="343.44456506266675" cy="149.55920267985016" r="14.810270905148705" fill="white" /><circle cx="179.16934210118737" cy="384.96086011423506" r="14.66382009118825" fill="white" /><circle cx="321.53188330857284" cy="393.4366684711747" r="11.071593539634145" fill="white" /><circle cx="172.44409401304193" cy="546.1214692085546" r="25.173185518107104" fill="white" /><circle cx="397.74264501923994" cy="445.06641664376156" r="22.69886704048033" fill="white" /><circle cx="156.7440739354642" cy="157.8598395474271" r="17.636137667158337" fill="white" /><circle cx="206.2499346411348" cy="59.516929223814905" r="20.26724362690655" fill="white" /><circle cx="222.06387893665686" cy="415.7312918691189" r="24.57240706283326" fill="white" /><circle cx="338.56300474726606" cy="138.0261430890495" r="27.307537195853833" fill="white" /><circle cx="160.13004800093512" cy="35.986569334704456" r="26.966673583277384" fill="white" /><circle cx="299.3417937094586" cy="405.1944344360521" r="15.90941988709636" fill="white" /><circle cx="38.26293931158888" cy="421.13977980982634" r="13.936597348089602" fill="white" /><circle cx="153.73444029781314" cy="406.85763291752613" r="25.024845745843997" fill="white" /><circle cx="308.71647155360165" cy="117.9818785498921" r="17.10038584774104" fill="white" /><circle cx="150.2711312089315" cy="40.972221189135105" r="21.632742636765716" fill="white" /><circle cx="335.3406583912994" cy="582.2617812330424" r="24.931246209238182" fill="white" /><circle cx="252.28795521456405" cy="565.2774764071104" r="29.997929778204956" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Effective Executive
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Peter Drucker
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

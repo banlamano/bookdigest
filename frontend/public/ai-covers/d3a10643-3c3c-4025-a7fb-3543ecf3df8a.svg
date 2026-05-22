@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d3a10643-3c3c-4025-a7fb-3543ecf3df8a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d3a10643-3c3c-4025-a7fb-3543ecf3df8a)" />
+  <g opacity="0.1">
+    <circle cx="177.81157801117976" cy="148.3795076468065" r="17.744014687992905" fill="white" /><circle cx="45.73036452434658" cy="273.2661754258568" r="13.193677078915709" fill="white" /><circle cx="376.84667955063554" cy="183.0240435472071" r="16.620249557488503" fill="white" /><circle cx="167.87965034257962" cy="315.6798165723347" r="15.405151033125719" fill="white" /><circle cx="321.8511608220293" cy="305.32987413527763" r="28.418661695625463" fill="white" /><circle cx="225.55403595224087" cy="397.9793446681197" r="22.656798375485536" fill="white" /><circle cx="270.1545073025998" cy="192.04218660302666" r="14.347395400537973" fill="white" /><circle cx="194.90099454491263" cy="39.38715639717365" r="20.61378460063642" fill="white" /><circle cx="221.814875842719" cy="86.87104114550776" r="20.958114011641037" fill="white" /><circle cx="388.13358865787745" cy="109.8527208843298" r="25.744746021850844" fill="white" /><circle cx="240.28317901627338" cy="476.2557225728299" r="16.192415037341267" fill="white" /><circle cx="237.14032540287064" cy="165.42017107983867" r="27.361724520300147" fill="white" /><circle cx="157.5912945824732" cy="354.7745117215619" r="12.338459328012675" fill="white" /><circle cx="307.3116924830409" cy="593.7418800101352" r="10.722077347146303" fill="white" /><circle cx="185.69996407242994" cy="311.5969405744244" r="26.15974006198964" fill="white" /><circle cx="246.45170412262877" cy="253.06178720892456" r="14.49164583573285" fill="white" /><circle cx="171.28258926821007" cy="109.06308733154113" r="26.584505060393745" fill="white" /><circle cx="103.33384142925861" cy="546.9098923356037" r="26.820424759877845" fill="white" /><circle cx="220.3374242526603" cy="92.86991297427267" r="10.292619849979804" fill="white" /><circle cx="214.50451266245204" cy="51.018520965273616" r="18.20509900843828" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die hohe Kunst des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Liebens: Ein praktischer
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wegbegleiter
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Don Miguel Ruiz
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

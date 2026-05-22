@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-be6bb196-7d7b-4266-85e8-fa5d3a5088f8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-be6bb196-7d7b-4266-85e8-fa5d3a5088f8)" />
+  <g opacity="0.1">
+    <circle cx="8.93156361475933" cy="15.155380891146986" r="12.6224425650887" fill="white" /><circle cx="300.6522133107391" cy="409.83383482892395" r="20.664446113783857" fill="white" /><circle cx="335.1614923894935" cy="189.61301266332816" r="12.184833563554758" fill="white" /><circle cx="110.69503087341187" cy="347.0278348536547" r="29.42056218503504" fill="white" /><circle cx="150.33579109208296" cy="522.3401266610233" r="23.722546261712118" fill="white" /><circle cx="182.44667160277626" cy="242.32025367677073" r="14.031146824760189" fill="white" /><circle cx="42.20372735877764" cy="355.086689937596" r="11.084586394862372" fill="white" /><circle cx="140.05965064426613" cy="372.67654852555756" r="13.967032324512807" fill="white" /><circle cx="208.42171472512163" cy="527.4577144513282" r="16.79005908336799" fill="white" /><circle cx="141.02835313503576" cy="147.71033777322597" r="27.07838237160991" fill="white" /><circle cx="323.0877480188431" cy="516.821678970686" r="28.616268598044478" fill="white" /><circle cx="2.8559303089858545" cy="119.61785757208321" r="24.47095047569514" fill="white" /><circle cx="335.87791263518375" cy="240.6732585436533" r="22.202065405078706" fill="white" /><circle cx="90.7422901269475" cy="402.96378521895866" r="21.784818239007855" fill="white" /><circle cx="65.79890682658775" cy="333.7175987615503" r="27.69562548957635" fill="white" /><circle cx="30.759072173158188" cy="495.62924867896345" r="19.33461121879099" fill="white" /><circle cx="341.8967006467989" cy="397.0094217391511" r="17.69013421476972" fill="white" /><circle cx="146.27163830904405" cy="523.14883790386" r="22.800140692821998" fill="white" /><circle cx="281.93901936942973" cy="199.8873182380691" r="22.060905651623187" fill="white" /><circle cx="92.90504238870811" cy="239.93337954298715" r="21.44677355588889" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Millionaire Next Door
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Thomas Stanley
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

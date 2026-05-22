@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a5747076-2c69-4e11-bf19-770c5e08efcb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a5747076-2c69-4e11-bf19-770c5e08efcb)" />
+  <g opacity="0.1">
+    <circle cx="72.87044293857772" cy="346.4358210033435" r="11.310514637335348" fill="white" /><circle cx="273.9585482073924" cy="186.62395035828325" r="26.45066546643359" fill="white" /><circle cx="369.6952554712589" cy="38.143170895323905" r="13.858723172184469" fill="white" /><circle cx="286.0863965430055" cy="11.481464636497485" r="21.10926685669052" fill="white" /><circle cx="195.23086364358687" cy="218.72582572675455" r="24.72005514233662" fill="white" /><circle cx="335.75478640449523" cy="147.61664842714828" r="27.118249414665545" fill="white" /><circle cx="337.5721569966812" cy="327.94708264373764" r="11.541777256477733" fill="white" /><circle cx="78.16346480288105" cy="394.72242867971977" r="16.95056619688939" fill="white" /><circle cx="355.6200539730324" cy="374.5780809071692" r="13.27949603740745" fill="white" /><circle cx="251.3044400128189" cy="419.2984509614844" r="22.925888814522466" fill="white" /><circle cx="305.0681033486834" cy="375.7345514697975" r="25.906421327544095" fill="white" /><circle cx="156.61483107969923" cy="322.8261100439374" r="20.084804115591965" fill="white" /><circle cx="54.68865254146835" cy="303.1689504099253" r="12.586230069893546" fill="white" /><circle cx="13.34751412079589" cy="227.65812520747508" r="10.049515748795821" fill="white" /><circle cx="270.34229273324144" cy="251.2181836747611" r="13.186421234949075" fill="white" /><circle cx="361.8999310736083" cy="284.68277774787964" r="23.010733652718223" fill="white" /><circle cx="94.74535691637458" cy="261.0261729563242" r="26.48847938461733" fill="white" /><circle cx="381.19904094314535" cy="501.98607188561164" r="10.310778973059184" fill="white" /><circle cx="92.85435354774046" cy="586.82797633911" r="28.466115419929384" fill="white" /><circle cx="38.734009668868595" cy="244.1924294425143" r="19.46357497801661" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Social Animal
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        David Brooks
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

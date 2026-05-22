@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-eec8379f-161a-4f84-b3f1-589f65a67ef2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-eec8379f-161a-4f84-b3f1-589f65a67ef2)" />
+  <g opacity="0.1">
+    <circle cx="73.96435632274247" cy="507.44502633908206" r="27.8976084548889" fill="white" /><circle cx="317.6502210784417" cy="410.6121901680687" r="12.965760841471546" fill="white" /><circle cx="20.357967867175518" cy="456.18023266689585" r="14.84196650207094" fill="white" /><circle cx="122.56363353917817" cy="584.2710644274615" r="11.339968797974024" fill="white" /><circle cx="21.676869260254605" cy="266.59422589707214" r="24.274482231925653" fill="white" /><circle cx="307.9239849201567" cy="287.04893864653104" r="26.577664421449384" fill="white" /><circle cx="107.45877820193641" cy="1.4871285300001258" r="10.488563199930105" fill="white" /><circle cx="62.34813351592998" cy="93.90514168378579" r="22.547477925417212" fill="white" /><circle cx="133.63780324294393" cy="287.6019402389746" r="25.073354092990172" fill="white" /><circle cx="2.783619529408954" cy="298.65701748064146" r="10.620239910969033" fill="white" /><circle cx="262.2729717345251" cy="120.77068640239614" r="24.300964207523208" fill="white" /><circle cx="28.67396303023537" cy="318.20977699851835" r="22.07472338411003" fill="white" /><circle cx="366.4804574284593" cy="305.48448334440474" r="25.33952873678575" fill="white" /><circle cx="237.41325475163686" cy="247.6271314699836" r="18.465928007351202" fill="white" /><circle cx="81.28167130010362" cy="131.77416633277932" r="10.111580019068732" fill="white" /><circle cx="224.3376118651358" cy="391.9249651322892" r="29.65620476005695" fill="white" /><circle cx="243.26013458069178" cy="279.6702211899694" r="16.498684285410654" fill="white" /><circle cx="202.2374937449632" cy="450.3071359492242" r="25.117932565528204" fill="white" /><circle cx="249.8037633458039" cy="518.0202135846351" r="17.545605025337515" fill="white" /><circle cx="277.5448821836265" cy="597.2703829060778" r="25.480481473040413" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Herz von Buddhas
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Lehre: Die vier edlen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wahrheiten, der achtfache
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Thich Nhat Hanh
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

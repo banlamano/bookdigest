@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b3ae7c67-0523-4a5c-90b1-427a0709d51a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b3ae7c67-0523-4a5c-90b1-427a0709d51a)" />
+  <g opacity="0.1">
+    <circle cx="40.14500420405231" cy="22.825986972499447" r="21.32472396801807" fill="white" /><circle cx="173.98400121613435" cy="350.14582279593446" r="12.648577353481542" fill="white" /><circle cx="321.30014768487126" cy="513.9717732687866" r="24.07369526852912" fill="white" /><circle cx="96.64317717974905" cy="42.50576082432136" r="19.24447858402784" fill="white" /><circle cx="156.54554372218746" cy="436.57655645136566" r="10.878548224395377" fill="white" /><circle cx="221.01417706121603" cy="371.88378076219334" r="28.073270214340823" fill="white" /><circle cx="226.53841544082752" cy="216.78737434493885" r="21.823624035650283" fill="white" /><circle cx="146.11709540105971" cy="574.3039548019109" r="28.845618606559867" fill="white" /><circle cx="312.67575252337974" cy="184.03190140456925" r="22.095933223983486" fill="white" /><circle cx="9.650412664409158" cy="280.6390227559669" r="16.2418204402398" fill="white" /><circle cx="35.38890760279338" cy="488.65610619244353" r="17.748417015763117" fill="white" /><circle cx="94.73173915231699" cy="222.2392562855089" r="29.67891120880367" fill="white" /><circle cx="152.00437390710735" cy="285.10772373266855" r="10.28430964152279" fill="white" /><circle cx="177.3708841783073" cy="298.9726104745978" r="12.590733013455132" fill="white" /><circle cx="66.31214410746212" cy="376.00111976418134" r="21.629809251205902" fill="white" /><circle cx="108.34727968622828" cy="191.3175702569896" r="22.58822610450669" fill="white" /><circle cx="168.43293221724934" cy="43.99215061904087" r="23.01047056453537" fill="white" /><circle cx="179.3018710895113" cy="315.16730697545654" r="22.00798851480635" fill="white" /><circle cx="215.21189631254333" cy="36.51882101035506" r="28.962825430267703" fill="white" /><circle cx="360.82811872755735" cy="576.7017520065041" r="29.246203663964884" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Führungspersönlichkeit in
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        dir: Wie Sie Ihr
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        John Maxwell
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

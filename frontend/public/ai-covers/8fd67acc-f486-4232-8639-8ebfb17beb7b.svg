@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8fd67acc-f486-4232-8639-8ebfb17beb7b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8fd67acc-f486-4232-8639-8ebfb17beb7b)" />
+  <g opacity="0.1">
+    <circle cx="168.34583039224717" cy="358.31756301639774" r="25.135672566283528" fill="white" /><circle cx="17.27744682272916" cy="427.65501647349726" r="13.096817981934517" fill="white" /><circle cx="314.52967386590444" cy="135.23353394876418" r="15.601465024993786" fill="white" /><circle cx="28.53023638281522" cy="231.52400605927912" r="28.872522126030148" fill="white" /><circle cx="257.9769712431487" cy="26.354411162784007" r="11.660916166374975" fill="white" /><circle cx="156.72228228179398" cy="103.40669371276607" r="19.154942608344367" fill="white" /><circle cx="284.5674006614206" cy="235.47904397011632" r="16.580916702337547" fill="white" /><circle cx="310.8626348369785" cy="352.88078903722806" r="21.49676028016877" fill="white" /><circle cx="63.18074125511295" cy="135.43127846783182" r="25.40530164344576" fill="white" /><circle cx="189.76404770086762" cy="386.9069408634971" r="18.96913929522306" fill="white" /><circle cx="4.8364558741502695" cy="166.33831612290538" r="28.95813397404059" fill="white" /><circle cx="281.66356087972156" cy="134.36318628727454" r="23.163516869889264" fill="white" /><circle cx="346.083846004389" cy="443.58292452904755" r="13.560643919581938" fill="white" /><circle cx="145.13272274221816" cy="86.52987487702582" r="12.948902526081769" fill="white" /><circle cx="22.056105599053446" cy="145.8387912071346" r="11.853592764712515" fill="white" /><circle cx="186.4029107243883" cy="395.8731495043694" r="11.197814503656138" fill="white" /><circle cx="359.67761306301156" cy="166.9732819350697" r="14.04889481954348" fill="white" /><circle cx="348.80760532259194" cy="69.52271050033892" r="27.33082800408081" fill="white" /><circle cx="16.29122683176618" cy="520.5925968430012" r="22.70089737029045" fill="white" /><circle cx="175.57759523790688" cy="10.948622525828533" r="10.257598084622419" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Wright Brothers
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        David McCullough
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

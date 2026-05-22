@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-90c651ce-9364-4f42-89cc-3ce0096a89e4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-90c651ce-9364-4f42-89cc-3ce0096a89e4)" />
+  <g opacity="0.1">
+    <circle cx="160.76505146027705" cy="413.03263361032793" r="24.2094001473977" fill="white" /><circle cx="187.49868611683775" cy="29.011903282116712" r="24.52508630656314" fill="white" /><circle cx="254.74853934813626" cy="409.9898602945285" r="29.93601309868701" fill="white" /><circle cx="306.6826622040351" cy="205.70693668125085" r="25.975972115850908" fill="white" /><circle cx="314.0870248425676" cy="239.74516778892357" r="16.18182152911062" fill="white" /><circle cx="271.2721595476315" cy="152.95862965171935" r="18.075581896135468" fill="white" /><circle cx="221.56813960796757" cy="127.2082230542078" r="26.851867253401732" fill="white" /><circle cx="11.33203035162289" cy="156.03107728044398" r="16.184923751007148" fill="white" /><circle cx="67.04769866855057" cy="225.64516221780502" r="20.777060420841813" fill="white" /><circle cx="271.588433607593" cy="213.43642450919637" r="16.867741655212605" fill="white" /><circle cx="356.1228720616101" cy="511.90856203757477" r="18.167007724132606" fill="white" /><circle cx="160.99266222074314" cy="7.904223224557461" r="10.252142915718611" fill="white" /><circle cx="228.59933714559517" cy="407.7541520510595" r="21.094710097792955" fill="white" /><circle cx="352.0113830826609" cy="185.1861567111309" r="25.153521147934466" fill="white" /><circle cx="275.7694837710905" cy="556.0339888666197" r="26.444023989325665" fill="white" /><circle cx="140.31788828709603" cy="278.26151765739223" r="10.169382517893094" fill="white" /><circle cx="296.7599767256799" cy="66.61553187250853" r="17.72636833966396" fill="white" /><circle cx="142.99674724269332" cy="365.179798755802" r="25.165572188166866" fill="white" /><circle cx="386.11896909734685" cy="132.25944417365548" r="11.557744106623415" fill="white" /><circle cx="134.24716032129692" cy="82.96761964121077" r="12.287574818278602" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Kunst der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Möglichkeiten: Von der
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        inneren Einstellung zum
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Rosamund Zander
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

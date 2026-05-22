@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0212a28a-4c7c-4133-b27a-3420bcffa3ac" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0212a28a-4c7c-4133-b27a-3420bcffa3ac)" />
+  <g opacity="0.1">
+    <circle cx="80.04444808188724" cy="355.5938794706341" r="16.545779623967505" fill="white" /><circle cx="73.45714186246144" cy="333.38198297285413" r="10.919584436055608" fill="white" /><circle cx="321.64498719024226" cy="72.22343780422852" r="24.319559077296788" fill="white" /><circle cx="216.32843686527923" cy="493.121476295752" r="15.542667199892094" fill="white" /><circle cx="24.920826294307254" cy="287.7521897976916" r="28.090557034380616" fill="white" /><circle cx="90.22377225853853" cy="100.65457506914824" r="21.70886403487998" fill="white" /><circle cx="14.7130352033634" cy="528.7089220601363" r="21.959017384095205" fill="white" /><circle cx="320.74869680298286" cy="508.5200464278864" r="13.907831085002842" fill="white" /><circle cx="120.38434296368172" cy="94.65425072855945" r="27.352525549575" fill="white" /><circle cx="227.65008952432626" cy="143.0036218083237" r="26.75962542895555" fill="white" /><circle cx="120.14516133558399" cy="440.28969753375503" r="29.795868493259356" fill="white" /><circle cx="319.1584369129092" cy="151.36395293492592" r="27.99561838206008" fill="white" /><circle cx="209.0283935973877" cy="143.06018611126382" r="13.37948936559765" fill="white" /><circle cx="190.17488658309506" cy="205.68974163613197" r="10.669000510996469" fill="white" /><circle cx="102.51789666820005" cy="161.3282957629209" r="10.395965579384745" fill="white" /><circle cx="21.595682965398666" cy="307.7164324569136" r="14.989899855801738" fill="white" /><circle cx="373.8699592320375" cy="268.9372038897472" r="20.69124956733946" fill="white" /><circle cx="263.61915223618223" cy="15.34081592178691" r="22.518751751698844" fill="white" /><circle cx="344.71752534738533" cy="431.25370274467093" r="19.164257215584435" fill="white" /><circle cx="191.480003251776" cy="540.0928196576418" r="21.339857707303178" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Born to Run
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Christopher McDougall
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

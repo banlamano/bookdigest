@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8a86d882-5cfe-4ecd-854f-664858c799a9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8a86d882-5cfe-4ecd-854f-664858c799a9)" />
+  <g opacity="0.1">
+    <circle cx="170.83879554546354" cy="386.24689490941756" r="18.393539515885806" fill="white" /><circle cx="305.0295376421997" cy="595.4823973411915" r="19.090047566601037" fill="white" /><circle cx="32.49195190434256" cy="121.47169055277772" r="26.9447851179646" fill="white" /><circle cx="357.7287703326104" cy="349.5285030125068" r="29.847625641817586" fill="white" /><circle cx="315.80567659443176" cy="474.8917026766496" r="26.46995501898168" fill="white" /><circle cx="305.89370048545123" cy="299.9104809631509" r="12.311343268018813" fill="white" /><circle cx="372.04406493726106" cy="134.12795961961103" r="17.84298825319275" fill="white" /><circle cx="369.30559594372636" cy="148.91729718776205" r="24.457112353984947" fill="white" /><circle cx="7.633281201054309" cy="374.7298574223267" r="24.441290235614677" fill="white" /><circle cx="244.52603967252108" cy="164.21022788946473" r="22.89721369259445" fill="white" /><circle cx="285.17767591858734" cy="80.69437946677374" r="29.02595616318457" fill="white" /><circle cx="147.0388203852209" cy="83.50693384265098" r="20.221173758017578" fill="white" /><circle cx="304.23657368218284" cy="556.5825945994208" r="26.558594668625194" fill="white" /><circle cx="192.5639759219261" cy="530.5048435717919" r="15.730225595049376" fill="white" /><circle cx="216.5254655427557" cy="113.72809055286446" r="13.30941573053643" fill="white" /><circle cx="170.41165675790154" cy="439.39518822661597" r="24.285257763115283" fill="white" /><circle cx="79.9721357520915" cy="213.3954671162085" r="27.19094205799261" fill="white" /><circle cx="323.14955179440386" cy="279.36776147611977" r="14.463230378605047" fill="white" /><circle cx="256.24270102534604" cy="276.48038393592566" r="10.917591729353637" fill="white" /><circle cx="381.14803091643904" cy="544.0899656498058" r="24.853629226935777" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die vier Winde
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Kristin Hannah
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5a3ffa79-abb8-4e04-ab95-d6a052dc4b0f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5a3ffa79-abb8-4e04-ab95-d6a052dc4b0f)" />
+  <g opacity="0.1">
+    <circle cx="205.28770011626537" cy="17.831491280343847" r="27.697850227774573" fill="white" /><circle cx="240.6964538795197" cy="395.97850901266986" r="16.79691409666315" fill="white" /><circle cx="303.9353961997704" cy="416.2073236137361" r="11.428175879112718" fill="white" /><circle cx="311.76187476697146" cy="449.8446761219358" r="25.39887366303951" fill="white" /><circle cx="191.34144792428995" cy="277.3733701222252" r="10.869057245520192" fill="white" /><circle cx="200.99511107263416" cy="464.9988630379336" r="19.369512062236296" fill="white" /><circle cx="208.8183023361588" cy="58.12761183730193" r="29.68384123049244" fill="white" /><circle cx="126.9682262988677" cy="339.69341954696074" r="20.540660091435175" fill="white" /><circle cx="47.280360809485785" cy="393.3838783139721" r="14.226769353279504" fill="white" /><circle cx="40.51101360191356" cy="129.79860992762048" r="17.58618905755852" fill="white" /><circle cx="291.09029401371436" cy="30.99609644229171" r="29.18529334389508" fill="white" /><circle cx="235.03200686545713" cy="381.4467254726935" r="15.278824486094862" fill="white" /><circle cx="1.5862405897282716" cy="199.74446957970832" r="24.281897274351838" fill="white" /><circle cx="366.2971991302248" cy="82.10302581631446" r="14.255938521247867" fill="white" /><circle cx="193.1284634193998" cy="587.8260409025442" r="17.863561864487128" fill="white" /><circle cx="160.77570776407262" cy="217.22584038758328" r="20.877815945708434" fill="white" /><circle cx="146.0403287469772" cy="362.48853315740587" r="27.263610615893956" fill="white" /><circle cx="308.19952551921165" cy="243.6378831630596" r="26.427656268164753" fill="white" /><circle cx="139.74365831393004" cy="403.5128940868004" r="24.782696444974242" fill="white" /><circle cx="183.2926937051829" cy="349.756219218634" r="10.97034912672082" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        How to Sit
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Thich Nhat Hanh
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

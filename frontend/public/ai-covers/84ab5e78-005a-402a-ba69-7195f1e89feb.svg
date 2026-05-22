@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-84ab5e78-005a-402a-ba69-7195f1e89feb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-84ab5e78-005a-402a-ba69-7195f1e89feb)" />
+  <g opacity="0.1">
+    <circle cx="395.25725807464266" cy="209.5971416695164" r="14.422611268500383" fill="white" /><circle cx="257.76089523433427" cy="160.565460728417" r="16.25643894428854" fill="white" /><circle cx="50.94872490473361" cy="534.7543416507439" r="26.159060098161603" fill="white" /><circle cx="273.5039960517425" cy="399.7775884270949" r="13.4277252692573" fill="white" /><circle cx="101.55357154103197" cy="194.96542589421398" r="17.389455561211744" fill="white" /><circle cx="8.974410597102711" cy="378.1186565281114" r="11.614515038704504" fill="white" /><circle cx="123.47621824073825" cy="139.2043860958874" r="25.341150017897064" fill="white" /><circle cx="240.43852814372926" cy="121.12794613661121" r="22.903556967107924" fill="white" /><circle cx="58.12114248318721" cy="176.28255798893338" r="23.468527220022168" fill="white" /><circle cx="327.6425463874545" cy="355.3077160283815" r="24.64251992545079" fill="white" /><circle cx="59.95478828799725" cy="390.8851314218695" r="21.012675878009205" fill="white" /><circle cx="397.28726529491774" cy="281.67114554223394" r="19.063594214907972" fill="white" /><circle cx="81.22040030336142" cy="54.375694914603436" r="16.18662696303153" fill="white" /><circle cx="326.42433809406117" cy="58.43972169213201" r="19.220733027920488" fill="white" /><circle cx="106.69360954910671" cy="99.37341888247391" r="27.085727943199352" fill="white" /><circle cx="374.0601121817327" cy="434.54221841858475" r="10.130921226689315" fill="white" /><circle cx="52.78251637730271" cy="547.1712674355424" r="24.205499863260545" fill="white" /><circle cx="93.82774246457709" cy="289.0277476439866" r="20.348006660999616" fill="white" /><circle cx="25.123926847217206" cy="363.91604369822863" r="10.047623028997826" fill="white" /><circle cx="130.96136004433973" cy="75.40951614519633" r="26.783153164988075" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The 22 Immutable Laws of
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Marketing
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Al Ries
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

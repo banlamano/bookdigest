@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8e899681-79fe-4be6-bf5d-ec82f6e5f32d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8e899681-79fe-4be6-bf5d-ec82f6e5f32d)" />
+  <g opacity="0.1">
+    <circle cx="175.51153401889857" cy="179.13058026113114" r="18.83047175803651" fill="white" /><circle cx="352.3991519377305" cy="435.95589396090173" r="25.254363052454664" fill="white" /><circle cx="326.45095171099183" cy="365.79333983682693" r="28.790933456980017" fill="white" /><circle cx="288.4583868155054" cy="246.40675519315502" r="14.28278184898046" fill="white" /><circle cx="113.78074123210902" cy="244.71738964665602" r="18.99849254252997" fill="white" /><circle cx="70.91589982535807" cy="222.23900364453058" r="10.260085889705643" fill="white" /><circle cx="122.50538242603226" cy="320.1471642603351" r="24.048577446294544" fill="white" /><circle cx="56.01220588718219" cy="586.384206889386" r="28.7152796090081" fill="white" /><circle cx="89.83355402064608" cy="271.21722547759373" r="21.607520266764453" fill="white" /><circle cx="71.19602164825895" cy="52.85723346000275" r="22.184650012463578" fill="white" /><circle cx="42.655114497101906" cy="205.9380656307621" r="12.393527796458908" fill="white" /><circle cx="360.50132210829395" cy="129.72212860217516" r="25.96228627199764" fill="white" /><circle cx="2.2418011729879783" cy="125.37688992497334" r="16.885253006501962" fill="white" /><circle cx="82.36757999460202" cy="347.37517627663914" r="24.86149816525584" fill="white" /><circle cx="10.195692729697425" cy="252.90683451912176" r="22.557823190693792" fill="white" /><circle cx="325.3146222608721" cy="142.0224163926119" r="16.703535852920695" fill="white" /><circle cx="171.6472634201732" cy="441.38928771420626" r="15.130776317278784" fill="white" /><circle cx="133.66063394748716" cy="26.634129737045733" r="26.808987948470968" fill="white" /><circle cx="108.50131978089644" cy="174.52761012849572" r="22.978197718956643" fill="white" /><circle cx="132.0082053699808" cy="475.4734197829753" r="20.708461028531573" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das rätselhafte Ich: Eine
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Reise an die Grenzen des
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        menschlichen Gehirns
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        V.S. Ramachandran
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

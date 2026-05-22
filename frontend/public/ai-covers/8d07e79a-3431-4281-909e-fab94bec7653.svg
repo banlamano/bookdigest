@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8d07e79a-3431-4281-909e-fab94bec7653" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8d07e79a-3431-4281-909e-fab94bec7653)" />
+  <g opacity="0.1">
+    <circle cx="141.2512537213916" cy="489.3609478497454" r="18.765859553765793" fill="white" /><circle cx="397.2119031123582" cy="344.5771775225053" r="12.817533697325224" fill="white" /><circle cx="303.2065609648207" cy="573.2176832563428" r="20.38522886526136" fill="white" /><circle cx="301.12369968908934" cy="151.08060952084122" r="15.318889067083969" fill="white" /><circle cx="145.01220447430416" cy="544.3835692354097" r="13.782421395939101" fill="white" /><circle cx="139.1547443581656" cy="553.3422604523579" r="20.920167554860534" fill="white" /><circle cx="180.8414974116618" cy="224.60644161839647" r="27.787706402842623" fill="white" /><circle cx="202.58747299409" cy="462.8668537703286" r="14.99895925772728" fill="white" /><circle cx="32.85922697262764" cy="52.69841454778894" r="17.74686426227516" fill="white" /><circle cx="262.47991671003115" cy="279.62084066189556" r="18.28116351088851" fill="white" /><circle cx="390.35510558347426" cy="353.43418313454123" r="19.18432022039928" fill="white" /><circle cx="53.828752262330724" cy="443.20899850695344" r="27.77583715443643" fill="white" /><circle cx="272.23944378091494" cy="12.378879903190597" r="10.37441894154193" fill="white" /><circle cx="194.13859802104398" cy="115.17779505345223" r="21.129798325052807" fill="white" /><circle cx="364.58112411693315" cy="145.47045338940245" r="17.908257716192796" fill="white" /><circle cx="3.2593893343315194" cy="105.302617258895" r="16.643336973617643" fill="white" /><circle cx="138.05828723015102" cy="198.09174663621457" r="17.113610131872314" fill="white" /><circle cx="159.1754157724071" cy="331.52780783251967" r="24.526828093115597" fill="white" /><circle cx="43.9538554545492" cy="48.391105641915225" r="29.461719855637877" fill="white" /><circle cx="339.13055447837917" cy="76.27158182220215" r="12.804052479548186" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Buch der Freude: Wie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        wir dauerhaftes Glück
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        finden
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Dalai Lama
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

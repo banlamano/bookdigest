@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c63323db-d2d6-4267-b0e3-9b2f34b39416" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c63323db-d2d6-4267-b0e3-9b2f34b39416)" />
+  <g opacity="0.1">
+    <circle cx="233.84113576297557" cy="326.2037784979044" r="24.13529793179505" fill="white" /><circle cx="129.69328998606358" cy="63.355850307037166" r="16.5493204804129" fill="white" /><circle cx="121.71731092602083" cy="321.82063520620017" r="22.950285388299612" fill="white" /><circle cx="273.31392809850433" cy="345.71010563283244" r="12.94756912457225" fill="white" /><circle cx="103.48768010838963" cy="189.55537435968094" r="15.574768385868698" fill="white" /><circle cx="343.76391390809033" cy="103.30479497804296" r="16.681503407469293" fill="white" /><circle cx="177.65531691648252" cy="246.84521930136796" r="24.7128954967098" fill="white" /><circle cx="268.58623007166074" cy="87.73163785594474" r="10.826102533363676" fill="white" /><circle cx="140.20966630079292" cy="270.9739530840007" r="12.93168320906152" fill="white" /><circle cx="36.71489979927709" cy="94.533212484665" r="12.758670117666648" fill="white" /><circle cx="158.12732841114135" cy="413.2825585533148" r="25.871830268819103" fill="white" /><circle cx="26.938553573587942" cy="416.26470709825236" r="22.462726227354892" fill="white" /><circle cx="212.58290523213304" cy="465.60329081261835" r="15.775127478920226" fill="white" /><circle cx="27.827578512895812" cy="296.727286672905" r="10.902312741137628" fill="white" /><circle cx="113.36547091763252" cy="95.51392228090927" r="15.628006833305337" fill="white" /><circle cx="43.14114960542956" cy="90.15780404708735" r="20.540656400848658" fill="white" /><circle cx="369.80782974368765" cy="377.0054906468063" r="26.62264727708762" fill="white" /><circle cx="52.613798844772084" cy="210.11521876151485" r="18.18533197800658" fill="white" /><circle cx="142.82924719928195" cy="87.71753946958438" r="16.531346269108788" fill="white" /><circle cx="1.0424834428873542" cy="527.4416467805095" r="20.752020850785257" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        I Know Why the Caged Bird
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Sings
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Maya Angelou
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

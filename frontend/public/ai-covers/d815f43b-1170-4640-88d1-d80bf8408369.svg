@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d815f43b-1170-4640-88d1-d80bf8408369" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d815f43b-1170-4640-88d1-d80bf8408369)" />
+  <g opacity="0.1">
+    <circle cx="166.75071387889665" cy="65.14528717019421" r="14.063287428047268" fill="white" /><circle cx="42.785797392660015" cy="129.04666152880137" r="14.079656827579798" fill="white" /><circle cx="14.167024595597866" cy="471.5606656230819" r="15.007363559984535" fill="white" /><circle cx="318.8652644344782" cy="559.6624650300333" r="18.407605376811706" fill="white" /><circle cx="348.05824078322394" cy="281.1283178655396" r="17.20641602815794" fill="white" /><circle cx="31.98233837658755" cy="92.25600485400807" r="15.590120448269122" fill="white" /><circle cx="231.12802267812543" cy="144.91702887433226" r="21.656129910055498" fill="white" /><circle cx="39.121756318407286" cy="298.83720532061875" r="21.671583540011486" fill="white" /><circle cx="335.8873479200644" cy="74.13263512846773" r="24.14397117085522" fill="white" /><circle cx="179.91608857306156" cy="568.4079052020362" r="18.088165689529585" fill="white" /><circle cx="154.49972001620526" cy="291.8203694450052" r="24.34064784948694" fill="white" /><circle cx="258.0847468467278" cy="585.9887773124448" r="20.78173120654342" fill="white" /><circle cx="3.769228314737161" cy="237.99325913798253" r="24.51699463838898" fill="white" /><circle cx="17.421333396026117" cy="493.31884697545684" r="20.867441466830215" fill="white" /><circle cx="103.18570647514989" cy="159.36101980351413" r="22.29372647283966" fill="white" /><circle cx="219.96175393327343" cy="509.1092193413866" r="18.301022646415603" fill="white" /><circle cx="238.31272944659676" cy="306.1428622409162" r="13.792019286861972" fill="white" /><circle cx="13.003813153468302" cy="246.85430420527405" r="27.118903939792776" fill="white" /><circle cx="135.28904409155032" cy="343.44170959912066" r="26.312949851384808" fill="white" /><circle cx="163.57446517109602" cy="180.23357072711272" r="29.056458098144184" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Extreme Produktivität:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wie Sie Ihre Leistung auf
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        ein neues Niveau heben
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Robert Pozen
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

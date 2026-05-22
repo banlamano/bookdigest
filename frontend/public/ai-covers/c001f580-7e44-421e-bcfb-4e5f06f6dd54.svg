@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c001f580-7e44-421e-bcfb-4e5f06f6dd54" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c001f580-7e44-421e-bcfb-4e5f06f6dd54)" />
+  <g opacity="0.1">
+    <circle cx="366.8521924262045" cy="557.0748430027784" r="28.54995468711478" fill="white" /><circle cx="83.17457249232363" cy="57.550531841085096" r="20.503856351360863" fill="white" /><circle cx="329.8646595098406" cy="492.1358240526314" r="26.708242513515966" fill="white" /><circle cx="389.1718382409677" cy="132.3942719091838" r="18.468708219414538" fill="white" /><circle cx="196.86356371145507" cy="95.90930159723281" r="26.41587144732848" fill="white" /><circle cx="344.4151473412446" cy="497.74917499308617" r="13.554463733917375" fill="white" /><circle cx="218.4902882124831" cy="294.40204069423044" r="28.294856812756606" fill="white" /><circle cx="146.45317979935717" cy="276.86289000726816" r="25.642399523757433" fill="white" /><circle cx="242.39631392676185" cy="268.1675527536543" r="25.813739627018457" fill="white" /><circle cx="143.6877675273875" cy="279.0395665639007" r="10.256586519084891" fill="white" /><circle cx="119.38420387565927" cy="337.8327992868808" r="14.860512935163406" fill="white" /><circle cx="101.94887801603336" cy="574.9537854504578" r="17.124442899294237" fill="white" /><circle cx="368.43429909570034" cy="213.09627874420627" r="19.12318175545839" fill="white" /><circle cx="96.70133959627788" cy="194.9422520626592" r="12.792184169020487" fill="white" /><circle cx="212.10994558761632" cy="395.0365341112197" r="11.070862142133569" fill="white" /><circle cx="283.56123273513526" cy="585.1255599619918" r="15.074181670163242" fill="white" /><circle cx="344.97444138143265" cy="61.950339656402576" r="16.62797587402845" fill="white" /><circle cx="54.347010783560904" cy="74.286704978207" r="28.21395356532848" fill="white" /><circle cx="383.06217263015594" cy="123.62703030168419" r="21.487241560778642" fill="white" /><circle cx="358.7201718494712" cy="425.4320928173178" r="29.314710266568284" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        When: Die Wissenschaft
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        der perfekten Zeitplanung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Daniel Pink
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

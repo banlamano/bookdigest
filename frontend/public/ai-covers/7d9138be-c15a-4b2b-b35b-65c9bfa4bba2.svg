@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-7d9138be-c15a-4b2b-b35b-65c9bfa4bba2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-7d9138be-c15a-4b2b-b35b-65c9bfa4bba2)" />
+  <g opacity="0.1">
+    <circle cx="307.5057184167727" cy="223.99788636586666" r="11.4149917034909" fill="white" /><circle cx="0.3444339544545816" cy="235.3002878624343" r="23.87307604593046" fill="white" /><circle cx="158.4833474101087" cy="26.893678175786118" r="24.292845361872594" fill="white" /><circle cx="26.647409149875713" cy="114.62978769830087" r="20.013813094996603" fill="white" /><circle cx="209.24116171638693" cy="269.3032597544076" r="21.64152951967592" fill="white" /><circle cx="251.3271464478221" cy="520.2986173745417" r="18.874604820720702" fill="white" /><circle cx="69.76048960636061" cy="181.36060695017167" r="21.208693820387914" fill="white" /><circle cx="199.67182834195017" cy="559.9798764200622" r="28.05692305810723" fill="white" /><circle cx="308.4530734723773" cy="230.20293128821638" r="23.336842189556634" fill="white" /><circle cx="367.96565725343464" cy="403.5713860696433" r="24.726955851614022" fill="white" /><circle cx="219.74561737342634" cy="173.26215332568913" r="20.121203109249272" fill="white" /><circle cx="348.96965459239556" cy="524.482977702091" r="29.619607885295046" fill="white" /><circle cx="257.35994636304406" cy="33.558953983159356" r="22.658760630738147" fill="white" /><circle cx="25.64004588728377" cy="414.99674416267146" r="16.93158143903419" fill="white" /><circle cx="346.39168756072354" cy="417.7464162577675" r="26.855465697084156" fill="white" /><circle cx="391.76428899548574" cy="376.9211450117861" r="12.642089088723736" fill="white" /><circle cx="91.48090994873445" cy="190.71917217463877" r="11.131402008793547" fill="white" /><circle cx="125.48861791501568" cy="202.966477916316" r="25.15698377782214" fill="white" /><circle cx="98.42780426051459" cy="317.92348493376187" r="12.374467023152302" fill="white" /><circle cx="250.49100994447477" cy="509.4181826613127" r="21.659288222122914" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The $100 Startup
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Chris Guillebeau
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

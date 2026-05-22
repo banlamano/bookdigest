@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0eed1333-bc19-490e-8622-55942c79eb83" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0eed1333-bc19-490e-8622-55942c79eb83)" />
+  <g opacity="0.1">
+    <circle cx="16.958674766321113" cy="344.48946833950015" r="25.802310280437766" fill="white" /><circle cx="316.9687543780366" cy="134.2035216814404" r="14.90353298712521" fill="white" /><circle cx="321.7031379016921" cy="392.9179666156401" r="13.367057455464064" fill="white" /><circle cx="117.15725777285098" cy="141.7042755317652" r="25.84319528440247" fill="white" /><circle cx="365.7503658293779" cy="179.11565956565227" r="15.853698072807003" fill="white" /><circle cx="331.60380473756834" cy="531.7820180732547" r="13.542344826660758" fill="white" /><circle cx="361.34582328507264" cy="23.402364154546884" r="22.347243881878626" fill="white" /><circle cx="373.1841789801771" cy="256.3527428753097" r="26.990497957914346" fill="white" /><circle cx="339.0425884907882" cy="171.45204189208712" r="14.1211429714167" fill="white" /><circle cx="91.93531408790152" cy="359.36054641489045" r="14.178253626394536" fill="white" /><circle cx="187.6466669497793" cy="24.97131445513492" r="12.470589700391006" fill="white" /><circle cx="291.9057696897356" cy="170.10726421660888" r="28.109231195768075" fill="white" /><circle cx="328.24213454372455" cy="545.515384466502" r="29.0338153526681" fill="white" /><circle cx="154.86843446231924" cy="306.22859506662934" r="15.74493803304044" fill="white" /><circle cx="173.78743367182702" cy="476.73675506677216" r="22.236419254371494" fill="white" /><circle cx="282.0474571159982" cy="222.97678934627382" r="12.595495680333709" fill="white" /><circle cx="314.07371243687817" cy="329.66567735263254" r="28.729278241140378" fill="white" /><circle cx="329.4211241883998" cy="0.8435897170477213" r="22.177589622717846" fill="white" /><circle cx="219.9078603170026" cy="547.339439088916" r="24.679100204446172" fill="white" /><circle cx="198.52143179277562" cy="245.5827478690004" r="14.707780289738917" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Developing the Leader
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Within You
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        John Maxwell
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

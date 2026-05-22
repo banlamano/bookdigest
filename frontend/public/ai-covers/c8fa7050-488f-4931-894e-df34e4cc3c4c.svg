@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c8fa7050-488f-4931-894e-df34e4cc3c4c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c8fa7050-488f-4931-894e-df34e4cc3c4c)" />
+  <g opacity="0.1">
+    <circle cx="343.2223576636579" cy="203.56482743388173" r="12.976280855212362" fill="white" /><circle cx="136.79714935058288" cy="102.07946433675419" r="15.354106952781379" fill="white" /><circle cx="201.45148931215581" cy="233.05160898002387" r="15.136827549525556" fill="white" /><circle cx="351.164234069821" cy="530.7301470245935" r="22.626618475832615" fill="white" /><circle cx="78.37827145892153" cy="169.4964008089617" r="24.971503669889152" fill="white" /><circle cx="244.1449842792861" cy="139.41200466840678" r="28.885084004205602" fill="white" /><circle cx="322.5760945494522" cy="54.46001243409935" r="16.285318222270163" fill="white" /><circle cx="357.61726567281954" cy="0.3842858766146984" r="19.239989691852973" fill="white" /><circle cx="294.52809283039" cy="38.70827110239732" r="12.11735181419374" fill="white" /><circle cx="60.240706257199236" cy="250.0884061137811" r="16.56765483469922" fill="white" /><circle cx="182.01133214758244" cy="417.70188128474354" r="27.923937171357377" fill="white" /><circle cx="57.05897581185035" cy="412.51583897734776" r="10.21279474939366" fill="white" /><circle cx="398.5118057029639" cy="266.19412046390613" r="13.673378542152017" fill="white" /><circle cx="211.62709480215273" cy="365.3992796990901" r="18.492570967786342" fill="white" /><circle cx="183.72552446580866" cy="231.41208764612432" r="26.2292190694333" fill="white" /><circle cx="308.6699203672343" cy="387.94059894017784" r="20.996858894786566" fill="white" /><circle cx="110.09757205721043" cy="49.75110578085919" r="24.763331261495566" fill="white" /><circle cx="396.8450703142083" cy="361.9133131802349" r="17.85685065205754" fill="white" /><circle cx="33.388467812537215" cy="447.887406918079" r="28.83908833743987" fill="white" /><circle cx="158.9484772651598" cy="267.34914068087846" r="24.479874810061382" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Jab, Jab, Jab, Right
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Hook: So erzählen Sie
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Ihre Story in einer
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Gary Vaynerchuk
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

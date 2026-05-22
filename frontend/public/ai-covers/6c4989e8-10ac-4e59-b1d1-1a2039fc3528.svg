@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-6c4989e8-10ac-4e59-b1d1-1a2039fc3528" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-6c4989e8-10ac-4e59-b1d1-1a2039fc3528)" />
+  <g opacity="0.1">
+    <circle cx="43.721818008876355" cy="67.40330241667623" r="29.40867661815096" fill="white" /><circle cx="356.29081738490925" cy="427.4476049558415" r="14.590948602623627" fill="white" /><circle cx="338.5547794515487" cy="442.79897469346463" r="12.832279801415126" fill="white" /><circle cx="128.28158339566457" cy="14.856536703843503" r="22.632844354829263" fill="white" /><circle cx="0.24846341480500023" cy="236.76050434495383" r="24.55161779590383" fill="white" /><circle cx="240.5316961397466" cy="499.7738573395301" r="22.820579789923965" fill="white" /><circle cx="234.4939662533684" cy="293.33412475421153" r="27.31460622120277" fill="white" /><circle cx="240.4776680056925" cy="555.9199091406012" r="17.581491673978654" fill="white" /><circle cx="92.22658709363162" cy="62.517732558459315" r="27.83799117407095" fill="white" /><circle cx="48.65846072448661" cy="103.30158529595938" r="10.385175271413738" fill="white" /><circle cx="216.4998357083646" cy="223.64479183467947" r="21.862519403943637" fill="white" /><circle cx="388.64212930759334" cy="323.8750144647581" r="11.241983151464044" fill="white" /><circle cx="147.81564982853405" cy="487.92067803131926" r="18.381254430281622" fill="white" /><circle cx="294.6629539128804" cy="246.425038286231" r="28.065436357174438" fill="white" /><circle cx="111.39701778589522" cy="196.7916692154328" r="18.03174125451944" fill="white" /><circle cx="317.53606759124426" cy="368.7692778072248" r="16.667275458788215" fill="white" /><circle cx="156.97916382284563" cy="328.34713977405556" r="25.030606165929953" fill="white" /><circle cx="230.69376346607723" cy="303.3928744576722" r="19.967382971785458" fill="white" /><circle cx="161.77304264789177" cy="22.829609073701217" r="22.229547377085044" fill="white" /><circle cx="70.28854969540825" cy="460.7933847983544" r="25.97567115079525" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        How to Walk
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Thich Nhat Hanh
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

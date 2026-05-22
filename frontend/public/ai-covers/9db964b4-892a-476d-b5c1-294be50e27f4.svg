@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9db964b4-892a-476d-b5c1-294be50e27f4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9db964b4-892a-476d-b5c1-294be50e27f4)" />
+  <g opacity="0.1">
+    <circle cx="102.90426931671557" cy="554.9725761858267" r="13.736292149455334" fill="white" /><circle cx="354.2141023388729" cy="287.45614576798346" r="23.553959104148248" fill="white" /><circle cx="311.37366604480536" cy="500.627714294273" r="14.043193171897636" fill="white" /><circle cx="363.02275919337035" cy="374.63845730885544" r="25.712637291952095" fill="white" /><circle cx="255.16090198220041" cy="22.746161716634017" r="11.010090467333827" fill="white" /><circle cx="358.50390794868446" cy="148.70022580025403" r="28.79408876016288" fill="white" /><circle cx="240.636603141316" cy="24.768188596809093" r="25.656462544281815" fill="white" /><circle cx="64.59087946036823" cy="433.75885565031325" r="12.378019226766021" fill="white" /><circle cx="333.01517707524505" cy="202.6209078174419" r="21.5895464181924" fill="white" /><circle cx="309.7795494665268" cy="96.91840277609425" r="22.36616240179012" fill="white" /><circle cx="41.59830464945706" cy="78.1521782897838" r="16.694668368079583" fill="white" /><circle cx="393.2573108512966" cy="114.59216744971654" r="22.24805913450256" fill="white" /><circle cx="226.0883444112206" cy="45.121559278446256" r="14.780318129426002" fill="white" /><circle cx="318.42202650881217" cy="401.3299488716623" r="14.569874653209009" fill="white" /><circle cx="379.3591207933912" cy="332.0072844007425" r="25.976173161642567" fill="white" /><circle cx="332.6903621181603" cy="590.2695098794252" r="23.577724722917466" fill="white" /><circle cx="224.69305281977174" cy="239.52707765755196" r="29.148540765984293" fill="white" /><circle cx="120.76777785664672" cy="160.71259884753147" r="24.977747708894615" fill="white" /><circle cx="377.68335539355246" cy="531.7220217184703" r="28.32209819856149" fill="white" /><circle cx="188.3717270256692" cy="115.29812605027969" r="28.224996635435133" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Kunst des Denkens:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Über Scheitern und Erfolg
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        von Prognosen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Michael Lewis
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

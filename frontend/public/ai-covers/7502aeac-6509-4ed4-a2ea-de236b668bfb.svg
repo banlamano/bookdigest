@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-7502aeac-6509-4ed4-a2ea-de236b668bfb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-7502aeac-6509-4ed4-a2ea-de236b668bfb)" />
+  <g opacity="0.1">
+    <circle cx="369.3075757575744" cy="494.80024427956397" r="23.744124329336312" fill="white" /><circle cx="303.9413330060588" cy="404.30100613587007" r="12.169679307858308" fill="white" /><circle cx="304.7887541973186" cy="145.2702208924232" r="12.194394795119424" fill="white" /><circle cx="374.78536631766525" cy="581.5674338234298" r="27.095434192311217" fill="white" /><circle cx="30.857143050021207" cy="409.8643115403811" r="26.166359071577972" fill="white" /><circle cx="252.82586845805102" cy="491.6908082318697" r="26.222719546708745" fill="white" /><circle cx="394.8288386454202" cy="479.92014879962824" r="18.028639170259538" fill="white" /><circle cx="93.38248106919708" cy="475.60862971038847" r="17.578991802156953" fill="white" /><circle cx="388.72362732062487" cy="188.38032158103658" r="11.242155202717502" fill="white" /><circle cx="295.36461281735126" cy="467.3603624643983" r="10.16865842306897" fill="white" /><circle cx="214.24714557268805" cy="121.41750258524536" r="19.748439249513723" fill="white" /><circle cx="27.319258162207927" cy="249.55122688017423" r="20.64221608663712" fill="white" /><circle cx="390.052895972607" cy="563.9316919330162" r="19.0537344931146" fill="white" /><circle cx="387.76876839360347" cy="213.84163972351672" r="26.754504343417143" fill="white" /><circle cx="227.16336774913623" cy="350.80052541569347" r="26.107730370839914" fill="white" /><circle cx="198.8763877705865" cy="437.08341431556636" r="28.33767458339092" fill="white" /><circle cx="341.58895208386474" cy="222.05403557218668" r="15.766987334457998" fill="white" /><circle cx="324.9076293080558" cy="233.91494022404265" r="14.298728958061599" fill="white" /><circle cx="144.57025682632582" cy="319.2418019410519" r="12.753891866169944" fill="white" /><circle cx="117.89841065067432" cy="580.7128875213514" r="16.752469342866235" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The 50th Law
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robert Greene
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

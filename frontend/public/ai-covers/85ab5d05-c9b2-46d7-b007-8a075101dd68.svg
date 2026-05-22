@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-85ab5d05-c9b2-46d7-b007-8a075101dd68" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-85ab5d05-c9b2-46d7-b007-8a075101dd68)" />
+  <g opacity="0.1">
+    <circle cx="334.2151523662472" cy="79.14596689937288" r="24.484728102357085" fill="white" /><circle cx="108.09735610214655" cy="256.2844681730988" r="24.127608804374105" fill="white" /><circle cx="352.56515595277307" cy="248.82525783698256" r="14.250759462837927" fill="white" /><circle cx="108.62474921706023" cy="166.25284245558632" r="16.264801801686893" fill="white" /><circle cx="357.6558087442388" cy="342.174135099063" r="11.55558443576265" fill="white" /><circle cx="179.53729349027984" cy="381.2444518247937" r="12.54674420532631" fill="white" /><circle cx="284.23291293137567" cy="392.76103010867365" r="26.106202270149005" fill="white" /><circle cx="267.12311567857995" cy="75.48789519144749" r="27.27095924146948" fill="white" /><circle cx="165.44955163776552" cy="172.26540973962346" r="28.886837524943754" fill="white" /><circle cx="100.90846869502963" cy="521.9338014437861" r="16.794669114653345" fill="white" /><circle cx="137.99060883027" cy="278.7145235383043" r="18.875664166434756" fill="white" /><circle cx="136.80636007234534" cy="557.0335719029313" r="11.335453197714184" fill="white" /><circle cx="365.0099316915109" cy="515.2553657065024" r="29.557764009601176" fill="white" /><circle cx="172.31904562327628" cy="519.8046175314752" r="16.30387994637463" fill="white" /><circle cx="321.8680501963305" cy="299.26256319896004" r="19.456626878620668" fill="white" /><circle cx="24.60332086414794" cy="535.7237985784137" r="25.47613186019884" fill="white" /><circle cx="393.87020442574027" cy="167.46407676555808" r="18.299250168297085" fill="white" /><circle cx="41.65826884576953" cy="118.48470627834764" r="24.393063933816823" fill="white" /><circle cx="281.9805262155247" cy="451.11750109485115" r="29.0350555655499" fill="white" /><circle cx="136.01944636704366" cy="151.69099981243372" r="13.821599850172582" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Glass Castle
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Jeannette Walls
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-cf4d1be4-cccd-4c12-8b55-139260ffc086" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-cf4d1be4-cccd-4c12-8b55-139260ffc086)" />
+  <g opacity="0.1">
+    <circle cx="123.84650214686471" cy="144.38593203560842" r="14.923895130611765" fill="white" /><circle cx="134.10393433860642" cy="524.4272737985347" r="23.55361498364327" fill="white" /><circle cx="379.4844866523173" cy="205.29577961405332" r="27.34812851323814" fill="white" /><circle cx="117.18787003325586" cy="131.01429722485972" r="18.631856614763166" fill="white" /><circle cx="288.88682750513357" cy="210.27771658019785" r="25.459027632188644" fill="white" /><circle cx="35.37109102232519" cy="422.7732469692094" r="26.557708840744347" fill="white" /><circle cx="146.41147742981286" cy="132.22229802436857" r="14.647117542540864" fill="white" /><circle cx="309.71020556132163" cy="515.5893195491157" r="24.90774068149453" fill="white" /><circle cx="330.883346298955" cy="268.2663290029836" r="22.88421159015678" fill="white" /><circle cx="190.20841999808354" cy="192.14669819919678" r="24.2080941574098" fill="white" /><circle cx="371.71082678539176" cy="92.74982204685189" r="10.65804185447552" fill="white" /><circle cx="61.76076093138527" cy="194.5952287660101" r="16.962938733633578" fill="white" /><circle cx="226.24047304119745" cy="68.92181611991678" r="14.28442891179049" fill="white" /><circle cx="386.8187837647176" cy="35.16202967976112" r="20.293117717983847" fill="white" /><circle cx="72.38486457141113" cy="455.44620298477554" r="17.5209034632051" fill="white" /><circle cx="93.34509850839905" cy="429.97054510389603" r="24.69532296819846" fill="white" /><circle cx="179.5613038403042" cy="585.2574502894851" r="24.46105765438253" fill="white" /><circle cx="265.01454882645027" cy="354.52455498909563" r="17.219887698967867" fill="white" /><circle cx="1.7811674698346547" cy="229.74502425013355" r="27.84856922297357" fill="white" /><circle cx="393.04006062126444" cy="431.1941854704488" r="29.373511630453887" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Death by Meeting
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Patrick Lencioni
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

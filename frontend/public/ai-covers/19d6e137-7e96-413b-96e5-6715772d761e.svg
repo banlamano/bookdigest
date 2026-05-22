@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-19d6e137-7e96-413b-96e5-6715772d761e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-19d6e137-7e96-413b-96e5-6715772d761e)" />
+  <g opacity="0.1">
+    <circle cx="244.32192611563278" cy="278.7623414132317" r="15.490225971874205" fill="white" /><circle cx="120.10638646913185" cy="483.9773489824699" r="14.549271395455516" fill="white" /><circle cx="314.4733065790282" cy="70.66261247749435" r="16.108130452122275" fill="white" /><circle cx="6.349722314451833" cy="206.70648125672227" r="29.895955645868895" fill="white" /><circle cx="177.26740090430363" cy="413.52841248499055" r="29.055557725152013" fill="white" /><circle cx="329.1446956326717" cy="425.21192397932873" r="19.350042495839528" fill="white" /><circle cx="192.60796187936938" cy="511.5663412999648" r="24.947243019241274" fill="white" /><circle cx="54.067100501492064" cy="69.36446437169661" r="15.118821845660044" fill="white" /><circle cx="297.26714535879677" cy="312.8810748646316" r="27.47398112509178" fill="white" /><circle cx="59.279990036187115" cy="145.49709678783256" r="12.727871641049628" fill="white" /><circle cx="11.95846113392176" cy="150.0732704828556" r="19.008291260151296" fill="white" /><circle cx="4.886350110483262" cy="548.4308910283731" r="18.318988090761508" fill="white" /><circle cx="287.1557809901489" cy="427.7384819188425" r="15.475445457926858" fill="white" /><circle cx="181.4236410962878" cy="207.02486625801959" r="23.52633596790368" fill="white" /><circle cx="120.9645614239554" cy="199.55969157363643" r="17.29724471604536" fill="white" /><circle cx="95.54048579302541" cy="588.8457732733967" r="21.78729847975984" fill="white" /><circle cx="82.16907257125831" cy="166.36146732189837" r="29.758938686268444" fill="white" /><circle cx="244.12713761893107" cy="319.1199953662567" r="16.049450277186992" fill="white" /><circle cx="308.677864222471" cy="258.736817873088" r="28.002019650463797" fill="white" /><circle cx="349.77294650414524" cy="129.82571539294028" r="28.728752201594563" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die vier Neigungen:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Welcher Typ sind Sie –
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        und wie können Sie Ihre
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Gretchen Rubin
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

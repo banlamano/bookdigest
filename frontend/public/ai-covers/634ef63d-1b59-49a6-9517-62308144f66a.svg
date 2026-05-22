@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-634ef63d-1b59-49a6-9517-62308144f66a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-634ef63d-1b59-49a6-9517-62308144f66a)" />
+  <g opacity="0.1">
+    <circle cx="83.08974907770468" cy="190.04566433048103" r="29.32074684145539" fill="white" /><circle cx="223.9039497595841" cy="80.06117478950844" r="13.44233156572036" fill="white" /><circle cx="236.2141894251852" cy="468.68129880746557" r="12.189059972883886" fill="white" /><circle cx="335.19721282334984" cy="580.1697663138507" r="10.52372731008327" fill="white" /><circle cx="75.89257986719859" cy="132.4132959399128" r="27.90504915415713" fill="white" /><circle cx="396.90843286609567" cy="459.8143008601008" r="14.966921859631956" fill="white" /><circle cx="81.82677326432773" cy="416.49926150407606" r="21.745729629857077" fill="white" /><circle cx="150.6055488364781" cy="588.7796438444655" r="28.72659553680107" fill="white" /><circle cx="307.6824099637496" cy="150.41466377378185" r="20.209934771130097" fill="white" /><circle cx="106.91301951765327" cy="2.911861982809616" r="15.767212030498028" fill="white" /><circle cx="8.59066500804433" cy="507.9767402455388" r="10.851084805594663" fill="white" /><circle cx="349.3105437309557" cy="395.9304921856065" r="11.90916403251004" fill="white" /><circle cx="352.0313415307577" cy="385.38468106681205" r="27.63507519470862" fill="white" /><circle cx="383.1626267970314" cy="423.59366125068794" r="22.947799900779984" fill="white" /><circle cx="285.9032943805159" cy="382.222773228425" r="15.21689257730747" fill="white" /><circle cx="351.9812108182782" cy="521.9718567698849" r="20.09266554254712" fill="white" /><circle cx="237.04546842433265" cy="505.9944216608358" r="11.348186294201053" fill="white" /><circle cx="274.5579438417526" cy="177.50649044200375" r="27.839066292017147" fill="white" /><circle cx="147.63903349377892" cy="542.8048157221349" r="21.527011789658808" fill="white" /><circle cx="132.79233592328552" cy="555.5570959565639" r="21.913895919360098" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Werde übernatürlich: Wie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        gewöhnliche Menschen das
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Ungewöhnliche tun
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Joe Dispenza
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

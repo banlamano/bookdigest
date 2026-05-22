@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f107da11-ebf1-4f9a-a537-b5682d43c6c2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f107da11-ebf1-4f9a-a537-b5682d43c6c2)" />
+  <g opacity="0.1">
+    <circle cx="136.42059782563987" cy="156.48805302897227" r="10.877716827366921" fill="white" /><circle cx="229.4307163316046" cy="4.433054491771626" r="21.284530193105283" fill="white" /><circle cx="251.62316274121315" cy="257.112719713079" r="23.26413010704987" fill="white" /><circle cx="382.2162242448769" cy="497.1929695870919" r="20.30199441482045" fill="white" /><circle cx="183.05111580419805" cy="532.7810586434721" r="13.44684536016446" fill="white" /><circle cx="13.32582380297107" cy="384.6358181505723" r="13.154598520908944" fill="white" /><circle cx="390.45984551209705" cy="65.29375008508053" r="14.757826019527137" fill="white" /><circle cx="133.72361411526686" cy="146.8712813729383" r="29.182962465185213" fill="white" /><circle cx="112.00902695933092" cy="500.3933719298938" r="27.326217441915105" fill="white" /><circle cx="279.92790851396643" cy="21.62907641136571" r="19.645428074705535" fill="white" /><circle cx="162.34736846134967" cy="423.20978567123854" r="26.27825978371318" fill="white" /><circle cx="389.83877258309644" cy="108.46860615279586" r="24.865175276021667" fill="white" /><circle cx="92.20422115425788" cy="87.3015136873693" r="13.355911269671225" fill="white" /><circle cx="101.60056628317973" cy="53.80693591091254" r="17.343444917794606" fill="white" /><circle cx="120.32785528028694" cy="386.5536477596625" r="12.961782925055463" fill="white" /><circle cx="389.8815379497493" cy="105.74268888153071" r="18.430761689755023" fill="white" /><circle cx="363.5437348833682" cy="325.06682254064503" r="22.154514729379372" fill="white" /><circle cx="14.509110230740019" cy="593.5440614517792" r="20.74203607655364" fill="white" /><circle cx="298.61334774005763" cy="296.8501055896761" r="10.46671811731504" fill="white" /><circle cx="363.84704476380296" cy="520.0414317048444" r="23.570298185147017" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Multiplikatoren: Wie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        große Führungskräfte
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Spitzenleistung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Liz Wiseman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1a4ea770-5ca4-41c9-b084-e6d39e58544e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1a4ea770-5ca4-41c9-b084-e6d39e58544e)" />
+  <g opacity="0.1">
+    <circle cx="300.72147869034933" cy="159.29017052256245" r="16.20499801750252" fill="white" /><circle cx="241.24749135210402" cy="61.01916851689651" r="16.00237798621508" fill="white" /><circle cx="235.79214815142953" cy="61.98926576566617" r="29.427808413438843" fill="white" /><circle cx="179.686048650436" cy="378.38574661076046" r="18.73943742666965" fill="white" /><circle cx="3.2037162456219015" cy="25.275664524958042" r="22.144533579378567" fill="white" /><circle cx="166.8670168967051" cy="440.43783834030637" r="19.663893380866075" fill="white" /><circle cx="25.878229893465665" cy="172.51289858953024" r="27.77989799629353" fill="white" /><circle cx="189.49464918746816" cy="450.2522245371284" r="17.002060124551164" fill="white" /><circle cx="221.04716687738227" cy="549.4587596650114" r="25.347537131935756" fill="white" /><circle cx="360.1807491106899" cy="554.7089199606775" r="10.71194174895526" fill="white" /><circle cx="239.0679591695167" cy="54.27879296437017" r="10.368870595144406" fill="white" /><circle cx="329.1744592104758" cy="317.99135107800834" r="17.652068631312815" fill="white" /><circle cx="4.887814354004272" cy="386.38678361720025" r="15.472089964380062" fill="white" /><circle cx="80.78731622448623" cy="7.514867523595226" r="11.405189349188348" fill="white" /><circle cx="374.27473017120917" cy="335.3171426965688" r="14.630146882140274" fill="white" /><circle cx="156.2309189998128" cy="337.4743109399685" r="13.494533903266817" fill="white" /><circle cx="28.35596527608257" cy="98.7174568251227" r="29.617521195975606" fill="white" /><circle cx="239.2581597234411" cy="132.71881407279668" r="25.594207273478318" fill="white" /><circle cx="169.46108700906487" cy="286.6549600747718" r="24.38831968296467" fill="white" /><circle cx="130.01230085551114" cy="453.6130547279002" r="17.785689691954754" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Built to Last
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jim Collins
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

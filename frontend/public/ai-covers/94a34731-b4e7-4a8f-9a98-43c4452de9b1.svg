@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-94a34731-b4e7-4a8f-9a98-43c4452de9b1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-94a34731-b4e7-4a8f-9a98-43c4452de9b1)" />
+  <g opacity="0.1">
+    <circle cx="326.0407002303797" cy="443.18925688143634" r="26.02050930853242" fill="white" /><circle cx="123.27376584071557" cy="493.2390917642143" r="17.718274578092426" fill="white" /><circle cx="19.158446226590442" cy="567.7630385521168" r="20.50710313029039" fill="white" /><circle cx="328.0736278195903" cy="595.040464328874" r="13.018584351176264" fill="white" /><circle cx="366.6467282732314" cy="44.24270658515725" r="12.718021520887575" fill="white" /><circle cx="328.9840166738708" cy="88.03817047886098" r="28.319974219275508" fill="white" /><circle cx="91.7853335504495" cy="195.8954224365757" r="18.119743007915822" fill="white" /><circle cx="113.96000321613475" cy="482.22312109844563" r="29.52381250183995" fill="white" /><circle cx="233.26972146954978" cy="340.2153246634932" r="23.232461633247105" fill="white" /><circle cx="189.0072466327927" cy="191.26635791382134" r="27.566570730110513" fill="white" /><circle cx="267.24319947550225" cy="396.06420188780885" r="25.006236470127824" fill="white" /><circle cx="67.57189106894117" cy="237.59962719651426" r="15.861191799453797" fill="white" /><circle cx="60.39843722426821" cy="508.18910899866546" r="14.978756325381248" fill="white" /><circle cx="36.48442927535225" cy="463.837189139189" r="18.890191646858064" fill="white" /><circle cx="329.89766133120594" cy="68.62247577325478" r="21.925483557861604" fill="white" /><circle cx="288.3918399808621" cy="157.649687898371" r="24.84160250202333" fill="white" /><circle cx="382.056476594264" cy="283.7040559690499" r="18.29852319966241" fill="white" /><circle cx="395.9536042745354" cy="28.683443579731804" r="29.249630041331088" fill="white" /><circle cx="272.75401741041634" cy="498.30712426787863" r="11.566461157078487" fill="white" /><circle cx="107.509256223166" cy="235.04706897211264" r="29.407968157144996" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Breath: Atem – Neues
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wissen über die
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        vergessene Kunst des
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        James Nestor
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

@@ -2,57 +2,37 @@
 <svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="grad-855a2431-c745-4320-bef8-be0df698d161" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#be123c;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f43f5e;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
     </linearGradient>
     <filter id="shadow">
       <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
     </filter>
   </defs>
-  
   <rect width="400" height="600" fill="url(#grad-855a2431-c745-4320-bef8-be0df698d161)" />
-  
   <g opacity="0.1">
-    <circle cx="214.34024959608578" cy="570.4494191169908" r="29.192296414426615" fill="white" /><circle cx="379.4763542831687" cy="548.1661986338537" r="19.687973030331044" fill="white" /><circle cx="370.6315742513568" cy="195.72642521420005" r="10.766981758912298" fill="white" /><circle cx="328.7230885630242" cy="498.60320511697887" r="23.034566939261598" fill="white" /><circle cx="65.57180203680831" cy="134.20348494790773" r="16.536725192502647" fill="white" /><circle cx="330.8112012813523" cy="357.1088143545693" r="14.470385190706798" fill="white" /><circle cx="204.5149392496858" cy="266.70518798661493" r="26.21139106027586" fill="white" /><circle cx="46.415454893416765" cy="137.46728242555238" r="25.063524020500672" fill="white" /><circle cx="93.76939655367265" cy="411.71889253221184" r="24.737949809518017" fill="white" /><circle cx="296.7302648174099" cy="203.75142161726305" r="24.012108672097103" fill="white" /><circle cx="149.402796136302" cy="481.727037198024" r="17.668325753786565" fill="white" /><circle cx="70.22135320560041" cy="21.57485109292039" r="16.7582808739109" fill="white" /><circle cx="223.20784655127005" cy="12.280144561647166" r="15.014426221898487" fill="white" /><circle cx="214.3133067024825" cy="360.0042568361263" r="29.826693362377426" fill="white" /><circle cx="229.47130027362874" cy="420.1580186324895" r="26.46689164795181" fill="white" /><circle cx="265.0025740447439" cy="437.21950700914834" r="26.52560413411524" fill="white" /><circle cx="382.9787545023224" cy="313.3703926086833" r="21.787848233253975" fill="white" /><circle cx="11.999897094270784" cy="49.87553471097903" r="16.661182117349092" fill="white" /><circle cx="6.699956264836526" cy="30.10120630179167" r="28.125207131917552" fill="white" /><circle cx="23.31256461075948" cy="527.1809594764424" r="20.158182196450444" fill="white" />
+    <circle cx="1.0242698801410821" cy="155.57715642063826" r="13.099747648652434" fill="white" /><circle cx="285.30749442623204" cy="8.16783223917945" r="14.579032803600771" fill="white" /><circle cx="75.86078819413964" cy="177.43565486143723" r="17.941541956946754" fill="white" /><circle cx="166.05664572326515" cy="478.8893769587283" r="16.87749622497844" fill="white" /><circle cx="388.28541875970075" cy="421.62888592917" r="25.193661536286875" fill="white" /><circle cx="31.50555597853497" cy="152.16783920760057" r="29.27094133971775" fill="white" /><circle cx="59.17342074203109" cy="532.300485785153" r="23.39797367059358" fill="white" /><circle cx="195.3648477391704" cy="379.2388535255529" r="17.85325937218833" fill="white" /><circle cx="280.1260691229169" cy="434.841902076459" r="19.96566404824869" fill="white" /><circle cx="138.86230566456584" cy="466.76959110476866" r="14.645806891483414" fill="white" /><circle cx="290.29518470144393" cy="590.3131824137556" r="19.6416216482449" fill="white" /><circle cx="161.97332872374952" cy="66.71175976660109" r="24.20689774699294" fill="white" /><circle cx="103.41047858895732" cy="578.8970234906584" r="11.103128742501404" fill="white" /><circle cx="357.1646743380519" cy="558.5847629808436" r="27.277907951856374" fill="white" /><circle cx="106.1066837202611" cy="12.384195867731895" r="29.389151917361" fill="white" /><circle cx="388.3207332117047" cy="20.952346272672372" r="22.609339515357547" fill="white" /><circle cx="395.7161107716813" cy="390.64407195944204" r="14.464128937497131" fill="white" /><circle cx="229.37479266273294" cy="455.7587680264441" r="10.799942859618747" fill="white" /><circle cx="25.831167539615585" cy="223.11710869749453" r="25.2110565922993" fill="white" /><circle cx="374.9700759498169" cy="34.66409244864141" r="16.709803834818516" fill="white" />
   </g>
-  
   <g filter="url(#shadow)">
     
       <text x="200" y="120" 
-            font-family="Arial, sans-serif" 
-            font-size="36" 
-            font-weight="bold" 
-            fill="white" 
-            text-anchor="middle">
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
         The Artist&apos;s Journey
       </text>
-    
   </g>
-  
   <g filter="url(#shadow)">
     
       <text x="200" y="480" 
-            font-family="Arial, sans-serif" 
-            font-size="22" 
-            fill="#fb7185" 
-            text-anchor="middle">
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
         Steven Pressfield
       </text>
-    
   </g>
-  
   <g>
-    <rect x="20" y="20" width="150" height="35" 
-          rx="17.5" fill="rgba(255,255,255,0.2)" />
-    <text x="95" y="42" 
-          font-family="Arial, sans-serif" 
-          font-size="14" 
-          font-weight="bold"
-          fill="white" 
-          text-anchor="middle">
-      CREATIVITY
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
     </text>
   </g>
-  
-  <rect x="0" y="590" width="400" height="10" fill="#f43f5e" opacity="0.8" />
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
 </svg>

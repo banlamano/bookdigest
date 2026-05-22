@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5a0f944d-1dbd-4041-a7e7-9b362c3782af" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5a0f944d-1dbd-4041-a7e7-9b362c3782af)" />
+  <g opacity="0.1">
+    <circle cx="98.58679918961863" cy="7.554815531326264" r="29.50036709879134" fill="white" /><circle cx="295.0171601813156" cy="577.2346043334674" r="23.254015176792294" fill="white" /><circle cx="243.76248194425037" cy="370.2152722475456" r="28.129112515383078" fill="white" /><circle cx="194.97523478975248" cy="525.8672801609094" r="29.666009910283474" fill="white" /><circle cx="164.7904132612014" cy="296.6021721043143" r="22.253755434742256" fill="white" /><circle cx="182.1329397652304" cy="396.12359440636385" r="29.316907327816054" fill="white" /><circle cx="104.20327725761337" cy="396.660312116052" r="10.945262681500783" fill="white" /><circle cx="146.99592501206257" cy="40.81623052555445" r="14.909292326158855" fill="white" /><circle cx="380.0826007473462" cy="66.87589766085031" r="11.470928165199723" fill="white" /><circle cx="170.13747146710244" cy="39.56905123357988" r="20.11888263307354" fill="white" /><circle cx="220.5796294496382" cy="220.80440445129054" r="11.349920652336962" fill="white" /><circle cx="358.13878370064396" cy="238.15387988431925" r="25.917974220717593" fill="white" /><circle cx="66.92001904066167" cy="494.7379728809784" r="11.90087766932471" fill="white" /><circle cx="380.0178632984922" cy="132.25119585654033" r="28.593844595299537" fill="white" /><circle cx="194.4427807095009" cy="447.18276320252005" r="19.98544630994374" fill="white" /><circle cx="238.03202384973758" cy="532.4827922634717" r="16.50578774629812" fill="white" /><circle cx="102.42051817163991" cy="536.2340899203409" r="28.334816246361928" fill="white" /><circle cx="271.6741390028609" cy="592.3056888704702" r="15.91294313574118" fill="white" /><circle cx="41.11488708878004" cy="534.8342449787665" r="18.139676063511" fill="white" /><circle cx="57.98581412390447" cy="514.6270457873518" r="13.790835868973454" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Macht des Willens:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wie wir lernen, uns
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        selbst zu kontrollieren
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Kelly McGonigal
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9007942a-a60c-44bf-935c-7965da6dfb1f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9007942a-a60c-44bf-935c-7965da6dfb1f)" />
+  <g opacity="0.1">
+    <circle cx="87.36653162838226" cy="535.5923660020032" r="10.247423204289385" fill="white" /><circle cx="52.71676891959483" cy="423.73420624884767" r="24.0475872785246" fill="white" /><circle cx="294.1993108584476" cy="391.2319895109001" r="14.269121103003643" fill="white" /><circle cx="327.6549939032055" cy="238.83487068301451" r="10.9034365394437" fill="white" /><circle cx="367.7577743613093" cy="271.6382914695958" r="28.761397382418" fill="white" /><circle cx="246.61617839493624" cy="125.37080653360594" r="29.25114525674519" fill="white" /><circle cx="362.1631214157708" cy="304.34121353697185" r="15.929589699545105" fill="white" /><circle cx="22.844208150195257" cy="55.036233928224966" r="18.46503128994715" fill="white" /><circle cx="25.711747135196283" cy="243.40360945724666" r="14.449928545911304" fill="white" /><circle cx="173.3416173372726" cy="590.6051644970265" r="29.805513402075306" fill="white" /><circle cx="298.2514725291593" cy="366.1025671309012" r="11.078575096179842" fill="white" /><circle cx="215.94033758850958" cy="138.4117654393043" r="19.29532952400625" fill="white" /><circle cx="301.97379825980033" cy="517.5047936258367" r="10.649705136849416" fill="white" /><circle cx="260.10858768567095" cy="332.0330957441586" r="21.30082543431628" fill="white" /><circle cx="318.542949635799" cy="242.061798716005" r="17.3512791330524" fill="white" /><circle cx="43.77694825763974" cy="544.7636365275796" r="17.818876658502944" fill="white" /><circle cx="33.56039989784385" cy="25.444327585937266" r="15.100227286233213" fill="white" /><circle cx="146.35878023116143" cy="465.80034635139464" r="23.468106309400454" fill="white" /><circle cx="286.9653160580445" cy="13.834484900028166" r="28.126409894747734" fill="white" /><circle cx="143.0127006757265" cy="580.8715057559617" r="12.99865136098431" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Thinking in Bets: Wie Sie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Ihre Entscheidungen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        verbessern und die
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Annie Duke
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

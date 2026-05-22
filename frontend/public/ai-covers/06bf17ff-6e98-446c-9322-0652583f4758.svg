@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-06bf17ff-6e98-446c-9322-0652583f4758" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-06bf17ff-6e98-446c-9322-0652583f4758)" />
+  <g opacity="0.1">
+    <circle cx="2.861214931931011" cy="567.989863456948" r="20.482138299004855" fill="white" /><circle cx="191.56375208806753" cy="369.3191084440305" r="21.558736460043743" fill="white" /><circle cx="62.929160548456586" cy="510.8995473868974" r="10.497035904604324" fill="white" /><circle cx="166.02214386660864" cy="129.6967761487173" r="25.504113690859416" fill="white" /><circle cx="78.29827130309081" cy="350.6144558918533" r="29.300323282916167" fill="white" /><circle cx="326.0217521720973" cy="343.71855548853586" r="22.744364450946776" fill="white" /><circle cx="32.05781672423322" cy="401.09146438191084" r="10.687679568382704" fill="white" /><circle cx="383.1789178430655" cy="204.39867976186426" r="15.695981782665632" fill="white" /><circle cx="375.20465552576815" cy="265.1982871640502" r="24.606855473857742" fill="white" /><circle cx="314.6066670366342" cy="317.84269479935494" r="23.117177273514855" fill="white" /><circle cx="290.69874779578726" cy="455.2849440839374" r="26.446949641984613" fill="white" /><circle cx="79.9782343061195" cy="451.25921698384076" r="26.14583310718382" fill="white" /><circle cx="154.57179188828647" cy="287.5937347159203" r="19.845143317850432" fill="white" /><circle cx="37.85281712897333" cy="364.9145357940487" r="18.34476211442847" fill="white" /><circle cx="343.98566135540943" cy="36.72020845846917" r="22.218497543715962" fill="white" /><circle cx="375.7128901283207" cy="214.6119988059894" r="16.37979263718289" fill="white" /><circle cx="55.34019441734199" cy="591.6193913884606" r="25.996139233692947" fill="white" /><circle cx="66.57343399112752" cy="403.57520275223476" r="10.376132749753545" fill="white" /><circle cx="363.10287723553466" cy="273.73034445690575" r="26.481986775179877" fill="white" /><circle cx="310.0428283910851" cy="520.1463308570071" r="20.556730298593152" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Winning
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jack Welch
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

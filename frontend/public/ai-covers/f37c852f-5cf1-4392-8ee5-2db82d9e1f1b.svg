@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f37c852f-5cf1-4392-8ee5-2db82d9e1f1b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f37c852f-5cf1-4392-8ee5-2db82d9e1f1b)" />
+  <g opacity="0.1">
+    <circle cx="338.95621851096973" cy="128.6391497755655" r="25.913002841535924" fill="white" /><circle cx="138.37278592684683" cy="374.33002346937747" r="21.305037360146777" fill="white" /><circle cx="17.607355913989675" cy="371.48208773482736" r="27.035463594022268" fill="white" /><circle cx="7.607329017122577" cy="411.29675703630926" r="22.434556973573187" fill="white" /><circle cx="112.20052085985346" cy="5.58849718079264" r="12.098089153573879" fill="white" /><circle cx="385.11395133132436" cy="133.8568761774853" r="28.422342793721903" fill="white" /><circle cx="77.30950781324894" cy="449.0368648809725" r="17.04195220780008" fill="white" /><circle cx="225.3389577396981" cy="419.6780542897128" r="16.414006811063935" fill="white" /><circle cx="370.68672407495626" cy="347.3225475512962" r="16.66867774294171" fill="white" /><circle cx="111.60042398256458" cy="446.98038152564413" r="26.06889058327496" fill="white" /><circle cx="286.50816758591026" cy="410.00682081400913" r="28.42929350531523" fill="white" /><circle cx="379.7724586034735" cy="359.4226961109246" r="11.856485582684627" fill="white" /><circle cx="242.16556929018392" cy="541.3363281016988" r="17.398269499778465" fill="white" /><circle cx="228.03688826622573" cy="157.29092705192556" r="21.41963780648363" fill="white" /><circle cx="175.24984499833747" cy="520.6863094596854" r="14.127165328956327" fill="white" /><circle cx="307.56326581790285" cy="14.30868826391547" r="12.072901355780258" fill="white" /><circle cx="71.08217215612865" cy="257.33580726400436" r="16.589684681266696" fill="white" /><circle cx="186.334243198436" cy="141.26852435108117" r="18.369374574673916" fill="white" /><circle cx="74.25339089461755" cy="456.6870349916054" r="10.623261729704254" fill="white" /><circle cx="237.83299272674566" cy="536.4899025773938" r="22.1527454943745" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Glückshypothese: Was
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        uns wirklich glücklich
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        macht
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Jonathan Haidt
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-56d6e877-b5f2-4482-90fc-43d5cd3fb76b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-56d6e877-b5f2-4482-90fc-43d5cd3fb76b)" />
+  <g opacity="0.1">
+    <circle cx="342.12739626420705" cy="50.104898088501606" r="28.468950129518603" fill="white" /><circle cx="136.1438598763694" cy="16.731572308136577" r="14.140673782106855" fill="white" /><circle cx="50.794032706202955" cy="147.51256726135145" r="18.370081086806874" fill="white" /><circle cx="58.25025748111066" cy="475.9593859693192" r="28.016164384894875" fill="white" /><circle cx="216.69743790373747" cy="179.97086969836775" r="10.537409191263645" fill="white" /><circle cx="151.70961230858921" cy="88.3937544111008" r="26.10017428857668" fill="white" /><circle cx="351.7156144099158" cy="90.23530749992122" r="21.057682727141486" fill="white" /><circle cx="346.23730007887104" cy="215.0982889841728" r="24.735372614136637" fill="white" /><circle cx="23.76908816842782" cy="26.02291498990752" r="14.687617348257442" fill="white" /><circle cx="332.28816458725777" cy="219.67318348488362" r="21.900501412015963" fill="white" /><circle cx="37.15857605117843" cy="372.04699995491706" r="10.649391424188096" fill="white" /><circle cx="90.42681142260851" cy="476.59506652042336" r="15.588440197140967" fill="white" /><circle cx="353.2994953537133" cy="300.4655704784556" r="23.782467416171755" fill="white" /><circle cx="215.20017271597172" cy="321.5130108384819" r="11.199526933967602" fill="white" /><circle cx="73.91789727380763" cy="562.1950014842758" r="15.005711321820987" fill="white" /><circle cx="318.3416553666337" cy="303.07474440217936" r="15.422012951030354" fill="white" /><circle cx="130.30522303621728" cy="357.5649659748928" r="14.784219179641134" fill="white" /><circle cx="94.89028920201315" cy="464.46481561631407" r="25.75449275991753" fill="white" /><circle cx="165.59245110915649" cy="485.54623857219326" r="29.39945070540488" fill="white" /><circle cx="350.60829354421315" cy="357.19789275775406" r="25.20470792990949" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Macht Ihrer Absicht
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Wayne Dyer
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

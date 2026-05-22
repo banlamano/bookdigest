@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-eb8a48ef-086a-4bae-adbc-f716a4871ef8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-eb8a48ef-086a-4bae-adbc-f716a4871ef8)" />
+  <g opacity="0.1">
+    <circle cx="131.27009763855378" cy="168.9459662257194" r="21.587060766991097" fill="white" /><circle cx="357.04475506737754" cy="529.0341545131045" r="19.313408006445776" fill="white" /><circle cx="41.064717765264945" cy="424.0398538033998" r="11.788093375764765" fill="white" /><circle cx="323.83114943469053" cy="163.0235631517441" r="24.501808167596117" fill="white" /><circle cx="155.174380423501" cy="516.2989157998118" r="29.865224969120167" fill="white" /><circle cx="388.7367179190164" cy="119.26425968203549" r="17.79033580443689" fill="white" /><circle cx="205.97876655387543" cy="93.02407125806016" r="10.75050516025517" fill="white" /><circle cx="278.92625865689797" cy="426.1876386059179" r="16.736586852283608" fill="white" /><circle cx="2.73727815180278" cy="427.1120225379264" r="18.170628244175248" fill="white" /><circle cx="231.4763208014416" cy="108.6024158357941" r="14.022394503103195" fill="white" /><circle cx="160.15741744407944" cy="249.6550975750615" r="17.336405086212807" fill="white" /><circle cx="297.8210229382637" cy="28.09888660006239" r="17.821819348938817" fill="white" /><circle cx="124.61472156245419" cy="549.8756471825754" r="22.770922241412187" fill="white" /><circle cx="320.8164939135723" cy="198.84769179274562" r="22.55275302717505" fill="white" /><circle cx="275.3594525633008" cy="37.16848771216501" r="10.668823043193946" fill="white" /><circle cx="250.41082633479078" cy="266.7002569021201" r="12.001165822895771" fill="white" /><circle cx="352.40030307263186" cy="519.0388902382194" r="27.15925432155143" fill="white" /><circle cx="204.91626373471607" cy="235.37530216933445" r="15.037268765239205" fill="white" /><circle cx="163.3084916649571" cy="472.8831682089255" r="25.814283892229227" fill="white" /><circle cx="3.213930434045942" cy="570.0561927700103" r="21.53896661960489" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Psychologie der Börse: So
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        nutzen Anleger die Macht
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        der Emotionen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        James Montier
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

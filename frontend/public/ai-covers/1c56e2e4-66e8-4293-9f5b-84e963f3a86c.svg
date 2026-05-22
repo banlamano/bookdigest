@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1c56e2e4-66e8-4293-9f5b-84e963f3a86c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1c56e2e4-66e8-4293-9f5b-84e963f3a86c)" />
+  <g opacity="0.1">
+    <circle cx="108.02977813232388" cy="93.152174088528" r="29.408666146456806" fill="white" /><circle cx="128.35452816586442" cy="73.60580261028156" r="23.95316123830485" fill="white" /><circle cx="230.64814775949066" cy="459.2940964604177" r="27.71910595385902" fill="white" /><circle cx="360.31059169001634" cy="280.27492419542784" r="13.6800879061989" fill="white" /><circle cx="241.4598349536286" cy="223.15534948680698" r="16.229738090323387" fill="white" /><circle cx="63.859854701049954" cy="374.56898485349586" r="27.240289260026735" fill="white" /><circle cx="286.9708517257017" cy="69.40573191255261" r="16.591949447377473" fill="white" /><circle cx="345.6190863264647" cy="549.2301025477782" r="28.488616605893327" fill="white" /><circle cx="0.7374298826000381" cy="294.62374935441863" r="19.332702259755443" fill="white" /><circle cx="202.58505556716773" cy="221.5286963629428" r="17.660970065490847" fill="white" /><circle cx="134.3736844984694" cy="84.43208298550803" r="25.948531011742016" fill="white" /><circle cx="101.68016724140378" cy="157.9024176317172" r="10.345785674924734" fill="white" /><circle cx="35.19913287969034" cy="469.0238610753528" r="13.258519090559775" fill="white" /><circle cx="327.19107583318106" cy="87.56839266840646" r="16.271754843074078" fill="white" /><circle cx="360.0158966049983" cy="564.7624452173337" r="11.87045793543944" fill="white" /><circle cx="161.92046188878328" cy="140.7587026348114" r="20.8530159412684" fill="white" /><circle cx="239.02870083665618" cy="163.1641632550376" r="28.46419380222872" fill="white" /><circle cx="152.22820204789258" cy="139.7030863809594" r="24.85001300355922" fill="white" /><circle cx="115.71120312552753" cy="464.5483157189354" r="18.769526444546354" fill="white" /><circle cx="365.86257744082855" cy="405.7544385153197" r="22.381963369145524" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Spiel der Spiele:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Erinnerungen eines
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Börsen-Gauklers
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Edwin Lefèvre
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

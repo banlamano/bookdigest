@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-80ae4e0e-067f-41ec-a140-931d716aa650" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-80ae4e0e-067f-41ec-a140-931d716aa650)" />
+  <g opacity="0.1">
+    <circle cx="88.25289723304776" cy="294.510836321991" r="22.77412152213091" fill="white" /><circle cx="33.116712255226545" cy="460.17418733643416" r="12.064649565564364" fill="white" /><circle cx="94.88143371639714" cy="226.98742916381485" r="20.98228172351252" fill="white" /><circle cx="187.83996486776005" cy="263.0472792181925" r="29.736816777655378" fill="white" /><circle cx="44.348648370981" cy="67.56770501648359" r="21.2674750439839" fill="white" /><circle cx="385.57178865385276" cy="166.25076236346456" r="29.21402519437098" fill="white" /><circle cx="27.38788772322276" cy="326.9482922835316" r="15.27047121483654" fill="white" /><circle cx="19.962728919867168" cy="223.8657519797602" r="28.510331508446622" fill="white" /><circle cx="330.6529225700105" cy="41.37212154571055" r="24.067126421417328" fill="white" /><circle cx="218.91203703345948" cy="500.50849400439273" r="19.172850074242998" fill="white" /><circle cx="102.23311810461885" cy="374.93059672002084" r="26.319377557030904" fill="white" /><circle cx="247.88035484938663" cy="171.0788030340298" r="22.80032267337823" fill="white" /><circle cx="46.88353336484483" cy="140.0960343298048" r="29.73031007957754" fill="white" /><circle cx="27.33802016960718" cy="359.95548639567414" r="18.36073610871648" fill="white" /><circle cx="119.56866943988018" cy="192.4396605046816" r="14.88280565370112" fill="white" /><circle cx="371.1490396274075" cy="395.1442824954986" r="15.301022592866978" fill="white" /><circle cx="318.2865204218929" cy="417.16376959594845" r="24.562518002319496" fill="white" /><circle cx="35.0630339086881" cy="128.36555991933878" r="29.324524029462246" fill="white" /><circle cx="101.81376947376579" cy="552.4044775665739" r="23.61776118016177" fill="white" /><circle cx="252.5891729339198" cy="410.219952709025" r="17.769385407318506" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Lieben was ist: Wie vier
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Fragen Ihr Leben
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        verändern können
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Byron Katie
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-94a1002f-f053-47be-a7e1-22d8413e9c97" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-94a1002f-f053-47be-a7e1-22d8413e9c97)" />
+  <g opacity="0.1">
+    <circle cx="85.46911913722765" cy="32.229892485273595" r="17.34389876435653" fill="white" /><circle cx="330.5539846987788" cy="373.1047205829147" r="23.26665376709664" fill="white" /><circle cx="255.28762741205244" cy="270.33959457135967" r="25.83988930078134" fill="white" /><circle cx="225.0647145459266" cy="217.9661052881634" r="16.2338221375727" fill="white" /><circle cx="358.64062136019874" cy="142.01049251094352" r="20.347462570135377" fill="white" /><circle cx="336.13087832506807" cy="265.3258419643846" r="27.80385559224571" fill="white" /><circle cx="109.72961577159653" cy="375.7575289004499" r="19.931298731470058" fill="white" /><circle cx="257.6866380225069" cy="562.3500969547954" r="10.317006847258444" fill="white" /><circle cx="87.44139002480078" cy="270.53677455997587" r="26.1542261612238" fill="white" /><circle cx="346.9065851870644" cy="164.89558255337252" r="21.271333769926493" fill="white" /><circle cx="398.7785892856657" cy="596.85377381363" r="28.814749580763017" fill="white" /><circle cx="184.7714648090948" cy="537.0530168585383" r="13.774222463084836" fill="white" /><circle cx="247.68020136424317" cy="336.55265308813176" r="21.533991123795815" fill="white" /><circle cx="353.9414880330483" cy="362.8776971125412" r="23.754803616091024" fill="white" /><circle cx="312.26715688070175" cy="361.02182358672343" r="25.571030626302612" fill="white" /><circle cx="102.27985907382693" cy="498.88961247220595" r="22.368168942404395" fill="white" /><circle cx="379.11041829310824" cy="511.369637083895" r="26.757667054837604" fill="white" /><circle cx="114.85749591588505" cy="181.7255131312517" r="18.378485284833047" fill="white" /><circle cx="323.8358456572652" cy="104.20950875775104" r="21.206031854696267" fill="white" /><circle cx="155.9142471882009" cy="452.6562579499339" r="18.427388157736438" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die 8 Schritte zu einer
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Firma, die man verkaufen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        kann – oder einfach nur
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        John Warrillow
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

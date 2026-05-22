@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-4e539257-8680-45ff-9a41-a41b86de1b9e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-4e539257-8680-45ff-9a41-a41b86de1b9e)" />
+  <g opacity="0.1">
+    <circle cx="179.31082723318693" cy="255.79354179459435" r="19.52710723574736" fill="white" /><circle cx="31.737566109943096" cy="476.1331308471285" r="11.557607171347017" fill="white" /><circle cx="188.17532670751106" cy="118.52154836031603" r="15.873832719529233" fill="white" /><circle cx="143.7247816976771" cy="461.98316825067235" r="24.55463920413719" fill="white" /><circle cx="97.68649373767997" cy="429.4555093961297" r="23.7927513681405" fill="white" /><circle cx="215.92800869134115" cy="321.54498348489585" r="19.541810687022572" fill="white" /><circle cx="78.16566249021974" cy="557.3243127947285" r="26.67564287518076" fill="white" /><circle cx="190.46196290174692" cy="440.02412012704974" r="11.012045877840112" fill="white" /><circle cx="269.34509783441206" cy="321.68327546745104" r="14.709851978433461" fill="white" /><circle cx="300.20839966247195" cy="22.075506952065794" r="28.226640522642285" fill="white" /><circle cx="303.72729939766646" cy="277.2476695653172" r="13.985534973178343" fill="white" /><circle cx="380.7558877205862" cy="343.9759484783224" r="17.093604166300505" fill="white" /><circle cx="46.66051079090438" cy="333.0837811485754" r="19.35471509105642" fill="white" /><circle cx="330.2196582716839" cy="379.0023580307881" r="12.38743167767124" fill="white" /><circle cx="73.45846001496854" cy="99.24360099141012" r="24.13282083103877" fill="white" /><circle cx="169.95696769704907" cy="160.48934059731025" r="15.239971686907305" fill="white" /><circle cx="369.1053828820134" cy="198.51400729447738" r="24.690773529140767" fill="white" /><circle cx="257.01047419957797" cy="128.13564656314693" r="22.54874991517621" fill="white" /><circle cx="41.53797861778248" cy="579.7446943781902" r="16.408240197086194" fill="white" /><circle cx="347.3714104010232" cy="273.89595300246464" r="12.648011552255024" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Weg zu den Besten:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Was Unternehmen in
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        dauerhaft erfolgreiche
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jim Collins
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

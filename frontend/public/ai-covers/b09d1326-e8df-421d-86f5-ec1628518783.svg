@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b09d1326-e8df-421d-86f5-ec1628518783" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b09d1326-e8df-421d-86f5-ec1628518783)" />
+  <g opacity="0.1">
+    <circle cx="18.528717121186887" cy="567.9343502663174" r="29.397983567360086" fill="white" /><circle cx="328.15646382505844" cy="227.61892992467182" r="21.07935010265021" fill="white" /><circle cx="53.60158952006824" cy="567.313554205617" r="24.87942321427424" fill="white" /><circle cx="20.16631375375639" cy="296.3048315441364" r="29.496787889339274" fill="white" /><circle cx="391.3625474290874" cy="18.548155981466685" r="13.001091144711488" fill="white" /><circle cx="43.81052209789416" cy="517.1344686584968" r="13.230321202000825" fill="white" /><circle cx="239.9976932243595" cy="111.82942077437774" r="24.609594467878377" fill="white" /><circle cx="339.20036808169067" cy="473.71778414582303" r="26.33282842141568" fill="white" /><circle cx="265.3863763037351" cy="381.0283078642033" r="20.941189595269847" fill="white" /><circle cx="327.37283689980404" cy="177.05226559429906" r="15.52511182347949" fill="white" /><circle cx="172.48508395971908" cy="329.56292450644577" r="29.683864349885436" fill="white" /><circle cx="53.27607792706415" cy="283.1247303058226" r="18.67402365267977" fill="white" /><circle cx="318.10793212865013" cy="154.2027637419908" r="27.596787022217143" fill="white" /><circle cx="197.21192694362594" cy="216.08889789016013" r="10.04812034400507" fill="white" /><circle cx="354.1560526993831" cy="356.4586026986728" r="23.024599217209424" fill="white" /><circle cx="123.08714099294443" cy="230.87729521222568" r="10.44590035403809" fill="white" /><circle cx="128.16139258288985" cy="566.8941485976037" r="19.365169592405685" fill="white" /><circle cx="75.85552754777774" cy="445.5398063994717" r="10.419651379766453" fill="white" /><circle cx="9.099232886553121" cy="486.6072756453222" r="20.428749125239143" fill="white" /><circle cx="188.7136555975717" cy="389.5703571526955" r="20.774303293763293" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Black Box Thinking
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Matthew Syed
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

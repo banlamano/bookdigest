@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-eb3007ba-f1ab-4091-b3d8-2b744f80ed88" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-eb3007ba-f1ab-4091-b3d8-2b744f80ed88)" />
+  <g opacity="0.1">
+    <circle cx="177.7264920241672" cy="68.68086953225736" r="18.796565797378737" fill="white" /><circle cx="330.06886223671466" cy="158.132949714758" r="14.062716106666892" fill="white" /><circle cx="360.090473490624" cy="87.27872128161714" r="22.225459508629775" fill="white" /><circle cx="88.71119050847605" cy="20.455217733982224" r="25.147056445638256" fill="white" /><circle cx="166.95860093570155" cy="493.8515049094824" r="27.220467068396697" fill="white" /><circle cx="240.22086102343195" cy="490.79543930796774" r="23.506891468768966" fill="white" /><circle cx="251.40008281582507" cy="131.7288782996436" r="28.021394000311556" fill="white" /><circle cx="278.0419080363664" cy="429.50190607200955" r="13.829899353104055" fill="white" /><circle cx="340.3381048850015" cy="476.32349541350203" r="28.154306360949345" fill="white" /><circle cx="260.5823288896408" cy="232.96159592039996" r="22.176958010432934" fill="white" /><circle cx="88.17390219119008" cy="37.43832156694546" r="29.246956722758533" fill="white" /><circle cx="69.22001054650653" cy="397.09528334976966" r="29.181672191722196" fill="white" /><circle cx="398.0929199928171" cy="545.6665913287195" r="20.99290038122014" fill="white" /><circle cx="144.12160969227034" cy="435.44579109070196" r="14.831249342599301" fill="white" /><circle cx="314.47683821817225" cy="131.19312024502176" r="15.015417919814977" fill="white" /><circle cx="241.29595414750278" cy="474.9741601679839" r="10.85442865405058" fill="white" /><circle cx="47.59020176524884" cy="146.24921092407595" r="13.378522500200344" fill="white" /><circle cx="128.47072023451008" cy="74.38097486112589" r="24.06090973404069" fill="white" /><circle cx="277.7421529461066" cy="557.2337821074448" r="26.49793996642341" fill="white" /><circle cx="144.27258423037094" cy="313.5674029649908" r="19.64166793003862" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wie man im Geschäft
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        gewinnt
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Mark Cuban
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

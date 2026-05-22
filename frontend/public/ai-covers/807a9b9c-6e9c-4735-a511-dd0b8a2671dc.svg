@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-807a9b9c-6e9c-4735-a511-dd0b8a2671dc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-807a9b9c-6e9c-4735-a511-dd0b8a2671dc)" />
+  <g opacity="0.1">
+    <circle cx="153.91784895085695" cy="80.79778241479343" r="19.68134696665711" fill="white" /><circle cx="170.4249479813923" cy="77.42058409694327" r="16.073193565481745" fill="white" /><circle cx="4.4720855368807655" cy="112.17909177878627" r="13.706870101850166" fill="white" /><circle cx="99.66326940815091" cy="238.83214891755563" r="23.13972460215389" fill="white" /><circle cx="180.64149586335444" cy="327.7639613827657" r="13.092205224680864" fill="white" /><circle cx="184.98663197422763" cy="473.57694692875543" r="19.009251140335422" fill="white" /><circle cx="265.11187869257986" cy="456.1717339821776" r="20.724100790011786" fill="white" /><circle cx="47.91714349721175" cy="349.15459242331764" r="22.56187001798849" fill="white" /><circle cx="85.52775430618564" cy="522.0779145270993" r="21.881781671337208" fill="white" /><circle cx="13.589396773533124" cy="91.44277935550313" r="25.633511316644604" fill="white" /><circle cx="322.6979795135758" cy="243.84709110273167" r="11.331004421424591" fill="white" /><circle cx="257.6734002526693" cy="160.87796276424024" r="12.562150364057619" fill="white" /><circle cx="263.38954615364077" cy="539.8148011461128" r="23.841927050909142" fill="white" /><circle cx="362.6797078892446" cy="456.88709795956476" r="24.918827005718377" fill="white" /><circle cx="263.0154528320861" cy="283.06170210373045" r="18.01906040131631" fill="white" /><circle cx="153.62055230654727" cy="99.65137348790303" r="14.258986696017107" fill="white" /><circle cx="306.7670271411461" cy="532.726197395443" r="24.96221922903673" fill="white" /><circle cx="25.75007913770193" cy="461.58960472609687" r="16.920372360610703" fill="white" /><circle cx="92.53719586144098" cy="18.107656783837168" r="22.902456760867686" fill="white" /><circle cx="336.9093636054244" cy="480.1707561317491" r="15.69722015108292" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Radical Candor
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Kim Scott
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

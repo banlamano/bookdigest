@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d1dcf4be-5dac-4625-bcc8-3c87847a9ad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d1dcf4be-5dac-4625-bcc8-3c87847a9ad4)" />
+  <g opacity="0.1">
+    <circle cx="398.9345020662332" cy="546.5484511919254" r="21.810644877180543" fill="white" /><circle cx="301.8857358318173" cy="528.3314979018179" r="18.33775351661196" fill="white" /><circle cx="250.32740457037437" cy="413.7839181358033" r="16.34837688862892" fill="white" /><circle cx="190.9083656737428" cy="342.8386490332546" r="28.420779738814915" fill="white" /><circle cx="147.27082993981574" cy="535.9882104838201" r="15.83780750901046" fill="white" /><circle cx="41.08079453261904" cy="394.37956606461603" r="26.737988928261625" fill="white" /><circle cx="337.6080346135651" cy="499.75067537669304" r="25.06900263752751" fill="white" /><circle cx="220.90394957408463" cy="1.2730336855447" r="23.817103478952383" fill="white" /><circle cx="245.65225493214692" cy="9.842073695494769" r="26.78028896266427" fill="white" /><circle cx="295.2804770320976" cy="512.0095745496176" r="20.96450309122035" fill="white" /><circle cx="299.9480683081524" cy="284.1331451905265" r="19.521659216420893" fill="white" /><circle cx="142.61454546166075" cy="275.25267670892003" r="21.331440799397576" fill="white" /><circle cx="16.48792903224625" cy="461.82141561524696" r="17.338205747506336" fill="white" /><circle cx="295.0670309724265" cy="219.9566415197835" r="22.26447937961543" fill="white" /><circle cx="299.4590518080309" cy="489.2440046820939" r="19.515493128757633" fill="white" /><circle cx="72.49071730081589" cy="463.1645372721316" r="20.31450614332886" fill="white" /><circle cx="176.30988085713128" cy="220.01943543386457" r="14.370627654456538" fill="white" /><circle cx="82.97035083503701" cy="465.35187486367334" r="13.03505619333768" fill="white" /><circle cx="34.567878822036626" cy="539.1147021474902" r="19.3067825513625" fill="white" /><circle cx="30.429721318134728" cy="419.6396714040427" r="13.548611524676579" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Dein Geld oder Dein
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Leben: Das revolutionäre
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Programm für finanzielle
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Vicki Robin
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

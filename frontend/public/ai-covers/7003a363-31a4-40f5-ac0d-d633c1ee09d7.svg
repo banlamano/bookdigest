@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-7003a363-31a4-40f5-ac0d-d633c1ee09d7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-7003a363-31a4-40f5-ac0d-d633c1ee09d7)" />
+  <g opacity="0.1">
+    <circle cx="115.89081162353159" cy="406.4863066821553" r="26.23733319875638" fill="white" /><circle cx="316.8397740449467" cy="274.89155093502126" r="28.033212063496485" fill="white" /><circle cx="395.5160347245267" cy="387.031441595483" r="14.590657677107586" fill="white" /><circle cx="3.6100204449823092" cy="362.25862264133036" r="16.900190716187026" fill="white" /><circle cx="117.0527234988544" cy="33.48835323420711" r="14.79714507030899" fill="white" /><circle cx="169.2922293138222" cy="209.65204470723583" r="20.661343907568625" fill="white" /><circle cx="320.81056168935316" cy="17.494387081160557" r="14.358861427034572" fill="white" /><circle cx="168.93297967046004" cy="51.85563358406067" r="15.776794439176081" fill="white" /><circle cx="332.1963092852629" cy="199.09392267344845" r="23.768630477865536" fill="white" /><circle cx="270.8284515157492" cy="497.9639615275857" r="19.903376175831177" fill="white" /><circle cx="340.02229928193583" cy="456.56564689488897" r="28.874115746251956" fill="white" /><circle cx="108.51414020397208" cy="17.275622039131665" r="28.232435391261642" fill="white" /><circle cx="282.5092008226637" cy="75.03007585452738" r="13.226787424674363" fill="white" /><circle cx="389.9435491989516" cy="376.7014817498882" r="25.880133085216897" fill="white" /><circle cx="154.22749692318715" cy="566.736055233483" r="25.117965517305194" fill="white" /><circle cx="381.7238219093427" cy="148.6305743397958" r="11.782984416561778" fill="white" /><circle cx="275.34876749840447" cy="577.291104543663" r="23.605825680461376" fill="white" /><circle cx="150.76805205753482" cy="470.6063050495342" r="12.802049027905156" fill="white" /><circle cx="169.2156566970811" cy="85.1982179421005" r="11.505647556048391" fill="white" /><circle cx="315.30456521375663" cy="156.21461351156702" r="11.573225551358394" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Superintelligenz:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Szenarien einer kommenden
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Revolution
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Nick Bostrom
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

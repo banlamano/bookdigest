@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ef5c6dd0-803d-482c-9303-fd5a49e260f7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ef5c6dd0-803d-482c-9303-fd5a49e260f7)" />
+  <g opacity="0.1">
+    <circle cx="274.4885799928419" cy="25.449862052131998" r="18.360349670569445" fill="white" /><circle cx="150.86460138365058" cy="53.72565613672493" r="17.60654471105072" fill="white" /><circle cx="293.14965236480447" cy="146.93011467489265" r="21.648585947381335" fill="white" /><circle cx="98.25556674685797" cy="18.242431112947877" r="14.72630744179823" fill="white" /><circle cx="299.6477373773403" cy="599.2074597804789" r="20.39639656890109" fill="white" /><circle cx="26.21171073787094" cy="264.01561948770706" r="17.577230936083083" fill="white" /><circle cx="247.86103050654697" cy="261.7415120669955" r="15.84755595619183" fill="white" /><circle cx="359.1489673930695" cy="550.1401142385835" r="24.64669872167262" fill="white" /><circle cx="221.32891945446596" cy="305.275490678734" r="18.723617496987934" fill="white" /><circle cx="318.81099378241805" cy="370.088642355059" r="11.096805035061879" fill="white" /><circle cx="102.85944086043219" cy="63.26568120866354" r="10.108905679617258" fill="white" /><circle cx="180.70313487913552" cy="111.85178984417928" r="25.890900115199322" fill="white" /><circle cx="237.6041644828467" cy="28.02367299148174" r="16.76742976044639" fill="white" /><circle cx="278.7108390044303" cy="260.6689128936966" r="19.20784153699674" fill="white" /><circle cx="102.67292770903849" cy="11.982478609006186" r="25.998035747884323" fill="white" /><circle cx="139.51843093401678" cy="240.71566701481834" r="15.657452266474905" fill="white" /><circle cx="243.5156205722055" cy="187.56097658740381" r="19.42058968627733" fill="white" /><circle cx="9.373625632794136" cy="535.9719447629609" r="27.44970218995029" fill="white" /><circle cx="333.5124460106811" cy="242.72807325967995" r="23.6156728551308" fill="white" /><circle cx="141.6947639493373" cy="68.49102354232176" r="21.73956828025817" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Neue Minuten-Manager
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ken Blanchard
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

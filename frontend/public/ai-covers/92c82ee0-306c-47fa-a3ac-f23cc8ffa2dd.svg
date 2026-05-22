@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-92c82ee0-306c-47fa-a3ac-f23cc8ffa2dd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-92c82ee0-306c-47fa-a3ac-f23cc8ffa2dd)" />
+  <g opacity="0.1">
+    <circle cx="196.96609565654973" cy="4.92134052025146" r="29.279555183035118" fill="white" /><circle cx="320.1964006193224" cy="375.0917388495855" r="13.421066470216312" fill="white" /><circle cx="254.81272504321737" cy="152.60573302200712" r="12.38543507181009" fill="white" /><circle cx="11.61867845494009" cy="91.03419162023741" r="25.888168615294916" fill="white" /><circle cx="156.07598096398263" cy="43.71176197352313" r="25.521935745327884" fill="white" /><circle cx="132.22429763405094" cy="50.77103588570149" r="19.23569968907131" fill="white" /><circle cx="251.89398576656345" cy="346.53884904135504" r="24.444807861350636" fill="white" /><circle cx="202.9722531974456" cy="513.8422882873207" r="24.064197380725442" fill="white" /><circle cx="313.80246429297046" cy="120.11535016837482" r="15.828825695832801" fill="white" /><circle cx="220.45173434515513" cy="330.84985911218314" r="12.879553184787799" fill="white" /><circle cx="325.2780664477622" cy="77.61689440914677" r="20.666257084488283" fill="white" /><circle cx="286.9274195694787" cy="496.1113875370216" r="24.68047588970626" fill="white" /><circle cx="312.0528072023353" cy="468.357305473979" r="28.101367725218992" fill="white" /><circle cx="352.8439405770518" cy="204.4512976000642" r="16.804659086760907" fill="white" /><circle cx="73.35029520599852" cy="484.2176711493496" r="25.070591276159668" fill="white" /><circle cx="295.3465319207659" cy="347.4805292566465" r="26.64865251972199" fill="white" /><circle cx="156.67792057962222" cy="517.5012894625718" r="14.475933329669868" fill="white" /><circle cx="46.79627278030378" cy="273.2032523002631" r="14.65747910550268" fill="white" /><circle cx="217.53081161635924" cy="598.9506704245077" r="19.13525736618743" fill="white" /><circle cx="147.4564979897882" cy="368.1907451693688" r="28.94102380810768" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Weapons of Math
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Destruction
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Cathy O&apos;Neil
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ff68618c-ebb3-4c0b-8e83-d535f1cea138" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ff68618c-ebb3-4c0b-8e83-d535f1cea138)" />
+  <g opacity="0.1">
+    <circle cx="147.40196064168433" cy="38.01163501096316" r="28.534454436599002" fill="white" /><circle cx="333.05893691890543" cy="160.7702841665705" r="26.615443873350117" fill="white" /><circle cx="199.5663135411732" cy="240.12821690602954" r="11.31077298005929" fill="white" /><circle cx="24.154113563463795" cy="90.66747830626105" r="28.37055149483346" fill="white" /><circle cx="399.71176131762553" cy="272.9209454334639" r="28.179622619072926" fill="white" /><circle cx="281.21281549784953" cy="389.8420564227631" r="27.875306470124702" fill="white" /><circle cx="285.0005606179949" cy="164.91809477039402" r="14.702975266037061" fill="white" /><circle cx="302.60242144985904" cy="155.88210200092513" r="12.314600036775216" fill="white" /><circle cx="105.88617863126024" cy="239.09105446274876" r="12.552645256943538" fill="white" /><circle cx="98.23081352632764" cy="590.4893801120126" r="15.962280123434951" fill="white" /><circle cx="27.58167498303785" cy="599.2533183703126" r="27.43670032564883" fill="white" /><circle cx="145.97356281209284" cy="505.46638983245356" r="11.103256985998662" fill="white" /><circle cx="399.50061554194804" cy="6.883260059084928" r="25.12629088815877" fill="white" /><circle cx="346.8882138726547" cy="399.1837055812801" r="28.899782949351668" fill="white" /><circle cx="18.435397830828393" cy="39.77679615899812" r="26.573800584949574" fill="white" /><circle cx="284.63952298524464" cy="473.9806406780545" r="21.744725501817804" fill="white" /><circle cx="274.8089767169047" cy="387.0907267407289" r="29.477128866371977" fill="white" /><circle cx="353.59905924088844" cy="359.6860534849532" r="27.472321136140824" fill="white" /><circle cx="62.61803782651838" cy="401.9757528426609" r="22.958886980150307" fill="white" /><circle cx="357.9452952894375" cy="309.66423288974863" r="13.821223544765125" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wahre Zuflucht: Eine
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Reise zum Herzen der
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Achtsamkeit
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Tara Brach
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-62e730fe-5af8-4838-9824-8aecda9a0c6e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-62e730fe-5af8-4838-9824-8aecda9a0c6e)" />
+  <g opacity="0.1">
+    <circle cx="348.9153377195674" cy="172.6205943678675" r="16.879851360832085" fill="white" /><circle cx="45.292236904444174" cy="152.0429861284126" r="26.972445297175383" fill="white" /><circle cx="188.466543237513" cy="209.3133668239174" r="20.302373488012154" fill="white" /><circle cx="293.4758844343011" cy="57.063755486043654" r="17.705120455194496" fill="white" /><circle cx="103.7593470181117" cy="33.50902904180313" r="27.132352808279034" fill="white" /><circle cx="80.83467012967853" cy="576.6039219557115" r="13.497791080539052" fill="white" /><circle cx="304.9493361115387" cy="244.9385067726062" r="17.38293876096735" fill="white" /><circle cx="84.66391566832368" cy="388.21290499933025" r="27.109559257977324" fill="white" /><circle cx="12.361549081670686" cy="115.68359817260811" r="20.55931256713636" fill="white" /><circle cx="37.54576117816835" cy="320.6346340151903" r="22.159173594910033" fill="white" /><circle cx="162.2519233683512" cy="317.29613405174246" r="29.49172043970525" fill="white" /><circle cx="279.3022060531553" cy="433.34905748027836" r="17.749112631057294" fill="white" /><circle cx="348.36139774918934" cy="202.17425250590614" r="27.271276317900575" fill="white" /><circle cx="250.48781244548962" cy="137.83552262105567" r="20.268178227641677" fill="white" /><circle cx="369.4683234821949" cy="324.5379850422334" r="21.374485377942815" fill="white" /><circle cx="60.33306981779369" cy="318.36220199358394" r="13.219264824799616" fill="white" /><circle cx="33.01275889525495" cy="338.4293084342425" r="27.318185203810984" fill="white" /><circle cx="296.08196927551046" cy="172.770535590723" r="11.363727801868329" fill="white" /><circle cx="38.85537388101592" cy="266.0962678868063" r="10.217670012485778" fill="white" /><circle cx="305.8725209001378" cy="86.28143533778191" r="21.239031337259174" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Macht der klaren
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Botschaft: Warum manche
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Ideen überzeugen und
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Chip Heath
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-00305b52-df7a-401f-8089-8eaf79a6973c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-00305b52-df7a-401f-8089-8eaf79a6973c)" />
+  <g opacity="0.1">
+    <circle cx="286.44304646488104" cy="401.9475795801519" r="25.09432998575552" fill="white" /><circle cx="334.57831077614384" cy="480.99101917178524" r="21.4075148954152" fill="white" /><circle cx="137.81719339238253" cy="462.37185432793547" r="15.349115962275611" fill="white" /><circle cx="215.83209243909548" cy="465.0145076756135" r="26.899646707714627" fill="white" /><circle cx="147.66284240623855" cy="423.07721590343317" r="12.939083125564867" fill="white" /><circle cx="110.41516507374016" cy="113.6256212292712" r="14.593044036114257" fill="white" /><circle cx="213.3186582873646" cy="406.78318434320875" r="12.661144799555416" fill="white" /><circle cx="226.80888748109788" cy="524.0758484145913" r="17.846210402094847" fill="white" /><circle cx="60.68570039742407" cy="339.0141525757461" r="21.963139021075797" fill="white" /><circle cx="25.335841197148447" cy="224.841416340402" r="21.482104930365132" fill="white" /><circle cx="61.195560215865676" cy="2.7600794098413983" r="27.614371249870857" fill="white" /><circle cx="198.2432184245448" cy="337.20424630272674" r="19.64913735856196" fill="white" /><circle cx="211.48650404389252" cy="183.89559015945528" r="27.849626963377908" fill="white" /><circle cx="316.84409990561096" cy="16.218220535803486" r="20.293992310178922" fill="white" /><circle cx="288.7121315921547" cy="37.25389527472114" r="10.038577833827976" fill="white" /><circle cx="100.64989625319166" cy="100.21565561260346" r="15.064835944067916" fill="white" /><circle cx="235.41626869473583" cy="259.7795763959216" r="19.63560464944033" fill="white" /><circle cx="124.7125317020735" cy="12.740792869602302" r="16.65286808825836" fill="white" /><circle cx="328.9588695035815" cy="436.2082415463901" r="19.43377271606312" fill="white" /><circle cx="226.12921342108493" cy="152.92680224626935" r="14.681036271361583" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Black Box: Warum Fehler
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        uns klüger machen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Matthew Syed
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

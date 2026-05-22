@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b83740a0-b764-45f8-bf9b-8a3b0854123d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b83740a0-b764-45f8-bf9b-8a3b0854123d)" />
+  <g opacity="0.1">
+    <circle cx="181.9032222353751" cy="377.12907149239095" r="18.95614063485853" fill="white" /><circle cx="57.841776182853934" cy="37.940116857722984" r="24.72271331846527" fill="white" /><circle cx="293.77150838309285" cy="562.9977420744273" r="10.432079524695645" fill="white" /><circle cx="349.28251099446464" cy="307.40499602955225" r="21.834690085139385" fill="white" /><circle cx="167.2690091125363" cy="108.64039143509223" r="27.97858628877959" fill="white" /><circle cx="271.526689406062" cy="204.17898510993277" r="28.814587686537948" fill="white" /><circle cx="95.4388430069649" cy="69.9065074552028" r="16.889825993841896" fill="white" /><circle cx="74.07476502374202" cy="530.2758395008112" r="25.115180130274165" fill="white" /><circle cx="235.84483671725124" cy="74.32846657377468" r="16.798915548738034" fill="white" /><circle cx="134.69420047795597" cy="124.59484602582928" r="10.820208577306547" fill="white" /><circle cx="169.96089584483713" cy="395.1024631499706" r="14.73885529667211" fill="white" /><circle cx="20.925073581683186" cy="566.37788426696" r="12.322923852787422" fill="white" /><circle cx="392.4647374437268" cy="548.8716637879741" r="19.348600866922858" fill="white" /><circle cx="113.86388937910858" cy="96.94140576740526" r="23.730232252161557" fill="white" /><circle cx="83.2373000029905" cy="12.81864331410263" r="15.337539803574412" fill="white" /><circle cx="129.64768779017234" cy="190.90041737373014" r="10.417175356890517" fill="white" /><circle cx="14.308231518959236" cy="310.49412713052334" r="16.86166489985973" fill="white" /><circle cx="303.6622080880001" cy="302.07775237971055" r="16.33826274060756" fill="white" /><circle cx="70.45531213863967" cy="114.43936589099334" r="19.461468205551178" fill="white" /><circle cx="81.34748894326069" cy="445.0440603200832" r="15.534534000130174" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Psychologie des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Geldes: Zeitlose
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Lektionen über Reichtum,
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Morgan Housel
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

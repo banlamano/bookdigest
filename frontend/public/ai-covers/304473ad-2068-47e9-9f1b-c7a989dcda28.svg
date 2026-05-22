@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-304473ad-2068-47e9-9f1b-c7a989dcda28" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-304473ad-2068-47e9-9f1b-c7a989dcda28)" />
+  <g opacity="0.1">
+    <circle cx="296.13483144547575" cy="580.3781621709269" r="26.163088127702647" fill="white" /><circle cx="319.5160368911667" cy="311.085929202451" r="14.897547871480054" fill="white" /><circle cx="153.4202501604663" cy="107.37608260871194" r="14.823926560316963" fill="white" /><circle cx="274.7174143317501" cy="322.5301343795736" r="13.751518933922622" fill="white" /><circle cx="181.49417893747355" cy="302.4242713509787" r="20.014668601238593" fill="white" /><circle cx="147.51045095092474" cy="495.89867977474336" r="22.135102959920268" fill="white" /><circle cx="40.33710082431643" cy="19.547405883816648" r="29.040102681078494" fill="white" /><circle cx="108.99180139006255" cy="122.32486073207515" r="25.492238325418253" fill="white" /><circle cx="41.636033513375146" cy="495.8441777340318" r="11.660389568802831" fill="white" /><circle cx="13.32930592477437" cy="591.5441666651149" r="23.35484592312819" fill="white" /><circle cx="366.7853229064275" cy="498.785704176002" r="11.099215005501604" fill="white" /><circle cx="380.8288174650683" cy="437.6457651342136" r="15.468354346193166" fill="white" /><circle cx="253.2395536710101" cy="194.12975606117334" r="16.690839877194737" fill="white" /><circle cx="289.51519694712414" cy="346.7318413181142" r="26.88014494876272" fill="white" /><circle cx="392.56890730384765" cy="368.51654595235306" r="17.00319587840699" fill="white" /><circle cx="248.91268533137895" cy="321.9108804197291" r="28.753487822832085" fill="white" /><circle cx="162.56928767055538" cy="455.2309049938739" r="15.023722448310991" fill="white" /><circle cx="384.6392371443773" cy="128.15133355375616" r="21.371596614219897" fill="white" /><circle cx="142.69609385008243" cy="453.0170949868429" r="20.455138979376233" fill="white" /><circle cx="393.85398487484395" cy="524.461101189926" r="11.042583422256163" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        High Performance Habits
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brendon Burchard
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

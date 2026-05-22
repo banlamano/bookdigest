@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5118f1c5-84c2-4d0c-82dc-f9520aab88b1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5118f1c5-84c2-4d0c-82dc-f9520aab88b1)" />
+  <g opacity="0.1">
+    <circle cx="127.94696982264733" cy="432.19449206031715" r="29.41468731527578" fill="white" /><circle cx="218.24702234631008" cy="474.9895852591867" r="10.688441486993662" fill="white" /><circle cx="170.00721370277333" cy="5.559997548774165" r="20.25551779049337" fill="white" /><circle cx="175.08196553037106" cy="275.3310816899182" r="21.948746717742928" fill="white" /><circle cx="267.3077714826671" cy="242.11616498014664" r="18.984593743186824" fill="white" /><circle cx="384.56396503880273" cy="253.6783869754196" r="17.636628110102905" fill="white" /><circle cx="116.09207537204168" cy="117.97414542685073" r="11.347592856277007" fill="white" /><circle cx="118.54579014815698" cy="365.9319002424052" r="28.882942556402437" fill="white" /><circle cx="173.19045127775664" cy="303.93620397546437" r="20.59306480853983" fill="white" /><circle cx="13.433554514170387" cy="72.41718077498152" r="10.076739997836363" fill="white" /><circle cx="164.65809186852005" cy="505.93891691477523" r="17.04183314568172" fill="white" /><circle cx="391.9882996267537" cy="599.7735050800366" r="21.458388786514583" fill="white" /><circle cx="39.45514933291739" cy="182.32911400480583" r="20.399291083127842" fill="white" /><circle cx="204.25082639505644" cy="428.4829397109049" r="24.09712910742498" fill="white" /><circle cx="116.35795996457303" cy="353.1147057080702" r="13.675451165555316" fill="white" /><circle cx="173.91633222292242" cy="598.7881241114552" r="20.945210719250838" fill="white" /><circle cx="79.00301253905107" cy="103.42587755379573" r="23.90349313012843" fill="white" /><circle cx="241.62268777514183" cy="97.72682271136337" r="19.97544240900539" fill="white" /><circle cx="290.8074341715727" cy="522.4107818698535" r="28.994282706138183" fill="white" /><circle cx="134.70952435427304" cy="529.3296767784417" r="22.37314262944663" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Becoming
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Michelle Obama
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

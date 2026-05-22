@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-586f17f9-0a53-4b30-9596-6e765634b97e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-586f17f9-0a53-4b30-9596-6e765634b97e)" />
+  <g opacity="0.1">
+    <circle cx="318.57847137426916" cy="505.84944409544966" r="25.744044386729243" fill="white" /><circle cx="338.3043182678267" cy="575.8566064897394" r="25.600373545838863" fill="white" /><circle cx="58.52866608831575" cy="83.30360091703331" r="21.541425187801615" fill="white" /><circle cx="5.019507375408061" cy="315.82925942655385" r="10.971132606242762" fill="white" /><circle cx="303.7206785397386" cy="363.71550554246755" r="26.49114499192218" fill="white" /><circle cx="191.2114237154638" cy="370.39820314297907" r="12.570521277891595" fill="white" /><circle cx="258.6856416201746" cy="136.57634831355819" r="23.24319890037583" fill="white" /><circle cx="314.8440052339209" cy="355.1635241713186" r="23.771037890604937" fill="white" /><circle cx="311.9224021511963" cy="346.0265144575634" r="22.456535803638488" fill="white" /><circle cx="266.69772388196986" cy="399.58903481408095" r="29.596629087036174" fill="white" /><circle cx="324.28000553181164" cy="206.16405382756636" r="13.341168637582356" fill="white" /><circle cx="395.1311353250167" cy="590.360511216652" r="28.597748065815153" fill="white" /><circle cx="240.7095700297428" cy="232.4971025425161" r="21.780618279808465" fill="white" /><circle cx="249.50930668835832" cy="539.7145224175713" r="27.473122238279263" fill="white" /><circle cx="213.14700572604352" cy="11.583947549485018" r="12.944580699979277" fill="white" /><circle cx="50.03566765536607" cy="478.731664819492" r="20.227225857652137" fill="white" /><circle cx="284.9152075028308" cy="546.2038898099033" r="10.988739318684038" fill="white" /><circle cx="366.64953512104097" cy="517.339985090558" r="28.13652007117226" fill="white" /><circle cx="30.506093631930575" cy="251.91039317636955" r="23.27995256545487" fill="white" /><circle cx="67.34637796947771" cy="196.1356986242492" r="13.4967501877376" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Barfuss Investor
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Scott Pape
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

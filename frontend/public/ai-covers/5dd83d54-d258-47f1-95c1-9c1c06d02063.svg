@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5dd83d54-d258-47f1-95c1-9c1c06d02063" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5dd83d54-d258-47f1-95c1-9c1c06d02063)" />
+  <g opacity="0.1">
+    <circle cx="92.31898341278475" cy="101.83291314805523" r="24.495853576058707" fill="white" /><circle cx="306.4205331534255" cy="525.7167303514688" r="29.647106818666803" fill="white" /><circle cx="216.6707786954703" cy="453.6098734532368" r="29.42481923390098" fill="white" /><circle cx="359.0447837258042" cy="591.7965802594761" r="21.804629701053884" fill="white" /><circle cx="167.98706071398124" cy="196.05994352270136" r="22.085010135407984" fill="white" /><circle cx="334.9013863601003" cy="523.2238467387707" r="12.236585820032486" fill="white" /><circle cx="105.67471985485146" cy="440.69329882721667" r="13.063451876547067" fill="white" /><circle cx="104.31985146327159" cy="190.48162978729906" r="10.40930530737798" fill="white" /><circle cx="146.07546265037655" cy="493.1276406582033" r="27.97216036418315" fill="white" /><circle cx="222.354828219328" cy="356.22253410272015" r="25.38362232369363" fill="white" /><circle cx="198.8379561024193" cy="248.52510587228466" r="11.767423188702146" fill="white" /><circle cx="114.88114391755033" cy="402.53455321828864" r="25.499053339976427" fill="white" /><circle cx="259.45667248568867" cy="376.458245779234" r="19.944096746438262" fill="white" /><circle cx="297.90756134231134" cy="223.7309660526072" r="16.881400884914008" fill="white" /><circle cx="289.1969081884684" cy="360.52318610621643" r="17.815743133470967" fill="white" /><circle cx="241.42415064456557" cy="419.92838167714865" r="14.284594352296915" fill="white" /><circle cx="331.6056403845464" cy="385.4984003838722" r="10.272503972381735" fill="white" /><circle cx="206.85291949548534" cy="528.0993032178135" r="18.56255062541894" fill="white" /><circle cx="8.095194752484325" cy="37.65395674502794" r="21.45650274680981" fill="white" /><circle cx="206.4933312270243" cy="558.1613281684308" r="29.542392642668162" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Money Master the Game
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Tony Robbins
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-af62b0fb-5636-4226-b364-88be60e4034c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-af62b0fb-5636-4226-b364-88be60e4034c)" />
+  <g opacity="0.1">
+    <circle cx="396.36881569276375" cy="194.73831325315948" r="17.814568977232188" fill="white" /><circle cx="188.19357443272634" cy="469.4038745539751" r="20.013380498759474" fill="white" /><circle cx="48.11751072340211" cy="130.15441859350108" r="18.33201471619927" fill="white" /><circle cx="380.223974301606" cy="171.22677443490517" r="10.534648267159913" fill="white" /><circle cx="247.6950081757155" cy="527.730665770344" r="21.64869050227159" fill="white" /><circle cx="337.94668549179005" cy="231.4083471638567" r="13.944867928951147" fill="white" /><circle cx="380.0281830033907" cy="561.8268144308895" r="19.325550607038863" fill="white" /><circle cx="137.95222055766027" cy="135.94444387331154" r="26.432568282938558" fill="white" /><circle cx="269.5584425375269" cy="30.850585917970207" r="10.017839983043753" fill="white" /><circle cx="280.20108906194514" cy="253.18120999454305" r="19.088050527564086" fill="white" /><circle cx="45.858288752045915" cy="582.635347996647" r="27.237938002777856" fill="white" /><circle cx="211.46078347735462" cy="76.49563420368644" r="13.113139869512922" fill="white" /><circle cx="397.5300775965925" cy="393.41629699218106" r="13.28941691354673" fill="white" /><circle cx="30.954295034842396" cy="431.6011553488701" r="23.952479599938645" fill="white" /><circle cx="297.600827511477" cy="452.85171060995685" r="29.470056355597254" fill="white" /><circle cx="207.6074475178638" cy="364.58737135058396" r="14.862492395829388" fill="white" /><circle cx="270.7552449742118" cy="370.4266585807851" r="27.735917123569347" fill="white" /><circle cx="46.1585224634057" cy="573.3033685231002" r="11.159603369929652" fill="white" /><circle cx="171.43233269219368" cy="3.527668923727334" r="22.19759211028049" fill="white" /><circle cx="389.6897980527032" cy="505.7907841745311" r="15.511384980079884" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Master Algorithm
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Pedro Domingos
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

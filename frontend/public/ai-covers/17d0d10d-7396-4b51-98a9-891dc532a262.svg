@@ -2,57 +2,37 @@
 <svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="grad-17d0d10d-7396-4b51-98a9-891dc532a262" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#7e22ce;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
     </linearGradient>
     <filter id="shadow">
       <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
     </filter>
   </defs>
-  
   <rect width="400" height="600" fill="url(#grad-17d0d10d-7396-4b51-98a9-891dc532a262)" />
-  
   <g opacity="0.1">
-    <circle cx="196.62536445651918" cy="443.4302741864545" r="15.30022266505824" fill="white" /><circle cx="269.7312031443798" cy="368.5261092042118" r="27.106110857911215" fill="white" /><circle cx="90.60347046904016" cy="303.6679304953213" r="16.31898142916043" fill="white" /><circle cx="180.78320673759828" cy="266.31476812311314" r="24.824818967131183" fill="white" /><circle cx="368.4866979178922" cy="313.2810707433022" r="21.44932267210337" fill="white" /><circle cx="287.49759809004064" cy="476.794404753326" r="25.33270531171092" fill="white" /><circle cx="284.9801408707164" cy="327.3790579925935" r="23.440529273514613" fill="white" /><circle cx="276.5805048209814" cy="104.57827046085171" r="21.74097072176005" fill="white" /><circle cx="318.39353760272456" cy="470.46594020289587" r="13.23476115333933" fill="white" /><circle cx="149.06429028635242" cy="459.8454019603253" r="25.66706497092286" fill="white" /><circle cx="43.38632067582324" cy="368.5547808336297" r="23.39021963886716" fill="white" /><circle cx="0.6178003271644528" cy="50.028973355077746" r="29.016518353750808" fill="white" /><circle cx="342.42740815248544" cy="79.67856201109826" r="21.650858968268636" fill="white" /><circle cx="249.0811906228453" cy="178.9046483439862" r="26.32719758667936" fill="white" /><circle cx="318.3068914564224" cy="429.7053817974261" r="16.74207727120603" fill="white" /><circle cx="112.70502381584824" cy="366.37734237567577" r="26.16046453510712" fill="white" /><circle cx="308.21426357818893" cy="15.61253439506196" r="20.97668960139662" fill="white" /><circle cx="324.57929953412537" cy="271.4532988844404" r="25.126620512031113" fill="white" /><circle cx="283.13298364792985" cy="226.00894554531965" r="10.969726677986547" fill="white" /><circle cx="249.70359574723625" cy="132.3948148241909" r="10.015963684071515" fill="white" />
+    <circle cx="396.5452164869846" cy="458.7517170893323" r="29.686600617680888" fill="white" /><circle cx="65.67087513503238" cy="212.04268061810993" r="29.90904225658483" fill="white" /><circle cx="371.07769433662537" cy="334.9882803679208" r="24.5433517705328" fill="white" /><circle cx="87.02664439945455" cy="509.2485903261171" r="20.221928173076154" fill="white" /><circle cx="265.0313828243284" cy="189.92560941416457" r="24.1425926756443" fill="white" /><circle cx="233.24134075715688" cy="56.09916812352678" r="26.138256306015148" fill="white" /><circle cx="131.37161981854143" cy="525.1829966628497" r="16.987266655151156" fill="white" /><circle cx="266.0273672873389" cy="29.879021524406156" r="15.448662966956556" fill="white" /><circle cx="123.3174338804265" cy="432.07760090892185" r="28.175754827101702" fill="white" /><circle cx="206.8196215909174" cy="461.1096852294932" r="20.156566527476123" fill="white" /><circle cx="259.0825981316937" cy="262.03453171344677" r="23.35061878890265" fill="white" /><circle cx="38.47140626831824" cy="201.61012834106856" r="28.13659584847477" fill="white" /><circle cx="229.13380498492856" cy="65.7386112633165" r="23.77788840742223" fill="white" /><circle cx="292.7839799252257" cy="486.61828766936026" r="22.083043887670073" fill="white" /><circle cx="188.92084022438294" cy="254.7533196231696" r="23.21099934404032" fill="white" /><circle cx="266.506454203131" cy="595.1678033382551" r="17.356286135378234" fill="white" /><circle cx="310.92302298990506" cy="315.99985008003586" r="25.95083128681663" fill="white" /><circle cx="146.1223169206058" cy="300.349407327365" r="17.13746435004878" fill="white" /><circle cx="238.70807955946134" cy="554.1035547714994" r="21.770939547721675" fill="white" /><circle cx="142.71755844166765" cy="556.0505481693604" r="20.08515409652423" fill="white" />
   </g>
-  
   <g filter="url(#shadow)">
     
       <text x="200" y="120" 
-            font-family="Arial, sans-serif" 
-            font-size="36" 
-            font-weight="bold" 
-            fill="white" 
-            text-anchor="middle">
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
         The Aladdin Factor
       </text>
-    
   </g>
-  
   <g filter="url(#shadow)">
     
       <text x="200" y="480" 
-            font-family="Arial, sans-serif" 
-            font-size="22" 
-            fill="#c084fc" 
-            text-anchor="middle">
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
         Jack Canfield
       </text>
-    
   </g>
-  
   <g>
-    <rect x="20" y="20" width="138" height="35" 
-          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
     <text x="89" y="42" 
-          font-family="Arial, sans-serif" 
-          font-size="14" 
-          font-weight="bold"
-          fill="white" 
-          text-anchor="middle">
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
       SELF-HELP
     </text>
   </g>
-  
-  <rect x="0" y="590" width="400" height="10" fill="#a855f7" opacity="0.8" />
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
 </svg>

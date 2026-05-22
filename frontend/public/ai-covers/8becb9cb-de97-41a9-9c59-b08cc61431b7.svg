@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8becb9cb-de97-41a9-9c59-b08cc61431b7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8becb9cb-de97-41a9-9c59-b08cc61431b7)" />
+  <g opacity="0.1">
+    <circle cx="38.35240770154766" cy="255.93827299462055" r="21.976444543859564" fill="white" /><circle cx="390.1094462408396" cy="575.0577152900745" r="27.611815758219887" fill="white" /><circle cx="191.80638472626597" cy="430.28806491487575" r="12.095281700852592" fill="white" /><circle cx="320.2047529930086" cy="276.5750617473586" r="16.468515173887287" fill="white" /><circle cx="177.73176831167427" cy="148.35906817961967" r="14.281779455412941" fill="white" /><circle cx="374.09290800072137" cy="506.17490214894667" r="19.28985907193055" fill="white" /><circle cx="265.3076188308603" cy="260.3146568509615" r="23.295661033556435" fill="white" /><circle cx="17.859020514932133" cy="470.76018422993627" r="22.84156896096482" fill="white" /><circle cx="138.5332635669073" cy="375.17999533664016" r="24.028509363197635" fill="white" /><circle cx="394.34590039500017" cy="557.517859949572" r="29.004149166819918" fill="white" /><circle cx="94.92974921476987" cy="363.0861521007385" r="15.900728531856887" fill="white" /><circle cx="373.8518353891654" cy="267.49998374805404" r="19.995495998907803" fill="white" /><circle cx="88.62749141090079" cy="235.50003558405416" r="22.18447870765656" fill="white" /><circle cx="265.2520340506286" cy="300.5442878401572" r="27.92339277056677" fill="white" /><circle cx="341.96408978567393" cy="116.90297526742374" r="11.751155828308558" fill="white" /><circle cx="42.37686332041437" cy="388.23642679008015" r="15.665149597664891" fill="white" /><circle cx="199.05536514927203" cy="479.5082317975136" r="20.83951765018716" fill="white" /><circle cx="154.82049681891957" cy="185.38396247702048" r="24.585801574858444" fill="white" /><circle cx="39.967914715962394" cy="488.4328687364964" r="17.28188414841737" fill="white" /><circle cx="373.8320056467492" cy="476.5367369595542" r="10.981779475811829" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Elon Musk
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Ashlee Vance
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

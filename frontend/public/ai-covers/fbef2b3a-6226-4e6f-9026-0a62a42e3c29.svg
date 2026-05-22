@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-fbef2b3a-6226-4e6f-9026-0a62a42e3c29" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-fbef2b3a-6226-4e6f-9026-0a62a42e3c29)" />
+  <g opacity="0.1">
+    <circle cx="288.9606376117183" cy="296.03967690345627" r="17.759818192102834" fill="white" /><circle cx="203.50597484673386" cy="551.4470128757109" r="28.272382026337745" fill="white" /><circle cx="110.82083066479225" cy="158.30511502580194" r="10.889308583203661" fill="white" /><circle cx="223.40577954008788" cy="566.1148634007741" r="24.68317691709464" fill="white" /><circle cx="46.170012646578186" cy="279.1360486468494" r="12.856558095847499" fill="white" /><circle cx="31.32296940501216" cy="267.3870749464137" r="15.071812038853995" fill="white" /><circle cx="327.26678318424086" cy="517.544982569748" r="10.553855995684057" fill="white" /><circle cx="392.7795947807487" cy="355.3425851985531" r="15.0453166329556" fill="white" /><circle cx="346.28391463183743" cy="179.60549490527467" r="14.379386093370726" fill="white" /><circle cx="131.40922201984867" cy="170.20519800704477" r="25.608570233990225" fill="white" /><circle cx="383.449148058442" cy="389.0595382172151" r="22.298986445916018" fill="white" /><circle cx="277.94163403092904" cy="373.67232103383196" r="22.051581636097595" fill="white" /><circle cx="223.89576628880735" cy="325.49404797442446" r="26.271600331436026" fill="white" /><circle cx="385.9420622982403" cy="223.79027835512161" r="11.552093458151063" fill="white" /><circle cx="236.07730189176556" cy="403.0426872620493" r="17.090240475980565" fill="white" /><circle cx="208.47279808520213" cy="285.0112187354566" r="12.765483554227968" fill="white" /><circle cx="226.29546116453997" cy="239.81529489795074" r="16.231686410228587" fill="white" /><circle cx="201.53730687020274" cy="524.4880962014508" r="20.282230048293485" fill="white" /><circle cx="110.0948382409332" cy="52.275168423375916" r="10.660813677144066" fill="white" /><circle cx="191.76456416186838" cy="206.3267588932376" r="17.006298258092322" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Lost Connections
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Johann Hari
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

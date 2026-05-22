@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-aef74883-6481-475c-80a8-02f89753c74d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-aef74883-6481-475c-80a8-02f89753c74d)" />
+  <g opacity="0.1">
+    <circle cx="219.91750088448566" cy="35.54810406046085" r="18.609855003924388" fill="white" /><circle cx="332.39639804663506" cy="232.02136841896578" r="18.00317481355453" fill="white" /><circle cx="50.955969853760095" cy="533.1352219678871" r="12.585196224517723" fill="white" /><circle cx="354.0325703066115" cy="33.61943751354441" r="29.141915084651025" fill="white" /><circle cx="40.68555260714666" cy="290.7310419783613" r="26.094967499436827" fill="white" /><circle cx="18.526397985568188" cy="371.2122458206258" r="24.49203294491545" fill="white" /><circle cx="71.76504338919854" cy="305.8048789135858" r="16.82777636636816" fill="white" /><circle cx="260.0905633372225" cy="564.8318057691187" r="13.647452519666874" fill="white" /><circle cx="300.7096346739727" cy="62.28661209813908" r="25.509948994747816" fill="white" /><circle cx="60.97292808260622" cy="112.84388200932642" r="19.827576679355317" fill="white" /><circle cx="207.6268570608478" cy="378.19357005744473" r="25.208203560592906" fill="white" /><circle cx="365.4138345589491" cy="223.726448048187" r="15.219261538282087" fill="white" /><circle cx="277.94736257671553" cy="328.6484596557299" r="29.470319197407786" fill="white" /><circle cx="105.68657939070829" cy="273.05673158843354" r="26.33670544479709" fill="white" /><circle cx="78.6787315794911" cy="178.78251196927434" r="21.291379766580675" fill="white" /><circle cx="180.20590237922417" cy="488.98595816711634" r="23.235554793962603" fill="white" /><circle cx="68.8805263237216" cy="352.84574589237894" r="16.962113115165227" fill="white" /><circle cx="71.77409576127607" cy="558.3356097694715" r="10.06601038441554" fill="white" /><circle cx="101.45123862665915" cy="292.2226121479894" r="26.896583773409873" fill="white" /><circle cx="249.82477334206555" cy="36.86744797657089" r="29.111362444017175" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Psychologie des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Überzeugens
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Robert Cialdini
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

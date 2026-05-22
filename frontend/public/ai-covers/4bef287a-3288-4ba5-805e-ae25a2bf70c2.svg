@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-4bef287a-3288-4ba5-805e-ae25a2bf70c2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-4bef287a-3288-4ba5-805e-ae25a2bf70c2)" />
+  <g opacity="0.1">
+    <circle cx="248.55302681631426" cy="578.7730645663202" r="25.65777929065971" fill="white" /><circle cx="74.9727758357487" cy="199.3425391466208" r="11.100333825584237" fill="white" /><circle cx="242.25000144362951" cy="52.75915962118105" r="20.617559053328065" fill="white" /><circle cx="373.51953953626514" cy="279.74275043981976" r="16.974377046126598" fill="white" /><circle cx="98.84457911564515" cy="265.56952650177766" r="19.346468985870814" fill="white" /><circle cx="227.84383729751906" cy="342.1100711965636" r="25.757166832606856" fill="white" /><circle cx="176.31946366645147" cy="54.81109713549388" r="18.688898166183314" fill="white" /><circle cx="281.9302939302955" cy="349.61387918880536" r="13.667264130951027" fill="white" /><circle cx="180.6840316340326" cy="288.86104703654263" r="26.734718965900328" fill="white" /><circle cx="250.68412078200976" cy="161.57535539113374" r="20.872608271144905" fill="white" /><circle cx="19.258821668475257" cy="457.1416330861741" r="14.166161958586569" fill="white" /><circle cx="116.44705475298207" cy="379.0682221981859" r="11.75751683555156" fill="white" /><circle cx="175.30630974881709" cy="356.18261891692384" r="26.12840691331939" fill="white" /><circle cx="286.00415857796577" cy="138.50578732500023" r="10.72390680514933" fill="white" /><circle cx="143.4119898040775" cy="482.8075377603726" r="28.13644049757787" fill="white" /><circle cx="49.03541705274783" cy="123.64845970289191" r="18.516314687515862" fill="white" /><circle cx="228.04259214436905" cy="551.5312737687257" r="26.365410497874606" fill="white" /><circle cx="245.6780267997575" cy="165.9239890201567" r="12.158043185614702" fill="white" /><circle cx="371.1937279938101" cy="116.39612530880761" r="11.962212968074859" fill="white" /><circle cx="363.4741187414131" cy="231.8840200348539" r="14.524959806415847" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Mediale Medizin: Die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wahrheit über chronische
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        und unheilbare
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Anthony William
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

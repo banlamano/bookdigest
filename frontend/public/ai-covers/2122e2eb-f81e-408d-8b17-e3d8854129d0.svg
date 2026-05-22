@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-2122e2eb-f81e-408d-8b17-e3d8854129d0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-2122e2eb-f81e-408d-8b17-e3d8854129d0)" />
+  <g opacity="0.1">
+    <circle cx="73.49238372391565" cy="68.8336428860331" r="20.9002893587077" fill="white" /><circle cx="335.71974039400794" cy="98.53366370763375" r="21.440089780091796" fill="white" /><circle cx="209.99776087862284" cy="17.71059581798493" r="29.361566214203414" fill="white" /><circle cx="119.23450158400222" cy="219.56097358617873" r="29.618794722350334" fill="white" /><circle cx="37.77049754223185" cy="214.32099722233716" r="12.376829061596062" fill="white" /><circle cx="190.21841224800147" cy="287.797316099095" r="19.19517389283911" fill="white" /><circle cx="242.2942914831832" cy="391.9457879659722" r="20.11984476507758" fill="white" /><circle cx="235.30201889343485" cy="42.360593300381154" r="24.706976942055938" fill="white" /><circle cx="83.92279662113098" cy="463.47644074140993" r="12.941650950137698" fill="white" /><circle cx="28.52349027086465" cy="32.26827815262736" r="19.007288038805616" fill="white" /><circle cx="276.6115575153333" cy="232.69841402176482" r="26.740438975673147" fill="white" /><circle cx="30.635197196405393" cy="41.6408177732422" r="29.62847941910073" fill="white" /><circle cx="314.6322316781077" cy="363.1481880060387" r="26.561282876064908" fill="white" /><circle cx="178.27917245745817" cy="533.9839166557956" r="16.938604797329866" fill="white" /><circle cx="112.65344379670918" cy="51.656915646595024" r="18.332636847453408" fill="white" /><circle cx="360.8605672266353" cy="319.64864848859486" r="13.025792317187205" fill="white" /><circle cx="204.34299337147093" cy="195.13985866139714" r="24.55936055490436" fill="white" /><circle cx="259.2695379518119" cy="519.6713989724097" r="26.994773464940103" fill="white" /><circle cx="389.93306118000834" cy="257.37399845546395" r="20.81469325535741" fill="white" /><circle cx="361.2422467297203" cy="346.2198254348152" r="27.47295539065288" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Erfolgsprinzipien:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wie Sie vom Standpunkt,
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        wo Sie sind, dorthin
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jack Canfield
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

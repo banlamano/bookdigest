@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ff58413d-def5-4a6c-8c1d-3b3b85dede9a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ff58413d-def5-4a6c-8c1d-3b3b85dede9a)" />
+  <g opacity="0.1">
+    <circle cx="74.50086349996523" cy="251.67103048211743" r="20.280155607948885" fill="white" /><circle cx="94.09684330427245" cy="20.00282159534903" r="26.07023232627191" fill="white" /><circle cx="245.95877385270484" cy="9.409999711679795" r="26.394313058794726" fill="white" /><circle cx="155.38843696235048" cy="297.6611712018659" r="22.737385625789226" fill="white" /><circle cx="36.37980985334139" cy="532.8105722606813" r="29.55956949160716" fill="white" /><circle cx="188.94493019134595" cy="225.993267500924" r="10.142967936870864" fill="white" /><circle cx="251.51847624292333" cy="338.66902775843397" r="28.044466585833185" fill="white" /><circle cx="275.4217041209109" cy="266.80227427073265" r="18.830394005343074" fill="white" /><circle cx="277.80626734694414" cy="347.70879724803854" r="14.789793723028463" fill="white" /><circle cx="300.3493028091236" cy="342.18924775589716" r="18.572731609529466" fill="white" /><circle cx="129.8971020800088" cy="17.912523050395833" r="22.964372499531652" fill="white" /><circle cx="294.49964131900595" cy="112.82788486932442" r="24.844024650288098" fill="white" /><circle cx="378.0938386637614" cy="32.87975247675594" r="20.43514365723744" fill="white" /><circle cx="292.9060073360403" cy="85.61454556526648" r="22.81194742814987" fill="white" /><circle cx="165.49625072216264" cy="381.136923434916" r="17.99016636981829" fill="white" /><circle cx="355.52044647076764" cy="438.87585957297847" r="18.083844778066407" fill="white" /><circle cx="274.75268616018093" cy="556.0860262980043" r="28.01604423725828" fill="white" /><circle cx="94.32760319264935" cy="329.7253373315253" r="10.357515107742747" fill="white" /><circle cx="222.32365728453894" cy="597.6654382021767" r="16.481638287648682" fill="white" /><circle cx="46.91990389330027" cy="146.17305621819008" r="17.48082756630898" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Macht der Gewohnheit:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Besiege deine inneren
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Dämonen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Napoleon Hill
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

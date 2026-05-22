@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-eb9f3b7c-2c18-4c39-86c7-88f47a83cf3c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-eb9f3b7c-2c18-4c39-86c7-88f47a83cf3c)" />
+  <g opacity="0.1">
+    <circle cx="191.35309289146818" cy="41.57429225450198" r="24.500774911952213" fill="white" /><circle cx="68.47851349955336" cy="353.0028118257982" r="29.464352768055026" fill="white" /><circle cx="116.99715356334978" cy="242.5704596746979" r="15.711539727799105" fill="white" /><circle cx="244.78057377015472" cy="457.39195977688274" r="24.512827157020844" fill="white" /><circle cx="214.53456648863875" cy="376.2340709655977" r="26.271243035374138" fill="white" /><circle cx="28.404540369695752" cy="61.761248911146694" r="28.381643027415542" fill="white" /><circle cx="396.26045460620065" cy="152.49955721955135" r="20.00011023637265" fill="white" /><circle cx="260.07277507117885" cy="84.94498793920525" r="19.224116693868048" fill="white" /><circle cx="155.47748537396876" cy="275.84948841569997" r="17.49814817487578" fill="white" /><circle cx="49.46886112674926" cy="277.0713481309516" r="14.3952591890855" fill="white" /><circle cx="223.22224390912444" cy="554.2175070140798" r="10.798147698969917" fill="white" /><circle cx="142.61983577647536" cy="284.2582338182723" r="23.33094247313129" fill="white" /><circle cx="57.48691393568901" cy="297.3162131474202" r="26.779152274456806" fill="white" /><circle cx="125.14338344926497" cy="339.1637626301377" r="25.612502167556904" fill="white" /><circle cx="41.75316353379009" cy="254.41844665068885" r="19.00505547842598" fill="white" /><circle cx="243.04840644145312" cy="205.69966408951743" r="21.20520892682901" fill="white" /><circle cx="129.68514157776266" cy="228.52890977926364" r="25.41625252157447" fill="white" /><circle cx="345.1500162887676" cy="552.5180300819361" r="10.165863533303664" fill="white" /><circle cx="339.16355086460396" cy="170.75604754408548" r="18.126187266615297" fill="white" /><circle cx="163.64127553684452" cy="520.0780294946381" r="18.560804955515948" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Unshakeable
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Tony Robbins
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

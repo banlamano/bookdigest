@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1830eeb8-c0e0-4419-a71b-568821ee408e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1830eeb8-c0e0-4419-a71b-568821ee408e)" />
+  <g opacity="0.1">
+    <circle cx="334.35300719760346" cy="551.3527392919585" r="20.728449146878667" fill="white" /><circle cx="175.1805339832277" cy="431.4858380721323" r="20.49432350642719" fill="white" /><circle cx="242.2119448529438" cy="537.6638867495473" r="12.585113937598614" fill="white" /><circle cx="2.0440945862701287" cy="114.85691555286004" r="19.821081887720183" fill="white" /><circle cx="52.85608422063359" cy="441.3637072445868" r="26.42240360117276" fill="white" /><circle cx="383.44448115966946" cy="135.57852167985516" r="13.369266759811833" fill="white" /><circle cx="25.669575218576313" cy="207.98252037019157" r="29.10688305347126" fill="white" /><circle cx="95.08752098724571" cy="242.4615157463504" r="16.36522303167527" fill="white" /><circle cx="56.8869148166939" cy="137.32998209224053" r="29.039392296837445" fill="white" /><circle cx="278.820299239172" cy="500.92460489817705" r="17.998366371412835" fill="white" /><circle cx="214.9599183875087" cy="297.0194268826271" r="14.765157213822317" fill="white" /><circle cx="36.16315524622902" cy="175.28782218632875" r="20.260529208298863" fill="white" /><circle cx="258.1398212659601" cy="309.5738864857305" r="20.986901945503924" fill="white" /><circle cx="132.34197423350014" cy="25.59226685288398" r="26.15011350139597" fill="white" /><circle cx="385.14810543066164" cy="317.89267642200963" r="25.041591388453625" fill="white" /><circle cx="124.98955891095322" cy="430.38713135995005" r="11.062290573286123" fill="white" /><circle cx="112.70799378064389" cy="272.43870688466797" r="21.15269350698255" fill="white" /><circle cx="306.3432810737201" cy="185.12227652464446" r="17.970363916467527" fill="white" /><circle cx="298.8380237893824" cy="213.1468187209101" r="23.31124856904132" fill="white" /><circle cx="91.42631479784433" cy="19.520373095373312" r="11.13556679681831" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Atomic Habits
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        James Clear
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

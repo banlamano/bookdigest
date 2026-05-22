@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-bd260a7f-4c69-4bde-8102-dfcdc6b157df" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-bd260a7f-4c69-4bde-8102-dfcdc6b157df)" />
+  <g opacity="0.1">
+    <circle cx="271.9867831418727" cy="506.72105989726276" r="11.252571103739887" fill="white" /><circle cx="242.5513422123223" cy="329.6482107374708" r="12.174024696512243" fill="white" /><circle cx="386.71781421447633" cy="186.13490865818088" r="23.970759015283466" fill="white" /><circle cx="192.4800169814849" cy="274.01044883353836" r="10.04114165203725" fill="white" /><circle cx="91.90088785171552" cy="434.6610912507343" r="22.996931429716792" fill="white" /><circle cx="271.12811555663137" cy="345.66962215504236" r="18.281985120684347" fill="white" /><circle cx="175.18260653862447" cy="85.10686708086223" r="15.387509024293909" fill="white" /><circle cx="70.42662159708621" cy="479.2926297327754" r="22.949393435186757" fill="white" /><circle cx="50.750269325918794" cy="554.7755534918399" r="13.206171745231618" fill="white" /><circle cx="345.8362625737265" cy="281.1096320885336" r="21.734884349350523" fill="white" /><circle cx="234.85553107075057" cy="338.0733177818726" r="21.391378862295483" fill="white" /><circle cx="198.3634708463915" cy="502.2870701138691" r="19.95857201300414" fill="white" /><circle cx="163.83379733727236" cy="418.4739335944215" r="28.76341144079953" fill="white" /><circle cx="356.4276052131653" cy="115.71687313162089" r="22.415955771528964" fill="white" /><circle cx="323.2696714513278" cy="171.28480182391988" r="18.332900827268013" fill="white" /><circle cx="42.58314240515335" cy="362.64817137021856" r="16.3606663100988" fill="white" /><circle cx="111.41846415034865" cy="155.33447239155177" r="16.768232171098347" fill="white" /><circle cx="70.7250225641988" cy="427.0399191886101" r="19.445683691315555" fill="white" /><circle cx="166.3799115750873" cy="433.0986260441728" r="29.945195149567667" fill="white" /><circle cx="21.90257487902265" cy="452.95244605540313" r="21.20552599578728" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        All the Light We Cannot
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        See
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Anthony Doerr
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

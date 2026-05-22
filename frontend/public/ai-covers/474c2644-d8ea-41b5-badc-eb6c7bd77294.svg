@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-474c2644-d8ea-41b5-badc-eb6c7bd77294" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-474c2644-d8ea-41b5-badc-eb6c7bd77294)" />
+  <g opacity="0.1">
+    <circle cx="293.38410465986976" cy="57.96004012198368" r="12.067074114892172" fill="white" /><circle cx="14.784290590546778" cy="256.48752406897626" r="27.52140883702196" fill="white" /><circle cx="290.793095379687" cy="293.9399351972447" r="14.589586237520178" fill="white" /><circle cx="0.44819258364117154" cy="278.9691427553858" r="24.32817399651017" fill="white" /><circle cx="63.10081035071229" cy="565.5469487279831" r="29.568789334364265" fill="white" /><circle cx="65.79609535092881" cy="445.1054640732802" r="15.457648804249246" fill="white" /><circle cx="125.37730486315053" cy="7.746082914287489" r="21.97390412660737" fill="white" /><circle cx="43.68057063608091" cy="43.78656599261046" r="23.63481201103229" fill="white" /><circle cx="190.68683500107642" cy="362.13228499212" r="28.724289081403843" fill="white" /><circle cx="184.43522511562423" cy="88.6565734944995" r="11.682761370331615" fill="white" /><circle cx="233.39923121494218" cy="472.7312769777385" r="27.910086455998304" fill="white" /><circle cx="241.45301394939605" cy="418.06810885080586" r="27.313051125855345" fill="white" /><circle cx="51.38827843478322" cy="299.6159441809628" r="24.233240867985984" fill="white" /><circle cx="97.51705966201571" cy="445.2908427640145" r="19.097273274278955" fill="white" /><circle cx="184.07481839159954" cy="219.6708697899805" r="22.400748048018286" fill="white" /><circle cx="365.29489360592646" cy="381.9400430247117" r="16.732840808760223" fill="white" /><circle cx="154.69873395743653" cy="311.4726801755707" r="13.219539661129431" fill="white" /><circle cx="301.0845864898862" cy="501.33435029177264" r="15.938921806592326" fill="white" /><circle cx="281.869133845977" cy="274.5982326430859" r="22.482267306532897" fill="white" /><circle cx="123.31054881784023" cy="71.67733751231079" r="16.02460411738844" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der unfaire Vorteil: Wie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Sie Ihr Erfolgs-Rezept
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        finden und nutzen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ash Ali
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

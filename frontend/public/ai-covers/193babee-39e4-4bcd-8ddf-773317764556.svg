@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-193babee-39e4-4bcd-8ddf-773317764556" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-193babee-39e4-4bcd-8ddf-773317764556)" />
+  <g opacity="0.1">
+    <circle cx="63.19926144638419" cy="318.0652729787443" r="16.087667664246865" fill="white" /><circle cx="17.328346018856735" cy="593.5454416385552" r="16.666549774723563" fill="white" /><circle cx="347.80261348760456" cy="322.49600953044165" r="21.973204149951584" fill="white" /><circle cx="133.48814355439157" cy="32.82077969630804" r="28.361102793562885" fill="white" /><circle cx="154.01590011664243" cy="172.23649646416803" r="29.258865988167713" fill="white" /><circle cx="257.31902631294986" cy="324.4508632256739" r="17.49189720623408" fill="white" /><circle cx="282.7027979115463" cy="576.6631445869266" r="15.693603460371797" fill="white" /><circle cx="300.9011919173964" cy="287.061949643974" r="19.678584943026706" fill="white" /><circle cx="121.06591703152438" cy="213.71465410515756" r="16.489568401781575" fill="white" /><circle cx="239.74602545034563" cy="78.41770063512878" r="12.621997833091392" fill="white" /><circle cx="65.84120594917171" cy="208.2425827506687" r="22.105121389358583" fill="white" /><circle cx="206.10147748111777" cy="146.24162822238006" r="24.103872860036127" fill="white" /><circle cx="367.2322932441539" cy="79.19701290069196" r="21.86751929265084" fill="white" /><circle cx="167.14243233861566" cy="412.37513951829436" r="18.91740969550296" fill="white" /><circle cx="64.24293309331924" cy="25.97210263257219" r="25.696346563074655" fill="white" /><circle cx="82.2449668066478" cy="478.4882203935145" r="24.056075321791667" fill="white" /><circle cx="318.8188887711713" cy="140.10688778535916" r="28.741057144321786" fill="white" /><circle cx="349.0922472082915" cy="372.5858460489364" r="13.411594426441615" fill="white" /><circle cx="273.14887559313973" cy="178.41258907484087" r="16.032573431444852" fill="white" /><circle cx="309.0615639261323" cy="535.5237310352787" r="21.48616241946326" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Lean Six Sigma Pocket
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Toolbook
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Michael George
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

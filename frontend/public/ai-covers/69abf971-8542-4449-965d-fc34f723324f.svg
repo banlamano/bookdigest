@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-69abf971-8542-4449-965d-fc34f723324f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-69abf971-8542-4449-965d-fc34f723324f)" />
+  <g opacity="0.1">
+    <circle cx="28.695965373582013" cy="363.23323508714833" r="14.627513174069469" fill="white" /><circle cx="323.3571736514255" cy="484.94841320268347" r="26.417676976376924" fill="white" /><circle cx="309.96612807278495" cy="150.9907957620498" r="16.22376207141764" fill="white" /><circle cx="135.70650950637096" cy="260.71761575602943" r="22.066403958755643" fill="white" /><circle cx="279.5414104403211" cy="244.1395463498956" r="15.42535692174145" fill="white" /><circle cx="276.0096367435785" cy="161.93859748549482" r="28.82975105866629" fill="white" /><circle cx="205.53842626279447" cy="431.07875140045394" r="26.245050388751572" fill="white" /><circle cx="221.36487768647055" cy="290.3949898610453" r="24.269011625374635" fill="white" /><circle cx="289.19265053074975" cy="178.45282058350915" r="16.84888037491186" fill="white" /><circle cx="298.4666177169383" cy="252.77241565306713" r="18.764793024662858" fill="white" /><circle cx="267.3393579097386" cy="30.002392055005565" r="15.780343843243113" fill="white" /><circle cx="42.9166015756842" cy="117.7811893050725" r="25.710532368975286" fill="white" /><circle cx="380.36155853665304" cy="295.08585545236633" r="19.51213113295355" fill="white" /><circle cx="218.38424501654129" cy="76.09990755706997" r="20.49243492954605" fill="white" /><circle cx="74.54087911258918" cy="315.5494583836822" r="10.660022808159885" fill="white" /><circle cx="351.72702964199135" cy="31.558005172770052" r="20.069976863786675" fill="white" /><circle cx="76.4475221737328" cy="131.09318238736012" r="14.866381225069393" fill="white" /><circle cx="349.4224946986436" cy="101.61314905478433" r="20.2893745090112" fill="white" /><circle cx="71.3907013400505" cy="183.55006286759237" r="24.928383500856988" fill="white" /><circle cx="357.2631399848287" cy="485.67306377039193" r="17.373200561745545" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Work Clean
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Dan Charnas
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

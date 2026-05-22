@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-01f2815a-bc76-44aa-991e-e993188e93ad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-01f2815a-bc76-44aa-991e-e993188e93ad)" />
+  <g opacity="0.1">
+    <circle cx="199.10270806938607" cy="441.3459810079275" r="10.356234979592925" fill="white" /><circle cx="149.38644903789452" cy="481.5374556120827" r="16.031036077691297" fill="white" /><circle cx="75.40872991408989" cy="404.383479610731" r="12.675763954912034" fill="white" /><circle cx="395.7298494778212" cy="310.134126383943" r="13.977702371651677" fill="white" /><circle cx="187.36258564138316" cy="186.63937321578118" r="20.44975695699975" fill="white" /><circle cx="357.5579253418797" cy="56.23494132802649" r="26.572678452692376" fill="white" /><circle cx="399.5774381602274" cy="92.09933638949164" r="29.529710123748643" fill="white" /><circle cx="163.03504535937438" cy="373.11594894760555" r="20.82595704092826" fill="white" /><circle cx="216.4348898724346" cy="571.5504135350046" r="16.751769028640535" fill="white" /><circle cx="284.8587073383309" cy="493.2279250555245" r="24.603335548413813" fill="white" /><circle cx="88.7453228829517" cy="34.54467410626489" r="11.52992760662141" fill="white" /><circle cx="31.75225434402993" cy="0.546886768309296" r="26.216816566693467" fill="white" /><circle cx="88.61336542682264" cy="124.40312566044263" r="16.341522601784682" fill="white" /><circle cx="168.48674117002577" cy="519.3402460080395" r="15.288011933972879" fill="white" /><circle cx="244.56977895175433" cy="222.37218668272772" r="14.701399787273298" fill="white" /><circle cx="205.78355220991492" cy="362.3961313639495" r="15.132194390676194" fill="white" /><circle cx="69.93174402709474" cy="288.099295537528" r="20.841152341231385" fill="white" /><circle cx="362.5917479680355" cy="146.96397981505137" r="24.73783591878388" fill="white" /><circle cx="366.43974344892627" cy="399.12063975414253" r="12.065390000357157" fill="white" /><circle cx="107.1080186706487" cy="221.72613157131124" r="10.7357837584986" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Britt-Marie Was Here
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Fredrik Backman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

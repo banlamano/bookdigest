@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-09e033cc-baba-4c5b-ad3a-3f28f4b6e4ab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-09e033cc-baba-4c5b-ad3a-3f28f4b6e4ab)" />
+  <g opacity="0.1">
+    <circle cx="308.8344572701966" cy="539.0474147328054" r="24.800123247848518" fill="white" /><circle cx="256.9835657190723" cy="98.91852379983858" r="17.079143121956847" fill="white" /><circle cx="174.29380996914486" cy="400.22668535656953" r="20.892878306423633" fill="white" /><circle cx="141.5178051661872" cy="473.6706096401379" r="29.001036619224642" fill="white" /><circle cx="216.39116766342917" cy="525.2500247156664" r="16.079361808593696" fill="white" /><circle cx="58.67731725334862" cy="12.141139093172448" r="10.076043907126554" fill="white" /><circle cx="337.87021002183843" cy="336.30862302695874" r="18.209493740780104" fill="white" /><circle cx="271.96122564442766" cy="593.2052297553521" r="22.019474010983906" fill="white" /><circle cx="60.42457864057589" cy="160.77904587248494" r="24.324812492453674" fill="white" /><circle cx="379.2766573825064" cy="128.00992377270362" r="13.04220172410698" fill="white" /><circle cx="215.67404761933108" cy="37.60562453914742" r="16.213342747802937" fill="white" /><circle cx="290.4903364176129" cy="266.11243706964177" r="11.188582846285637" fill="white" /><circle cx="181.8066140455863" cy="8.279691142442758" r="11.546727159257808" fill="white" /><circle cx="177.86332994084222" cy="52.34537989828682" r="27.913357045433273" fill="white" /><circle cx="377.17552231330944" cy="365.976085522963" r="17.164106880710506" fill="white" /><circle cx="310.93730952896584" cy="489.3099763067157" r="22.298847542501314" fill="white" /><circle cx="214.31764448099372" cy="165.4917471616765" r="28.216264607571112" fill="white" /><circle cx="267.41848077116686" cy="352.1571514116861" r="23.31970117145063" fill="white" /><circle cx="269.0356999780237" cy="92.86416521214262" r="10.649393834113951" fill="white" /><circle cx="86.06124385587637" cy="186.2778023247804" r="26.64615792676552" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Schnelles Denken,
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        langsames Denken
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Daniel Kahneman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

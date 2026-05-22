@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-11abfa58-f8f6-40c8-bc84-a927b3d756b2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-11abfa58-f8f6-40c8-bc84-a927b3d756b2)" />
+  <g opacity="0.1">
+    <circle cx="120.12815874124891" cy="132.5237060797656" r="22.20741249780398" fill="white" /><circle cx="120.67532128495242" cy="542.8501520970517" r="25.401462163029013" fill="white" /><circle cx="36.278591591530194" cy="331.33666793594193" r="22.9583841535867" fill="white" /><circle cx="293.266800639701" cy="236.58338634984105" r="15.971547543817522" fill="white" /><circle cx="359.32225238786964" cy="412.04059300940344" r="10.73283496647351" fill="white" /><circle cx="33.52349770186356" cy="401.01518976950604" r="15.764954012382614" fill="white" /><circle cx="372.77283896728443" cy="400.0157156846731" r="19.979045945366956" fill="white" /><circle cx="311.58724175560013" cy="533.65247418451" r="26.40247573293254" fill="white" /><circle cx="387.4585043141444" cy="577.8052435866682" r="10.26922227861159" fill="white" /><circle cx="232.2930517366888" cy="142.62704858796133" r="14.899980041968284" fill="white" /><circle cx="175.7467959256008" cy="434.22724963935485" r="13.35410807113284" fill="white" /><circle cx="340.4071946567154" cy="312.38275500298613" r="27.864660548441886" fill="white" /><circle cx="132.46966398258232" cy="268.3574265072994" r="29.29442838125241" fill="white" /><circle cx="171.96206646491285" cy="251.51143426978962" r="23.04896492919212" fill="white" /><circle cx="309.0259092974075" cy="422.9567412410763" r="10.144184682600276" fill="white" /><circle cx="189.09009930980005" cy="163.7736968427622" r="10.548234543552432" fill="white" /><circle cx="83.66739589851466" cy="558.9260718630914" r="24.979973773433294" fill="white" /><circle cx="83.9136787599371" cy="113.48417244282906" r="13.707232872722418" fill="white" /><circle cx="375.61812093329496" cy="144.39424645672986" r="24.778119184425126" fill="white" /><circle cx="228.02839600712855" cy="263.370992764147" r="15.576488141031051" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Art of Possibility
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Rosamund Zander
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

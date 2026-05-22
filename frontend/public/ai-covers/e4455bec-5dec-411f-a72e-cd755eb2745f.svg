@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e4455bec-5dec-411f-a72e-cd755eb2745f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e4455bec-5dec-411f-a72e-cd755eb2745f)" />
+  <g opacity="0.1">
+    <circle cx="357.98340025790606" cy="28.701297766216594" r="29.078088077424525" fill="white" /><circle cx="241.92325525886727" cy="335.3782484573763" r="15.251441971974105" fill="white" /><circle cx="338.1897964272453" cy="486.582422125564" r="18.794387350634953" fill="white" /><circle cx="215.41372367030806" cy="80.55938642720362" r="17.159864754921436" fill="white" /><circle cx="299.79165907110195" cy="341.2873120688683" r="19.529441220018498" fill="white" /><circle cx="398.13738291349597" cy="545.1918437138117" r="25.92066255963578" fill="white" /><circle cx="98.30976086572254" cy="494.2932955284674" r="29.947474183227936" fill="white" /><circle cx="128.279614387891" cy="519.0258578094523" r="29.594985151006405" fill="white" /><circle cx="64.99605443917167" cy="191.80501772624024" r="28.115321692847612" fill="white" /><circle cx="244.87229185309417" cy="277.1153249093529" r="18.445819677461387" fill="white" /><circle cx="292.1554865067644" cy="421.11900298825947" r="20.242670870376017" fill="white" /><circle cx="121.96857905441716" cy="352.0146386175828" r="24.374040213970243" fill="white" /><circle cx="84.06153097825077" cy="297.07832250956056" r="26.85645487913994" fill="white" /><circle cx="48.79339751350669" cy="471.0825920190594" r="11.575543321025808" fill="white" /><circle cx="151.44346882035666" cy="323.33121221447874" r="24.69575961133053" fill="white" /><circle cx="46.02685730961822" cy="542.1170192231249" r="24.432931565861722" fill="white" /><circle cx="319.778374460398" cy="530.8421793636257" r="18.675852435244146" fill="white" /><circle cx="232.74388788819132" cy="125.87684196406437" r="14.64884425283745" fill="white" /><circle cx="139.37522601878828" cy="482.6466811934361" r="23.41371118486134" fill="white" /><circle cx="80.65468478137787" cy="487.0213754208338" r="22.775922714411738" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Behave
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Robert Sapolsky
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

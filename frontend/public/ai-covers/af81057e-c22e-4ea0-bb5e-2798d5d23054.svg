@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-af81057e-c22e-4ea0-bb5e-2798d5d23054" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-af81057e-c22e-4ea0-bb5e-2798d5d23054)" />
+  <g opacity="0.1">
+    <circle cx="239.6201566080576" cy="550.6141508828645" r="26.80025492553922" fill="white" /><circle cx="107.14027759927069" cy="346.3211775797577" r="29.64925807727996" fill="white" /><circle cx="1.324482372747804" cy="49.15608902547448" r="24.52976627140945" fill="white" /><circle cx="257.21492946343636" cy="111.40388481157275" r="11.309994718269074" fill="white" /><circle cx="216.7411666320322" cy="369.8462269491839" r="27.6883291180586" fill="white" /><circle cx="180.55639493571812" cy="595.302874250756" r="15.36119650057917" fill="white" /><circle cx="36.71544457195832" cy="229.7595401953829" r="26.120249584137827" fill="white" /><circle cx="175.26139551450427" cy="486.5107616231415" r="21.974726086472028" fill="white" /><circle cx="211.2697038592053" cy="56.06060296556829" r="16.93502374087448" fill="white" /><circle cx="293.59850674588273" cy="512.6956147767304" r="24.62267601908032" fill="white" /><circle cx="280.57183371515384" cy="107.51238913976304" r="17.69074436504798" fill="white" /><circle cx="54.30295121543236" cy="312.71608635712045" r="27.577865788021562" fill="white" /><circle cx="6.608218264077559" cy="415.9019948111898" r="18.552569972251163" fill="white" /><circle cx="366.0909276969545" cy="219.08217807270964" r="22.97670380385177" fill="white" /><circle cx="385.64582126256846" cy="4.235123382310135" r="22.751649209758625" fill="white" /><circle cx="98.19491434472063" cy="140.50009122308094" r="11.727364242183679" fill="white" /><circle cx="197.27221319410705" cy="361.7320167305372" r="29.868431336046513" fill="white" /><circle cx="258.1789853473815" cy="109.52521278795508" r="15.984978146036493" fill="white" /><circle cx="103.7506163630955" cy="474.9396634328455" r="20.398869643461737" fill="white" /><circle cx="336.2174795146966" cy="173.27228370743705" r="25.874231662047983" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Pitch Anything
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Oren Klaff
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

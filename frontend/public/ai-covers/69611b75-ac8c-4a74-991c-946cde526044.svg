@@ -9,50 +9,30 @@
       <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
     </filter>
   </defs>
-  
   <rect width="400" height="600" fill="url(#grad-69611b75-ac8c-4a74-991c-946cde526044)" />
-  
   <g opacity="0.1">
-    <circle cx="190.43188506324876" cy="437.532830029492" r="20.365029050821803" fill="white" /><circle cx="338.4330702208012" cy="234.6581139131435" r="20.681024083823097" fill="white" /><circle cx="9.61083966516787" cy="211.0982058114929" r="28.599392642699552" fill="white" /><circle cx="347.8063781943607" cy="420.10635241041183" r="13.570690751732808" fill="white" /><circle cx="169.18606512308307" cy="139.03194516046585" r="19.268644170000872" fill="white" /><circle cx="12.82407153030034" cy="591.4739466234872" r="29.8201135891055" fill="white" /><circle cx="123.33771269882239" cy="356.96505319582934" r="25.380938223155113" fill="white" /><circle cx="294.343751819684" cy="425.0664570925582" r="26.663403180117385" fill="white" /><circle cx="133.70853467261682" cy="267.74267784118547" r="20.777205660588308" fill="white" /><circle cx="244.92737782313637" cy="107.49215286267042" r="23.889775284031916" fill="white" /><circle cx="275.59939258898123" cy="90.03847756248543" r="22.462585061348793" fill="white" /><circle cx="388.75900528066165" cy="201.5417717528383" r="22.416391855718423" fill="white" /><circle cx="291.1815854319721" cy="502.10687738549103" r="26.989788311486848" fill="white" /><circle cx="26.18322959355379" cy="492.8294498468193" r="13.0921075220824" fill="white" /><circle cx="54.26797110781276" cy="143.07304997208746" r="19.530874251465313" fill="white" /><circle cx="121.9791909480159" cy="99.8072229729403" r="20.713529415904155" fill="white" /><circle cx="218.98280076129103" cy="300.93301685029775" r="20.093923932292668" fill="white" /><circle cx="104.33894462241855" cy="232.58540354339289" r="14.519467578614789" fill="white" /><circle cx="258.5735797136293" cy="425.0521777182196" r="12.398786680565983" fill="white" /><circle cx="49.797711557672606" cy="15.624549170151658" r="11.675164811509797" fill="white" />
+    <circle cx="180.89312443466633" cy="264.5722356600651" r="28.688950352957676" fill="white" /><circle cx="95.92788865645798" cy="16.423690316165374" r="17.974458601952023" fill="white" /><circle cx="48.34229944028006" cy="148.3471355389301" r="22.607148894025446" fill="white" /><circle cx="170.3852152683205" cy="342.99361949298543" r="12.54615515254605" fill="white" /><circle cx="146.96454643400244" cy="357.8209804919379" r="20.379114770297505" fill="white" /><circle cx="247.28786986266962" cy="356.7608721592617" r="12.928252546667999" fill="white" /><circle cx="143.25427541195984" cy="135.63017445978772" r="12.599118381779553" fill="white" /><circle cx="194.14011922581983" cy="22.772335856647597" r="11.491735936745954" fill="white" /><circle cx="201.80371320515746" cy="84.4486507265358" r="11.871332403830994" fill="white" /><circle cx="103.67481440916055" cy="418.2408503781881" r="28.91859056431955" fill="white" /><circle cx="77.8060170944662" cy="461.34724818339697" r="16.19825775076054" fill="white" /><circle cx="302.7154583933118" cy="313.8817579557128" r="11.121750567518534" fill="white" /><circle cx="81.64976834575594" cy="492.31831359166114" r="24.260922230513003" fill="white" /><circle cx="85.10181064730125" cy="173.74368613391428" r="28.907925023928282" fill="white" /><circle cx="86.00857540729328" cy="24.060044987639962" r="16.162570600055055" fill="white" /><circle cx="186.3960839644203" cy="573.5430336868965" r="11.23883616318283" fill="white" /><circle cx="114.74121548386708" cy="500.9146624389618" r="28.287185344568535" fill="white" /><circle cx="383.0017944254555" cy="144.24686016665478" r="23.761603683064116" fill="white" /><circle cx="275.87248033609006" cy="155.1079459078466" r="18.667685057194277" fill="white" /><circle cx="121.55143638757133" cy="390.5117169912649" r="11.254646734886895" fill="white" />
   </g>
-  
   <g filter="url(#shadow)">
     
       <text x="200" y="120" 
-            font-family="Arial, sans-serif" 
-            font-size="36" 
-            font-weight="bold" 
-            fill="white" 
-            text-anchor="middle">
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
         Clockwork
       </text>
-    
   </g>
-  
   <g filter="url(#shadow)">
     
       <text x="200" y="480" 
-            font-family="Arial, sans-serif" 
-            font-size="22" 
-            fill="#60a5fa" 
-            text-anchor="middle">
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
         Mike Michalowicz
       </text>
-    
   </g>
-  
   <g>
-    <rect x="20" y="20" width="126" height="35" 
-          rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
     <text x="83" y="42" 
-          font-family="Arial, sans-serif" 
-          font-size="14" 
-          font-weight="bold"
-          fill="white" 
-          text-anchor="middle">
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
       BUSINESS
     </text>
   </g>
-  
   <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
 </svg>

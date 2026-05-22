@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0f357064-17b6-4608-989c-cc8300d196a7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0f357064-17b6-4608-989c-cc8300d196a7)" />
+  <g opacity="0.1">
+    <circle cx="80.63821442400396" cy="522.5344061163153" r="29.764647647599748" fill="white" /><circle cx="281.23267031279727" cy="413.49341853339456" r="19.08872715911824" fill="white" /><circle cx="39.50013471667448" cy="164.72898740909818" r="19.557664742237392" fill="white" /><circle cx="287.4246857929083" cy="220.5776865758303" r="13.364185717688503" fill="white" /><circle cx="217.7849289866113" cy="200.08463557556487" r="25.686881756040975" fill="white" /><circle cx="321.40175404960473" cy="251.48201683647724" r="11.516472600324397" fill="white" /><circle cx="3.272556185923259" cy="123.21110830050127" r="12.06734937614068" fill="white" /><circle cx="287.4086665154332" cy="425.39735511781646" r="25.762686242328456" fill="white" /><circle cx="244.08015617354536" cy="505.11099168925944" r="14.179958088399164" fill="white" /><circle cx="36.83557315973505" cy="69.87141962891765" r="19.730917129879842" fill="white" /><circle cx="247.97420500959166" cy="203.6766319151351" r="14.287061677798551" fill="white" /><circle cx="356.33280355586277" cy="490.1952992996895" r="16.419943338522014" fill="white" /><circle cx="250.8838243041939" cy="120.77677879611805" r="10.615397887014158" fill="white" /><circle cx="257.5243265777821" cy="421.54262538639784" r="16.197088587575493" fill="white" /><circle cx="186.31584862355285" cy="296.7671354144258" r="19.35527918963937" fill="white" /><circle cx="278.2971254067591" cy="421.6337057600879" r="24.56422980487421" fill="white" /><circle cx="115.07560017948305" cy="541.5538846097156" r="29.45038398969919" fill="white" /><circle cx="108.81582987734073" cy="350.4213208744329" r="28.100705664517807" fill="white" /><circle cx="102.13228230012837" cy="429.0706207938625" r="13.927893719341654" fill="white" /><circle cx="56.639520716339796" cy="178.26385641322517" r="19.073689245429527" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Rosie-Effekt
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Graeme Simsion
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

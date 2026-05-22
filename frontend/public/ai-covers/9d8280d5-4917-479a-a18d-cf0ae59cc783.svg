@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9d8280d5-4917-479a-a18d-cf0ae59cc783" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9d8280d5-4917-479a-a18d-cf0ae59cc783)" />
+  <g opacity="0.1">
+    <circle cx="144.2103856499238" cy="169.4919270951699" r="25.533639963789415" fill="white" /><circle cx="382.1435678921543" cy="425.04755457231875" r="21.997773278073467" fill="white" /><circle cx="387.90587569429624" cy="528.9373756831017" r="20.092555515117756" fill="white" /><circle cx="261.46654036694446" cy="37.457883034843896" r="13.218618646473391" fill="white" /><circle cx="7.9661436034156985" cy="143.7975932219705" r="17.755833519837694" fill="white" /><circle cx="43.28314171831673" cy="382.8330415211807" r="21.428125301750242" fill="white" /><circle cx="302.8815717961853" cy="28.098131078742348" r="28.1429770786599" fill="white" /><circle cx="63.08034874426971" cy="172.37638512035417" r="11.05536561754045" fill="white" /><circle cx="356.04074743147436" cy="470.93003877296894" r="22.00882839523669" fill="white" /><circle cx="95.48542132026077" cy="415.03072392544226" r="10.752579026537292" fill="white" /><circle cx="377.1315712328996" cy="410.693503107783" r="22.279795406429084" fill="white" /><circle cx="196.49032604337867" cy="305.54798022833916" r="19.98758197100723" fill="white" /><circle cx="128.9065687064074" cy="152.90311027743635" r="20.481835804821085" fill="white" /><circle cx="156.04022234491327" cy="418.8320403735681" r="18.349279721169584" fill="white" /><circle cx="97.15175149062878" cy="533.2579648483302" r="14.754852964123238" fill="white" /><circle cx="211.62969323943835" cy="523.6629290743947" r="25.557295374986424" fill="white" /><circle cx="39.40291432089644" cy="544.6812066543075" r="21.823159214260414" fill="white" /><circle cx="134.87683113312784" cy="495.5659441069493" r="19.2405031937314" fill="white" /><circle cx="153.89207737443024" cy="421.49317187941244" r="20.22418815137152" fill="white" /><circle cx="49.45350562828441" cy="70.33149101193857" r="12.396862795956123" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Play Bigger: Wie Piraten
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        und Träumer Branchen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        dominieren
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Al Ramadan
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

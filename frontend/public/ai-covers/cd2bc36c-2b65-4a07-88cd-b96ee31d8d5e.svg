@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-cd2bc36c-2b65-4a07-88cd-b96ee31d8d5e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-cd2bc36c-2b65-4a07-88cd-b96ee31d8d5e)" />
+  <g opacity="0.1">
+    <circle cx="76.27477433143896" cy="329.32888364261004" r="13.540836731023058" fill="white" /><circle cx="242.17082172178462" cy="445.13004112912154" r="15.34219834429976" fill="white" /><circle cx="228.47940543956273" cy="406.60475357062717" r="11.635554243456737" fill="white" /><circle cx="31.34067908245357" cy="213.56237120823124" r="10.454710226102703" fill="white" /><circle cx="34.82324043731588" cy="485.0278519314022" r="23.906670610650387" fill="white" /><circle cx="176.85237189278132" cy="261.38410623867446" r="27.88455004125296" fill="white" /><circle cx="273.3908723239989" cy="179.70578858305214" r="27.99807790858231" fill="white" /><circle cx="17.879706945348328" cy="17.55329959738139" r="26.448874161853436" fill="white" /><circle cx="32.25270835591463" cy="51.5742359082281" r="17.101212369753032" fill="white" /><circle cx="365.3158495504377" cy="563.518829069327" r="20.806735939754333" fill="white" /><circle cx="344.9292970804942" cy="486.84436786023247" r="14.91144222806009" fill="white" /><circle cx="128.048449864396" cy="456.5200337864372" r="21.059332179872502" fill="white" /><circle cx="125.16780483731749" cy="154.64248259585486" r="28.339326338543465" fill="white" /><circle cx="369.80139164465936" cy="318.07447717754064" r="15.713799318499808" fill="white" /><circle cx="37.1182369692908" cy="373.4806363634661" r="14.486731756083376" fill="white" /><circle cx="66.68832536847992" cy="178.21715170232937" r="10.827005917161932" fill="white" /><circle cx="352.8679205644846" cy="6.969588731473064" r="27.60077955575739" fill="white" /><circle cx="244.65987666489121" cy="556.2725947800902" r="17.782552413381314" fill="white" /><circle cx="108.76974078601597" cy="126.71192141274261" r="19.002037054938015" fill="white" /><circle cx="111.9801049144447" cy="489.01268659472623" r="19.58047372925359" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Menschheit 2.0: Die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Singularität naht
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ray Kurzweil
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

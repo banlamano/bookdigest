@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c7f9ce6d-557b-4677-a463-974af1197167" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c7f9ce6d-557b-4677-a463-974af1197167)" />
+  <g opacity="0.1">
+    <circle cx="373.7966243244032" cy="364.19930188875037" r="19.476463916464617" fill="white" /><circle cx="229.75394448926463" cy="196.36865078176362" r="15.56203730359313" fill="white" /><circle cx="363.54613235631035" cy="576.1721386513345" r="15.681130463451288" fill="white" /><circle cx="104.43550442155089" cy="499.75010436684084" r="26.67127671216867" fill="white" /><circle cx="101.82143476856034" cy="449.8354318438731" r="24.911258817633538" fill="white" /><circle cx="321.80475234585504" cy="175.2157849965164" r="21.754796665631524" fill="white" /><circle cx="278.4154621155578" cy="339.9267703242497" r="21.678129940863105" fill="white" /><circle cx="182.5520725270592" cy="83.8867492218018" r="26.403943364553857" fill="white" /><circle cx="56.12820719736651" cy="588.4450460848586" r="20.931793032825585" fill="white" /><circle cx="264.77154968941744" cy="516.9901365549899" r="28.85821942718728" fill="white" /><circle cx="279.64757067303776" cy="276.1081847365818" r="19.937519356761534" fill="white" /><circle cx="281.00312820946283" cy="599.5451116472063" r="22.709860640691343" fill="white" /><circle cx="197.53266033518852" cy="131.86346717013254" r="12.046421431926458" fill="white" /><circle cx="280.7545456776706" cy="358.52352568988306" r="23.82048990287927" fill="white" /><circle cx="215.46147502635392" cy="3.3338942855577924" r="27.97453506484596" fill="white" /><circle cx="347.22219580308814" cy="314.381414102763" r="20.750758215074043" fill="white" /><circle cx="99.6024221182644" cy="173.8693703115749" r="11.736710999797355" fill="white" /><circle cx="96.3876429290222" cy="213.8071375065174" r="24.11665873806027" fill="white" /><circle cx="296.95126144510493" cy="284.8115050845702" r="22.145872982165308" fill="white" /><circle cx="85.75634138013201" cy="183.00811448217215" r="12.224772912925744" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Outsiders
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        William Thorndike
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

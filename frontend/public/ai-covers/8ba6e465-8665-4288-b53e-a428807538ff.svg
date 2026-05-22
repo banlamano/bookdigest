@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8ba6e465-8665-4288-b53e-a428807538ff" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8ba6e465-8665-4288-b53e-a428807538ff)" />
+  <g opacity="0.1">
+    <circle cx="360.6167983053564" cy="339.7269196598086" r="27.407840871399223" fill="white" /><circle cx="32.38074082790923" cy="114.81013146927435" r="12.412489006682833" fill="white" /><circle cx="294.9521338287459" cy="144.2589729079912" r="15.076543704582432" fill="white" /><circle cx="299.2379074837162" cy="545.6281251383148" r="28.648316208159667" fill="white" /><circle cx="242.6448161168292" cy="349.22811118135246" r="26.424610283857852" fill="white" /><circle cx="348.7085148818803" cy="491.48625339496255" r="18.40410326656968" fill="white" /><circle cx="395.02636323501565" cy="188.89802317803938" r="11.052669595832247" fill="white" /><circle cx="267.31233428403647" cy="555.7727547265663" r="10.654123559726651" fill="white" /><circle cx="124.11092111178128" cy="499.9599388938011" r="19.932772862861235" fill="white" /><circle cx="397.14748046804226" cy="324.4157584561029" r="12.923444073450996" fill="white" /><circle cx="341.0384396576655" cy="254.9440797232512" r="29.68029809581595" fill="white" /><circle cx="5.451134653052447" cy="176.24743235929517" r="15.882411031222786" fill="white" /><circle cx="396.26717528298826" cy="135.05377004354258" r="28.871057532373428" fill="white" /><circle cx="29.83011510582103" cy="474.59558199114764" r="23.299344659972903" fill="white" /><circle cx="344.84089556481126" cy="18.556483477462592" r="13.800265602649215" fill="white" /><circle cx="36.65719632670306" cy="299.3251093856292" r="19.789009295026098" fill="white" /><circle cx="383.7627871670295" cy="236.63098256937025" r="15.059546992945233" fill="white" /><circle cx="171.48534245010546" cy="505.8339342900653" r="16.15238179288663" fill="white" /><circle cx="14.980867601598336" cy="418.32804377210323" r="28.273182847546487" fill="white" /><circle cx="374.7751774401748" cy="480.0221294938334" r="11.709332977958411" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Eat to Live: In 6 Wochen
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        zu neuem Essverhalten und
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        mehr Gesundheit
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Joel Fuhrman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-697786f7-0d8d-46a6-ae8b-f613b65c1c9c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-697786f7-0d8d-46a6-ae8b-f613b65c1c9c)" />
+  <g opacity="0.1">
+    <circle cx="312.8992284722737" cy="155.39746355655632" r="28.48654842630268" fill="white" /><circle cx="72.89636140500453" cy="386.5674306387093" r="13.225392429180475" fill="white" /><circle cx="342.3837822919324" cy="5.453319911988919" r="20.431378753507275" fill="white" /><circle cx="97.02342633262866" cy="359.41172617553275" r="23.887174339038864" fill="white" /><circle cx="292.99862740797147" cy="226.88315506986277" r="29.95213065449605" fill="white" /><circle cx="282.9792102257077" cy="488.7971595751802" r="13.521550377105179" fill="white" /><circle cx="150.70550999165658" cy="153.42300275794298" r="18.432198268447614" fill="white" /><circle cx="206.28684435314005" cy="49.52330443660702" r="25.82661475708456" fill="white" /><circle cx="5.472128876883353" cy="386.42223564801566" r="21.515384206827342" fill="white" /><circle cx="392.75492670052705" cy="410.45864422668654" r="13.902071468167602" fill="white" /><circle cx="78.23513387778993" cy="371.1893760826712" r="21.0038617307484" fill="white" /><circle cx="262.29857007876217" cy="0.6664158710897317" r="15.882668316852058" fill="white" /><circle cx="264.4199886244176" cy="274.51147145461795" r="15.430580616517773" fill="white" /><circle cx="30.453927047069087" cy="350.51949716429164" r="22.48046660141834" fill="white" /><circle cx="130.57438612497157" cy="242.5188066459604" r="16.946781687580497" fill="white" /><circle cx="0.1139282249089657" cy="203.40450206477996" r="28.710355103453992" fill="white" /><circle cx="287.47248915899365" cy="499.5120444276442" r="29.984773668306474" fill="white" /><circle cx="251.45147033311014" cy="48.398873448824986" r="20.679398150883777" fill="white" /><circle cx="113.72937352650587" cy="85.37899668031999" r="12.489999416131761" fill="white" /><circle cx="233.27926080598806" cy="129.29096754343593" r="18.9928813417627" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Verletzlichkeit macht
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        stark: Wie wir den Mut
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        aufbringen, uns selbst zu
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brené Brown
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

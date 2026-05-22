@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e2173b67-895c-4993-81f0-98fb7316489a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e2173b67-895c-4993-81f0-98fb7316489a)" />
+  <g opacity="0.1">
+    <circle cx="210.28124348116992" cy="46.07802583053741" r="27.41797994647618" fill="white" /><circle cx="43.71642295870788" cy="259.44590598295855" r="23.351726231003905" fill="white" /><circle cx="345.7094239230538" cy="247.05305960278136" r="16.599116030788785" fill="white" /><circle cx="20.416221034119573" cy="211.38839814929503" r="23.847579715008205" fill="white" /><circle cx="214.4540493017662" cy="141.14692330607187" r="20.183384931936537" fill="white" /><circle cx="383.78230556796746" cy="405.493058292529" r="27.01657654090074" fill="white" /><circle cx="50.34114513151251" cy="575.9885106860448" r="19.521288090967797" fill="white" /><circle cx="216.6658890818137" cy="385.2565055020493" r="13.290517375154975" fill="white" /><circle cx="51.123556266443295" cy="98.20862801422385" r="16.146951391757113" fill="white" /><circle cx="355.98890867285735" cy="246.6822457217711" r="16.63281171071026" fill="white" /><circle cx="91.55078068257292" cy="74.7632820885104" r="15.062182897030794" fill="white" /><circle cx="15.66373504142864" cy="83.32896789070998" r="16.12921811639502" fill="white" /><circle cx="15.042132949157061" cy="266.48062795391706" r="19.99790437444357" fill="white" /><circle cx="98.3343214996899" cy="122.99312057609484" r="29.715280447207153" fill="white" /><circle cx="69.27284681363197" cy="57.87883645300433" r="22.956439416882837" fill="white" /><circle cx="119.3328353062605" cy="422.2421669292771" r="23.836158005771303" fill="white" /><circle cx="109.1481329703075" cy="106.88701980334577" r="21.97383151403542" fill="white" /><circle cx="387.9383706711238" cy="265.73725204831885" r="19.305472357451347" fill="white" /><circle cx="57.74870562035153" cy="370.45410663883666" r="23.912253462805577" fill="white" /><circle cx="205.48327856135117" cy="62.69153370914724" r="21.646502131442492" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Iss diesen Frosch!: 21
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wege, wie Sie aufhören,
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Dinge aufzuschieben und
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Brian Tracy
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9ec08df6-95a8-48bd-8297-2ad492875a79" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9ec08df6-95a8-48bd-8297-2ad492875a79)" />
+  <g opacity="0.1">
+    <circle cx="85.17859708913468" cy="80.86885414662257" r="17.12428166714557" fill="white" /><circle cx="69.59768929159496" cy="290.1383434722645" r="27.038611297905117" fill="white" /><circle cx="392.5366571024921" cy="270.11434942092325" r="13.394123646107413" fill="white" /><circle cx="388.3903326231079" cy="19.527115217942214" r="11.62724945757608" fill="white" /><circle cx="172.86474446513256" cy="394.3929305824312" r="28.318663058995845" fill="white" /><circle cx="174.68739411581424" cy="160.11520081242702" r="24.26746037801781" fill="white" /><circle cx="238.34611964820493" cy="18.988405370830662" r="26.708043266991176" fill="white" /><circle cx="1.3183528684341361" cy="401.6311521667402" r="29.808450546376267" fill="white" /><circle cx="317.30425912213104" cy="46.80462928581033" r="11.676830776186563" fill="white" /><circle cx="27.06299272608912" cy="355.2955658753301" r="23.576294825500877" fill="white" /><circle cx="128.87422594635694" cy="160.48777581379125" r="25.222689703621924" fill="white" /><circle cx="263.35392858279045" cy="123.02887686714831" r="18.755340398231695" fill="white" /><circle cx="142.66567810049492" cy="151.77794125302398" r="24.599651409526544" fill="white" /><circle cx="269.6244878091705" cy="212.60220767587614" r="28.762602862685355" fill="white" /><circle cx="316.6702926563151" cy="146.1386932556836" r="27.087569667839215" fill="white" /><circle cx="349.90659860373626" cy="55.01161129850776" r="10.8007186904299" fill="white" /><circle cx="261.44794115450753" cy="406.7107918449484" r="13.608160363336095" fill="white" /><circle cx="96.31465637131357" cy="488.16767440140495" r="27.18344500397909" fill="white" /><circle cx="385.87937304703235" cy="523.1223067860759" r="25.504758206133015" fill="white" /><circle cx="149.47077165005607" cy="60.37284139164565" r="23.672766475131287" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Gipfel und Täler: Warum
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        du jetzt im Tal bist und
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        wie du auf den nächsten
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Spencer Johnson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-52aac26e-9164-4ce2-8b57-fca30a98afc3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-52aac26e-9164-4ce2-8b57-fca30a98afc3)" />
+  <g opacity="0.1">
+    <circle cx="45.794398257878385" cy="494.3915893374139" r="16.44235757908921" fill="white" /><circle cx="175.53672507729132" cy="534.9413233188401" r="12.94125722545104" fill="white" /><circle cx="278.671429261035" cy="540.172680147299" r="29.75562968290681" fill="white" /><circle cx="292.3574272060466" cy="245.08153330578253" r="28.422790097720664" fill="white" /><circle cx="183.2097035133709" cy="235.26477672248456" r="10.637250179718283" fill="white" /><circle cx="94.44080893305014" cy="172.94408015190874" r="20.145170580390115" fill="white" /><circle cx="298.0332118779581" cy="94.02924239794588" r="28.585013106943425" fill="white" /><circle cx="178.3594950770505" cy="573.4857144066127" r="29.934474170461016" fill="white" /><circle cx="13.836050659500243" cy="79.84777704368457" r="27.9177518149506" fill="white" /><circle cx="377.82407822647815" cy="45.91191010613414" r="29.786186507969525" fill="white" /><circle cx="227.87067871799306" cy="514.7095953212631" r="26.812909925226343" fill="white" /><circle cx="354.5381645144509" cy="535.375844429234" r="13.795063999475708" fill="white" /><circle cx="100.19958407948076" cy="226.2304589733809" r="18.566203834615443" fill="white" /><circle cx="293.55834550462237" cy="10.34201295349828" r="16.227032991515234" fill="white" /><circle cx="289.2916655113719" cy="481.74406749240467" r="11.870466204121781" fill="white" /><circle cx="122.79727848735611" cy="293.6132055130273" r="12.537353221960172" fill="white" /><circle cx="292.7042436615159" cy="410.1152808867662" r="13.939440620739429" fill="white" /><circle cx="189.42055211929204" cy="393.18308287660346" r="22.33382287579584" fill="white" /><circle cx="113.77689592500974" cy="355.0078339304908" r="15.83536286926925" fill="white" /><circle cx="49.78174009979983" cy="206.72428981473564" r="12.11843338745876" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Awareness
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Anthony de Mello
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

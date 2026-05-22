@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-adb2ab8c-6a8a-4922-8b25-9158a75f0da5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-adb2ab8c-6a8a-4922-8b25-9158a75f0da5)" />
+  <g opacity="0.1">
+    <circle cx="382.4498180966936" cy="214.1564102307424" r="26.762665445737984" fill="white" /><circle cx="305.26076826344007" cy="348.0077152130166" r="29.836312930633465" fill="white" /><circle cx="295.08876004800595" cy="559.6302285728927" r="11.216185964177537" fill="white" /><circle cx="306.9161961283925" cy="467.17937346258145" r="10.470514346256714" fill="white" /><circle cx="96.7335694884504" cy="11.224740506857756" r="17.750783805641053" fill="white" /><circle cx="393.0924230107794" cy="520.3195292397797" r="19.9652656363736" fill="white" /><circle cx="117.1139678898078" cy="208.38521204386387" r="16.615093412932055" fill="white" /><circle cx="262.7811738140541" cy="121.25464507627805" r="13.24657367645137" fill="white" /><circle cx="39.391422836012914" cy="50.009690391502645" r="11.449919034953135" fill="white" /><circle cx="30.72133444956564" cy="464.4878466701544" r="27.707200563801454" fill="white" /><circle cx="52.19068637706976" cy="103.47468403155196" r="22.744585707611993" fill="white" /><circle cx="198.29106068865138" cy="39.19514197067653" r="20.354575913836257" fill="white" /><circle cx="88.05025451189627" cy="148.35444790067208" r="27.037250669884312" fill="white" /><circle cx="57.977664520580106" cy="476.32414368954636" r="14.3311854574258" fill="white" /><circle cx="342.3760010553387" cy="529.8293392307068" r="22.09017741985089" fill="white" /><circle cx="184.0531363603186" cy="380.42759672420163" r="20.844744120694227" fill="white" /><circle cx="68.92299737998053" cy="516.9626339434635" r="12.37741692808119" fill="white" /><circle cx="331.48193785030594" cy="5.452450395086306" r="14.228255454609561" fill="white" /><circle cx="64.74271363385995" cy="316.95925676203615" r="11.776716047268598" fill="white" /><circle cx="102.65382830044456" cy="483.2038592026853" r="26.715625174618914" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Curious Incident of
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        the Dog in the Night-Time
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Mark Haddon
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

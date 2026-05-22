@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f1b3783a-a1b3-4715-92cb-9fa9c354774e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f1b3783a-a1b3-4715-92cb-9fa9c354774e)" />
+  <g opacity="0.1">
+    <circle cx="306.06698925531026" cy="492.00962663096897" r="12.956078572638447" fill="white" /><circle cx="281.04788211963046" cy="259.008977713331" r="28.349619430816183" fill="white" /><circle cx="278.86863762629434" cy="159.68657342743745" r="12.779225909955976" fill="white" /><circle cx="95.16855987651228" cy="43.96820451664796" r="16.25113366321944" fill="white" /><circle cx="168.53400042567657" cy="270.05262027644415" r="25.287964002199473" fill="white" /><circle cx="162.54066686495582" cy="285.3516768212113" r="26.662137897084467" fill="white" /><circle cx="211.34343962524227" cy="263.3621788645259" r="25.802040671440803" fill="white" /><circle cx="110.70923744757968" cy="457.56363709753566" r="13.545228620132114" fill="white" /><circle cx="104.27358986889797" cy="74.85247408947264" r="17.44800331094624" fill="white" /><circle cx="61.5677550181271" cy="534.1860729783459" r="25.935540343267803" fill="white" /><circle cx="205.99211077743084" cy="72.28934810979615" r="24.56298626398666" fill="white" /><circle cx="315.7980648190297" cy="426.5262201976828" r="18.63784806282363" fill="white" /><circle cx="205.18523906169065" cy="223.03488484772572" r="21.488309646533335" fill="white" /><circle cx="366.2066054490978" cy="388.585486056911" r="29.82958482829836" fill="white" /><circle cx="301.1672781121088" cy="393.4785321030314" r="15.714855626980276" fill="white" /><circle cx="316.8113298757826" cy="463.53108458163496" r="22.926127113895536" fill="white" /><circle cx="191.20526815423662" cy="40.31108415526086" r="27.263082783739414" fill="white" /><circle cx="253.7696569556629" cy="450.04876217064543" r="13.453748955862782" fill="white" /><circle cx="158.17630459460156" cy="21.670121007401644" r="10.622128061506723" fill="white" /><circle cx="339.4989415187541" cy="529.5378146797179" r="15.29979105567254" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Stumbling on Happiness
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Daniel Gilbert
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

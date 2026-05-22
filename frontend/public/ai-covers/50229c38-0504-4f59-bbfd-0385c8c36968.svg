@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-50229c38-0504-4f59-bbfd-0385c8c36968" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-50229c38-0504-4f59-bbfd-0385c8c36968)" />
+  <g opacity="0.1">
+    <circle cx="2.948647921469716" cy="35.09736864882744" r="17.713786192690236" fill="white" /><circle cx="105.45845911510466" cy="66.99925258611137" r="13.419305169494207" fill="white" /><circle cx="179.03081286206327" cy="548.3481423879438" r="10.0857057653342" fill="white" /><circle cx="127.3581373365383" cy="22.259999596764168" r="28.40700793432928" fill="white" /><circle cx="21.735521972104976" cy="354.10211869765095" r="11.596065895353359" fill="white" /><circle cx="274.23172834894586" cy="221.44474245015138" r="17.54632370016116" fill="white" /><circle cx="85.40315782014312" cy="542.8722877867127" r="20.166002093748347" fill="white" /><circle cx="368.4504297453149" cy="521.0280931427492" r="19.185164571432836" fill="white" /><circle cx="92.45832282163416" cy="227.57743736006833" r="15.847633042592742" fill="white" /><circle cx="181.08350488231858" cy="272.18107947442945" r="18.443504384139402" fill="white" /><circle cx="315.18777935604" cy="379.01136990133296" r="19.833064282527697" fill="white" /><circle cx="84.55581263927985" cy="476.05508589988005" r="25.867968109528196" fill="white" /><circle cx="128.0966911425764" cy="287.9793316739625" r="13.140246896863758" fill="white" /><circle cx="113.89494427300674" cy="529.0159110139226" r="14.461203965184454" fill="white" /><circle cx="339.1939643255525" cy="587.810046997449" r="17.84104652253879" fill="white" /><circle cx="203.4871154771105" cy="363.93295446343086" r="27.67902369810737" fill="white" /><circle cx="164.30874171625635" cy="331.7336817017254" r="17.963389170342815" fill="white" /><circle cx="240.27373523150507" cy="12.4599676963987" r="28.583246332541098" fill="white" /><circle cx="173.62496994001725" cy="405.23923732713223" r="24.508184141462046" fill="white" /><circle cx="24.214701760388646" cy="540.25893070406" r="26.34540133895145" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Brüder Wright: Das
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Abenteuer der ersten
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Flüge
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        David McCullough
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

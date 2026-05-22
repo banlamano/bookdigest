@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c3d16664-d28b-48fb-a524-710140990d99" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c3d16664-d28b-48fb-a524-710140990d99)" />
+  <g opacity="0.1">
+    <circle cx="8.224367909100616" cy="535.401663294159" r="12.437622528548246" fill="white" /><circle cx="166.49487350169613" cy="167.3384069752699" r="20.44748486549185" fill="white" /><circle cx="182.05069124000875" cy="586.4637167198302" r="21.86287903584715" fill="white" /><circle cx="215.52791075160718" cy="64.68572775617403" r="23.969207114113644" fill="white" /><circle cx="232.71199422377066" cy="507.7139850918951" r="26.569708813034186" fill="white" /><circle cx="34.03025144942418" cy="331.8384860473861" r="29.245093893406203" fill="white" /><circle cx="3.7460076901351336" cy="171.4636615782466" r="20.637134941434812" fill="white" /><circle cx="224.14332898070134" cy="450.7042249001377" r="28.182894359447054" fill="white" /><circle cx="96.50454915973982" cy="514.7239249814694" r="15.163137058560833" fill="white" /><circle cx="232.55019436933136" cy="372.165819267945" r="28.215968340717893" fill="white" /><circle cx="235.8783664342336" cy="0.7888196614310949" r="24.98868980891931" fill="white" /><circle cx="33.64013024483388" cy="369.9694073377696" r="10.520671745451889" fill="white" /><circle cx="247.28612996674642" cy="68.34200781518531" r="22.891443133465685" fill="white" /><circle cx="338.1438434613634" cy="533.6951222834438" r="26.11037721779777" fill="white" /><circle cx="189.8491062247119" cy="304.74852631496213" r="27.6572992794273" fill="white" /><circle cx="373.3318595065483" cy="549.4041610090676" r="27.42026294107079" fill="white" /><circle cx="174.6180704462537" cy="533.2790367404803" r="12.171772937475556" fill="white" /><circle cx="217.0683597507243" cy="409.730261548144" r="12.784216474911236" fill="white" /><circle cx="98.05472860108932" cy="147.66477115079323" r="21.24758614437053" fill="white" /><circle cx="1.1896461672460834" cy="373.02833052466616" r="11.625183924603208" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Du bist eine Niete – und
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        das ist gut so!
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jen Sincero
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-183a5ab8-e1df-432a-af2e-b83e421ec4fd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-183a5ab8-e1df-432a-af2e-b83e421ec4fd)" />
+  <g opacity="0.1">
+    <circle cx="23.386163091246814" cy="18.19365161165385" r="27.005185639654687" fill="white" /><circle cx="238.81274587390476" cy="408.9250755541616" r="10.387573711069859" fill="white" /><circle cx="124.60488773691397" cy="572.4409638315225" r="14.744571514667692" fill="white" /><circle cx="367.23867125025566" cy="593.6389566336359" r="14.15056500008394" fill="white" /><circle cx="175.9104596428453" cy="131.8761700611462" r="16.114285053413635" fill="white" /><circle cx="218.54162176227337" cy="248.94909998227888" r="21.623221534999093" fill="white" /><circle cx="161.79740903718834" cy="454.4225834296725" r="17.945062554126967" fill="white" /><circle cx="344.4238886697665" cy="162.32964898109256" r="23.780687239780583" fill="white" /><circle cx="321.1846933996054" cy="312.9986264876937" r="16.32756971736506" fill="white" /><circle cx="92.58527424291483" cy="456.8421836932377" r="26.903212386768608" fill="white" /><circle cx="93.16030166247695" cy="541.3335099533692" r="28.978529419249895" fill="white" /><circle cx="166.37980908814885" cy="51.76259684692719" r="29.015525719455127" fill="white" /><circle cx="307.8056397944998" cy="261.3657005447155" r="18.961736800247152" fill="white" /><circle cx="105.95747807662752" cy="398.69024329628047" r="22.510767671363656" fill="white" /><circle cx="107.78767145473024" cy="434.3762659151343" r="20.950361355382405" fill="white" /><circle cx="381.4549329449314" cy="297.6055403087116" r="14.669791917489421" fill="white" /><circle cx="235.46165592098401" cy="344.1586195384821" r="26.552452666013036" fill="white" /><circle cx="385.4521616769604" cy="458.16163292480576" r="19.32912411760227" fill="white" /><circle cx="335.85712367227416" cy="41.09528215879483" r="20.9762710235087" fill="white" /><circle cx="382.188762371779" cy="348.63759916750774" r="15.929828097565494" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Bullet Journal Method
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Ryder Carroll
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

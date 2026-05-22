@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-139f7f3b-d77a-4321-af20-e24d1b87ca33" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-139f7f3b-d77a-4321-af20-e24d1b87ca33)" />
+  <g opacity="0.1">
+    <circle cx="224.59440045156623" cy="61.526216199289465" r="28.488792118937216" fill="white" /><circle cx="8.077190027307513" cy="441.03937158776665" r="14.285911469280704" fill="white" /><circle cx="52.67980904762788" cy="130.58854067586353" r="16.95982768277453" fill="white" /><circle cx="114.25467277694517" cy="498.15743692004713" r="13.482057312544434" fill="white" /><circle cx="378.0037898470567" cy="225.06957579661218" r="17.805709708565356" fill="white" /><circle cx="29.176810618410265" cy="6.879934202883287" r="11.977284038878075" fill="white" /><circle cx="383.59737063349536" cy="459.68607615598853" r="14.566698184548482" fill="white" /><circle cx="335.7367591078889" cy="477.1890272937799" r="18.478768931306096" fill="white" /><circle cx="166.32636570458425" cy="177.11518308649454" r="13.453889022020874" fill="white" /><circle cx="148.2254612212011" cy="340.710560524588" r="14.448048988591287" fill="white" /><circle cx="142.09613562607925" cy="593.5430017658156" r="12.5024545917367" fill="white" /><circle cx="188.93435706694933" cy="509.38078212946533" r="27.154003327472413" fill="white" /><circle cx="157.11323736078504" cy="197.53610510585048" r="17.600177093882195" fill="white" /><circle cx="213.87728413231622" cy="225.99696193951317" r="13.60430902509275" fill="white" /><circle cx="204.10307886660394" cy="32.51614310718709" r="16.967241375881596" fill="white" /><circle cx="360.6669280928199" cy="545.1437002225005" r="15.04693343138062" fill="white" /><circle cx="236.99203723618427" cy="376.8707849011052" r="13.86613851515378" fill="white" /><circle cx="68.05561673733465" cy="574.9676897111435" r="20.005494046985355" fill="white" /><circle cx="254.85986887927737" cy="594.9036505627887" r="12.340713173372507" fill="white" /><circle cx="45.57695333967566" cy="321.2402728764943" r="16.16937125846837" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die gute Seite des
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Stresses: Warum Stress
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        uns stärkt und wie wir
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Kelly McGonigal
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

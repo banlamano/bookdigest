@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1d5803a8-5a28-4d6e-a76f-3fb7f94f9a6d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1d5803a8-5a28-4d6e-a76f-3fb7f94f9a6d)" />
+  <g opacity="0.1">
+    <circle cx="161.4855190549748" cy="218.93405628942622" r="26.889769751610217" fill="white" /><circle cx="381.4217778427869" cy="78.19641012042557" r="18.59245949172548" fill="white" /><circle cx="350.11552212830696" cy="43.341609721445494" r="28.277132768347624" fill="white" /><circle cx="193.9767136542911" cy="593.213325217973" r="28.511682579293115" fill="white" /><circle cx="349.2928889387694" cy="356.11808129333235" r="28.143357338911066" fill="white" /><circle cx="124.39232772594467" cy="424.7816614662643" r="11.29672030192167" fill="white" /><circle cx="275.33293172215576" cy="468.4424689348501" r="15.305343158554944" fill="white" /><circle cx="294.1493139542526" cy="238.63975549207692" r="20.408414273209868" fill="white" /><circle cx="168.36664966445696" cy="129.87253930744114" r="26.59882434525844" fill="white" /><circle cx="22.750231170789714" cy="246.55170695555233" r="27.705878067055842" fill="white" /><circle cx="113.23961092417134" cy="599.9130487006227" r="25.577248194474606" fill="white" /><circle cx="353.31844585792714" cy="161.405066111472" r="28.31935238786238" fill="white" /><circle cx="148.51674766817612" cy="291.8735353190368" r="29.73288982233698" fill="white" /><circle cx="218.25022915343774" cy="180.6900663680027" r="25.72016492025898" fill="white" /><circle cx="280.02863956525096" cy="392.4934290713547" r="26.860691938210884" fill="white" /><circle cx="258.51945091583826" cy="381.58599001217345" r="11.38541480552587" fill="white" /><circle cx="310.362837805152" cy="3.030312335929586" r="12.224015850693066" fill="white" /><circle cx="218.140153331665" cy="362.7390898347869" r="20.846809405412404" fill="white" /><circle cx="226.78983234158073" cy="154.4731630312158" r="28.718100184150007" fill="white" /><circle cx="163.81939773533034" cy="110.08233997671273" r="21.521157821094107" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Mountain Is You
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brianna Wiest
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

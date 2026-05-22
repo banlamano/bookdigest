@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0d15ab04-0cc9-4189-94b4-a1b30e4c8032" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0d15ab04-0cc9-4189-94b4-a1b30e4c8032)" />
+  <g opacity="0.1">
+    <circle cx="85.00046442046671" cy="441.5594183563272" r="29.1607153346547" fill="white" /><circle cx="332.19707566080194" cy="9.94714365140792" r="25.210991074213354" fill="white" /><circle cx="147.6218031654928" cy="506.14802555391776" r="23.056567148924078" fill="white" /><circle cx="205.23423919418474" cy="480.06519617082574" r="21.596622130803162" fill="white" /><circle cx="45.77671400040395" cy="345.40529991171644" r="10.821992201624738" fill="white" /><circle cx="261.14493589505423" cy="504.7856912294952" r="11.51420685579216" fill="white" /><circle cx="293.01125994487273" cy="148.17771386543347" r="27.202819218380682" fill="white" /><circle cx="195.4719361039027" cy="21.60549092760815" r="23.150887158447482" fill="white" /><circle cx="8.039362034688846" cy="292.3853744831799" r="23.02306860062085" fill="white" /><circle cx="99.00779224460838" cy="126.40247382481033" r="28.723046528912455" fill="white" /><circle cx="200.59382210606378" cy="379.56260243577356" r="15.640636474135633" fill="white" /><circle cx="128.70439209509294" cy="391.0550406309994" r="27.869138868943008" fill="white" /><circle cx="79.82136932402196" cy="462.68456506665206" r="14.869653658535405" fill="white" /><circle cx="333.3747473326993" cy="337.638507884912" r="25.645874860619422" fill="white" /><circle cx="199.9223783089397" cy="65.6651022935894" r="16.389699998462284" fill="white" /><circle cx="21.713660997670647" cy="263.9311676904884" r="13.135667642164979" fill="white" /><circle cx="376.0123565991988" cy="462.61826396769436" r="27.657456023314932" fill="white" /><circle cx="109.01586462607851" cy="71.90292293735143" r="14.565337607891815" fill="white" /><circle cx="238.14490971544342" cy="314.8420673774218" r="20.104433590702968" fill="white" /><circle cx="90.49974659604531" cy="86.73617478593268" r="28.080673176015807" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Elon Musk: Die Biografie
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Ashlee Vance
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

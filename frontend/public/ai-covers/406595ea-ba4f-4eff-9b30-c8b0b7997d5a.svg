@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-406595ea-ba4f-4eff-9b30-c8b0b7997d5a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-406595ea-ba4f-4eff-9b30-c8b0b7997d5a)" />
+  <g opacity="0.1">
+    <circle cx="395.1844290067035" cy="4.777747867825055" r="20.337237070332083" fill="white" /><circle cx="222.38860280244924" cy="58.27811290874312" r="18.085820544164132" fill="white" /><circle cx="322.62443040448665" cy="570.1131357519153" r="23.91917362281679" fill="white" /><circle cx="257.73434152854054" cy="360.4696911994518" r="26.251771275202273" fill="white" /><circle cx="239.78089405917927" cy="411.6799522666575" r="28.13401429733127" fill="white" /><circle cx="76.23388607894262" cy="403.6757080596595" r="18.17576159083128" fill="white" /><circle cx="316.4119746731594" cy="61.75845055772544" r="29.287984775104437" fill="white" /><circle cx="107.90875015570833" cy="26.987151177629155" r="15.425837151677674" fill="white" /><circle cx="339.7636218943635" cy="75.86007612554704" r="12.587797271003677" fill="white" /><circle cx="240.7886317644151" cy="352.19301057731" r="21.87855620248915" fill="white" /><circle cx="269.56546954672035" cy="69.81126031248968" r="11.924063357738374" fill="white" /><circle cx="257.85415776723806" cy="511.37218983916233" r="12.350870084438117" fill="white" /><circle cx="97.25541957168353" cy="379.6581392647859" r="20.06210594471966" fill="white" /><circle cx="228.2959318103874" cy="74.08225907887547" r="12.181705445201285" fill="white" /><circle cx="208.47127458340546" cy="62.68755315561065" r="28.599074946467486" fill="white" /><circle cx="132.13084344642644" cy="583.9142749928062" r="16.321849798274975" fill="white" /><circle cx="199.17682831953732" cy="404.5961031315124" r="17.315453425785627" fill="white" /><circle cx="92.80885651705005" cy="184.44000421094572" r="15.797086357191468" fill="white" /><circle cx="226.9022743607176" cy="161.8350947369541" r="24.279550043731724" fill="white" /><circle cx="392.7735344826548" cy="188.42390415223633" r="16.654674989793286" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Leonardo da Vinci: Die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Biographie
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Walter Isaacson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

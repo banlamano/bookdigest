@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-72e39c70-c891-4712-8639-ef337277816f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-72e39c70-c891-4712-8639-ef337277816f)" />
+  <g opacity="0.1">
+    <circle cx="269.6866574071206" cy="535.3839956437821" r="21.74344508586901" fill="white" /><circle cx="210.67304404736257" cy="143.39047754148348" r="25.00026818343126" fill="white" /><circle cx="360.71353479474124" cy="461.244670141103" r="12.861812177252256" fill="white" /><circle cx="352.4393562012732" cy="341.9176577032091" r="23.577053226922118" fill="white" /><circle cx="95.40381452909278" cy="439.6833779393837" r="11.76408424984829" fill="white" /><circle cx="375.93914821346544" cy="454.56899329821675" r="10.369101071980836" fill="white" /><circle cx="184.64520934963357" cy="440.5836429721594" r="16.48874907612666" fill="white" /><circle cx="239.9113389650896" cy="209.32771521588168" r="23.108504778453415" fill="white" /><circle cx="186.99400596433296" cy="420.1678553025454" r="15.861002355146434" fill="white" /><circle cx="372.41278106284244" cy="452.1438644404331" r="27.40472302269757" fill="white" /><circle cx="194.7894756737719" cy="365.68295315464826" r="20.087569669798317" fill="white" /><circle cx="177.27000348623613" cy="34.80877840420844" r="18.015606637939747" fill="white" /><circle cx="138.82003735922007" cy="564.6368127294933" r="24.237795156045635" fill="white" /><circle cx="328.6755361689694" cy="447.03976069950204" r="13.273873971828646" fill="white" /><circle cx="374.6647582521416" cy="383.56757616721046" r="29.741675116801968" fill="white" /><circle cx="294.28882064395293" cy="347.4727271102921" r="12.301457425799097" fill="white" /><circle cx="292.0496023676729" cy="26.84824171150577" r="20.48335365668688" fill="white" /><circle cx="150.73384887304107" cy="57.806181626532414" r="18.691430311370482" fill="white" /><circle cx="40.28536940571961" cy="237.13718009576715" r="26.899737461530982" fill="white" /><circle cx="133.65106153471004" cy="172.7213693076148" r="15.01958456328892" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Gebrandmarkt
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ibram X. Kendi
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HISTORY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

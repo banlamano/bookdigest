@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0fa594b3-2a17-4adf-9e85-0e97efbf8137" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0fa594b3-2a17-4adf-9e85-0e97efbf8137)" />
+  <g opacity="0.1">
+    <circle cx="339.0022875234068" cy="208.8249075450967" r="24.179864418103087" fill="white" /><circle cx="192.39495242373016" cy="420.72240034221807" r="20.799673224095894" fill="white" /><circle cx="57.22337311682031" cy="469.5268680250528" r="26.49190723734035" fill="white" /><circle cx="200.68486244148312" cy="434.15192952263493" r="22.539390565863947" fill="white" /><circle cx="85.45089644444003" cy="189.1838389990452" r="29.92234372556026" fill="white" /><circle cx="368.2689793459014" cy="572.0003755963352" r="29.197261128760413" fill="white" /><circle cx="336.79627593998975" cy="157.3582920492054" r="26.188703436360697" fill="white" /><circle cx="179.75482924365932" cy="32.88314553915159" r="14.674730960783586" fill="white" /><circle cx="241.53555319983954" cy="59.30941478889682" r="15.046815306491546" fill="white" /><circle cx="283.98632632393463" cy="383.3325390261213" r="22.00210228496948" fill="white" /><circle cx="110.29984890029843" cy="340.2808646003916" r="11.369683204120244" fill="white" /><circle cx="175.3224344131031" cy="427.6337272827462" r="26.283662525820464" fill="white" /><circle cx="255.2241216039624" cy="428.8083152286913" r="17.051082401387756" fill="white" /><circle cx="176.9107635225975" cy="202.6828399899997" r="11.948896047593681" fill="white" /><circle cx="197.1509547245081" cy="392.7343908619417" r="18.45473220121626" fill="white" /><circle cx="257.4144570330076" cy="313.96188515774924" r="14.771147038327822" fill="white" /><circle cx="145.2799268284681" cy="593.9848860330876" r="17.800762078752186" fill="white" /><circle cx="379.74102157167846" cy="156.2445595779432" r="18.55400126994636" fill="white" /><circle cx="267.60690297483666" cy="127.44612256529784" r="20.647604665078966" fill="white" /><circle cx="269.1409145327351" cy="429.363411078397" r="24.85590850316752" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Turning Pro: Der Übergang
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        vom Amateur zum Profi
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Steven Pressfield
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

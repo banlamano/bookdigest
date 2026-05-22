@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-745d4f5f-c336-48c9-8db2-e741b412d443" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-745d4f5f-c336-48c9-8db2-e741b412d443)" />
+  <g opacity="0.1">
+    <circle cx="267.9006358537071" cy="301.0883412303445" r="18.131435542280204" fill="white" /><circle cx="198.00608583815267" cy="558.5012177668875" r="25.826652891952072" fill="white" /><circle cx="133.37785927819246" cy="288.5078354221197" r="27.45155559057053" fill="white" /><circle cx="192.3054634440621" cy="582.1084041666953" r="24.29785061910976" fill="white" /><circle cx="236.2382338262787" cy="48.971786957606355" r="20.043673546574354" fill="white" /><circle cx="383.7711993541311" cy="3.5851089054287133" r="17.732740853693233" fill="white" /><circle cx="230.15727702437943" cy="371.44399428842513" r="18.454051921193475" fill="white" /><circle cx="187.48614894022967" cy="107.13967415180304" r="16.000125617943354" fill="white" /><circle cx="212.7728420012978" cy="95.65715236421022" r="11.525618317374594" fill="white" /><circle cx="166.6974697209346" cy="366.81532124058197" r="16.489245045312806" fill="white" /><circle cx="237.79250823608317" cy="134.41385844991927" r="22.136745994780473" fill="white" /><circle cx="63.532092172987475" cy="47.264217544346224" r="29.785551445195267" fill="white" /><circle cx="208.28535187084927" cy="210.83408351194308" r="10.221633598543665" fill="white" /><circle cx="162.13751973571698" cy="0.9424493055644634" r="17.222140392545537" fill="white" /><circle cx="126.96056614396616" cy="27.567460095071915" r="28.459162030083608" fill="white" /><circle cx="102.58467907764222" cy="314.2188671809915" r="19.304579949792" fill="white" /><circle cx="277.84076944898624" cy="145.2848182636019" r="16.710400225472718" fill="white" /><circle cx="66.10308929101292" cy="206.92235153807405" r="19.452445609307997" fill="white" /><circle cx="79.8201120699452" cy="446.4533299899903" r="28.490560947623056" fill="white" /><circle cx="194.05537952055303" cy="65.96728918992831" r="26.510781527098995" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Powerful
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Patty McCord
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-68b4f9af-8acd-459d-a485-9bab59dbd19f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-68b4f9af-8acd-459d-a485-9bab59dbd19f)" />
+  <g opacity="0.1">
+    <circle cx="296.1192197891358" cy="123.42564880510294" r="28.417423689497994" fill="white" /><circle cx="293.3693596792323" cy="48.723597651047236" r="28.14243382953454" fill="white" /><circle cx="225.43432353385415" cy="438.09018803267656" r="11.578360187118669" fill="white" /><circle cx="203.31812738962407" cy="200.6347249393851" r="15.271116690601492" fill="white" /><circle cx="244.47338778137134" cy="104.02886516117663" r="17.22487908257323" fill="white" /><circle cx="343.6909995847129" cy="431.2823473183684" r="12.942095458175293" fill="white" /><circle cx="134.36626351176452" cy="192.30996138144886" r="17.451647152865423" fill="white" /><circle cx="295.1313349525469" cy="409.36140785907173" r="22.791394460423586" fill="white" /><circle cx="141.46467886925493" cy="146.59050322736164" r="25.747086234122555" fill="white" /><circle cx="281.02375357489075" cy="195.6207390618539" r="12.62498081851264" fill="white" /><circle cx="227.40258637864886" cy="371.71183932586956" r="22.993110803606584" fill="white" /><circle cx="281.87854526471574" cy="471.5527192984187" r="26.928788776445668" fill="white" /><circle cx="36.066481950831665" cy="456.05510311861207" r="24.318433727842027" fill="white" /><circle cx="321.68062780099694" cy="332.9621998726761" r="19.10285286097479" fill="white" /><circle cx="64.40390714265463" cy="161.58214321214567" r="15.11738818394935" fill="white" /><circle cx="294.81700544670184" cy="18.417690776228103" r="16.782719917996886" fill="white" /><circle cx="127.08005912048388" cy="179.23166490839972" r="15.498889342957318" fill="white" /><circle cx="45.554403819201816" cy="369.5876438988706" r="17.72377463328468" fill="white" /><circle cx="216.9743280282917" cy="248.0213289585807" r="15.021351904510878" fill="white" /><circle cx="147.9294045331029" cy="410.10723265166143" r="16.302756378236552" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Ich. Du. Wir. (Eleanor
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Oliphant)
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Gail Honeyman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

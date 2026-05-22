@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-70ced63d-fd86-4370-adb0-f1b8eaf9e7eb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-70ced63d-fd86-4370-adb0-f1b8eaf9e7eb)" />
+  <g opacity="0.1">
+    <circle cx="301.56887262863637" cy="169.07883631513988" r="21.043803733735327" fill="white" /><circle cx="107.81033067067787" cy="130.22324987866028" r="24.829132097087953" fill="white" /><circle cx="360.6112682413644" cy="173.2406669124124" r="19.330794441611772" fill="white" /><circle cx="103.17180091665304" cy="433.227149512872" r="11.262366575853013" fill="white" /><circle cx="322.00543413235454" cy="8.691205885751629" r="27.206103965745786" fill="white" /><circle cx="381.8567357802699" cy="310.7048517487353" r="20.234711057966123" fill="white" /><circle cx="61.71527522325584" cy="163.63512622715027" r="12.569986007123681" fill="white" /><circle cx="179.99892645107698" cy="410.940455416707" r="17.30618120993921" fill="white" /><circle cx="380.61943078176773" cy="236.8146510108814" r="28.375717379642285" fill="white" /><circle cx="259.88093175498676" cy="131.14267436070904" r="25.296138100549236" fill="white" /><circle cx="63.47688969568641" cy="426.24123358576514" r="27.44032206249714" fill="white" /><circle cx="283.03121919996886" cy="536.6024893499756" r="14.702874253373558" fill="white" /><circle cx="353.12443845808116" cy="146.33788269940888" r="19.73668488853309" fill="white" /><circle cx="160.64844804227985" cy="559.8163573078996" r="19.572849148041836" fill="white" /><circle cx="340.9893181942" cy="368.1818419073299" r="24.377875320123884" fill="white" /><circle cx="164.87456794944742" cy="103.20789744692824" r="16.780348003593918" fill="white" /><circle cx="101.04523793245579" cy="238.65698232092248" r="10.189230806025261" fill="white" /><circle cx="320.9982236496561" cy="588.7409594413162" r="18.899512958436258" fill="white" /><circle cx="173.8648842304268" cy="130.3060885187748" r="24.48210687843019" fill="white" /><circle cx="74.71483370105037" cy="271.2001487311085" r="24.68403316639572" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Wisdom of No Escape
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Pema Chödrön
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d74d2347-a58c-4d65-885f-f53104c6ad4c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d74d2347-a58c-4d65-885f-f53104c6ad4c)" />
+  <g opacity="0.1">
+    <circle cx="230.01717438039245" cy="320.1885991687668" r="23.51081303652211" fill="white" /><circle cx="226.28587274786648" cy="76.63079106204135" r="12.41783781508505" fill="white" /><circle cx="71.47546186929614" cy="79.67441604425689" r="13.533156229875146" fill="white" /><circle cx="211.41288495420295" cy="484.69171954077916" r="21.13575643893009" fill="white" /><circle cx="196.41886911232186" cy="514.5680779650354" r="17.075536219945914" fill="white" /><circle cx="261.0301565517076" cy="1.0668033502411856" r="16.71184527289937" fill="white" /><circle cx="307.15039094099524" cy="319.4859336598958" r="19.900165074327163" fill="white" /><circle cx="257.589641623581" cy="382.13828617934877" r="16.908446249920978" fill="white" /><circle cx="234.91341718355213" cy="182.72942409727915" r="20.87560013502706" fill="white" /><circle cx="339.4653378997783" cy="501.4308592842409" r="28.040015495866516" fill="white" /><circle cx="30.430036854281674" cy="72.48701476255184" r="14.98388814154527" fill="white" /><circle cx="381.53094445051613" cy="182.39761764704545" r="25.49298643787988" fill="white" /><circle cx="183.78624878972101" cy="145.74169311493358" r="26.731509245892372" fill="white" /><circle cx="98.00261682823282" cy="445.7852628209678" r="11.131226735900091" fill="white" /><circle cx="30.335456717238518" cy="45.24901314712826" r="23.24554839809197" fill="white" /><circle cx="166.72882147968733" cy="543.109713268134" r="20.47533284040089" fill="white" /><circle cx="11.031265301376125" cy="25.779071793624198" r="13.884366120067192" fill="white" /><circle cx="373.7362780545692" cy="188.87640632293179" r="18.371138167583588" fill="white" /><circle cx="194.94010348734597" cy="278.4197601998586" r="14.328144168769537" fill="white" /><circle cx="361.91366430386205" cy="546.3125629155072" r="17.64131649656045" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Metta: Die Praxis der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        liebenden Güte
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Sharon Salzberg
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

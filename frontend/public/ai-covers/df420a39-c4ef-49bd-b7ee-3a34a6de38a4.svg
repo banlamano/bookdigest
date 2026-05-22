@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-df420a39-c4ef-49bd-b7ee-3a34a6de38a4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-df420a39-c4ef-49bd-b7ee-3a34a6de38a4)" />
+  <g opacity="0.1">
+    <circle cx="367.3565673700877" cy="371.82334148291784" r="26.724227999201947" fill="white" /><circle cx="300.37334124352253" cy="151.9699816548376" r="18.982870449011422" fill="white" /><circle cx="229.50742855781243" cy="291.5656765453223" r="16.32181583379468" fill="white" /><circle cx="90.80391350483472" cy="468.3298356294592" r="12.106125124061638" fill="white" /><circle cx="232.3422411411576" cy="400.371913499759" r="12.64212876267675" fill="white" /><circle cx="397.7765779134735" cy="315.75939785168987" r="12.090333429342856" fill="white" /><circle cx="57.66676525860031" cy="280.6494918447564" r="28.29152041551327" fill="white" /><circle cx="199.88393233178047" cy="61.48542611788051" r="28.662895068610386" fill="white" /><circle cx="9.911963820041247" cy="231.40415234224633" r="25.697340183005757" fill="white" /><circle cx="52.964522633858024" cy="272.13046171001724" r="18.99259603482399" fill="white" /><circle cx="299.2833481253956" cy="519.7202015253089" r="11.639577064542346" fill="white" /><circle cx="154.41449499994414" cy="37.67104621211019" r="24.202432102004742" fill="white" /><circle cx="395.0492547916985" cy="461.59934194496617" r="10.31246956298929" fill="white" /><circle cx="57.836527015476726" cy="181.92074914969422" r="14.976309157759413" fill="white" /><circle cx="376.5454059130559" cy="106.03586801769873" r="16.818064549216167" fill="white" /><circle cx="48.82070520428439" cy="304.52769666411734" r="24.238961120798628" fill="white" /><circle cx="268.8041023244041" cy="209.74425763334176" r="22.218714738965815" fill="white" /><circle cx="183.76434752750473" cy="176.92863713085137" r="27.287802432477477" fill="white" /><circle cx="119.98914983029776" cy="512.2334213153389" r="21.74961328636985" fill="white" /><circle cx="399.829659433907" cy="141.580391091727" r="24.537395179215615" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Book of Joy
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Dalai Lama
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

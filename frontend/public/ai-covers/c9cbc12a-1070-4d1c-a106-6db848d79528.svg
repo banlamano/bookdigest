@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c9cbc12a-1070-4d1c-a106-6db848d79528" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c9cbc12a-1070-4d1c-a106-6db848d79528)" />
+  <g opacity="0.1">
+    <circle cx="214.06479132160956" cy="588.9181836322851" r="20.554714103796968" fill="white" /><circle cx="224.19013737767258" cy="163.66319443462137" r="14.528050304899674" fill="white" /><circle cx="85.34380397715596" cy="393.88008026258285" r="21.714103327832202" fill="white" /><circle cx="113.43138020489904" cy="514.2839687007423" r="23.748453222787205" fill="white" /><circle cx="229.75019954399113" cy="390.40293238671006" r="27.80905684850974" fill="white" /><circle cx="380.3204398611782" cy="399.81399011449133" r="24.78733752588184" fill="white" /><circle cx="310.8702572335825" cy="301.36370523439575" r="10.887442354426733" fill="white" /><circle cx="291.36086436328384" cy="482.6270690514039" r="10.236486090216136" fill="white" /><circle cx="231.28983283801804" cy="38.628496829981685" r="27.025183118588703" fill="white" /><circle cx="160.28340738552083" cy="163.98854103699577" r="24.243167836218067" fill="white" /><circle cx="298.7612390094788" cy="136.3615179325618" r="16.553663825328016" fill="white" /><circle cx="59.88651804992071" cy="118.84047585093963" r="15.708790700513308" fill="white" /><circle cx="287.8120847205261" cy="419.9128135787336" r="23.030139634634065" fill="white" /><circle cx="165.15166691023123" cy="208.51532878767992" r="22.48134537162887" fill="white" /><circle cx="297.417901722023" cy="305.49585626263547" r="18.309741824559072" fill="white" /><circle cx="52.39395081105833" cy="442.0973515489828" r="21.884391356375204" fill="white" /><circle cx="308.1850948765758" cy="89.77399936811825" r="23.37883062948266" fill="white" /><circle cx="215.30103771428054" cy="203.22879224903468" r="27.281932852127298" fill="white" /><circle cx="170.92484960405395" cy="548.8344206876319" r="11.254691102079416" fill="white" /><circle cx="209.34307572805562" cy="502.7951190576838" r="12.976275583674678" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Bounce: Über die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Psychologie des Erfolgs –
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Was wir von den Großen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Matthew Syed
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

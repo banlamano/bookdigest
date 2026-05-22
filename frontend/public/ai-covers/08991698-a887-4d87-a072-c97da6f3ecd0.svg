@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-08991698-a887-4d87-a072-c97da6f3ecd0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-08991698-a887-4d87-a072-c97da6f3ecd0)" />
+  <g opacity="0.1">
+    <circle cx="320.70024849010366" cy="233.9182968099182" r="12.35312388218446" fill="white" /><circle cx="100.02771575536346" cy="157.32787472056302" r="27.0859476327255" fill="white" /><circle cx="176.33995586700348" cy="465.4407567327449" r="10.243219633762727" fill="white" /><circle cx="164.32875034046268" cy="549.4331718490465" r="17.62288543241823" fill="white" /><circle cx="375.79400455304557" cy="122.4436029372731" r="29.418106639684478" fill="white" /><circle cx="195.20572132731843" cy="66.7355485553032" r="13.272438733433283" fill="white" /><circle cx="190.38297166275692" cy="194.1871412693873" r="28.436428913786717" fill="white" /><circle cx="15.562042748127558" cy="213.8174574449632" r="25.650953302178483" fill="white" /><circle cx="383.0363464159718" cy="238.01252944058064" r="29.44649316617655" fill="white" /><circle cx="271.7708678055105" cy="294.29269970715785" r="19.127420528484343" fill="white" /><circle cx="20.394135319849262" cy="65.36968115031274" r="23.939785105342956" fill="white" /><circle cx="110.66059756197637" cy="340.91279966667713" r="28.872709630089542" fill="white" /><circle cx="306.2131708714206" cy="139.8721960673588" r="25.558627242673857" fill="white" /><circle cx="190.54610831092606" cy="341.8147933696859" r="10.696851916704393" fill="white" /><circle cx="14.773586445489073" cy="488.8023960597204" r="15.633984970913474" fill="white" /><circle cx="347.61067757787123" cy="448.15636835745767" r="28.635329155009583" fill="white" /><circle cx="234.73624131117998" cy="493.41707216813853" r="13.308750231785272" fill="white" /><circle cx="220.6934194795537" cy="175.1201598021429" r="27.510674891654403" fill="white" /><circle cx="233.0125927384334" cy="227.5050457780749" r="19.67527523545375" fill="white" /><circle cx="364.933917538041" cy="435.21095549133" r="27.37862004243803" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Four Agreements
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Don Miguel Ruiz
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

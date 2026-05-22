@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-154254d5-2451-4f93-9b72-ed1d2a24b59a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-154254d5-2451-4f93-9b72-ed1d2a24b59a)" />
+  <g opacity="0.1">
+    <circle cx="87.14760319592986" cy="166.27903117516044" r="13.088186594659415" fill="white" /><circle cx="272.9998021948552" cy="251.87279347783084" r="19.57948147614301" fill="white" /><circle cx="103.54682573535841" cy="100.36690739111762" r="11.759990435701331" fill="white" /><circle cx="145.48861408354753" cy="344.7379478864306" r="23.047712827412923" fill="white" /><circle cx="15.519296746496192" cy="482.0885459041183" r="18.651169937876368" fill="white" /><circle cx="182.89302997412625" cy="125.24980420878381" r="17.993243096199983" fill="white" /><circle cx="316.9102478673456" cy="5.559445600805102" r="18.905176459291134" fill="white" /><circle cx="355.0812514295011" cy="157.56574762797547" r="13.48914277578099" fill="white" /><circle cx="332.56562860106567" cy="258.7970199295396" r="28.018966578850616" fill="white" /><circle cx="229.8856310424298" cy="93.34225571042849" r="16.41908383787597" fill="white" /><circle cx="298.34445920532767" cy="182.43667810633616" r="15.030757666191077" fill="white" /><circle cx="366.49221912678377" cy="258.63738787072816" r="19.12329897355332" fill="white" /><circle cx="239.88120613725593" cy="1.2134262657826245" r="19.139342140158178" fill="white" /><circle cx="240.59452666295434" cy="168.57953078928435" r="20.145915446634767" fill="white" /><circle cx="246.50346561102307" cy="338.7616073473561" r="11.770658752682706" fill="white" /><circle cx="139.62959637828908" cy="94.76504836060538" r="22.60722592870767" fill="white" /><circle cx="105.8533092136721" cy="568.6801717417954" r="28.45354405380046" fill="white" /><circle cx="359.96169912944" cy="15.148118548070144" r="11.617667569161942" fill="white" /><circle cx="206.08842692445165" cy="573.4706204376445" r="18.78585345339281" fill="white" /><circle cx="361.46847671882506" cy="541.4937571152542" r="13.702013932550361" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Incognito: Die geheimen
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Eigenleben unseres
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Gehirns
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        David Eagleman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8d63595c-7f2b-446c-b9d6-e465f9c7b016" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8d63595c-7f2b-446c-b9d6-e465f9c7b016)" />
+  <g opacity="0.1">
+    <circle cx="195.0947543077159" cy="582.4754523096055" r="20.117232854024277" fill="white" /><circle cx="206.20651151775598" cy="593.8377139574006" r="22.39159077619812" fill="white" /><circle cx="169.3856745334355" cy="381.22331956186076" r="26.522031107047862" fill="white" /><circle cx="330.6890790296308" cy="581.7177752750474" r="10.748603660690181" fill="white" /><circle cx="148.2339709013508" cy="584.5129738153586" r="28.918386303024487" fill="white" /><circle cx="169.0902425820941" cy="539.1798355000682" r="25.128949392733595" fill="white" /><circle cx="5.490023672762678" cy="252.42345302989665" r="20.694436736651035" fill="white" /><circle cx="69.9830918766978" cy="589.9290828785709" r="14.217157089273" fill="white" /><circle cx="67.24953153422346" cy="538.2966743862789" r="24.409490738437928" fill="white" /><circle cx="26.15086089498746" cy="307.70546221662977" r="13.253809756841743" fill="white" /><circle cx="7.597288154173043" cy="354.5026107410559" r="16.351785089948443" fill="white" /><circle cx="350.67601918855667" cy="486.23689366477385" r="25.401630198933113" fill="white" /><circle cx="149.73928137281573" cy="132.93454412664684" r="15.09973561523397" fill="white" /><circle cx="66.48294096631635" cy="551.522290875272" r="23.315359164981494" fill="white" /><circle cx="8.800996210544287" cy="66.5206219124664" r="16.17817463988825" fill="white" /><circle cx="350.2193260774694" cy="461.895233246128" r="10.642407359907946" fill="white" /><circle cx="260.6485091110153" cy="494.862233978926" r="25.521191837012438" fill="white" /><circle cx="374.42121397384824" cy="304.9963237259283" r="16.330493060209538" fill="white" /><circle cx="3.8876923462482615" cy="280.89381287793816" r="18.46690917174912" fill="white" /><circle cx="31.484225321888815" cy="266.65585306901147" r="12.125090349609609" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        No-Drama Discipline
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Daniel Siegel
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

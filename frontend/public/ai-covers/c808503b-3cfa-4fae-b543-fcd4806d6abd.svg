@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c808503b-3cfa-4fae-b543-fcd4806d6abd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c808503b-3cfa-4fae-b543-fcd4806d6abd)" />
+  <g opacity="0.1">
+    <circle cx="295.9388436775919" cy="106.28441812177572" r="15.940353537101945" fill="white" /><circle cx="11.933059794962597" cy="406.68474906563614" r="10.354193883796283" fill="white" /><circle cx="235.77104805199386" cy="327.5808406044064" r="21.918588929654838" fill="white" /><circle cx="207.7328964549269" cy="7.74501241595551" r="20.614218715488278" fill="white" /><circle cx="377.3356657356679" cy="321.63019169020885" r="19.62418559431385" fill="white" /><circle cx="378.1565666309998" cy="566.2780145168099" r="18.18216662049392" fill="white" /><circle cx="394.2941854697847" cy="445.47072656947654" r="23.360876825633206" fill="white" /><circle cx="385.0810951364306" cy="572.9973550107293" r="22.17360878229593" fill="white" /><circle cx="345.01074317837765" cy="578.063227724382" r="28.909959424102954" fill="white" /><circle cx="50.400120938323134" cy="317.15307229495613" r="13.45153461434881" fill="white" /><circle cx="107.58762055128793" cy="560.4039095144501" r="23.615305475209" fill="white" /><circle cx="311.38165110408676" cy="66.50107800584526" r="15.747028762444486" fill="white" /><circle cx="270.3145967447675" cy="17.79591229590729" r="28.050170667594315" fill="white" /><circle cx="296.9074425463236" cy="542.3937137403354" r="21.70395088037009" fill="white" /><circle cx="164.19969120914186" cy="70.47056335516449" r="18.941316655470146" fill="white" /><circle cx="162.97960359154874" cy="453.7720340192466" r="18.73668855080281" fill="white" /><circle cx="346.45909495602655" cy="363.6507571336271" r="27.054921657480378" fill="white" /><circle cx="257.76471600240245" cy="551.2305439034265" r="16.849940050341992" fill="white" /><circle cx="353.5806832529715" cy="401.602300650932" r="10.832489167397148" fill="white" /><circle cx="180.53626165863045" cy="499.83949710632885" r="20.709014384624133" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Obstacle Is the Way
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ryan Holiday
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

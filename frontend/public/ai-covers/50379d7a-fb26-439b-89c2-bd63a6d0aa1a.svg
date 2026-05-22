@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-50379d7a-fb26-439b-89c2-bd63a6d0aa1a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-50379d7a-fb26-439b-89c2-bd63a6d0aa1a)" />
+  <g opacity="0.1">
+    <circle cx="261.77488419134795" cy="219.7998192070503" r="25.804303139839995" fill="white" /><circle cx="56.27988344578103" cy="280.89005470070174" r="15.886702765926596" fill="white" /><circle cx="43.76526484537937" cy="408.3487969026869" r="27.365399417421138" fill="white" /><circle cx="259.4941061803881" cy="264.36767818374585" r="20.090194567761213" fill="white" /><circle cx="355.32808648640724" cy="178.2196412617386" r="22.06126024017574" fill="white" /><circle cx="241.30298123309254" cy="227.00760685915807" r="17.198175551269845" fill="white" /><circle cx="279.4989373714741" cy="23.939888074475114" r="22.359335784732785" fill="white" /><circle cx="149.35339904880095" cy="79.98940148993161" r="23.69643646200347" fill="white" /><circle cx="248.1231726213219" cy="39.233717638568734" r="10.168110247150857" fill="white" /><circle cx="213.72941030633433" cy="253.2110382525191" r="19.398347405257784" fill="white" /><circle cx="353.8949948239211" cy="453.97226983082214" r="25.307936372659768" fill="white" /><circle cx="181.84368426568236" cy="158.84806783985707" r="19.28607286404091" fill="white" /><circle cx="238.37617292700946" cy="551.7120852733208" r="11.29027697642902" fill="white" /><circle cx="389.2117505881266" cy="37.74511632645847" r="10.182611749792818" fill="white" /><circle cx="126.20378779945302" cy="398.9767292502733" r="23.29024151792801" fill="white" /><circle cx="140.67165146132044" cy="508.46780489436736" r="17.05301963442453" fill="white" /><circle cx="136.76037413217173" cy="473.57049011528215" r="28.78983837590842" fill="white" /><circle cx="145.68230652987424" cy="164.53613663682503" r="15.703128148420852" fill="white" /><circle cx="341.1778370683729" cy="585.1581872268649" r="26.751792334113034" fill="white" /><circle cx="224.12641657751254" cy="96.13176139890054" r="11.146916531528994" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Diary of a Young Girl
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Anne Frank
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

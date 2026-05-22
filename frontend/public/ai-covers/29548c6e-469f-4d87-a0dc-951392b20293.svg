@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-29548c6e-469f-4d87-a0dc-951392b20293" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-29548c6e-469f-4d87-a0dc-951392b20293)" />
+  <g opacity="0.1">
+    <circle cx="193.21131424131872" cy="331.96788139203943" r="12.933437410108814" fill="white" /><circle cx="124.98340156372679" cy="162.74951817650748" r="12.174985570424452" fill="white" /><circle cx="388.8753247033105" cy="560.1972375628554" r="11.624600916924607" fill="white" /><circle cx="136.69784901715798" cy="4.644388602745031" r="13.046513651247905" fill="white" /><circle cx="14.134510989440763" cy="102.68569108418133" r="28.559073948618828" fill="white" /><circle cx="346.6803125557894" cy="290.4218884733037" r="29.947322247134455" fill="white" /><circle cx="184.22383989512707" cy="315.75672963197997" r="19.42059647099617" fill="white" /><circle cx="72.35726423322046" cy="511.2617648132078" r="21.88854318346591" fill="white" /><circle cx="185.8903506708331" cy="450.48259614367055" r="22.95156258198478" fill="white" /><circle cx="343.41334071650016" cy="46.554524589433385" r="17.72803942670876" fill="white" /><circle cx="260.9884184317156" cy="435.93374382102826" r="19.220140957741137" fill="white" /><circle cx="398.20257148457375" cy="122.48602415197749" r="16.253685006787666" fill="white" /><circle cx="389.9047191774152" cy="201.0298480051476" r="27.851856432845974" fill="white" /><circle cx="307.01281823677704" cy="430.877179420374" r="22.19909414236012" fill="white" /><circle cx="399.69009538151147" cy="19.64102411764972" r="11.769449422506767" fill="white" /><circle cx="137.82621751456355" cy="406.1062495706231" r="24.42541194925429" fill="white" /><circle cx="343.25756101155235" cy="38.23488597344769" r="26.559150442861707" fill="white" /><circle cx="126.03714820929235" cy="513.105179096343" r="23.41215642087615" fill="white" /><circle cx="70.43606570529946" cy="122.95572985150378" r="13.327445174945558" fill="white" /><circle cx="216.53700196947008" cy="62.17000927388827" r="13.687660089927098" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Magic of Thinking Big
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        David Schwartz
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

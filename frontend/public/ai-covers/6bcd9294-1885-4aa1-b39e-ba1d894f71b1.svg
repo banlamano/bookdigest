@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-6bcd9294-1885-4aa1-b39e-ba1d894f71b1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-6bcd9294-1885-4aa1-b39e-ba1d894f71b1)" />
+  <g opacity="0.1">
+    <circle cx="108.48198128285476" cy="175.00871042968032" r="22.66414089011768" fill="white" /><circle cx="222.9923915155378" cy="120.61916287353196" r="10.3737419195098" fill="white" /><circle cx="209.10142407324187" cy="29.490891906909944" r="12.951192078187363" fill="white" /><circle cx="160.62151484614014" cy="256.1574826730095" r="19.033082650007586" fill="white" /><circle cx="365.7677629524533" cy="201.50025834612316" r="10.804375909712146" fill="white" /><circle cx="381.62020064081753" cy="35.3800494508683" r="23.649290404913124" fill="white" /><circle cx="270.55640454212175" cy="497.24005527151144" r="25.352956629522577" fill="white" /><circle cx="204.35893878561035" cy="395.0330209249608" r="18.291609887089557" fill="white" /><circle cx="93.7339770265222" cy="272.86184887850527" r="13.785916565794105" fill="white" /><circle cx="112.3080737880363" cy="296.4686421451568" r="20.121604726323838" fill="white" /><circle cx="2.3407456580095687" cy="101.92198778073146" r="18.80657585321819" fill="white" /><circle cx="269.6069808391056" cy="544.5148376008751" r="21.71316341680523" fill="white" /><circle cx="261.0496928307058" cy="54.09165488185166" r="20.148737895109946" fill="white" /><circle cx="193.09262882971626" cy="208.10634867985917" r="27.818066545756416" fill="white" /><circle cx="107.90834312143551" cy="221.94128027355663" r="13.808896946671831" fill="white" /><circle cx="53.8225315535954" cy="282.30116965762284" r="12.609618859406686" fill="white" /><circle cx="174.14341986179465" cy="471.645750615749" r="28.13246323115051" fill="white" /><circle cx="249.01956291537962" cy="160.8841325779565" r="12.029714006969447" fill="white" /><circle cx="174.62516773710254" cy="342.0980147475937" r="24.83788553480168" fill="white" /><circle cx="313.67721051954226" cy="226.74337036106243" r="20.07343568425392" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Luzifer-Effekt: Die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Macht der Umstände und
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        die Psychologie des Bösen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Philip Zimbardo
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ace17400-e058-4007-a25f-b8a4b6ea17d6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ace17400-e058-4007-a25f-b8a4b6ea17d6)" />
+  <g opacity="0.1">
+    <circle cx="35.75595998176806" cy="215.84234190647476" r="29.309172014384746" fill="white" /><circle cx="15.900165042486325" cy="505.87264303893954" r="16.36803042585381" fill="white" /><circle cx="390.40424815583646" cy="374.47272901099893" r="11.460016820316579" fill="white" /><circle cx="120.32534605685848" cy="101.62642884929645" r="23.473400568322315" fill="white" /><circle cx="142.43864342612787" cy="31.12521006911937" r="17.451341236526815" fill="white" /><circle cx="13.034074462906142" cy="419.2084477991711" r="29.537199145129104" fill="white" /><circle cx="166.85510315468642" cy="505.4381331871962" r="11.23382257896014" fill="white" /><circle cx="296.8337725069349" cy="48.99549377008652" r="10.287777582999858" fill="white" /><circle cx="114.01268835087706" cy="119.96465710800794" r="28.758880009614348" fill="white" /><circle cx="81.06007293304067" cy="189.93241124431162" r="11.715882933927627" fill="white" /><circle cx="254.74843531186616" cy="287.80809385726195" r="13.033487788121551" fill="white" /><circle cx="131.98428309992903" cy="555.2994931835211" r="17.707581168420305" fill="white" /><circle cx="208.1949732232648" cy="493.41725401542413" r="29.649459535559515" fill="white" /><circle cx="318.4518282841801" cy="185.697090476747" r="16.070498910548103" fill="white" /><circle cx="327.50033495357115" cy="583.8165804362952" r="13.940849555093157" fill="white" /><circle cx="152.701457371427" cy="325.4646669389949" r="23.293233525501186" fill="white" /><circle cx="127.85927973330193" cy="473.77089462441086" r="25.618937873385327" fill="white" /><circle cx="360.74142066614127" cy="534.739191759034" r="11.921191461706993" fill="white" /><circle cx="173.85161294604578" cy="129.65943232008942" r="28.70776108830438" fill="white" /><circle cx="353.9421190757812" cy="136.70891885871455" r="15.989901018128212" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Iss dich jung: Die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        5-Tages-Diät für ein
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        langes und gesundes Leben
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Valter Longo
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

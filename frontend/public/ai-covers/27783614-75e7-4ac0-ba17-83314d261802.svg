@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-27783614-75e7-4ac0-ba17-83314d261802" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-27783614-75e7-4ac0-ba17-83314d261802)" />
+  <g opacity="0.1">
+    <circle cx="135.89648992899393" cy="349.9679535634781" r="19.395872912594736" fill="white" /><circle cx="153.65050123355027" cy="526.1846765618396" r="22.057099570648905" fill="white" /><circle cx="387.15832477749234" cy="479.121253436102" r="17.79793106443478" fill="white" /><circle cx="356.41852834330797" cy="27.404132992018937" r="26.479435537675062" fill="white" /><circle cx="184.04916163154502" cy="558.8194575024868" r="19.60666151077815" fill="white" /><circle cx="96.76121053632389" cy="533.3226186944714" r="27.63596117371853" fill="white" /><circle cx="4.07061589241402" cy="564.7764499878482" r="21.452318140828467" fill="white" /><circle cx="195.17193409163775" cy="34.634891354793254" r="14.184106063392845" fill="white" /><circle cx="52.91815299385352" cy="312.41945506433404" r="26.93232890368073" fill="white" /><circle cx="239.53999368915962" cy="40.216492358156785" r="16.876880679078674" fill="white" /><circle cx="322.42758412918005" cy="447.59002867378916" r="14.341192908588834" fill="white" /><circle cx="335.4729830944872" cy="595.7486716241334" r="13.424387008758025" fill="white" /><circle cx="398.59925115035423" cy="334.4505324461724" r="11.639715184768258" fill="white" /><circle cx="347.98151347416086" cy="194.4869468079661" r="18.074199958634317" fill="white" /><circle cx="139.33674926981027" cy="561.2785446631399" r="12.162954043367504" fill="white" /><circle cx="106.68004463881276" cy="225.2520739882284" r="12.181201574519964" fill="white" /><circle cx="387.80090878837245" cy="476.691781931457" r="24.253174114380407" fill="white" /><circle cx="52.99131217879922" cy="430.9267849495947" r="11.454457088078522" fill="white" /><circle cx="358.79002825913466" cy="206.71017292760087" r="21.6456790927015" fill="white" /><circle cx="235.80312003848093" cy="462.7015668631498" r="26.0884967299448" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Mein Herz in zwei Welten
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Jojo Moyes
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

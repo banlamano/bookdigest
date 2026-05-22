@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-dfa2df66-6881-4e1d-9657-61a566150e38" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-dfa2df66-6881-4e1d-9657-61a566150e38)" />
+  <g opacity="0.1">
+    <circle cx="130.03840954929697" cy="477.04588135592047" r="19.735529163679388" fill="white" /><circle cx="248.2916910194253" cy="287.14239102692875" r="26.6545920192654" fill="white" /><circle cx="341.44427574370394" cy="517.2766560102394" r="15.91099572933572" fill="white" /><circle cx="238.60702806299153" cy="555.2934586837636" r="29.336348807877563" fill="white" /><circle cx="221.6840070768622" cy="459.4497974255984" r="28.3948841934355" fill="white" /><circle cx="73.54488380806212" cy="194.45640479365088" r="11.489239771963906" fill="white" /><circle cx="171.39607300744987" cy="60.40223151919284" r="25.24647406606615" fill="white" /><circle cx="272.41432456802397" cy="432.08783859623475" r="27.05877255975735" fill="white" /><circle cx="67.93934283392554" cy="538.1555615198936" r="10.456583008621065" fill="white" /><circle cx="144.3608157574627" cy="535.3462535783658" r="22.0419850941685" fill="white" /><circle cx="196.90713887994215" cy="52.758761488838225" r="14.589718153886084" fill="white" /><circle cx="59.37619400000149" cy="385.3249112643464" r="12.731825416561724" fill="white" /><circle cx="90.10590300518983" cy="321.36272701925486" r="20.237503533627752" fill="white" /><circle cx="129.4114755043746" cy="87.17043090044186" r="28.62554931589721" fill="white" /><circle cx="324.03082926190694" cy="248.60453319906992" r="26.290374900821522" fill="white" /><circle cx="123.06890270389461" cy="150.04140388094902" r="20.018969913696797" fill="white" /><circle cx="110.43861034890926" cy="397.87834416808994" r="29.078746096707345" fill="white" /><circle cx="253.2994270175033" cy="232.67106118335593" r="29.591577608252823" fill="white" /><circle cx="202.37932652659313" cy="579.8781071320755" r="19.716682533631975" fill="white" /><circle cx="203.56359657752873" cy="447.05216306686987" r="21.267756640587777" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Anleitung zur
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Unzufriedenheit: Warum
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        weniger glücklicher macht
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Barry Schwartz
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

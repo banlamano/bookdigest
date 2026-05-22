@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-538b2264-dcdf-4dd0-b956-888b404bdc8e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-538b2264-dcdf-4dd0-b956-888b404bdc8e)" />
+  <g opacity="0.1">
+    <circle cx="156.17218280488444" cy="217.8115139583219" r="15.780011330734311" fill="white" /><circle cx="44.66915307835171" cy="99.75083003886091" r="18.036372266286595" fill="white" /><circle cx="256.4053491308729" cy="114.3368443606796" r="15.939499967174395" fill="white" /><circle cx="41.15125659749004" cy="144.30723816913874" r="14.871258974244165" fill="white" /><circle cx="205.44435991038782" cy="446.337319338867" r="12.179990177557432" fill="white" /><circle cx="268.89820277032925" cy="14.244224668818672" r="23.446657714294826" fill="white" /><circle cx="257.9404382220456" cy="527.6641779085114" r="18.858175774378694" fill="white" /><circle cx="189.8726898743528" cy="193.52655553867936" r="28.809334894923396" fill="white" /><circle cx="219.6713057859946" cy="152.07182673212967" r="13.930039389276194" fill="white" /><circle cx="349.62027919122966" cy="317.9193316475356" r="29.88431132283165" fill="white" /><circle cx="200.064133325261" cy="337.8493975824228" r="15.63356004832438" fill="white" /><circle cx="281.4392768117947" cy="550.7368390364763" r="23.359410668639146" fill="white" /><circle cx="60.21797199575718" cy="160.44557969870738" r="14.76554481318069" fill="white" /><circle cx="333.7240064736541" cy="425.0534076786175" r="28.29133878401119" fill="white" /><circle cx="120.18943197462035" cy="109.77169502234571" r="17.089775134877286" fill="white" /><circle cx="155.26428654885484" cy="69.5180755898533" r="26.624688303427646" fill="white" /><circle cx="91.343066672006" cy="78.15083113476852" r="19.867855062600935" fill="white" /><circle cx="162.479268185003" cy="127.79368288909214" r="12.404363897961446" fill="white" /><circle cx="192.43232373331765" cy="527.2887124934322" r="14.577080321305578" fill="white" /><circle cx="399.57066287030676" cy="423.4811384702365" r="25.04556785816733" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Ultra Mind Solution
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Mark Hyman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0040efd0-2c85-414b-aa14-20f9d47afd4c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0040efd0-2c85-414b-aa14-20f9d47afd4c)" />
+  <g opacity="0.1">
+    <circle cx="145.8846440884006" cy="246.90143339029777" r="12.053227855853274" fill="white" /><circle cx="168.0244014781112" cy="175.30876855883636" r="15.185707538836963" fill="white" /><circle cx="250.82019123549242" cy="572.1108262419856" r="24.993936824163377" fill="white" /><circle cx="245.54418750354756" cy="199.00527916770938" r="22.286718678956433" fill="white" /><circle cx="324.2577963362531" cy="21.37432859169246" r="21.808822916337625" fill="white" /><circle cx="42.322088253971216" cy="36.61669595630039" r="28.796703555291785" fill="white" /><circle cx="110.88365203603985" cy="466.4740879304282" r="10.298451205087867" fill="white" /><circle cx="101.3703592517928" cy="100.39132215777326" r="11.582037196125754" fill="white" /><circle cx="150.59387068340544" cy="211.5478406818628" r="15.048733900631968" fill="white" /><circle cx="248.88017281596393" cy="47.4963995386459" r="26.49512134638537" fill="white" /><circle cx="212.32396373789618" cy="124.59657543670639" r="19.04900253844753" fill="white" /><circle cx="18.060746315816" cy="175.80200676895564" r="22.763991094415903" fill="white" /><circle cx="228.9712657989108" cy="488.6670742876566" r="16.82338496332254" fill="white" /><circle cx="102.64762762830597" cy="313.89173801246903" r="20.236845680807697" fill="white" /><circle cx="118.96707020265018" cy="340.0956178612537" r="13.435773763418906" fill="white" /><circle cx="207.43595327059646" cy="191.8385264132886" r="20.58970289856287" fill="white" /><circle cx="349.6779936590492" cy="222.47293181944204" r="13.230439801446575" fill="white" /><circle cx="120.72392607890654" cy="305.5053877450246" r="10.328926548228523" fill="white" /><circle cx="8.977580782193417" cy="184.34910602180187" r="23.33959074364369" fill="white" /><circle cx="45.37148346509676" cy="487.5690511500485" r="24.945872894055498" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der 5-Uhr-Club: Ihr
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        persönliches Manifest für
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Produktivität, Glück und
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robin Sharma
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

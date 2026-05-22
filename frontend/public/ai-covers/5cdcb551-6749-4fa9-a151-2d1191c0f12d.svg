@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5cdcb551-6749-4fa9-a151-2d1191c0f12d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5cdcb551-6749-4fa9-a151-2d1191c0f12d)" />
+  <g opacity="0.1">
+    <circle cx="12.673043932435357" cy="79.95184450867458" r="27.5000376440785" fill="white" /><circle cx="81.45994958378205" cy="76.506539953642" r="20.342933096884995" fill="white" /><circle cx="123.63714797526018" cy="379.8376616065734" r="20.670195572483507" fill="white" /><circle cx="126.75793089760971" cy="510.67307004934264" r="20.06586559191571" fill="white" /><circle cx="81.39693386398346" cy="446.22144997356105" r="12.965814318067501" fill="white" /><circle cx="351.2077561234164" cy="149.02410357737915" r="14.733330940608393" fill="white" /><circle cx="109.58482122599436" cy="347.44333733075837" r="26.96807742631352" fill="white" /><circle cx="122.95292837385841" cy="26.524873678595572" r="28.79930903436889" fill="white" /><circle cx="124.65528030248545" cy="364.33926636875316" r="17.510320437929494" fill="white" /><circle cx="113.86159426559162" cy="458.5663976193148" r="16.103462627186033" fill="white" /><circle cx="1.6782068958876017" cy="378.29796776046913" r="27.896073511047682" fill="white" /><circle cx="193.6069606929356" cy="56.75028752844153" r="26.551064700052503" fill="white" /><circle cx="79.68215813405197" cy="168.34785834287482" r="23.064682055899027" fill="white" /><circle cx="269.5238256018973" cy="325.7353668316641" r="11.98047220582261" fill="white" /><circle cx="388.03794011112836" cy="254.15951389134526" r="19.10294026762415" fill="white" /><circle cx="164.7715303118115" cy="280.0173580289783" r="16.14501074576787" fill="white" /><circle cx="270.7710066036487" cy="304.46343777046206" r="19.17508924250358" fill="white" /><circle cx="394.61341055167674" cy="68.04825653101977" r="26.97825007926405" fill="white" /><circle cx="66.29366543426332" cy="399.6433747191128" r="13.247837214620457" fill="white" /><circle cx="240.19055863147494" cy="436.26795095995556" r="29.69295471488358" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Crossing the Chasm
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Geoffrey Moore
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

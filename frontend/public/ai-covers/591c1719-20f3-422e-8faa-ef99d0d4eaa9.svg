@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-591c1719-20f3-422e-8faa-ef99d0d4eaa9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-591c1719-20f3-422e-8faa-ef99d0d4eaa9)" />
+  <g opacity="0.1">
+    <circle cx="259.9874490475526" cy="270.40622171634845" r="10.264842122286549" fill="white" /><circle cx="399.67973529709104" cy="475.12122712771276" r="16.693354554617663" fill="white" /><circle cx="357.5806371412391" cy="116.57120011467599" r="21.968708749258184" fill="white" /><circle cx="199.4590206367955" cy="411.9202341876087" r="15.00248089839147" fill="white" /><circle cx="243.86689988291238" cy="414.4590836566663" r="10.45148649258931" fill="white" /><circle cx="63.33845213198419" cy="494.6323151523908" r="22.923041273900758" fill="white" /><circle cx="41.98701022991287" cy="370.7858656143371" r="18.327119187255942" fill="white" /><circle cx="111.49195209096857" cy="143.25986378599006" r="21.45845630141476" fill="white" /><circle cx="220.22009552772" cy="222.4193038628361" r="22.19439102337663" fill="white" /><circle cx="307.39617464942427" cy="241.58164851653453" r="26.789706845309144" fill="white" /><circle cx="362.8074336401736" cy="151.06283389486893" r="25.958167053964402" fill="white" /><circle cx="42.704228942787914" cy="468.1852387728197" r="17.667669641813863" fill="white" /><circle cx="35.275254296785796" cy="250.9984820050667" r="18.2176758783802" fill="white" /><circle cx="217.22653084320882" cy="465.17315925548075" r="11.962459873230598" fill="white" /><circle cx="96.7163507838693" cy="372.09032016689775" r="14.062644458755095" fill="white" /><circle cx="107.40313203927742" cy="98.9841952531806" r="19.829528511837964" fill="white" /><circle cx="292.96631451389493" cy="322.65152754777984" r="29.05776203747785" fill="white" /><circle cx="249.44180957893926" cy="188.76294406059444" r="11.279968910937093" fill="white" /><circle cx="250.1087607773583" cy="417.15109391924057" r="29.98820049879367" fill="white" /><circle cx="189.70690803607968" cy="25.90166714251405" r="14.093316253290705" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        168 Hours
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Laura Vanderkam
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

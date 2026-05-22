@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-69dc4367-b122-4a9d-b6e1-dd35d30e1857" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-69dc4367-b122-4a9d-b6e1-dd35d30e1857)" />
+  <g opacity="0.1">
+    <circle cx="150.7213723210708" cy="117.98118235184423" r="26.288093350466735" fill="white" /><circle cx="251.42833045690148" cy="368.5751387378284" r="25.99031434413267" fill="white" /><circle cx="116.85925035646045" cy="348.4498553335732" r="23.19214693017186" fill="white" /><circle cx="388.40521665139056" cy="373.61475055893527" r="20.490240768800454" fill="white" /><circle cx="349.8693359581051" cy="109.34425342233389" r="24.341321651446215" fill="white" /><circle cx="239.77651600897283" cy="566.3335470336779" r="19.187603269802167" fill="white" /><circle cx="2.780986947370101" cy="379.55888519602485" r="24.150362211872892" fill="white" /><circle cx="34.267616458583475" cy="5.333850546542163" r="27.390210118056615" fill="white" /><circle cx="123.51216719062793" cy="554.0892255114119" r="18.593887811486013" fill="white" /><circle cx="148.36797055175091" cy="17.23710662138327" r="20.085878006323227" fill="white" /><circle cx="65.81190458781383" cy="236.9641403056945" r="19.647636902266925" fill="white" /><circle cx="264.11470015241235" cy="361.65771118305025" r="17.15849497263813" fill="white" /><circle cx="305.2348141962814" cy="30.240982431182406" r="28.70004922975663" fill="white" /><circle cx="385.09426523152297" cy="339.23431902612356" r="10.837548789022353" fill="white" /><circle cx="229.97555903451382" cy="96.11203835991347" r="19.652830973535334" fill="white" /><circle cx="364.3272272579816" cy="385.2415476880222" r="16.97381992089726" fill="white" /><circle cx="26.23824735044029" cy="44.45016556207768" r="26.332964479884396" fill="white" /><circle cx="70.67713416409735" cy="99.80362689950553" r="18.6035261448162" fill="white" /><circle cx="353.1081507507237" cy="38.197204349854005" r="19.22301418834133" fill="white" /><circle cx="298.32686645400696" cy="584.3001504458691" r="15.60543775671963" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Contagious
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jonah Berger
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

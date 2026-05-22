@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-908215f1-9137-4c28-aafb-d1fdf40d04a3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-908215f1-9137-4c28-aafb-d1fdf40d04a3)" />
+  <g opacity="0.1">
+    <circle cx="62.12841133667322" cy="186.19427342048763" r="20.967416510113253" fill="white" /><circle cx="202.71211912576587" cy="360.5770524667377" r="15.468572057856846" fill="white" /><circle cx="139.50679403455578" cy="45.057467992776346" r="19.655774104526" fill="white" /><circle cx="128.4805883850091" cy="21.667966417836748" r="28.32666324044465" fill="white" /><circle cx="359.43336591851323" cy="230.37081477521502" r="22.829420868802497" fill="white" /><circle cx="305.67336191613066" cy="195.06842177552747" r="11.598023222141647" fill="white" /><circle cx="197.95824177532123" cy="555.329741782741" r="28.017743722354076" fill="white" /><circle cx="238.09135298997094" cy="500.96731209051137" r="26.850465782395588" fill="white" /><circle cx="335.20383026238096" cy="357.02738281913065" r="15.295705917378342" fill="white" /><circle cx="201.57839555678905" cy="45.60648102718523" r="23.754446827558755" fill="white" /><circle cx="157.18230155984534" cy="30.096090655985776" r="15.362985552444322" fill="white" /><circle cx="136.64851766552596" cy="419.2440483330451" r="29.927931078981043" fill="white" /><circle cx="220.72767032612487" cy="83.6736431045215" r="27.625146651885586" fill="white" /><circle cx="132.14848464859935" cy="173.27341946883413" r="18.112555692571355" fill="white" /><circle cx="276.2687979199575" cy="127.25693322509382" r="21.35768197377297" fill="white" /><circle cx="254.33249584058993" cy="369.749427885926" r="23.652774261095118" fill="white" /><circle cx="119.43747987074049" cy="109.36866740550093" r="26.264108894076998" fill="white" /><circle cx="390.52453179044596" cy="340.79015645727435" r="15.536652042878991" fill="white" /><circle cx="175.44420509471954" cy="356.6576730636616" r="11.6439223050466" fill="white" /><circle cx="8.291508333397601" cy="326.42488042214944" r="24.211879334217976" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        1776
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        David McCullough
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HISTORY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-913066c2-3de2-4a1f-8bb6-ef47a937b2df" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-913066c2-3de2-4a1f-8bb6-ef47a937b2df)" />
+  <g opacity="0.1">
+    <circle cx="244.1420575479687" cy="412.4309561752036" r="10.795691549683816" fill="white" /><circle cx="393.9781356501649" cy="301.99402314412856" r="21.907343609106217" fill="white" /><circle cx="86.02291042754193" cy="35.994359920568144" r="27.299816358368073" fill="white" /><circle cx="105.67610590520226" cy="493.79048100526444" r="24.971156555106308" fill="white" /><circle cx="71.6220855324238" cy="426.6614958317209" r="16.274497020507354" fill="white" /><circle cx="168.40374723370718" cy="225.5249518009403" r="10.71739914655386" fill="white" /><circle cx="265.70533571834216" cy="468.60611871666833" r="22.479941716995086" fill="white" /><circle cx="152.58041506815334" cy="106.93994715435255" r="11.96673710986196" fill="white" /><circle cx="298.4494946065932" cy="302.6016821689046" r="18.948221919865336" fill="white" /><circle cx="312.5744453820046" cy="158.38072106836202" r="14.577643135820498" fill="white" /><circle cx="371.13683606463377" cy="93.13644933674586" r="20.25457450631184" fill="white" /><circle cx="35.63192825783483" cy="542.1839796538612" r="14.992513195541463" fill="white" /><circle cx="104.12276276661059" cy="504.16815271965146" r="22.425119976580078" fill="white" /><circle cx="233.95051316797102" cy="62.20586753301633" r="20.576665478915867" fill="white" /><circle cx="365.36366720571334" cy="219.33118341295307" r="13.026794372111626" fill="white" /><circle cx="387.94362608055576" cy="275.09627369999885" r="17.868082315001327" fill="white" /><circle cx="228.191114196049" cy="311.2545094763161" r="25.131594756699236" fill="white" /><circle cx="284.5653033796685" cy="192.11398240570904" r="27.74524693184592" fill="white" /><circle cx="42.00089726758809" cy="118.316802678499" r="11.816156503229958" fill="white" /><circle cx="383.7872894217552" cy="355.0271601938406" r="19.76355103880879" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Mann, der seine Frau
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        mit einem Hut
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        verwechselte
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Oliver Sacks
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

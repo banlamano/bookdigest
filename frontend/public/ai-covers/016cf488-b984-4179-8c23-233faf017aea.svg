@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-016cf488-b984-4179-8c23-233faf017aea" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-016cf488-b984-4179-8c23-233faf017aea)" />
+  <g opacity="0.1">
+    <circle cx="344.6432533310678" cy="530.1433049124772" r="16.07405769744097" fill="white" /><circle cx="369.60612591547755" cy="79.35336853653503" r="18.120524088406917" fill="white" /><circle cx="158.06313213244923" cy="165.11244308230852" r="28.268637159381584" fill="white" /><circle cx="365.8665786524764" cy="545.35195251204" r="16.256707484011272" fill="white" /><circle cx="18.963609002549653" cy="432.50855638000917" r="28.915165129251978" fill="white" /><circle cx="115.75598726126995" cy="589.0355059933346" r="27.127889194376678" fill="white" /><circle cx="277.9663357016757" cy="91.3174365204988" r="23.9067200298286" fill="white" /><circle cx="391.34528311082687" cy="275.67252458400833" r="13.229576710077993" fill="white" /><circle cx="115.79471059633151" cy="484.1100939792293" r="11.924263501690888" fill="white" /><circle cx="30.596912972586576" cy="384.4217551470668" r="15.323600654587723" fill="white" /><circle cx="2.0736160590145936" cy="463.83336798305214" r="19.35146736940706" fill="white" /><circle cx="38.70218592979886" cy="583.7579432145131" r="24.20327026484955" fill="white" /><circle cx="173.65389540790233" cy="582.69668587639" r="19.17782279447581" fill="white" /><circle cx="16.06152199684736" cy="172.59294128481835" r="28.5480515524304" fill="white" /><circle cx="210.74820201115233" cy="68.27898956916867" r="16.512901267130196" fill="white" /><circle cx="111.70973945571139" cy="361.4532390910907" r="16.94772606398864" fill="white" /><circle cx="307.1135055935923" cy="382.04635960595454" r="16.969109165677292" fill="white" /><circle cx="329.6090678825674" cy="552.4702462860943" r="18.287572470491828" fill="white" /><circle cx="330.5148754581808" cy="320.4176324826374" r="26.70719041414861" fill="white" /><circle cx="84.30449526669341" cy="193.47243531621822" r="23.37248515639395" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Sprint: So lösen Sie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        große Probleme und testen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        neue Ideen in nur fünf
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Jake Knapp
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

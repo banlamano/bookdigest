@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c2b608c2-7102-4214-8f62-924e98ecc699" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c2b608c2-7102-4214-8f62-924e98ecc699)" />
+  <g opacity="0.1">
+    <circle cx="91.80280438468817" cy="161.91565433893982" r="14.113412606077704" fill="white" /><circle cx="77.59414913192329" cy="16.63906632610943" r="15.414730198628948" fill="white" /><circle cx="241.31268712742556" cy="292.4789886798592" r="19.948812964216316" fill="white" /><circle cx="107.81556490275412" cy="520.5202740541549" r="28.21105109584154" fill="white" /><circle cx="186.34730583032155" cy="585.8717254271295" r="17.37185434349677" fill="white" /><circle cx="165.18315338985076" cy="570.7716298547056" r="10.427986674867505" fill="white" /><circle cx="349.0676480536979" cy="158.2317066242072" r="25.93070826543477" fill="white" /><circle cx="249.58048310482383" cy="436.20457155045915" r="24.752427576558524" fill="white" /><circle cx="312.0567205352647" cy="42.82889919742505" r="22.13387800967911" fill="white" /><circle cx="156.0328920913355" cy="253.40477802983045" r="12.697997514993824" fill="white" /><circle cx="60.40832553929043" cy="109.58913570890203" r="26.776215721294395" fill="white" /><circle cx="165.36124081682928" cy="174.63183121289282" r="20.527085418927445" fill="white" /><circle cx="152.79439351645513" cy="575.360732350499" r="29.1740903430235" fill="white" /><circle cx="221.5996529470197" cy="31.507834923871613" r="23.216519742572068" fill="white" /><circle cx="33.66802667070448" cy="256.7581999587962" r="24.72535316355011" fill="white" /><circle cx="102.77269188587144" cy="162.26668744556497" r="14.218044737360225" fill="white" /><circle cx="310.6398921528468" cy="326.16559046479523" r="26.58109569784052" fill="white" /><circle cx="6.674020609542541" cy="53.04377144308632" r="24.75441465708756" fill="white" /><circle cx="276.65071998830626" cy="107.90656615220354" r="19.916484075735102" fill="white" /><circle cx="220.9294254899996" cy="566.8462521354979" r="16.66209498397813" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die 5-Sekunden-Regel: Wie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Sie Ihre Angst
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        überwinden, mutige
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Mel Robbins
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

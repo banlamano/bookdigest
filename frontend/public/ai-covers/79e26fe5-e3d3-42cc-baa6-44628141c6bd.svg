@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-79e26fe5-e3d3-42cc-baa6-44628141c6bd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-79e26fe5-e3d3-42cc-baa6-44628141c6bd)" />
+  <g opacity="0.1">
+    <circle cx="122.39935112119102" cy="274.1135485780019" r="28.59637220076825" fill="white" /><circle cx="178.04989424760544" cy="6.742330576994848" r="22.340736229885852" fill="white" /><circle cx="292.305333171268" cy="186.8894871354176" r="26.721730554986692" fill="white" /><circle cx="255.97869053550554" cy="25.241482012791174" r="17.59426064913179" fill="white" /><circle cx="302.99332926192005" cy="271.77692591322074" r="21.208966350203525" fill="white" /><circle cx="386.8011018274151" cy="598.6802480013288" r="20.11791118773491" fill="white" /><circle cx="380.626227977667" cy="51.645640676815404" r="26.419302390559892" fill="white" /><circle cx="232.08208234396844" cy="439.4050592120624" r="14.791481668590635" fill="white" /><circle cx="107.69604495921286" cy="231.30799095243907" r="26.50511969921374" fill="white" /><circle cx="212.92396666819792" cy="86.36473413785708" r="13.725982934019186" fill="white" /><circle cx="296.7203957135756" cy="68.23136041675939" r="25.320726380473495" fill="white" /><circle cx="335.71052846739195" cy="273.3656215630502" r="10.23023278024037" fill="white" /><circle cx="267.4141819513497" cy="33.0909244120823" r="17.44540447798522" fill="white" /><circle cx="40.542806802706586" cy="499.2506916832742" r="16.456562563155153" fill="white" /><circle cx="308.4399824504923" cy="411.5201153806542" r="18.056402336123334" fill="white" /><circle cx="169.01753630987025" cy="102.63219801574577" r="16.94384365343649" fill="white" /><circle cx="101.59469585543546" cy="317.92900215648183" r="29.86198001165723" fill="white" /><circle cx="31.579944057640972" cy="293.9619248868291" r="19.202192095835855" fill="white" /><circle cx="282.8484411585183" cy="586.1171171647278" r="13.821190595594468" fill="white" /><circle cx="250.35450062762598" cy="81.81350442520048" r="20.288567555979682" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Bogleheads&apos; Leitfaden zum
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Investieren
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Taylor Larimore
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

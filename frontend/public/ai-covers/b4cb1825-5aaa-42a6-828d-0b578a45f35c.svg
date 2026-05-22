@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b4cb1825-5aaa-42a6-828d-0b578a45f35c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b4cb1825-5aaa-42a6-828d-0b578a45f35c)" />
+  <g opacity="0.1">
+    <circle cx="162.67235433564588" cy="24.20361364127448" r="25.693706671536553" fill="white" /><circle cx="15.953530469595645" cy="507.6896025672096" r="24.772647467890195" fill="white" /><circle cx="295.66363556335114" cy="465.37569350539417" r="10.031031331290468" fill="white" /><circle cx="60.75147987223715" cy="415.83063079155227" r="14.5496098484063" fill="white" /><circle cx="120.15403652453176" cy="295.0487883454076" r="29.723057276046433" fill="white" /><circle cx="243.33167563638455" cy="104.86752710593366" r="26.59368130739806" fill="white" /><circle cx="246.42803174119976" cy="342.00617156128646" r="10.161919726830238" fill="white" /><circle cx="235.7585916501999" cy="183.30065163891044" r="10.98478991820122" fill="white" /><circle cx="116.65988117896218" cy="55.49893275457718" r="11.855469446321454" fill="white" /><circle cx="357.6068827327441" cy="347.74399304390676" r="26.133725028571476" fill="white" /><circle cx="1.4336277198490954" cy="122.10059010633513" r="21.84842675710315" fill="white" /><circle cx="276.2299208662606" cy="466.2375841896554" r="12.501819935927871" fill="white" /><circle cx="290.5494390255873" cy="481.1594961414859" r="11.024542987795275" fill="white" /><circle cx="113.45465346986252" cy="414.62287606701483" r="29.96204860480914" fill="white" /><circle cx="91.34180342165479" cy="567.3945821474169" r="10.00534005881336" fill="white" /><circle cx="142.22157765329277" cy="117.5272043407299" r="26.042040926047935" fill="white" /><circle cx="365.98105827123453" cy="504.78930027681366" r="19.49810568975861" fill="white" /><circle cx="103.17253711730766" cy="415.1915460897397" r="20.174840550122262" fill="white" /><circle cx="344.3706481693014" cy="202.07119223666524" r="19.501170998522223" fill="white" /><circle cx="332.3724260765112" cy="585.8718632218715" r="22.77451648190192" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Productivity Project
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Chris Bailey
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

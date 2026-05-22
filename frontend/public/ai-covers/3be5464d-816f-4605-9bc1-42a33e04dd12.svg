@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-3be5464d-816f-4605-9bc1-42a33e04dd12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-3be5464d-816f-4605-9bc1-42a33e04dd12)" />
+  <g opacity="0.1">
+    <circle cx="216.15164341404548" cy="216.7929759085335" r="16.133460036205605" fill="white" /><circle cx="95.10289097683247" cy="580.6564466685583" r="23.307186078385783" fill="white" /><circle cx="171.2760061885247" cy="412.76153097914386" r="29.59430492773154" fill="white" /><circle cx="113.98415605145243" cy="366.49605139695507" r="25.466768903057474" fill="white" /><circle cx="87.33641770938974" cy="418.9458313013666" r="27.889090495865236" fill="white" /><circle cx="21.439235565980574" cy="24.41431670229859" r="18.540183105590174" fill="white" /><circle cx="251.43832113925865" cy="75.93311756898993" r="28.088751798757816" fill="white" /><circle cx="87.37811744265179" cy="587.622654493256" r="15.176252267191648" fill="white" /><circle cx="342.64227816840355" cy="393.8936370479028" r="13.352669120615362" fill="white" /><circle cx="132.5082224181245" cy="76.68194118581351" r="27.472218029339746" fill="white" /><circle cx="122.99025983485996" cy="108.47809892733962" r="17.288060763084736" fill="white" /><circle cx="30.35623439108779" cy="61.90376252967986" r="27.856964893496354" fill="white" /><circle cx="37.4231772578693" cy="251.12354241691952" r="27.186607487207063" fill="white" /><circle cx="288.2241265255635" cy="52.67561393201146" r="14.629198511232007" fill="white" /><circle cx="379.0496289133754" cy="296.0453307808017" r="10.546940674795412" fill="white" /><circle cx="5.638574584606149" cy="492.976129465859" r="19.351245523419145" fill="white" /><circle cx="201.4383861911093" cy="44.88536543140036" r="28.578611593808688" fill="white" /><circle cx="40.44866097078086" cy="38.57723893962475" r="17.666836787976493" fill="white" /><circle cx="217.31929653521962" cy="93.75656281178568" r="25.70359328837997" fill="white" /><circle cx="236.60037339274433" cy="12.952734880628935" r="13.136874984955163" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Happiness Project
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Gretchen Rubin
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

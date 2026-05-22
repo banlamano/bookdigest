@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b22de30e-dc72-4781-9437-084fa543718d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b22de30e-dc72-4781-9437-084fa543718d)" />
+  <g opacity="0.1">
+    <circle cx="40.30832695857826" cy="267.7053045657577" r="24.369954728602075" fill="white" /><circle cx="272.1222601824407" cy="22.3803565729505" r="13.360415814938767" fill="white" /><circle cx="315.2771434346096" cy="23.745339614315085" r="27.97318255443226" fill="white" /><circle cx="73.43248181296698" cy="406.1553524056142" r="19.603292880111" fill="white" /><circle cx="63.67669094346704" cy="226.68580037951978" r="19.655297286179497" fill="white" /><circle cx="114.13036922843722" cy="303.6875509828646" r="17.46032617885284" fill="white" /><circle cx="275.8352962144669" cy="213.98675722633683" r="16.786043020879507" fill="white" /><circle cx="201.00610502222432" cy="534.2012793523071" r="24.662589662757362" fill="white" /><circle cx="342.0642619317585" cy="210.41638045866895" r="19.030318117950326" fill="white" /><circle cx="372.1670039917546" cy="262.3377761825398" r="19.94826077103957" fill="white" /><circle cx="67.58619471904743" cy="234.7254887761007" r="21.131104795674087" fill="white" /><circle cx="151.24279780268864" cy="363.06370171263205" r="16.28180662446173" fill="white" /><circle cx="11.200180215682387" cy="107.89886525576667" r="13.09631122754779" fill="white" /><circle cx="223.27191965617666" cy="398.504305796332" r="18.969209996787413" fill="white" /><circle cx="83.67094644766846" cy="203.34942830002788" r="12.576256428959994" fill="white" /><circle cx="239.13635894927103" cy="12.100463228215052" r="11.691747992386416" fill="white" /><circle cx="351.71475142037076" cy="248.98550171001398" r="10.103560783325953" fill="white" /><circle cx="196.09585235079888" cy="208.1221919847892" r="15.628090922476197" fill="white" /><circle cx="243.09232445842198" cy="271.66690541402284" r="15.664178440253977" fill="white" /><circle cx="52.77100106412025" cy="97.35447787084593" r="15.45493198198642" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das soziale Tier: Wie die
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Liebe unser Leben formt
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        David Brooks
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

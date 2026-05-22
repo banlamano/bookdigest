@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f05695f5-a205-48c2-849f-07107b5fadbb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f05695f5-a205-48c2-849f-07107b5fadbb)" />
+  <g opacity="0.1">
+    <circle cx="305.46728832652946" cy="132.39814819060544" r="23.875783184739298" fill="white" /><circle cx="212.18691136287714" cy="192.83283169094693" r="17.958649846996963" fill="white" /><circle cx="349.84588185197845" cy="363.81963221661454" r="14.089289759707984" fill="white" /><circle cx="314.855928518727" cy="407.1990476223206" r="19.77466845072064" fill="white" /><circle cx="68.71838483195107" cy="8.174252586650589" r="19.493833342693527" fill="white" /><circle cx="53.810469906465656" cy="193.01605495223814" r="15.041664099642382" fill="white" /><circle cx="23.096709717461827" cy="582.6051746020912" r="22.662180255255596" fill="white" /><circle cx="137.569904801929" cy="422.92716309880444" r="22.91112014306323" fill="white" /><circle cx="296.51363733357783" cy="234.21131244315907" r="18.16044738860424" fill="white" /><circle cx="290.1216362077183" cy="587.1910693078204" r="25.829447598394715" fill="white" /><circle cx="112.91639661732104" cy="529.8242839541488" r="15.07646302401795" fill="white" /><circle cx="322.82764546705675" cy="163.09631800467739" r="18.240375243482433" fill="white" /><circle cx="150.94529622478672" cy="331.83964615455494" r="14.104625820369067" fill="white" /><circle cx="9.169470659785617" cy="437.05126773273736" r="19.8577266572119" fill="white" /><circle cx="158.28517099832945" cy="37.832382489789815" r="24.76553389419542" fill="white" /><circle cx="360.8346123630762" cy="183.53040787494638" r="13.288868691085721" fill="white" /><circle cx="355.6949391871058" cy="88.61660411076515" r="19.520038959504486" fill="white" /><circle cx="247.49492452371896" cy="466.07666948398753" r="27.151871949426532" fill="white" /><circle cx="67.38616050553135" cy="346.0129299314471" r="15.224971718859198" fill="white" /><circle cx="324.1416510571518" cy="584.7447006783192" r="11.241131368297433" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Automatic Millionaire
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        David Bach
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

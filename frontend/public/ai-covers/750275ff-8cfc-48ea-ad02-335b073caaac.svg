@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-750275ff-8cfc-48ea-ad02-335b073caaac" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-750275ff-8cfc-48ea-ad02-335b073caaac)" />
+  <g opacity="0.1">
+    <circle cx="33.41571420281224" cy="127.5282751018888" r="28.32782694673934" fill="white" /><circle cx="312.6557389099872" cy="400.50112243090086" r="16.213989681084826" fill="white" /><circle cx="164.90519286673177" cy="196.68277220372383" r="23.863028391036174" fill="white" /><circle cx="105.31967319456572" cy="350.5552342674242" r="18.621744445325934" fill="white" /><circle cx="159.93455007087923" cy="531.247180699888" r="26.322265454708717" fill="white" /><circle cx="124.65813113481818" cy="223.74570975971577" r="20.985311532190288" fill="white" /><circle cx="50.80003503912431" cy="354.67259156469026" r="12.746212269692904" fill="white" /><circle cx="213.8437272150877" cy="70.58184460897532" r="20.149486280601838" fill="white" /><circle cx="355.07924495385737" cy="45.94462696513237" r="10.479454910133315" fill="white" /><circle cx="383.0391825383062" cy="348.9803842891861" r="14.458022944778786" fill="white" /><circle cx="172.96356023868228" cy="144.37032329814267" r="26.025823634483622" fill="white" /><circle cx="217.37472930010836" cy="294.734876229321" r="18.331750896587206" fill="white" /><circle cx="47.21541578355457" cy="99.69852215788752" r="19.089294084466882" fill="white" /><circle cx="43.74624586288793" cy="188.59929437226543" r="20.480548866398284" fill="white" /><circle cx="383.2445210021225" cy="497.7327814070056" r="13.252337060191" fill="white" /><circle cx="79.19649171162804" cy="323.32395845735584" r="26.88794705515277" fill="white" /><circle cx="136.06186039814133" cy="297.9268983396848" r="14.643266381716247" fill="white" /><circle cx="310.01317540225546" cy="159.5061580756104" r="22.024157303908307" fill="white" /><circle cx="386.21331058370674" cy="43.123518481998666" r="21.427169954984446" fill="white" /><circle cx="240.9737158769135" cy="297.34149909367676" r="26.896961300052567" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Hard Thing About Hard
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Things
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ben Horowitz
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

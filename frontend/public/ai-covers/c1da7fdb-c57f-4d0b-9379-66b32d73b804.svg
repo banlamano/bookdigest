@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c1da7fdb-c57f-4d0b-9379-66b32d73b804" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c1da7fdb-c57f-4d0b-9379-66b32d73b804)" />
+  <g opacity="0.1">
+    <circle cx="370.8756024327636" cy="12.230090326614441" r="22.607897008215687" fill="white" /><circle cx="83.8209900912195" cy="305.0050799454536" r="15.324802283998768" fill="white" /><circle cx="377.25797732959643" cy="531.8658358519729" r="10.331804972496329" fill="white" /><circle cx="173.15108925380676" cy="588.1946012649796" r="17.5949572498564" fill="white" /><circle cx="168.5734242455135" cy="252.91710232574638" r="14.59288413416932" fill="white" /><circle cx="190.6872829732506" cy="85.24470756213664" r="21.944858494100032" fill="white" /><circle cx="2.000701053118137" cy="546.00966759071" r="17.621411161843582" fill="white" /><circle cx="360.6699674735226" cy="449.5306649940268" r="28.919760391181534" fill="white" /><circle cx="52.90720094676313" cy="71.08932518674702" r="21.320809567135065" fill="white" /><circle cx="310.7834473909724" cy="494.2233464307257" r="15.962759673404838" fill="white" /><circle cx="332.9301498128728" cy="344.53053802514245" r="22.588674787479107" fill="white" /><circle cx="118.69990679747082" cy="550.2313614141184" r="25.16065689946495" fill="white" /><circle cx="11.199817043549265" cy="23.39635851030364" r="19.470177813440763" fill="white" /><circle cx="329.74136541927885" cy="440.6734290236358" r="22.09894409230389" fill="white" /><circle cx="39.68816990821704" cy="336.76200250534265" r="11.95021284976409" fill="white" /><circle cx="194.67053037336504" cy="131.73661427611177" r="14.96415014529074" fill="white" /><circle cx="280.8164455049932" cy="455.78858655620934" r="25.228325605154147" fill="white" /><circle cx="256.3360520830906" cy="529.1249891166806" r="20.803827787942595" fill="white" /><circle cx="40.348169645510445" cy="467.36085404189436" r="29.40680540002055" fill="white" /><circle cx="351.5981610905922" cy="590.5954517145633" r="22.351411626442" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        I Will Teach You to Be
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Rich
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Ramit Sethi
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

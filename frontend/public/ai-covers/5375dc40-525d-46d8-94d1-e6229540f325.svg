@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5375dc40-525d-46d8-94d1-e6229540f325" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5375dc40-525d-46d8-94d1-e6229540f325)" />
+  <g opacity="0.1">
+    <circle cx="203.56907344397928" cy="433.1937683315015" r="11.971183155246672" fill="white" /><circle cx="60.34748692792968" cy="477.4080958455761" r="10.562293325641516" fill="white" /><circle cx="136.88576726130827" cy="520.6001442056095" r="28.852001361458147" fill="white" /><circle cx="33.64440106746556" cy="26.703138547636772" r="14.885535541838893" fill="white" /><circle cx="129.2186452770058" cy="441.45153622561315" r="19.15779258886218" fill="white" /><circle cx="285.3471994379412" cy="293.6299857501408" r="19.947649729561064" fill="white" /><circle cx="139.5626715018798" cy="222.03393971311507" r="23.190216265803226" fill="white" /><circle cx="300.0687223644856" cy="189.06549600531167" r="22.849896446404927" fill="white" /><circle cx="351.09281919649914" cy="60.07228123291941" r="26.948316412824674" fill="white" /><circle cx="246.07593345878303" cy="26.7852049909856" r="15.261647303474676" fill="white" /><circle cx="276.4068590147383" cy="544.4639045599229" r="24.25047381593152" fill="white" /><circle cx="252.78530118698987" cy="349.3375189522404" r="24.06216032083985" fill="white" /><circle cx="334.3445753744468" cy="478.6088465316874" r="19.11318404053457" fill="white" /><circle cx="140.06304167086253" cy="526.2365200122534" r="17.33543370617571" fill="white" /><circle cx="69.27426181940697" cy="151.78164433306313" r="27.708567513478503" fill="white" /><circle cx="38.783537360674856" cy="52.54489818698516" r="17.985209008218014" fill="white" /><circle cx="66.22359049254536" cy="339.5295997730073" r="21.595521409320234" fill="white" /><circle cx="116.11081641022172" cy="160.76278240544306" r="19.432481437845613" fill="white" /><circle cx="126.09960671977953" cy="345.3004168423603" r="20.924082474821674" fill="white" /><circle cx="17.791751751086693" cy="327.19195201356814" r="20.146586905211795" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Leader, der keinen
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Titel hatte: Eine
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        zeitlose Geschichte über
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robin Sharma
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

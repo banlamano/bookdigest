@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0ac62ef5-6a45-410a-b60f-3be242c19a40" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0ac62ef5-6a45-410a-b60f-3be242c19a40)" />
+  <g opacity="0.1">
+    <circle cx="200.984171150925" cy="204.5378983752489" r="28.271668534914703" fill="white" /><circle cx="30.911048766791936" cy="83.93725286377752" r="28.937317752190296" fill="white" /><circle cx="96.59094445305251" cy="158.93444171587657" r="24.94625271593724" fill="white" /><circle cx="123.49270350056702" cy="253.2002885753226" r="28.636030680924073" fill="white" /><circle cx="57.64520883559663" cy="48.77807161717127" r="26.979162483403798" fill="white" /><circle cx="291.6657192984771" cy="92.73499970304495" r="21.78699266065236" fill="white" /><circle cx="257.746128315751" cy="457.34223901597863" r="22.805549709438964" fill="white" /><circle cx="7.795347291360333" cy="551.00421646057" r="25.74215686512553" fill="white" /><circle cx="364.7849938031477" cy="299.1492300295051" r="22.238609888099216" fill="white" /><circle cx="247.67577602118521" cy="196.32162952014824" r="22.248073383476353" fill="white" /><circle cx="368.5566494050588" cy="162.88999533787975" r="28.652485016486644" fill="white" /><circle cx="54.14059331644712" cy="362.5135902660887" r="11.857156006721077" fill="white" /><circle cx="343.2955903673585" cy="566.7143040528466" r="14.420585808572062" fill="white" /><circle cx="16.937721437919517" cy="89.98053636842936" r="24.18743037771901" fill="white" /><circle cx="20.1414404660055" cy="401.9289543935709" r="16.89199208898046" fill="white" /><circle cx="326.9690100162341" cy="349.11018242274446" r="29.675518855733852" fill="white" /><circle cx="139.27279525585874" cy="70.5775550287413" r="16.725664298575776" fill="white" /><circle cx="346.550730942273" cy="228.66618026920526" r="14.288538794439754" fill="white" /><circle cx="281.8870967461995" cy="577.3924438757546" r="24.365174676537986" fill="white" /><circle cx="233.8229097664233" cy="367.5875004396011" r="26.441118372661943" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        A Thousand Splendid Suns
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Khaled Hosseini
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0b22e916-21fb-448b-ab40-12d8595c6340" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0b22e916-21fb-448b-ab40-12d8595c6340)" />
+  <g opacity="0.1">
+    <circle cx="305.23191748126663" cy="479.2778495190474" r="22.037221390902467" fill="white" /><circle cx="315.60581318521207" cy="365.783272681618" r="18.778813236415633" fill="white" /><circle cx="151.89273608361574" cy="312.6351770148666" r="13.352913397562196" fill="white" /><circle cx="201.01228638907043" cy="434.70562041131393" r="22.69427921274336" fill="white" /><circle cx="117.62296264258252" cy="141.85694467441303" r="13.613739847220973" fill="white" /><circle cx="147.97040456068916" cy="76.48017266557001" r="10.97000467097727" fill="white" /><circle cx="334.05547011688503" cy="68.74206800701673" r="11.25666343179141" fill="white" /><circle cx="151.8197738416412" cy="462.4954250878937" r="20.960016625155323" fill="white" /><circle cx="31.459491932341656" cy="525.8345939753702" r="11.244626004168442" fill="white" /><circle cx="279.7949486678772" cy="507.9811614734659" r="12.598925334480244" fill="white" /><circle cx="187.8436330247941" cy="324.4109505097408" r="15.226997590714973" fill="white" /><circle cx="287.6820773935391" cy="555.049330226349" r="18.53388601870746" fill="white" /><circle cx="24.937077370136862" cy="342.45362318770225" r="17.13820404106071" fill="white" /><circle cx="37.06907610933232" cy="258.7231017229982" r="24.783143446667353" fill="white" /><circle cx="39.435138256129235" cy="572.7574334643807" r="16.814827270856483" fill="white" /><circle cx="0.15834034643704697" cy="55.048531398425915" r="15.957535162036828" fill="white" /><circle cx="187.45423197237835" cy="561.760413298233" r="21.72650112125183" fill="white" /><circle cx="100.90490451707188" cy="10.084377997779125" r="24.547655572418172" fill="white" /><circle cx="95.47808233456946" cy="154.97594620807251" r="19.34732206754476" fill="white" /><circle cx="397.0602414836685" cy="467.98884666302445" r="27.800590641941245" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        After You
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Jojo Moyes
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

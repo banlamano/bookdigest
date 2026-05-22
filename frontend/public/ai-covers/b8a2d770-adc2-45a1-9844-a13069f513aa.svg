@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b8a2d770-adc2-45a1-9844-a13069f513aa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b8a2d770-adc2-45a1-9844-a13069f513aa)" />
+  <g opacity="0.1">
+    <circle cx="343.9109114546764" cy="200.66713099882938" r="26.069830099211927" fill="white" /><circle cx="197.30910778234482" cy="15.642693644175187" r="15.449565026596112" fill="white" /><circle cx="158.8396621444672" cy="529.5135323484243" r="24.360745433577577" fill="white" /><circle cx="171.87176863873964" cy="462.7388564650024" r="24.822526175201475" fill="white" /><circle cx="268.11660887696564" cy="450.90428616441795" r="15.659787985904288" fill="white" /><circle cx="348.5841913232189" cy="310.94649390081753" r="23.093576395568295" fill="white" /><circle cx="157.33081242334742" cy="325.111147468927" r="21.251073015998422" fill="white" /><circle cx="222.97110119656458" cy="520.1054165185235" r="10.709744340835737" fill="white" /><circle cx="241.51031047638244" cy="286.9719682130726" r="17.997027698335184" fill="white" /><circle cx="338.8480076453599" cy="43.346906358664185" r="19.185380332082072" fill="white" /><circle cx="103.58057723393448" cy="374.48127198656323" r="11.49752332503459" fill="white" /><circle cx="204.30331494211094" cy="97.90096660640646" r="15.070295146521344" fill="white" /><circle cx="114.0097204278288" cy="63.257937950210376" r="29.718877509470506" fill="white" /><circle cx="102.92447344760167" cy="539.6700639233632" r="13.951233821510007" fill="white" /><circle cx="301.32122412990674" cy="564.230633609728" r="13.514335422030129" fill="white" /><circle cx="60.12186896768377" cy="544.1702760775737" r="18.29885159089605" fill="white" /><circle cx="270.7157223180609" cy="184.65353521473372" r="21.19518381336409" fill="white" /><circle cx="311.4261163086472" cy="50.78196759745444" r="24.789525118705036" fill="white" /><circle cx="87.99598528274002" cy="590.511381325755" r="22.062517048498265" fill="white" /><circle cx="298.194593061547" cy="521.1701617270273" r="23.214737862713786" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Selfish Gene
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Richard Dawkins
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

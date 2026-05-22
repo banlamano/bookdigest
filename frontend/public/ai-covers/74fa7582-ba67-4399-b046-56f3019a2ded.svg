@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-74fa7582-ba67-4399-b046-56f3019a2ded" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-74fa7582-ba67-4399-b046-56f3019a2ded)" />
+  <g opacity="0.1">
+    <circle cx="261.91545044481904" cy="10.703059228617985" r="19.932837151666146" fill="white" /><circle cx="174.72620390034712" cy="537.8785342601053" r="14.121748790491013" fill="white" /><circle cx="325.28967886725655" cy="294.36032291872914" r="26.948343415589747" fill="white" /><circle cx="191.31588322836956" cy="52.801444760993554" r="27.180170333656374" fill="white" /><circle cx="199.8068188321437" cy="478.3403925777354" r="26.073237641660185" fill="white" /><circle cx="211.91628091843248" cy="414.4140944266432" r="15.82599280299456" fill="white" /><circle cx="333.2841483983156" cy="204.13854963421835" r="15.840744456169684" fill="white" /><circle cx="157.4547516405802" cy="430.87346083049715" r="10.088214447709412" fill="white" /><circle cx="184.47312133473707" cy="222.44847989977333" r="28.91464198831131" fill="white" /><circle cx="2.6168669332746752" cy="298.4875595925992" r="22.850095876983197" fill="white" /><circle cx="287.4846184370989" cy="74.01445249207907" r="20.283260753249785" fill="white" /><circle cx="34.36362925715284" cy="438.70941478010735" r="24.48598883795059" fill="white" /><circle cx="239.00607129595613" cy="408.4116383994836" r="20.765523309668787" fill="white" /><circle cx="101.30135553782588" cy="56.71890857564625" r="18.994517734065724" fill="white" /><circle cx="199.42174343413024" cy="362.319559069748" r="25.65369171475167" fill="white" /><circle cx="150.59271802439375" cy="389.6085301467685" r="24.890018634515563" fill="white" /><circle cx="319.0890708208634" cy="365.52578769588666" r="29.53300161080547" fill="white" /><circle cx="365.7101415078368" cy="368.8316740103207" r="25.595456816253215" fill="white" /><circle cx="130.37142934141235" cy="82.30002297443015" r="16.89168907297552" fill="white" /><circle cx="291.3803657070765" cy="338.8929211067667" r="20.99175369666066" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Remote: Arbeiten im
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Homeoffice – Eine
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Anleitung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Jason Fried
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

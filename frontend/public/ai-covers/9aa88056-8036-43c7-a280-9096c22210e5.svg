@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9aa88056-8036-43c7-a280-9096c22210e5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9aa88056-8036-43c7-a280-9096c22210e5)" />
+  <g opacity="0.1">
+    <circle cx="149.53141892206833" cy="157.24555831099846" r="25.691358637893394" fill="white" /><circle cx="295.44411727387234" cy="377.0260214065984" r="14.997828325148149" fill="white" /><circle cx="49.96645466846825" cy="553.2498691403625" r="21.56228870182838" fill="white" /><circle cx="304.79048432466124" cy="419.9319999015481" r="18.41248537956442" fill="white" /><circle cx="344.0924653301341" cy="201.08112460854392" r="16.558398846600053" fill="white" /><circle cx="46.99058982884958" cy="239.84471588609526" r="25.884088753638142" fill="white" /><circle cx="393.71978472832205" cy="137.58487983445647" r="27.521334002283922" fill="white" /><circle cx="210.32959752052327" cy="520.5938617077043" r="18.83479633918539" fill="white" /><circle cx="321.0071270317669" cy="15.909700098813495" r="20.142892100132453" fill="white" /><circle cx="151.8734883861086" cy="325.56784731936784" r="15.26774086725304" fill="white" /><circle cx="366.41283687537526" cy="117.66554895163036" r="14.137944991324643" fill="white" /><circle cx="303.4004101399547" cy="257.4677185155631" r="21.246216595337316" fill="white" /><circle cx="191.65803576922067" cy="89.50288899204625" r="12.904449642672972" fill="white" /><circle cx="199.81038514359182" cy="412.6150071864713" r="10.515846698193256" fill="white" /><circle cx="139.5941704057714" cy="202.8660561689563" r="10.725219310883208" fill="white" /><circle cx="335.96356078228075" cy="27.886450382801687" r="12.49756517914183" fill="white" /><circle cx="260.97157953221097" cy="205.87148196146106" r="19.718607782511675" fill="white" /><circle cx="77.31891177296349" cy="588.5458739504461" r="28.886592945526974" fill="white" /><circle cx="366.6847646344357" cy="179.99613355898413" r="21.19095125581454" fill="white" /><circle cx="347.13173468522626" cy="81.32224929963252" r="26.024303897450093" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Unscripted: Leben,
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Freiheit und die
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Verfolgung des
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        MJ DeMarco
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

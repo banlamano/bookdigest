@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ac437d27-c802-4d69-840c-f12e09720362" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ac437d27-c802-4d69-840c-f12e09720362)" />
+  <g opacity="0.1">
+    <circle cx="282.34137579264905" cy="241.61221108953742" r="27.082395637526318" fill="white" /><circle cx="204.220259005375" cy="543.2437240689519" r="18.787987428060216" fill="white" /><circle cx="116.72109906146248" cy="587.1016325496387" r="23.700738247225438" fill="white" /><circle cx="256.2050325513863" cy="419.0670307035965" r="16.17859212812172" fill="white" /><circle cx="287.49009559785367" cy="258.05029318060815" r="22.66851302061179" fill="white" /><circle cx="372.8878562486093" cy="581.0823248819377" r="19.32406527984447" fill="white" /><circle cx="83.96881614572895" cy="466.82835979116425" r="16.60331880756762" fill="white" /><circle cx="158.5238439722855" cy="441.58040665028585" r="12.701859432629536" fill="white" /><circle cx="137.0325463460575" cy="93.55962205708693" r="26.05769811029751" fill="white" /><circle cx="310.49948574118537" cy="347.2260919658668" r="28.237792811699688" fill="white" /><circle cx="368.74435370040703" cy="6.89706816318878" r="23.841236847223588" fill="white" /><circle cx="155.39088675170015" cy="14.996254137476317" r="27.063662405008195" fill="white" /><circle cx="351.51063147361185" cy="182.8436462079193" r="12.275861984425463" fill="white" /><circle cx="396.13817606988067" cy="319.7110468910261" r="21.623549174093824" fill="white" /><circle cx="322.1568976636796" cy="535.6599386079112" r="11.464317367504826" fill="white" /><circle cx="191.90895797235336" cy="202.92808384804985" r="17.21341714334126" fill="white" /><circle cx="79.07978154084843" cy="256.7335376311291" r="14.030273971148011" fill="white" /><circle cx="35.98801066703259" cy="176.1206700646235" r="24.45198510603312" fill="white" /><circle cx="208.7100249323277" cy="321.5195205780937" r="20.353566484813385" fill="white" /><circle cx="388.11754990400516" cy="435.0509956908293" r="26.165996930453115" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Kunst, nicht
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        abgelenkt zu sein: Eine
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Gebrauchsanleitung für
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Johann Hari
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

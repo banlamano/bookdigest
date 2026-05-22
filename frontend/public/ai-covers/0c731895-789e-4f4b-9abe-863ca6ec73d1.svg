@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0c731895-789e-4f4b-9abe-863ca6ec73d1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0c731895-789e-4f4b-9abe-863ca6ec73d1)" />
+  <g opacity="0.1">
+    <circle cx="99.82292910811381" cy="31.45393687379643" r="13.474428941862824" fill="white" /><circle cx="242.3212874734477" cy="356.0636849685548" r="17.82961227721355" fill="white" /><circle cx="376.0519511063404" cy="82.17256430736113" r="14.839448764204722" fill="white" /><circle cx="259.8838196469691" cy="401.835550596885" r="27.398902956221328" fill="white" /><circle cx="256.8278703089353" cy="191.57089013740054" r="27.36332934009074" fill="white" /><circle cx="315.15294430892385" cy="20.941623798619723" r="11.369487800189367" fill="white" /><circle cx="274.38257764019977" cy="535.1687445200157" r="19.12344640847259" fill="white" /><circle cx="54.58918728379092" cy="177.54028679084198" r="16.55858333094681" fill="white" /><circle cx="319.9383178621869" cy="537.1920688104005" r="29.37792496728466" fill="white" /><circle cx="198.75952639771182" cy="325.3107586717689" r="29.516244048388685" fill="white" /><circle cx="10.012743885492137" cy="36.776085222186694" r="15.437935108914685" fill="white" /><circle cx="109.75094066695416" cy="531.0765895597619" r="18.376495387143756" fill="white" /><circle cx="5.1120539970142875" cy="328.01283995298763" r="14.661673783454575" fill="white" /><circle cx="66.4063742098668" cy="323.3181665232933" r="27.47009632107185" fill="white" /><circle cx="169.91063259990463" cy="430.6926740951797" r="11.341132617962227" fill="white" /><circle cx="64.7029190331578" cy="237.71784524939545" r="23.963909137274335" fill="white" /><circle cx="73.61192569166928" cy="429.51415783281493" r="10.949324560061562" fill="white" /><circle cx="259.8736340567227" cy="379.34525339271977" r="18.47304921594785" fill="white" /><circle cx="39.85513824689417" cy="202.80340708203155" r="27.79017370836856" fill="white" /><circle cx="225.63181618935445" cy="522.2262865867983" r="16.617570165649095" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Gesang der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Flusskrebse
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Delia Owens
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

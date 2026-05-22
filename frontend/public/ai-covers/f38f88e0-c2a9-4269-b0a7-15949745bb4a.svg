@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f38f88e0-c2a9-4269-b0a7-15949745bb4a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f38f88e0-c2a9-4269-b0a7-15949745bb4a)" />
+  <g opacity="0.1">
+    <circle cx="212.8833732008021" cy="444.7579714181035" r="23.927034211578796" fill="white" /><circle cx="180.18014372193062" cy="65.23960980248444" r="27.208773389022607" fill="white" /><circle cx="93.4567921560439" cy="44.05345616613383" r="14.621823003286165" fill="white" /><circle cx="50.307371060845085" cy="368.58290611295985" r="29.577205850782924" fill="white" /><circle cx="43.93293779014762" cy="285.03474865698314" r="12.346104341817448" fill="white" /><circle cx="202.11467272645166" cy="105.99873281800205" r="22.521553152669544" fill="white" /><circle cx="285.78120388074694" cy="17.630915663587476" r="19.6217579608281" fill="white" /><circle cx="122.618970802107" cy="528.7939189398836" r="24.809835129091216" fill="white" /><circle cx="261.51065739355295" cy="421.3905329882968" r="20.848609491158925" fill="white" /><circle cx="74.26886979921763" cy="483.7104055332594" r="22.448141414991266" fill="white" /><circle cx="124.97292138849079" cy="347.42755421506433" r="12.467033307343481" fill="white" /><circle cx="254.73786157646856" cy="450.42546895596985" r="28.67164267085912" fill="white" /><circle cx="82.66416084288868" cy="277.4624114332203" r="18.329949752453043" fill="white" /><circle cx="382.37070595663664" cy="182.2391386825233" r="12.086896037245879" fill="white" /><circle cx="167.24811727093862" cy="286.9241985946584" r="18.72249959763426" fill="white" /><circle cx="3.2612368176962114" cy="93.35806064341885" r="13.781519137709278" fill="white" /><circle cx="11.11483884705331" cy="169.22453621977502" r="29.66000248252729" fill="white" /><circle cx="54.32503546104854" cy="436.4281216627299" r="26.498621216739075" fill="white" /><circle cx="186.63502305954816" cy="333.09596765567505" r="16.92089708502518" fill="white" /><circle cx="294.09639438397494" cy="205.3108477641979" r="23.311436788761306" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Sicherheitsmarge
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Seth Klarman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e1c9b884-4f34-476c-b9c5-bb7d9721ca90" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e1c9b884-4f34-476c-b9c5-bb7d9721ca90)" />
+  <g opacity="0.1">
+    <circle cx="31.40236091715618" cy="437.82844669800613" r="24.519467568582005" fill="white" /><circle cx="384.08179112601266" cy="532.9342378639069" r="19.318142849112846" fill="white" /><circle cx="356.01923316529417" cy="529.1896432649055" r="11.105096453921018" fill="white" /><circle cx="259.513630341421" cy="449.0022248480638" r="25.18301453274232" fill="white" /><circle cx="44.46050556207845" cy="49.120816636761134" r="10.872597728537851" fill="white" /><circle cx="385.7692676090485" cy="142.3258606706549" r="23.8040387157843" fill="white" /><circle cx="153.86190087313167" cy="259.6225787090127" r="25.398439854782772" fill="white" /><circle cx="53.650738585816214" cy="34.02385091269331" r="23.3474791612934" fill="white" /><circle cx="105.29303089582834" cy="59.75832513664694" r="19.81723583962625" fill="white" /><circle cx="197.862439317282" cy="140.51472348561828" r="11.375022724230671" fill="white" /><circle cx="345.62272864322387" cy="586.0304269836857" r="26.77140699308179" fill="white" /><circle cx="75.11754570730832" cy="439.13400412124383" r="26.99772196690925" fill="white" /><circle cx="327.05381878133767" cy="22.70715277087836" r="26.998977674753785" fill="white" /><circle cx="71.88782657325375" cy="579.6459676984493" r="19.301490023413834" fill="white" /><circle cx="51.093369894579645" cy="532.4234751767134" r="20.284052493347723" fill="white" /><circle cx="158.79993534901905" cy="367.960344344178" r="10.391044582938711" fill="white" /><circle cx="217.7721058264519" cy="151.85328533342485" r="14.493532051043234" fill="white" /><circle cx="7.44831516231601" cy="433.7269675844739" r="23.653595625023215" fill="white" /><circle cx="47.61719884338316" cy="188.42624747589272" r="20.909520288305266" fill="white" /><circle cx="293.50266017215534" cy="202.06592556256967" r="23.38059491144967" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Psychologie der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Vor-Überzeugung: Ein
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        revolutionärer Weg,
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robert Cialdini
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

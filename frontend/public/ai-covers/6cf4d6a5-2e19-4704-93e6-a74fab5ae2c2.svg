@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-6cf4d6a5-2e19-4704-93e6-a74fab5ae2c2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-6cf4d6a5-2e19-4704-93e6-a74fab5ae2c2)" />
+  <g opacity="0.1">
+    <circle cx="95.28850292049125" cy="574.4741719451182" r="17.719878360801" fill="white" /><circle cx="345.53166831045166" cy="599.7562587508493" r="28.776080185341034" fill="white" /><circle cx="61.078079166402865" cy="503.8933043562808" r="26.317074608020448" fill="white" /><circle cx="259.587556129225" cy="591.3670450421901" r="28.0074756969802" fill="white" /><circle cx="68.68789957263841" cy="309.7940549476162" r="19.339427578495155" fill="white" /><circle cx="310.9433749036887" cy="84.49627734552728" r="12.20908164319769" fill="white" /><circle cx="124.82640587848577" cy="202.32238936085102" r="15.012172102847302" fill="white" /><circle cx="205.35281097538905" cy="220.64599621109753" r="28.492470253154742" fill="white" /><circle cx="29.07922864852539" cy="109.4484196801072" r="19.585390748672815" fill="white" /><circle cx="347.20852565171793" cy="324.1260897739225" r="28.053030254434674" fill="white" /><circle cx="173.59767002423513" cy="479.34774883456134" r="29.158104273034247" fill="white" /><circle cx="316.9919467321083" cy="54.40028854429859" r="11.670829733214536" fill="white" /><circle cx="62.27808698070771" cy="533.8021386794871" r="24.837478342882545" fill="white" /><circle cx="68.04477975694141" cy="381.38431595664576" r="11.119269201552873" fill="white" /><circle cx="341.77882491464396" cy="440.97843713577777" r="27.431592284863793" fill="white" /><circle cx="205.69815051051643" cy="244.9442055688762" r="17.382778426124798" fill="white" /><circle cx="275.3814948279154" cy="101.32046495121276" r="18.958606512156685" fill="white" /><circle cx="113.36217245262978" cy="215.99259843820093" r="11.829741036594424" fill="white" /><circle cx="157.23243651684467" cy="346.38125002539533" r="20.70608972001238" fill="white" /><circle cx="368.58534536345246" cy="535.3793281609172" r="21.782871720885755" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Mönch, der seinen
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Ferrari verkaufte: Eine
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Parabel vom Glück
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robin Sharma
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

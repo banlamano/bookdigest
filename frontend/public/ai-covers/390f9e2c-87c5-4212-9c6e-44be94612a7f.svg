@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-390f9e2c-87c5-4212-9c6e-44be94612a7f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-390f9e2c-87c5-4212-9c6e-44be94612a7f)" />
+  <g opacity="0.1">
+    <circle cx="307.1845014481019" cy="291.9999821048883" r="14.056648126706301" fill="white" /><circle cx="354.73435753771895" cy="506.8146968741192" r="24.055057846617835" fill="white" /><circle cx="37.028478907246324" cy="324.3958125566121" r="27.496402880002922" fill="white" /><circle cx="262.2423623291802" cy="536.6088590085228" r="14.507580945079255" fill="white" /><circle cx="33.75258148493852" cy="120.11233736019669" r="11.623974316030218" fill="white" /><circle cx="282.3745048242212" cy="51.775053441267936" r="12.8373611624619" fill="white" /><circle cx="227.08213982658108" cy="175.53663250432007" r="29.48335441597112" fill="white" /><circle cx="200.8983230372852" cy="68.9368767477938" r="29.35230354136344" fill="white" /><circle cx="336.83053204893895" cy="440.3645473813543" r="14.0631421697597" fill="white" /><circle cx="155.34863109751774" cy="485.6659122791425" r="24.410989472462866" fill="white" /><circle cx="279.88699756302" cy="521.9311119700004" r="17.582209227737273" fill="white" /><circle cx="214.73218031482614" cy="527.4352338383115" r="12.82838654065883" fill="white" /><circle cx="337.99419951204226" cy="330.3832368657379" r="25.05586523626185" fill="white" /><circle cx="220.60250070499688" cy="16.895934942846846" r="18.280496335619013" fill="white" /><circle cx="30.22072270946645" cy="405.3289773928913" r="14.105540617991" fill="white" /><circle cx="134.8835375499649" cy="450.90298431108823" r="21.796174056801185" fill="white" /><circle cx="192.26542368122196" cy="400.8157451492573" r="23.880566075849604" fill="white" /><circle cx="75.3438075191621" cy="113.26136787056606" r="26.972803707868525" fill="white" /><circle cx="151.65631922171053" cy="197.02190804468074" r="29.423849114659756" fill="white" /><circle cx="137.61853960106635" cy="429.46186723959016" r="24.13462724318219" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Laws of Human Nature
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robert Greene
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

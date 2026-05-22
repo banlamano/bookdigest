@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-16229e67-fe37-4e2b-b416-27e9773996f7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-16229e67-fe37-4e2b-b416-27e9773996f7)" />
+  <g opacity="0.1">
+    <circle cx="248.38008557557188" cy="575.2272444321259" r="29.28674129093659" fill="white" /><circle cx="108.1398141608982" cy="212.29998436744282" r="17.208076155586994" fill="white" /><circle cx="67.32884305572054" cy="556.5239383336047" r="13.281197395257568" fill="white" /><circle cx="296.3227497715375" cy="213.10771518811302" r="29.765558500919965" fill="white" /><circle cx="315.41244682138154" cy="578.2448361394008" r="20.35361941832202" fill="white" /><circle cx="141.33492266197888" cy="565.5441417569907" r="15.215809140197008" fill="white" /><circle cx="123.18835209070365" cy="138.73309245683612" r="24.556419399603577" fill="white" /><circle cx="92.24003449487581" cy="229.15820198455862" r="26.261781555659077" fill="white" /><circle cx="276.82924285425105" cy="171.42893005968142" r="17.824417614914623" fill="white" /><circle cx="135.16085064277098" cy="241.51785383134606" r="21.624046911211646" fill="white" /><circle cx="3.657386000025342" cy="129.0307496419074" r="10.20807556762185" fill="white" /><circle cx="101.79278636490801" cy="544.6052077646074" r="14.289530810179942" fill="white" /><circle cx="292.4778650671099" cy="65.70128698414568" r="23.784890392189524" fill="white" /><circle cx="307.5421528264195" cy="293.80789081891356" r="23.60660813408262" fill="white" /><circle cx="204.1983756922464" cy="507.38489320295776" r="25.10921146436333" fill="white" /><circle cx="329.9408812480805" cy="384.5851930847524" r="27.313009897626458" fill="white" /><circle cx="50.77811962905932" cy="63.00973194381987" r="23.848821035313552" fill="white" /><circle cx="176.91859502484863" cy="415.91509496922436" r="28.549469107863878" fill="white" /><circle cx="84.8457534498618" cy="3.14818763777609" r="15.36010372922107" fill="white" /><circle cx="206.61910808447072" cy="16.063483382549435" r="12.87640726397032" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Book Thief
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Markus Zusak
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

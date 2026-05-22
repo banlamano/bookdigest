@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5fb8611c-e31b-4988-b608-dc0657ca5fda" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5fb8611c-e31b-4988-b608-dc0657ca5fda)" />
+  <g opacity="0.1">
+    <circle cx="341.51674579134493" cy="429.18429725928956" r="28.503760111832104" fill="white" /><circle cx="59.74829159260047" cy="592.185917768266" r="23.78796200192926" fill="white" /><circle cx="143.6049504656717" cy="377.45349107988926" r="13.129019317515011" fill="white" /><circle cx="50.30439667702042" cy="533.0352486999055" r="19.604706109262846" fill="white" /><circle cx="204.41513570128294" cy="461.2339666789597" r="26.61152737887851" fill="white" /><circle cx="365.8045758426188" cy="362.3744231078987" r="16.951866526878877" fill="white" /><circle cx="106.40947939633404" cy="569.0560291090302" r="10.323492763069577" fill="white" /><circle cx="336.1200872732398" cy="241.80405402762756" r="10.835441896026959" fill="white" /><circle cx="280.60588204289564" cy="387.8045161208787" r="26.954729109043747" fill="white" /><circle cx="70.27970860455932" cy="286.83125216996143" r="21.87854720805425" fill="white" /><circle cx="58.25446976966791" cy="420.7497638024761" r="11.39847642901228" fill="white" /><circle cx="278.0752695311662" cy="523.5590814011485" r="12.48185978569371" fill="white" /><circle cx="102.97009968266275" cy="563.0015144353553" r="23.616922196085667" fill="white" /><circle cx="304.76039004786145" cy="546.829999628528" r="15.883177230951146" fill="white" /><circle cx="149.41859203206937" cy="2.6275696083250644" r="26.78028233779338" fill="white" /><circle cx="190.3045024939039" cy="591.1636108216475" r="20.111033959337476" fill="white" /><circle cx="347.73057175121204" cy="441.23267335258146" r="19.065284941148647" fill="white" /><circle cx="97.81274624599585" cy="91.84251269894759" r="16.280874449591614" fill="white" /><circle cx="160.6781038682755" cy="107.61638451892294" r="27.80298390308883" fill="white" /><circle cx="310.3693501389224" cy="102.06442292911417" r="25.77441726604446" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Hygge: Ein Lebensgefühl,
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        das einfach glücklich
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        macht
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Meik Wiking
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5242c6c4-8762-4070-b35a-d1d3dc2970c0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5242c6c4-8762-4070-b35a-d1d3dc2970c0)" />
+  <g opacity="0.1">
+    <circle cx="398.335901974676" cy="298.719298500912" r="28.184100178575353" fill="white" /><circle cx="317.7956754038731" cy="88.99376569867535" r="24.493835783752523" fill="white" /><circle cx="215.90724407244753" cy="142.9982226318035" r="12.105027864331097" fill="white" /><circle cx="211.5545571955976" cy="497.5996462231949" r="22.344338420515996" fill="white" /><circle cx="176.07027196915078" cy="174.60527256622777" r="26.77416306357736" fill="white" /><circle cx="308.6167978658251" cy="554.0300844228422" r="10.620844793281186" fill="white" /><circle cx="368.61548432587597" cy="61.428162692528396" r="19.908262631487915" fill="white" /><circle cx="159.79924251096972" cy="551.90934797632" r="23.53991777117372" fill="white" /><circle cx="287.96038599676706" cy="286.7991996989693" r="23.460956647534047" fill="white" /><circle cx="27.875317590765782" cy="286.6253457447275" r="26.360503984255196" fill="white" /><circle cx="48.781380820748275" cy="19.132788800817767" r="27.237069119728258" fill="white" /><circle cx="77.40039322711603" cy="476.0234462633798" r="29.201994085245655" fill="white" /><circle cx="268.185725247036" cy="10.028864971492112" r="11.417459824589775" fill="white" /><circle cx="371.4048854665715" cy="302.24379283953976" r="12.297535987428802" fill="white" /><circle cx="163.69972030608218" cy="361.27438085196997" r="10.797223978021657" fill="white" /><circle cx="80.11215391254431" cy="345.3303097237466" r="14.854425473040322" fill="white" /><circle cx="375.2480203964535" cy="566.8230950330869" r="16.350959099154725" fill="white" /><circle cx="200.35563123598408" cy="343.87545095301414" r="16.953855264017534" fill="white" /><circle cx="383.19975110147664" cy="363.2013712420586" r="12.89534161592986" fill="white" /><circle cx="68.83967294624016" cy="2.679707895858696" r="10.033193056254103" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Expert Secrets
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Russell Brunson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

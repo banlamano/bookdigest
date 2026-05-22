@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ca98ae3b-64c9-4e3e-b3c6-76f3157d747e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ca98ae3b-64c9-4e3e-b3c6-76f3157d747e)" />
+  <g opacity="0.1">
+    <circle cx="71.37746711552735" cy="520.4618633991516" r="12.925529096248338" fill="white" /><circle cx="72.84144572633191" cy="379.9298578384755" r="20.662265058125946" fill="white" /><circle cx="151.33558711578243" cy="245.8970189904644" r="15.701745159865236" fill="white" /><circle cx="100.34462812591114" cy="196.75808116465922" r="19.407709647218113" fill="white" /><circle cx="229.90764244173292" cy="331.2856721005385" r="27.92512412227315" fill="white" /><circle cx="172.32813954049985" cy="557.3386003168339" r="13.256909048304582" fill="white" /><circle cx="28.349248757052692" cy="335.60626785663186" r="18.234271895629988" fill="white" /><circle cx="59.88215208366281" cy="254.15912660005688" r="12.60747532607327" fill="white" /><circle cx="148.13914669202916" cy="117.88933069144743" r="19.257331145851815" fill="white" /><circle cx="98.46060186477632" cy="525.7315393156053" r="16.248086846534747" fill="white" /><circle cx="254.84652755259737" cy="458.46763984207786" r="29.087192014201705" fill="white" /><circle cx="168.63834189835552" cy="472.5231411297854" r="20.120799876533987" fill="white" /><circle cx="243.1364453489874" cy="120.11054712918086" r="21.43444831454159" fill="white" /><circle cx="172.33108564526324" cy="330.97961725589937" r="19.73362117926255" fill="white" /><circle cx="136.81634183697145" cy="326.35807697346587" r="17.146700693224016" fill="white" /><circle cx="209.61391150632048" cy="219.80856673392356" r="19.390338993325575" fill="white" /><circle cx="164.80280394020562" cy="448.04654225186016" r="27.111332540732015" fill="white" /><circle cx="347.223841042336" cy="79.36414318815628" r="17.03351652142765" fill="white" /><circle cx="396.42541528276627" cy="83.1525219957967" r="12.782189821043142" fill="white" /><circle cx="225.60193846314763" cy="181.50901754265612" r="19.07690444249469" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The 7 Habits of Highly
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Effective People
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Stephen Covey
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

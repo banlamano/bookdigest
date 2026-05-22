@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b8af9fb8-864a-4e56-b6ca-a7603c3ec15e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b8af9fb8-864a-4e56-b6ca-a7603c3ec15e)" />
+  <g opacity="0.1">
+    <circle cx="20.202867554370883" cy="584.019234618249" r="21.084321663986557" fill="white" /><circle cx="313.72708008153336" cy="335.60584469650246" r="11.682480149359773" fill="white" /><circle cx="156.0345637413877" cy="591.0641341874173" r="12.290238166594369" fill="white" /><circle cx="102.97802101762245" cy="596.23014707833" r="29.895215641415046" fill="white" /><circle cx="143.75378429831795" cy="463.4449769970944" r="16.22980078688005" fill="white" /><circle cx="52.58077004096759" cy="63.73940403407976" r="25.28314107137831" fill="white" /><circle cx="46.43339013712464" cy="377.8260824583622" r="26.275445044164737" fill="white" /><circle cx="16.500305367385202" cy="227.6591587790827" r="21.612315169116656" fill="white" /><circle cx="82.12007303936821" cy="372.19178049195745" r="17.422742743557798" fill="white" /><circle cx="161.09374292894404" cy="4.004732988954984" r="29.949690345379643" fill="white" /><circle cx="168.20710101836517" cy="564.4113343696348" r="20.723753144997694" fill="white" /><circle cx="188.05942568635606" cy="412.9144373928804" r="10.344392770131357" fill="white" /><circle cx="246.71335995670748" cy="112.4096426597032" r="22.10030117020216" fill="white" /><circle cx="43.046650029273216" cy="337.964205824157" r="23.901684827259395" fill="white" /><circle cx="20.383509394050492" cy="485.18038652000274" r="13.86987674521811" fill="white" /><circle cx="191.01798623628738" cy="558.051656323282" r="16.313180370096042" fill="white" /><circle cx="141.51877840570378" cy="394.4060063281977" r="25.820184281697856" fill="white" /><circle cx="236.5637282597957" cy="96.02290109183618" r="18.067407243570905" fill="white" /><circle cx="366.8598006373424" cy="306.240753585988" r="11.291500263766878" fill="white" /><circle cx="350.20343997696585" cy="2.643724211604348" r="23.382573819758797" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Secret
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Rhonda Byrne
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

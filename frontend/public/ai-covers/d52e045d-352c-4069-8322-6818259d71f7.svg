@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d52e045d-352c-4069-8322-6818259d71f7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d52e045d-352c-4069-8322-6818259d71f7)" />
+  <g opacity="0.1">
+    <circle cx="199.16014839314147" cy="361.85969482288414" r="20.65307718987896" fill="white" /><circle cx="75.37618317078851" cy="230.2333011347077" r="29.33026944678142" fill="white" /><circle cx="79.08376004465691" cy="355.67610176071724" r="23.097457913457816" fill="white" /><circle cx="279.08332403279627" cy="319.87700087900294" r="15.744520308276652" fill="white" /><circle cx="249.51683847178728" cy="477.2936665185655" r="24.283113207462957" fill="white" /><circle cx="293.22775730217046" cy="585.7549855267214" r="17.01108292228539" fill="white" /><circle cx="296.50950982883194" cy="56.85710801748813" r="24.483783514095485" fill="white" /><circle cx="300.34801384858196" cy="555.5780109963563" r="11.843298027920815" fill="white" /><circle cx="34.72771284452216" cy="278.1517599843095" r="20.93689184091754" fill="white" /><circle cx="327.3554408588208" cy="332.4070817810302" r="13.60528098854887" fill="white" /><circle cx="20.127567479806572" cy="294.7773722021156" r="18.108928417180046" fill="white" /><circle cx="206.79724781620817" cy="488.27742592663674" r="17.60763694931896" fill="white" /><circle cx="249.0618315192842" cy="239.06812146972865" r="19.869719810801993" fill="white" /><circle cx="248.5658420719546" cy="502.71443479913205" r="15.847091709699994" fill="white" /><circle cx="349.6773368457032" cy="12.112896205120594" r="15.29870652777616" fill="white" /><circle cx="234.1312324875072" cy="543.9756805274319" r="11.82994941878744" fill="white" /><circle cx="263.632409237612" cy="358.526741483112" r="18.57032148116621" fill="white" /><circle cx="318.22372654144203" cy="139.46017854004856" r="27.679355315733215" fill="white" /><circle cx="340.7836444347645" cy="3.16344901351171" r="26.123926836407062" fill="white" /><circle cx="11.740340426707663" cy="271.5895218795065" r="13.512135377093625" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Checklist Manifesto
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Atul Gawande
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

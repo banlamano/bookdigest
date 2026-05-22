@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ae48d8ed-9383-4ce2-87f5-6d27f33d79cf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ae48d8ed-9383-4ce2-87f5-6d27f33d79cf)" />
+  <g opacity="0.1">
+    <circle cx="384.500975756912" cy="159.70462202910957" r="24.149162836074563" fill="white" /><circle cx="337.6727657653079" cy="501.2351075723001" r="14.877543930735095" fill="white" /><circle cx="113.12802505276953" cy="547.5578515581605" r="25.30954929123403" fill="white" /><circle cx="105.13221791586082" cy="280.5791591386269" r="11.879339636662822" fill="white" /><circle cx="77.57026518059664" cy="342.9583121080268" r="21.215844567683504" fill="white" /><circle cx="382.755942865743" cy="242.58485647825793" r="16.975390410470347" fill="white" /><circle cx="2.1647095061684496" cy="278.9782894342478" r="17.02435299332724" fill="white" /><circle cx="222.29841364019228" cy="338.855930199806" r="22.60622202933007" fill="white" /><circle cx="329.1568225956296" cy="252.56524762659723" r="14.679764532963071" fill="white" /><circle cx="21.211975387307014" cy="312.1358657289557" r="28.523307793356224" fill="white" /><circle cx="288.0692870194769" cy="402.04675164256724" r="27.18162246265934" fill="white" /><circle cx="249.4263618753385" cy="245.51669412000513" r="10.66026686752818" fill="white" /><circle cx="31.111977128708457" cy="61.02969690213121" r="21.340223781474084" fill="white" /><circle cx="155.7145551819966" cy="444.93572544734457" r="24.28811170734584" fill="white" /><circle cx="279.5698512063056" cy="253.80309157250457" r="12.969801357456717" fill="white" /><circle cx="373.0666467064829" cy="143.4308739229708" r="17.84252099297905" fill="white" /><circle cx="237.09372560071432" cy="172.56765807946536" r="24.355944188881033" fill="white" /><circle cx="295.836365820174" cy="156.97183248470435" r="29.036150090596745" fill="white" /><circle cx="216.57324951024296" cy="333.6477017255044" r="20.293704336583975" fill="white" /><circle cx="396.1374253256108" cy="60.10976355854283" r="17.68277293493756" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die ersten 20 Stunden:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wie man jede neue
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Fähigkeit schnell erlernt
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Josh Kaufman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

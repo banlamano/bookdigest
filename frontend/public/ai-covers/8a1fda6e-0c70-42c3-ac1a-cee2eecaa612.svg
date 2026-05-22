@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8a1fda6e-0c70-42c3-ac1a-cee2eecaa612" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8a1fda6e-0c70-42c3-ac1a-cee2eecaa612)" />
+  <g opacity="0.1">
+    <circle cx="34.710657249345054" cy="416.965161363683" r="27.726269412830188" fill="white" /><circle cx="372.93447212976713" cy="478.2507241529079" r="13.093657542247508" fill="white" /><circle cx="340.7597157191508" cy="168.16089586994815" r="23.612571243005462" fill="white" /><circle cx="300.8080558895803" cy="429.97204190206264" r="27.190088443178038" fill="white" /><circle cx="4.868526827748765" cy="372.3406975479941" r="17.224962131392527" fill="white" /><circle cx="290.41430865932705" cy="220.48850535605163" r="16.17139020179268" fill="white" /><circle cx="113.41811874532635" cy="489.82399737049633" r="12.746714905500824" fill="white" /><circle cx="64.44577480072708" cy="250.24204575281743" r="10.5214006206174" fill="white" /><circle cx="187.84122846428298" cy="50.46976220178212" r="10.222264373702924" fill="white" /><circle cx="50.28081973941254" cy="66.86455563884579" r="16.52248248303843" fill="white" /><circle cx="345.05665659492144" cy="509.4831947597415" r="18.824595112941942" fill="white" /><circle cx="260.8657865562138" cy="8.31047302488821" r="22.04490482178094" fill="white" /><circle cx="194.79517434699264" cy="330.4509698813415" r="11.52764294152985" fill="white" /><circle cx="22.353533141635886" cy="120.77230315640155" r="12.953913435579471" fill="white" /><circle cx="143.51612582198027" cy="391.0076985395961" r="11.414954504621498" fill="white" /><circle cx="72.64931699498112" cy="22.251835403099783" r="25.4341194271622" fill="white" /><circle cx="180.16647095711446" cy="522.3773293559321" r="23.310639931002193" fill="white" /><circle cx="129.54936742945327" cy="144.64138733839462" r="28.398584980004447" fill="white" /><circle cx="351.93468165405386" cy="270.5344302067756" r="12.971181164860859" fill="white" /><circle cx="6.197945515462866" cy="114.26339741447468" r="12.942004414494653" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Awakenings
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Oliver Sacks
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-4cc5cace-6634-45a4-b12b-d10d6ff8b00a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-4cc5cace-6634-45a4-b12b-d10d6ff8b00a)" />
+  <g opacity="0.1">
+    <circle cx="214.2933835675036" cy="474.56992577330163" r="17.12080739886754" fill="white" /><circle cx="302.29808392908456" cy="545.5073439192009" r="12.46276429165376" fill="white" /><circle cx="10.565898190114176" cy="543.5618873717834" r="29.73622588177769" fill="white" /><circle cx="340.8316495515912" cy="219.94253268853245" r="16.741754577867486" fill="white" /><circle cx="25.293879895493543" cy="3.0779083732289436" r="19.591706801657672" fill="white" /><circle cx="391.06080565939163" cy="190.96354152510187" r="26.39251346639893" fill="white" /><circle cx="392.5846807497742" cy="47.09145385317739" r="25.778429867933056" fill="white" /><circle cx="360.40307195614935" cy="405.5784351192812" r="24.75115529680741" fill="white" /><circle cx="259.04606358489343" cy="570.273393288758" r="23.252370350324185" fill="white" /><circle cx="320.6963821886186" cy="597.4161102840054" r="15.852936442893114" fill="white" /><circle cx="27.464325281268298" cy="397.7333270356662" r="20.215044569927283" fill="white" /><circle cx="18.80341311582545" cy="569.7387093312826" r="26.52028602008547" fill="white" /><circle cx="21.47646804633321" cy="185.77548755365115" r="22.15155088775726" fill="white" /><circle cx="16.87378250454521" cy="519.5845342138833" r="19.805554551943768" fill="white" /><circle cx="234.456358523811" cy="338.5126936846952" r="10.265576886229939" fill="white" /><circle cx="86.74271787387565" cy="92.18931748210264" r="11.54376032838471" fill="white" /><circle cx="119.6668371567188" cy="422.8076161424124" r="25.70436524196439" fill="white" /><circle cx="303.66305098419923" cy="367.8608926189288" r="29.960553509623317" fill="white" /><circle cx="133.54788850031235" cy="548.795145786625" r="12.56355672665226" fill="white" /><circle cx="72.61948074360309" cy="486.9194809563829" r="25.85098306989024" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Do the Work
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Steven Pressfield
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

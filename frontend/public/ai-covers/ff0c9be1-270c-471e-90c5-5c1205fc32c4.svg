@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ff0c9be1-270c-471e-90c5-5c1205fc32c4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ff0c9be1-270c-471e-90c5-5c1205fc32c4)" />
+  <g opacity="0.1">
+    <circle cx="238.59196229895386" cy="204.6669520754874" r="27.767174658761647" fill="white" /><circle cx="46.438153367750786" cy="494.3894986455301" r="17.146929690625498" fill="white" /><circle cx="21.982838139515117" cy="39.18208643721681" r="28.851487486775092" fill="white" /><circle cx="322.00213371512456" cy="534.156264929733" r="14.148288005008718" fill="white" /><circle cx="243.30083379101208" cy="127.1333167054546" r="20.932095408431504" fill="white" /><circle cx="309.536718538002" cy="429.2758927290955" r="28.339463728947365" fill="white" /><circle cx="299.7219507151441" cy="304.88747418127286" r="22.025993798903418" fill="white" /><circle cx="389.85310897659986" cy="217.1931436564175" r="16.560115728743426" fill="white" /><circle cx="40.43665355003445" cy="536.0596191034556" r="18.070918564610963" fill="white" /><circle cx="14.816643772811089" cy="71.06877129690976" r="28.78585077227053" fill="white" /><circle cx="197.8635580325406" cy="137.13074000691964" r="10.692559005651788" fill="white" /><circle cx="333.52841868356523" cy="333.3460326037442" r="28.429097390447787" fill="white" /><circle cx="258.86758574260557" cy="291.72722311440765" r="22.870229458567323" fill="white" /><circle cx="221.10377946266476" cy="266.0286674486586" r="27.18762665990145" fill="white" /><circle cx="345.7273216471745" cy="468.4120256255897" r="25.223817455318116" fill="white" /><circle cx="378.89098962409486" cy="552.6296751798108" r="19.956263068751305" fill="white" /><circle cx="43.85392827100007" cy="252.79870277492677" r="18.510539784409556" fill="white" /><circle cx="147.9185271265609" cy="337.25293212414493" r="13.00213567108452" fill="white" /><circle cx="398.93213936100256" cy="555.8562901114876" r="17.90466658150154" fill="white" /><circle cx="5.422761195511416" cy="207.35136815715126" r="28.03125319816353" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Deep Work
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Cal Newport
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

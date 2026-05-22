@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d148c6e7-e952-47eb-9d83-9b65efc24720" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d148c6e7-e952-47eb-9d83-9b65efc24720)" />
+  <g opacity="0.1">
+    <circle cx="191.3708020384072" cy="178.01218223022784" r="24.53006394635303" fill="white" /><circle cx="238.40195734232893" cy="250.7967203198678" r="16.298114387887896" fill="white" /><circle cx="95.58978205416797" cy="380.53406325837216" r="24.08148329062475" fill="white" /><circle cx="299.99616921202096" cy="110.52483159420134" r="27.080527045406757" fill="white" /><circle cx="92.53324543962461" cy="3.4333619100068713" r="10.009630269494927" fill="white" /><circle cx="306.0327415739565" cy="265.67757351215533" r="15.686132854879741" fill="white" /><circle cx="304.65626631175763" cy="324.2946625970937" r="12.962068145188733" fill="white" /><circle cx="256.2638781423945" cy="501.7068631683432" r="16.41588479346549" fill="white" /><circle cx="23.594166904331047" cy="485.39432793196056" r="16.915782918455477" fill="white" /><circle cx="98.74766630616878" cy="585.2934563695095" r="27.55820548357169" fill="white" /><circle cx="317.8100024138428" cy="326.46000103134776" r="20.778755637299646" fill="white" /><circle cx="82.40500502346819" cy="244.0007567367402" r="26.09363691276722" fill="white" /><circle cx="110.31913835064651" cy="441.3082744375531" r="16.93154009441652" fill="white" /><circle cx="5.955691493231097" cy="547.7566980091594" r="12.46729364555936" fill="white" /><circle cx="66.47323904031204" cy="38.82444954208471" r="26.571976971072665" fill="white" /><circle cx="212.99449445123594" cy="333.023845315473" r="14.887023501064263" fill="white" /><circle cx="26.02503900229984" cy="294.50178096596113" r="26.9547813015322" fill="white" /><circle cx="354.69690703596126" cy="510.0095192767345" r="18.839400520074413" fill="white" /><circle cx="284.8022518621439" cy="188.13282898287622" r="16.216208129850617" fill="white" /><circle cx="291.58771732613445" cy="597.35269876804" r="14.123374079507816" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Lost &amp; Founder: Ein
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Startup-Guide mit harten
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wahrheiten und
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Rand Fishkin
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f73e9cc0-80ef-4253-9274-d54e3a63e30c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f73e9cc0-80ef-4253-9274-d54e3a63e30c)" />
+  <g opacity="0.1">
+    <circle cx="154.22635141751763" cy="416.4572562777986" r="11.58252901650581" fill="white" /><circle cx="107.72408861688612" cy="346.1947032313027" r="22.30679581650084" fill="white" /><circle cx="130.706852223638" cy="450.14684596847815" r="27.002039645705317" fill="white" /><circle cx="32.252886347210065" cy="132.09807575135474" r="17.755683211042466" fill="white" /><circle cx="118.1485683687491" cy="519.3164318692786" r="17.47749039642079" fill="white" /><circle cx="127.37826474542784" cy="6.893781413287137" r="29.156462310587482" fill="white" /><circle cx="370.41802905889864" cy="336.26064714554707" r="21.411485527387118" fill="white" /><circle cx="106.99626674453646" cy="561.460177385078" r="22.347288634624277" fill="white" /><circle cx="232.06333611200648" cy="111.38006291669397" r="26.31835322708111" fill="white" /><circle cx="168.5481348109652" cy="449.0547193027386" r="29.79724207084892" fill="white" /><circle cx="226.93237434424057" cy="251.44636828726422" r="16.512686397492168" fill="white" /><circle cx="217.49962329003023" cy="83.54179741669367" r="24.471600220240497" fill="white" /><circle cx="53.36726768840596" cy="374.60396424261626" r="26.655174278311826" fill="white" /><circle cx="208.70865870521143" cy="209.0477970102901" r="18.50061342520045" fill="white" /><circle cx="59.41667928826089" cy="464.2214691776325" r="19.171191653724716" fill="white" /><circle cx="384.6679339846193" cy="557.3537658504742" r="27.301079692196318" fill="white" /><circle cx="196.82966717610844" cy="80.60613951898978" r="25.143753572334532" fill="white" /><circle cx="143.48529435777272" cy="397.655239234265" r="20.066951388915427" fill="white" /><circle cx="296.5624132638856" cy="531.760731328297" r="10.267544063294363" fill="white" /><circle cx="7.684336833658811" cy="590.6306492708771" r="26.7815761095789" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Zero to One
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Peter Thiel
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

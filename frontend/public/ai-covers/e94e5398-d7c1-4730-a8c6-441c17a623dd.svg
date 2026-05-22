@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e94e5398-d7c1-4730-a8c6-441c17a623dd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e94e5398-d7c1-4730-a8c6-441c17a623dd)" />
+  <g opacity="0.1">
+    <circle cx="339.88854164740263" cy="184.18225537852297" r="10.796929869170695" fill="white" /><circle cx="280.8105452110841" cy="179.27126604402793" r="18.858939545981872" fill="white" /><circle cx="305.7123658700152" cy="231.57518954547268" r="25.40167425110244" fill="white" /><circle cx="82.75683282166008" cy="539.8747509921114" r="25.031130488794453" fill="white" /><circle cx="244.33306350924315" cy="463.29450130038344" r="12.664660177259815" fill="white" /><circle cx="353.3911238631677" cy="430.5216884706433" r="28.143140651543984" fill="white" /><circle cx="251.50103559627036" cy="517.6073011253629" r="20.583276705367695" fill="white" /><circle cx="336.4906573590309" cy="117.72733091116847" r="11.103007602448642" fill="white" /><circle cx="347.3434393119611" cy="331.7014479531112" r="17.236914778327254" fill="white" /><circle cx="75.94103249506894" cy="287.32975161826977" r="12.738586450571763" fill="white" /><circle cx="311.10513779459836" cy="208.57778105186358" r="20.60175441520834" fill="white" /><circle cx="263.3001073837821" cy="301.4962210069492" r="12.568500123456028" fill="white" /><circle cx="106.49256192043217" cy="312.6232539243904" r="16.314898892951483" fill="white" /><circle cx="142.07828330696427" cy="383.90884379874586" r="29.884829592408405" fill="white" /><circle cx="367.86216313862116" cy="467.8152195490584" r="14.396803571727425" fill="white" /><circle cx="60.40305373501229" cy="356.441440149484" r="14.421168623214381" fill="white" /><circle cx="114.6645027920886" cy="132.8662123356621" r="19.558296311104428" fill="white" /><circle cx="349.73943778115546" cy="305.9081663474852" r="27.370241908610492" fill="white" /><circle cx="140.2189741717368" cy="176.4183854724768" r="20.39055725585567" fill="white" /><circle cx="157.04267830290095" cy="191.02075304716337" r="13.299632363394752" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        A Brief History of Time
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Stephen Hawking
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

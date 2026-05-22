@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-515e03f8-3d05-4188-9e4e-4361d46c2a3f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-515e03f8-3d05-4188-9e4e-4361d46c2a3f)" />
+  <g opacity="0.1">
+    <circle cx="281.74223852748855" cy="272.83549945830845" r="19.668530784328347" fill="white" /><circle cx="261.72512325588974" cy="32.67122405247085" r="23.77052093110052" fill="white" /><circle cx="217.00659828615315" cy="19.598092974626823" r="28.544634430498025" fill="white" /><circle cx="191.8461620427855" cy="178.330053623214" r="17.30556826443932" fill="white" /><circle cx="51.72577808721104" cy="2.5815360734385617" r="18.85196046253245" fill="white" /><circle cx="77.06652898727646" cy="78.82035125283639" r="22.205840468515866" fill="white" /><circle cx="94.39494646259217" cy="264.6051989927327" r="28.45109373916667" fill="white" /><circle cx="228.9729621755061" cy="182.88690019814857" r="16.88753013192342" fill="white" /><circle cx="283.0309694654237" cy="463.61797995096214" r="12.900567853797323" fill="white" /><circle cx="345.22210287297804" cy="574.3039405474551" r="29.04490912559383" fill="white" /><circle cx="225.82261977500434" cy="252.0590568316907" r="26.1980013954128" fill="white" /><circle cx="64.55948605376203" cy="315.5818732354933" r="11.516942350371192" fill="white" /><circle cx="317.01828821919634" cy="127.64224558571978" r="21.081961256296857" fill="white" /><circle cx="263.82327442125563" cy="468.83253884071394" r="10.84651884991441" fill="white" /><circle cx="363.74603101329427" cy="420.60809026161814" r="18.230717656115214" fill="white" /><circle cx="58.5102080118935" cy="73.7618440712188" r="28.04673400667893" fill="white" /><circle cx="144.78243089838733" cy="270.96568023520587" r="27.225973487786167" fill="white" /><circle cx="186.74220300835032" cy="582.7945465220029" r="23.251884344095252" fill="white" /><circle cx="263.2351386005543" cy="467.64827548772234" r="20.56099393236485" fill="white" /><circle cx="58.824033485464255" cy="310.92990510204896" r="20.388412829087827" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Spark: Wie Bewegung Ihr
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Gehirn auf Trab bringt
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        John Ratey
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

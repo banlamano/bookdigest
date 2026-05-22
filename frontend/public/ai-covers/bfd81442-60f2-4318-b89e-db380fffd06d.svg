@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-bfd81442-60f2-4318-b89e-db380fffd06d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-bfd81442-60f2-4318-b89e-db380fffd06d)" />
+  <g opacity="0.1">
+    <circle cx="224.87072877372555" cy="315.3989536189722" r="21.94599048771859" fill="white" /><circle cx="342.0556434568773" cy="421.14125042640416" r="22.565971277829448" fill="white" /><circle cx="353.11503159583157" cy="37.58771303666888" r="26.859219430334058" fill="white" /><circle cx="223.87401024041554" cy="19.090984952555743" r="11.28360173711864" fill="white" /><circle cx="398.77471467195386" cy="441.2531608109695" r="28.6432544683961" fill="white" /><circle cx="368.4025632461776" cy="233.44605462590843" r="12.762550516110432" fill="white" /><circle cx="348.03121657720567" cy="558.0996092388369" r="17.06477026280448" fill="white" /><circle cx="229.64320900677694" cy="63.747798927914715" r="20.45174133040903" fill="white" /><circle cx="359.65111122332604" cy="554.5434637457031" r="16.911941345855745" fill="white" /><circle cx="24.788366862715794" cy="234.6421624694119" r="22.18129143278688" fill="white" /><circle cx="122.88897956084162" cy="125.83114234506334" r="29.09253730862193" fill="white" /><circle cx="229.78369348989722" cy="133.53255081397853" r="23.94280457407374" fill="white" /><circle cx="256.43993291433765" cy="37.730528724879456" r="25.27158133218119" fill="white" /><circle cx="196.21265809098028" cy="17.330984462544976" r="21.027350349474535" fill="white" /><circle cx="299.0762332771111" cy="68.90739327972204" r="15.203008359213605" fill="white" /><circle cx="15.836731691657757" cy="276.93387826206197" r="11.745799578010875" fill="white" /><circle cx="69.65476514614592" cy="248.0672353242547" r="22.541565651031775" fill="white" /><circle cx="65.33383737519829" cy="180.89159255695424" r="24.64518993667491" fill="white" /><circle cx="44.738574881173676" cy="192.6574917244569" r="22.0200034164601" fill="white" /><circle cx="372.0557760371203" cy="418.54332238136624" r="27.678856242117266" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das unendliche Spiel:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Führen in einer Welt, die
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        sich ständig verändert
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Simon Sinek
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

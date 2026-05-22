@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f4d049a2-44a1-4088-bad2-8bd6452e6422" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f4d049a2-44a1-4088-bad2-8bd6452e6422)" />
+  <g opacity="0.1">
+    <circle cx="164.3616829658852" cy="210.6580785461247" r="23.79755378044892" fill="white" /><circle cx="9.517618907194958" cy="209.50634030683773" r="21.356346143025775" fill="white" /><circle cx="134.999066283897" cy="53.94750691336525" r="22.58634537896596" fill="white" /><circle cx="255.6513826390796" cy="488.3969180943942" r="21.82766173590658" fill="white" /><circle cx="246.73418308218652" cy="47.46809866274386" r="12.93997686392089" fill="white" /><circle cx="226.21539256526506" cy="97.02398367590932" r="25.2422105775364" fill="white" /><circle cx="310.22249105633534" cy="293.23800594223417" r="12.29792750434032" fill="white" /><circle cx="101.728445559052" cy="569.1850434969544" r="20.667698935528264" fill="white" /><circle cx="215.3627849219952" cy="140.3535053331129" r="25.046359176080895" fill="white" /><circle cx="54.60466621998607" cy="552.027585896399" r="29.114781001753066" fill="white" /><circle cx="385.8111340146652" cy="564.6201573278119" r="20.98803172503922" fill="white" /><circle cx="283.74599401925417" cy="77.63601023752365" r="11.438385312725769" fill="white" /><circle cx="239.41343618773723" cy="550.2268110143933" r="14.133163160794718" fill="white" /><circle cx="36.39553961081887" cy="69.8561127443356" r="19.883860238124704" fill="white" /><circle cx="340.18348361919476" cy="71.99690756762855" r="11.652624180110271" fill="white" /><circle cx="159.17846827024894" cy="291.8389355257077" r="12.438898146376754" fill="white" /><circle cx="378.55546808998184" cy="236.4437010788239" r="12.47198470879232" fill="white" /><circle cx="184.65008985434034" cy="265.49721457245374" r="23.647958430076528" fill="white" /><circle cx="126.99020182534943" cy="332.09420059095834" r="11.738032598251596" fill="white" /><circle cx="56.73500023709322" cy="291.303441923469" r="28.43401361205274" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Think and Grow Rich
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Napoleon Hill
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

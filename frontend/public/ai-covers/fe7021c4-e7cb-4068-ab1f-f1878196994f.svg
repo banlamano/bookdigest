@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-fe7021c4-e7cb-4068-ab1f-f1878196994f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-fe7021c4-e7cb-4068-ab1f-f1878196994f)" />
+  <g opacity="0.1">
+    <circle cx="123.24661932221676" cy="352.32965917704473" r="19.64069280618809" fill="white" /><circle cx="338.98650217356294" cy="381.59093894646566" r="24.197606588966032" fill="white" /><circle cx="70.98094114976585" cy="145.46425233994327" r="13.227866237723019" fill="white" /><circle cx="18.969254826079805" cy="399.77664199031676" r="11.266836435782068" fill="white" /><circle cx="196.81338208089488" cy="225.33889205368786" r="12.079312869375855" fill="white" /><circle cx="177.00858338599045" cy="10.12597815827343" r="20.251295475040315" fill="white" /><circle cx="258.29892794901895" cy="217.59642214112324" r="22.126284564726955" fill="white" /><circle cx="36.31891326377361" cy="75.80642746318446" r="24.4450439467605" fill="white" /><circle cx="19.91618052328792" cy="79.7659340282246" r="19.985354704825504" fill="white" /><circle cx="27.083792640649705" cy="331.9155633078966" r="23.178264842135206" fill="white" /><circle cx="398.2645921083278" cy="583.0710898748757" r="12.916634412849177" fill="white" /><circle cx="60.4032507601294" cy="287.93002175472697" r="27.55535539954854" fill="white" /><circle cx="70.75327469846088" cy="195.5972399199163" r="11.085542327254776" fill="white" /><circle cx="259.904430952086" cy="381.45239617210626" r="19.005836172151962" fill="white" /><circle cx="198.08429167668885" cy="271.74557403959153" r="20.876842793614706" fill="white" /><circle cx="352.17724324622145" cy="45.0582128180891" r="14.42760418114865" fill="white" /><circle cx="271.59750578525086" cy="153.27371324571988" r="16.126679506725687" fill="white" /><circle cx="358.6736162217866" cy="322.167143945551" r="19.382617668049406" fill="white" /><circle cx="17.135190145100943" cy="527.5229629087628" r="16.473869618242873" fill="white" /><circle cx="162.02496671790541" cy="38.64270292482204" r="17.472794432254986" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die 1%-Methode – Minimale
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Veränderung, maximale
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wirkung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        James Clear
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

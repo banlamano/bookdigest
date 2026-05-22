@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b2a317b6-81ea-4a51-93cf-7dfafed2d50d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b2a317b6-81ea-4a51-93cf-7dfafed2d50d)" />
+  <g opacity="0.1">
+    <circle cx="265.936308902189" cy="274.8304255189074" r="21.90893954708709" fill="white" /><circle cx="216.48489975008647" cy="306.374327938702" r="10.018658712869774" fill="white" /><circle cx="102.52984820046991" cy="500.14776571843163" r="16.908187387450866" fill="white" /><circle cx="266.7003228748809" cy="314.7041885011211" r="23.69728449402572" fill="white" /><circle cx="249.33875622730318" cy="542.3358566071137" r="17.500417465026132" fill="white" /><circle cx="191.00217769837343" cy="28.532916511273744" r="25.81361946167585" fill="white" /><circle cx="381.5282438731916" cy="467.7148801610767" r="29.818875324458233" fill="white" /><circle cx="140.73626402729786" cy="548.6400105983622" r="27.392378883492473" fill="white" /><circle cx="134.48078084623188" cy="342.7080705891931" r="12.844731512030734" fill="white" /><circle cx="75.85446962249831" cy="499.03941752054885" r="12.596721103001727" fill="white" /><circle cx="80.72399021561236" cy="373.06119586979355" r="23.147552058084525" fill="white" /><circle cx="2.579079337945389" cy="275.84938007329" r="20.628876649720414" fill="white" /><circle cx="262.8804366108002" cy="460.3384417552291" r="11.511591664110414" fill="white" /><circle cx="278.57996923481886" cy="233.24859640121795" r="29.165807220834374" fill="white" /><circle cx="33.67617192832677" cy="421.3141196732479" r="13.868602735885462" fill="white" /><circle cx="63.837607692022225" cy="495.9245533067443" r="15.725321043712226" fill="white" /><circle cx="50.11304519311177" cy="342.17741283893844" r="26.058810915628026" fill="white" /><circle cx="172.14308722806604" cy="430.62315549219426" r="13.603975695497363" fill="white" /><circle cx="57.28329367925218" cy="466.03401649000597" r="29.62186121696616" fill="white" /><circle cx="208.4471569573682" cy="384.3646907327041" r="14.909112679855754" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Unfuck Yourself: Entspann
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        dich mal und hör auf zu
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        jammern!
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Gary John Bishop
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

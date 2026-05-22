@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-826f22b3-d498-44c6-923f-81730a9d176c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-826f22b3-d498-44c6-923f-81730a9d176c)" />
+  <g opacity="0.1">
+    <circle cx="227.07247678824803" cy="517.4360298368543" r="18.889003361729156" fill="white" /><circle cx="214.6141119946001" cy="386.83915368195113" r="14.778084917907792" fill="white" /><circle cx="17.730883413405607" cy="86.97374409465266" r="15.37828544698115" fill="white" /><circle cx="204.35184892665959" cy="465.2731420299158" r="21.403228842938017" fill="white" /><circle cx="28.349507849471635" cy="331.2581818136102" r="14.671732529492411" fill="white" /><circle cx="125.883336000373" cy="158.63929939022265" r="16.840615912233346" fill="white" /><circle cx="168.3142422875793" cy="70.98306189174446" r="13.220718771052729" fill="white" /><circle cx="175.39793386945846" cy="196.02535074322915" r="27.082314428599055" fill="white" /><circle cx="163.14134028304625" cy="333.8457754101222" r="12.96766463571843" fill="white" /><circle cx="221.89145787727531" cy="112.71526401223954" r="16.360359038115128" fill="white" /><circle cx="276.50250523004127" cy="563.7617158944497" r="19.052832607395928" fill="white" /><circle cx="147.16300317590006" cy="93.95942851429228" r="17.937820140626073" fill="white" /><circle cx="162.6957674240173" cy="256.266929238606" r="19.7798930886347" fill="white" /><circle cx="131.26708352586695" cy="287.5846858019359" r="16.75889842396822" fill="white" /><circle cx="132.48350489478372" cy="302.66922807725024" r="23.161839224095765" fill="white" /><circle cx="105.00919417216798" cy="264.6064716388196" r="14.248206668498556" fill="white" /><circle cx="38.61314620649181" cy="552.2474363811809" r="15.65295870698292" fill="white" /><circle cx="149.0641587626752" cy="287.4713965517565" r="19.5457467430497" fill="white" /><circle cx="211.72449719814264" cy="342.6318480511651" r="28.248927557375342" fill="white" /><circle cx="70.92706388944059" cy="582.5974871541747" r="24.32881923972116" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Unbroken
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Laura Hillenbrand
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

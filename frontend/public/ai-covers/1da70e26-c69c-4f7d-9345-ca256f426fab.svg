@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1da70e26-c69c-4f7d-9345-ca256f426fab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1da70e26-c69c-4f7d-9345-ca256f426fab)" />
+  <g opacity="0.1">
+    <circle cx="51.60231618944291" cy="75.32904584402007" r="15.144940027949874" fill="white" /><circle cx="89.99158598092004" cy="212.6264431454431" r="13.538559213460235" fill="white" /><circle cx="65.35078848279903" cy="598.6466634888795" r="17.840792414640603" fill="white" /><circle cx="101.61432516226978" cy="179.21014385322871" r="25.066961773175976" fill="white" /><circle cx="67.30974460491659" cy="125.36250614643556" r="14.163535043043057" fill="white" /><circle cx="360.19825463963053" cy="419.2290815736407" r="22.0286030851785" fill="white" /><circle cx="33.059179411664495" cy="209.5747114264873" r="23.64242288153323" fill="white" /><circle cx="39.36724341896927" cy="333.60094259642375" r="15.40769534477812" fill="white" /><circle cx="301.0022662155347" cy="537.9247695383648" r="27.72597022136039" fill="white" /><circle cx="248.10011865299074" cy="21.753820793945767" r="23.34356365073665" fill="white" /><circle cx="1.1783903969678544" cy="524.2736906954127" r="15.746153807164525" fill="white" /><circle cx="280.2033970893504" cy="425.62346288623326" r="25.34510078516975" fill="white" /><circle cx="230.14206341030126" cy="381.239029822567" r="26.89249018070216" fill="white" /><circle cx="169.04035038285033" cy="352.4574376081872" r="15.67371058109331" fill="white" /><circle cx="179.00942199545705" cy="366.9738758197457" r="29.437871191685346" fill="white" /><circle cx="50.5572445735651" cy="568.882167201349" r="12.994282140337884" fill="white" /><circle cx="386.0409803646164" cy="398.9695417154469" r="18.224871646871804" fill="white" /><circle cx="383.42562729470535" cy="462.7138841238312" r="24.313981009107763" fill="white" /><circle cx="54.76218785095699" cy="580.4461519076965" r="22.901860340524095" fill="white" /><circle cx="30.012476765812668" cy="572.170562165402" r="24.098254026618672" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Weg des wahren
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Mannes: Ein Leitfaden für
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        spirituelle Suchende
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        David Deida
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

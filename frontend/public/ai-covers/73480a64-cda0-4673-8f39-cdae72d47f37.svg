@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-73480a64-cda0-4673-8f39-cdae72d47f37" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-73480a64-cda0-4673-8f39-cdae72d47f37)" />
+  <g opacity="0.1">
+    <circle cx="270.74515029220197" cy="393.4331034310424" r="17.831779556751428" fill="white" /><circle cx="159.09012075534457" cy="496.0544458446329" r="18.68117534938141" fill="white" /><circle cx="198.7651235524647" cy="551.047824476071" r="21.460754932863935" fill="white" /><circle cx="234.14945238378326" cy="200.41761330872222" r="25.19531967910087" fill="white" /><circle cx="216.7132867178484" cy="558.0953196010572" r="13.319674272259018" fill="white" /><circle cx="17.922773790704262" cy="23.95507113218327" r="10.834629646781975" fill="white" /><circle cx="384.655378522842" cy="222.06113103040684" r="16.618785822471843" fill="white" /><circle cx="223.91121486073365" cy="119.23848942417537" r="21.380868367889768" fill="white" /><circle cx="279.68941038475396" cy="512.5521876232068" r="20.543639504080158" fill="white" /><circle cx="272.8188967097247" cy="72.5477609622755" r="25.04919157188558" fill="white" /><circle cx="132.81791421294002" cy="314.5703370466936" r="22.534338117382962" fill="white" /><circle cx="188.10183371348742" cy="234.77502359793561" r="27.73288248755279" fill="white" /><circle cx="376.53205211675873" cy="47.60677990852056" r="12.904846087113702" fill="white" /><circle cx="184.5522060032855" cy="562.2881224910711" r="17.373215626760544" fill="white" /><circle cx="198.78787075970683" cy="393.3610815225606" r="12.255052963222008" fill="white" /><circle cx="82.59284791165582" cy="414.08841107208184" r="29.66344475513591" fill="white" /><circle cx="320.93765856269397" cy="57.101024280946234" r="27.98260974783626" fill="white" /><circle cx="50.57043399180121" cy="126.85682335324357" r="25.190212317468585" fill="white" /><circle cx="132.87284994072795" cy="288.44067504636786" r="23.620661499469765" fill="white" /><circle cx="370.61782935282434" cy="476.9158981935899" r="26.736326072729863" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Verhalten: Die Biologie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        des Menschen in guten wie
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        in schlechten Zeiten
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Robert Sapolsky
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

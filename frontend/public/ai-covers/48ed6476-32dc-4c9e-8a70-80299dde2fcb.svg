@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-48ed6476-32dc-4c9e-8a70-80299dde2fcb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-48ed6476-32dc-4c9e-8a70-80299dde2fcb)" />
+  <g opacity="0.1">
+    <circle cx="338.9088408149695" cy="496.70535174585206" r="27.48140771672258" fill="white" /><circle cx="157.3838428766324" cy="99.15680173883736" r="12.972091222091011" fill="white" /><circle cx="49.53208341554496" cy="149.53229607780028" r="10.478008150893505" fill="white" /><circle cx="71.3220634437917" cy="154.0360746948326" r="13.416250419389886" fill="white" /><circle cx="275.8424689125289" cy="107.6257978168309" r="29.9620852142858" fill="white" /><circle cx="193.91020209445736" cy="377.254138356736" r="17.93814355012077" fill="white" /><circle cx="84.74678756977166" cy="4.935859628678996" r="29.89163848902589" fill="white" /><circle cx="162.30983771347732" cy="312.4831516808684" r="28.75271814625185" fill="white" /><circle cx="76.06612554882308" cy="573.6414817352905" r="29.405992590316508" fill="white" /><circle cx="148.35626228580975" cy="220.75781617001456" r="21.739515275916126" fill="white" /><circle cx="128.40526594748084" cy="398.25492581027027" r="13.731150217486679" fill="white" /><circle cx="106.70179173208653" cy="466.84932766121943" r="29.30592168499142" fill="white" /><circle cx="171.7079337289565" cy="504.78217387160527" r="20.328648673011458" fill="white" /><circle cx="146.77849087993144" cy="71.35339594645598" r="28.22162071931345" fill="white" /><circle cx="79.06302322298528" cy="222.11755664368425" r="26.489931934575818" fill="white" /><circle cx="23.635936336250076" cy="492.63654146761473" r="21.645475105543312" fill="white" /><circle cx="379.2429785316027" cy="54.247100823461246" r="17.585891527526243" fill="white" /><circle cx="252.0763798444115" cy="98.11584322814953" r="13.362354370817037" fill="white" /><circle cx="110.14896718248077" cy="435.53014974393193" r="16.179615712769323" fill="white" /><circle cx="230.08243544760333" cy="248.7490448585993" r="16.69544142501086" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die vielen Leben der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Seele: Die
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        außergewöhnliche
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Brian Weiss
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

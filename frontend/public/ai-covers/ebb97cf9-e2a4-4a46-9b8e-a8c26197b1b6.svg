@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ebb97cf9-e2a4-4a46-9b8e-a8c26197b1b6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ebb97cf9-e2a4-4a46-9b8e-a8c26197b1b6)" />
+  <g opacity="0.1">
+    <circle cx="234.13048270445026" cy="318.1022256967792" r="23.363646803308136" fill="white" /><circle cx="79.89478699537878" cy="13.526602995840541" r="17.152856415300544" fill="white" /><circle cx="282.15360247934603" cy="134.05743860418085" r="12.313879879401314" fill="white" /><circle cx="139.9858707997741" cy="536.7276641644446" r="25.10999558491693" fill="white" /><circle cx="184.80173687962375" cy="281.6663366749521" r="14.172199322488607" fill="white" /><circle cx="234.49143680716972" cy="60.054926645181396" r="12.18030114092985" fill="white" /><circle cx="255.90012701094372" cy="451.64912732440416" r="16.740286845749537" fill="white" /><circle cx="312.04682910409167" cy="22.068400103418018" r="11.359851059684054" fill="white" /><circle cx="259.89135472997856" cy="431.33275934332045" r="20.083099895193946" fill="white" /><circle cx="282.2684552051401" cy="59.17233280967138" r="17.297520497276423" fill="white" /><circle cx="109.2231753636597" cy="412.5039810021046" r="25.906725511744916" fill="white" /><circle cx="113.4687041905997" cy="463.66176199723986" r="14.128259956985552" fill="white" /><circle cx="294.7028781514061" cy="422.4293400908334" r="18.389562105384748" fill="white" /><circle cx="101.80681319183749" cy="456.72203840159017" r="26.319654761546403" fill="white" /><circle cx="147.91790481017634" cy="440.89216207889336" r="14.872474343633" fill="white" /><circle cx="310.8221182006004" cy="543.8275383963776" r="26.18184538346613" fill="white" /><circle cx="299.6003126004639" cy="168.89128062701568" r="24.167776730953225" fill="white" /><circle cx="292.8877484324941" cy="228.74346516035723" r="13.461785229361398" fill="white" /><circle cx="136.74660219387502" cy="460.5700312055603" r="25.551393814696482" fill="white" /><circle cx="135.28100645069267" cy="459.64646344871386" r="22.64163780351752" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die vier Versprechen: Ein
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        praktischer Weg zur
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        persönlichen Freiheit
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Don Miguel Ruiz
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

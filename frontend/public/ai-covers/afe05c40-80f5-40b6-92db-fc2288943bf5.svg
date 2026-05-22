@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-afe05c40-80f5-40b6-92db-fc2288943bf5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-afe05c40-80f5-40b6-92db-fc2288943bf5)" />
+  <g opacity="0.1">
+    <circle cx="132.18146043653408" cy="425.40795678166563" r="29.040060217355464" fill="white" /><circle cx="28.480831543819907" cy="155.95426345909559" r="20.284330426494535" fill="white" /><circle cx="383.20461295784935" cy="301.7112466550661" r="25.749828185794872" fill="white" /><circle cx="245.1847474620695" cy="58.72831097422375" r="11.253990138973638" fill="white" /><circle cx="154.92078850920132" cy="63.46116593708455" r="24.75562279034812" fill="white" /><circle cx="375.3456279551194" cy="56.41961087228147" r="26.430304594268872" fill="white" /><circle cx="67.48132136131635" cy="13.186883052010367" r="11.326137170292874" fill="white" /><circle cx="10.89353927082195" cy="87.79472358172555" r="16.475473506709395" fill="white" /><circle cx="342.2338330310538" cy="8.066764449297947" r="21.408305861418295" fill="white" /><circle cx="106.80236018784144" cy="133.49461071067535" r="23.91200019736938" fill="white" /><circle cx="258.0587952979023" cy="106.76702709382653" r="21.93233266582159" fill="white" /><circle cx="0.5511621799300315" cy="281.2758120392302" r="24.8107404056448" fill="white" /><circle cx="224.22210165671635" cy="475.09703430770753" r="25.36907078278813" fill="white" /><circle cx="86.07293238904874" cy="267.10635489166776" r="14.68179342382383" fill="white" /><circle cx="378.1377181588128" cy="408.14941445272075" r="12.168245392642138" fill="white" /><circle cx="43.58193215801829" cy="336.4762946141424" r="13.519005118832979" fill="white" /><circle cx="343.6932789961072" cy="190.44690050240055" r="20.585694441402453" fill="white" /><circle cx="139.01584423648913" cy="442.8863087981799" r="13.095836077653821" fill="white" /><circle cx="108.11271041744521" cy="565.8144649068657" r="16.65140838799392" fill="white" /><circle cx="220.50510222802166" cy="386.12154624692323" r="27.742518882585298" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Intelligent Investieren:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Bestseller über die
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Erfolgsstrategien des
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Benjamin Graham
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

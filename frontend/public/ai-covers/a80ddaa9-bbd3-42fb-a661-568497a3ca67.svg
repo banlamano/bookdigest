@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a80ddaa9-bbd3-42fb-a661-568497a3ca67" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a80ddaa9-bbd3-42fb-a661-568497a3ca67)" />
+  <g opacity="0.1">
+    <circle cx="305.4735080791426" cy="552.0267746723194" r="19.633003056722547" fill="white" /><circle cx="199.66859501772768" cy="30.176141223099663" r="18.857226394715717" fill="white" /><circle cx="242.03028219732542" cy="301.58239018684395" r="14.878974298245897" fill="white" /><circle cx="41.30705086307302" cy="56.45043143138126" r="28.18850974240403" fill="white" /><circle cx="134.50082071438692" cy="482.6950156740524" r="23.834052485929966" fill="white" /><circle cx="266.2585181240139" cy="109.66803144913513" r="15.390972510650457" fill="white" /><circle cx="311.1608827363945" cy="270.75304583471546" r="20.840693101180324" fill="white" /><circle cx="155.00433937717776" cy="580.4244603021356" r="17.893445357887373" fill="white" /><circle cx="226.23233839788264" cy="343.43350435161676" r="11.654203156269869" fill="white" /><circle cx="41.13538823419858" cy="502.74165999054406" r="11.356975711450364" fill="white" /><circle cx="352.72289037256905" cy="195.84758079635506" r="23.263757489300787" fill="white" /><circle cx="293.39810638870455" cy="296.1817090494801" r="16.972414522024295" fill="white" /><circle cx="306.7493861890611" cy="319.89176862055746" r="14.117120435684448" fill="white" /><circle cx="327.83524638404174" cy="542.0297247315158" r="14.05819597101062" fill="white" /><circle cx="234.5557336986837" cy="19.293356828836174" r="24.61652075121954" fill="white" /><circle cx="154.0740880584651" cy="331.1112879189847" r="25.936756470499425" fill="white" /><circle cx="327.32346500793204" cy="431.1186559795798" r="23.247200987437466" fill="white" /><circle cx="12.382416716337508" cy="454.1001632147909" r="26.188857642869422" fill="white" /><circle cx="75.69037656750699" cy="450.91618871393734" r="26.675501218096322" fill="white" /><circle cx="171.5351806706237" cy="171.37126521415001" r="23.37237253772748" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Most Important Thing
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Howard Marks
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

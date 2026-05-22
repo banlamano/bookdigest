@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b5c3e881-567e-46fa-9674-0bddc3eb6edd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b5c3e881-567e-46fa-9674-0bddc3eb6edd)" />
+  <g opacity="0.1">
+    <circle cx="150.08939914745878" cy="567.1546685588537" r="14.865164008976954" fill="white" /><circle cx="325.41337608827024" cy="552.6919858064375" r="28.781120292511886" fill="white" /><circle cx="360.9350676261599" cy="496.5333059205757" r="25.118429554904544" fill="white" /><circle cx="393.14922872228146" cy="278.4046626133242" r="14.497365250866576" fill="white" /><circle cx="309.0030928338571" cy="428.51953204483493" r="16.044529064396947" fill="white" /><circle cx="299.51378185896743" cy="117.72063397726032" r="11.273004093720115" fill="white" /><circle cx="115.690203101182" cy="107.30377199238974" r="18.603327366202187" fill="white" /><circle cx="218.33723940322503" cy="30.583041352516993" r="29.321337806770767" fill="white" /><circle cx="355.191616910969" cy="67.24927668526975" r="18.988021732384198" fill="white" /><circle cx="6.785889701410808" cy="450.7001434632786" r="21.89648475838812" fill="white" /><circle cx="154.62223198227747" cy="37.338206180384034" r="11.033361853377217" fill="white" /><circle cx="160.54946856175016" cy="232.80844930993106" r="20.53545835712115" fill="white" /><circle cx="93.49712698644991" cy="153.42678925307402" r="10.750633359249928" fill="white" /><circle cx="161.2988561093266" cy="414.6243716451677" r="14.24051256457828" fill="white" /><circle cx="215.06409925286567" cy="403.61981946009917" r="19.15311173284614" fill="white" /><circle cx="316.618207792772" cy="426.11253548475383" r="24.103636256571157" fill="white" /><circle cx="7.803120726175683" cy="222.1017426045805" r="22.662014888477234" fill="white" /><circle cx="335.14090379216907" cy="170.1368263844864" r="21.934704837983254" fill="white" /><circle cx="340.4490965823027" cy="169.03453131644136" r="17.770783775895186" fill="white" /><circle cx="192.2161728936742" cy="85.25378001074455" r="16.478252538384112" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Lifespan
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        David Sinclair
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

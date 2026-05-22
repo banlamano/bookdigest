@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d621cc4b-4ac5-4895-9004-60435ec08f09" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d621cc4b-4ac5-4895-9004-60435ec08f09)" />
+  <g opacity="0.1">
+    <circle cx="236.63203512846772" cy="559.9967972742064" r="25.23713762487859" fill="white" /><circle cx="40.56912438342901" cy="378.1312095922426" r="12.34812176491085" fill="white" /><circle cx="73.26467367502457" cy="550.8556980353446" r="25.73420774708982" fill="white" /><circle cx="166.6429655241763" cy="524.742041936299" r="23.548724876353447" fill="white" /><circle cx="375.9192709061626" cy="538.9971770369037" r="27.51837720463258" fill="white" /><circle cx="216.4725093739985" cy="309.9512051414918" r="24.625555775172472" fill="white" /><circle cx="3.4153575342525944" cy="70.38171192100214" r="17.385798121171607" fill="white" /><circle cx="300.28016579126586" cy="464.82691866307704" r="12.104649809702794" fill="white" /><circle cx="162.73926282640247" cy="579.3443100443333" r="25.023070268916484" fill="white" /><circle cx="165.49870344976094" cy="536.7639755762283" r="20.01223814469575" fill="white" /><circle cx="40.65263255642657" cy="424.9145640185659" r="24.659295276915856" fill="white" /><circle cx="114.69265362879248" cy="297.92322307400866" r="20.524467684322165" fill="white" /><circle cx="314.61225467634483" cy="56.52117802079775" r="13.974497053723905" fill="white" /><circle cx="190.08566502418665" cy="579.5831490851428" r="13.793129309900948" fill="white" /><circle cx="177.93959195642094" cy="31.98311090110959" r="26.868235279584454" fill="white" /><circle cx="41.784799275653086" cy="146.06215591303285" r="22.909792678591586" fill="white" /><circle cx="393.88758679408994" cy="520.6301112777641" r="10.465305221754964" fill="white" /><circle cx="381.40760358635634" cy="525.672488373395" r="29.07044619593388" fill="white" /><circle cx="83.75259075069637" cy="459.90286033387207" r="20.444880409438266" fill="white" /><circle cx="286.65561619880225" cy="411.75574886157386" r="16.945937277757253" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der unbekannte Weg:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Psychologie der
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Erneuerung und Entfaltung
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        M. Scott Peck
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

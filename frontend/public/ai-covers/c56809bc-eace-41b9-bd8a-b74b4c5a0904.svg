@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c56809bc-eace-41b9-bd8a-b74b4c5a0904" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c56809bc-eace-41b9-bd8a-b74b4c5a0904)" />
+  <g opacity="0.1">
+    <circle cx="307.2026896673652" cy="436.4829005053327" r="18.810238972177913" fill="white" /><circle cx="296.5685112775505" cy="281.3679247208733" r="12.991935941779891" fill="white" /><circle cx="56.33356464861503" cy="492.3688040117002" r="20.75894236247685" fill="white" /><circle cx="33.86584781806672" cy="504.58168703915044" r="26.707668520921768" fill="white" /><circle cx="299.6630067666011" cy="285.1359899336458" r="23.81524434971945" fill="white" /><circle cx="85.80689422616285" cy="327.14152718055556" r="23.190489017026053" fill="white" /><circle cx="298.7773709855517" cy="580.4971129542496" r="27.552451269642667" fill="white" /><circle cx="160.62352392662484" cy="50.37385758902986" r="25.003203635310953" fill="white" /><circle cx="121.83440188921386" cy="352.3098069156754" r="28.42955872698192" fill="white" /><circle cx="169.95449391050835" cy="468.22280312904047" r="10.744506442169712" fill="white" /><circle cx="167.97588574754533" cy="163.54187645661688" r="22.87099014013494" fill="white" /><circle cx="122.4619714723774" cy="547.3534593370653" r="19.79546750459706" fill="white" /><circle cx="387.34480795576786" cy="41.77491236544548" r="23.127918972081495" fill="white" /><circle cx="16.28201970635823" cy="436.7132016125153" r="12.35338373229158" fill="white" /><circle cx="283.1836732975075" cy="107.92697812967353" r="22.29948014037124" fill="white" /><circle cx="67.89191735591817" cy="532.069039280019" r="14.696631323705295" fill="white" /><circle cx="276.1509626443231" cy="293.33781791949883" r="24.203203845307414" fill="white" /><circle cx="326.7765570011519" cy="133.43520350808924" r="29.56449765367243" fill="white" /><circle cx="85.12501511203263" cy="44.27024394939474" r="15.283034807325295" fill="white" /><circle cx="154.12775051694814" cy="425.11350485136893" r="18.151840563602093" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The New One Minute
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Manager
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ken Blanchard
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

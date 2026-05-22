@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-bdc0bd90-e35d-4625-b040-900551848185" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-bdc0bd90-e35d-4625-b040-900551848185)" />
+  <g opacity="0.1">
+    <circle cx="218.52488037529798" cy="112.88892928880938" r="15.486855486320863" fill="white" /><circle cx="224.72991827138546" cy="459.6340695273487" r="11.220770519573577" fill="white" /><circle cx="11.809911615997715" cy="311.1842787598623" r="14.346296087997022" fill="white" /><circle cx="208.6286170186259" cy="466.74173763101487" r="21.462676079021072" fill="white" /><circle cx="210.94788659672764" cy="296.4990677000323" r="11.197533522073151" fill="white" /><circle cx="317.6210274124703" cy="555.6180353311601" r="10.84741633907618" fill="white" /><circle cx="350.16627457504194" cy="388.28339411283065" r="14.499684536473666" fill="white" /><circle cx="25.8110308487443" cy="38.83954702564449" r="13.4612445194033" fill="white" /><circle cx="4.82102628620904" cy="48.11984781382244" r="11.628184348999149" fill="white" /><circle cx="195.55880976303865" cy="546.3700893002047" r="11.996821292889415" fill="white" /><circle cx="113.81314849012693" cy="86.79195317657317" r="21.528947337169555" fill="white" /><circle cx="114.76011274490791" cy="276.23038419504655" r="10.548420508166119" fill="white" /><circle cx="381.62990221535955" cy="55.650040519611935" r="11.780002017350954" fill="white" /><circle cx="293.93271159728374" cy="112.27938082037466" r="17.560074210581487" fill="white" /><circle cx="213.86822606669656" cy="21.17613884817726" r="27.6578316458373" fill="white" /><circle cx="330.2790746887944" cy="346.6664768430439" r="12.020393249898957" fill="white" /><circle cx="32.280665378351124" cy="155.7880145634201" r="14.152599312073749" fill="white" /><circle cx="392.2765516338725" cy="55.975116542185496" r="27.592086920152603" fill="white" /><circle cx="202.61332828115454" cy="191.80792756595062" r="29.762735781705626" fill="white" /><circle cx="380.2578148411276" cy="265.6994459116018" r="10.284446493181514" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Drive
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Daniel Pink
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

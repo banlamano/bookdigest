@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-88586eab-3485-402b-b734-5026cde65a13" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-88586eab-3485-402b-b734-5026cde65a13)" />
+  <g opacity="0.1">
+    <circle cx="344.14084100159096" cy="565.9939305672291" r="17.987414104885367" fill="white" /><circle cx="333.29392709866505" cy="468.09417967075757" r="20.91470961348906" fill="white" /><circle cx="306.9489256476425" cy="70.0493088392751" r="16.52466425750993" fill="white" /><circle cx="279.11901413879554" cy="442.1214126580121" r="19.930494885104586" fill="white" /><circle cx="396.9680901037858" cy="485.77768606577945" r="27.57054762607649" fill="white" /><circle cx="390.7730500654835" cy="488.24571073427956" r="20.105375452564612" fill="white" /><circle cx="152.80514671724183" cy="136.6051808519564" r="20.47951427870851" fill="white" /><circle cx="5.943572455900581" cy="136.38244267604009" r="27.02569216549921" fill="white" /><circle cx="44.96507627932998" cy="579.4076582727802" r="15.682186216972852" fill="white" /><circle cx="337.1251300555177" cy="390.6715554663283" r="25.66820079347555" fill="white" /><circle cx="186.50727746945125" cy="291.0031389377161" r="15.915330059480164" fill="white" /><circle cx="126.50525111862999" cy="135.55062783321887" r="26.431812601543836" fill="white" /><circle cx="143.54327625490453" cy="190.07884354655624" r="23.153599822917226" fill="white" /><circle cx="397.2044481791171" cy="345.51471015771733" r="17.78231634539211" fill="white" /><circle cx="167.4234203649938" cy="308.3075197015509" r="11.366422118764154" fill="white" /><circle cx="90.26525825273892" cy="531.9780199580637" r="29.384923308381463" fill="white" /><circle cx="3.3650921642694342" cy="285.87917201008867" r="20.785963403240423" fill="white" /><circle cx="165.43877610807849" cy="229.7442560756887" r="16.758919632008457" fill="white" /><circle cx="262.8487402083318" cy="580.814125784597" r="13.338450093943667" fill="white" /><circle cx="217.0015021306509" cy="499.5917886808739" r="26.962281529234616" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Reminiscences of a Stock
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Operator
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Edwin Lefèvre
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

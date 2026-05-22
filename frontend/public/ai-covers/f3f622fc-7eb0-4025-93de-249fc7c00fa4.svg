@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f3f622fc-7eb0-4025-93de-249fc7c00fa4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f3f622fc-7eb0-4025-93de-249fc7c00fa4)" />
+  <g opacity="0.1">
+    <circle cx="117.8777558127734" cy="409.0302190263784" r="18.688863616109657" fill="white" /><circle cx="182.5279096866022" cy="34.212547585140605" r="11.341870831257195" fill="white" /><circle cx="387.41192375635177" cy="172.9884398367419" r="27.401467268432107" fill="white" /><circle cx="249.21870381542135" cy="593.1358149690883" r="11.477061365948273" fill="white" /><circle cx="201.48393791851257" cy="213.35998431165066" r="28.532627139225436" fill="white" /><circle cx="377.04883952454315" cy="409.4044946606581" r="22.716901275739442" fill="white" /><circle cx="368.44801449177936" cy="255.26434049427598" r="10.286313337759767" fill="white" /><circle cx="225.712585303032" cy="298.11465207258817" r="22.61863543427907" fill="white" /><circle cx="85.80426729525894" cy="516.1323519471312" r="19.729844539832186" fill="white" /><circle cx="248.2154008746179" cy="432.1229947888763" r="19.697044739571517" fill="white" /><circle cx="223.5884806787074" cy="204.14333160559343" r="12.724342298394367" fill="white" /><circle cx="27.638120290778858" cy="217.14967036281925" r="20.08160781224391" fill="white" /><circle cx="188.33583093000436" cy="238.78129576297826" r="27.90493957957791" fill="white" /><circle cx="304.92683721884606" cy="371.38586430482627" r="19.187691591509854" fill="white" /><circle cx="125.32290143105267" cy="158.97105219466633" r="19.861029217702324" fill="white" /><circle cx="332.14692649895363" cy="214.84221993044713" r="23.88854800713343" fill="white" /><circle cx="362.17556253917735" cy="485.175461615741" r="22.59267935439829" fill="white" /><circle cx="39.624760941302206" cy="98.38618530075766" r="24.313541721239545" fill="white" /><circle cx="81.9524129384325" cy="479.76417391484205" r="10.022132327172585" fill="white" /><circle cx="387.9964926590715" cy="268.6680466083149" r="11.099163339280134" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Plant Paradox
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Steven Gundry
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

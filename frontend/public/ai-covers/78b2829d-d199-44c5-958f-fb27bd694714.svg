@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-78b2829d-d199-44c5-958f-fb27bd694714" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-78b2829d-d199-44c5-958f-fb27bd694714)" />
+  <g opacity="0.1">
+    <circle cx="392.97875425690034" cy="549.3468415592515" r="21.637033271500073" fill="white" /><circle cx="242.98734163484323" cy="171.060510597541" r="28.001242178334635" fill="white" /><circle cx="288.0170387701802" cy="455.922647393926" r="21.994366378831035" fill="white" /><circle cx="1.4365367436651066" cy="245.0507601397027" r="22.264935864105635" fill="white" /><circle cx="394.4732680955554" cy="367.0297611705442" r="17.515995510464922" fill="white" /><circle cx="203.32214805327817" cy="296.86808197047407" r="21.796732940359117" fill="white" /><circle cx="54.000510806066735" cy="447.2341805593944" r="23.847241824277866" fill="white" /><circle cx="129.0393049788951" cy="527.8025157557059" r="16.674675706603153" fill="white" /><circle cx="321.2006795775352" cy="549.3620715860611" r="21.97218834230123" fill="white" /><circle cx="359.11109867625225" cy="70.07191508804536" r="17.766131417339572" fill="white" /><circle cx="203.9831630893369" cy="126.95316145360644" r="17.376446526515657" fill="white" /><circle cx="369.17755678855787" cy="491.5300647494712" r="10.137198532454688" fill="white" /><circle cx="368.16059274616737" cy="14.22013686359982" r="10.595485959835107" fill="white" /><circle cx="217.04552385982612" cy="414.71180250607114" r="13.271312897787539" fill="white" /><circle cx="367.1712614275638" cy="168.80997730709092" r="26.574567471252585" fill="white" /><circle cx="27.256896591679734" cy="246.3392023836235" r="17.939713278753448" fill="white" /><circle cx="390.81916634885596" cy="474.41592230481695" r="20.730010803565655" fill="white" /><circle cx="374.2319428717088" cy="275.3221805118529" r="10.500868825033242" fill="white" /><circle cx="29.39974698336507" cy="330.2179523832332" r="27.45214058942564" fill="white" /><circle cx="397.929649151426" cy="571.5102782733487" r="14.55695918880714" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der effektive Manager
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Mark Horstman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

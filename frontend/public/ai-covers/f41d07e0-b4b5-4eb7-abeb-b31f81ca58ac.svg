@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f41d07e0-b4b5-4eb7-abeb-b31f81ca58ac" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f41d07e0-b4b5-4eb7-abeb-b31f81ca58ac)" />
+  <g opacity="0.1">
+    <circle cx="346.9356670222588" cy="579.7109852487636" r="21.003398052777882" fill="white" /><circle cx="154.83031730933195" cy="44.31708870866371" r="22.383008444511784" fill="white" /><circle cx="294.79070618034393" cy="497.0229121558798" r="29.925393086781295" fill="white" /><circle cx="327.04086198203447" cy="449.3938615458529" r="10.412546207243071" fill="white" /><circle cx="179.21241676116065" cy="412.22504454074624" r="22.57751105056007" fill="white" /><circle cx="293.14397359319605" cy="89.36821741531469" r="17.01594774088396" fill="white" /><circle cx="239.66588500069253" cy="106.22097942682241" r="21.248014530059216" fill="white" /><circle cx="257.153321475945" cy="9.830559611869427" r="11.552054169309171" fill="white" /><circle cx="45.85705002915819" cy="371.85928081311664" r="18.42813946368" fill="white" /><circle cx="82.30866229035256" cy="582.332014076522" r="11.021291630228676" fill="white" /><circle cx="247.67920596570622" cy="201.81775843991767" r="13.824167180982975" fill="white" /><circle cx="13.17937048705704" cy="481.0134858786108" r="22.705276980594444" fill="white" /><circle cx="265.1570689229496" cy="113.86794322891906" r="28.21529492741597" fill="white" /><circle cx="353.92933994384634" cy="251.42178858134685" r="26.634410295440738" fill="white" /><circle cx="313.6542065207819" cy="573.6860209822862" r="27.58303371639592" fill="white" /><circle cx="284.19712189864856" cy="524.7024924989789" r="10.829981273373297" fill="white" /><circle cx="80.79399596103008" cy="177.3489079922972" r="10.967913758864805" fill="white" /><circle cx="96.68333421589384" cy="596.5210539366977" r="18.787538289324388" fill="white" /><circle cx="103.45348357993203" cy="14.771404493863649" r="12.190612186193375" fill="white" /><circle cx="62.635049655686984" cy="76.45247555630719" r="27.660610475824658" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Kündigen wie ein
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Millionär
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Kristy Shen
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

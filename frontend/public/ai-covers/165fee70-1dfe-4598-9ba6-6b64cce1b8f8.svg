@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-165fee70-1dfe-4598-9ba6-6b64cce1b8f8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-165fee70-1dfe-4598-9ba6-6b64cce1b8f8)" />
+  <g opacity="0.1">
+    <circle cx="397.7814892096145" cy="67.69259118422353" r="17.41400655894106" fill="white" /><circle cx="283.75296436558284" cy="25.0656281978199" r="27.64087288545895" fill="white" /><circle cx="293.1438596690337" cy="149.6120021263315" r="24.77420383443817" fill="white" /><circle cx="20.92788511440893" cy="64.53528439789416" r="17.7011286141055" fill="white" /><circle cx="255.63434856079144" cy="381.7778628102468" r="23.755864365239816" fill="white" /><circle cx="229.98464140674724" cy="23.029458599453534" r="28.633438240558576" fill="white" /><circle cx="340.35636158873024" cy="494.2221090835833" r="29.19409989040957" fill="white" /><circle cx="217.14747800170048" cy="336.9212822771209" r="13.171611257167564" fill="white" /><circle cx="274.7836605679596" cy="521.536971374528" r="11.087444989911823" fill="white" /><circle cx="100.49603343924458" cy="507.1129979265189" r="15.36735501827785" fill="white" /><circle cx="167.35067217889846" cy="22.884689574006934" r="14.967671309678458" fill="white" /><circle cx="164.70133648053724" cy="595.5977196474614" r="10.2091040262518" fill="white" /><circle cx="60.47448509565187" cy="527.0856567749457" r="16.312009306738943" fill="white" /><circle cx="334.06416883641674" cy="85.24350859596011" r="26.69676575941608" fill="white" /><circle cx="247.95157599233187" cy="385.244817849188" r="12.652673973760557" fill="white" /><circle cx="177.87041449720067" cy="19.385171794368894" r="11.390331763278034" fill="white" /><circle cx="148.47036722046644" cy="534.3309171152972" r="24.757525921864605" fill="white" /><circle cx="390.9972975281837" cy="400.8510538939408" r="16.68725733308835" fill="white" /><circle cx="270.9680236790751" cy="261.264366528703" r="23.047443377575163" fill="white" /><circle cx="63.04458978231704" cy="565.5574674019632" r="13.658413810453906" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Start with Why: Wie große
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Führungspersönlichkeiten
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        und Unternehmen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Simon Sinek
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

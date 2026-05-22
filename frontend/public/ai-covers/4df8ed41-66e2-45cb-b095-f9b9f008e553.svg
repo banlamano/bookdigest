@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-4df8ed41-66e2-45cb-b095-f9b9f008e553" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-4df8ed41-66e2-45cb-b095-f9b9f008e553)" />
+  <g opacity="0.1">
+    <circle cx="373.0856440811898" cy="288.7043372627055" r="14.441878024481946" fill="white" /><circle cx="323.7880969043653" cy="23.649286653078725" r="25.7936169116403" fill="white" /><circle cx="146.6392334365791" cy="8.934658461432754" r="13.20320240305022" fill="white" /><circle cx="4.459817722820869" cy="209.90706300390386" r="16.70862688258141" fill="white" /><circle cx="396.7386219126841" cy="270.8185571432143" r="17.991425769258548" fill="white" /><circle cx="149.1178651643282" cy="21.852649879077823" r="11.781302103238346" fill="white" /><circle cx="25.8805303007398" cy="8.182598593875245" r="14.363908347349692" fill="white" /><circle cx="329.2808423659316" cy="392.2182268210897" r="28.433009666209287" fill="white" /><circle cx="247.19328034987723" cy="474.39091792634736" r="19.177272628448137" fill="white" /><circle cx="130.98330139484756" cy="185.7299861238603" r="14.444468357007045" fill="white" /><circle cx="17.673897104769765" cy="228.92691996047353" r="20.3205464684727" fill="white" /><circle cx="48.88448622075558" cy="229.34310283594544" r="28.663805876528052" fill="white" /><circle cx="385.77511196112226" cy="327.8237040736064" r="17.834558723917176" fill="white" /><circle cx="95.20200853789156" cy="467.48454267538597" r="17.927996207805897" fill="white" /><circle cx="277.1211183312665" cy="250.6135758378648" r="20.316701826941447" fill="white" /><circle cx="274.1513851250888" cy="558.5332467827732" r="28.35133474202976" fill="white" /><circle cx="38.681464719816546" cy="437.64176013473946" r="18.806204374552365" fill="white" /><circle cx="65.77920319626828" cy="563.9147518854872" r="23.46410146756213" fill="white" /><circle cx="97.99868510279222" cy="390.0096563244569" r="26.374324050566496" fill="white" /><circle cx="243.42045415700375" cy="251.6416403472988" r="23.35231626869664" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wild
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Cheryl Strayed
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

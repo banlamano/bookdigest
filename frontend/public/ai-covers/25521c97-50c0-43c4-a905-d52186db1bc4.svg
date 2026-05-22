@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-25521c97-50c0-43c4-a905-d52186db1bc4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-25521c97-50c0-43c4-a905-d52186db1bc4)" />
+  <g opacity="0.1">
+    <circle cx="244.12001344442368" cy="383.34008978484826" r="28.47435433223708" fill="white" /><circle cx="307.1004173698515" cy="60.39406244142893" r="25.780749513715477" fill="white" /><circle cx="31.50423841086627" cy="586.1688963532188" r="22.709162948811535" fill="white" /><circle cx="47.07895639977026" cy="376.1281094420316" r="29.693768641974316" fill="white" /><circle cx="283.4078269181799" cy="123.8498561927282" r="29.159377706639457" fill="white" /><circle cx="346.24410205434765" cy="88.2908142329484" r="27.666745428616085" fill="white" /><circle cx="181.41001231526474" cy="490.1115616259781" r="27.593236604830313" fill="white" /><circle cx="364.55153701591485" cy="179.79535595797125" r="12.335559651367966" fill="white" /><circle cx="15.06482827775213" cy="397.59269297643385" r="10.952367002297297" fill="white" /><circle cx="231.5274331239622" cy="199.98935236250986" r="26.594813066216926" fill="white" /><circle cx="293.0529226900132" cy="278.47910631675046" r="25.271346700822463" fill="white" /><circle cx="100.18710898476435" cy="400.94891724900214" r="21.80721160189434" fill="white" /><circle cx="191.2338864642666" cy="415.93032075263255" r="22.345560389254505" fill="white" /><circle cx="65.97085097745752" cy="317.04012401475046" r="26.42136215509766" fill="white" /><circle cx="268.3319566415432" cy="594.7301757402196" r="20.720960788957864" fill="white" /><circle cx="157.51781765545383" cy="117.01125095533243" r="22.25705811523775" fill="white" /><circle cx="388.1154128489581" cy="288.6407417093795" r="21.041412484749166" fill="white" /><circle cx="343.04562471745396" cy="382.0639343535402" r="23.81239600724261" fill="white" /><circle cx="326.1348134765291" cy="362.2107968651843" r="22.927954041244128" fill="white" /><circle cx="80.116846545587" cy="234.51876254833275" r="14.80074266185775" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Lean Startup: Wie
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        erfolgreiche Unternehmen
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Innovationen nutzen
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Eric Ries
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

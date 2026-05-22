@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b2e0758a-f873-4300-ae24-d37e9592de67" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#713f12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b2e0758a-f873-4300-ae24-d37e9592de67)" />
+  <g opacity="0.1">
+    <circle cx="122.89032961561878" cy="562.7670077122735" r="11.371623717337538" fill="white" /><circle cx="293.0627037048657" cy="308.31257073401406" r="19.951010414950513" fill="white" /><circle cx="124.44952492459662" cy="61.94452045236494" r="19.837413207975416" fill="white" /><circle cx="115.64231766690085" cy="8.691230144865681" r="13.215928977527675" fill="white" /><circle cx="382.36703242560657" cy="592.380461412346" r="18.447011449300568" fill="white" /><circle cx="44.0978312109162" cy="349.64403352817635" r="25.11067219531198" fill="white" /><circle cx="378.0382465027003" cy="179.4250119723471" r="24.9345183589695" fill="white" /><circle cx="225.0673956586177" cy="336.7004604662847" r="28.103978560273436" fill="white" /><circle cx="23.740644591567552" cy="15.476555581724828" r="18.05114133887956" fill="white" /><circle cx="231.84447101583663" cy="505.29643138351724" r="11.045110957566484" fill="white" /><circle cx="164.15670886073252" cy="326.41860968400647" r="15.567175494798981" fill="white" /><circle cx="150.57886472907813" cy="353.9619460989324" r="25.59514329559815" fill="white" /><circle cx="137.54143875475341" cy="548.0765434683118" r="20.58920910890155" fill="white" /><circle cx="283.3262851506795" cy="33.75337915441896" r="19.079370247070663" fill="white" /><circle cx="243.83887767267484" cy="170.2000828429369" r="13.74063725997404" fill="white" /><circle cx="269.0606019095031" cy="525.5900422789696" r="13.664415800784806" fill="white" /><circle cx="288.80474389470606" cy="359.25150349559516" r="17.38554834486349" fill="white" /><circle cx="316.6134859309552" cy="67.53634465154823" r="18.073038320467465" fill="white" /><circle cx="104.6764957685407" cy="55.46008553589425" r="22.781271848872866" fill="white" /><circle cx="223.9683738725597" cy="482.1312819085283" r="18.978386372879836" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Eleanor Oliphant Is
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Completely Fine
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fcd34d" text-anchor="middle">
+        Gail Honeyman
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BIOGRAPHY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f59e0b" opacity="0.8" />
+</svg>

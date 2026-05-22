@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-3ded1d24-fb54-44f3-8760-0036e2422f78" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-3ded1d24-fb54-44f3-8760-0036e2422f78)" />
+  <g opacity="0.1">
+    <circle cx="139.42076703631673" cy="224.54290603254" r="10.937831503895985" fill="white" /><circle cx="172.36329272795157" cy="262.17413327246646" r="16.918002003822046" fill="white" /><circle cx="196.8295236409844" cy="96.70772893812764" r="27.72501400071259" fill="white" /><circle cx="218.65178352294978" cy="380.80943546812955" r="20.09821095346164" fill="white" /><circle cx="351.0302907929343" cy="522.6157483849394" r="26.67540053963225" fill="white" /><circle cx="77.48414168410469" cy="95.93587853914983" r="15.612381386433169" fill="white" /><circle cx="230.66878255382707" cy="31.175769464452287" r="14.251011306165935" fill="white" /><circle cx="336.24333923824963" cy="518.6446119296969" r="13.077862682922468" fill="white" /><circle cx="300.00959526348447" cy="162.2384286565573" r="12.18139081098009" fill="white" /><circle cx="249.54026963658458" cy="553.9947085103438" r="14.101870725113494" fill="white" /><circle cx="129.86138086120366" cy="257.1769981148677" r="24.996036303563084" fill="white" /><circle cx="348.870613623177" cy="403.85039811407745" r="13.209358100924732" fill="white" /><circle cx="376.75392409167154" cy="267.7596806197152" r="17.216581995532117" fill="white" /><circle cx="222.72308485976438" cy="264.1947007994088" r="28.147714347359337" fill="white" /><circle cx="181.5616094974443" cy="510.3305534742675" r="20.009799429060987" fill="white" /><circle cx="30.327667847014528" cy="229.74149770160415" r="29.80476510643694" fill="white" /><circle cx="377.78203156933" cy="517.9492103106859" r="14.180748692942855" fill="white" /><circle cx="131.42775248546837" cy="419.1731089566426" r="15.400024986420366" fill="white" /><circle cx="277.5405538082214" cy="261.35363147650656" r="22.384267455431115" fill="white" /><circle cx="41.45788765599936" cy="510.15660995138853" r="11.626438721546519" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Market Wizards
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Jack Schwager
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

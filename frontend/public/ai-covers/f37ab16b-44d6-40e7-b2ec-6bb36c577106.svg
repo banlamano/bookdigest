@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f37ab16b-44d6-40e7-b2ec-6bb36c577106" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f37ab16b-44d6-40e7-b2ec-6bb36c577106)" />
+  <g opacity="0.1">
+    <circle cx="264.6423326185462" cy="456.4495788494407" r="13.905545122799756" fill="white" /><circle cx="195.39559151754543" cy="466.11689610337595" r="14.787930312038888" fill="white" /><circle cx="77.25528680643473" cy="14.440086316988964" r="13.485613127888328" fill="white" /><circle cx="16.983228999047206" cy="43.61058757960124" r="29.50380535694049" fill="white" /><circle cx="337.9711723771107" cy="415.36614172753843" r="15.587165792824116" fill="white" /><circle cx="19.636868345150347" cy="60.557956958424406" r="17.31190980739887" fill="white" /><circle cx="116.7373208265349" cy="142.90002617549908" r="10.178280957272182" fill="white" /><circle cx="105.34374674013267" cy="210.49683790365617" r="13.096638294201732" fill="white" /><circle cx="350.82252601437824" cy="583.2380711995081" r="25.47080723893784" fill="white" /><circle cx="81.83417515843567" cy="541.7106688403121" r="14.290115587328733" fill="white" /><circle cx="254.1869378452643" cy="545.7648386980418" r="16.73492219550854" fill="white" /><circle cx="395.9811336399046" cy="294.0201642471287" r="25.407486605994862" fill="white" /><circle cx="11.262643232880354" cy="364.03329483610037" r="12.286170731694718" fill="white" /><circle cx="104.9350152212162" cy="15.0357730705726" r="12.844325016873391" fill="white" /><circle cx="189.19884470834006" cy="419.1779090986601" r="25.879752641106197" fill="white" /><circle cx="182.60059603987094" cy="149.77158321220023" r="13.819097241795715" fill="white" /><circle cx="398.2736084379371" cy="293.3673405575574" r="19.20338621375017" fill="white" /><circle cx="170.02441365540952" cy="257.81475057303294" r="15.858877377420095" fill="white" /><circle cx="383.14842317012017" cy="100.63723918716683" r="12.245108517669065" fill="white" /><circle cx="210.95760787125334" cy="555.9618088992662" r="28.56734878965108" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die Magier der Märkte:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Interviews mit
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Top-Tradern
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Jack Schwager
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

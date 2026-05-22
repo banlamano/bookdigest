@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a7b816c1-f453-41da-ad3b-a81e15468a2a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a7b816c1-f453-41da-ad3b-a81e15468a2a)" />
+  <g opacity="0.1">
+    <circle cx="173.32691397626593" cy="499.3871905112972" r="11.712905597633036" fill="white" /><circle cx="231.63949637750102" cy="256.52338917185864" r="29.357142583826572" fill="white" /><circle cx="309.7160034826575" cy="341.3488359207314" r="11.53155390206061" fill="white" /><circle cx="343.60381846104355" cy="526.464998207253" r="10.515382865591365" fill="white" /><circle cx="1.974744832429165" cy="420.1980430168461" r="23.361580605132588" fill="white" /><circle cx="247.61521931988514" cy="148.4252242869119" r="27.667630343335507" fill="white" /><circle cx="29.342976155270286" cy="168.88852517908265" r="16.816265713097707" fill="white" /><circle cx="386.5446523442108" cy="344.90362651274495" r="26.545120995030352" fill="white" /><circle cx="337.94153195910457" cy="9.1667914014937" r="16.927765636269207" fill="white" /><circle cx="39.50954713852224" cy="111.55853974286596" r="22.54104754271084" fill="white" /><circle cx="238.3679433855618" cy="531.3555374959062" r="21.709005682211195" fill="white" /><circle cx="382.89835496692285" cy="496.45805598295544" r="18.11469138608341" fill="white" /><circle cx="236.62501042468799" cy="89.40016064955114" r="16.40179366475316" fill="white" /><circle cx="181.4516551710471" cy="526.9625737398686" r="29.293576199640516" fill="white" /><circle cx="278.59700404675084" cy="270.291582472377" r="11.986405481118824" fill="white" /><circle cx="337.48844820088306" cy="362.0729206880687" r="19.36147505714292" fill="white" /><circle cx="303.82114348308926" cy="520.5509963634119" r="26.816954120650834" fill="white" /><circle cx="397.6775631022923" cy="494.5506319644635" r="29.890613137721584" fill="white" /><circle cx="276.47159647503827" cy="464.2235421966429" r="15.83935316997029" fill="white" /><circle cx="89.83167220262733" cy="216.84738526294876" r="15.570783938380202" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Barefoot Investor
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Scott Pape
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

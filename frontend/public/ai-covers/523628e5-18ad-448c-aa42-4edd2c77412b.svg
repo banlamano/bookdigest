@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-523628e5-18ad-448c-aa42-4edd2c77412b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-523628e5-18ad-448c-aa42-4edd2c77412b)" />
+  <g opacity="0.1">
+    <circle cx="307.1562315400917" cy="225.92974208953925" r="12.344505143841566" fill="white" /><circle cx="382.90574763126466" cy="151.58176449064575" r="29.589045784622684" fill="white" /><circle cx="101.66087057579895" cy="237.65572573843085" r="13.58761680921555" fill="white" /><circle cx="225.4306392564931" cy="514.4551562637138" r="16.29976774935237" fill="white" /><circle cx="230.02386541663014" cy="560.5271225994372" r="22.61008468889854" fill="white" /><circle cx="379.8569555131495" cy="63.20902943914175" r="16.672591534846276" fill="white" /><circle cx="239.66993520953562" cy="569.6893391484218" r="10.29317954272358" fill="white" /><circle cx="183.73696902343625" cy="286.9362150030623" r="22.54910632366086" fill="white" /><circle cx="355.43004157096465" cy="234.51799075300542" r="11.703306610982157" fill="white" /><circle cx="92.30581723504967" cy="366.2381671218968" r="24.12666338974423" fill="white" /><circle cx="257.7273630323368" cy="400.0527426311142" r="20.256646993024745" fill="white" /><circle cx="278.92315899537016" cy="166.07998360538843" r="26.051841314485895" fill="white" /><circle cx="176.98850537380665" cy="18.1715536730662" r="21.82872505791181" fill="white" /><circle cx="358.49559116699703" cy="362.30756581881457" r="20.186302639487096" fill="white" /><circle cx="399.41029090601245" cy="513.8105143148055" r="19.480176847358784" fill="white" /><circle cx="150.3977183485954" cy="435.0564928328122" r="27.021234035553054" fill="white" /><circle cx="297.61051502453853" cy="111.42799486710607" r="13.83442551736218" fill="white" /><circle cx="190.99890676079764" cy="206.73001346622814" r="24.765514423729478" fill="white" /><circle cx="67.40831433531524" cy="170.8888200661177" r="27.529999052050698" fill="white" /><circle cx="228.15190452378343" cy="187.03452879621568" r="16.63388856805851" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Effizienter, schneller,
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        besser: Die Geheimnisse
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        der Produktivität
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Charles Duhigg
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c3b331a9-8ebe-4042-95ec-1a2999405603" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-c3b331a9-8ebe-4042-95ec-1a2999405603)" />
+  <g opacity="0.1">
+    <circle cx="128.55951647455322" cy="594.8407606263754" r="17.046830558395502" fill="white" /><circle cx="118.19157234542365" cy="435.4280703816118" r="12.602984488397368" fill="white" /><circle cx="40.31469846689699" cy="331.8833618498652" r="21.219749709525832" fill="white" /><circle cx="198.42460099280436" cy="402.32958945896155" r="28.171198943308113" fill="white" /><circle cx="205.23060567695356" cy="250.76916251092413" r="23.04321601354386" fill="white" /><circle cx="118.61894277412186" cy="417.94791500214086" r="21.463609738348392" fill="white" /><circle cx="168.06122277033828" cy="232.88237594281023" r="17.129643741709437" fill="white" /><circle cx="142.92013112465526" cy="537.1107026185326" r="23.094523193384784" fill="white" /><circle cx="206.3857448526989" cy="59.6381829034023" r="18.995320631937965" fill="white" /><circle cx="24.591083438270765" cy="467.97707543021335" r="27.910128060361764" fill="white" /><circle cx="238.62570415659877" cy="250.94705258996112" r="20.55560567155436" fill="white" /><circle cx="378.06867361266313" cy="204.66850746141466" r="19.96797287090334" fill="white" /><circle cx="238.67586553459694" cy="88.87708859591119" r="16.854083338410486" fill="white" /><circle cx="242.56181296487037" cy="27.901895916746987" r="16.21315448886798" fill="white" /><circle cx="90.05558449022404" cy="341.70462412718155" r="10.51497622388872" fill="white" /><circle cx="344.46884601617757" cy="392.02784233626085" r="25.946225441677015" fill="white" /><circle cx="119.59172037217702" cy="476.35783879207133" r="16.344272703999053" fill="white" /><circle cx="316.9781835458097" cy="556.1853978746547" r="10.664971313130405" fill="white" /><circle cx="170.349337308128" cy="446.2621349529973" r="15.290640749500156" fill="white" /><circle cx="21.034047131023303" cy="435.0497936785627" r="15.393135416138321" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Mindset
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Carol Dweck
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

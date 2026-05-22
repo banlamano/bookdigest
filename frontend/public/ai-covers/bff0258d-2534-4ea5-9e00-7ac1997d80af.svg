@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-bff0258d-2534-4ea5-9e00-7ac1997d80af" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-bff0258d-2534-4ea5-9e00-7ac1997d80af)" />
+  <g opacity="0.1">
+    <circle cx="379.8698281831686" cy="313.67341730475914" r="29.18565395622541" fill="white" /><circle cx="179.45513774164797" cy="230.264346336259" r="16.812463475724137" fill="white" /><circle cx="166.02503644354957" cy="380.22205511612555" r="29.6338682171995" fill="white" /><circle cx="343.183064979578" cy="237.84687077619384" r="21.188970076636707" fill="white" /><circle cx="227.55877894847774" cy="121.21254275762243" r="11.030034266731398" fill="white" /><circle cx="256.14369464317815" cy="136.32020342362244" r="15.746826681139419" fill="white" /><circle cx="113.22280090583727" cy="212.1786373188778" r="19.271632175541157" fill="white" /><circle cx="97.78156629638008" cy="593.7693149126982" r="16.965867531629563" fill="white" /><circle cx="128.42435656341874" cy="145.76849038531273" r="13.875351823888193" fill="white" /><circle cx="244.03765565086863" cy="441.7493869951468" r="14.627213733604833" fill="white" /><circle cx="144.80871482342664" cy="134.16183255457756" r="21.47997609699333" fill="white" /><circle cx="308.3601680747685" cy="266.42926801559923" r="22.918408081741976" fill="white" /><circle cx="368.26511607996576" cy="127.57597952703125" r="23.971346458824414" fill="white" /><circle cx="51.25916683315119" cy="413.960561859961" r="16.29869402204385" fill="white" /><circle cx="321.9906415925082" cy="284.98541612629276" r="14.107450836610342" fill="white" /><circle cx="382.2503601695422" cy="318.86782280207024" r="11.772163901478063" fill="white" /><circle cx="209.08890281768646" cy="83.94596744834122" r="26.159316085633087" fill="white" /><circle cx="290.3538385086894" cy="443.3933822908113" r="26.78830342476783" fill="white" /><circle cx="59.35174491136617" cy="375.3077262760432" r="12.359870932168317" fill="white" /><circle cx="299.30219680008065" cy="513.0310164853876" r="26.533514771442853" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Clockwork: So läuft dein
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Business (endlich) wie
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        von selbst
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Mike Michalowicz
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

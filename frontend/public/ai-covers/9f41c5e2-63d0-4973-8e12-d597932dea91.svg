@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-9f41c5e2-63d0-4973-8e12-d597932dea91" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-9f41c5e2-63d0-4973-8e12-d597932dea91)" />
+  <g opacity="0.1">
+    <circle cx="274.4364638392868" cy="67.40814525738381" r="13.657716789191063" fill="white" /><circle cx="189.69527696384304" cy="250.06672657026482" r="10.412266464581306" fill="white" /><circle cx="87.30499001041241" cy="299.3459917005766" r="17.110717476930155" fill="white" /><circle cx="14.617260899105622" cy="584.7403527625859" r="27.595853964948134" fill="white" /><circle cx="142.9526931100324" cy="480.39647082224013" r="28.180958025125648" fill="white" /><circle cx="79.80609375243297" cy="512.9570965110661" r="13.045219920643571" fill="white" /><circle cx="379.6848324781581" cy="480.6289742928991" r="24.392787291009043" fill="white" /><circle cx="146.76943584729494" cy="326.460487755046" r="29.043557992154334" fill="white" /><circle cx="128.024919590441" cy="231.36668818038655" r="18.728459746398705" fill="white" /><circle cx="333.4155485825479" cy="65.57233067189712" r="17.57772608100437" fill="white" /><circle cx="315.66403825042613" cy="161.1615608165835" r="18.94015163196225" fill="white" /><circle cx="225.88068098739913" cy="44.14271865967705" r="28.34181882921206" fill="white" /><circle cx="210.39035296258243" cy="395.10489244557493" r="19.937942782456574" fill="white" /><circle cx="227.1889341540896" cy="182.7797154933381" r="14.62197042724744" fill="white" /><circle cx="119.33737894662953" cy="527.5341930888961" r="24.268167278106876" fill="white" /><circle cx="55.95724366503423" cy="113.14084377262563" r="25.968794524213457" fill="white" /><circle cx="276.98079597285613" cy="598.2993013385593" r="24.16122432106666" fill="white" /><circle cx="18.73365677326251" cy="338.1572616218042" r="26.82423663221893" fill="white" /><circle cx="119.46063254303967" cy="480.9662344238304" r="20.85503827502894" fill="white" /><circle cx="327.03988971882245" cy="178.28608220838044" r="15.256726425972715" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        One Summer
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Bill Bryson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HISTORY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

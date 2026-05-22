@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-726f5100-a597-4b94-b998-5d93cc0b36c8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-726f5100-a597-4b94-b998-5d93cc0b36c8)" />
+  <g opacity="0.1">
+    <circle cx="398.70526354433423" cy="288.8538434771926" r="20.800495279619042" fill="white" /><circle cx="154.40261733070108" cy="214.92917780755158" r="26.544589797558615" fill="white" /><circle cx="56.94287643378257" cy="389.6928062492378" r="19.889428584163113" fill="white" /><circle cx="110.36527724001547" cy="462.6931421552081" r="12.986258621724055" fill="white" /><circle cx="11.386198569928307" cy="29.23501796243375" r="22.050684849349288" fill="white" /><circle cx="104.62698129763291" cy="241.630107113793" r="12.799031792589261" fill="white" /><circle cx="69.45030255679909" cy="245.87784315051428" r="27.186612183282286" fill="white" /><circle cx="99.77858305109444" cy="2.2966785895161657" r="17.862525838520746" fill="white" /><circle cx="166.6365651389962" cy="96.3628401345374" r="13.663176124519987" fill="white" /><circle cx="21.74439617993884" cy="39.06499398037726" r="24.01078386315668" fill="white" /><circle cx="58.069874129443775" cy="275.78758406710887" r="29.77963370899485" fill="white" /><circle cx="55.80867141346091" cy="177.70768998633332" r="20.075893184303133" fill="white" /><circle cx="296.9159344531978" cy="105.82452374893718" r="26.910899387058258" fill="white" /><circle cx="346.7277602677441" cy="564.476034028032" r="26.471843718565662" fill="white" /><circle cx="387.5986028586697" cy="114.27484285850849" r="24.40813169571115" fill="white" /><circle cx="197.9721050932973" cy="330.9229586085887" r="21.533480585883687" fill="white" /><circle cx="74.15491079805561" cy="381.14312541557774" r="23.76449404067173" fill="white" /><circle cx="33.12006136688193" cy="347.36575069636024" r="27.705002758611677" fill="white" /><circle cx="313.5408278561235" cy="146.106654142122" r="23.700283408446207" fill="white" /><circle cx="103.18431016228135" cy="130.9528007761774" r="28.440553190740413" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Unwiderstehlich: Der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Aufstieg süchtig
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        machender Technologien
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Adam Alter
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

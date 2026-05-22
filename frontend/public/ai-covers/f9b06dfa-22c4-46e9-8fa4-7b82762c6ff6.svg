@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-f9b06dfa-22c4-46e9-8fa4-7b82762c6ff6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-f9b06dfa-22c4-46e9-8fa4-7b82762c6ff6)" />
+  <g opacity="0.1">
+    <circle cx="63.01908157291574" cy="229.44680812121422" r="27.406593779941197" fill="white" /><circle cx="343.2301231680569" cy="565.7511916056615" r="19.59131553816531" fill="white" /><circle cx="159.77387091175888" cy="455.4312851738954" r="18.440682367449284" fill="white" /><circle cx="76.1089144148404" cy="530.0750788072669" r="14.599005954863584" fill="white" /><circle cx="192.75754162325032" cy="360.4609140057021" r="17.475687834910456" fill="white" /><circle cx="386.8573281779035" cy="78.17391422150936" r="13.947691659404004" fill="white" /><circle cx="308.25485411703136" cy="273.47735260933365" r="19.46420618112538" fill="white" /><circle cx="386.37204073347027" cy="59.87159681753666" r="24.25617062218564" fill="white" /><circle cx="285.5421590257733" cy="555.5658766467747" r="15.433428569005827" fill="white" /><circle cx="189.57275484359593" cy="331.4743776886525" r="12.508534976723713" fill="white" /><circle cx="8.300955621556216" cy="497.11560792818716" r="23.326564988759177" fill="white" /><circle cx="73.546710912981" cy="120.22438388496512" r="25.250508481931647" fill="white" /><circle cx="34.14349065060684" cy="67.1439020784443" r="12.506397156212856" fill="white" /><circle cx="140.31793577359895" cy="555.0653158802559" r="19.762353393426046" fill="white" /><circle cx="309.3029658912715" cy="20.442487781790987" r="15.067576296347404" fill="white" /><circle cx="224.51781180382633" cy="200.98483115696212" r="17.91807829553376" fill="white" /><circle cx="337.8386584078983" cy="82.09156732790994" r="20.584355558213428" fill="white" /><circle cx="4.91636532345634" cy="491.1418200901374" r="24.39873794927142" fill="white" /><circle cx="2.252645919470453" cy="354.9952397935588" r="15.81887927360726" fill="white" /><circle cx="336.6483231028934" cy="12.04366167224935" r="18.224450899961578" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Little Book of Value
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Investing
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Christopher Browne
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-4ef53d50-d79f-463f-a7b2-4718850d815d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-4ef53d50-d79f-463f-a7b2-4718850d815d)" />
+  <g opacity="0.1">
+    <circle cx="84.00938527645998" cy="197.4979318829918" r="27.16379577477494" fill="white" /><circle cx="305.8102749767679" cy="88.6296445035369" r="16.196183349551422" fill="white" /><circle cx="8.882352558710682" cy="33.59436524370574" r="28.207897869489276" fill="white" /><circle cx="315.30648145228076" cy="387.66650119058033" r="23.401977486500222" fill="white" /><circle cx="181.80396458399505" cy="393.48152658013964" r="16.551874879702517" fill="white" /><circle cx="316.0389539757816" cy="586.7514889058097" r="21.776560904920323" fill="white" /><circle cx="202.7221644939744" cy="251.99586055699314" r="10.8292433679304" fill="white" /><circle cx="128.55716708515902" cy="368.0349664376294" r="26.37577324049521" fill="white" /><circle cx="185.88644162272692" cy="376.15993220830114" r="22.297158948429043" fill="white" /><circle cx="25.677880172521572" cy="599.4823299749953" r="29.597385129332775" fill="white" /><circle cx="185.91525329073474" cy="547.2444102208273" r="13.66657899165584" fill="white" /><circle cx="284.87388822455995" cy="520.185060790306" r="28.241397169147792" fill="white" /><circle cx="395.7016843725011" cy="10.937480881739203" r="22.61388861458354" fill="white" /><circle cx="301.2776563050369" cy="570.0794629633054" r="19.147701924579884" fill="white" /><circle cx="71.58482894076302" cy="82.39692334383875" r="16.760166515021577" fill="white" /><circle cx="242.616459522274" cy="368.22948331019785" r="19.40215466554101" fill="white" /><circle cx="390.4090983215925" cy="324.8468271957375" r="10.687261778273685" fill="white" /><circle cx="327.2289431134449" cy="24.32998374585109" r="18.42264340038922" fill="white" /><circle cx="184.67650853525623" cy="478.3420672395155" r="14.236415737520602" fill="white" /><circle cx="363.1751571321431" cy="355.32369291513845" r="18.101356255609367" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Der Weg zur finanziellen
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Freiheit: Eine Anleitung,
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        wie du reich wirst und
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Ramit Sethi
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

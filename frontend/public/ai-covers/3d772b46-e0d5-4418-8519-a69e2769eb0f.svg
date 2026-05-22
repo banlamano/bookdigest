@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-3d772b46-e0d5-4418-8519-a69e2769eb0f" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-3d772b46-e0d5-4418-8519-a69e2769eb0f)" />
+  <g opacity="0.1">
+    <circle cx="60.54504584854885" cy="103.72385994621489" r="20.63416364489404" fill="white" /><circle cx="276.827911558395" cy="16.714900195969552" r="29.39823461953719" fill="white" /><circle cx="198.93548493017877" cy="360.5303850415944" r="13.823177427317141" fill="white" /><circle cx="99.31467002289244" cy="456.7202427640892" r="12.432052813841196" fill="white" /><circle cx="119.0909180389426" cy="330.09294562545256" r="26.14886058806843" fill="white" /><circle cx="122.19524613336921" cy="140.5167134423217" r="24.033445726092488" fill="white" /><circle cx="48.60275225924151" cy="499.63921129352406" r="16.792079478284986" fill="white" /><circle cx="328.92190541566765" cy="117.8333553122498" r="24.736088182375667" fill="white" /><circle cx="299.0857216906504" cy="538.0378890023227" r="11.345420589300444" fill="white" /><circle cx="217.95585152368048" cy="478.1125773861154" r="28.802718372893608" fill="white" /><circle cx="156.52453293950234" cy="513.2064561736361" r="21.29911704438245" fill="white" /><circle cx="151.93611000010375" cy="118.67621631734839" r="29.67704929652502" fill="white" /><circle cx="14.318502012474221" cy="290.83868681095186" r="12.432442699654981" fill="white" /><circle cx="351.41995025142967" cy="425.34208000373866" r="28.80008374537741" fill="white" /><circle cx="313.347747424564" cy="573.8061047115903" r="12.208650411242958" fill="white" /><circle cx="396.9957870461193" cy="264.35248179692377" r="13.692990854503254" fill="white" /><circle cx="155.80016304231154" cy="46.63620267677639" r="26.89267792194922" fill="white" /><circle cx="379.1217911051327" cy="303.1044724736561" r="19.443643196157282" fill="white" /><circle cx="358.30283703095273" cy="548.7538194951162" r="10.35902034413727" fill="white" /><circle cx="47.43947701567852" cy="73.2873932003312" r="29.139876271547184" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        GRIT: Die Macht der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Leidenschaft und Ausdauer
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Angela Duckworth
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

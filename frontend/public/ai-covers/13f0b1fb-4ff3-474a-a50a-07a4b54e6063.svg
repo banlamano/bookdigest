@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-13f0b1fb-4ff3-474a-a50a-07a4b54e6063" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-13f0b1fb-4ff3-474a-a50a-07a4b54e6063)" />
+  <g opacity="0.1">
+    <circle cx="20.780023356114263" cy="355.05937087498233" r="12.566906762444109" fill="white" /><circle cx="98.015572337528" cy="500.7798100554992" r="11.88513944926344" fill="white" /><circle cx="65.67577859645151" cy="8.73621895221024" r="18.086055053358606" fill="white" /><circle cx="56.409037136758315" cy="333.23606039490807" r="25.889419031679335" fill="white" /><circle cx="195.20135999326195" cy="111.84036216298101" r="17.183950028204286" fill="white" /><circle cx="218.65711206578712" cy="341.12107201303826" r="10.412905506756879" fill="white" /><circle cx="392.89939100157767" cy="133.53973220485344" r="15.612438957616286" fill="white" /><circle cx="86.62187016803261" cy="178.67340350912457" r="15.914736250363609" fill="white" /><circle cx="215.99676864163038" cy="578.4409200592248" r="22.81600438969697" fill="white" /><circle cx="279.32724356835286" cy="405.9253502618999" r="11.53567564081463" fill="white" /><circle cx="189.69854264409963" cy="29.27837858210356" r="21.691884702959502" fill="white" /><circle cx="240.6886107871678" cy="528.5151910470854" r="18.734445764882032" fill="white" /><circle cx="133.39971822172458" cy="48.76736506511108" r="11.923948163703745" fill="white" /><circle cx="148.01470392006442" cy="147.1733430826958" r="29.2352833438746" fill="white" /><circle cx="112.62171285850573" cy="229.80343294166195" r="24.266015556847346" fill="white" /><circle cx="112.66482408183225" cy="440.2600958991393" r="11.914024164307712" fill="white" /><circle cx="55.03871452392994" cy="340.23761742569786" r="21.55655415722595" fill="white" /><circle cx="356.9769812170182" cy="560.2507063849314" r="28.36088866438256" fill="white" /><circle cx="123.69853465671197" cy="294.29596785766796" r="26.184115387229895" fill="white" /><circle cx="339.81539826195313" cy="599.1046366661715" r="12.48351150354242" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die 50 Gesetze der Macht:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Lehren aus dem Leben des
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        50 Cent
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Robert Greene
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

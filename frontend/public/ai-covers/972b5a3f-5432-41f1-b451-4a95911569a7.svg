@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-972b5a3f-5432-41f1-b451-4a95911569a7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-972b5a3f-5432-41f1-b451-4a95911569a7)" />
+  <g opacity="0.1">
+    <circle cx="189.4872173916454" cy="247.76494085662992" r="26.453086756316388" fill="white" /><circle cx="247.17379307792712" cy="219.91360676231696" r="16.794291930980684" fill="white" /><circle cx="327.54840152512435" cy="446.6918868255424" r="20.143759091153537" fill="white" /><circle cx="211.618839237796" cy="306.0995947946772" r="10.712959885918952" fill="white" /><circle cx="269.1687658420918" cy="592.7117836273502" r="20.138940376932226" fill="white" /><circle cx="23.78885487343969" cy="336.61576721179614" r="11.058033900209916" fill="white" /><circle cx="34.93206879254562" cy="215.07541539279808" r="20.77290479545766" fill="white" /><circle cx="141.53497381057934" cy="99.3431548797507" r="14.299295618554043" fill="white" /><circle cx="63.34758809522798" cy="392.36359993848714" r="16.935903645557094" fill="white" /><circle cx="77.2002605306696" cy="144.48819124319635" r="13.678217268071236" fill="white" /><circle cx="191.02427529896153" cy="344.0204701245321" r="21.297610924417796" fill="white" /><circle cx="2.488661513440471" cy="492.24695648613425" r="19.80040951516715" fill="white" /><circle cx="254.4107939389289" cy="581.0090415949884" r="14.245234461337496" fill="white" /><circle cx="109.17799555227043" cy="91.99106675950199" r="28.883272589477823" fill="white" /><circle cx="248.51304470166266" cy="36.938050802365495" r="29.42223884472652" fill="white" /><circle cx="355.1152743619061" cy="330.89780256491963" r="14.821346587211039" fill="white" /><circle cx="104.10361033302186" cy="4.892813321817435" r="21.666054333519885" fill="white" /><circle cx="156.82797191822485" cy="106.84403384331094" r="15.097770770399084" fill="white" /><circle cx="15.205163774473629" cy="97.43645528708267" r="26.069130725477095" fill="white" /><circle cx="37.75582240514495" cy="265.34647774557953" r="11.141043673480471" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Nie wieder verhandeln
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        ohne das beste Ergebnis
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        zu erzielen:
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Chris Voss
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

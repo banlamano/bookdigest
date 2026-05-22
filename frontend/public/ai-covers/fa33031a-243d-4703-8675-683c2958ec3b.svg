@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-fa33031a-243d-4703-8675-683c2958ec3b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-fa33031a-243d-4703-8675-683c2958ec3b)" />
+  <g opacity="0.1">
+    <circle cx="64.83918494333545" cy="474.71000946409265" r="17.617038512046253" fill="white" /><circle cx="132.3916433947514" cy="431.7729631412124" r="28.512971405477362" fill="white" /><circle cx="93.34189583558326" cy="276.46677272810587" r="13.401416295720935" fill="white" /><circle cx="110.30693517884211" cy="166.8211101278709" r="27.23110643430162" fill="white" /><circle cx="74.77091336152561" cy="240.39878261366005" r="12.023762023775413" fill="white" /><circle cx="380.4662488467647" cy="292.682046015653" r="18.025364663007537" fill="white" /><circle cx="142.7621008879364" cy="435.11041521785813" r="25.583622804973423" fill="white" /><circle cx="137.03881081422736" cy="330.17450163412565" r="18.494271559821776" fill="white" /><circle cx="210.2446747797094" cy="450.10493982059984" r="11.147635655569768" fill="white" /><circle cx="298.35178559476236" cy="137.99811898517223" r="12.744943268554144" fill="white" /><circle cx="390.10733969667353" cy="446.6027777697146" r="15.59922934089353" fill="white" /><circle cx="235.3019445558021" cy="391.3555003072895" r="21.81128657665047" fill="white" /><circle cx="66.73846754946267" cy="188.2723280606899" r="11.592494086371563" fill="white" /><circle cx="122.96552853994469" cy="352.06309321335493" r="10.68282559721727" fill="white" /><circle cx="150.79565011674987" cy="543.3916970823187" r="28.062754575468844" fill="white" /><circle cx="68.42928736560272" cy="444.03193785171595" r="13.139936314544048" fill="white" /><circle cx="186.35459385769303" cy="56.39258686052977" r="29.880973260807714" fill="white" /><circle cx="254.87052303207537" cy="153.73957966988755" r="11.782061944633998" fill="white" /><circle cx="147.55730800744237" cy="382.7397052001959" r="27.482068863752605" fill="white" /><circle cx="392.33052872518476" cy="45.733324247405434" r="22.310548918590563" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Built to Sell
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        John Warrillow
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

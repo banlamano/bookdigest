@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d6db07de-6222-49e7-ba49-ccd0529ebb55" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d6db07de-6222-49e7-ba49-ccd0529ebb55)" />
+  <g opacity="0.1">
+    <circle cx="355.8248517977563" cy="445.1925182088414" r="11.163299835006237" fill="white" /><circle cx="315.20340343392604" cy="268.0027275350424" r="15.019860226990646" fill="white" /><circle cx="183.8243618125746" cy="501.23740738861926" r="22.687928696329216" fill="white" /><circle cx="61.82962957073688" cy="15.701259098585663" r="15.698677094830186" fill="white" /><circle cx="180.9940452844916" cy="549.5627272963525" r="27.424631776728422" fill="white" /><circle cx="317.0595645155014" cy="562.7031638008706" r="19.409759522802304" fill="white" /><circle cx="361.08123947642036" cy="48.62748715528713" r="19.94541776270964" fill="white" /><circle cx="122.89162377486385" cy="69.35814669898231" r="13.022581241134416" fill="white" /><circle cx="233.64594852261703" cy="11.128643768350521" r="27.724867945929404" fill="white" /><circle cx="102.01991332419826" cy="494.75079348504727" r="18.616108857823022" fill="white" /><circle cx="3.244960178019518" cy="550.4979033210915" r="22.340217726548822" fill="white" /><circle cx="187.0340348504734" cy="240.3917706118625" r="20.83408500590631" fill="white" /><circle cx="210.9006603754573" cy="332.05450828452103" r="20.96031553221185" fill="white" /><circle cx="60.41546599994536" cy="592.0751336480404" r="22.457285572326285" fill="white" /><circle cx="170.27325911026284" cy="19.68805675961136" r="25.280737048314975" fill="white" /><circle cx="334.8339613023463" cy="531.2156415015788" r="22.154781068421805" fill="white" /><circle cx="131.5045440770755" cy="181.70009913817657" r="24.02561584636328" fill="white" /><circle cx="195.81511082613608" cy="268.93620986896434" r="16.134639395482264" fill="white" /><circle cx="75.67820778785381" cy="268.2869946323335" r="21.528656049858725" fill="white" /><circle cx="61.82526470512042" cy="277.2644347416003" r="16.74553162921071" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Eat That Frog!
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Brian Tracy
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

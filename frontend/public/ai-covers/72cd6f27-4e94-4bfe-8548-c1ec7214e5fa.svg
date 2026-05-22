@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-72cd6f27-4e94-4bfe-8548-c1ec7214e5fa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-72cd6f27-4e94-4bfe-8548-c1ec7214e5fa)" />
+  <g opacity="0.1">
+    <circle cx="97.19902567767198" cy="189.14761267185418" r="17.79755127884801" fill="white" /><circle cx="298.39761509036913" cy="248.22526263174976" r="15.187300643463399" fill="white" /><circle cx="285.2269941991286" cy="519.0781232691653" r="15.079594058565666" fill="white" /><circle cx="380.5237501777383" cy="228.7763231629796" r="10.90878152946393" fill="white" /><circle cx="131.64564342986282" cy="136.29014951541922" r="19.07583738029043" fill="white" /><circle cx="203.6396407240502" cy="133.81732536649838" r="24.72547776240697" fill="white" /><circle cx="334.4587004582924" cy="258.71050471749726" r="25.678201771867233" fill="white" /><circle cx="152.45655912324932" cy="528.9211952770165" r="18.237969663909283" fill="white" /><circle cx="339.62709037779626" cy="439.70768778806615" r="13.825805953205384" fill="white" /><circle cx="275.9277455479078" cy="282.7505148156141" r="12.08092897388783" fill="white" /><circle cx="18.37212625181057" cy="549.1475330229356" r="16.501080270148627" fill="white" /><circle cx="178.14620946889383" cy="429.1181506970418" r="16.09412322828675" fill="white" /><circle cx="118.07311522387" cy="364.1586270590419" r="20.37539321931756" fill="white" /><circle cx="126.55993987453051" cy="552.7198254738363" r="11.519657749446724" fill="white" /><circle cx="320.64701124805043" cy="532.2837524217803" r="23.15034037915271" fill="white" /><circle cx="236.47031115830046" cy="495.7034056588105" r="13.710108806049973" fill="white" /><circle cx="298.27562609592627" cy="578.3141901212892" r="24.028344115144147" fill="white" /><circle cx="5.385984175578207" cy="114.8939257217536" r="15.784615208252188" fill="white" /><circle cx="333.50938232355594" cy="217.02180613278995" r="28.527828201659553" fill="white" /><circle cx="125.49786007631498" cy="352.49663602469894" r="23.181933002104593" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Big Magic
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Elizabeth Gilbert
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

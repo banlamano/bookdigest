@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-5305b6d8-b919-42d1-8876-f565a8f6138d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-5305b6d8-b919-42d1-8876-f565a8f6138d)" />
+  <g opacity="0.1">
+    <circle cx="259.3057700185177" cy="113.50052733003592" r="16.909780035798267" fill="white" /><circle cx="147.8021723301116" cy="586.2783899798021" r="23.268621092579437" fill="white" /><circle cx="382.2596384844686" cy="220.32601929673416" r="27.92478397298205" fill="white" /><circle cx="228.9137441548157" cy="162.93949105426634" r="28.892610434824334" fill="white" /><circle cx="305.2327377831455" cy="467.0197935174666" r="29.860207980372138" fill="white" /><circle cx="282.67405286870684" cy="396.4326303382438" r="25.737382962692795" fill="white" /><circle cx="158.06961161966478" cy="298.2820147049247" r="17.617610655109736" fill="white" /><circle cx="159.6506820817889" cy="105.25890605644979" r="20.610136511215888" fill="white" /><circle cx="8.231815395064146" cy="315.8674490564843" r="16.08039332866371" fill="white" /><circle cx="342.8515464982075" cy="239.55730960447795" r="21.355293207002315" fill="white" /><circle cx="331.2527722555456" cy="28.455826311378353" r="10.728759332260635" fill="white" /><circle cx="286.6147373054756" cy="229.93103456370378" r="29.900489261414428" fill="white" /><circle cx="344.5491661429491" cy="2.540326845584717" r="25.463106860205915" fill="white" /><circle cx="375.866136785364" cy="349.09012063455225" r="15.231600166689743" fill="white" /><circle cx="223.8336729406702" cy="157.53833460732847" r="19.05128180678062" fill="white" /><circle cx="3.6679839167403028" cy="512.3724223455976" r="16.413906913847775" fill="white" /><circle cx="78.80061770218099" cy="117.21477428228413" r="27.905611743819936" fill="white" /><circle cx="297.88300573612815" cy="487.6438769348052" r="12.447341549917079" fill="white" /><circle cx="276.9403693042779" cy="194.9289314277521" r="10.139987206649133" fill="white" /><circle cx="223.77070744361433" cy="479.7921365939955" r="20.95887139230986" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die fünf Dysfunktionen
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        eines Teams: Eine
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Leadership Fable
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Patrick Lencioni
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      LEADERSHIP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

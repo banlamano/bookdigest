@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-e67b4e2b-3b69-45d9-bebe-e48eb39010e2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-e67b4e2b-3b69-45d9-bebe-e48eb39010e2)" />
+  <g opacity="0.1">
+    <circle cx="336.3076860280236" cy="495.8752772715088" r="18.721576733977045" fill="white" /><circle cx="301.9614930156012" cy="186.8797931931994" r="20.54687509303566" fill="white" /><circle cx="288.55445088185917" cy="233.36765959081882" r="10.281788936337424" fill="white" /><circle cx="100.46887998925995" cy="421.7215017101832" r="20.76010102497586" fill="white" /><circle cx="359.4201395082478" cy="499.56148410964016" r="22.402161784610293" fill="white" /><circle cx="257.14587849282367" cy="403.35921669483486" r="24.301454420359487" fill="white" /><circle cx="377.1239240285528" cy="266.2054694494848" r="15.038957006204363" fill="white" /><circle cx="166.23956478412006" cy="534.1192094598811" r="11.661285429846783" fill="white" /><circle cx="14.970683902390647" cy="150.77364645399348" r="19.6368889753023" fill="white" /><circle cx="116.87204572582925" cy="478.9890283110238" r="11.091085778499725" fill="white" /><circle cx="285.90495424855595" cy="331.177512068292" r="10.515029999677807" fill="white" /><circle cx="316.87394400808404" cy="239.88759499206802" r="18.09482286727701" fill="white" /><circle cx="40.90204758860536" cy="231.43523607137092" r="20.577759742393148" fill="white" /><circle cx="225.94716348724515" cy="277.3454462187916" r="21.53477539701267" fill="white" /><circle cx="218.11000973099272" cy="84.9942137796537" r="28.67314875886191" fill="white" /><circle cx="107.54182628901528" cy="445.4476179130621" r="15.690552462322822" fill="white" /><circle cx="253.47997339148546" cy="336.8245407997066" r="16.36088010765242" fill="white" /><circle cx="29.647865172963783" cy="494.7646783325164" r="12.005204784590234" fill="white" /><circle cx="275.4877319532773" cy="558.6220464874333" r="19.696147758949827" fill="white" /><circle cx="316.3852379140657" cy="200.05129963947832" r="23.16654018760127" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Give and Take
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Adam Grant
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

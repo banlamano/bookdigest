@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ec5125d3-0e6d-485a-808a-493e7f4da70a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ec5125d3-0e6d-485a-808a-493e7f4da70a)" />
+  <g opacity="0.1">
+    <circle cx="262.9006362091052" cy="94.94882034829735" r="21.700301365949432" fill="white" /><circle cx="318.3838588222931" cy="441.71117910410453" r="16.40925680968402" fill="white" /><circle cx="340.1847466424919" cy="40.31385925165254" r="17.074898649439692" fill="white" /><circle cx="211.36974338053918" cy="510.0603831221169" r="20.729484182687013" fill="white" /><circle cx="13.202874459549596" cy="24.889150559888805" r="13.796489708690942" fill="white" /><circle cx="372.75299216352613" cy="146.60832004710144" r="26.93378933482058" fill="white" /><circle cx="161.468863692658" cy="464.647613183599" r="29.566834821459587" fill="white" /><circle cx="212.93548122936613" cy="200.82493935101405" r="14.47758649215303" fill="white" /><circle cx="120.19162775492221" cy="376.34624238614657" r="24.651687964429996" fill="white" /><circle cx="20.03670181980093" cy="86.53697325938778" r="17.787888753872995" fill="white" /><circle cx="18.26187613431376" cy="598.3203357113375" r="27.400553620058137" fill="white" /><circle cx="5.240732926267633" cy="560.3191994899781" r="16.310066548750974" fill="white" /><circle cx="133.36057263407838" cy="151.93607359366433" r="27.575337788890177" fill="white" /><circle cx="301.67376421727437" cy="510.93184727460863" r="12.977293124082657" fill="white" /><circle cx="169.16802295062698" cy="182.39615174511687" r="13.28215848261861" fill="white" /><circle cx="266.1094571689784" cy="272.56793641240506" r="12.47281493278776" fill="white" /><circle cx="47.440836894217675" cy="62.948091458126385" r="27.599327319851923" fill="white" /><circle cx="104.1573869470013" cy="389.27364516470107" r="21.444328937305084" fill="white" /><circle cx="242.95323772146747" cy="165.08233382354916" r="10.042318617716182" fill="white" /><circle cx="166.66558519437382" cy="589.9476934939942" r="29.49226476821196" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Angriff der Algorithmen:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Wie sie unser Leben
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        bestimmen, uns
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Cathy O&apos;Neil
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

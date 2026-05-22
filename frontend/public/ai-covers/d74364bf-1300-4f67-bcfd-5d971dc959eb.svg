@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-d74364bf-1300-4f67-bcfd-5d971dc959eb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-d74364bf-1300-4f67-bcfd-5d971dc959eb)" />
+  <g opacity="0.1">
+    <circle cx="66.75640036629832" cy="284.84368832104633" r="25.155700620371448" fill="white" /><circle cx="253.48525537260636" cy="599.7459132587034" r="26.115478459692692" fill="white" /><circle cx="144.1258157825534" cy="273.8942313892711" r="23.67443926550272" fill="white" /><circle cx="398.0621883805875" cy="453.4682439699682" r="16.499384460380547" fill="white" /><circle cx="112.1421258073763" cy="536.305542332387" r="19.820625471326174" fill="white" /><circle cx="4.618053803437094" cy="324.2076843269675" r="17.338673670877967" fill="white" /><circle cx="153.05784760264171" cy="90.63120634043382" r="15.710795058645157" fill="white" /><circle cx="369.28603721725864" cy="426.17340551857257" r="15.74600234682292" fill="white" /><circle cx="276.7332505322566" cy="117.70354004909316" r="25.550344625107094" fill="white" /><circle cx="266.58975475977826" cy="485.71576848378396" r="19.01270649395559" fill="white" /><circle cx="289.47796917457055" cy="532.942640450176" r="17.307877612103013" fill="white" /><circle cx="286.49168195218857" cy="370.95504680352616" r="26.603374458831247" fill="white" /><circle cx="105.63168699834003" cy="409.17958436722876" r="14.774128944420031" fill="white" /><circle cx="229.9847604229913" cy="68.2567620289374" r="28.09281924481335" fill="white" /><circle cx="395.78948165845634" cy="271.48507192375473" r="21.585285913375248" fill="white" /><circle cx="47.571085752664956" cy="175.50700330786822" r="13.889223088922176" fill="white" /><circle cx="323.8434173927195" cy="423.28443212669634" r="14.944463414769118" fill="white" /><circle cx="59.21934511701647" cy="529.8121670165563" r="15.912872667133296" fill="white" /><circle cx="251.17035081876855" cy="457.1057193252513" r="26.834911599705826" fill="white" /><circle cx="155.4472191324403" cy="361.4700208127079" r="24.178236240879965" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Dhandho Investor
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Mohnish Pabrai
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

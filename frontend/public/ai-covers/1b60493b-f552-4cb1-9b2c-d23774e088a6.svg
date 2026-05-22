@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-1b60493b-f552-4cb1-9b2c-d23774e088a6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-1b60493b-f552-4cb1-9b2c-d23774e088a6)" />
+  <g opacity="0.1">
+    <circle cx="327.3208883417719" cy="254.73336460601027" r="11.873885786041512" fill="white" /><circle cx="277.4604221346303" cy="149.64742186830438" r="15.707728334425894" fill="white" /><circle cx="62.5356850822171" cy="8.11217198744374" r="25.820247838713044" fill="white" /><circle cx="56.32366780604458" cy="176.1096700972546" r="23.033709022970825" fill="white" /><circle cx="112.79891240959401" cy="184.82026762696208" r="10.922877911784987" fill="white" /><circle cx="259.1473998165728" cy="467.52272214255646" r="11.16496902228969" fill="white" /><circle cx="84.42225448631358" cy="102.48420778624508" r="10.42034273040482" fill="white" /><circle cx="95.42458223542826" cy="576.2169458889348" r="16.454700476851357" fill="white" /><circle cx="34.56777061457066" cy="416.1048143266696" r="28.792603827237393" fill="white" /><circle cx="66.35214899808139" cy="305.355502116588" r="24.694001862473904" fill="white" /><circle cx="367.3844735122719" cy="232.91060002503178" r="27.365489807241563" fill="white" /><circle cx="339.9462887490775" cy="579.0535884296972" r="23.291736884368866" fill="white" /><circle cx="119.81382698006789" cy="238.623512730303" r="25.310349264424065" fill="white" /><circle cx="32.58226866813221" cy="466.43207523744513" r="19.19529831429313" fill="white" /><circle cx="248.99187943335744" cy="517.6682862118362" r="12.89172983285497" fill="white" /><circle cx="170.7398214572533" cy="43.47169551691681" r="23.636509937001314" fill="white" /><circle cx="81.70821821191842" cy="97.09995044392792" r="20.89059492808584" fill="white" /><circle cx="356.9822919525958" cy="549.9852077255686" r="20.101596262033155" fill="white" /><circle cx="274.09461821550934" cy="248.24668982964423" r="15.532940629153325" fill="white" /><circle cx="61.623574846453444" cy="445.43172410235366" r="24.10660309650288" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Leben 3.0: Mensch
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        sein im Zeitalter der
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Künstlichen Intelligenz
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Max Tegmark
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

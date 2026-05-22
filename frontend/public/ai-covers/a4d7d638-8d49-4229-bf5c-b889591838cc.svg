@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-a4d7d638-8d49-4229-bf5c-b889591838cc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-a4d7d638-8d49-4229-bf5c-b889591838cc)" />
+  <g opacity="0.1">
+    <circle cx="328.34744904955573" cy="425.4694694899393" r="26.708306543918358" fill="white" /><circle cx="343.58738580499636" cy="194.35346335965065" r="13.59930194083888" fill="white" /><circle cx="17.953704206648304" cy="57.69390406434278" r="22.43616950519488" fill="white" /><circle cx="284.50399369903886" cy="592.4431683467946" r="29.507927180966927" fill="white" /><circle cx="352.72263973826483" cy="262.3648501896489" r="29.248253034302948" fill="white" /><circle cx="80.99077535178974" cy="570.577040718617" r="17.130021116626377" fill="white" /><circle cx="100.41584530111014" cy="187.96236232124616" r="12.950592541098018" fill="white" /><circle cx="363.556175931584" cy="250.80082297915237" r="27.137370938028912" fill="white" /><circle cx="258.1394712297589" cy="195.6551439356127" r="10.953490682706885" fill="white" /><circle cx="355.5106037822595" cy="337.7204774881089" r="26.08715234748488" fill="white" /><circle cx="229.39337775866542" cy="271.81714834461724" r="16.202410890914237" fill="white" /><circle cx="373.2870493978424" cy="17.892454787207" r="14.797541687073288" fill="white" /><circle cx="81.46100321923643" cy="108.33851009170692" r="14.81915510916268" fill="white" /><circle cx="370.20258893892395" cy="548.9368169227347" r="14.838944549606376" fill="white" /><circle cx="78.53431208472203" cy="496.68594794646276" r="18.584848756834663" fill="white" /><circle cx="254.4556671432233" cy="289.08202921130334" r="18.935171773913858" fill="white" /><circle cx="188.58558865643508" cy="172.68106432437241" r="19.055672315481118" fill="white" /><circle cx="0.4691708891280122" cy="578.7833347943838" r="29.619126446841907" fill="white" /><circle cx="207.30130844849208" cy="417.72836228873047" r="29.385098951975188" fill="white" /><circle cx="214.2671948732888" cy="575.6670368703553" r="13.016363029728716" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Code Breaker
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Walter Isaacson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

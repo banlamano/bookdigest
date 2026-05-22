@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-ec568103-5870-4938-84dd-b35b394da516" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#15803d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-ec568103-5870-4938-84dd-b35b394da516)" />
+  <g opacity="0.1">
+    <circle cx="295.7447890126098" cy="436.63895384633423" r="27.090794721491918" fill="white" /><circle cx="0.563734924023418" cy="577.9755000084823" r="13.505286817396387" fill="white" /><circle cx="373.72900050533724" cy="139.72363260278337" r="21.491299342763348" fill="white" /><circle cx="257.3141597482078" cy="185.35326514697869" r="22.339347510504947" fill="white" /><circle cx="158.69034368928436" cy="257.0341290434323" r="16.90972641419292" fill="white" /><circle cx="11.683235062096964" cy="523.4824062288264" r="15.189012533924775" fill="white" /><circle cx="370.256015989862" cy="213.26064738683476" r="25.451565867294192" fill="white" /><circle cx="192.51236395173638" cy="469.0721843819857" r="20.585649501640397" fill="white" /><circle cx="125.19536604821498" cy="188.35462527594674" r="24.88642155158351" fill="white" /><circle cx="359.6541421453399" cy="254.24639271395543" r="27.36111481147928" fill="white" /><circle cx="208.62098779086216" cy="301.9401924968458" r="26.965281632157442" fill="white" /><circle cx="48.324693571766765" cy="131.59260747999534" r="16.586943739999498" fill="white" /><circle cx="89.38271203165758" cy="423.6716401651162" r="15.132731909502912" fill="white" /><circle cx="339.5496927619969" cy="522.3736585317243" r="17.145489352989756" fill="white" /><circle cx="9.484077156892834" cy="323.6495619936886" r="22.625980801908668" fill="white" /><circle cx="93.70799371022889" cy="195.91267982982924" r="28.69587308848773" fill="white" /><circle cx="205.0732254801366" cy="507.72047326451855" r="16.302104100659417" fill="white" /><circle cx="138.9171035744107" cy="43.43970570443376" r="26.794096497694056" fill="white" /><circle cx="309.75885433191763" cy="407.5172952635856" r="10.982337961467636" fill="white" /><circle cx="380.6568300029019" cy="456.8434411389702" r="16.457935309623586" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The 4-Hour Body
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#86efac" text-anchor="middle">
+        Tim Ferriss
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="102" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="71" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HEALTH
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#22c55e" opacity="0.8" />
+</svg>

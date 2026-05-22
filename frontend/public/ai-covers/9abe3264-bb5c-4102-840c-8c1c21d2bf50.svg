@@ -10,16 +10,29 @@
     </filter>
   </defs>
   <rect width="400" height="600" fill="url(#grad-9abe3264-bb5c-4102-840c-8c1c21d2bf50)" />
-  <g opacity="0.1"><circle cx="364.0602618085856" cy="408.3543243328072" r="27.228249555961508" fill="white" /><circle cx="215.13757613625774" cy="576.1739465058834" r="26.26480024620575" fill="white" /><circle cx="51.45545099773252" cy="93.7115078272424" r="18.02822204158913" fill="white" /><circle cx="245.1708253136596" cy="217.77660737426038" r="14.3047808772208" fill="white" /><circle cx="139.3791770105599" cy="33.653167014428" r="11.254032323092476" fill="white" /><circle cx="12.311368010669277" cy="72.86260378898253" r="15.030217995685422" fill="white" /><circle cx="15.487448612724508" cy="305.9144348972039" r="11.41688489638591" fill="white" /><circle cx="142.3311612940648" cy="321.2744772857561" r="12.495104800169752" fill="white" /><circle cx="276.24674554701636" cy="190.8152098643665" r="16.09712049063605" fill="white" /><circle cx="370.9527943355877" cy="62.09741042371881" r="15.814449167624556" fill="white" /><circle cx="276.26432792564464" cy="174.99923856050532" r="28.29782262748319" fill="white" /><circle cx="332.7776172014747" cy="93.88697783317512" r="16.638297215563384" fill="white" /><circle cx="132.59068283750608" cy="463.8120011739341" r="16.626245434732" fill="white" /><circle cx="41.80915578474922" cy="284.91706014863206" r="18.31271656984041" fill="white" /><circle cx="17.731861897254" cy="208.4826869341788" r="29.32943497553293" fill="white" /><circle cx="286.99741814384925" cy="418.06554419840216" r="28.917465133961702" fill="white" /><circle cx="325.86977797762177" cy="552.5653686588395" r="12.735016572345488" fill="white" /><circle cx="106.9090151543401" cy="491.1030803461836" r="24.96716300456127" fill="white" /><circle cx="202.90879900662665" cy="133.28519051572627" r="26.167970820741814" fill="white" /><circle cx="96.03742572637177" cy="357.6260389044551" r="17.593447610958904" fill="white" /></g>
-  <g filter="url(#shadow)">
-    <text x="200" y="120" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">The Little Book of Hygge</text>
+  <g opacity="0.1">
+    <circle cx="128.70966144123764" cy="377.314496270245" r="23.131240259065137" fill="white" /><circle cx="328.32578919505227" cy="314.3480290202454" r="22.564012901207434" fill="white" /><circle cx="164.14467389953344" cy="6.300816151878386" r="19.57669274101547" fill="white" /><circle cx="145.64152454335027" cy="4.34254290949756" r="17.89437347920682" fill="white" /><circle cx="239.7396083403001" cy="539.9525715080542" r="28.226763217339418" fill="white" /><circle cx="353.2071555275235" cy="113.72975589002476" r="14.174525513239352" fill="white" /><circle cx="336.338702339705" cy="72.79014507103349" r="26.03880171681147" fill="white" /><circle cx="328.97300735345675" cy="180.22050796491612" r="25.111459186424447" fill="white" /><circle cx="364.4427010264398" cy="394.17825950983195" r="17.278471255948105" fill="white" /><circle cx="14.739131259916372" cy="321.494355080894" r="27.556348750294788" fill="white" /><circle cx="337.6369806975188" cy="318.91398599741746" r="20.579459289345657" fill="white" /><circle cx="35.71286678787082" cy="286.8749800631345" r="20.041055495235938" fill="white" /><circle cx="267.997089287553" cy="529.2896599058505" r="17.41594810724991" fill="white" /><circle cx="266.63351461573967" cy="434.8281600909384" r="19.86694676277293" fill="white" /><circle cx="361.8804514995985" cy="222.3703464161663" r="26.0554038451209" fill="white" /><circle cx="388.2151803176162" cy="47.162899907684384" r="17.66824139563649" fill="white" /><circle cx="28.476018459697805" cy="477.20566266804946" r="23.06449292794264" fill="white" /><circle cx="351.88882604083716" cy="590.2619892258924" r="22.50373299121184" fill="white" /><circle cx="193.83135584147198" cy="213.4655376195503" r="29.051723077638123" fill="white" /><circle cx="159.98138462565345" cy="108.72922423981286" r="10.576170229783555" fill="white" />
   </g>
   <g filter="url(#shadow)">
-    <text x="200" y="480" font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">Meik Wiking</text>
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Little Book of Hygge
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Meik Wiking
+      </text>
   </g>
   <g>
     <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
-    <text x="89" y="42" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">SELF-HELP</text>
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
   </g>
   <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
 </svg>

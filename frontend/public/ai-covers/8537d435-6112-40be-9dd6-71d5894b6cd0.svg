@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8537d435-6112-40be-9dd6-71d5894b6cd0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8537d435-6112-40be-9dd6-71d5894b6cd0)" />
+  <g opacity="0.1">
+    <circle cx="204.74845942050317" cy="46.94799838246524" r="16.964718831430314" fill="white" /><circle cx="357.08554567156455" cy="400.35918415155743" r="26.587487701645685" fill="white" /><circle cx="10.652040004068253" cy="292.02988243678976" r="16.789699016372992" fill="white" /><circle cx="188.30620403536088" cy="59.5212374914285" r="22.551328551830032" fill="white" /><circle cx="182.8157329565463" cy="8.853352378191136" r="23.174040004634108" fill="white" /><circle cx="211.38316023781786" cy="518.3888875227318" r="12.962108846366826" fill="white" /><circle cx="101.73987035717573" cy="411.7448182833063" r="29.328155758211615" fill="white" /><circle cx="359.1780061052035" cy="335.8211958623361" r="11.583238829220168" fill="white" /><circle cx="119.75402081109196" cy="235.5112006724878" r="18.005753295772315" fill="white" /><circle cx="59.76257999053502" cy="315.703781403477" r="10.38876925091229" fill="white" /><circle cx="55.074721846627384" cy="503.69109693452003" r="23.929992388974732" fill="white" /><circle cx="93.05388315730076" cy="349.18413979058965" r="14.94710579642518" fill="white" /><circle cx="150.48408216440203" cy="561.6295621588706" r="12.348820138703582" fill="white" /><circle cx="45.903059247055246" cy="328.21330264483925" r="23.339381775269906" fill="white" /><circle cx="327.1967872628976" cy="68.64820008443877" r="27.92947330813936" fill="white" /><circle cx="48.43396670943729" cy="279.5217668907352" r="14.194348715698009" fill="white" /><circle cx="343.6030196178646" cy="194.18662094155047" r="19.171669449144307" fill="white" /><circle cx="29.70787076967314" cy="353.81891296200905" r="23.47242870859489" fill="white" /><circle cx="131.3818183855006" cy="442.7247238841465" r="12.07224356443133" fill="white" /><circle cx="16.82995197348589" cy="172.31078272147118" r="12.270434781035943" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Hingerissene Kunden
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Ken Blanchard
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

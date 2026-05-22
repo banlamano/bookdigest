@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-3d87a855-3afd-4c0f-b4e9-b68403427e4e" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-3d87a855-3afd-4c0f-b4e9-b68403427e4e)" />
+  <g opacity="0.1">
+    <circle cx="307.84539954899566" cy="243.17262236742735" r="17.06065886324726" fill="white" /><circle cx="254.8585233719942" cy="261.2627210150071" r="18.62845810206686" fill="white" /><circle cx="65.88493197047747" cy="584.45339715863" r="21.64545124836112" fill="white" /><circle cx="392.26930576798173" cy="345.03157060696617" r="12.86761355176828" fill="white" /><circle cx="223.5722647197316" cy="237.36425458229397" r="10.924126818019475" fill="white" /><circle cx="143.58097118589933" cy="418.82585655263415" r="25.926647507975733" fill="white" /><circle cx="324.1466861411436" cy="554.9000435730361" r="16.031273440695415" fill="white" /><circle cx="121.68893442973352" cy="438.47442151439407" r="27.82457846054823" fill="white" /><circle cx="302.21875279178164" cy="189.66303773950725" r="18.406183664881006" fill="white" /><circle cx="129.89241635999753" cy="565.0801231855731" r="27.610069419445406" fill="white" /><circle cx="183.0270002263698" cy="391.7827749772747" r="21.5841228356554" fill="white" /><circle cx="215.4400696150789" cy="93.23002538912199" r="14.133209239276308" fill="white" /><circle cx="351.3580299906187" cy="320.9520837624508" r="18.354442145250037" fill="white" /><circle cx="352.2402292933625" cy="506.92715601628333" r="23.346895165231434" fill="white" /><circle cx="88.17354644456384" cy="566.8057957947246" r="14.463460301983178" fill="white" /><circle cx="121.94640766557643" cy="131.89604117299305" r="20.034148601225372" fill="white" /><circle cx="334.571763507181" cy="395.4376456236667" r="27.447737770159083" fill="white" /><circle cx="263.31385959167267" cy="302.37672072503364" r="28.567516246578638" fill="white" /><circle cx="119.59524753318158" cy="66.70709177933043" r="22.803494810290296" fill="white" /><circle cx="138.84925381943472" cy="595.4567685324619" r="10.414527986315225" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Warren Buffett: So
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        funktioniert sein
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Erfolgsrezept
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#6ee7b7" text-anchor="middle">
+        Robert Hagstrom
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      FINANCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#10b981" opacity="0.8" />
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-4427fd35-1963-4ddc-99d9-95c0bf312e91" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-4427fd35-1963-4ddc-99d9-95c0bf312e91)" />
+  <g opacity="0.1">
+    <circle cx="206.33778118823375" cy="186.245301388319" r="16.65329842193263" fill="white" /><circle cx="350.38447275402376" cy="297.7554409160373" r="21.39211906956319" fill="white" /><circle cx="257.88551789075404" cy="107.62825716128212" r="21.968928694905493" fill="white" /><circle cx="290.79222264957986" cy="567.9612506605685" r="11.298592917772915" fill="white" /><circle cx="60.96624244200362" cy="168.4979753102259" r="25.365258793321495" fill="white" /><circle cx="4.8063994120731035" cy="527.6989567834356" r="20.575355043714104" fill="white" /><circle cx="107.1365421484582" cy="462.54944985427977" r="26.6175635671178" fill="white" /><circle cx="340.7688997637079" cy="426.9838371932529" r="25.79311763981474" fill="white" /><circle cx="170.72129571616347" cy="159.78719385891083" r="12.456424740334622" fill="white" /><circle cx="106.89035043248008" cy="225.2743170640644" r="28.126556393111734" fill="white" /><circle cx="324.2564811593335" cy="212.65908402766956" r="14.589227880627167" fill="white" /><circle cx="288.62113220852194" cy="559.8854130808794" r="19.541831430661052" fill="white" /><circle cx="122.50584860437152" cy="181.39704273839288" r="24.808265553202723" fill="white" /><circle cx="55.712357775554544" cy="390.9905592894903" r="25.83403900126681" fill="white" /><circle cx="390.901116714968" cy="376.1940166394634" r="23.09988972741117" fill="white" /><circle cx="188.17465291456185" cy="456.91123824403553" r="25.099221429302546" fill="white" /><circle cx="234.37226233675128" cy="355.499536659591" r="16.00659682138502" fill="white" /><circle cx="157.05126520426748" cy="391.63531497204997" r="17.94245874698316" fill="white" /><circle cx="259.35527818253905" cy="528.6600445921796" r="28.923713474436266" fill="white" /><circle cx="367.14177006976803" cy="312.42124667885486" r="19.813211133583064" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Eine kurze Geschichte der
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        privaten Dinge
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Bill Bryson
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      HISTORY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

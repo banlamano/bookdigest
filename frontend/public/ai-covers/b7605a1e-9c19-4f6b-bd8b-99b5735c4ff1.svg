@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-b7605a1e-9c19-4f6b-bd8b-99b5735c4ff1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-b7605a1e-9c19-4f6b-bd8b-99b5735c4ff1)" />
+  <g opacity="0.1">
+    <circle cx="157.34673887142074" cy="17.60082091723685" r="26.460251077115927" fill="white" /><circle cx="51.59129876871225" cy="108.10896388614796" r="20.69058306465063" fill="white" /><circle cx="201.74923686449125" cy="274.8202433450792" r="10.335950937163542" fill="white" /><circle cx="263.0781694725165" cy="314.65646018932154" r="13.25561769024025" fill="white" /><circle cx="66.63529971352395" cy="446.2593369465364" r="15.201217740031945" fill="white" /><circle cx="234.99967652757167" cy="530.7816419316564" r="21.120319313156344" fill="white" /><circle cx="34.3564737328431" cy="299.4780701846527" r="24.432882839158424" fill="white" /><circle cx="24.96880451350996" cy="119.2786590117746" r="28.718094402353206" fill="white" /><circle cx="352.6690596294211" cy="586.0743966442461" r="28.246159425132415" fill="white" /><circle cx="160.66815654059812" cy="296.5814312439904" r="19.512313321201017" fill="white" /><circle cx="144.03712067606355" cy="372.5460098442904" r="11.719894007515155" fill="white" /><circle cx="4.024865178057846" cy="229.95339368114895" r="10.336357101349652" fill="white" /><circle cx="36.21051041386614" cy="481.3474322407989" r="10.429856478718293" fill="white" /><circle cx="173.7891986781026" cy="486.47308197281654" r="20.3617933773643" fill="white" /><circle cx="230.49940330343765" cy="1.1313980551976854" r="15.01331049793489" fill="white" /><circle cx="276.314923265654" cy="200.45132492032576" r="24.170227797612355" fill="white" /><circle cx="100.43819558348717" cy="367.16046896875565" r="17.275477664092413" fill="white" /><circle cx="363.8430195595598" cy="421.76463773348985" r="16.972632427358842" fill="white" /><circle cx="253.6520616341986" cy="595.8919301641843" r="26.31958377130069" fill="white" /><circle cx="92.75322361494993" cy="284.1177157613761" r="17.643840645432135" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Art of Work
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Jeff Goins
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

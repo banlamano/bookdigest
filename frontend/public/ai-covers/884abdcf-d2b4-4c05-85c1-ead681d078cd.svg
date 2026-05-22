@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-884abdcf-d2b4-4c05-85c1-ead681d078cd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-884abdcf-d2b4-4c05-85c1-ead681d078cd)" />
+  <g opacity="0.1">
+    <circle cx="62.36124996922161" cy="515.024655164037" r="16.528355328165674" fill="white" /><circle cx="202.0962255957966" cy="48.49232019874492" r="23.973758586022477" fill="white" /><circle cx="357.89705577779034" cy="594.2005394968488" r="17.84704563187678" fill="white" /><circle cx="163.02118033824704" cy="47.80448160798212" r="28.231009444408087" fill="white" /><circle cx="339.4269533492262" cy="568.1034391800276" r="27.400996590885953" fill="white" /><circle cx="85.80742370484131" cy="365.40058507908856" r="24.039683628094267" fill="white" /><circle cx="335.7501981220455" cy="269.0438098141532" r="16.375538971363106" fill="white" /><circle cx="296.812137417312" cy="107.24700140050687" r="29.955421531128092" fill="white" /><circle cx="24.984782435238763" cy="179.2876294627504" r="25.728551250069245" fill="white" /><circle cx="304.6848907735587" cy="393.0620435888492" r="24.09426645504666" fill="white" /><circle cx="90.65991227507028" cy="351.9697733939195" r="25.135384626417267" fill="white" /><circle cx="369.2619673471836" cy="333.5411767443481" r="11.843534610403019" fill="white" /><circle cx="338.68905326084973" cy="230.0786502960363" r="15.806822634622126" fill="white" /><circle cx="232.02627823214334" cy="536.3772318591793" r="14.794572125956618" fill="white" /><circle cx="39.68547599076153" cy="345.4279458192009" r="21.353097216577055" fill="white" /><circle cx="75.5546186897675" cy="407.37748505251295" r="11.943467905901969" fill="white" /><circle cx="303.8178666043489" cy="87.15291016143868" r="29.719462648140578" fill="white" /><circle cx="392.92145413345185" cy="448.47669981978714" r="24.732694557966536" fill="white" /><circle cx="394.766664396669" cy="201.32947577967286" r="20.4557613710212" fill="white" /><circle cx="66.64724249053431" cy="404.03716649961194" r="17.744772191164692" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Die moralische Matrix:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Warum wir Gut und Böse
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        unterscheiden und was das
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Jonathan Haidt
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>

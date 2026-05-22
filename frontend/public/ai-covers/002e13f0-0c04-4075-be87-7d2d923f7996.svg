@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-002e13f0-0c04-4075-be87-7d2d923f7996" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-002e13f0-0c04-4075-be87-7d2d923f7996)" />
+  <g opacity="0.1">
+    <circle cx="13.208172527938666" cy="361.09678221075853" r="24.23451219068915" fill="white" /><circle cx="275.6592564858425" cy="35.7593561853081" r="18.71505693186053" fill="white" /><circle cx="42.379545388283816" cy="383.7204580661252" r="23.519010745683747" fill="white" /><circle cx="338.3758943965385" cy="350.96181935523714" r="27.309841072461715" fill="white" /><circle cx="242.93784263157758" cy="359.3803792490877" r="23.416821151739736" fill="white" /><circle cx="195.18796466461245" cy="427.0115647655191" r="20.46127631552558" fill="white" /><circle cx="245.90118801490001" cy="406.3664467720889" r="18.95689549534191" fill="white" /><circle cx="214.51603594312226" cy="154.21584084804977" r="27.542753592507815" fill="white" /><circle cx="347.7244138332743" cy="239.13340643111022" r="17.641508218493076" fill="white" /><circle cx="389.7487637997159" cy="554.3454733388306" r="17.956629844170948" fill="white" /><circle cx="148.2199593455137" cy="383.43233557792433" r="21.142045017887213" fill="white" /><circle cx="384.31459773618667" cy="21.651609893017778" r="18.671151569257514" fill="white" /><circle cx="30.816004513760653" cy="77.02155344200241" r="21.296307183349466" fill="white" /><circle cx="215.53708198094782" cy="234.31602566232348" r="29.356651583639692" fill="white" /><circle cx="126.69237948676763" cy="12.504361061182001" r="13.396750681380647" fill="white" /><circle cx="277.7063190156912" cy="506.72838174476465" r="17.891650316753285" fill="white" /><circle cx="45.04516755946884" cy="209.41794828104585" r="28.534478328213098" fill="white" /><circle cx="362.79069712053234" cy="251.76017986727365" r="14.070612707859125" fill="white" /><circle cx="193.77489750350563" cy="547.1484396871396" r="25.40313557138051" fill="white" /><circle cx="122.78134279160105" cy="376.16351873566026" r="29.946508572744495" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Peace Is Every Step
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Thich Nhat Hanh
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

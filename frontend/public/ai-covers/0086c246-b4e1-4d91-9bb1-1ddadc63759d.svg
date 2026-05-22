@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0086c246-b4e1-4d91-9bb1-1ddadc63759d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0086c246-b4e1-4d91-9bb1-1ddadc63759d)" />
+  <g opacity="0.1">
+    <circle cx="42.408760590741856" cy="89.17384593924238" r="22.14935457957707" fill="white" /><circle cx="344.3120661798278" cy="438.5120621249442" r="19.217446024946774" fill="white" /><circle cx="283.988021897995" cy="97.0134195047927" r="14.543215395081033" fill="white" /><circle cx="120.95958556259218" cy="190.04746555069417" r="28.05365319751206" fill="white" /><circle cx="119.67615980507689" cy="430.58574987955996" r="23.86222431723793" fill="white" /><circle cx="59.61838383167808" cy="355.76326861347013" r="20.433803092458188" fill="white" /><circle cx="323.1767111595412" cy="545.2201109298317" r="25.2521536248793" fill="white" /><circle cx="15.051848110213095" cy="444.1482399862146" r="23.797490640755626" fill="white" /><circle cx="123.95664496453591" cy="405.60703205624344" r="24.470892803523945" fill="white" /><circle cx="139.23832423308434" cy="434.9160683474932" r="12.421727166050081" fill="white" /><circle cx="215.22241510807766" cy="501.23221350897313" r="11.981077839093405" fill="white" /><circle cx="93.0209619987171" cy="237.27588279274931" r="12.913182936520517" fill="white" /><circle cx="240.4751706070896" cy="119.57320412583168" r="26.841703629519195" fill="white" /><circle cx="219.4579319839229" cy="186.99746695073918" r="13.962089876166718" fill="white" /><circle cx="394.0020325292166" cy="551.9250975606859" r="29.85533715675767" fill="white" /><circle cx="353.8183646128966" cy="531.3736435741883" r="19.966233962655984" fill="white" /><circle cx="271.67421299247366" cy="247.3286914967967" r="29.989739018782775" fill="white" /><circle cx="51.026569109653465" cy="418.8635179087375" r="29.689017367620675" fill="white" /><circle cx="106.52594764176642" cy="432.5745823020816" r="17.58748916571809" fill="white" /><circle cx="289.23923383888774" cy="536.1172368944424" r="28.83481186550839" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Scaling Up
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Verne Harnish
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

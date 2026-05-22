@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-6ac75c49-e93e-4d5e-ade4-591dca023342" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-6ac75c49-e93e-4d5e-ade4-591dca023342)" />
+  <g opacity="0.1">
+    <circle cx="71.77889259120893" cy="178.19085486088636" r="23.746706973850696" fill="white" /><circle cx="54.57018634675315" cy="497.77953740646194" r="10.324158544254322" fill="white" /><circle cx="24.032395919405136" cy="206.0023328213358" r="12.139492667305635" fill="white" /><circle cx="149.74379899241046" cy="36.328861267795396" r="15.002131614047403" fill="white" /><circle cx="368.1461163067075" cy="407.9580561013269" r="21.752967423629457" fill="white" /><circle cx="200.63398929213113" cy="596.3116341680667" r="22.26374122267122" fill="white" /><circle cx="329.64857526629913" cy="238.10528542573664" r="10.682978032393448" fill="white" /><circle cx="366.1574139241699" cy="423.95155449381247" r="10.707796437001559" fill="white" /><circle cx="50.51572876527586" cy="397.0625997145853" r="29.32479022443892" fill="white" /><circle cx="242.42848252615462" cy="126.01027612066045" r="28.588641314263548" fill="white" /><circle cx="188.41069354217933" cy="121.9616625784943" r="24.032104006037365" fill="white" /><circle cx="368.8202104755463" cy="67.56693812040322" r="27.719476391240804" fill="white" /><circle cx="1.4118669526294703" cy="66.6138405723097" r="29.351537034099746" fill="white" /><circle cx="219.63941591007256" cy="384.2179188871985" r="14.885337520072252" fill="white" /><circle cx="136.24071075424445" cy="589.3773489090379" r="20.107357922007758" fill="white" /><circle cx="335.965236495227" cy="74.07247696739829" r="28.615863684905463" fill="white" /><circle cx="269.87001251345276" cy="191.70542299895962" r="13.59327510475276" fill="white" /><circle cx="186.4434263493976" cy="539.8773006035619" r="29.898010340825614" fill="white" /><circle cx="329.56632562352996" cy="150.14801667184742" r="20.076909232894025" fill="white" /><circle cx="100.05309598417868" cy="276.2047796992852" r="24.05806666361024" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Honeymoon Effect
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Bruce Lipton
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="138" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="89" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SELF-HELP
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

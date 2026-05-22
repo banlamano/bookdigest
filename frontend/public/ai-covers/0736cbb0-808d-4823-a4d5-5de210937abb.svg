@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-0736cbb0-808d-4823-a4d5-5de210937abb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-0736cbb0-808d-4823-a4d5-5de210937abb)" />
+  <g opacity="0.1">
+    <circle cx="166.1670436827396" cy="370.25273889684024" r="11.594643330049363" fill="white" /><circle cx="137.82052130330942" cy="551.9692651536832" r="14.157556356017551" fill="white" /><circle cx="397.57791175942805" cy="329.7338448241747" r="29.545532548305083" fill="white" /><circle cx="278.69891019021054" cy="66.41817059822361" r="17.558261889138826" fill="white" /><circle cx="254.01100487896682" cy="390.8754153864514" r="20.844663517523884" fill="white" /><circle cx="371.4026811963903" cy="178.9060713230809" r="12.487959249377564" fill="white" /><circle cx="187.29081830263289" cy="209.0620416807409" r="25.094778603868846" fill="white" /><circle cx="58.620767219570254" cy="213.56726279811957" r="22.384242714606554" fill="white" /><circle cx="334.51843625839626" cy="447.8730416441797" r="29.689907031424" fill="white" /><circle cx="228.5847576998913" cy="344.31874658218265" r="10.67160852468536" fill="white" /><circle cx="32.6672342780904" cy="173.7453701860301" r="27.98807554845321" fill="white" /><circle cx="15.26635398302183" cy="577.1184039607389" r="22.666924873883545" fill="white" /><circle cx="254.25867860309737" cy="358.93396858420203" r="16.66034086476712" fill="white" /><circle cx="148.83597253691767" cy="574.509858838552" r="15.416142782679866" fill="white" /><circle cx="18.589388516287997" cy="555.2166677047923" r="24.858938094127897" fill="white" /><circle cx="386.94923621395094" cy="272.11469939580917" r="14.888765189541221" fill="white" /><circle cx="103.16181342314606" cy="411.37467559379917" r="26.406934852760333" fill="white" /><circle cx="29.6336858418611" cy="504.70319454596904" r="10.576595689677157" fill="white" /><circle cx="205.4632342021224" cy="191.81805861765883" r="26.68951041097504" fill="white" /><circle cx="104.81423277166226" cy="416.72180801863243" r="26.839697708702882" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Cosmos
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Carl Sagan
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="114" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="77" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      SCIENCE
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-eb82cace-e0cc-446d-b2aa-ed45163ca1a6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c2410c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-eb82cace-e0cc-446d-b2aa-ed45163ca1a6)" />
+  <g opacity="0.1">
+    <circle cx="97.41131787509288" cy="213.66768602892756" r="10.658441605639439" fill="white" /><circle cx="53.947183816660704" cy="464.54786719792173" r="19.76340674138532" fill="white" /><circle cx="253.95579790200492" cy="485.16111861127706" r="28.365765871579057" fill="white" /><circle cx="280.06365730673843" cy="470.7214283736841" r="16.843932088849492" fill="white" /><circle cx="311.5329429832129" cy="187.41709265416273" r="15.963844701233379" fill="white" /><circle cx="287.9942290371062" cy="29.537873249470124" r="26.60980288010389" fill="white" /><circle cx="47.83948783241381" cy="413.99756520580814" r="19.373294951207352" fill="white" /><circle cx="149.46411120594055" cy="484.329049746069" r="22.14880953124156" fill="white" /><circle cx="195.90621744714903" cy="598.4730792390554" r="24.191756766511386" fill="white" /><circle cx="346.7690749211787" cy="171.66460495421515" r="29.436198287594067" fill="white" /><circle cx="215.49049469139212" cy="414.9307072601641" r="15.048395325357172" fill="white" /><circle cx="150.7298264419675" cy="492.8745709266267" r="12.315682616054842" fill="white" /><circle cx="98.0355235408088" cy="252.57970938503294" r="23.690586036799193" fill="white" /><circle cx="74.40213773467943" cy="241.5777615348803" r="24.603648058898617" fill="white" /><circle cx="114.96980570612382" cy="207.58950745330168" r="13.145428237187474" fill="white" /><circle cx="155.02591503897457" cy="313.10411511545226" r="19.298948213931325" fill="white" /><circle cx="4.8930618332122755" cy="212.48275150382716" r="23.0469727379785" fill="white" /><circle cx="382.6734083252214" cy="36.1968299180089" r="23.277273945645298" fill="white" /><circle cx="392.4239333062354" cy="201.75061358700611" r="29.59873996614086" fill="white" /><circle cx="330.1774739474979" cy="32.910286504035135" r="22.35746923333673" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Jetzt-Prinzip:
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Schluss mit dem
+      </text>
+      <text x="200" y="210" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Aufschieben
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#fdba74" text-anchor="middle">
+        Neil Fiore
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="174" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="107" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PRODUCTIVITY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#f97316" opacity="0.8" />
+</svg>

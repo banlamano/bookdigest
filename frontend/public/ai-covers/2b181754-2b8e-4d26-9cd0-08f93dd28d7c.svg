@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-2b181754-2b8e-4d26-9cd0-08f93dd28d7c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-2b181754-2b8e-4d26-9cd0-08f93dd28d7c)" />
+  <g opacity="0.1">
+    <circle cx="333.8724377514106" cy="137.06717747670427" r="13.284894878644804" fill="white" /><circle cx="178.3899013622301" cy="539.9525458708534" r="11.064113619103264" fill="white" /><circle cx="60.26700985204387" cy="246.44059599216473" r="13.413351513708857" fill="white" /><circle cx="183.14539038371828" cy="360.7634624697587" r="14.23351968559986" fill="white" /><circle cx="77.8936203618994" cy="382.9543335057318" r="11.891533234470455" fill="white" /><circle cx="372.94522933515094" cy="317.8692656642944" r="18.652224611114008" fill="white" /><circle cx="257.8731678730633" cy="489.8828819477528" r="19.514150747944043" fill="white" /><circle cx="308.505126405045" cy="63.31548608146373" r="22.187123946366132" fill="white" /><circle cx="160.92404834994997" cy="276.1379624223798" r="14.542198563558914" fill="white" /><circle cx="184.09052978023155" cy="326.64754217553417" r="28.33931060081998" fill="white" /><circle cx="289.7068903850508" cy="361.2690774590752" r="14.200184555324931" fill="white" /><circle cx="195.64775579030962" cy="565.8942264119501" r="22.309124635452932" fill="white" /><circle cx="124.39308825455923" cy="175.19943215520598" r="13.097091046817802" fill="white" /><circle cx="134.04098612777412" cy="230.8615254971039" r="26.655003748837224" fill="white" /><circle cx="42.8995931257798" cy="492.6980574863601" r="21.595853242843262" fill="white" /><circle cx="27.996508719204314" cy="385.76940031457195" r="11.571535183447457" fill="white" /><circle cx="232.1954317619516" cy="453.02054336514993" r="23.17112443284769" fill="white" /><circle cx="3.8124761881403124" cy="143.9305252091974" r="22.90559673830093" fill="white" /><circle cx="299.8538568035665" cy="236.42109577315622" r="29.695449240282908" fill="white" /><circle cx="24.843720931203706" cy="31.109118105683997" r="24.44868499714729" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Das Ziel
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#60a5fa" text-anchor="middle">
+        Eliyahu Goldratt
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="126" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="83" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      BUSINESS
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#3b82f6" opacity="0.8" />
+</svg>

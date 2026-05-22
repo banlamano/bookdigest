@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-8fa16e02-0771-4c63-ab4b-5cf888797a70" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e7490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#grad-8fa16e02-0771-4c63-ab4b-5cf888797a70)" />
+  <g opacity="0.1">
+    <circle cx="71.01826441761085" cy="457.43561869781274" r="23.184605302400954" fill="white" /><circle cx="199.27673719853246" cy="126.38568058109531" r="14.546948525475356" fill="white" /><circle cx="212.42315921459132" cy="229.82646519603753" r="22.224076926210717" fill="white" /><circle cx="241.83275191856129" cy="6.287957386933685" r="20.132935287871128" fill="white" /><circle cx="205.85827839302505" cy="314.12004345256764" r="13.176942291454122" fill="white" /><circle cx="382.1915317722662" cy="273.67312860351205" r="19.847502692798308" fill="white" /><circle cx="146.59129811456486" cy="573.8825683553998" r="14.47872773138252" fill="white" /><circle cx="353.3112137740491" cy="591.3261760975132" r="15.397284881029476" fill="white" /><circle cx="236.30462556993191" cy="541.1027102635913" r="27.661544270363244" fill="white" /><circle cx="5.886603714285199" cy="280.08081344860153" r="12.169695938998721" fill="white" /><circle cx="166.59503110803325" cy="62.82516147473709" r="26.967443614196846" fill="white" /><circle cx="257.61363045298407" cy="185.93088611356941" r="27.94414771854937" fill="white" /><circle cx="210.91943607216703" cy="431.7036049598633" r="20.629565033684084" fill="white" /><circle cx="30.320555595149656" cy="324.70908664824685" r="22.85922346127489" fill="white" /><circle cx="80.32823158069746" cy="394.2169367597719" r="18.531532198527454" fill="white" /><circle cx="90.3884881861897" cy="153.77298000503686" r="12.990780752631872" fill="white" /><circle cx="386.6256029611643" cy="314.42587425626795" r="24.287554693519343" fill="white" /><circle cx="254.78508840979055" cy="68.00976014488907" r="21.69681667609215" fill="white" /><circle cx="27.423267288466626" cy="587.9754421082787" r="15.55917185249669" fill="white" /><circle cx="121.6509789561504" cy="452.9273840970501" r="22.572541646987705" fill="white" />
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="120" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        The Brain That Changes
+      </text>
+      <text x="200" y="165" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">
+        Itself
+      </text>
+  </g>
+  <g filter="url(#shadow)">
+    
+      <text x="200" y="480" 
+            font-family="Arial, sans-serif" font-size="22" fill="#67e8f9" text-anchor="middle">
+        Norman Doidge
+      </text>
+  </g>
+  <g>
+    <rect x="20" y="20" width="150" height="35" rx="17.5" fill="rgba(255,255,255,0.2)" />
+    <text x="95" y="42" 
+          font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+      PSYCHOLOGY
+    </text>
+  </g>
+  <rect x="0" y="590" width="400" height="10" fill="#06b6d4" opacity="0.8" />
+</svg>
