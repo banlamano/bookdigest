@@ -13,6 +13,7 @@ interface BookCardProps {
     title: string;
     author: string;
     coverImage: string;
+    slug?: string;
     language?: string;
     readingTime: number;
     audioUrl?: string;
@@ -33,7 +34,7 @@ export function BookCard({ book }: BookCardProps) {
       transition={{ duration: 0.2 }}
       className="card group cursor-pointer"
     >
-      <Link href={`/books/${generateBookSlug(book.title, book.id, language)}`}>
+      <Link href={`/books/${book.slug || generateBookSlug(book.title, book.id, language)}`}>
         <div className="relative aspect-[3/4] overflow-hidden bg-gray-100">
           <OptimizedBookCover
             src={book.coverImage}

@@ -83,6 +83,12 @@ async function fetchBestCoverFromGoogleBooks(title: string, author: string | nul
 }
 
 router.post('/fix-covers', async (req, res) => {
+  const secret = req.body.secret || req.headers['x-admin-key'];
+  const expectedSecret = process.env.ADMIN_SECRET_KEY || process.env.ADMIN_SECRET;
+  if (!expectedSecret || secret !== expectedSecret) {
+    return res.status(401).json({ status: 'error', message: 'Unauthorized' });
+  }
+
   const { bookIds, replaceAiCovers = true, fallbackToAiCover = true } = req.body as { bookIds: string[]; replaceAiCovers?: boolean; fallbackToAiCover?: boolean };
 
   if (!Array.isArray(bookIds) || bookIds.length === 0) {

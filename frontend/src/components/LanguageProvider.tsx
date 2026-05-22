@@ -24,11 +24,11 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Hero
     'hero.title': 'Learn from the World\'s Best Books in 15 Minutes',
-    'hero.subtitle': 'Access 900+ free AI-powered book summaries. Read bestselling business, self-help, psychology & personal development books quickly.',
+    'hero.subtitle': 'Access 450+ free AI-powered book summaries. Read bestselling business, self-help, psychology & personal development books quickly.',
     'hero.cta': 'Start Free Trial',
     'hero.ctaSecondary': 'Browse Library',
     'hero.stats.books': 'Book Summaries',
-    'hero.stats.booksValue': '900+',
+    'hero.stats.booksValue': '450+',
     'hero.stats.read': 'Average Read',
     'hero.stats.readValue': '5–10min',
     'hero.stats.rating': 'User Rating',
@@ -47,7 +47,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Library
     'library.title': 'Book Library',
-    'library.subtitle': 'Browse our collection of 900+ book summaries',
+    'library.subtitle': 'Browse our collection of 450+ book summaries',
     'library.filter': 'Filter by category',
     'library.sort': 'Sort by',
     'library.all': 'All Books',
@@ -508,7 +508,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.backToBlog': '← Back to Blog',
     'blog.by': 'By',
     'blog.ctaTitle': 'Ready to Start Learning?',
-    'blog.ctaSubtitle': 'Access 900+ free book summaries on BookDigest',
+    'blog.ctaSubtitle': 'Access 450+ free book summaries on BookDigest',
     'blog.ctaButton': 'Get Started Free →',
   },
   de: {
@@ -533,7 +533,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.cta': 'Kostenlose Testversion starten',
     'hero.ctaSecondary': 'Bibliothek durchsuchen',
     'hero.stats.books': 'Buchzusammenfassungen',
-    'hero.stats.booksValue': '900+',
+    'hero.stats.booksValue': '450+',
     'hero.stats.read': 'Durchschnittliche Lesezeit',
     'hero.stats.readValue': '5–10 Min.',
     'hero.stats.rating': 'Benutzerbewertung',
@@ -1021,7 +1021,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.backToBlog': '← Zurück zum Blog',
     'blog.by': 'Von',
     'blog.ctaTitle': 'Bereit zum Lernen?',
-    'blog.ctaSubtitle': 'Zugang zu 900+ kostenlosen Buchzusammenfassungen auf BookDigest',
+    'blog.ctaSubtitle': 'Zugang zu 450+ kostenlosen Buchzusammenfassungen auf BookDigest',
     'blog.ctaButton': 'Jetzt kostenlos starten →',
   },
 };

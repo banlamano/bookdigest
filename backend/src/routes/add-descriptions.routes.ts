@@ -41,6 +41,12 @@ async function fetchFromGoogleBooks(title: string, author: string): Promise<{ de
 
 // Endpoint to add descriptions (and covers) to books
 router.post('/add-descriptions', async (req, res) => {
+  const secret = req.body.secret || req.headers['x-admin-key'];
+  const expectedSecret = process.env.ADMIN_SECRET_KEY || process.env.ADMIN_SECRET;
+  if (!expectedSecret || secret !== expectedSecret) {
+    return res.status(401).json({ status: 'error', message: 'Unauthorized' });
+  }
+
   const { limit = 50, offset = 0, delayMs = 100 } = req.body;
   
   try {

@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const siteMetadata = {
-  title: 'BookDigest - Learn from 900+ Books in 15 Minutes | Free AI Book Summaries',
-  description: 'Read AI-powered summaries of bestselling books in business, self-help, psychology & personal development. Save 10+ hours per book. Free access to 900+ expert book summaries with key insights, quotes & action items.',
+  title: 'BookDigest - Learn from 450+ Books in 15 Minutes | Free AI Book Summaries',
+  description: 'Read AI-powered summaries of bestselling books in business, self-help, psychology & personal development. Save 10+ hours per book. Free access to 450+ expert book summaries with key insights, quotes & action items.',
   siteUrl: 'https://book-digest.com',
   author: 'BookDigest',
   keywords: [
@@ -110,6 +110,7 @@ export function generateBookMetadata(book: {
   title: string;
   author: string;
   description: string;
+  slug?: string;
   coverImage?: string;
   category?: { name: string };
   rating?: number;
@@ -170,7 +171,7 @@ export function generateBookMetadata(book: {
       images: book.coverImage ? [book.coverImage] : undefined,
     },
     alternates: {
-      canonical: `${siteMetadata.siteUrl}/books/${book.title.toLowerCase().replace(/\s+/g, '-')}`,
+      canonical: `${siteMetadata.siteUrl}/books/${book.slug || book.title.toLowerCase().replace(/\s+/g, '-')}`,
     },
   };
 }

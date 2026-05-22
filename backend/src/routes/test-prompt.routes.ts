@@ -5,6 +5,12 @@ const router = Router();
 
 // Test endpoint to generate ONE summary and return it (for testing prompts)
 router.post('/test-prompt', async (req, res) => {
+  const secret = req.body.secret || req.headers['x-admin-key'];
+  const expectedSecret = process.env.ADMIN_SECRET_KEY || process.env.ADMIN_SECRET;
+  if (!expectedSecret || secret !== expectedSecret) {
+    return res.status(401).json({ status: 'error', message: 'Unauthorized' });
+  }
+
   const { title, author, description } = req.body;
 
   if (!title || !author) {

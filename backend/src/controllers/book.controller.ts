@@ -98,8 +98,11 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
     const { id } = req.params;
     const userId = req.user?.userId; // User may or may not be authenticated
 
+    const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id);
+    const whereClause = isUuid ? { id } : { slug: id };
+
     const book = await prisma.book.findUnique({
-      where: { id },
+      where: whereClause,
       include: {
         category: true,
         _count: {

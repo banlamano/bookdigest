@@ -5,6 +5,12 @@ const router = Router();
 
 // Admin endpoint to update AI covers
 router.post('/update-ai-covers', async (req, res) => {
+  const secret = req.body.secret || req.headers['x-admin-key'];
+  const expectedSecret = process.env.ADMIN_SECRET_KEY || process.env.ADMIN_SECRET;
+  if (!expectedSecret || secret !== expectedSecret) {
+    return res.status(401).json({ success: false, message: 'Unauthorized' });
+  }
+
   try {
     console.log('🎨 Starting AI cover updates...');
 

@@ -7,7 +7,6 @@ import { useAuthStore } from '@/store/authStore';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
 import { useState, useEffect } from 'react';
-import { Testimonials } from '@/components/home/Testimonials';
 import { useQuery } from '@tanstack/react-query';
 import { useLanguage } from '@/components/LanguageProvider';
 

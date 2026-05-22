@@ -6,6 +6,12 @@ const router = Router();
 
 // Admin endpoint to regenerate summaries
 router.post('/regenerate-summaries', async (req, res) => {
+  const secret = req.body.secret || req.headers['x-admin-key'];
+  const expectedSecret = process.env.ADMIN_SECRET_KEY || process.env.ADMIN_SECRET;
+  if (!expectedSecret || secret !== expectedSecret) {
+    return res.status(401).json({ status: 'error', message: 'Unauthorized' });
+  }
+
   const { batchSize = 10, force = false, limit, offset = 0, useGPT4 = false, ids } = req.body as {
     batchSize?: number;
     force?: boolean;

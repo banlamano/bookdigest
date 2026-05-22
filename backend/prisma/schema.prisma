@@ -50,6 +50,7 @@ model User {
 // Book model
 model Book {
   id                String   @id @default(uuid())
+  slug              String?  @unique
   title             String
   author            String
   originalTitle     String?

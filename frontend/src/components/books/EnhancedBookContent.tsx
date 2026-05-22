@@ -63,27 +63,7 @@ export default function EnhancedBookContent({
           {(!isAuthenticated && !isPublicDemo) && (
             <>
               {/* Fade out effect */}
-              <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-blue-50 dark:from-gray-800 to-transparent"></div>
-              
-              {/* CTA Overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-8 text-center flex flex-col items-center justify-end z-10 h-full bg-gradient-to-t from-blue-50 via-blue-50/80 dark:from-gray-800 dark:via-gray-800/80 to-transparent">
-                <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-xl border border-blue-100 dark:border-gray-700 max-w-lg w-full">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                    Keep Reading for Free
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-6 text-sm">
-                    Create a free account to unlock the rest of this summary, plus key insights, quotes, and action items.
-                  </p>
-                  <div className="flex gap-4 justify-center">
-                    <a href="/register" className="btn-primary w-full justify-center">
-                      Unlock Full Summary
-                    </a>
-                  </div>
-                  <p className="mt-4 text-xs text-gray-500">
-                    Already have an account? <a href="/login" className="text-blue-600 hover:underline">Log in</a>
-                  </p>
-                </div>
-              </div>
+              <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-blue-50 dark:from-gray-800 to-transparent pointer-events-none"></div>
             </>
           )}
         </div>
