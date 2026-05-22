@@ -95,13 +95,13 @@ export const getFeaturedBooks = async (req: Request, res: Response, next: NextFu
 // Get book by ID
 export const getBookById = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const { id } = req.params;
+    const { id: identifier } = req.params;
     const userId = req.user?.userId; // User may or may not be authenticated
 
-    const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id);
-    const whereClause = isUuid ? { id } : { slug: id };
+    const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(identifier);
+    const whereClause = isUuid ? { id: identifier } : { slug: identifier };
 
-    const book = await prisma.book.findUnique({
+    const bookFound = await prisma.book.findUnique({
       where: whereClause,
       include: {
         category: true,
@@ -111,9 +111,23 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
       },
     });
 
-    if (!book) {
+    // If not found and identifier is not a UUID, try partial slug match (handles short German slugs without '-zusammenfassung-<id>')
+    let finalBook = bookFound;
+    if (!finalBook && !isUuid) {
+      finalBook = await prisma.book.findFirst({
+        where: { slug: { startsWith: identifier } },
+        include: {
+          category: true,
+          _count: { select: { favorites: true, reviews: true } }
+        }
+      });
+    }
+
+    if (!finalBook) {
       throw new AppError('Book not found', 404);
     }
+
+    const book = finalBook;
 
     // Find alternate language version ID to enable automatic language switching in frontend
     const { language: preferredLang } = req.query;
