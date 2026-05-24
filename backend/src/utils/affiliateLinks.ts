@@ -1,9 +1,10 @@
 // Amazon Affiliate Link Generator
+import { toAmazonAsin } from './isbn';
 
 export const AFFILIATE_IDS = {
   US: 'bookdigest06-20',
-  UK: 'bookdigest-21',
-  DE: 'bookdigest-21',
+  UK: 'bookdigest06-20',
+  DE: 'bookdigestde-21',
   ES: 'bookdigest-21',
   FR: 'bookdigest-21',
   IT: 'bookdigest-21',
@@ -18,51 +19,42 @@ export const AMAZON_DOMAINS = {
   IT: 'amazon.it',
 };
 
+export type AmazonRegion = keyof typeof AFFILIATE_IDS;
+
 /**
- * Generate Amazon affiliate link for a book
- * @param title - Book title
- * @param author - Book author
- * @param isbn - ISBN (optional, but preferred)
- * @param region - Amazon region (US, UK, DE)
+ * Generate an Amazon affiliate link for a book.
+ *
+ * Prefers a direct /dp/{ASIN} product page (4–6× higher conversion than
+ * search results, per affiliate marketing benchmarks). Falls back to a
+ * title+author search URL only when no ISBN is available.
  */
 export function generateAffiliateLink(
   title: string,
   author: string,
-  isbn?: string,
-  region: 'US' | 'UK' | 'DE' | 'ES' | 'FR' | 'IT' = 'US'
+  isbn?: string | null,
+  region: AmazonRegion = 'US'
 ): string {
   const affiliateId = AFFILIATE_IDS[region];
   const domain = AMAZON_DOMAINS[region];
 
-  // If we have ISBN, use search instead of direct /dp/ link
-  // Amazon's /dp/ is picky about ISBN format, search is more reliable
-  if (isbn) {
-    const searchQuery = encodeURIComponent(`${title} ${author} ISBN ${isbn}`);
-    return `https://www.${domain}/s?k=${searchQuery}&tag=${affiliateId}`;
+  const asin = toAmazonAsin(isbn);
+  if (asin) {
+    return `https://www.${domain}/dp/${asin}?tag=${affiliateId}`;
   }
 
-  // Otherwise, use search link with title and author
-  const searchQuery = encodeURIComponent(`${title} ${author}`);
-  return `https://www.${domain}/s?k=${searchQuery}&tag=${affiliateId}`;
+  // No ISBN → search fallback
+  const query = encodeURIComponent(`${title} ${author}`.trim());
+  return `https://www.${domain}/s?k=${query}&tag=${affiliateId}`;
 }
 
-/**
- * Detect user's region based on various factors
- * This will be used on the frontend
- */
-export function getDefaultRegion(): 'US' | 'UK' | 'DE' | 'ES' | 'FR' | 'IT' {
-  // Server-side: default to US
-  // Client-side will detect based on browser locale/IP
+export function getDefaultRegion(): AmazonRegion {
   return 'US';
 }
 
-/**
- * Generate affiliate links for all regions
- */
 export function generateAllAffiliateLinks(
   title: string,
   author: string,
-  isbn?: string
+  isbn?: string | null
 ) {
   return {
     US: generateAffiliateLink(title, author, isbn, 'US'),
