@@ -1,12 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { booksAPI, categoriesAPI } from '@/lib/api';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import { Search } from 'lucide-react';
 import { BookCard } from '@/components/books/BookCard';
 import { useLanguage } from '@/components/LanguageProvider';
+
+const PER_PAGE_OPTIONS = [20, 40, 60, 100] as const;
+const DEFAULT_PER_PAGE = 20;
+const PER_PAGE_STORAGE_KEY = 'library.perPage';
+
+function readInitialPerPage(): number {
+  if (typeof window === 'undefined') return DEFAULT_PER_PAGE;
+  try {
+    const urlValue = Number(new URLSearchParams(window.location.search).get('perPage'));
+    if (PER_PAGE_OPTIONS.includes(urlValue as any)) return urlValue;
+    const stored = Number(window.localStorage.getItem(PER_PAGE_STORAGE_KEY));
+    if (PER_PAGE_OPTIONS.includes(stored as any)) return stored;
+  } catch {
+    /* ignore */
+  }
+  return DEFAULT_PER_PAGE;
+}
 
 export default function LibraryClient({ language: initialLanguage }: { language: string }) {
   const { t, language: currentLanguage } = useLanguage();
@@ -16,6 +33,35 @@ export default function LibraryClient({ language: initialLanguage }: { language:
   const [selectedCategory, setSelectedCategory] = useState('');
   const [showPremiumOnly, setShowPremiumOnly] = useState(false);
   const [page, setPage] = useState(1);
+  const [perPage, setPerPage] = useState<number>(DEFAULT_PER_PAGE);
+
+  // Hydrate perPage from URL/localStorage after mount to avoid SSR mismatch.
+  useEffect(() => {
+    const initial = readInitialPerPage();
+    if (initial !== DEFAULT_PER_PAGE) setPerPage(initial);
+  }, []);
+
+  // Persist perPage and sync the URL whenever it changes.
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      window.localStorage.setItem(PER_PAGE_STORAGE_KEY, String(perPage));
+    } catch {
+      /* ignore */
+    }
+    const url = new URL(window.location.href);
+    if (perPage === DEFAULT_PER_PAGE) {
+      url.searchParams.delete('perPage');
+    } else {
+      url.searchParams.set('perPage', String(perPage));
+    }
+    window.history.replaceState(null, '', url.toString());
+  }, [perPage]);
+
+  const handlePerPageChange = (value: number) => {
+    setPerPage(value);
+    setPage(1);
+  };
 
   const { data: categoriesData } = useQuery({
     queryKey: ['categories'],
@@ -23,11 +69,11 @@ export default function LibraryClient({ language: initialLanguage }: { language:
   });
 
   const { data: booksData, isLoading } = useQuery({
-    queryKey: ['books', page, selectedCategory, showPremiumOnly, language],
+    queryKey: ['books', page, perPage, selectedCategory, showPremiumOnly, language],
     queryFn: () =>
       booksAPI.getAll({
         page,
-        limit: 20,
+        limit: perPage,
         category: selectedCategory || undefined,
         isPremium: showPremiumOnly || undefined,
         language: language,
@@ -88,6 +134,23 @@ export default function LibraryClient({ language: initialLanguage }: { language:
               </span>
             </label>
 
+            <label className="flex items-center space-x-2 text-sm text-gray-700 dark:text-gray-300">
+              <span>{t('pagination.show')}</span>
+              <select
+                value={perPage}
+                onChange={(e) => handlePerPageChange(Number(e.target.value))}
+                className="px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500"
+                aria-label={t('pagination.perPage')}
+              >
+                {PER_PAGE_OPTIONS.map((opt) => (
+                  <option key={opt} value={opt}>
+                    {opt}
+                  </option>
+                ))}
+              </select>
+              <span>{t('pagination.perPage')}</span>
+            </label>
+
             <div className="ml-auto text-sm text-gray-600 dark:text-gray-400">
               {pagination && `${t('pagination.showing')} ${books.length} ${t('pagination.ofTotal')} ${pagination.total} ${t('pagination.books')}`}
             </div>
@@ -96,7 +159,7 @@ export default function LibraryClient({ language: initialLanguage }: { language:
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {isLoading
-            ? Array.from({ length: 12 }).map((_, i) => <BookCardSkeleton key={i} />)
+            ? Array.from({ length: Math.min(perPage, 20) }).map((_, i) => <BookCardSkeleton key={i} />)
             : books.map((book: any) => <BookCard key={book.id} book={book} />)}
         </div>
 

@@ -472,6 +472,8 @@ const translations: Record<Language, Record<string, string>> = {
     'pagination.showing': 'Showing',
     'pagination.ofTotal': 'of',
     'pagination.books': 'books',
+    'pagination.show': 'Show',
+    'pagination.perPage': 'per page',
 
     // Library extras
     'library.allCategories': 'All Categories',
@@ -985,6 +987,8 @@ const translations: Record<Language, Record<string, string>> = {
     'pagination.showing': 'Zeige',
     'pagination.ofTotal': 'von',
     'pagination.books': 'Büchern',
+    'pagination.show': 'Zeige',
+    'pagination.perPage': 'pro Seite',
 
     // Library extras
     'library.allCategories': 'Alle Kategorien',
