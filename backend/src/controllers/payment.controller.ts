@@ -18,7 +18,7 @@ export const createCheckoutSession = async (req: Request, res: Response, next: N
 
     const user = await prisma.user.findUnique({
       where: { id: userId },
-      select: { email: true },
+      select: { email: true, freeTrialUsed: true },
     });
 
     if (!user) {
@@ -29,6 +29,7 @@ export const createCheckoutSession = async (req: Request, res: Response, next: N
     let priceId: string;
     let subscriptionType: string;
     let mode: Stripe.Checkout.SessionCreateParams.Mode = 'subscription';
+    const trialEligible = user.freeTrialUsed === 0;
 
     switch (planType) {
       case 'monthly':
@@ -49,26 +50,22 @@ export const createCheckoutSession = async (req: Request, res: Response, next: N
         throw new AppError('Invalid plan type', 400);
     }
 
-    // Create Stripe checkout session
-    const session = await stripe.checkout.sessions.create({
+    // Build session params; add 7-day trial for first-time subscribers
+    const sessionParams: Stripe.Checkout.SessionCreateParams = {
       customer_email: user.email,
       payment_method_types: ['card'],
-      line_items: [
-        {
-          price: priceId,
-          quantity: 1,
-        },
-      ],
+      line_items: [{ price: priceId, quantity: 1 }],
       mode: mode,
       success_url: `${process.env.CLIENT_URL}/subscription/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${process.env.CLIENT_URL}/subscription/cancel`,
-      // Allow customers to apply Stripe promotion codes (e.g. Product Hunt launch discount)
       allow_promotion_codes: true,
-      metadata: {
-        userId,
-        subscriptionType,
-      },
-    });
+      metadata: { userId, subscriptionType, hadTrial: trialEligible && mode === 'subscription' ? '1' : '0' },
+    };
+    if (mode === 'subscription' && trialEligible) {
+      sessionParams.subscription_data = { trial_period_days: 7 };
+    }
+
+    const session = await stripe.checkout.sessions.create(sessionParams);
 
     res.json({
       status: 'success',
@@ -163,13 +160,16 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
     select: { email: true, firstName: true }
   });
 
-  // Update user subscription (idempotent)
+  // Update user subscription (idempotent). Bump freeTrialUsed if this
+  // checkout actually used a trial — prevents repeat trial abuse.
+  const hadTrial = session.metadata?.hadTrial === '1';
   await prisma.user.update({
     where: { id: userId },
     data: {
       subscriptionType: subscriptionType as any,
       subscriptionId,
       subscriptionEnd: endDate,
+      ...(hadTrial ? { freeTrialUsed: 1 } : {}),
     },
   });
 
@@ -297,6 +297,7 @@ export const getSubscriptionStatus = async (req: Request, res: Response, next: N
         subscriptionType: true,
         subscriptionEnd: true,
         subscriptionId: true,
+        freeTrialUsed: true,
       },
     });
 
@@ -333,6 +334,7 @@ export const getSubscriptionStatus = async (req: Request, res: Response, next: N
         subscriptionType: user.subscriptionType,
         subscriptionEnd: user.subscriptionEnd,
         details: subscriptionDetails,
+        trialEligible: user.freeTrialUsed === 0 && user.subscriptionType === 'FREE',
       },
     });
   } catch (error) {

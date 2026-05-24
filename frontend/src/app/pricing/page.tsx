@@ -25,6 +25,8 @@ export default function PricingPage() {
 
   const subscriptionType = subscriptionData?.data?.data?.subscriptionType || 'FREE';
   const isPremium = subscriptionType !== 'FREE';
+  // Trial-eligible if user hasn't used a free trial yet (or is logged out — assume true for marketing)
+  const trialEligible = !isAuthenticated || (subscriptionData?.data?.data?.trialEligible !== false);
 
   // Check if a specific plan is the user's current subscription
   const isCurrentPlan = (planType: string | null) => {
@@ -76,6 +78,7 @@ export default function PricingPage() {
       price: '€9.99',
       period: t('pricing.perMonth'),
       description: t('pricing.seriousLearners'),
+      badge: trialEligible ? t('pricing.trialBadge') : undefined,
       features: [
         t('pricing.unlimited'),
         t('pricing.audioNarration'),
@@ -83,7 +86,8 @@ export default function PricingPage() {
         t('pricing.prioritySupport'),
         t('pricing.earlyAccess'),
       ],
-      cta: t('pricing.getPremium'),
+      cta: trialEligible ? t('pricing.startTrial') : t('pricing.getPremium'),
+      reassurance: trialEligible ? t('pricing.noChargeNow') : undefined,
       highlighted: true,
       planType: 'monthly' as const,
     },
@@ -97,7 +101,8 @@ export default function PricingPage() {
         t('pricing.everythingMonthly'),
         t('pricing.save40'),
       ],
-      cta: t('pricing.getPremium'),
+      cta: trialEligible ? t('pricing.startTrial') : t('pricing.getPremium'),
+      reassurance: trialEligible ? t('pricing.noChargeNow') : undefined,
       highlighted: false,
       planType: 'yearly' as const,
     },
@@ -199,16 +204,23 @@ export default function PricingPage() {
                   </a>
                 </div>
               ) : plan.planType ? (
-                <button
-                  onClick={() => handleSubscribe(plan.planType!)}
-                  disabled={isLoading === plan.planType}
-                  className={`w-full py-3 rounded-lg font-medium transition-colors ${plan.highlighted
-                    ? 'bg-primary-600 hover:bg-primary-700 text-white'
-                    : 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white'
-                    } disabled:opacity-50 disabled:cursor-not-allowed`}
-                >
-                  {isLoading === plan.planType ? t('pricing.processing') : plan.cta}
-                </button>
+                <>
+                  <button
+                    onClick={() => handleSubscribe(plan.planType!)}
+                    disabled={isLoading === plan.planType}
+                    className={`w-full py-3 rounded-lg font-medium transition-colors ${plan.highlighted
+                      ? 'bg-primary-600 hover:bg-primary-700 text-white'
+                      : 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white'
+                      } disabled:opacity-50 disabled:cursor-not-allowed`}
+                  >
+                    {isLoading === plan.planType ? t('pricing.processing') : plan.cta}
+                  </button>
+                  {plan.reassurance && (
+                    <p className="text-xs text-gray-500 dark:text-gray-400 text-center mt-2">
+                      {plan.reassurance}
+                    </p>
+                  )}
+                </>
               ) : (
                 <a
                   href={isAuthenticated ? '/library' : '/register'}
