@@ -94,6 +94,187 @@ export class EmailService {
   }
 
   /**
+   * Schedule the Day-3 "discovery" email — sent 3 days after signup.
+   * Re-engages users who haven't returned by suggesting popular books.
+   */
+  static async scheduleDay3Email(user: { email: string; firstName: string }) {
+    if (!isEmailEnabled()) return { success: false, error: 'Email service not configured' };
+
+    const scheduledAt = new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString();
+    try {
+      const result = await resend!.emails.send({
+        from: FROM_EMAIL,
+        to: user.email,
+        subject: `${user.firstName}, 5 books most readers start with 📚`,
+        scheduledAt,
+        html: `
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <style>
+              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+              .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+              .header { background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+              .content { background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px; }
+              .book { background: white; padding: 16px; border-radius: 8px; margin: 10px 0; border-left: 4px solid #2563eb; }
+              .book-title { font-weight: bold; color: #1e40af; }
+              .book-takeaway { font-size: 14px; color: #6b7280; margin: 6px 0 0; }
+              .button { background: #2563eb; color: white; padding: 14px 32px; text-decoration: none; border-radius: 6px; display: inline-block; margin: 20px 0; font-weight: bold; }
+              .footer { text-align: center; color: #6b7280; font-size: 14px; margin-top: 30px; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="header">
+                <h1>📚 Where most people start</h1>
+              </div>
+              <div class="content">
+                <p>Hi ${user.firstName},</p>
+                <p>You signed up a few days ago — welcome again. New readers always ask the same question: <em>"Out of 900+ books, where do I start?"</em></p>
+                <p>Here are 5 that consistently get readers hooked:</p>
+
+                <div class="book">
+                  <div class="book-title">Atomic Habits — James Clear</div>
+                  <div class="book-takeaway">Why tiny changes compound, and how to design systems that make good habits automatic.</div>
+                </div>
+                <div class="book">
+                  <div class="book-title">The Book Thief — Markus Zusak</div>
+                  <div class="book-takeaway">Death narrates a girl's story in WWII Germany. One of the most-read books on the platform.</div>
+                </div>
+                <div class="book">
+                  <div class="book-title">Me Before You — Jojo Moyes</div>
+                  <div class="book-takeaway">A story about choosing how to live. Short, devastating, unforgettable.</div>
+                </div>
+                <div class="book">
+                  <div class="book-title">The Subtle Art of Not Giving a F*ck — Mark Manson</div>
+                  <div class="book-takeaway">A counterintuitive approach to figuring out what actually matters to you.</div>
+                </div>
+                <div class="book">
+                  <div class="book-title">The Art of Racing in the Rain — Garth Stein</div>
+                  <div class="book-takeaway">Told from a dog's perspective. Funny, philosophical, devastating.</div>
+                </div>
+
+                <p style="text-align: center;">
+                  <a href="${SITE_URL}/library" class="button">Browse all 900+ summaries →</a>
+                </p>
+
+                <p style="font-size: 14px; color: #6b7280;">Reply to this email if you want a personal recommendation — I read every message.</p>
+                <p>Happy reading,<br>The BookDigest Team</p>
+              </div>
+              <div class="footer">
+                <a href="${SITE_URL}/terms">Terms</a> | <a href="${SITE_URL}/privacy">Privacy</a>
+              </div>
+            </div>
+          </body>
+          </html>
+        `,
+      });
+      console.log(`📬 Day-3 email scheduled for ${user.email} (id: ${result.data?.id})`);
+      return { success: true, id: result.data?.id };
+    } catch (error) {
+      console.error('❌ Failed to schedule Day-3 email:', error);
+      return { success: false, error };
+    }
+  }
+
+  /**
+   * Schedule the Day-7 "upgrade nudge" email — sent 7 days after signup.
+   * Pitches the 7-day free trial / annual plan to free users.
+   */
+  static async scheduleDay7Email(user: { email: string; firstName: string }) {
+    if (!isEmailEnabled()) return { success: false, error: 'Email service not configured' };
+
+    const scheduledAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString();
+    try {
+      const result = await resend!.emails.send({
+        from: FROM_EMAIL,
+        to: user.email,
+        subject: `${user.firstName}, want unlimited access? (7-day free trial inside)`,
+        scheduledAt,
+        html: `
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <style>
+              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+              .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+              .header { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+              .content { background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px; }
+              .compare { background: white; padding: 20px; border-radius: 8px; margin: 20px 0; }
+              .compare-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #e5e7eb; }
+              .compare-row:last-child { border-bottom: none; }
+              .compare-row .yes { color: #10b981; font-weight: bold; }
+              .compare-row .no { color: #ef4444; }
+              .pricing-card { background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); color: white; padding: 24px; border-radius: 10px; text-align: center; margin: 24px 0; }
+              .button { background: white; color: #1e40af; padding: 14px 32px; text-decoration: none; border-radius: 6px; display: inline-block; margin: 16px 0; font-weight: bold; }
+              .secondary { font-size: 14px; opacity: 0.85; }
+              .footer { text-align: center; color: #6b7280; font-size: 14px; margin-top: 30px; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="header">
+                <h1>One week in — how's it going?</h1>
+              </div>
+              <div class="content">
+                <p>Hi ${user.firstName},</p>
+                <p>You've been with BookDigest for a week. If you've been reading, you've probably hit the 3-summary free monthly limit.</p>
+
+                <p>Here's what Premium unlocks:</p>
+
+                <div class="compare">
+                  <div class="compare-row">
+                    <span>Book summaries per month</span>
+                    <span><span class="no">3</span> → <span class="yes">Unlimited</span></span>
+                  </div>
+                  <div class="compare-row">
+                    <span>Real audio narration (220 books)</span>
+                    <span class="yes">✓ Included</span>
+                  </div>
+                  <div class="compare-row">
+                    <span>Offline reading</span>
+                    <span class="yes">✓ Included</span>
+                  </div>
+                  <div class="compare-row">
+                    <span>Ad-free experience</span>
+                    <span class="yes">✓ Included</span>
+                  </div>
+                  <div class="compare-row">
+                    <span>Early access to new summaries</span>
+                    <span class="yes">✓ Included</span>
+                  </div>
+                </div>
+
+                <div class="pricing-card">
+                  <p style="margin: 0; font-size: 14px; opacity: 0.9;">Try Premium free for 7 days</p>
+                  <h2 style="margin: 8px 0; font-size: 32px;">€79.99/year</h2>
+                  <p class="secondary" style="margin: 0;">That's €6.67/month — half the price of Blinkist</p>
+                  <a href="${SITE_URL}/pricing" class="button">Start free trial →</a>
+                </div>
+
+                <p style="font-size: 14px; color: #6b7280; text-align: center;">No charges during the trial. Cancel anytime.</p>
+
+                <p style="margin-top: 30px;">Not ready? No problem — your free 3 summaries refresh next month.</p>
+
+                <p>Either way, thanks for being here.<br>The BookDigest Team</p>
+              </div>
+              <div class="footer">
+                <a href="${SITE_URL}/terms">Terms</a> | <a href="${SITE_URL}/privacy">Privacy</a>
+              </div>
+            </div>
+          </body>
+          </html>
+        `,
+      });
+      console.log(`📬 Day-7 email scheduled for ${user.email} (id: ${result.data?.id})`);
+      return { success: true, id: result.data?.id };
+    } catch (error) {
+      console.error('❌ Failed to schedule Day-7 email:', error);
+      return { success: false, error };
+    }
+  }
+
+  /**
    * Send payment confirmation email
    */
   static async sendPaymentConfirmation(

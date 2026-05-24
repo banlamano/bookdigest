@@ -54,11 +54,15 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
     // Generate token
     const token = generateToken(user.id, user.email, user.role);
 
-    // Send welcome email (don't wait for it, don't block registration)
-    EmailService.sendWelcomeEmail({
-      email: user.email,
-      firstName: user.firstName
-    }).catch(err => logger.error('Failed to send welcome email:', err));
+    // Send the 3-email welcome sequence. Don't await — registration shouldn't
+    // wait on email API. Day-3 and Day-7 are scheduled via Resend's scheduledAt.
+    const emailRecipient = { email: user.email, firstName: user.firstName || 'there' };
+    EmailService.sendWelcomeEmail(emailRecipient)
+      .catch(err => logger.error('Failed to send welcome email:', err));
+    EmailService.scheduleDay3Email(emailRecipient)
+      .catch(err => logger.error('Failed to schedule day-3 email:', err));
+    EmailService.scheduleDay7Email(emailRecipient)
+      .catch(err => logger.error('Failed to schedule day-7 email:', err));
 
     logger.info(`New user registered: ${email}`);
 
