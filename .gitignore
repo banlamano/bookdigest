@@ -66,3 +66,6 @@ tmp/
 
 # Audio files are stored in Cloudflare R2, not git
 frontend/public/audio/
+
+# Local backups (audio + db dumps + secrets) — never commit
+.backups/
