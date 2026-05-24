@@ -12,6 +12,7 @@ import { Clock, Headphones, Star, Play } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { EnhancedAudioPlayer } from '@/components/books/EnhancedAudioPlayer';
+import { AudioPlayer } from '@/components/books/AudioPlayer';
 import { BookmarkButton } from '@/components/books/BookmarkButton';
 import { ReadingProgressTracker } from '@/components/books/ReadingProgressTracker';
 import EnhancedBookContent from '@/components/books/EnhancedBookContent';
@@ -335,12 +336,16 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
               {book.summary && (
                 <div className="mb-6">
                   {freemiumStatus?.isPremium ? (
-                    <EnhancedAudioPlayer
-                      bookTitle={book.title}
-                      bookSummary={book.summary}
-                      bookId={book.id}
-                      bookLanguage={book.language}
-                    />
+                    book.audioUrl && book.audioUrl !== 'browser-tts' ? (
+                      <AudioPlayer audioUrl={book.audioUrl} bookId={book.id} />
+                    ) : (
+                      <EnhancedAudioPlayer
+                        bookTitle={book.title}
+                        bookSummary={book.summary}
+                        bookId={book.id}
+                        bookLanguage={book.language}
+                      />
+                    )
                   ) : (
                     <div className="relative">
                       {/* Show disabled audio player preview */}

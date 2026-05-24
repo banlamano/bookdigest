@@ -18,7 +18,9 @@
         "generate:summaries": "tsx prisma/generate-summaries.ts",
         "regenerate:summaries": "tsx src/scripts/regenerate-summaries.ts",
         "setup:dev": "npm run prisma:generate && npm run prisma:migrate && npm run prisma:seed",
-        "update-covers": "tsx src/scripts/update-covers.ts"
+        "update-covers": "tsx src/scripts/update-covers.ts",
+        "generate:audio": "tsx src/scripts/generate-audio-google.ts",
+        "generate:audio:polly": "tsx src/scripts/generate-audio-polly.ts"
     },
     "prisma": {
         "seed": "tsx prisma/seed.ts"
