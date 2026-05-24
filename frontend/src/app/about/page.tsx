@@ -41,19 +41,19 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Stats */}
+        {/* Stats — concrete, verifiable platform facts (no invented user counts/ratings) */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           <div className="text-center">
             <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">900+</div>
             <div className="text-gray-600 dark:text-gray-400">{t('about.statsSummaries')}</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">10K+</div>
-            <div className="text-gray-600 dark:text-gray-400">{t('about.statsUsers')}</div>
+            <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">220</div>
+            <div className="text-gray-600 dark:text-gray-400">{t('about.statsAudio')}</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">4.8★</div>
-            <div className="text-gray-600 dark:text-gray-400">{t('about.statsRating')}</div>
+            <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">EN + DE</div>
+            <div className="text-gray-600 dark:text-gray-400">{t('about.statsLanguages')}</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">15min</div>

@@ -8,7 +8,7 @@ export default function FAQSchema() {
         name: 'What is BookDigest?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'BookDigest is a free AI-powered platform that provides concise summaries of over 454 bestselling business, self-help, and personal development books. You can read key insights from bestselling books in just 15 minutes. It\'s the perfect alternative to Blinkist with 100% free access to quality book summaries.',
+          text: 'BookDigest is a free AI-powered platform that provides concise summaries of over 900 bestselling business, self-help, and personal development books. You can read key insights from bestselling books in just 15 minutes. It\'s the perfect alternative to Blinkist with 100% free access to quality book summaries.',
         },
       },
       {

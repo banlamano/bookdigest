@@ -24,15 +24,15 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Hero
     'hero.title': 'Learn from the World\'s Best Books in 15 Minutes',
-    'hero.subtitle': 'Access 450+ free AI-powered book summaries. Read bestselling business, self-help, psychology & personal development books quickly.',
+    'hero.subtitle': 'Access 900+ AI-powered book summaries. Read bestselling business, self-help, psychology & personal development books quickly.',
     'hero.cta': 'Start Free Trial',
     'hero.ctaSecondary': 'Browse Library',
     'hero.stats.books': 'Book Summaries',
-    'hero.stats.booksValue': '450+',
-    'hero.stats.read': 'Average Read',
-    'hero.stats.readValue': '5–10min',
-    'hero.stats.rating': 'User Rating',
-    'hero.stats.ratingValue': '4.8★',
+    'hero.stats.booksValue': '900+',
+    'hero.stats.read': 'Per Summary',
+    'hero.stats.readValue': '10–15min',
+    'hero.stats.rating': 'With Audio',
+    'hero.stats.ratingValue': '220',
 
     // Features
     'features.title': 'Why Choose BookDigest?',
@@ -153,19 +153,6 @@ const translations: Record<Language, Record<string, string>> = {
     'featuresSection.trackDesc': 'Monitor your reading stats, streaks, and achievements.',
     'featuresSection.personalized': 'Personalized',
     'featuresSection.personalDesc': 'Get recommendations based on your interests and reading history.',
-
-    // Testimonials
-    'testimonials.title': 'Loved by thousands of learners',
-    'testimonials.subtitle': 'See what our community has to say',
-    'testimonials.sarah': 'BookDigest has transformed how I learn. I can now finish a book in my lunch break and apply the insights immediately to my business.',
-    'testimonials.michael': 'The audio feature is a game-changer. I listen during my commute and have learned more in the past 3 months than the entire last year.',
-    'testimonials.emma': 'Amazing platform! The summaries are incredibly well-written and the key insights are exactly what I need for professional growth.',
-    'testimonials.name1': 'Sarah Johnson',
-    'testimonials.name2': 'Michael Chen',
-    'testimonials.name3': 'Emma Williams',
-    'testimonials.role1': 'Entrepreneur',
-    'testimonials.role2': 'Software Engineer',
-    'testimonials.role3': 'Marketing Manager',
 
     // CTA Section
     'cta.title': 'Start your learning journey today',
@@ -324,8 +311,8 @@ const translations: Record<Language, Record<string, string>> = {
     'about.missionDesc1': 'We believe that everyone should have access to the wisdom contained in the world\'s best books. However, we also understand that time is precious, and not everyone has hours to dedicate to reading full books.',
     'about.missionDesc2': 'That\'s why we created BookDigest - to distill the essential insights from bestselling books into concise summaries that you can read or listen to on the go.',
     'about.statsSummaries': 'Book Summaries',
-    'about.statsUsers': 'Active Users',
-    'about.statsRating': 'User Rating',
+    'about.statsAudio': 'With Real Audio',
+    'about.statsLanguages': 'Languages',
     'about.statsTime': 'Avg. Read Time',
 
     // Contact Page
@@ -534,15 +521,15 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Hero
     'hero.title': 'Lerne von den besten Büchern der Welt in 15 Minuten',
-    'hero.subtitle': 'Zugang zu 450+ kostenlosen KI-gestützten Buchzusammenfassungen. Lies Bestseller aus Wirtschaft, Selbsthilfe, Psychologie und Persönlichkeitsentwicklung.',
+    'hero.subtitle': 'Zugang zu 900+ KI-gestützten Buchzusammenfassungen. Lies Bestseller aus Wirtschaft, Selbsthilfe, Psychologie und Persönlichkeitsentwicklung.',
     'hero.cta': 'Kostenlose Testversion starten',
     'hero.ctaSecondary': 'Bibliothek durchsuchen',
     'hero.stats.books': 'Buchzusammenfassungen',
-    'hero.stats.booksValue': '450+',
-    'hero.stats.read': 'Durchschnittliche Lesezeit',
-    'hero.stats.readValue': '5–10 Min.',
-    'hero.stats.rating': 'Benutzerbewertung',
-    'hero.stats.ratingValue': '4.8★',
+    'hero.stats.booksValue': '900+',
+    'hero.stats.read': 'Pro Zusammenfassung',
+    'hero.stats.readValue': '10–15 Min.',
+    'hero.stats.rating': 'Mit Audio',
+    'hero.stats.ratingValue': '220',
 
     // Features
     'features.title': 'Warum BookDigest?',
@@ -663,19 +650,6 @@ const translations: Record<Language, Record<string, string>> = {
     'featuresSection.trackDesc': 'Überwachen Sie Ihre Lese-Statistiken, Strähnen und Erfolge.',
     'featuresSection.personalized': 'Personalisiert',
     'featuresSection.personalDesc': 'Erhalten Sie Empfehlungen basierend auf Ihren Interessen und Ihrem Leseverlauf.',
-
-    // Testimonials
-    'testimonials.title': 'Von Tausenden von Lernenden geliebt',
-    'testimonials.subtitle': 'Sehen Sie, was unsere Community zu sagen hat',
-    'testimonials.sarah': 'BookDigest hat meine Art zu lernen verändert. Ich kann jetzt ein Buch in meiner Mittagspause durchlesen und die Erkenntnisse sofort auf mein Geschäft anwenden.',
-    'testimonials.michael': 'Die Audiofunktion ist ein Game-Changer. Ich höre auf dem Weg zur Arbeit zu und habe in den letzten 3 Monaten mehr gelernt als im gesamten letzten Jahr.',
-    'testimonials.emma': 'Erstaunliche Plattform! Die Zusammenfassungen sind unglaublich gut geschrieben und die wichtigsten Erkenntnisse sind genau das, was ich für mein berufliches Wachstum brauche.',
-    'testimonials.name1': 'Sarah Johnson',
-    'testimonials.name2': 'Michael Chen',
-    'testimonials.name3': 'Emma Williams',
-    'testimonials.role1': 'Unternehmerin',
-    'testimonials.role2': 'Software-Entwickler',
-    'testimonials.role3': 'Marketing-Managerin',
 
     // CTA Section
     'cta.title': 'Starten Sie Ihre Lernreise noch heute',
@@ -842,8 +816,8 @@ const translations: Record<Language, Record<string, string>> = {
     'about.missionDesc1': 'Wir glauben, dass jeder Zugang zu der in den besten Büchern der Welt enthaltenen Weisheit haben sollte. Aber wir wissen auch, dass Zeit kostbar ist, und nicht jeder Stunden hat, um ganze Bücher zu lesen.',
     'about.missionDesc2': 'Deshalb haben wir BookDigest erstellt - um die wesentlichen Erkenntnisse aus Bestsellern in prägnante Zusammenfassungen zu destillieren, die du unterwegs lesen oder hören kannst.',
     'about.statsSummaries': 'Buchzusammenfassungen',
-    'about.statsUsers': 'Aktive Nutzer',
-    'about.statsRating': 'Nutzerbewertung',
+    'about.statsAudio': 'Mit echter Audio',
+    'about.statsLanguages': 'Sprachen',
     'about.statsTime': 'Durchschn. Lesezeit',
 
     // Contact Page

@@ -7,7 +7,7 @@ export function WebsiteStructuredData() {
     name: 'BookDigest',
     alternateName: 'Book Digest',
     url: 'https://book-digest.com',
-    description: 'Free AI-powered book summaries for 450+ bestselling books in business, self-help, psychology & personal development. Learn from books in 15 minutes.',
+    description: 'Free AI-powered book summaries for 900+ bestselling books in business, self-help, psychology & personal development. Learn from books in 15 minutes.',
     inLanguage: 'en',
     publisher: {
       '@type': 'Organization',
@@ -125,9 +125,9 @@ export function OrganizationStructuredData() {
       width: 192,
       height: 192,
     },
-    description: 'Free AI-powered book summaries platform. Access 450+ bestselling book summaries in business, self-help, psychology & personal development. Learn from books in 15 minutes.',
+    description: 'Free AI-powered book summaries platform. Access 900+ bestselling book summaries in business, self-help, psychology & personal development. Learn from books in 15 minutes.',
     foundingDate: '2026',
-    slogan: 'Learn from 450+ Books in 15 Minutes',
+    slogan: 'Learn from 900+ Books in 15 Minutes',
     knowsAbout: [
       'Book Summaries',
       'AI Content Generation',
