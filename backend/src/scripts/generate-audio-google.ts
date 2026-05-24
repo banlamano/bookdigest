@@ -3,14 +3,21 @@ import * as path from 'path';
 dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 
 import { PrismaClient } from '@prisma/client';
-import * as fs from 'fs';
+import * as AWS from 'aws-sdk';
 
 const prisma = new PrismaClient();
 const GOOGLE_TTS_API_KEY = process.env.GOOGLE_TTS_API_KEY || process.env.GEMINI_API_KEY;
 const TTS_ENDPOINT = 'https://texttospeech.googleapis.com/v1/text:synthesize';
 
-// Output to frontend/public/audio so Vercel's CDN serves the files
-const AUDIO_DIR = path.resolve(process.cwd(), '..', 'frontend', 'public', 'audio');
+const R2_PUBLIC_URL = process.env.R2_PUBLIC_URL;
+const R2_BUCKET = process.env.R2_BUCKET;
+const s3 = new AWS.S3({
+  endpoint: `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
+  accessKeyId: process.env.R2_ACCESS_KEY_ID,
+  secretAccessKey: process.env.R2_SECRET_ACCESS_KEY,
+  region: 'auto',
+  signatureVersion: 'v4',
+});
 
 // Google TTS limit is 5000 bytes per request — we use 4500 chars to be safe with UTF-8
 const MAX_CHARS_PER_CHUNK = 4500;
@@ -85,19 +92,26 @@ async function generateAudio(book: { id: string; title: string; summary: string;
 
   const combined = Buffer.concat(buffers);
   const filename = `${book.id}.mp3`;
-  const filepath = path.join(AUDIO_DIR, filename);
-  await fs.promises.writeFile(filepath, combined);
 
+  await s3.putObject({
+    Bucket: R2_BUCKET!,
+    Key: `audio/${filename}`,
+    Body: combined,
+    ContentType: 'audio/mpeg',
+    CacheControl: 'public, max-age=31536000, immutable',
+  }).promise();
+
+  const audioUrl = `${R2_PUBLIC_URL}/audio/${filename}`;
   const sizeKB = Math.round(combined.length / 1024);
   const wordCount = book.summary.split(/\s+/).length;
   const durationSeconds = Math.round((wordCount / 130) * 60);
 
   await prisma.book.update({
     where: { id: book.id },
-    data: { audioUrl: `/audio/${filename}`, audioDuration: durationSeconds },
+    data: { audioUrl, audioDuration: durationSeconds },
   });
 
-  return `/audio/${filename} (${sizeKB} KB)`;
+  return `${audioUrl} (${sizeKB} KB)`;
 }
 
 async function main() {
@@ -105,13 +119,12 @@ async function main() {
 
   if (!GOOGLE_TTS_API_KEY) {
     console.error('❌ GOOGLE_TTS_API_KEY or GEMINI_API_KEY missing from .env');
-    console.error('   Enable "Cloud Text-to-Speech API" in your GCP project and use the same key.');
     process.exit(1);
   }
 
-  if (!fs.existsSync(AUDIO_DIR)) {
-    fs.mkdirSync(AUDIO_DIR, { recursive: true });
-    console.log(`📁 Created ${AUDIO_DIR}`);
+  if (!R2_PUBLIC_URL || !R2_BUCKET || !process.env.R2_ACCESS_KEY_ID) {
+    console.error('❌ R2_* env vars missing. See .env.example');
+    process.exit(1);
   }
 
   // Allow specifying a limit via CLI: npm run generate:audio -- 10
@@ -157,8 +170,8 @@ async function main() {
   console.log(`\n✨ Done — ${ok} succeeded, ${fail} failed`);
   console.log(`📊 Total characters synthesized: ${totalChars.toLocaleString()}`);
   console.log(`💰 Cost: ${totalChars <= 1_000_000 ? 'FREE (within 1M chars/month Neural2 tier)' : `~$${((totalChars / 1_000_000) * 16).toFixed(2)} for ${(totalChars / 1_000_000).toFixed(2)}M chars`}`);
-  console.log(`\n💡 Files saved to: ${AUDIO_DIR}`);
-  console.log('   Commit them with git and Vercel will serve from CDN.');
+  console.log(`\n☁️  Files uploaded to R2 bucket: ${R2_BUCKET}`);
+  console.log(`   Served via: ${R2_PUBLIC_URL}/audio/<book-id>.mp3`);
 }
 
 main()

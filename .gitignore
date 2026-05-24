@@ -63,3 +63,6 @@ tmp/
 *.key
 *.p12
 *.pfx
+
+# Audio files are stored in Cloudflare R2, not git
+frontend/public/audio/
