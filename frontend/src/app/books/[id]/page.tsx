@@ -35,7 +35,8 @@ async function getBook(idOrSlug: string, language: string = 'en') {
         id: idOrSlug,
         title: 'Book Summary',
         author: 'Unknown',
-        requiresAuth: true
+        requiresAuth: true,
+        _alternateSlug: null,
       };
     }
 
@@ -44,7 +45,11 @@ async function getBook(idOrSlug: string, language: string = 'en') {
     }
 
     const data = await res.json();
-    return data?.data?.book || null;
+    const book = data?.data?.book;
+    if (!book) return null;
+    // Attach alternate-language slug for hreflang tags in metadata
+    book._alternateSlug = data?.data?.alternateSlug || null;
+    return book;
   } catch (error) {
     console.error('Error fetching book:', error);
     return null;
@@ -147,6 +152,15 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     },
     alternates: {
       canonical: `https://book-digest.com/books/${canonicalSlug}`,
+      // hreflang tags — tell search engines which language version to serve in each market.
+      // Falls back gracefully when no alternate exists (only one language version on file).
+      languages: book._alternateSlug
+        ? {
+            [book.language === 'de' ? 'en' : 'de']: `https://book-digest.com/books/${book._alternateSlug}`,
+            [book.language]: `https://book-digest.com/books/${canonicalSlug}`,
+            'x-default': `https://book-digest.com/books/${book.language === 'en' ? canonicalSlug : book._alternateSlug}`,
+          }
+        : undefined,
     },
   };
 }

@@ -129,41 +129,34 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
 
     const book = finalBook;
 
-    // Find alternate language version ID to enable automatic language switching in frontend
+    // Find alternate language version to enable automatic language switching
+    // AND power hreflang tags in the page metadata (SEO).
     const { language: preferredLang } = req.query;
     let alternateVersionId: string | null = null;
-    
-    // Check if the user's preferred language is different from the book's language
-    if (preferredLang && preferredLang !== 'all' && book.language !== preferredLang) {
-      if (book.language === 'en' && preferredLang === 'de') {
-        const deVersion = await prisma.book.findFirst({
+    let alternateSlug: string | null = null;
+
+    async function findAlternate(otherLang: 'en' | 'de') {
+      if (otherLang === 'de') {
+        return prisma.book.findFirst({
           where: { language: 'de', originalTitle: book.title },
-          select: { id: true }
+          select: { id: true, slug: true }
         });
-        if (deVersion) alternateVersionId = deVersion.id;
-      } else if (book.language === 'de' && preferredLang === 'en') {
-        const enVersion = await prisma.book.findFirst({
-          where: { language: 'en', title: book.originalTitle || book.title },
-          select: { id: true }
-        });
-        if (enVersion) alternateVersionId = enVersion.id;
       }
-    } else {
-      // Still provide the other version ID even if they don't explicitly prefer it yet (useful for manual toggles)
-      if (book.language === 'en') {
-        const deVersion = await prisma.book.findFirst({
-          where: { language: 'de', originalTitle: book.title },
-          select: { id: true }
-        });
-        if (deVersion) alternateVersionId = deVersion.id;
-      } else if (book.language === 'de') {
-        const enVersion = await prisma.book.findFirst({
-          where: { language: 'en', title: book.originalTitle || book.title },
-          select: { id: true }
-        });
-        if (enVersion) alternateVersionId = enVersion.id;
-      }
+      return prisma.book.findFirst({
+        where: { language: 'en', title: book.originalTitle || book.title },
+        select: { id: true, slug: true }
+      });
     }
+
+    const otherLang = book.language === 'en' ? 'de' : 'en';
+    const alternate = await findAlternate(otherLang);
+    if (alternate) {
+      alternateVersionId = alternate.id;
+      alternateSlug = alternate.slug;
+    }
+    // (preferredLang handling preserved by client — book is returned matching `preferredLang`
+    // if available, then the auto-switch hook uses alternateVersionId on the client.)
+    void preferredLang;
 
     // If user is not authenticated, return public book data only
     // Product Hunt / marketing: allow one or more public demo books to show full content
@@ -187,6 +180,7 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
           book,
           isPublicDemo: true,
           alternateVersionId,
+          alternateSlug,
         },
       });
     }
@@ -210,6 +204,7 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
           book: publicBook,
           requiresAuth: true,
           alternateVersionId,
+          alternateSlug,
           message: 'Login to access full content'
         },
       });
@@ -257,6 +252,7 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
         data: { 
           book, // Return full book data including audioUrl
           alternateVersionId,
+          alternateSlug,
           freemiumStatus: {
             isPremium: false,
             booksRemaining: freemiumStatus.remaining,
@@ -270,9 +266,10 @@ export const getBookById = async (req: Request, res: Response, next: NextFunctio
     // Premium users get everything
     res.json({
       status: 'success',
-      data: { 
+      data: {
         book,
         alternateVersionId,
+        alternateSlug,
         freemiumStatus: {
           isPremium: true,
           unlimited: true
