@@ -120,6 +120,11 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://book-digest.com',
+    languages: {
+      en: 'https://book-digest.com',
+      de: 'https://book-digest.com/de',
+      'x-default': 'https://book-digest.com',
+    },
   },
 };
 
