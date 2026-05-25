@@ -36,7 +36,11 @@ export function WebsiteStructuredData() {
 }
 
 export function BookStructuredData({ book }: { book: any }) {
-  const structuredData = {
+  // Only include aggregateRating/review when real user reviews exist.
+  // Faking these is a Google policy violation (manipulation of search results).
+  const hasRealReviews = (book.ratingsCount ?? 0) > 0 && (book.rating ?? 0) > 0;
+
+  const structuredData: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'Book',
     name: book.title,
@@ -48,19 +52,12 @@ export function BookStructuredData({ book }: { book: any }) {
     image: book.coverImage,
     isbn: book.isbn,
     genre: book.category?.name,
-    inLanguage: 'en',
+    inLanguage: book.language || 'en',
     bookFormat: 'https://schema.org/EBook',
     datePublished: book.publishedYear,
     publisher: {
       '@type': 'Organization',
       name: 'BookDigest'
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: book.rating || 4.5,
-      reviewCount: book.ratingsCount || Math.floor(Math.random() * 500) + 100,
-      bestRating: 5,
-      worstRating: 1,
     },
     offers: {
       '@type': 'Offer',
@@ -69,20 +66,17 @@ export function BookStructuredData({ book }: { book: any }) {
       priceCurrency: 'EUR',
       url: `https://book-digest.com/books/${book.slug || book.id}`,
     },
-    review: {
-      '@type': 'Review',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: book.rating || 4.5,
-        bestRating: 5,
-      },
-      author: {
-        '@type': 'Organization',
-        name: 'BookDigest Editorial Team',
-      },
-      reviewBody: `Comprehensive AI-generated summary of ${book.title} by ${book.author}. Includes key insights, actionable takeaways, and important quotes.`,
-    },
   };
+
+  if (hasRealReviews) {
+    structuredData.aggregateRating = {
+      '@type': 'AggregateRating',
+      ratingValue: book.rating,
+      reviewCount: book.ratingsCount,
+      bestRating: 5,
+      worstRating: 1,
+    };
+  }
 
   return (
     <script

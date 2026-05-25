@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { BookOpen, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
 
 export function Footer() {
