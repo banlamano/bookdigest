@@ -94,6 +94,14 @@ export default function CategoryBooksClient({
               </p>
             </div>
           </div>
+
+          {/* Category description — unique per category, gives Google something
+              substantial to index and search-rank for category-related queries. */}
+          {category?.description && (
+            <div className="prose dark:prose-invert max-w-3xl text-gray-700 dark:text-gray-300">
+              <p>{category.description}</p>
+            </div>
+          )}
         </div>
 
         {/* Books Grid */}
