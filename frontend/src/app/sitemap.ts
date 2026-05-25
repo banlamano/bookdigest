@@ -45,8 +45,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { route: '/contact', priority: 0.6, changeFrequency: 'monthly' as const },
     { route: '/library', priority: 0.8, changeFrequency: 'daily' as const },
     { route: '/search', priority: 0.7, changeFrequency: 'weekly' as const },
-    { route: '/login', priority: 0.5, changeFrequency: 'monthly' as const },
-    { route: '/register', priority: 0.6, changeFrequency: 'monthly' as const },
+    // /login and /register removed — they're blocked by robots.txt and shouldn't rank in search.
+    // Their presence in the sitemap caused "Blocked by robots.txt" warnings in Search Console.
     { route: '/terms', priority: 0.3, changeFrequency: 'yearly' as const },
     { route: '/privacy', priority: 0.3, changeFrequency: 'yearly' as const },
     { route: '/cookies', priority: 0.3, changeFrequency: 'yearly' as const },
