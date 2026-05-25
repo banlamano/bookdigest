@@ -78,7 +78,6 @@ export default function PricingPage() {
       price: '€9.99',
       period: t('pricing.perMonth'),
       description: t('pricing.seriousLearners'),
-      badge: trialEligible ? t('pricing.trialBadge') : undefined,
       features: [
         t('pricing.unlimited'),
         t('pricing.audioNarration'),
@@ -88,22 +87,24 @@ export default function PricingPage() {
       ],
       cta: trialEligible ? t('pricing.startTrial') : t('pricing.getPremium'),
       reassurance: trialEligible ? t('pricing.noChargeNow') : undefined,
-      highlighted: true,
+      highlighted: false,
       planType: 'monthly' as const,
     },
     {
       name: t('pricing.premiumYearly'),
       price: '€79.99',
       period: t('pricing.perYear'),
-      badge: t('pricing.save33'),
+      subPrice: t('pricing.perMonthEquiv'),
+      badge: t('pricing.mostPopular'),
       description: t('pricing.bestValue'),
       features: [
         t('pricing.everythingMonthly'),
         t('pricing.save40'),
+        t('pricing.lowestPerMonth'),
       ],
       cta: trialEligible ? t('pricing.startTrial') : t('pricing.getPremium'),
       reassurance: trialEligible ? t('pricing.noChargeNow') : undefined,
-      highlighted: false,
+      highlighted: true,
       planType: 'yearly' as const,
     },
     {
@@ -180,6 +181,11 @@ export default function PricingPage() {
                     {plan.period}
                   </span>
                 </div>
+                {plan.subPrice && (
+                  <div className="text-sm text-primary-600 dark:text-primary-400 font-medium">
+                    {plan.subPrice}
+                  </div>
+                )}
               </div>
 
               <ul className="space-y-3 mb-8">
