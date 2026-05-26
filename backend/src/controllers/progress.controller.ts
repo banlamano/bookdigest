@@ -58,7 +58,7 @@ export const updateProgress = async (req: Request, res: Response) => {
       );
     }
 
-    // If completed, add to reading history
+    // If completed, add to reading history + update stats + recompute streak.
     if (isCompleted) {
       await prisma.readingHistory.create({
         data: {
@@ -69,13 +69,16 @@ export const updateProgress = async (req: Request, res: Response) => {
         },
       });
 
-      // Update user stats
+      const { currentStreak, longestStreak } = await computeUpdatedStreak(userId);
+
       await prisma.user.update({
         where: { id: userId },
         data: {
           booksRead: { increment: 1 },
           totalReadingTime: { increment: timeSpent || 0 },
           lastReadDate: new Date(),
+          currentStreak,
+          longestStreak,
         },
       });
     }
@@ -89,6 +92,48 @@ export const updateProgress = async (req: Request, res: Response) => {
     res.status(500).json({ success: false, message: error.message });
   }
 };
+
+/**
+ * Compute the user's reading streak based on their previous lastReadDate.
+ * Streak logic (counts consecutive calendar days with at least one completed book):
+ *   - Already read today → no change
+ *   - Last read was yesterday → currentStreak += 1
+ *   - Last read >1 day ago (or never) → currentStreak = 1 (reset, today counts)
+ * longestStreak is bumped if the new currentStreak exceeds it.
+ */
+async function computeUpdatedStreak(userId: string): Promise<{ currentStreak: number; longestStreak: number }> {
+  const user = await prisma.user.findUnique({
+    where: { id: userId },
+    select: { currentStreak: true, longestStreak: true, lastReadDate: true },
+  });
+  if (!user) return { currentStreak: 1, longestStreak: 1 };
+
+  const startOfDay = (d: Date) => {
+    const x = new Date(d);
+    x.setHours(0, 0, 0, 0);
+    return x;
+  };
+  const today = startOfDay(new Date());
+  const last = user.lastReadDate ? startOfDay(user.lastReadDate) : null;
+
+  let currentStreak = user.currentStreak ?? 0;
+  if (!last) {
+    currentStreak = 1;
+  } else {
+    const diffDays = Math.round((today.getTime() - last.getTime()) / 86400000);
+    if (diffDays === 0) {
+      // Already counted today — keep current streak as-is. First book of the day
+      // started it; this is the Nth book of the same day.
+      currentStreak = Math.max(currentStreak, 1);
+    } else if (diffDays === 1) {
+      currentStreak += 1;
+    } else {
+      currentStreak = 1; // gap broke the streak; today re-starts it
+    }
+  }
+  const longestStreak = Math.max(user.longestStreak ?? 0, currentStreak);
+  return { currentStreak, longestStreak };
+}
 
 /**
  * Send the freemium limit-reached upgrade email if (and only if) the user has
