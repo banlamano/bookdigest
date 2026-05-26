@@ -17,6 +17,7 @@ import { BookmarkButton } from '@/components/books/BookmarkButton';
 import { ReadingProgressTracker } from '@/components/books/ReadingProgressTracker';
 import EnhancedBookContent from '@/components/books/EnhancedBookContent';
 import { BuyOnAmazonButton } from '@/components/books/BuyOnAmazonButton';
+import { ListenOnAudibleButton } from '@/components/books/ListenOnAudibleButton';
 import { BookStructuredData, BreadcrumbStructuredData } from '@/components/StructuredData';
 import SocialShareButtons from '@/components/books/SocialShareButtons';
 import FreemiumStatus from '@/components/freemium/FreemiumStatus';
@@ -316,8 +317,8 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                 )}
               </div>
 
-              {/* Buy on Amazon Button */}
-              <div className="mb-6">
+              {/* Buy / Listen affiliate buttons */}
+              <div className="mb-6 flex flex-wrap gap-3 items-center">
                 <BuyOnAmazonButton
                   amazonLinkUS={book.amazonLinkUS}
                   amazonLinkUK={book.amazonLinkUK}
@@ -330,6 +331,7 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
                   bookAuthor={book.author}
                   isbn={book.isbn}
                 />
+                <ListenOnAudibleButton bookTitle={book.title} bookAuthor={book.author} />
               </div>
 
               {/* Audio Player - Available for any book with a summary (AI narration) */}
