@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import { AppError } from './error.middleware';
 import { prisma } from '../lib/prisma';
 
-const FREE_TIER_LIMIT = 3; // 3 books per month for free users
+export const FREE_TIER_LIMIT = 3; // 3 books per month for free users
 
 export const checkFreemiumLimit = async (req: Request, res: Response, next: NextFunction) => {
   try {
