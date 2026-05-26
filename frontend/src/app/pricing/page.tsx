@@ -37,7 +37,7 @@ export default function PricingPage() {
     return false;
   };
 
-  const handleSubscribe = async (planType: 'monthly' | 'yearly' | 'lifetime') => {
+  const handleSubscribe = async (planType: 'monthly' | 'yearly' | 'lifetime' | 'team') => {
     if (!isAuthenticated) {
       toast.error(t('pricing.loginToSubscribe'));
       router.push('/login');
@@ -393,6 +393,60 @@ export default function PricingPage() {
                     {isLoading === 'monthly' ? t('pricing.processing') : t('pricing.getPremium')}
                   </button>
                 )}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Team plan — separate section because the audience (HR / managers / book clubs)
+            is distinct from individual readers and shouldn't compete for attention in the
+            main pricing grid. */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <div className="rounded-2xl bg-gradient-to-r from-gray-900 to-gray-800 dark:from-gray-800 dark:to-gray-900 text-white p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="inline-block px-3 py-1 rounded-full bg-white/10 text-sm font-medium mb-3">
+                  {t('pricing.teamBadge')}
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold mb-3">
+                  {t('pricing.teamTitle')}
+                </h2>
+                <p className="text-gray-300 mb-4">
+                  {t('pricing.teamSubtitle')}
+                </p>
+                <ul className="space-y-2 text-sm text-gray-300">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                    {t('pricing.teamFeature1')}
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                    {t('pricing.teamFeature2')}
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                    {t('pricing.teamFeature3')}
+                  </li>
+                </ul>
+              </div>
+              <div className="text-center md:text-right">
+                <div className="text-5xl font-bold mb-1">€29.99</div>
+                <div className="text-gray-400 mb-6">{t('pricing.teamPriceSuffix')}</div>
+                <button
+                  onClick={() => handleSubscribe('team')}
+                  disabled={isLoading === 'team'}
+                  className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors disabled:opacity-50"
+                >
+                  {isLoading === 'team' ? t('pricing.processing') : t('pricing.teamCta')}
+                </button>
+                <p className="text-xs text-gray-400 mt-3">
+                  {t('pricing.teamFootnote')}
+                </p>
               </div>
             </div>
           </div>

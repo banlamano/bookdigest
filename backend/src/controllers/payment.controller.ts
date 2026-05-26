@@ -40,9 +40,13 @@ export const createCheckoutSession = async (req: Request, res: Response, next: N
         priceId = process.env.STRIPE_PRICE_YEARLY!;
         subscriptionType = 'PREMIUM_YEARLY';
         break;
-      case 'lifetime':
       case 'team':
-        priceId = process.env.STRIPE_PRICE_LIFETIME || process.env.STRIPE_PRICE_TEAM!;
+        priceId = process.env.STRIPE_PRICE_TEAM!;
+        subscriptionType = 'PREMIUM_TEAM';
+        // Team plan is a recurring subscription — leave mode='subscription'
+        break;
+      case 'lifetime':
+        priceId = process.env.STRIPE_PRICE_LIFETIME!;
         subscriptionType = 'LIFETIME';
         mode = 'payment'; // One time payment
         break;
