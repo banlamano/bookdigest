@@ -69,7 +69,8 @@ export const updateProgress = async (req: Request, res: Response) => {
         },
       });
 
-      const { currentStreak, longestStreak } = await computeUpdatedStreak(userId);
+      const { currentStreak, longestStreak, previousStreak } =
+        await computeUpdatedStreak(userId);
 
       await prisma.user.update({
         where: { id: userId },
@@ -81,6 +82,18 @@ export const updateProgress = async (req: Request, res: Response) => {
           longestStreak,
         },
       });
+
+      // Fire milestone email if the user just crossed 3/7/30/100 days.
+      // Crossing means previousStreak < N AND currentStreak === N — this
+      // can only happen on the day the streak increments to N (the
+      // diffDays===0 same-day branch keeps currentStreak unchanged, so
+      // multiple books on milestone day don't re-fire).
+      const MILESTONES = [3, 7, 30, 100];
+      if (MILESTONES.includes(currentStreak) && previousStreak < currentStreak) {
+        void sendStreakMilestoneIfEligible(userId, currentStreak).catch(err =>
+          console.error('Failed to send streak milestone email:', err)
+        );
+      }
     }
 
     res.json({
@@ -101,12 +114,14 @@ export const updateProgress = async (req: Request, res: Response) => {
  *   - Last read >1 day ago (or never) → currentStreak = 1 (reset, today counts)
  * longestStreak is bumped if the new currentStreak exceeds it.
  */
-async function computeUpdatedStreak(userId: string): Promise<{ currentStreak: number; longestStreak: number }> {
+async function computeUpdatedStreak(
+  userId: string
+): Promise<{ currentStreak: number; longestStreak: number; previousStreak: number }> {
   const user = await prisma.user.findUnique({
     where: { id: userId },
     select: { currentStreak: true, longestStreak: true, lastReadDate: true },
   });
-  if (!user) return { currentStreak: 1, longestStreak: 1 };
+  if (!user) return { currentStreak: 1, longestStreak: 1, previousStreak: 0 };
 
   const startOfDay = (d: Date) => {
     const x = new Date(d);
@@ -116,7 +131,8 @@ async function computeUpdatedStreak(userId: string): Promise<{ currentStreak: nu
   const today = startOfDay(new Date());
   const last = user.lastReadDate ? startOfDay(user.lastReadDate) : null;
 
-  let currentStreak = user.currentStreak ?? 0;
+  const previousStreak = user.currentStreak ?? 0;
+  let currentStreak = previousStreak;
   if (!last) {
     currentStreak = 1;
   } else {
@@ -132,7 +148,25 @@ async function computeUpdatedStreak(userId: string): Promise<{ currentStreak: nu
     }
   }
   const longestStreak = Math.max(user.longestStreak ?? 0, currentStreak);
-  return { currentStreak, longestStreak };
+  return { currentStreak, longestStreak, previousStreak };
+}
+
+/**
+ * Send the streak milestone email if the user is reachable. Wrapped in its own
+ * helper to keep the trigger site in updateProgress short and so failures here
+ * don't break the response. Premium status doesn't matter — milestones are a
+ * universal retention loop.
+ */
+async function sendStreakMilestoneIfEligible(userId: string, days: number) {
+  const user = await prisma.user.findUnique({
+    where: { id: userId },
+    select: { email: true, firstName: true },
+  });
+  if (!user) return;
+  await EmailService.sendStreakMilestone(
+    { email: user.email, firstName: user.firstName || 'there' },
+    days
+  );
 }
 
 /**

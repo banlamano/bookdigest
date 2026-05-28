@@ -24,6 +24,8 @@ import enableAudioRoutes from './routes/enable-audio.routes';
 import testPromptRoutes from './routes/test-prompt.routes';
 import dbInfoRoutes from './routes/db-info.routes';
 import germanRoutes from './routes/german.routes';
+import cronRoutes from './routes/cron.routes';
+import { startStreakWarningCron } from './jobs/streak-warning.job';
 import { errorHandler } from './middleware/error.middleware';
 import { logger } from './utils/logger';
 dotenv.config();
@@ -91,6 +93,7 @@ app.use('/api/admin', enableAudioRoutes);
 app.use('/api/admin', testPromptRoutes);
 app.use('/api/admin', dbInfoRoutes);
 app.use('/api/admin', germanRoutes);
+app.use('/api/cron', cronRoutes);
 
 // Error handling
 app.use(errorHandler);
@@ -117,9 +120,18 @@ app.listen(PORT, async () => {
   logger.info(`📚 Environment: ${process.env.NODE_ENV}`);
   
   // Run cover update in background (don't block server startup)
-  updateCoversOnStartup().catch(err => 
+  updateCoversOnStartup().catch(err =>
     logger.warn('Cover update background task failed:', err)
   );
+
+  // Schedule daily streak-loss warning emails (18:00 UTC).
+  // Works only while the backend dyno is awake; an external scheduler
+  // hitting POST /api/cron/streak-warnings is the always-on backup.
+  try {
+    startStreakWarningCron();
+  } catch (err) {
+    logger.warn('Failed to start streak-warning cron:', err);
+  }
 });
 
 export default app;

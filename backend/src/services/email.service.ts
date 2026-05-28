@@ -626,6 +626,164 @@ export class EmailService {
     }
   }
 
+  /**
+   * Send streak milestone celebration when a user hits 3 / 7 / 30 / 100 day streak.
+   * Triggered from progress.controller when computeUpdatedStreak crosses a threshold.
+   */
+  static async sendStreakMilestone(
+    user: { email: string; firstName: string },
+    days: number
+  ) {
+    if (!isEmailEnabled()) {
+      console.log('⚠️  Email service not configured, skipping streak milestone email');
+      return { success: false, error: 'Email service not configured' };
+    }
+
+    const messageMap: Record<number, { headline: string; body: string }> = {
+      3: {
+        headline: "You're on a 3-day streak 🔥",
+        body: "Three days in a row. Most people quit on day 2 — you didn't. Keep going: 4 days locks in the habit, 7 days makes it part of who you are.",
+      },
+      7: {
+        headline: 'One full week. 7-day streak 🔥🔥',
+        body: "A week of consistent reading. Research shows 7 days is where new habits stop feeling like effort. Next stop: 30 days.",
+      },
+      30: {
+        headline: '30 days. You\'re a different reader now 🏆',
+        body: "Thirty consecutive days. That's not a streak — that's an identity. Most people don't read 30 books in a year. You've now built the system that makes it inevitable.",
+      },
+      100: {
+        headline: '100-DAY STREAK. 🏆🏆🏆',
+        body: "One hundred days. Hit reply and tell us what you've read — we want to feature you. This is the rarest milestone on BookDigest.",
+      },
+    };
+    const msg = messageMap[days];
+    if (!msg) return { success: false, error: `No template for ${days}-day milestone` };
+
+    try {
+      await resend!.emails.send({
+        from: FROM_EMAIL,
+        to: user.email,
+        subject: msg.headline,
+        html: `
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <style>
+              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+              .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+              .header { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 40px 30px; text-align: center; border-radius: 10px 10px 0 0; }
+              .streak-num { font-size: 72px; font-weight: bold; line-height: 1; margin: 0; }
+              .streak-label { font-size: 18px; opacity: 0.95; margin: 8px 0 0; letter-spacing: 1px; }
+              .content { background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px; }
+              .button { background: #2563eb; color: white; padding: 14px 32px; text-decoration: none; border-radius: 6px; display: inline-block; margin: 20px 0; font-weight: bold; }
+              .footer { text-align: center; color: #6b7280; font-size: 14px; margin-top: 30px; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="header">
+                <p class="streak-num">${days}</p>
+                <p class="streak-label">DAY STREAK</p>
+              </div>
+              <div class="content">
+                <h2>${msg.headline}</h2>
+                <p>Hi ${user.firstName},</p>
+                <p>${msg.body}</p>
+                <p style="text-align: center;">
+                  <a href="${SITE_URL}/dashboard" class="button">Keep the streak alive →</a>
+                </p>
+                <p>Proud of you,<br>The BookDigest Team</p>
+              </div>
+              <div class="footer">
+                <a href="${SITE_URL}/terms">Terms</a> | <a href="${SITE_URL}/privacy">Privacy</a>
+              </div>
+            </div>
+          </body>
+          </html>
+        `,
+      });
+      console.log(`✅ Streak milestone (${days}d) sent to ${user.email}`);
+      return { success: true };
+    } catch (error) {
+      console.error('❌ Failed to send streak milestone email:', error);
+      return { success: false, error };
+    }
+  }
+
+  /**
+   * Warn a user that their streak is about to break (haven't read today, end of day approaching).
+   * Triggered from the daily streak-warning cron job.
+   */
+  static async sendStreakAtRisk(
+    user: { email: string; firstName: string },
+    currentStreak: number
+  ) {
+    if (!isEmailEnabled()) {
+      console.log('⚠️  Email service not configured, skipping streak warning');
+      return { success: false, error: 'Email service not configured' };
+    }
+
+    try {
+      await resend!.emails.send({
+        from: FROM_EMAIL,
+        to: user.email,
+        subject: `⏰ Your ${currentStreak}-day streak ends at midnight`,
+        html: `
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <style>
+              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+              .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+              .header { background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+              .content { background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px; }
+              .streak-box { background: white; padding: 24px; border-radius: 10px; text-align: center; margin: 20px 0; border: 2px solid #f59e0b; }
+              .streak-num { font-size: 56px; font-weight: bold; color: #f59e0b; margin: 0; line-height: 1; }
+              .streak-label { font-size: 14px; color: #6b7280; margin: 8px 0 0; letter-spacing: 1px; }
+              .button { background: #f59e0b; color: white; padding: 14px 32px; text-decoration: none; border-radius: 6px; display: inline-block; margin: 20px 0; font-weight: bold; font-size: 16px; }
+              .footer { text-align: center; color: #6b7280; font-size: 14px; margin-top: 30px; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="header">
+                <h1>⏰ Don't lose it now</h1>
+              </div>
+              <div class="content">
+                <p>Hi ${user.firstName},</p>
+                <p>You haven't read today, and your streak resets at midnight.</p>
+
+                <div class="streak-box">
+                  <p class="streak-num">${currentStreak}</p>
+                  <p class="streak-label">DAYS — DON'T BREAK IT</p>
+                </div>
+
+                <p>One 15-minute summary is enough to keep it alive.</p>
+
+                <p style="text-align: center;">
+                  <a href="${SITE_URL}/library" class="button">Read one now →</a>
+                </p>
+
+                <p style="font-size: 14px; color: #6b7280;">Don't want streak reminders? Reply with "no streak emails" and we'll turn them off for you.</p>
+                <p>The BookDigest Team</p>
+              </div>
+              <div class="footer">
+                <a href="${SITE_URL}/terms">Terms</a> | <a href="${SITE_URL}/privacy">Privacy</a>
+              </div>
+            </div>
+          </body>
+          </html>
+        `,
+      });
+      console.log(`✅ Streak warning (${currentStreak}d at risk) sent to ${user.email}`);
+      return { success: true };
+    } catch (error) {
+      console.error('❌ Failed to send streak warning email:', error);
+      return { success: false, error };
+    }
+  }
+
   static async sendFreeTierLimitReached(user: { email: string; firstName: string }) {
     if (!isEmailEnabled()) {
       console.log('⚠️  Email service not configured, skipping free tier limit email');
