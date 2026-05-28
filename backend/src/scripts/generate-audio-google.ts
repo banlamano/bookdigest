@@ -127,22 +127,33 @@ async function main() {
     process.exit(1);
   }
 
-  // Allow specifying a limit via CLI: npm run generate:audio -- 10
-  const limit = parseInt(process.argv[2] || '10', 10);
+  // CLI:
+  //   npm run generate:audio -- 10              → top 10 by reading count
+  //   npm run generate:audio -- ids=<uuid>,...   → specific books only
+  const argv = process.argv[2] || '10';
+  let books: { id: string; title: string; summary: string; language: string }[];
 
-  // Order by ReadingHistory count (most-read first), then ReadingProgress count
-  const books = await prisma.book.findMany({
-    where: {
-      summary: { not: '' },
-      OR: [{ audioUrl: null }, { audioUrl: 'browser-tts' }],
-    },
-    orderBy: [
-      { readingHistory: { _count: 'desc' } },
-      { progress: { _count: 'desc' } },
-    ],
-    take: limit,
-    select: { id: true, title: true, summary: true, language: true },
-  });
+  if (argv.startsWith('ids=')) {
+    const ids = argv.slice(4).split(',').map(s => s.trim()).filter(Boolean);
+    books = await prisma.book.findMany({
+      where: { id: { in: ids }, summary: { not: '' } },
+      select: { id: true, title: true, summary: true, language: true },
+    });
+  } else {
+    const limit = parseInt(argv, 10);
+    books = await prisma.book.findMany({
+      where: {
+        summary: { not: '' },
+        OR: [{ audioUrl: null }, { audioUrl: 'browser-tts' }],
+      },
+      orderBy: [
+        { readingHistory: { _count: 'desc' } },
+        { progress: { _count: 'desc' } },
+      ],
+      take: limit,
+      select: { id: true, title: true, summary: true, language: true },
+    });
+  }
 
   if (books.length === 0) {
     console.log('✅ All books already have real audio.');
