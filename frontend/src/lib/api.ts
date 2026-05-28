@@ -147,6 +147,7 @@ export const authAPI = {
 export const userAPI = {
   getStats: () => api.get('/users/stats'),
   getHistory: (params?: any) => api.get('/users/history', { params }),
+  getAchievements: () => api.get('/users/achievements'),
   getFreemiumStatus: () => api.get('/users/freemium-status'),
   verifySubscription: () => api.post('/users/verify-subscription'),
 };

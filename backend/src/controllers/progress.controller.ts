@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { prisma } from '../lib/prisma';
 import { EmailService } from '../services/email.service';
 import { FREE_TIER_LIMIT } from '../middleware/freemium.middleware';
+import { evaluateAndAward } from '../services/achievements.service';
 
 export const updateProgress = async (req: Request, res: Response) => {
   try {
@@ -94,6 +95,12 @@ export const updateProgress = async (req: Request, res: Response) => {
           console.error('Failed to send streak milestone email:', err)
         );
       }
+
+      // Evaluate achievements after the user row reflects the new stats.
+      // Fire-and-forget — never block the response on award logic.
+      void evaluateAndAward(userId).catch(err =>
+        console.error('Achievement evaluation failed:', err)
+      );
     }
 
     res.json({

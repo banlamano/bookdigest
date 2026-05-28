@@ -9,6 +9,7 @@ import { BookOpen, Clock, TrendingUp, Award, Heart } from 'lucide-react';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
 import SubscriptionCard from '@/components/dashboard/SubscriptionCard';
 import FreemiumStatus from '@/components/dashboard/FreemiumStatus';
+import AchievementsGrid from '@/components/dashboard/AchievementsGrid';
 import { BookCard } from '@/components/books/BookCard';
 import { useLanguage } from '@/components/LanguageProvider';
 
@@ -98,6 +99,11 @@ export default function DashboardPage() {
             value={stats?.achievements || 0}
             color="from-green-500 to-teal-500"
           />
+        </div>
+
+        {/* Achievements */}
+        <div className="mb-8">
+          <AchievementsGrid />
         </div>
 
         {/* Favorites */}

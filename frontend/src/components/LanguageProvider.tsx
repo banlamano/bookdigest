@@ -237,6 +237,8 @@ const translations: Record<Language, Record<string, string>> = {
     'dashboard.days': 'days',
     'dashboard.hours': 'h',
     'dashboard.achievements': 'Achievements',
+    'dashboard.achievementsTitle': 'Achievements',
+    'dashboard.points': 'points',
     'dashboard.favorites': 'Your Favorites',
 
     // Subscription Card
@@ -755,6 +757,8 @@ const translations: Record<Language, Record<string, string>> = {
     'dashboard.days': 'Tage',
     'dashboard.hours': 'Std.',
     'dashboard.achievements': 'Erfolge',
+    'dashboard.achievementsTitle': 'Erfolge',
+    'dashboard.points': 'Punkte',
     'dashboard.favorites': 'Ihre Favoriten',
 
     // Subscription Card
