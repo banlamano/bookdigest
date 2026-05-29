@@ -4,6 +4,7 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 
 import { PrismaClient } from '@prisma/client';
 import * as AWS from 'aws-sdk';
+import { composeNarrationText, NarratableBook } from '../utils/narration';
 
 const prisma = new PrismaClient();
 const GOOGLE_TTS_API_KEY = process.env.GOOGLE_TTS_API_KEY || process.env.GEMINI_API_KEY;
@@ -21,6 +22,8 @@ const s3 = new AWS.S3({
 
 // Google TTS limit is 5000 bytes per request — we use 4500 chars to be safe with UTF-8
 const MAX_CHARS_PER_CHUNK = 4500;
+
+type Book = NarratableBook & { id: string };
 
 function chunkText(text: string, maxChars = MAX_CHARS_PER_CHUNK): string[] {
   const sentences = text.split(/(?<=[.!?])\s+/);
@@ -77,9 +80,10 @@ async function synthesizeChunk(text: string, language: string): Promise<Buffer> 
   return Buffer.from(data.audioContent, 'base64');
 }
 
-async function generateAudio(book: { id: string; title: string; summary: string; language: string }): Promise<string> {
-  const chunks = chunkText(book.summary);
-  console.log(`  Voice: ${book.language === 'de' ? 'de-DE-Neural2-F' : 'en-US-Neural2-F'} | Chunks: ${chunks.length} | Total chars: ${book.summary.length}`);
+async function generateAudio(book: Book): Promise<{ url: string; chars: number; sizeKB: number }> {
+  const narrationText = composeNarrationText(book);
+  const chunks = chunkText(narrationText);
+  console.log(`  Voice: ${book.language === 'de' ? 'de-DE-Neural2-F' : 'en-US-Neural2-F'} | Chunks: ${chunks.length} | Total chars: ${narrationText.length} (summary alone: ${book.summary.length})`);
 
   const buffers: Buffer[] = [];
   for (let i = 0; i < chunks.length; i++) {
@@ -103,7 +107,7 @@ async function generateAudio(book: { id: string; title: string; summary: string;
 
   const audioUrl = `${R2_PUBLIC_URL}/audio/${filename}`;
   const sizeKB = Math.round(combined.length / 1024);
-  const wordCount = book.summary.split(/\s+/).length;
+  const wordCount = narrationText.split(/\s+/).length;
   const durationSeconds = Math.round((wordCount / 130) * 60);
 
   await prisma.book.update({
@@ -111,7 +115,7 @@ async function generateAudio(book: { id: string; title: string; summary: string;
     data: { audioUrl, audioDuration: durationSeconds },
   });
 
-  return `${audioUrl} (${sizeKB} KB)`;
+  return { url: audioUrl, chars: narrationText.length, sizeKB };
 }
 
 async function main() {
@@ -128,17 +132,39 @@ async function main() {
   }
 
   // CLI:
-  //   npm run generate:audio -- 10              → top 10 by reading count
-  //   npm run generate:audio -- ids=<uuid>,...   → specific books only
+  //   npm run generate:audio -- 10                 → top 10 by reading count (no audio yet)
+  //   npm run generate:audio -- ids=<uuid>,...     → specific books only
+  //   npm run generate:audio -- regen              → regenerate ALL books that have audio
+  //   npm run generate:audio -- regen=50           → regenerate first 50 that have audio
   const argv = process.argv[2] || '10';
-  let books: { id: string; title: string; summary: string; language: string }[];
+  const fullSelect = {
+    id: true, title: true, summary: true, language: true,
+    keyInsights: true, chapters: true, quotes: true, actionItems: true,
+  } as const;
+  let books: Book[];
 
   if (argv.startsWith('ids=')) {
     const ids = argv.slice(4).split(',').map(s => s.trim()).filter(Boolean);
     books = await prisma.book.findMany({
       where: { id: { in: ids }, summary: { not: '' } },
-      select: { id: true, title: true, summary: true, language: true },
-    });
+      select: fullSelect,
+    }) as unknown as Book[];
+  } else if (argv === 'regen' || argv.startsWith('regen=')) {
+    // Refresh existing audio so the narration covers all content sections,
+    // not just the summary. Pick books that ALREADY have an R2 mp3 url.
+    const limit = argv === 'regen' ? undefined : parseInt(argv.slice(6), 10);
+    books = await prisma.book.findMany({
+      where: {
+        summary: { not: '' },
+        audioUrl: { contains: '.r2.dev/audio/' },
+      },
+      orderBy: [
+        { readingHistory: { _count: 'desc' } },
+        { progress: { _count: 'desc' } },
+      ],
+      ...(limit ? { take: limit } : {}),
+      select: fullSelect,
+    }) as unknown as Book[];
   } else {
     const limit = parseInt(argv, 10);
     books = await prisma.book.findMany({
@@ -151,8 +177,8 @@ async function main() {
         { progress: { _count: 'desc' } },
       ],
       take: limit,
-      select: { id: true, title: true, summary: true, language: true },
-    });
+      select: fullSelect,
+    }) as unknown as Book[];
   }
 
   if (books.length === 0) {
@@ -167,10 +193,10 @@ async function main() {
 
   for (const book of books) {
     console.log(`\n📖 "${book.title}" [${book.language}]`);
-    totalChars += book.summary.length;
     try {
       const result = await generateAudio(book);
-      console.log(`  ✅ ${result}`);
+      totalChars += result.chars;
+      console.log(`  ✅ ${result.url} (${result.sizeKB} KB)`);
       ok++;
     } catch (e: any) {
       console.error(`  ❌ ${e.message}`);
