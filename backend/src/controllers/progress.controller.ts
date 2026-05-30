@@ -167,12 +167,14 @@ async function computeUpdatedStreak(
 async function sendStreakMilestoneIfEligible(userId: string, days: number) {
   const user = await prisma.user.findUnique({
     where: { id: userId },
-    select: { email: true, firstName: true },
+    select: { email: true, firstName: true, language: true },
   });
   if (!user) return;
+  const lang = (user.language === 'de' ? 'de' : 'en') as 'en' | 'de';
   await EmailService.sendStreakMilestone(
     { email: user.email, firstName: user.firstName || 'there' },
-    days
+    days,
+    lang
   );
 }
 
@@ -190,6 +192,7 @@ async function sendLimitReachedEmailIfEligible(userId: string) {
       firstName: true,
       subscriptionType: true,
       subscriptionEnd: true,
+      language: true,
     },
   });
   if (!user) return;
@@ -212,10 +215,10 @@ async function sendLimitReachedEmailIfEligible(userId: string) {
   // a new ReadingProgress row, so this condition can only be true once per month.
   if (thisMonthCount !== FREE_TIER_LIMIT) return;
 
-  await EmailService.sendFreeTierLimitReached({
-    email: user.email,
-    firstName: user.firstName || 'there',
-  });
+  await EmailService.sendFreeTierLimitReached(
+    { email: user.email, firstName: user.firstName || 'there' },
+    user.language === 'de' ? 'de' : 'en'
+  );
 }
 
 export const getProgress = async (req: Request, res: Response) => {

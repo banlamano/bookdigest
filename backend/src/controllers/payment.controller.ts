@@ -161,7 +161,7 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
   // Get user details
   const user = await prisma.user.findUnique({
     where: { id: userId },
-    select: { email: true, firstName: true }
+    select: { email: true, firstName: true, language: true }
   });
 
   // Update user subscription (idempotent). Bump freeTrialUsed if this
@@ -220,7 +220,8 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
         amount: (session.amount_total || 0) / 100,
         plan: planName,
         currency: currencySymbol,
-      }
+      },
+      user.language === 'de' ? 'de' : 'en'
     ).catch(err => logger.error('Failed to send payment confirmation email:', err));
   }
 
@@ -275,14 +276,14 @@ async function handlePaymentFailed(invoice: Stripe.Invoice) {
   // Find the user who owns this subscription
   const user = await prisma.user.findFirst({
     where: { subscriptionId },
-    select: { id: true, email: true, firstName: true },
+    select: { id: true, email: true, firstName: true, language: true },
   });
 
   if (user) {
-    EmailService.sendPaymentFailed({
-      email: user.email,
-      firstName: user.firstName,
-    }).catch(err => logger.error('Failed to send payment failed email:', err));
+    EmailService.sendPaymentFailed(
+      { email: user.email, firstName: user.firstName },
+      user.language === 'de' ? 'de' : 'en'
+    ).catch(err => logger.error('Failed to send payment failed email:', err));
   } else {
     logger.warn(`Payment failed for subscription ${subscriptionId} but no matching user found`);
   }

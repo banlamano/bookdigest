@@ -35,6 +35,11 @@ model User {
   currentStreak     Int      @default(0)
   longestStreak     Int      @default(0)
   lastReadDate      DateTime?
+
+  // Preferred language for transactional emails ('en' | 'de').
+  // Captured at signup; used by Day-3/7, streak, and limit emails so
+  // the user gets messages in the language they chose to register in.
+  language          String   @default("en")
   
   // Relations
   progress          ReadingProgress[]
@@ -233,6 +238,7 @@ model EmailSubscriber {
   id            String    @id @default(uuid())
   email         String    @unique
   source        String?   // 'popup' | 'footer' | 'manual' — where the signup came from
+  language      String    @default("en")  // 'en' | 'de' — for any future newsletter sends
   confirmedAt   DateTime?
   unsubscribedAt DateTime?
 

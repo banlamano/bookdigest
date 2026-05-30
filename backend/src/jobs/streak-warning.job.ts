@@ -34,7 +34,7 @@ export async function runStreakWarnings(): Promise<{ sent: number; skipped: numb
         lt: startOfToday,
       },
     },
-    select: { id: true, email: true, firstName: true, currentStreak: true },
+    select: { id: true, email: true, firstName: true, currentStreak: true, language: true },
   });
 
   let sent = 0;
@@ -43,7 +43,8 @@ export async function runStreakWarnings(): Promise<{ sent: number; skipped: numb
     try {
       const result = await EmailService.sendStreakAtRisk(
         { email: user.email, firstName: user.firstName || 'there' },
-        user.currentStreak
+        user.currentStreak,
+        user.language === 'de' ? 'de' : 'en'
       );
       if (result.success) sent += 1;
       else skipped += 1;

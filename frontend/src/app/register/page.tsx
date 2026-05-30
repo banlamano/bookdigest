@@ -11,7 +11,7 @@ import { BookOpen, Mail, Lock, User, Eye, EyeOff } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageProvider';
 
 export default function RegisterPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const router = useRouter();
   const { setAuth } = useAuthStore();
   const [isLoading, setIsLoading] = useState(false);
@@ -34,7 +34,7 @@ export default function RegisterPage() {
     setIsLoading(true);
 
     try {
-      const response = await authAPI.register(formData);
+      const response = await authAPI.register({ ...formData, language });
       const { user, token } = response.data.data;
 
       setAuth(user, token);

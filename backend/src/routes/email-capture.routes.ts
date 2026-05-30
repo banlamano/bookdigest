@@ -17,7 +17,7 @@ const router = Router();
  */
 router.post('/capture', async (req, res) => {
   try {
-    const { email, source } = req.body;
+    const { email, source, language } = req.body;
     const normalized = typeof email === 'string' ? email.trim().toLowerCase() : '';
 
     if (!normalized || !normalized.includes('@') || !normalized.includes('.')) {
@@ -27,28 +27,37 @@ router.post('/capture', async (req, res) => {
       });
     }
 
+    // Normalise language: only 'de' triggers the German template; anything
+    // else (including missing) falls back to English. Trust the frontend
+    // here — language is a UX preference, not a security signal.
+    const lang: 'en' | 'de' = language === 'de' ? 'de' : 'en';
+
     // Save (or refresh) the subscriber. Idempotent — no harm if they sign up twice.
     const subscriber = await prisma.emailSubscriber.upsert({
       where: { email: normalized },
       create: {
         email: normalized,
         source: typeof source === 'string' ? source.slice(0, 32) : 'popup',
+        language: lang,
       },
       update: {
-        // Refresh source if it changed (e.g., they hit the footer and the popup)
+        // Refresh source + language if they changed since last signup
         ...(typeof source === 'string' ? { source: source.slice(0, 32) } : {}),
+        language: lang,
       },
     });
 
     // Fire-and-forget welcome email. We DON'T await — the user shouldn't wait
     // on Resend latency. Errors are logged inside the service.
-    void EmailService.sendNewsletterWelcome(normalized).catch(err =>
+    void EmailService.sendNewsletterWelcome(normalized, lang).catch(err =>
       console.error('Newsletter welcome failed:', err)
     );
 
     return res.json({
       success: true,
-      message: 'Subscribed — check your inbox for a welcome email.',
+      message: lang === 'de'
+        ? 'Eingetragen — schau in deinem Posteingang nach der Willkommensmail.'
+        : 'Subscribed — check your inbox for a welcome email.',
       data: { email: normalized, subscriberId: subscriber.id },
     });
   } catch (error: any) {

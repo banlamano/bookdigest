@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 import { useLanguage } from '@/components/LanguageProvider';
 
 export default function EmailCapturePopup() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -49,7 +49,7 @@ export default function EmailCapturePopup() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, language, source: 'popup' }),
       });
 
       const data = await response.json();

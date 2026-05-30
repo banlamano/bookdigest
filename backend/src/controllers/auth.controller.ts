@@ -22,7 +22,7 @@ const generateToken = (userId: string, email: string, role: string): string => {
 // Register new user
 export const register = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const { email, password, firstName, lastName } = req.body;
+    const { email, password, firstName, lastName, language } = req.body;
 
     // Check if user exists
     const existingUser = await prisma.user.findUnique({ where: { email } });
@@ -33,6 +33,11 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
     // Hash password
     const hashedPassword = await bcrypt.hash(password, 12);
 
+    // Capture preferred language at signup so the Day-3 and Day-7 emails
+    // (scheduled now, delivered later) and future streak/limit/payment
+    // emails can be sent in the same language the user signed up in.
+    const lang: 'en' | 'de' = language === 'de' ? 'de' : 'en';
+
     // Create user
     const user = await prisma.user.create({
       data: {
@@ -40,6 +45,7 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
         password: hashedPassword,
         firstName,
         lastName,
+        language: lang,
       },
       select: {
         id: true,
@@ -48,6 +54,7 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
         lastName: true,
         role: true,
         subscriptionType: true,
+        language: true,
       },
     });
 
@@ -57,14 +64,14 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
     // Send the 3-email welcome sequence. Don't await — registration shouldn't
     // wait on email API. Day-3 and Day-7 are scheduled via Resend's scheduledAt.
     const emailRecipient = { email: user.email, firstName: user.firstName || 'there' };
-    EmailService.sendWelcomeEmail(emailRecipient)
+    EmailService.sendWelcomeEmail(emailRecipient, lang)
       .catch(err => logger.error('Failed to send welcome email:', err));
-    EmailService.scheduleDay3Email(emailRecipient)
+    EmailService.scheduleDay3Email(emailRecipient, lang)
       .catch(err => logger.error('Failed to schedule day-3 email:', err));
-    EmailService.scheduleDay7Email(emailRecipient)
+    EmailService.scheduleDay7Email(emailRecipient, lang)
       .catch(err => logger.error('Failed to schedule day-7 email:', err));
 
-    logger.info(`New user registered: ${email}`);
+    logger.info(`New user registered: ${email} [${lang}]`);
 
     res.status(201).json({
       status: 'success',
@@ -276,11 +283,10 @@ export const forgotPassword = async (req: Request, res: Response, next: NextFunc
     // Send reset email
     const resetUrl = `${process.env.FRONTEND_URL || 'https://book-digest.com'}/reset-password?token=${resetToken}`;
     
-    EmailService.sendPasswordResetEmail({
-      email: user.email,
-      firstName: user.firstName,
-      resetUrl
-    }).catch((err: any) => logger.error('Failed to send password reset email:', err));
+    EmailService.sendPasswordResetEmail(
+      { email: user.email, firstName: user.firstName ?? 'there', resetUrl },
+      (user as any).language === 'de' ? 'de' : 'en'
+    ).catch((err: any) => logger.error('Failed to send password reset email:', err));
 
     logger.info(`Password reset requested for: ${email}`);
 
