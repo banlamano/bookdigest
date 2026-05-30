@@ -226,3 +226,16 @@ model Transaction {
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
 }
+
+// Newsletter subscribers captured from the marketing popup. Decoupled from
+// User because subscribers don't necessarily register an account.
+model EmailSubscriber {
+  id            String    @id @default(uuid())
+  email         String    @unique
+  source        String?   // 'popup' | 'footer' | 'manual' — where the signup came from
+  confirmedAt   DateTime?
+  unsubscribedAt DateTime?
+
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}

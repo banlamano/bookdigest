@@ -2,8 +2,10 @@ import { Resend } from 'resend';
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
-const FROM_EMAIL = process.env.FROM_EMAIL || 'BookDigest <onboarding@resend.dev>';
-const SITE_URL = process.env.FRONTEND_URL || 'https://bookdigest-iota.vercel.app';
+// Accept either FROM_EMAIL (what the code originally read) or EMAIL_FROM
+// (what was actually set in .env). Either spelling works.
+const FROM_EMAIL = process.env.FROM_EMAIL || process.env.EMAIL_FROM || 'BookDigest <onboarding@resend.dev>';
+const SITE_URL = process.env.FRONTEND_URL || process.env.CLIENT_URL || 'https://book-digest.com';
 
 // Helper to check if email service is enabled
 function isEmailEnabled(): boolean {
@@ -11,6 +13,113 @@ function isEmailEnabled(): boolean {
 }
 
 export class EmailService {
+  /**
+   * Surface the current config so we can debug "emails aren't arriving"
+   * without exposing secret values.
+   */
+  static getConfigStatus() {
+    return {
+      resendKeyConfigured: !!RESEND_API_KEY,
+      fromEmail: FROM_EMAIL,
+      siteUrl: SITE_URL,
+      usingDefaultSender: FROM_EMAIL.includes('onboarding@resend.dev'),
+    };
+  }
+
+  /**
+   * Direct send used by the diagnostic endpoint — returns the raw Resend
+   * response so we can see exactly what the API reported (delivery id on
+   * success, error code+message on failure).
+   */
+  static async sendDiagnosticTestEmail(to: string) {
+    if (!resend) {
+      return { ok: false, error: 'RESEND_API_KEY is not configured on this server' };
+    }
+    try {
+      const result = await resend.emails.send({
+        from: FROM_EMAIL,
+        to,
+        subject: 'BookDigest email diagnostic test',
+        text: `If you received this, Resend can deliver email from ${FROM_EMAIL} to ${to}.\nSent at ${new Date().toISOString()}.`,
+      });
+      return {
+        ok: !result.error,
+        id: result.data?.id ?? null,
+        error: result.error ? `${result.error.name}: ${result.error.message}` : null,
+      };
+    } catch (err: any) {
+      return { ok: false, error: err?.message ?? String(err) };
+    }
+  }
+
+  /**
+   * Welcome email for the newsletter-popup signup. Different audience from
+   * sendWelcomeEmail (which is for registered users) — the subscriber has
+   * NOT created an account, so the CTA is to browse the library and to
+   * register, not to start reading.
+   */
+  static async sendNewsletterWelcome(email: string) {
+    if (!isEmailEnabled()) {
+      console.log('⚠️  Email service not configured, skipping newsletter welcome');
+      return { success: false, error: 'Email service not configured' };
+    }
+    try {
+      const result = await resend!.emails.send({
+        from: FROM_EMAIL,
+        to: email,
+        subject: 'Welcome to BookDigest — your first 3 summaries are on us 📚',
+        html: `
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <style>
+              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+              .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+              .header { background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+              .content { background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px; }
+              .button { background: #2563eb; color: white; padding: 14px 32px; text-decoration: none; border-radius: 6px; display: inline-block; margin: 20px 0; font-weight: bold; }
+              .footer { text-align: center; color: #6b7280; font-size: 14px; margin-top: 30px; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="header">
+                <h1>📚 Welcome to BookDigest</h1>
+              </div>
+              <div class="content">
+                <p>Hey,</p>
+                <p>Thanks for signing up. You're now on the list — you'll hear from us when we add the books most readers ask for, and when we ship features worth your time.</p>
+                <p>Want to start reading right now? Create a free account and you get <strong>3 summaries this month</strong>, no credit card needed:</p>
+                <p style="text-align: center;">
+                  <a href="${SITE_URL}/register" class="button">Create free account →</a>
+                </p>
+                <p>Or browse what's on the shelf:</p>
+                <p style="text-align: center;">
+                  <a href="${SITE_URL}/library" style="color: #2563eb;">Browse 900+ summaries</a>
+                </p>
+                <p style="font-size: 14px; color: #6b7280;">Hit reply if you want to suggest a book — I read every message.</p>
+                <p>— Eric, BookDigest</p>
+              </div>
+              <div class="footer">
+                <a href="${SITE_URL}/terms">Terms</a> | <a href="${SITE_URL}/privacy">Privacy</a>
+              </div>
+            </div>
+          </body>
+          </html>
+        `,
+      });
+      if (result.error) {
+        console.error('❌ Newsletter welcome Resend error:', result.error);
+        return { success: false, error: `${result.error.name}: ${result.error.message}` };
+      }
+      console.log(`✅ Newsletter welcome sent to ${email} (id: ${result.data?.id})`);
+      return { success: true, id: result.data?.id };
+    } catch (err: any) {
+      console.error('❌ Failed to send newsletter welcome:', err);
+      return { success: false, error: err?.message ?? String(err) };
+    }
+  }
+
   /**
    * Send welcome email to new users
    */
@@ -21,7 +130,7 @@ export class EmailService {
     }
 
     try {
-      await resend!.emails.send({
+      const result = await resend!.emails.send({
         from: FROM_EMAIL,
         to: user.email,
         subject: 'Welcome to BookDigest! 🎉',
@@ -84,9 +193,13 @@ export class EmailService {
           </html>
         `,
       });
-      
-      console.log(`✅ Welcome email sent to ${user.email}`);
-      return { success: true };
+
+      if (result.error) {
+        console.error(`❌ Welcome email rejected by Resend for ${user.email}:`, result.error);
+        return { success: false, error: `${result.error.name}: ${result.error.message}` };
+      }
+      console.log(`✅ Welcome email sent to ${user.email} (id: ${result.data?.id})`);
+      return { success: true, id: result.data?.id };
     } catch (error) {
       console.error('❌ Failed to send welcome email:', error);
       return { success: false, error };
