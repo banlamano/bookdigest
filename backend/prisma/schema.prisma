@@ -40,6 +40,12 @@ model User {
   // Captured at signup; used by Day-3/7, streak, and limit emails so
   // the user gets messages in the language they chose to register in.
   language          String   @default("en")
+
+  // Set when the user clicked an unsubscribe link. Drip + broadcast +
+  // streak-warning paths filter on this so unsubscribed users get no
+  // further marketing. Transactional emails (password reset, payment
+  // receipts) still go through — those aren't covered by GDPR opt-out.
+  unsubscribedAt    DateTime?
   
   // Relations
   progress          ReadingProgress[]

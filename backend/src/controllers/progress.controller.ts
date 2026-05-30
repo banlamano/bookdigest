@@ -167,9 +167,9 @@ async function computeUpdatedStreak(
 async function sendStreakMilestoneIfEligible(userId: string, days: number) {
   const user = await prisma.user.findUnique({
     where: { id: userId },
-    select: { email: true, firstName: true, language: true },
+    select: { email: true, firstName: true, language: true, unsubscribedAt: true },
   });
-  if (!user) return;
+  if (!user || user.unsubscribedAt) return;
   const lang = (user.language === 'de' ? 'de' : 'en') as 'en' | 'de';
   await EmailService.sendStreakMilestone(
     { email: user.email, firstName: user.firstName || 'there' },
@@ -193,9 +193,10 @@ async function sendLimitReachedEmailIfEligible(userId: string) {
       subscriptionType: true,
       subscriptionEnd: true,
       language: true,
+      unsubscribedAt: true,
     },
   });
-  if (!user) return;
+  if (!user || user.unsubscribedAt) return;
 
   const isPremiumActive =
     user.subscriptionType !== 'FREE' &&

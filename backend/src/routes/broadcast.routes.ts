@@ -1,6 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { prisma } from '../lib/prisma';
 import { EmailService } from '../services/email.service';
+import { injectUnsubscribeFooter } from '../utils/unsubscribe';
 
 const router = Router();
 
@@ -45,7 +46,10 @@ async function buildRecipients(segment: Segment, langFilter: LangFilter) {
 
   if (segment === 'all' || segment === 'users') {
     const users = await prisma.user.findMany({
-      where: langFilter !== 'all' ? { language: langFilter } : {},
+      where: {
+        unsubscribedAt: null,
+        ...(langFilter !== 'all' ? { language: langFilter } : {}),
+      },
       select: { email: true, language: true },
     });
     for (const u of users) {
@@ -136,8 +140,15 @@ router.post('/send', async (req: Request, res: Response) => {
     const errors: string[] = [];
 
     for (const r of recipients) {
+      // Auto-inject the unsubscribe footer per recipient (the URL is
+      // HMAC'd against each individual email, so we can't reuse one
+      // pre-rendered body across the whole list).
+      const personalizedHtmlEn = injectUnsubscribeFooter(html_en, r.email, 'en');
+      const personalizedHtmlDe = injectUnsubscribeFooter(html_de, r.email, 'de');
       const result = await EmailService.sendBroadcast(r.email, r.language, {
-        subject_en, subject_de, html_en, html_de,
+        subject_en, subject_de,
+        html_en: personalizedHtmlEn,
+        html_de: personalizedHtmlDe,
       });
       if (result.success) sent += 1;
       else {

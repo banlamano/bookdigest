@@ -1,4 +1,5 @@
 import { Resend } from 'resend';
+import { injectUnsubscribeFooter } from '../utils/unsubscribe';
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
@@ -112,7 +113,7 @@ export class EmailService {
         from: FROM_EMAIL,
         to: email,
         subject: tmpl.subject,
-        html: `
+        html: injectUnsubscribeFooter(`
           <!DOCTYPE html>
           <html>
           <head>
@@ -150,7 +151,7 @@ export class EmailService {
             </div>
           </body>
           </html>
-        `,
+        `, email, language),
       });
       if (result.error) {
         console.error('❌ Newsletter welcome Resend error:', result.error);
@@ -223,7 +224,7 @@ export class EmailService {
         from: FROM_EMAIL,
         to: user.email,
         subject: tmpl.subject,
-        html: `
+        html: injectUnsubscribeFooter(`
           <!DOCTYPE html>
           <html>
           <head>
@@ -280,7 +281,7 @@ export class EmailService {
             </div>
           </body>
           </html>
-        `,
+        `, user.email, language),
       });
 
       if (result.error) {
@@ -352,7 +353,7 @@ export class EmailService {
         to: user.email,
         subject: tmpl.subject,
         scheduledAt,
-        html: `
+        html: injectUnsubscribeFooter(`
           <!DOCTYPE html>
           <html>
           <head>
@@ -397,7 +398,7 @@ export class EmailService {
             </div>
           </body>
           </html>
-        `,
+        `, user.email, language),
       });
       console.log(`📬 Day-3 email scheduled for ${user.email} [${language}] (id: ${result.data?.id})`);
       return { success: true, id: result.data?.id };
@@ -466,7 +467,7 @@ export class EmailService {
         to: user.email,
         subject: tmpl.subject,
         scheduledAt,
-        html: `
+        html: injectUnsubscribeFooter(`
           <!DOCTYPE html>
           <html>
           <head>
@@ -524,7 +525,7 @@ export class EmailService {
             </div>
           </body>
           </html>
-        `,
+        `, user.email, language),
       });
       console.log(`📬 Day-7 email scheduled for ${user.email} [${language}] (id: ${result.data?.id})`);
       return { success: true, id: result.data?.id };
@@ -584,7 +585,7 @@ export class EmailService {
         to: recipient.email,
         subject: tmpl.subject,
         scheduledAt,
-        html: `
+        html: injectUnsubscribeFooter(`
           <!DOCTYPE html>
           <html><head><style>
             body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
@@ -620,7 +621,7 @@ export class EmailService {
               </div>
             </div>
           </body></html>
-        `,
+        `, recipient.email, language),
       });
       console.log(`📬 Day-14 email scheduled for ${recipient.email} [${language}] (id: ${result.data?.id})`);
       return { success: true, id: result.data?.id };
@@ -681,7 +682,7 @@ export class EmailService {
         to: recipient.email,
         subject: tmpl.subject,
         scheduledAt,
-        html: `
+        html: injectUnsubscribeFooter(`
           <!DOCTYPE html>
           <html><head><style>
             body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
@@ -714,7 +715,7 @@ export class EmailService {
               </div>
             </div>
           </body></html>
-        `,
+        `, recipient.email, language),
       });
       console.log(`📬 Day-30 email scheduled for ${recipient.email} [${language}] (id: ${result.data?.id})`);
       return { success: true, id: result.data?.id };
@@ -1071,7 +1072,7 @@ export class EmailService {
         from: FROM_EMAIL,
         to: user.email,
         subject: tmpl.subject,
-        html: `
+        html: injectUnsubscribeFooter(`
           <!DOCTYPE html>
           <html>
           <head>
@@ -1123,7 +1124,7 @@ export class EmailService {
             </div>
           </body>
           </html>
-        `,
+        `, user.email, language),
       });
 
       console.log(`✅ Renewal reminder sent to ${user.email} [${language}]`);
@@ -1299,7 +1300,7 @@ export class EmailService {
         from: FROM_EMAIL,
         to: user.email,
         subject: msg.headline,
-        html: `
+        html: injectUnsubscribeFooter(`
           <!DOCTYPE html>
           <html>
           <head>
@@ -1335,7 +1336,7 @@ export class EmailService {
             </div>
           </body>
           </html>
-        `,
+        `, user.email, language),
       });
       console.log(`✅ Streak milestone (${days}d) sent to ${user.email} [${language}]`);
       return { success: true };
@@ -1389,7 +1390,7 @@ export class EmailService {
         from: FROM_EMAIL,
         to: user.email,
         subject: tmpl.subject,
-        html: `
+        html: injectUnsubscribeFooter(`
           <!DOCTYPE html>
           <html>
           <head>
@@ -1434,7 +1435,7 @@ export class EmailService {
             </div>
           </body>
           </html>
-        `,
+        `, user.email, language),
       });
       console.log(`✅ Streak warning (${currentStreak}d at risk) sent to ${user.email} [${language}]`);
       return { success: true };
@@ -1496,7 +1497,7 @@ export class EmailService {
         from: FROM_EMAIL,
         to: user.email,
         subject: tmpl.subject,
-        html: `
+        html: injectUnsubscribeFooter(`
           <!DOCTYPE html>
           <html>
           <head>
@@ -1552,7 +1553,7 @@ export class EmailService {
             </div>
           </body>
           </html>
-        `,
+        `, user.email, language),
       });
 
       console.log(`✅ Free tier limit email sent to ${user.email} [${language}]`);

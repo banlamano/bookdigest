@@ -26,6 +26,7 @@ export async function runStreakWarnings(): Promise<{ sent: number; skipped: numb
   startOfYesterday.setDate(startOfYesterday.getDate() - 1);
 
   // Find users with active streaks who read yesterday but haven't read today.
+  // Skip anyone who unsubscribed — streak nudges are marketing-flavoured.
   const atRisk = await prisma.user.findMany({
     where: {
       currentStreak: { gte: 2 },
@@ -33,6 +34,7 @@ export async function runStreakWarnings(): Promise<{ sent: number; skipped: numb
         gte: startOfYesterday,
         lt: startOfToday,
       },
+      unsubscribedAt: null,
     },
     select: { id: true, email: true, firstName: true, currentStreak: true, language: true },
   });
