@@ -14,8 +14,19 @@
  */
 import { Resend } from 'resend';
 
-const RESEND_API_KEY = process.env.RESEND_API_KEY;
-const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
+/**
+ * Lazy Resend client — instantiate inside getResend() so the API key is
+ * read AFTER dotenv has populated process.env. Capturing at module load
+ * meant the script's dotenv.config() couldn't override an unset value
+ * (Resend ended up null even when the .env was correct).
+ */
+let _resend: Resend | null | undefined;
+function getResend(): Resend | null {
+  if (_resend !== undefined) return _resend;
+  const key = process.env.RESEND_API_KEY;
+  _resend = key ? new Resend(key) : null;
+  return _resend;
+}
 
 /**
  * Read env at call time (not module load) so dotenv ordering doesn't
@@ -48,6 +59,7 @@ export type SyncResult = {
  * — that's the no-op path for unconfigured environments.
  */
 export async function syncContact(contact: SyncContact): Promise<SyncResult> {
+  const resend = getResend();
   if (!resend) return { ok: false, action: 'skipped', error: 'RESEND_API_KEY not set' };
   const audienceId = getAudienceId(contact.language);
   if (!audienceId) return { ok: false, action: 'skipped', error: `RESEND_AUDIENCE_${contact.language.toUpperCase()}_ID not set` };

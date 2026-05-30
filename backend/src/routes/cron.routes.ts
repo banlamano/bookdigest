@@ -1,5 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { runStreakWarnings } from '../jobs/streak-warning.job';
+import { prisma } from '../lib/prisma';
+import { syncContact, SyncContact } from '../services/resend-audience.service';
 
 const router = Router();
 
@@ -43,6 +45,100 @@ router.get('/streak-warnings', async (req: Request, res: Response) => {
     res.json({ success: true, ...result });
   } catch (err: any) {
     res.status(500).json({ success: false, message: err.message });
+  }
+});
+
+/**
+ * Trigger the one-shot Resend Audience backfill from prod, where the
+ * RESEND_API_KEY actually exists. Body: { secret, dryRun?: boolean }.
+ * Walks subscribers + users, dedupes, and upserts into the language-
+ * matched Resend Audience. Idempotent — safe to re-run.
+ */
+router.post('/sync-resend-audience', async (req: Request, res: Response) => {
+  if (!checkCronSecret(req)) {
+    return res.status(403).json({ success: false, message: 'Invalid secret' });
+  }
+
+  const dryRun = req.body?.dryRun === true;
+
+  try {
+    const [subs, users] = await Promise.all([
+      prisma.emailSubscriber.findMany({
+        select: { email: true, language: true, unsubscribedAt: true },
+      }),
+      prisma.user.findMany({
+        select: { email: true, firstName: true, lastName: true, language: true, unsubscribedAt: true },
+      }),
+    ]);
+
+    const map = new Map<string, SyncContact>();
+
+    for (const s of subs) {
+      map.set(s.email.toLowerCase(), {
+        email: s.email,
+        language: (s.language === 'de' ? 'de' : 'en'),
+        unsubscribed: !!s.unsubscribedAt,
+      });
+    }
+    for (const u of users) {
+      const key = u.email.toLowerCase();
+      const existing = map.get(key);
+      map.set(key, {
+        email: u.email,
+        firstName: u.firstName ?? existing?.firstName,
+        lastName: u.lastName ?? existing?.lastName,
+        language: existing?.language || (u.language === 'de' ? 'de' : 'en'),
+        unsubscribed: (existing?.unsubscribed ?? false) || !!u.unsubscribedAt,
+      });
+    }
+    const contacts = [...map.values()];
+
+    const byLang = contacts.reduce<Record<'en' | 'de', number>>(
+      (acc, c) => { acc[c.language] += 1; return acc; },
+      { en: 0, de: 0 },
+    );
+
+    if (dryRun) {
+      return res.json({
+        success: true,
+        dryRun: true,
+        total: contacts.length,
+        byLanguage: byLang,
+        envConfigured: {
+          en: !!process.env.RESEND_AUDIENCE_EN_ID,
+          de: !!process.env.RESEND_AUDIENCE_DE_ID,
+          apiKey: !!process.env.RESEND_API_KEY,
+        },
+      });
+    }
+
+    let created = 0, updated = 0, skipped = 0, failed = 0;
+    const errors: string[] = [];
+
+    for (const c of contacts) {
+      const result = await syncContact(c);
+      switch (result.action) {
+        case 'created': created += 1; break;
+        case 'updated': updated += 1; break;
+        case 'skipped': skipped += 1; break;
+        case 'failed':
+          failed += 1;
+          if (errors.length < 10) errors.push(`${c.email}: ${result.error}`);
+          break;
+      }
+      await new Promise(r => setTimeout(r, 200));
+    }
+
+    return res.json({
+      success: true,
+      total: contacts.length,
+      byLanguage: byLang,
+      created, updated, skipped, failed,
+      sampleErrors: errors,
+    });
+  } catch (err: any) {
+    console.error('sync-resend-audience failed:', err);
+    return res.status(500).json({ success: false, message: err?.message ?? 'Failed' });
   }
 });
 
