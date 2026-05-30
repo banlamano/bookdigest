@@ -70,6 +70,13 @@ model Book {
   coverImage        String
   audioUrl          String?
   audioDuration     Int?
+
+  // Timestamp of the last narration regeneration using the full-content
+  // composer (summary + insights + chapters + quotes + actions). NULL
+  // means the audio is still the old summary-only version. The monthly
+  // `next=N` script targets rows where this is NULL so each run picks
+  // up where the previous one left off.
+  audioRegeneratedAt DateTime?
   
   // Metadata
   categoryId        String

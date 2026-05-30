@@ -112,7 +112,7 @@ async function generateAudio(book: Book): Promise<{ url: string; chars: number; 
 
   await prisma.book.update({
     where: { id: book.id },
-    data: { audioUrl, audioDuration: durationSeconds },
+    data: { audioUrl, audioDuration: durationSeconds, audioRegeneratedAt: new Date() },
   });
 
   return { url: audioUrl, chars: narrationText.length, sizeKB };
@@ -136,6 +136,10 @@ async function main() {
   //   npm run generate:audio -- ids=<uuid>,...     → specific books only
   //   npm run generate:audio -- regen              → regenerate ALL books that have audio
   //   npm run generate:audio -- regen=50           → regenerate first 50 that have audio
+  //   npm run generate:audio -- next=30            → next 30 most-read books that still
+  //                                                  have summary-only audio (the monthly
+  //                                                  "calendar" mode that walks the catalog)
+  //   npm run generate:audio -- next               → all books with summary-only audio
   const argv = process.argv[2] || '10';
   const fullSelect = {
     id: true, title: true, summary: true, language: true,
@@ -147,6 +151,26 @@ async function main() {
     const ids = argv.slice(4).split(',').map(s => s.trim()).filter(Boolean);
     books = await prisma.book.findMany({
       where: { id: { in: ids }, summary: { not: '' } },
+      select: fullSelect,
+    }) as unknown as Book[];
+  } else if (argv === 'next' || argv.startsWith('next=')) {
+    // Monthly catalog walker: pick the highest-traffic books that still
+    // have the old summary-only audio (audioRegeneratedAt IS NULL).
+    // Idempotent across months — each run picks up where the previous
+    // one left off. Designed to stay within Google's 1M chars/month
+    // free tier when limited to ~30-35 books.
+    const limit = argv === 'next' ? undefined : parseInt(argv.slice(5), 10);
+    books = await prisma.book.findMany({
+      where: {
+        summary: { not: '' },
+        audioUrl: { contains: '.r2.dev/audio/' },
+        audioRegeneratedAt: null,
+      },
+      orderBy: [
+        { readingHistory: { _count: 'desc' } },
+        { progress: { _count: 'desc' } },
+      ],
+      ...(limit ? { take: limit } : {}),
       select: fullSelect,
     }) as unknown as Book[];
   } else if (argv === 'regen' || argv.startsWith('regen=')) {
@@ -183,6 +207,28 @@ async function main() {
 
   if (books.length === 0) {
     console.log('✅ All books already have real audio.');
+    return;
+  }
+
+  // Dry-run mode: list what would be processed without spending the API
+  // budget. Append `--dry` after the mode (e.g. `next=30 --dry`).
+  if (process.argv.includes('--dry')) {
+    let projectedChars = 0;
+    console.log(`📋 DRY RUN — would process ${books.length} book(s):\n`);
+    for (const b of books) {
+      const chars = composeNarrationText(b).length;
+      projectedChars += chars;
+      console.log(`  ${b.id.slice(0, 8)} [${b.language}] ${chars.toString().padStart(6)} chars — ${b.title}`);
+    }
+    console.log(`\nProjected total: ${projectedChars.toLocaleString()} chars`);
+    const free = Math.min(projectedChars, 1_000_000);
+    const paid = Math.max(0, projectedChars - 1_000_000);
+    console.log(`  Within free tier: ${free.toLocaleString()} chars`);
+    if (paid > 0) {
+      console.log(`  Beyond free tier: ${paid.toLocaleString()} chars (~$${((paid / 1_000_000) * 16).toFixed(2)})`);
+    } else {
+      console.log(`  💰 FREE — within Google's 1M chars/month Neural2 tier`);
+    }
     return;
   }
 
