@@ -70,6 +70,10 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
       .catch(err => logger.error('Failed to schedule day-3 email:', err));
     EmailService.scheduleDay7Email(emailRecipient, lang)
       .catch(err => logger.error('Failed to schedule day-7 email:', err));
+    EmailService.scheduleDay14Email(emailRecipient, lang)
+      .catch(err => logger.error('Failed to schedule day-14 email:', err));
+    EmailService.scheduleDay30Email(emailRecipient, lang)
+      .catch(err => logger.error('Failed to schedule day-30 email:', err));
 
     logger.info(`New user registered: ${email} [${lang}]`);
 

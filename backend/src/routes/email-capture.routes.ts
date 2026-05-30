@@ -47,10 +47,17 @@ router.post('/capture', async (req, res) => {
       },
     });
 
-    // Fire-and-forget welcome email. We DON'T await — the user shouldn't wait
-    // on Resend latency. Errors are logged inside the service.
+    // Fire-and-forget welcome email + Day-14 / Day-30 nurture. We DON'T
+    // await — the subscriber shouldn't wait on Resend latency. Errors
+    // are logged inside the service.
     void EmailService.sendNewsletterWelcome(normalized, lang).catch(err =>
       console.error('Newsletter welcome failed:', err)
+    );
+    void EmailService.scheduleDay14Email({ email: normalized }, lang).catch(err =>
+      console.error('Newsletter Day-14 schedule failed:', err)
+    );
+    void EmailService.scheduleDay30Email({ email: normalized }, lang).catch(err =>
+      console.error('Newsletter Day-30 schedule failed:', err)
     );
 
     return res.json({

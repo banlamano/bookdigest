@@ -535,6 +535,222 @@ export class EmailService {
   }
 
   /**
+   * Day-14 retention email — sent 2 weeks after signup. Audience-neutral:
+   * works for both newsletter subscribers (no account yet) and registered
+   * users. Highlights the features that make people stick around — audio
+   * narration and reading streaks — with a CTA that works for either
+   * (browse library; subscribers hit the freemium gate, users go straight
+   * in). `firstName` is optional because newsletter subscribers don't
+   * provide one.
+   */
+  static async scheduleDay14Email(recipient: { email: string; firstName?: string }, language: Lang = 'en') {
+    if (!isEmailEnabled()) return { success: false, error: 'Email service not configured' };
+
+    const first = recipient.firstName?.trim();
+
+    const tmpl = pick(language, {
+      en: {
+        subject: 'Two features most readers wish they tried sooner 🎧🔥',
+        header: 'The two BookDigest features readers love most',
+        greeting: first ? `Hi ${first},` : 'Hi,',
+        intro: "You've been with us for a couple of weeks. Most readers tell us the platform really clicks once they try two things:",
+        f1Title: '🎧 Audio narration',
+        f1Body: "Real human-quality voices read the entire summary — insights, chapters, quotes, action items. Listen on a walk or commute. We have audio for 220+ books and growing.",
+        f2Title: '🔥 Reading streaks',
+        f2Body: "Read one summary a day and watch your streak grow. We email you when you hit 3, 7, 30, and 100 days. People who build a 7-day streak read 5× more than people who don't.",
+        button: 'Try them now →',
+        signoff: "Tell us what you've been reading — just hit reply.",
+        sign: '— The BookDigest Team',
+      },
+      de: {
+        subject: 'Zwei Funktionen, die die meisten Leser zu spät entdecken 🎧🔥',
+        header: 'Die zwei Funktionen, die BookDigest-Leser am meisten lieben',
+        greeting: first ? `Hallo ${first},` : 'Hallo,',
+        intro: 'Du bist seit ein paar Wochen dabei. Die meisten Leser sagen uns, dass die Plattform erst richtig Klick macht, wenn sie zwei Dinge ausprobieren:',
+        f1Title: '🎧 Audio-Erzählung',
+        f1Body: 'Hochwertige menschliche Stimmen lesen die komplette Zusammenfassung — Erkenntnisse, Kapitel, Zitate, Handlungsempfehlungen. Hör beim Spaziergang oder Pendeln. Wir haben Audio für über 220 Bücher und es werden mehr.',
+        f2Title: '🔥 Lese-Serien',
+        f2Body: 'Lies eine Zusammenfassung pro Tag und schau zu, wie deine Serie wächst. Wir schreiben dir bei 3, 7, 30 und 100 Tagen. Wer eine 7-Tage-Serie aufbaut, liest 5× mehr als jemand ohne.',
+        button: 'Jetzt ausprobieren →',
+        signoff: 'Erzähl uns, was du gelesen hast — antworte einfach auf diese Mail.',
+        sign: '— Das BookDigest-Team',
+      },
+    });
+
+    const scheduledAt = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString();
+    try {
+      const result = await resend!.emails.send({
+        from: FROM_EMAIL,
+        to: recipient.email,
+        subject: tmpl.subject,
+        scheduledAt,
+        html: `
+          <!DOCTYPE html>
+          <html><head><style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+            .header { background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+            .content { background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px; }
+            .feature { background: white; padding: 20px; border-radius: 8px; margin: 16px 0; border-left: 4px solid #2563eb; }
+            .feature-title { font-size: 18px; font-weight: bold; color: #1e40af; margin: 0 0 8px; }
+            .button { background: #2563eb; color: white; padding: 14px 32px; text-decoration: none; border-radius: 6px; display: inline-block; margin: 20px 0; font-weight: bold; }
+            .footer { text-align: center; color: #6b7280; font-size: 14px; margin-top: 30px; }
+          </style></head><body>
+            <div class="container">
+              <div class="header"><h1>${tmpl.header}</h1></div>
+              <div class="content">
+                <p>${tmpl.greeting}</p>
+                <p>${tmpl.intro}</p>
+                <div class="feature">
+                  <p class="feature-title">${tmpl.f1Title}</p>
+                  <p style="margin: 0;">${tmpl.f1Body}</p>
+                </div>
+                <div class="feature">
+                  <p class="feature-title">${tmpl.f2Title}</p>
+                  <p style="margin: 0;">${tmpl.f2Body}</p>
+                </div>
+                <p style="text-align: center;">
+                  <a href="${SITE_URL}/library" class="button">${tmpl.button}</a>
+                </p>
+                <p style="font-size: 14px; color: #6b7280;">${tmpl.signoff}</p>
+                <p>${tmpl.sign}</p>
+              </div>
+              <div class="footer">
+                <a href="${SITE_URL}/terms">Terms</a> | <a href="${SITE_URL}/privacy">Privacy</a>
+              </div>
+            </div>
+          </body></html>
+        `,
+      });
+      console.log(`📬 Day-14 email scheduled for ${recipient.email} [${language}] (id: ${result.data?.id})`);
+      return { success: true, id: result.data?.id };
+    } catch (error) {
+      console.error('❌ Failed to schedule Day-14 email:', error);
+      return { success: false, error };
+    }
+  }
+
+  /**
+   * Day-30 "one month in" check-in — last email in the drip sequence.
+   * For both subscribers and registered users; soft pitch about the
+   * annual plan (with our usual €6.67/month framing) without making
+   * subscribers feel like a sales target. Asks for a reply to surface
+   * book requests — that doubles as a lightweight retention signal.
+   */
+  static async scheduleDay30Email(recipient: { email: string; firstName?: string }, language: Lang = 'en') {
+    if (!isEmailEnabled()) return { success: false, error: 'Email service not configured' };
+
+    const first = recipient.firstName?.trim();
+
+    const tmpl = pick(language, {
+      en: {
+        subject: 'One month with BookDigest — what hooked you? 📖',
+        header: 'One month with BookDigest',
+        greeting: first ? `Hi ${first},` : 'Hi,',
+        intro: 'A whole month already. Quick check-in: what hooked you, what would you change?',
+        leadIn: 'Two requests:',
+        r1Title: '1. Hit reply with a book',
+        r1Body: "Tell us a book you wish we had a summary for. We add what readers ask for, and the request goes straight to me.",
+        r2Title: '2. If BookDigest stuck',
+        r2Body: 'The annual plan is €79.99/year — that\'s €6.67/month, about half the price of Blinkist. Unlimited summaries, audio, offline. <a href="' + SITE_URL + '/pricing">See pricing</a> if you want it.',
+        outro: "Either way — thanks for trying us. Reply to this email any time.",
+        sign: '— Eric, BookDigest',
+      },
+      de: {
+        subject: 'Ein Monat mit BookDigest — was hat dich gepackt? 📖',
+        header: 'Ein Monat mit BookDigest',
+        greeting: first ? `Hallo ${first},` : 'Hallo,',
+        intro: 'Schon ein ganzer Monat. Kurze Frage: Was hat dich gepackt, was würdest du ändern?',
+        leadIn: 'Zwei Bitten:',
+        r1Title: '1. Antworte mit einem Buch',
+        r1Body: 'Erzähl uns, von welchem Buch du eine Zusammenfassung haben möchtest. Wir nehmen auf, was Leser sich wünschen — und die Anfrage geht direkt an mich.',
+        r2Title: '2. Falls dir BookDigest gefällt',
+        r2Body: 'Der Jahresplan kostet 79,99 € — das sind 6,67 €/Monat, etwa halb so teuer wie Blinkist. Unbegrenzte Zusammenfassungen, Audio, Offline. <a href="' + SITE_URL + '/pricing">Preise ansehen</a>, falls du Interesse hast.',
+        outro: 'So oder so — danke, dass du uns ausprobiert hast. Antworte jederzeit auf diese Mail.',
+        sign: '— Eric, BookDigest',
+      },
+    });
+
+    // Resend caps scheduledAt at 30 days from the request time. Subtract
+    // an hour so a slow API call doesn't push us over the edge and get
+    // rejected — the user won't notice 23h vs 24h on day 30.
+    const scheduledAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000 - 60 * 60 * 1000).toISOString();
+    try {
+      const result = await resend!.emails.send({
+        from: FROM_EMAIL,
+        to: recipient.email,
+        subject: tmpl.subject,
+        scheduledAt,
+        html: `
+          <!DOCTYPE html>
+          <html><head><style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+            .header { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+            .content { background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px; }
+            .request { background: white; padding: 20px; border-radius: 8px; margin: 16px 0; border-left: 4px solid #f59e0b; }
+            .request-title { font-size: 16px; font-weight: bold; color: #b45309; margin: 0 0 8px; }
+            .footer { text-align: center; color: #6b7280; font-size: 14px; margin-top: 30px; }
+          </style></head><body>
+            <div class="container">
+              <div class="header"><h1>${tmpl.header}</h1></div>
+              <div class="content">
+                <p>${tmpl.greeting}</p>
+                <p>${tmpl.intro}</p>
+                <p>${tmpl.leadIn}</p>
+                <div class="request">
+                  <p class="request-title">${tmpl.r1Title}</p>
+                  <p style="margin: 0;">${tmpl.r1Body}</p>
+                </div>
+                <div class="request">
+                  <p class="request-title">${tmpl.r2Title}</p>
+                  <p style="margin: 0;">${tmpl.r2Body}</p>
+                </div>
+                <p>${tmpl.outro}</p>
+                <p>${tmpl.sign}</p>
+              </div>
+              <div class="footer">
+                <a href="${SITE_URL}/terms">Terms</a> | <a href="${SITE_URL}/privacy">Privacy</a>
+              </div>
+            </div>
+          </body></html>
+        `,
+      });
+      console.log(`📬 Day-30 email scheduled for ${recipient.email} [${language}] (id: ${result.data?.id})`);
+      return { success: true, id: result.data?.id };
+    } catch (error) {
+      console.error('❌ Failed to schedule Day-30 email:', error);
+      return { success: false, error };
+    }
+  }
+
+  /**
+   * Single-recipient broadcast send — used by the /api/cron/broadcast
+   * endpoint to blast a campaign to every subscriber + user. The endpoint
+   * iterates, picks the right language per recipient, and calls this.
+   * No template HTML wrapping — the caller provides the full HTML so
+   * the same primitive supports blog posts, feature announcements, etc.
+   */
+  static async sendBroadcast(
+    to: string,
+    language: Lang,
+    content: { subject_en: string; subject_de: string; html_en: string; html_de: string }
+  ) {
+    if (!isEmailEnabled()) return { success: false, error: 'Email service not configured' };
+    const subject = language === 'de' ? content.subject_de : content.subject_en;
+    const html = language === 'de' ? content.html_de : content.html_en;
+    try {
+      const result = await resend!.emails.send({ from: FROM_EMAIL, to, subject, html });
+      if (result.error) {
+        return { success: false, error: `${result.error.name}: ${result.error.message}` };
+      }
+      return { success: true, id: result.data?.id };
+    } catch (err: any) {
+      return { success: false, error: err?.message ?? String(err) };
+    }
+  }
+
+  /**
    * Send payment confirmation email
    */
   static async sendPaymentConfirmation(

@@ -25,6 +25,7 @@ import testPromptRoutes from './routes/test-prompt.routes';
 import dbInfoRoutes from './routes/db-info.routes';
 import germanRoutes from './routes/german.routes';
 import cronRoutes from './routes/cron.routes';
+import broadcastRoutes from './routes/broadcast.routes';
 import { startStreakWarningCron } from './jobs/streak-warning.job';
 import { errorHandler } from './middleware/error.middleware';
 import { logger } from './utils/logger';
@@ -94,6 +95,7 @@ app.use('/api/admin', testPromptRoutes);
 app.use('/api/admin', dbInfoRoutes);
 app.use('/api/admin', germanRoutes);
 app.use('/api/cron', cronRoutes);
+app.use('/api/broadcast', broadcastRoutes);
 
 // Error handling
 app.use(errorHandler);
