@@ -21,7 +21,8 @@
         "update-covers": "tsx src/scripts/update-covers.ts",
         "generate:audio": "tsx src/scripts/generate-audio-google.ts",
         "generate:audio:polly": "tsx src/scripts/generate-audio-polly.ts",
-        "broadcast:audio-announcement": "tsx src/scripts/broadcast-audio-announcement.ts"
+        "broadcast:audio-announcement": "tsx src/scripts/broadcast-audio-announcement.ts",
+        "email:stats": "tsx src/scripts/email-stats.ts"
     },
     "prisma": {
         "seed": "tsx prisma/seed.ts"
