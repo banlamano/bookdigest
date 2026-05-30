@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { prisma } from '../lib/prisma';
 import { EmailService } from '../services/email.service';
+import { syncContact } from '../services/resend-audience.service';
 
 const router = Router();
 
@@ -58,6 +59,13 @@ router.post('/capture', async (req, res) => {
     );
     void EmailService.scheduleDay30Email({ email: normalized }, lang).catch(err =>
       console.error('Newsletter Day-30 schedule failed:', err)
+    );
+
+    // Mirror the subscriber into the matching Resend Audience so the
+    // Resend dashboard's Audience tab stays in sync with our DB.
+    // No-ops if RESEND_AUDIENCE_<lang>_ID isn't set.
+    void syncContact({ email: normalized, language: lang }).catch(err =>
+      console.error('Resend audience sync failed:', err)
     );
 
     return res.json({

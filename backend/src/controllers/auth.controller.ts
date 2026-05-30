@@ -6,6 +6,7 @@ import { prisma } from '../lib/prisma';
 import { AppError } from '../middleware/error.middleware';
 import { logger } from '../utils/logger';
 import { EmailService } from '../services/email.service';
+import { syncContact } from '../services/resend-audience.service';
 
 
 // Generate JWT token
@@ -74,6 +75,15 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
       .catch(err => logger.error('Failed to schedule day-14 email:', err));
     EmailService.scheduleDay30Email(emailRecipient, lang)
       .catch(err => logger.error('Failed to schedule day-30 email:', err));
+
+    // Mirror the user into the matching Resend Audience for dashboard
+    // visibility. No-ops if RESEND_AUDIENCE_<lang>_ID isn't set.
+    syncContact({
+      email: user.email,
+      firstName: user.firstName ?? undefined,
+      lastName: user.lastName ?? undefined,
+      language: lang,
+    }).catch(err => logger.error('Resend audience sync failed:', err));
 
     logger.info(`New user registered: ${email} [${lang}]`);
 

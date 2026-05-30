@@ -1,6 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { prisma } from '../lib/prisma';
 import { verifyUnsubscribeToken, getSiteUrl } from '../utils/unsubscribe';
+import { markUnsubscribed } from '../services/resend-audience.service';
 
 const router = Router();
 
@@ -101,6 +102,16 @@ router.get('/', async (req: Request, res: Response) => {
   const now = new Date();
 
   try {
+    // Read the saved language BEFORE updating so we know which Resend
+    // Audience to mark unsubscribed. Subscriber's language wins if both
+    // rows exist — usually they're the same person anyway.
+    const [subRow, userRow] = await Promise.all([
+      prisma.emailSubscriber.findUnique({ where: { email: normalized }, select: { language: true } }),
+      prisma.user.findUnique({ where: { email: normalized }, select: { language: true } }),
+    ]);
+    const savedLang: 'en' | 'de' =
+      (subRow?.language === 'de' || userRow?.language === 'de') ? 'de' : 'en';
+
     const [subResult, userResult] = await Promise.all([
       prisma.emailSubscriber.updateMany({
         where: { email: normalized, unsubscribedAt: null },
@@ -114,6 +125,12 @@ router.get('/', async (req: Request, res: Response) => {
 
     const touched = subResult.count + userResult.count;
     console.log(`📭 Unsubscribed ${email} (${touched} row(s) updated, lang=${lang})`);
+
+    // Mirror the unsubscribe into the saved-language Resend Audience.
+    // Fire-and-forget; no-ops if audience IDs aren't configured.
+    void markUnsubscribed(normalized, savedLang).catch(err =>
+      console.error('Resend audience unsubscribe sync failed:', err)
+    );
 
     const labels = lang === 'de'
       ? {

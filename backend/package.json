@@ -22,7 +22,8 @@
         "generate:audio": "tsx src/scripts/generate-audio-google.ts",
         "generate:audio:polly": "tsx src/scripts/generate-audio-polly.ts",
         "broadcast:audio-announcement": "tsx src/scripts/broadcast-audio-announcement.ts",
-        "email:stats": "tsx src/scripts/email-stats.ts"
+        "email:stats": "tsx src/scripts/email-stats.ts",
+        "resend:sync-audience": "tsx src/scripts/sync-resend-audience.ts"
     },
     "prisma": {
         "seed": "tsx prisma/seed.ts"
