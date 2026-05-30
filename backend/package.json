@@ -20,7 +20,8 @@
         "setup:dev": "npm run prisma:generate && npm run prisma:migrate && npm run prisma:seed",
         "update-covers": "tsx src/scripts/update-covers.ts",
         "generate:audio": "tsx src/scripts/generate-audio-google.ts",
-        "generate:audio:polly": "tsx src/scripts/generate-audio-polly.ts"
+        "generate:audio:polly": "tsx src/scripts/generate-audio-polly.ts",
+        "broadcast:audio-announcement": "tsx src/scripts/broadcast-audio-announcement.ts"
     },
     "prisma": {
         "seed": "tsx prisma/seed.ts"
