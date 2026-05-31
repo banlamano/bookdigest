@@ -75,17 +75,23 @@ export class EmailService {
    * NOT created an account, so the CTA is to browse the library and to
    * register, not to start reading.
    */
-  static async sendNewsletterWelcome(email: string, language: Lang = 'en') {
+  static async sendNewsletterWelcome(email: string, language: Lang = 'en', firstName?: string) {
     if (!isEmailEnabled()) {
       console.log('⚠️  Email service not configured, skipping newsletter welcome');
       return { success: false, error: 'Email service not configured' };
     }
 
+    // Personalised greeting if we have a name. Falls back to a friendly
+    // "Hi there," / "Hallo zusammen," rather than the awkward "Hi ,".
+    const first = firstName?.trim();
+    const greetingEn = first ? `Hi ${first},` : 'Hi there,';
+    const greetingDe = first ? `Hallo ${first},` : 'Hallo zusammen,';
+
     const tmpl = pick(language, {
       en: {
         subject: 'Welcome to BookDigest — your first 3 summaries are on us 📚',
         header: '📚 Welcome to BookDigest',
-        greeting: 'Hey,',
+        greeting: greetingEn,
         intro: "Thanks for signing up. You're now on the list — you'll hear from us when we add the books most readers ask for, and when we ship features worth your time.",
         cta1: 'Want to start reading right now? Create a free account and you get <strong>3 summaries this month</strong>, no credit card needed:',
         ctaButton: 'Create free account →',
@@ -97,7 +103,7 @@ export class EmailService {
       de: {
         subject: 'Willkommen bei BookDigest — deine ersten 3 Zusammenfassungen gehen auf uns 📚',
         header: '📚 Willkommen bei BookDigest',
-        greeting: 'Hallo,',
+        greeting: greetingDe,
         intro: 'Danke für deine Anmeldung. Du stehst jetzt auf der Liste — du hörst von uns, sobald wir neue Bücher hinzufügen oder Features veröffentlichen, die deine Zeit wert sind.',
         cta1: 'Direkt loslesen? Erstelle ein kostenloses Konto und du bekommst <strong>3 Zusammenfassungen pro Monat</strong>, keine Kreditkarte nötig:',
         ctaButton: 'Kostenloses Konto erstellen →',

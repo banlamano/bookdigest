@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Mail, Gift, Sparkles } from 'lucide-react';
+import { X, Mail, Gift, Sparkles, User } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { useLanguage } from '@/components/LanguageProvider';
 
@@ -10,6 +10,7 @@ export default function EmailCapturePopup() {
   const { t, language } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [email, setEmail] = useState('');
+  const [firstName, setFirstName] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
@@ -49,7 +50,12 @@ export default function EmailCapturePopup() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, language, source: 'popup' }),
+        body: JSON.stringify({
+          email,
+          firstName: firstName.trim() || undefined,
+          language,
+          source: 'popup',
+        }),
       });
 
       const data = await response.json();
@@ -64,6 +70,7 @@ export default function EmailCapturePopup() {
       toast.success(t('emailPopup.success'));
       setIsOpen(false);
       setEmail('');
+      setFirstName('');
     } catch (error: any) {
       console.error('Email capture error:', error);
       toast.error(error.message || t('emailPopup.errorGeneric'));
@@ -171,7 +178,18 @@ export default function EmailCapturePopup() {
               </div>
 
               {/* Email Form */}
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-3">
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                  <input
+                    type="text"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    placeholder={t('emailPopup.namePlaceholder')}
+                    maxLength={50}
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
+                  />
+                </div>
                 <div className="relative">
                   <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
                   <input

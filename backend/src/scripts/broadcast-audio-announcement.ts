@@ -44,7 +44,7 @@ const html_en = `
   <div class="container">
     <div class="header"><h1>🎧 Real audio just got real</h1></div>
     <div class="content">
-      <p>Hi,</p>
+      <p>Hi {{name}},</p>
       <p>Quick note about something we shipped this week: BookDigest audio now narrates the <strong>complete</strong> summary — not just the intro.</p>
       <p>Until now, the audio for each book covered the long-form summary (~5 minutes). That left out the parts readers actually quote later: the key insights, chapter-by-chapter breakdown, memorable quotes, and action items.</p>
       <p>Now it covers all of them.</p>
@@ -79,7 +79,7 @@ const html_de = `
   <div class="container">
     <div class="header"><h1>🎧 Echtes Audio wird jetzt richtig</h1></div>
     <div class="content">
-      <p>Hallo,</p>
+      <p>Hallo {{name}},</p>
       <p>Kurze Notiz zu etwas, das wir diese Woche ausgeliefert haben: BookDigest-Audio liest jetzt die <strong>komplette</strong> Zusammenfassung vor — nicht nur den Einstieg.</p>
       <p>Bisher deckte das Audio die ausführliche Zusammenfassung ab (~5 Minuten). Damit fehlten die Teile, die Leser später am häufigsten zitieren: die wichtigsten Erkenntnisse, die Kapitel-für-Kapitel-Aufschlüsselung, einprägsame Zitate und Handlungsempfehlungen.</p>
       <p>Jetzt sind alle dabei.</p>

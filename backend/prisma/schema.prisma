@@ -250,6 +250,8 @@ model Transaction {
 model EmailSubscriber {
   id            String    @id @default(uuid())
   email         String    @unique
+  firstName     String?   // Optional — popup asks but doesn't require. Used in
+                          // greetings: "Hi John," vs "Hi there," fallback.
   source        String?   // 'popup' | 'footer' | 'manual' — where the signup came from
   language      String    @default("en")  // 'en' | 'de' — for any future newsletter sends
   confirmedAt   DateTime?

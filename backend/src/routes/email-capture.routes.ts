@@ -18,8 +18,12 @@ const router = Router();
  */
 router.post('/capture', async (req, res) => {
   try {
-    const { email, source, language } = req.body;
+    const { email, source, language, firstName } = req.body;
     const normalized = typeof email === 'string' ? email.trim().toLowerCase() : '';
+    const cleanFirstName =
+      typeof firstName === 'string' && firstName.trim().length > 0
+        ? firstName.trim().slice(0, 50)
+        : undefined;
 
     if (!normalized || !normalized.includes('@') || !normalized.includes('.')) {
       return res.status(400).json({
@@ -38,12 +42,15 @@ router.post('/capture', async (req, res) => {
       where: { email: normalized },
       create: {
         email: normalized,
+        firstName: cleanFirstName,
         source: typeof source === 'string' ? source.slice(0, 32) : 'popup',
         language: lang,
       },
       update: {
-        // Refresh source + language if they changed since last signup
+        // Refresh source + language if they changed since last signup;
+        // only overwrite firstName if a new non-empty one is provided.
         ...(typeof source === 'string' ? { source: source.slice(0, 32) } : {}),
+        ...(cleanFirstName ? { firstName: cleanFirstName } : {}),
         language: lang,
       },
     });
@@ -51,20 +58,20 @@ router.post('/capture', async (req, res) => {
     // Fire-and-forget welcome email + Day-14 / Day-30 nurture. We DON'T
     // await — the subscriber shouldn't wait on Resend latency. Errors
     // are logged inside the service.
-    void EmailService.sendNewsletterWelcome(normalized, lang).catch(err =>
+    void EmailService.sendNewsletterWelcome(normalized, lang, cleanFirstName).catch(err =>
       console.error('Newsletter welcome failed:', err)
     );
-    void EmailService.scheduleDay14Email({ email: normalized }, lang).catch(err =>
+    void EmailService.scheduleDay14Email({ email: normalized, firstName: cleanFirstName }, lang).catch(err =>
       console.error('Newsletter Day-14 schedule failed:', err)
     );
-    void EmailService.scheduleDay30Email({ email: normalized }, lang).catch(err =>
+    void EmailService.scheduleDay30Email({ email: normalized, firstName: cleanFirstName }, lang).catch(err =>
       console.error('Newsletter Day-30 schedule failed:', err)
     );
 
     // Mirror the subscriber into the matching Resend Audience so the
     // Resend dashboard's Audience tab stays in sync with our DB.
     // No-ops if RESEND_AUDIENCE_<lang>_ID isn't set.
-    void syncContact({ email: normalized, language: lang }).catch(err =>
+    void syncContact({ email: normalized, firstName: cleanFirstName, language: lang }).catch(err =>
       console.error('Resend audience sync failed:', err)
     );
 
