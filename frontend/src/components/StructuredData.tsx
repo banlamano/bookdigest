@@ -14,7 +14,7 @@ export function WebsiteStructuredData() {
       name: 'BookDigest',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://book-digest.com/icon-192.png',
+        url: 'https://book-digest.com/icon.svg',
       },
     },
     potentialAction: {
@@ -115,7 +115,7 @@ export function OrganizationStructuredData() {
     url: 'https://book-digest.com',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://book-digest.com/icon-192.png',
+      url: 'https://book-digest.com/icon.svg',
       width: 192,
       height: 192,
     },
