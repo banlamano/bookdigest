@@ -85,6 +85,19 @@ export const metadata: Metadata = {
     statusBarStyle: 'default',
     title: 'BookDigest',
   },
+  // Without these declarations, browsers fall back to /favicon.ico
+  // which we don't ship — visitors see the generic browser globe.
+  // icon-192.png is the brand mark used in the PWA install + structured
+  // data; reusing it as the favicon means one asset, one source of truth.
+  icons: {
+    icon: [
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    shortcut: '/icon-192.png',
+    apple: [
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+    ],
+  },
   robots: {
     index: true,
     follow: true,
@@ -105,7 +118,10 @@ export const metadata: Metadata = {
     siteName: 'BookDigest',
     images: [
       {
-        url: '/og-image.png',
+        // Was /og-image.png which doesn't exist (404). The actual file
+        // is /og-image.svg — Facebook, Twitter, and LinkedIn all support
+        // SVG OG images as of 2024+.
+        url: '/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'BookDigest - Free AI-Powered Book Summaries - Learn from 900+ Books',
@@ -116,7 +132,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'BookDigest - Free AI Book Summaries',
     description: '900+ free book summaries. Learn from bestselling books quickly. Better than Blinkist.',
-    images: ['/og-image.png'],
+    images: ['/og-image.svg'],
   },
   alternates: {
     canonical: 'https://book-digest.com',
