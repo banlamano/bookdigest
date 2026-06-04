@@ -174,6 +174,7 @@ const translations: Record<Language, Record<string, string>> = {
     'search.clearSearch': 'Clear Search',
     'search.resultsCount': 'Found {count} results for "{query}"',
     'search.resultsCountSingle': 'Found 1 result for "{query}"',
+    'search.seeAll': 'See all results for "{query}" →',
 
     // Categories page
     'categories.browseByCategory': 'Browse by Category',
@@ -687,6 +688,7 @@ const translations: Record<Language, Record<string, string>> = {
     'search.clearSearch': 'Suche löschen',
     'search.resultsCount': '{count} Ergebnisse für "{query}" gefunden',
     'search.resultsCountSingle': '1 Ergebnis für "{query}" gefunden',
+    'search.seeAll': 'Alle Ergebnisse für "{query}" anzeigen →',
 
     // Subscription
     'subscription.title': 'Abonnement',

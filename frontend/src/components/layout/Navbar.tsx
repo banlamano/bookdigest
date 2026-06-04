@@ -3,11 +3,12 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import { BookOpen, Search, Menu, X, Sun, Moon, User, LogOut } from 'lucide-react';
+import { BookOpen, Menu, X, Sun, Moon, User, LogOut } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 import { useRouter } from 'next/navigation';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import { useLanguage } from '@/components/LanguageProvider';
+import SearchAutocomplete from '@/components/SearchAutocomplete';
 
 export function Navbar() {
   const { t } = useLanguage();
@@ -53,9 +54,9 @@ export function Navbar() {
             <Link href="/pricing" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
               {t('nav.pricing')}
             </Link>
-            <Link href="/search" className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400">
-              <Search className="w-5 h-5" />
-            </Link>
+            <div className="w-64 lg:w-72">
+              <SearchAutocomplete variant="navbar" />
+            </div>
           </div>
 
           {/* Right Side Actions */}

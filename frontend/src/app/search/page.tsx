@@ -1,29 +1,26 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { useQuery } from '@tanstack/react-query';
 import { booksAPI } from '@/lib/api';
 import { BookCardSkeleton } from '@/components/books/BookCardSkeleton';
-import { Search, X } from 'lucide-react';
+import { Search } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { BookCard } from '@/components/books/BookCard';
 import { useLanguage } from '@/components/LanguageProvider';
+import SearchAutocomplete from '@/components/SearchAutocomplete';
 
-export default function SearchPage() {
+function SearchPageContent() {
   const { t } = useLanguage();
-  const [searchQuery, setSearchQuery] = useState('');
-  const [debouncedQuery, setDebouncedQuery] = useState('');
+  const params = useSearchParams();
+  const initialQuery = params?.get('q') || '';
   const [page, setPage] = useState(1);
 
-  // Debounce search
-  const handleSearch = (value: string) => {
-    setSearchQuery(value);
-    const timer = setTimeout(() => {
-      setDebouncedQuery(value);
-      setPage(1);
-    }, 500);
-    return () => clearTimeout(timer);
-  };
+  // The autocomplete handles its own typing UX. We also keep a "results
+  // for this URL ?q=" grid below — useful when users land via the
+  // navbar's "See all results →" link or a shared URL.
+  const debouncedQuery = initialQuery;
 
   const { data, isLoading } = useQuery({
     queryKey: ['search', debouncedQuery, page],
@@ -34,7 +31,6 @@ export default function SearchPage() {
   const books = data?.data?.data?.books || [];
   const pagination = data?.data?.data?.pagination;
 
-  // Track search queries with Google Analytics
   useEffect(() => {
     if (debouncedQuery && books) {
       import('@/lib/analytics').then(({ trackSearch }) => {
@@ -60,29 +56,9 @@ export default function SearchPage() {
           </p>
         </motion.div>
 
-        {/* Search Bar */}
+        {/* Search Bar (autocomplete) */}
         <div className="max-w-2xl mx-auto mb-12">
-          <div className="relative">
-            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-            <input
-              type="text"
-              placeholder={t('search.placeholder')}
-              value={searchQuery}
-              onChange={(e) => handleSearch(e.target.value)}
-              className="w-full pl-12 pr-12 py-4 rounded-xl border-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-primary-500 focus:border-transparent text-lg"
-            />
-            {searchQuery && (
-              <button
-                onClick={() => {
-                  setSearchQuery('');
-                  setDebouncedQuery('');
-                }}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
-              >
-                <X className="w-5 h-5" />
-              </button>
-            )}
-          </div>
+          <SearchAutocomplete variant="page" autoFocus initialQuery={initialQuery} />
         </div>
 
         {/* Results */}
@@ -104,15 +80,6 @@ export default function SearchPage() {
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               {t('search.noBooksFound').replace('{query}', debouncedQuery)}
             </p>
-            <button
-              onClick={() => {
-                setSearchQuery('');
-                setDebouncedQuery('');
-              }}
-              className="btn-primary"
-            >
-              {t('search.clearSearch')}
-            </button>
           </div>
         ) : (
           <>
@@ -156,5 +123,13 @@ export default function SearchPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={null}>
+      <SearchPageContent />
+    </Suspense>
   );
 }
