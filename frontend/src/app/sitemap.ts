@@ -6,7 +6,10 @@ export const revalidate = 3600; // Revalidate every hour
 
 async function getBooks() {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/books?limit=1000`, {
+    // language=all bypasses the controller's default `language=en` filter so
+    // both EN and DE books make it into the sitemap. Without this, half the
+    // catalog (the German books) was invisible to Google.
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/books?limit=2000&language=all`, {
       next: { revalidate: 3600 }
     });
     const data = await response.json();
