@@ -50,7 +50,12 @@ function chunkText(text: string, maxChars = MAX_CHARS_PER_CHUNK): string[] {
   return chunks;
 }
 
-async function synthesizeChunk(text: string, language: string): Promise<Buffer> {
+// One attempt at the TTS call. Throws a tagged error so the retry wrapper
+// can tell a transient failure (network drop / 429 / 5xx) from a permanent
+// one (4xx bad input — retrying that just wastes the char budget).
+class RetryableError extends Error {}
+
+async function synthesizeChunkOnce(text: string, language: string): Promise<Buffer> {
   const isDE = language === 'de';
   const body = {
     input: { text },
@@ -65,19 +70,48 @@ async function synthesizeChunk(text: string, language: string): Promise<Buffer> 
     },
   };
 
-  const res = await fetch(`${TTS_ENDPOINT}?key=${GOOGLE_TTS_API_KEY}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
+  let res: Response;
+  try {
+    res = await fetch(`${TTS_ENDPOINT}?key=${GOOGLE_TTS_API_KEY}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+  } catch (err: any) {
+    // Network-level failure ("fetch failed", ECONNRESET, ETIMEDOUT…) — transient.
+    throw new RetryableError(err?.message || 'network error');
+  }
 
   if (!res.ok) {
     const errText = await res.text();
+    // 429 (rate limit) and 5xx (server) are worth retrying; 4xx is not.
+    if (res.status === 429 || res.status >= 500) {
+      throw new RetryableError(`Google TTS ${res.status}: ${errText}`);
+    }
     throw new Error(`Google TTS ${res.status}: ${errText}`);
   }
 
   const data = (await res.json()) as { audioContent: string };
   return Buffer.from(data.audioContent, 'base64');
+}
+
+// Retry transient failures with exponential backoff (0.5s, 1s, 2s, 4s).
+// Permanent errors bubble up immediately. Logs each retry inline so the
+// run output shows what happened without failing the whole book.
+async function synthesizeChunk(text: string, language: string, maxAttempts = 5): Promise<Buffer> {
+  let lastErr: unknown;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      return await synthesizeChunkOnce(text, language);
+    } catch (err) {
+      lastErr = err;
+      if (!(err instanceof RetryableError) || attempt === maxAttempts) throw err;
+      const backoffMs = 500 * 2 ** (attempt - 1);
+      process.stdout.write(`↻retry ${attempt}/${maxAttempts - 1} in ${backoffMs}ms... `);
+      await new Promise(r => setTimeout(r, backoffMs));
+    }
+  }
+  throw lastErr; // unreachable, but satisfies the type checker
 }
 
 async function generateAudio(book: Book): Promise<{ url: string; chars: number; sizeKB: number }> {
