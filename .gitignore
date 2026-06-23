@@ -70,3 +70,9 @@ frontend/public/audio/
 
 # Local backups (audio + db dumps + secrets) — never commit
 .backups/
+
+# Service-account keys for the SEO report (npm run seo:weekly). Explicit,
+# case-sensitive rule so a dropped key never leaks on Linux/CI too.
+secrets/
+backend/secrets/
+*.sa.json
