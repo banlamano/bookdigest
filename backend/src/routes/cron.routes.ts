@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { runStreakWarnings } from '../jobs/streak-warning.job';
+import { runWeeklySeoReport } from '../jobs/seo-report.job';
 import { prisma } from '../lib/prisma';
 import { syncContact, SyncContact } from '../services/resend-audience.service';
 
@@ -47,6 +48,24 @@ router.get('/streak-warnings', async (req: Request, res: Response) => {
     res.status(500).json({ success: false, message: err.message });
   }
 });
+
+// Weekly SEO report — generate + email it on demand. Backup for the
+// in-process cron, and handy for testing ("does it actually send?").
+// Optional ?days=28 to widen the window. GET + POST both supported.
+async function seoReportHandler(req: Request, res: Response) {
+  if (!checkCronSecret(req)) {
+    return res.status(403).json({ success: false, message: 'Invalid secret' });
+  }
+  try {
+    const days = parseInt((req.query.days as string) || '7', 10) || 7;
+    const result = await runWeeklySeoReport(days);
+    res.json({ success: result.sent, ...result });
+  } catch (err: any) {
+    res.status(500).json({ success: false, message: err.message });
+  }
+}
+router.post('/seo-report', seoReportHandler);
+router.get('/seo-report', seoReportHandler);
 
 /**
  * Trigger the one-shot Resend Audience backfill from prod, where the

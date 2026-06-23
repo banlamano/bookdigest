@@ -70,6 +70,26 @@ export class EmailService {
   }
 
   /**
+   * Plain admin/internal notification — no template wrapping, no unsubscribe
+   * footer (it's not marketing, it goes to the operator). Used by the weekly
+   * SEO report cron. Caller supplies the full HTML body.
+   */
+  static async sendAdminNotification(to: string, subject: string, html: string) {
+    if (!resend) {
+      return { success: false, error: 'RESEND_API_KEY is not configured on this server' };
+    }
+    try {
+      const result = await resend.emails.send({ from: FROM_EMAIL, to, subject, html });
+      if (result.error) {
+        return { success: false, error: `${result.error.name}: ${result.error.message}` };
+      }
+      return { success: true, id: result.data?.id };
+    } catch (err: any) {
+      return { success: false, error: err?.message ?? String(err) };
+    }
+  }
+
+  /**
    * Welcome email for the newsletter-popup signup. Different audience from
    * sendWelcomeEmail (which is for registered users) — the subscriber has
    * NOT created an account, so the CTA is to browse the library and to

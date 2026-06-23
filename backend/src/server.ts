@@ -28,6 +28,7 @@ import cronRoutes from './routes/cron.routes';
 import broadcastRoutes from './routes/broadcast.routes';
 import unsubscribeRoutes from './routes/unsubscribe.routes';
 import { startStreakWarningCron } from './jobs/streak-warning.job';
+import { startSeoReportCron } from './jobs/seo-report.job';
 import { errorHandler } from './middleware/error.middleware';
 import { logger } from './utils/logger';
 dotenv.config();
@@ -135,6 +136,14 @@ app.listen(PORT, async () => {
     startStreakWarningCron();
   } catch (err) {
     logger.warn('Failed to start streak-warning cron:', err);
+  }
+
+  // Weekly SEO health report email (Mondays 08:00 UTC). Same caveat: an
+  // external scheduler hitting POST /api/cron/seo-report is the backup.
+  try {
+    startSeoReportCron();
+  } catch (err) {
+    logger.warn('Failed to start SEO report cron:', err);
   }
 });
 

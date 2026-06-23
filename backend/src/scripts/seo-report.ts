@@ -19,6 +19,10 @@
  *
  * The report degrades gracefully: if only one of the two is configured it
  * prints that half and tells you what's missing for the other.
+ *
+ * The CLI prints the report; the weekly cron job (seo-report.job.ts) reuses
+ * `generateSeoReport()` to email the same text. Keep formatting plain-text so
+ * it reads fine in both a terminal and an email <pre> block.
  */
 import * as dotenv from 'dotenv';
 import * as path from 'path';
@@ -47,7 +51,7 @@ function isoDaysAgo(days: number): string {
 }
 
 // ---- auth ---------------------------------------------------------------------
-function loadCredentials(): Record<string, unknown> | null {
+export function loadCredentials(): Record<string, unknown> | null {
   const inline = process.env.GOOGLE_SA_KEY_JSON;
   if (inline && inline.trim().startsWith('{')) {
     try {
@@ -68,8 +72,7 @@ function loadCredentials(): Record<string, unknown> | null {
   return null;
 }
 
-function printSetupHelp() {
-  console.log(`
+const SETUP_HELP = `
 🔑  No Google service-account credentials found, so this report can't run yet.
     One-time setup (≈5 min):
 
@@ -87,11 +90,10 @@ function printSetupHelp() {
          GA4_PROPERTY_ID=<your numeric GA4 property id>
 
     Then: npm run seo:weekly
-`);
-}
+`;
 
 // ---- Search Console -----------------------------------------------------------
-async function searchConsoleSection(auth: any, siteUrl: string, days: number) {
+async function searchConsoleSection(auth: any, siteUrl: string, days: number, out: string[]) {
   const sc = google.searchconsole({ version: 'v1', auth });
 
   const curStart = isoDaysAgo(days);
@@ -129,35 +131,35 @@ async function searchConsoleSection(auth: any, siteUrl: string, days: number) {
     byDimension('country', 15),
   ]);
 
-  console.log(`\n🔍  SEARCH CONSOLE  —  ${siteUrl}`);
-  console.log(`    Window: ${curStart} → ${curEnd}  (vs prior ${days} days)\n`);
-  console.log(`    Clicks       ${pad(nf.format(Math.round(cur.clicks)), 9)} ${delta(cur.clicks, prev.clicks)}`);
-  console.log(`    Impressions  ${pad(nf.format(Math.round(cur.impressions)), 9)} ${delta(cur.impressions, prev.impressions)}`);
-  console.log(`    CTR          ${pad(pct(cur.ctr), 9)} ${delta(cur.ctr, prev.ctr)}`);
-  console.log(`    Avg position ${pad(cur.position.toFixed(1), 9)} ${delta(prev.position, cur.position)} (lower is better)`);
+  out.push(`\n🔍  SEARCH CONSOLE  —  ${siteUrl}`);
+  out.push(`    Window: ${curStart} → ${curEnd}  (vs prior ${days} days)\n`);
+  out.push(`    Clicks       ${pad(nf.format(Math.round(cur.clicks)), 9)} ${delta(cur.clicks, prev.clicks)}`);
+  out.push(`    Impressions  ${pad(nf.format(Math.round(cur.impressions)), 9)} ${delta(cur.impressions, prev.impressions)}`);
+  out.push(`    CTR          ${pad(pct(cur.ctr), 9)} ${delta(cur.ctr, prev.ctr)}`);
+  out.push(`    Avg position ${pad(cur.position.toFixed(1), 9)} ${delta(prev.position, cur.position)} (lower is better)`);
 
   // DE vs US split — the whole point of the sitemap fix was unlocking the
   // German catalog, so call those two out explicitly.
   const de = countries.find((r) => r.keys?.[0] === 'deu');
   const us = countries.find((r) => r.keys?.[0] === 'usa');
-  console.log(`\n    By country (impressions):`);
-  console.log(`      🇩🇪 Germany  ${pad(nf.format(Math.round(de?.impressions ?? 0)), 9)}  (${nf.format(Math.round(de?.clicks ?? 0))} clicks)`);
-  console.log(`      🇺🇸 USA      ${pad(nf.format(Math.round(us?.impressions ?? 0)), 9)}  (${nf.format(Math.round(us?.clicks ?? 0))} clicks)`);
+  out.push(`\n    By country (impressions):`);
+  out.push(`      🇩🇪 Germany  ${pad(nf.format(Math.round(de?.impressions ?? 0)), 9)}  (${nf.format(Math.round(de?.clicks ?? 0))} clicks)`);
+  out.push(`      🇺🇸 USA      ${pad(nf.format(Math.round(us?.impressions ?? 0)), 9)}  (${nf.format(Math.round(us?.clicks ?? 0))} clicks)`);
 
-  console.log(`\n    Top queries:`);
+  out.push(`\n    Top queries:`);
   for (const r of queries.slice(0, 10)) {
-    console.log(`      ${pad(r.keys?.[0] ?? '', 38)} ${pad(nf.format(Math.round(r.impressions ?? 0)) + ' imp', 12)} ${nf.format(Math.round(r.clicks ?? 0))} clk`);
+    out.push(`      ${pad(r.keys?.[0] ?? '', 38)} ${pad(nf.format(Math.round(r.impressions ?? 0)) + ' imp', 12)} ${nf.format(Math.round(r.clicks ?? 0))} clk`);
   }
 
-  console.log(`\n    Top pages:`);
+  out.push(`\n    Top pages:`);
   for (const r of pages.slice(0, 10)) {
     const url = (r.keys?.[0] ?? '').replace('https://book-digest.com', '');
-    console.log(`      ${pad(url, 44)} ${pad(nf.format(Math.round(r.impressions ?? 0)) + ' imp', 12)} ${nf.format(Math.round(r.clicks ?? 0))} clk`);
+    out.push(`      ${pad(url, 44)} ${pad(nf.format(Math.round(r.impressions ?? 0)) + ' imp', 12)} ${nf.format(Math.round(r.clicks ?? 0))} clk`);
   }
 }
 
 // ---- GA4 ----------------------------------------------------------------------
-async function ga4Section(auth: any, propertyId: string, days: number) {
+async function ga4Section(auth: any, propertyId: string, days: number, out: string[]) {
   const data = google.analyticsdata({ version: 'v1beta', auth });
   const property = `properties/${propertyId}`;
 
@@ -203,37 +205,39 @@ async function ga4Section(auth: any, propertyId: string, days: number) {
   const cur = overview.data.rows?.[0]?.metricValues?.map((m) => Number(m.value)) ?? [0, 0, 0, 0];
   const prev = overview.data.rows?.[1]?.metricValues?.map((m) => Number(m.value)) ?? [0, 0, 0, 0];
 
-  console.log(`\n📈  GA4  —  property ${propertyId}`);
-  console.log(`    Window: last ${days} days (vs prior ${days})\n`);
-  console.log(`    Active users  ${pad(nf.format(cur[0]), 9)} ${delta(cur[0], prev[0])}`);
-  console.log(`    Sessions      ${pad(nf.format(cur[1]), 9)} ${delta(cur[1], prev[1])}`);
-  console.log(`    Page views    ${pad(nf.format(cur[2]), 9)} ${delta(cur[2], prev[2])}`);
-  console.log(`    Avg session   ${pad(`${Math.round(cur[3])}s`, 9)} ${delta(cur[3], prev[3])}`);
+  out.push(`\n📈  GA4  —  property ${propertyId}`);
+  out.push(`    Window: last ${days} days (vs prior ${days})\n`);
+  out.push(`    Active users  ${pad(nf.format(cur[0]), 9)} ${delta(cur[0], prev[0])}`);
+  out.push(`    Sessions      ${pad(nf.format(cur[1]), 9)} ${delta(cur[1], prev[1])}`);
+  out.push(`    Page views    ${pad(nf.format(cur[2]), 9)} ${delta(cur[2], prev[2])}`);
+  out.push(`    Avg session   ${pad(`${Math.round(cur[3])}s`, 9)} ${delta(cur[3], prev[3])}`);
 
-  console.log(`\n    Users by country:`);
+  out.push(`\n    Users by country:`);
   for (const r of byCountry.data.rows ?? []) {
-    console.log(`      ${pad(r.dimensionValues?.[0]?.value ?? '', 24)} ${nf.format(Number(r.metricValues?.[0]?.value ?? 0))}`);
+    out.push(`      ${pad(r.dimensionValues?.[0]?.value ?? '', 24)} ${nf.format(Number(r.metricValues?.[0]?.value ?? 0))}`);
   }
 
-  console.log(`\n    Sessions by channel:`);
+  out.push(`\n    Sessions by channel:`);
   for (const r of bySource.data.rows ?? []) {
-    console.log(`      ${pad(r.dimensionValues?.[0]?.value ?? '', 24)} ${nf.format(Number(r.metricValues?.[0]?.value ?? 0))}`);
+    out.push(`      ${pad(r.dimensionValues?.[0]?.value ?? '', 24)} ${nf.format(Number(r.metricValues?.[0]?.value ?? 0))}`);
   }
 
-  console.log(`\n    Top pages (views):`);
+  out.push(`\n    Top pages (views):`);
   for (const r of topPages.data.rows ?? []) {
-    console.log(`      ${pad(r.dimensionValues?.[0]?.value ?? '', 44)} ${nf.format(Number(r.metricValues?.[0]?.value ?? 0))}`);
+    out.push(`      ${pad(r.dimensionValues?.[0]?.value ?? '', 44)} ${nf.format(Number(r.metricValues?.[0]?.value ?? 0))}`);
   }
 }
 
-// ---- main ---------------------------------------------------------------------
-async function main() {
-  const days = parseInt(process.argv[2] ?? '7', 10) || 7;
-
+/**
+ * Build the full report as plain text. Returns { ok, text }: ok is false only
+ * when credentials are missing entirely (text then holds the setup help).
+ * Individual section failures are caught and noted inline so one broken API
+ * never blanks the whole report.
+ */
+export async function generateSeoReport(days = 7): Promise<{ ok: boolean; text: string }> {
   const credentials = loadCredentials();
   if (!credentials) {
-    printSetupHelp();
-    process.exit(1);
+    return { ok: false, text: SETUP_HELP };
   }
 
   const auth = new google.auth.GoogleAuth({
@@ -245,39 +249,52 @@ async function main() {
   });
   const client = await auth.getClient();
 
-  console.log('═'.repeat(72));
-  console.log(`  📊  WEEKLY SEO REPORT  —  ${new Date().toISOString().slice(0, 10)}  (last ${days} days)`);
-  console.log('═'.repeat(72));
+  const out: string[] = [];
+  out.push('═'.repeat(72));
+  out.push(`  📊  WEEKLY SEO REPORT  —  ${new Date().toISOString().slice(0, 10)}  (last ${days} days)`);
+  out.push('═'.repeat(72));
 
   const siteUrl = process.env.SC_SITE_URL;
   const ga4 = process.env.GA4_PROPERTY_ID;
 
   if (siteUrl) {
     try {
-      await searchConsoleSection(client as any, siteUrl, days);
+      await searchConsoleSection(client as any, siteUrl, days, out);
     } catch (err: any) {
-      console.error(`\n🔍  Search Console section failed: ${err?.message ?? err}`);
-      console.error('    (Is the service-account email added as a user on the property?)');
+      out.push(`\n🔍  Search Console section failed: ${err?.message ?? err}`);
+      out.push('    (Is the service-account email added as a user on the property?)');
     }
   } else {
-    console.log('\n🔍  SEARCH CONSOLE skipped — set SC_SITE_URL to enable.');
+    out.push('\n🔍  SEARCH CONSOLE skipped — set SC_SITE_URL to enable.');
   }
 
   if (ga4) {
     try {
-      await ga4Section(client as any, ga4, days);
+      await ga4Section(client as any, ga4, days, out);
     } catch (err: any) {
-      console.error(`\n📈  GA4 section failed: ${err?.message ?? err}`);
-      console.error('    (Is the service-account email a Viewer on the GA4 property?)');
+      out.push(`\n📈  GA4 section failed: ${err?.message ?? err}`);
+      out.push('    (Is the service-account email a Viewer on the GA4 property?)');
     }
   } else {
-    console.log('\n📈  GA4 skipped — set GA4_PROPERTY_ID to enable.');
+    out.push('\n📈  GA4 skipped — set GA4_PROPERTY_ID to enable.');
   }
 
-  console.log('\n' + '═'.repeat(72));
+  out.push('\n' + '═'.repeat(72));
+  return { ok: true, text: out.join('\n') };
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// ---- CLI ----------------------------------------------------------------------
+async function main() {
+  const days = parseInt(process.argv[2] ?? '7', 10) || 7;
+  const { ok, text } = await generateSeoReport(days);
+  console.log(text);
+  if (!ok) process.exit(1);
+}
+
+// Only run as a CLI when invoked directly, not when imported by the cron job.
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

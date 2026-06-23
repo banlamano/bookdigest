@@ -76,3 +76,7 @@ frontend/public/audio/
 secrets/
 backend/secrets/
 *.sa.json
+# GCP service-account key downloads land as <project>-<keyid>.json; block the
+# folder they were saved to plus that filename shape so they can't be committed.
+Json/
+*-[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].json
