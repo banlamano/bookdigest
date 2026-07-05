@@ -67,6 +67,31 @@ async function seoReportHandler(req: Request, res: Response) {
 router.post('/seo-report', seoReportHandler);
 router.get('/seo-report', seoReportHandler);
 
+// Diagnostic: which SEO-report env vars can the running process actually
+// see? Presence booleans only — values are never returned. Exists because
+// "I saved them in the dashboard" and "the dyno sees them" can disagree
+// (wrong service, unlinked env group, stale deploy).
+router.get('/env-check', (req: Request, res: Response) => {
+  if (!checkCronSecret(req)) {
+    return res.status(403).json({ success: false, message: 'Invalid secret' });
+  }
+  const present = (v?: string) => !!(v && v.trim());
+  res.json({
+    success: true,
+    env: {
+      SEO_REPORT_EMAIL: present(process.env.SEO_REPORT_EMAIL),
+      GOOGLE_SA_KEY_JSON: present(process.env.GOOGLE_SA_KEY_JSON),
+      SC_SITE_URL: present(process.env.SC_SITE_URL),
+      GA4_PROPERTY_ID: present(process.env.GA4_PROPERTY_ID),
+      RESEND_API_KEY: present(process.env.RESEND_API_KEY),
+    },
+    // Surface near-miss key names (typos, stray spaces) without leaking values.
+    similarKeys: Object.keys(process.env).filter(k =>
+      /SEO|GA4|GOOGLE_SA|SC_SITE/i.test(k)
+    ),
+  });
+});
+
 /**
  * Trigger the one-shot Resend Audience backfill from prod, where the
  * RESEND_API_KEY actually exists. Body: { secret, dryRun?: boolean }.
