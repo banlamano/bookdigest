@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { generateBookSlug } from '@/lib/slugs';
+import { blogPosts } from '@/content/blog';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 3600; // Revalidate every hour
@@ -55,12 +56,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { route: '/cookies', priority: 0.3, changeFrequency: 'yearly' as const },
   ];
 
-  // Blog posts
-  const blogPosts = [
-    { slug: 'top-10-business-books-2026', date: '2026-02-09' },
-    { slug: 'how-to-read-more-books', date: '2026-02-09' },
-  ];
-
+  // Blog posts — sourced from the content registry so new generated posts
+  // appear here automatically.
   const blogUrls = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.date),
