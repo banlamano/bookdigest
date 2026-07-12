@@ -19,15 +19,14 @@ if (!apiKey) {
 }
 const genAI = new GoogleGenerativeAI(apiKey);
 
-// Models to rotate through to bypass individual rate limits
+// Models to rotate through to bypass individual rate limits.
+// The gemini-2.0-* family was retired by Google — calls 404 even though
+// ListModels still advertises them.
 const MODELLIST = [
   'gemini-2.5-flash',
   'gemini-2.5-pro',
-  'gemini-2.0-flash',
-  'gemini-2.0-flash-001',
-  'gemini-2.0-flash-lite',
-  'gemini-2.0-flash-lite-001',
-  'gemini-flash-latest', 
+  'gemini-3.5-flash',
+  'gemini-flash-latest',
   'gemini-flash-lite-latest',
   'gemini-pro-latest',
   'gemini-2.5-flash-lite',

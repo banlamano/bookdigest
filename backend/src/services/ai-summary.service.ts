@@ -54,8 +54,8 @@ export class AISummaryService {
     if (apiKey) {
       try {
         this.genAI = new GoogleGenerativeAI(apiKey);
-        // Using gemini-2.0-flash which is confirmed to work
-        this.model = this.genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+        // gemini-2.0-flash was retired by Google (404 on generateContent).
+        this.model = this.genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
       } catch (error) {
         console.error('Failed to initialize Gemini AI:', error);
       }

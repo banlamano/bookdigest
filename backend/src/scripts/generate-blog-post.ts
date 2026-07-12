@@ -36,10 +36,12 @@ if (!apiKey) {
 const genAI = new GoogleGenerativeAI(apiKey);
 
 // Rotate models to dodge per-model rate limits (same pattern as translate-books).
+// Google retires models without removing them from ListModels, so a 404 here
+// means "retired" — askGeminiJson treats that as retryable and rotates on.
 const MODELLIST = [
   'gemini-2.5-flash',
   'gemini-2.5-pro',
-  'gemini-2.0-flash',
+  'gemini-3.5-flash',
   'gemini-flash-latest',
   'gemini-2.5-flash-lite',
 ];
@@ -58,13 +60,16 @@ async function askGeminiJson(prompt: string, attempt = 0): Promise<any> {
     }
     return JSON.parse(text);
   } catch (err: any) {
+    const retired = err.message?.includes('404') || err.message?.includes('no longer available');
     const retryable =
       err.message?.includes('429') ||
       err.message?.includes('quota') ||
       err.message?.includes('503') ||
+      retired ||
       err instanceof SyntaxError; // malformed JSON — try another model
     if (retryable && attempt < MODELLIST.length * 2) {
-      const waitMs = attempt >= MODELLIST.length ? 60000 : 5000;
+      // A retired model will never come back — rotate immediately, don't wait.
+      const waitMs = retired ? 0 : attempt >= MODELLIST.length ? 60000 : 5000;
       console.log(`  ⚠️  ${err.message?.slice(0, 80)} — retrying in ${waitMs / 1000}s`);
       await new Promise((r) => setTimeout(r, waitMs));
       return askGeminiJson(prompt, attempt + 1);
