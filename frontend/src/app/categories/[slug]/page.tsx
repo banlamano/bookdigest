@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { cookies } from 'next/headers';
 import CategoryBooksClient from './CategoryBooksClient';
 
 // Force dynamic rendering
@@ -9,16 +10,22 @@ export const revalidate = 3600; // Revalidate every hour
 // API base URL
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://bookdigest-lypx.onrender.com';
 
-// Fetch category data on server
-async function getCategoryBooks(slug: string) {
+// Fetch category data on server.
+// The language must match what the client will render, otherwise the client
+// discards these books and the server HTML ships without any book links —
+// which left Googlebot with no crawl path to the book pages at all.
+async function getCategoryBooks(slug: string, language: string) {
   try {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
-    
-    const res = await fetch(`${API_URL}/api/categories/${slug}/books?page=1&limit=12`, {
-      cache: 'no-store',
-      signal: controller.signal,
-    });
+
+    const res = await fetch(
+      `${API_URL}/api/categories/${slug}/books?page=1&limit=12&language=${language}`,
+      {
+        cache: 'no-store',
+        signal: controller.signal,
+      }
+    );
     
     clearTimeout(timeoutId);
     
@@ -36,7 +43,8 @@ async function getCategoryBooks(slug: string) {
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const data = await getCategoryBooks(params.slug);
+  const language = cookies().get('language')?.value === 'de' ? 'de' : 'en';
+  const data = await getCategoryBooks(params.slug, language);
   const category = data?.category;
 
   if (!category) {
@@ -81,7 +89,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export default async function CategoryBooksPage({ params }: { params: { slug: string } }) {
-  const data = await getCategoryBooks(params.slug);
+  const language = cookies().get('language')?.value === 'de' ? 'de' : 'en';
+  const data = await getCategoryBooks(params.slug, language);
 
   if (!data || !data.category) {
     notFound();
@@ -102,6 +111,7 @@ export default async function CategoryBooksPage({ params }: { params: { slug: st
       initialCategory={category}
       initialBooks={books}
       initialPagination={pagination}
+      initialLanguage={language}
       breadcrumbItems={breadcrumbItems}
     />
   );

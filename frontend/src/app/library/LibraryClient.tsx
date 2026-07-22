@@ -25,7 +25,14 @@ function readInitialPerPage(): number {
   return DEFAULT_PER_PAGE;
 }
 
-export default function LibraryClient({ language: initialLanguage }: { language: string }) {
+export default function LibraryClient({
+  language: initialLanguage,
+  initialBooks = [],
+}: {
+  language: string;
+  /** Server-fetched first page of books, so crawlers get real links. */
+  initialBooks?: any[];
+}) {
   const { t, language: currentLanguage } = useLanguage();
   const language = currentLanguage || initialLanguage || 'en';
 
@@ -81,7 +88,9 @@ export default function LibraryClient({ language: initialLanguage }: { language:
   });
 
   const categories = categoriesData?.data?.data?.categories || [];
-  const books = booksData?.data?.data?.books || [];
+  // Fall back to the server-fetched first page so the shipped HTML contains
+  // real /books/ links instead of an empty grid.
+  const books = booksData?.data?.data?.books || initialBooks;
   const pagination = booksData?.data?.data?.pagination;
 
   return (
@@ -158,7 +167,7 @@ export default function LibraryClient({ language: initialLanguage }: { language:
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {isLoading
+          {isLoading && books.length === 0
             ? Array.from({ length: Math.min(perPage, 20) }).map((_, i) => <BookCardSkeleton key={i} />)
             : books.map((book: any) => <BookCard key={book.id} book={book} />)}
         </div>

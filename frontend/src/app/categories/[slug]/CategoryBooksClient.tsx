@@ -16,6 +16,8 @@ interface CategoryBooksClientProps {
   initialCategory: any;
   initialBooks: any[];
   initialPagination: any;
+  /** Language the server fetched initialBooks in — the category object carries no language field. */
+  initialLanguage: string;
   breadcrumbItems: Array<{ name: string; url: string }>;
 }
 
@@ -24,6 +26,7 @@ export default function CategoryBooksClient({
   initialCategory,
   initialBooks,
   initialPagination,
+  initialLanguage,
   breadcrumbItems,
 }: CategoryBooksClientProps) {
   const { t, language } = useLanguage();
@@ -40,10 +43,15 @@ export default function CategoryBooksClient({
     enabled: isMounted && !!language, 
   });
 
-  // Prioritize live data from useQuery, then fall back to initialData ONLY if languages match
+  // Prioritize live data from useQuery, then fall back to initialData ONLY if languages match.
+  // Compare against initialLanguage: the category object has no `language` field, so the old
+  // `initialCategory?.language === language` check was always false. That made the server render
+  // an empty book grid, so the shipped HTML contained zero /books/ links and Googlebot had no
+  // way to discover the ~900 book pages.
+  const serverDataMatchesLanguage = initialLanguage === language;
   const category = data?.data?.data?.category || initialCategory;
-  const books = data?.data?.data?.books || (initialCategory?.language === language ? initialBooks : []);
-  const pagination = data?.data?.data?.pagination || (initialCategory?.language === language ? initialPagination : null);
+  const books = data?.data?.data?.books || (serverDataMatchesLanguage ? initialBooks : []);
+  const pagination = data?.data?.data?.pagination || (serverDataMatchesLanguage ? initialPagination : null);
 
   if (isLoading && page !== 1) {
     return (

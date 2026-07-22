@@ -11,9 +11,11 @@ import { useLanguage } from '@/components/LanguageProvider';
 
 interface FeaturedBooksProps {
   language?: string;
+  /** Server-fetched books so the home page HTML ships with real /books/ links for crawlers. */
+  initialBooks?: any[];
 }
 
-export function FeaturedBooks({ language: initialLanguage }: FeaturedBooksProps) {
+export function FeaturedBooks({ language: initialLanguage, initialBooks = [] }: FeaturedBooksProps) {
   const { t, language: currentLanguage } = useLanguage();
   const language = currentLanguage || initialLanguage || 'en';
 
@@ -23,7 +25,7 @@ export function FeaturedBooks({ language: initialLanguage }: FeaturedBooksProps)
     staleTime: 0,
   });
 
-  const books = data?.data?.data?.books || [];
+  const books = data?.data?.data?.books || initialBooks;
 
   useEffect(() => {
     if (books.length > 0) {
@@ -57,7 +59,9 @@ export function FeaturedBooks({ language: initialLanguage }: FeaturedBooksProps)
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {isLoading
+          {/* Skeletons only while we genuinely have nothing — otherwise the
+              server-rendered books would be replaced by placeholders in the HTML. */}
+          {isLoading && books.length === 0
             ? Array.from({ length: 8 }).map((_, i) => <BookCardSkeleton key={i} />)
             : books.slice(0, 8).map((book: any) => <BookCard key={book.id} book={book} />)}
         </div>
