@@ -56,7 +56,11 @@ export const getCategoryBooks = async (req: Request, res: Response, next: NextFu
         include: {
           category: true,
         },
-        orderBy: { rating: 'desc' },
+        // `id` breaks ties: many books share a rating, and without a unique
+        // tiebreaker Postgres may order them differently per query, so with
+        // skip/take the same book can appear on two pages while another is
+        // never returned at all — leaving those books unreachable by crawlers.
+        orderBy: [{ rating: 'desc' }, { id: 'asc' }],
       }),
       prisma.book.count({ 
         where: { 

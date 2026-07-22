@@ -18,6 +18,8 @@ interface CategoryBooksClientProps {
   initialPagination: any;
   /** Language the server fetched initialBooks in — the category object carries no language field. */
   initialLanguage: string;
+  /** Page from ?page=N. Pagination lives in the URL so each page is its own crawlable document. */
+  initialPage: number;
   breadcrumbItems: Array<{ name: string; url: string }>;
 }
 
@@ -27,11 +29,14 @@ export default function CategoryBooksClient({
   initialBooks,
   initialPagination,
   initialLanguage,
+  initialPage,
   breadcrumbItems,
 }: CategoryBooksClientProps) {
   const { t, language } = useLanguage();
-  const [page, setPage] = useState(1);
+  const page = initialPage;
   const [isMounted, setIsMounted] = useState(false);
+
+  const pageHref = (n: number) => (n <= 1 ? `/categories/${slug}` : `/categories/${slug}?page=${n}`);
 
   useEffect(() => {
     setIsMounted(true);
@@ -53,7 +58,10 @@ export default function CategoryBooksClient({
   const books = data?.data?.data?.books || (serverDataMatchesLanguage ? initialBooks : []);
   const pagination = data?.data?.data?.pagination || (serverDataMatchesLanguage ? initialPagination : null);
 
-  if (isLoading && page !== 1) {
+  // Only take over the whole page with skeletons when there is genuinely nothing
+  // to show. The server already delivered this page's books, and blanking them
+  // during SSR would hide pages 2+ from crawlers just like page 1 was hidden.
+  if (isLoading && books.length === 0) {
     return (
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -130,26 +138,39 @@ export default function CategoryBooksClient({
               ))}
             </div>
 
-            {/* Pagination */}
+            {/* Pagination — real <a> links (not onClick handlers) so Googlebot can
+                walk every page of the category and reach all of its books. */}
             {pagination && pagination.pages > 1 && (
               <div className="flex justify-center gap-2">
-                <button
-                  onClick={() => setPage(page - 1)}
-                  disabled={page === 1}
-                  className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  {t('pagination.previous')}
-                </button>
+                {page > 1 ? (
+                  <Link
+                    href={pageHref(page - 1)}
+                    rel="prev"
+                    className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  >
+                    {t('pagination.previous')}
+                  </Link>
+                ) : (
+                  <span className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 opacity-50 cursor-not-allowed">
+                    {t('pagination.previous')}
+                  </span>
+                )}
                 <div className="flex items-center px-4">
                   {t('pagination.page')} {page} {t('pagination.of')} {pagination.pages}
                 </div>
-                <button
-                  onClick={() => setPage(page + 1)}
-                  disabled={page >= pagination.pages}
-                  className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  {t('pagination.next')}
-                </button>
+                {page < pagination.pages ? (
+                  <Link
+                    href={pageHref(page + 1)}
+                    rel="next"
+                    className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  >
+                    {t('pagination.next')}
+                  </Link>
+                ) : (
+                  <span className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 opacity-50 cursor-not-allowed">
+                    {t('pagination.next')}
+                  </span>
+                )}
               </div>
             )}
           </>
