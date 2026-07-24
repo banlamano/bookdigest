@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { prisma } from '../lib/prisma';
 import {
   getAllBooks,
+  getBookSlugs,
   getBookById,
   getFeaturedBooks,
   searchBooks,
@@ -22,6 +23,8 @@ const router = Router();
 router.get('/', getAllBooks);
 router.get('/featured', getFeaturedBooks);
 router.get('/search', searchBooks);
+// Must stay above '/:id', or Express matches "slugs" as a book id.
+router.get('/slugs', getBookSlugs);
 
 // Book detail - Public for metadata, but content restricted by authentication
 router.get('/:id', optionalAuthenticate, getBookById);

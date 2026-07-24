@@ -5,6 +5,31 @@ import { getFreemiumStatus } from '../middleware/freemium.middleware';
 import { logger } from '../utils/logger';
 
 // Get all books with filters and pagination
+// Slugs only, for the frontend sitemap.
+//
+// The sitemap used to call /api/books?limit=2000&language=all, which returns
+// every book with its full summary and chapter content: ~28 MB and ~13 s on a
+// warm backend. On a cold Render instance that overran the frontend's fetch
+// timeout, and the sitemap then silently shipped without a single book URL.
+// This returns the same rows at ~1% of the payload.
+export const getBookSlugs = async (_req: Request, res: Response, next: NextFunction) => {
+  try {
+    const books = await prisma.book.findMany({
+      select: { id: true, slug: true, title: true, updatedAt: true, createdAt: true },
+      orderBy: { createdAt: 'desc' },
+    });
+
+    res.set('Cache-Control', 'public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400');
+
+    res.json({
+      status: 'success',
+      data: { books },
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
 export const getAllBooks = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { 
