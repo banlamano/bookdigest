@@ -4,6 +4,7 @@
 // the marker comments stay in place.
 
 // generator:imports
+import post10BooksToMasterSelfDisciplineAndTransformYourLife from './10-books-to-master-self-discipline-and-transform-your-life.json';
 import masteringValueInvesting10ClassicsOnBuyingWonderfulBusinessesWithAMarg from './mastering-value-investing-10-classics-on-buying-wonderful-businesses-with-a-marg.json';
 import post10BestInvestingAndPersonalFinanceBooksToBuildLastingWealth from './10-best-investing-and-personal-finance-books-to-build-lasting-wealth.json';
 import masterProductivityTopBooksToBeatDistractionAndGetMoreDone from './master-productivity-top-books-to-beat-distraction-and-get-more-done.json';
@@ -13,6 +14,7 @@ import howToReadMoreBooks from './how-to-read-more-books.json';
 
 export const blogPosts = [
   // generator:posts
+  post10BooksToMasterSelfDisciplineAndTransformYourLife,
   masteringValueInvesting10ClassicsOnBuyingWonderfulBusinessesWithAMarg,
   post10BestInvestingAndPersonalFinanceBooksToBuildLastingWealth,
   masterProductivityTopBooksToBeatDistractionAndGetMoreDone,
