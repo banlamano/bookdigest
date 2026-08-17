@@ -4,7 +4,9 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 
 import { PrismaClient } from '@prisma/client';
 import * as AWS from 'aws-sdk';
+import { google } from 'googleapis';
 import { composeNarrationText, NarratableBook } from '../utils/narration';
+import { loadCredentials } from './seo-report';
 
 const prisma = new PrismaClient();
 const GOOGLE_TTS_API_KEY = process.env.GOOGLE_TTS_API_KEY || process.env.GEMINI_API_KEY;
@@ -24,6 +26,46 @@ const s3 = new AWS.S3({
 const MAX_CHARS_PER_CHUNK = 4500;
 
 type Book = NarratableBook & { id: string };
+
+/**
+ * Pull Search Console impressions per /books/<slug> page over the last `days`.
+ * Returns a slug→impressions map so the `demand=` batch can regenerate the
+ * audio for books people are actually finding first. Returns null (not an
+ * empty map) when GSC credentials or SC_SITE_URL are missing, so the caller
+ * can fall back to the popularity ordering instead of silently prioritising
+ * nothing. A book with no impressions simply never appears in the map.
+ */
+async function fetchImpressionsBySlug(days = 90): Promise<Map<string, number> | null> {
+  const credentials = loadCredentials();
+  const siteUrl = process.env.SC_SITE_URL;
+  if (!credentials || !siteUrl) return null;
+
+  const auth = new google.auth.GoogleAuth({
+    credentials: credentials as any,
+    scopes: ['https://www.googleapis.com/auth/webmasters.readonly'],
+  });
+  const sc = google.searchconsole({ version: 'v1', auth: (await auth.getClient()) as any });
+
+  const end = new Date();
+  const start = new Date();
+  start.setUTCDate(start.getUTCDate() - days);
+  const iso = (d: Date) => d.toISOString().slice(0, 10);
+
+  const res = await sc.searchanalytics.query({
+    siteUrl,
+    requestBody: { startDate: iso(start), endDate: iso(end), dimensions: ['page'], rowLimit: 1000 },
+  });
+
+  const map = new Map<string, number>();
+  for (const row of res.data.rows ?? []) {
+    const url = row.keys?.[0] ?? '';
+    const m = url.match(/\/books\/([a-z0-9-]+)\/?$/i);
+    if (m && (row.impressions ?? 0) > 0) {
+      map.set(m[1], (map.get(m[1]) ?? 0) + (row.impressions ?? 0));
+    }
+  }
+  return map;
+}
 
 function chunkText(text: string, maxChars = MAX_CHARS_PER_CHUNK): string[] {
   const sentences = text.split(/(?<=[.!?])\s+/);
@@ -174,6 +216,10 @@ async function main() {
   //                                                  have summary-only audio (the monthly
   //                                                  "calendar" mode that walks the catalog)
   //   npm run generate:audio -- next               → all books with summary-only audio
+  //   npm run generate:audio -- demand=30          → same pool as next=, but ordered by
+  //                                                  Search Console impressions (real demand)
+  //                                                  first, then popularity for the tail.
+  //                                                  Needs GOOGLE_SA_KEY_* + SC_SITE_URL.
   const argv = process.argv[2] || '10';
   const fullSelect = {
     id: true, title: true, summary: true, language: true,
@@ -187,6 +233,50 @@ async function main() {
       where: { id: { in: ids }, summary: { not: '' } },
       select: fullSelect,
     }) as unknown as Book[];
+  } else if (argv === 'demand' || argv.startsWith('demand=')) {
+    // Demand-first catalog walker: same candidate pool as `next=` (books
+    // still on summary-only audio), but ordered by real Search Console
+    // impressions so the pages people are actually finding get full audio
+    // first. Books with no impressions yet fall back to popularity
+    // (ratingsCount, then rating), so a batch is always full even early on
+    // when only a handful of books have any impressions. If GSC creds are
+    // missing it degrades to the pure popularity order with a warning.
+    const limit = argv === 'demand' ? undefined : parseInt(argv.slice(7), 10);
+
+    const candidates = await prisma.book.findMany({
+      where: {
+        summary: { not: '' },
+        audioUrl: { contains: '.r2.dev/audio/' },
+        audioRegeneratedAt: null,
+      },
+      // Popularity is the fallback order; the impressions overlay re-ranks on top.
+      orderBy: [{ ratingsCount: 'desc' }, { rating: 'desc' }],
+      select: { id: true, slug: true },
+    });
+
+    const impressions = await fetchImpressionsBySlug(90);
+    if (!impressions) {
+      console.warn('⚠️  No Search Console credentials (GOOGLE_SA_KEY_* + SC_SITE_URL) — falling back to popularity order.');
+    }
+
+    // Stable sort: impressions desc first, popularity order (the array's
+    // existing order) breaks ties and orders the zero-impression tail.
+    const ranked = candidates
+      .map((b, i) => ({ b, i, imp: impressions?.get(b.slug ?? '') ?? 0 }))
+      .sort((a, z) => (z.imp - a.imp) || (a.i - z.i));
+
+    const chosen = (limit ? ranked.slice(0, limit) : ranked);
+    const withImp = chosen.filter((r) => r.imp > 0).length;
+    console.log(`🎯  Demand order: ${withImp}/${chosen.length} chosen books have Search Console impressions; the rest fill by popularity.`);
+
+    const orderedIds = chosen.map((r) => r.b.id);
+    const fetched = await prisma.book.findMany({
+      where: { id: { in: orderedIds } },
+      select: fullSelect,
+    }) as unknown as Book[];
+    // findMany ignores `in` order — restore the demand ranking.
+    const byId = new Map(fetched.map((b) => [b.id, b]));
+    books = orderedIds.map((id) => byId.get(id)!).filter(Boolean);
   } else if (argv === 'next' || argv.startsWith('next=')) {
     // Monthly catalog walker: pick the highest-traffic books that still
     // have the old summary-only audio (audioRegeneratedAt IS NULL).
