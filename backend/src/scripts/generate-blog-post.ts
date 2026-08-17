@@ -23,6 +23,9 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
  *   theme=      what the listicle is about — becomes the editorial angle
  *   category=   optional category slug or name filter for book selection
  *   count=      how many books to feature (default 10)
+ *   books=      comma-separated slugs to feature exactly, in order — overrides
+ *               category/rating; use it to curate a set instead of repeating
+ *               the top-rated titles a previous post already covered
  *   --dry       show the selected books and stop before calling Gemini
  */
 
@@ -98,6 +101,10 @@ interface CliArgs {
   category?: string;
   count: number;
   dry: boolean;
+  /** Explicit book slugs, in the exact order to feature them. Overrides the
+   *  category/rating auto-pick so a post can curate a set that does not just
+   *  repeat the top-rated titles (which would duplicate an earlier listicle). */
+  slugs?: string[];
 }
 
 function parseArgs(): CliArgs {
@@ -107,6 +114,13 @@ function parseArgs(): CliArgs {
     else if (arg.startsWith('theme=')) args.theme = arg.slice(6);
     else if (arg.startsWith('category=')) args.category = arg.slice(9);
     else if (arg.startsWith('count=')) args.count = parseInt(arg.slice(6), 10) || 10;
+    else if (arg.startsWith('books=')) {
+      args.slugs = arg
+        .slice(6)
+        .split(',')
+        .map((s) => s.trim())
+        .filter(Boolean);
+    }
   }
   if (!args.theme) {
     console.error('❌ theme= is required, e.g. theme="best psychology books"');
@@ -118,41 +132,60 @@ function parseArgs(): CliArgs {
 const CONTENT_DIR = path.resolve(process.cwd(), '..', 'frontend', 'src', 'content', 'blog');
 
 async function main() {
-  const { theme, category, count, dry } = parseArgs();
-  console.log(`\n📝 Blog post generator — theme: "${theme}"${category ? ` (category: ${category})` : ''}\n`);
+  const { theme, category, count, dry, slugs } = parseArgs();
+  console.log(`\n📝 Blog post generator — theme: "${theme}"${category ? ` (category: ${category})` : ''}${slugs ? ` (curated: ${slugs.length} books)` : ''}\n`);
 
   if (!fs.existsSync(CONTENT_DIR)) {
     console.error(`❌ Content dir not found: ${CONTENT_DIR}`);
     process.exit(1);
   }
 
+  const bookSelect = {
+    title: true,
+    author: true,
+    slug: true,
+    summary: true,
+    keyInsights: true,
+    category: { select: { name: true } },
+  } as const;
+
   // ── 1. Pick the books ────────────────────────────────────────────────
-  const enBooks = await prisma.book.findMany({
-    where: {
-      language: 'en',
-      slug: { not: null },
-      ...(category
-        ? {
-            category: {
-              OR: [
-                { slug: { contains: category, mode: 'insensitive' } },
-                { name: { contains: category, mode: 'insensitive' } },
-              ],
-            },
-          }
-        : {}),
-    },
-    orderBy: [{ rating: 'desc' }, { ratingsCount: 'desc' }],
-    take: count,
-    select: {
-      title: true,
-      author: true,
-      slug: true,
-      summary: true,
-      keyInsights: true,
-      category: { select: { name: true } },
-    },
-  });
+  let enBooks;
+  if (slugs && slugs.length) {
+    // Curated set: fetch exactly these slugs and restore the requested order
+    // (findMany does not preserve the `in` order).
+    const found = await prisma.book.findMany({
+      where: { language: 'en', slug: { in: slugs } },
+      select: bookSelect,
+    });
+    const bySlug = new Map(found.map((b) => [b.slug, b]));
+    const missing = slugs.filter((s) => !bySlug.has(s));
+    if (missing.length) {
+      console.error(`❌ Unknown slug(s): ${missing.join(', ')}`);
+      process.exit(1);
+    }
+    enBooks = slugs.map((s) => bySlug.get(s)!);
+  } else {
+    enBooks = await prisma.book.findMany({
+      where: {
+        language: 'en',
+        slug: { not: null },
+        ...(category
+          ? {
+              category: {
+                OR: [
+                  { slug: { contains: category, mode: 'insensitive' } },
+                  { name: { contains: category, mode: 'insensitive' } },
+                ],
+              },
+            }
+          : {}),
+      },
+      orderBy: [{ rating: 'desc' }, { ratingsCount: 'desc' }],
+      take: count,
+      select: bookSelect,
+    });
+  }
 
   if (enBooks.length < 3) {
     console.error(`❌ Only ${enBooks.length} matching book(s) — not enough for a listicle. Loosen category=?`);
