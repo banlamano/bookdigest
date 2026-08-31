@@ -99,10 +99,17 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     };
   }
 
-  const bookTitle = `${book.title} by ${book.author} - Summary & Key Insights`;
-  const bookDescription = book.description
-    ? `${book.description.substring(0, 155)}...`
-    : `Read our AI-generated summary of ${book.title} by ${book.author}. Get key insights, quotes, and action items in 15 minutes. ${book.category?.name || 'Book'} summary with practical takeaways.`;
+  const isDe = book.language === 'de';
+  // Front-load the exact query users search for ("<book> summary"/"<book> zusammenfassung").
+  // Google weights the start of the <title> most, so the primary keyword leads.
+  const bookTitle = isDe
+    ? `${book.title} Zusammenfassung — ${book.author} | Kernideen & Analyse`
+    : `${book.title} Summary — ${book.author} | Key Insights & Analysis`;
+  // Keyword-rich meta description that leads with intent and weaves in the synonym
+  // cluster people actually search (plot / synopsis / themes / takeaways).
+  const bookDescription = isDe
+    ? `Kostenlose Zusammenfassung von ${book.title} von ${book.author}: Handlung, zentrale Themen, Charaktere und Kernaussagen — Synopsis und Analyse in 15 Minuten.`
+    : `Free summary of ${book.title} by ${book.author}: plot overview, key themes, characters, and main takeaways — synopsis and analysis in a 15-minute read.`;
 
   const canonicalSlug = book.slug || params.id;
 
@@ -111,18 +118,20 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     description: bookDescription,
     keywords: [
       book.title,
-      `${book.title} summary`,
-      `${book.title} book summary`,
+      `${book.title} ${isDe ? 'zusammenfassung' : 'summary'}`,
+      `${book.title} ${isDe ? 'inhaltsangabe' : 'synopsis'}`,
+      `${book.title} ${isDe ? 'handlung' : 'plot summary'}`,
+      `${book.title} ${isDe ? 'analyse' : 'analysis'}`,
+      `${book.title} ${isDe ? 'themen' : 'themes'}`,
       book.author,
       `${book.author} books`,
       book.category?.name || '',
       `${book.category?.name || ''} books`,
-      'book summary',
+      isDe ? 'buchzusammenfassung' : 'book summary',
       'book notes',
       'key insights',
       'book takeaways',
       '15 minute read',
-      'AI book summary',
     ].filter(Boolean),
     authors: [{ name: book.author }],
     openGraph: {
