@@ -19,6 +19,7 @@ import EnhancedBookContent from '@/components/books/EnhancedBookContent';
 import { BuyOnAmazonButton } from '@/components/books/BuyOnAmazonButton';
 import { ListenOnAudibleButton } from '@/components/books/ListenOnAudibleButton';
 import { BookFAQ } from '@/components/books/BookFAQ';
+import { RelatedBooks, type RelatedBookLink } from '@/components/books/RelatedBooks';
 import { BookStructuredData, BreadcrumbStructuredData } from '@/components/StructuredData';
 import SocialShareButtons from '@/components/books/SocialShareButtons';
 import FreemiumStatus from '@/components/freemium/FreemiumStatus';
@@ -28,6 +29,7 @@ interface BookDetailClientProps {
   bookId: string;
   initialBook: any;
   breadcrumbItems: Array<{ name: string; url: string }>;
+  initialRelated?: RelatedBookLink[];
 }
 
 // Loading component to avoid duplication
@@ -42,7 +44,7 @@ const LoadingSpinner = ({ message = "Loading..." }: { message?: string }) => (
 
 import { useLanguage } from '@/components/LanguageProvider';
 
-export default function BookDetailClient({ bookId, initialBook, breadcrumbItems }: BookDetailClientProps) {
+export default function BookDetailClient({ bookId, initialBook, breadcrumbItems, initialRelated = [] }: BookDetailClientProps) {
   // ALL HOOKS MUST BE AT THE TOP - Rules of Hooks!
   const { t, language } = useLanguage();
   const router = useRouter();
@@ -435,6 +437,13 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
             <BookFAQ book={book} />
           </motion.div>
         )}
+
+        {/* Related books — crawlable same-category cross-links (server-provided) */}
+        <RelatedBooks
+          books={initialRelated}
+          isDe={book?.language === 'de'}
+          categoryName={book?.category?.name}
+        />
       </div>
     </div>
   );

@@ -56,6 +56,47 @@ async function getBook(idOrSlug: string, language: string = 'en') {
   }
 }
 
+// Fetch same-category books server-side so the "Related books" cross-links are
+// in the initial HTML (crawlable, spreads internal authority across the catalog).
+async function getRelatedBooks(
+  categoryId?: string,
+  currentId?: string,
+  language: string = 'en'
+) {
+  if (!categoryId) return [];
+  try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 4000);
+
+    const url = new URL(`${API_URL}/api/books`);
+    url.searchParams.append('category', categoryId);
+    url.searchParams.append('limit', '7'); // fetch 7, drop current, keep up to 6
+    url.searchParams.append('language', language);
+
+    const res = await fetch(url.toString(), {
+      cache: 'no-store',
+      signal: controller.signal,
+    });
+    clearTimeout(timeoutId);
+    if (!res.ok) return [];
+
+    const data = await res.json();
+    const books = data?.data?.books ?? [];
+    return (Array.isArray(books) ? books : [])
+      .filter((b: any) => b?.id !== currentId && (b?.slug || b?.id))
+      .slice(0, 6)
+      .map((b: any) => ({
+        id: b.id,
+        slug: b.slug || b.id,
+        title: b.title,
+        author: b.author,
+        coverImage: b.coverImage,
+      }));
+  } catch {
+    return [];
+  }
+}
+
 /**
  * Resolve the param to the real book identifier.
  * Old URLs like `atomic-habits-summary-<uuid>` embed the UUID after "-summary-" or "-zusammenfassung-".
@@ -200,7 +241,14 @@ export default async function BookDetailPage({ params }: { params: { id: string 
     { name: book?.title || 'Book Details', url: `https://book-digest.com/books/${book?.slug || params.id}` },
   ];
 
+  const relatedBooks = await getRelatedBooks(book?.category?.id, book?.id, language);
+
   return (
-    <BookDetailClient bookId={book.id} initialBook={book} breadcrumbItems={breadcrumbItems} />
+    <BookDetailClient
+      bookId={book.id}
+      initialBook={book}
+      breadcrumbItems={breadcrumbItems}
+      initialRelated={relatedBooks}
+    />
   );
 }
