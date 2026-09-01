@@ -18,6 +18,7 @@ import { ReadingProgressTracker } from '@/components/books/ReadingProgressTracke
 import EnhancedBookContent from '@/components/books/EnhancedBookContent';
 import { BuyOnAmazonButton } from '@/components/books/BuyOnAmazonButton';
 import { ListenOnAudibleButton } from '@/components/books/ListenOnAudibleButton';
+import { BookFAQ } from '@/components/books/BookFAQ';
 import { BookStructuredData, BreadcrumbStructuredData } from '@/components/StructuredData';
 import SocialShareButtons from '@/components/books/SocialShareButtons';
 import FreemiumStatus from '@/components/freemium/FreemiumStatus';
@@ -429,6 +430,9 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems 
               bookTitle={book.title}
               bookAuthor={book.author}
             />
+
+            {/* Book-specific FAQ (visible Q&A + FAQPage schema) */}
+            <BookFAQ book={book} />
           </motion.div>
         )}
       </div>
