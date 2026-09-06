@@ -25,6 +25,17 @@ const s3 = new AWS.S3({
 // Google TTS limit is 5000 bytes per request — we use 4500 chars to be safe with UTF-8
 const MAX_CHARS_PER_CHUNK = 4500;
 
+// Google meters Neural2 TTS per CALENDAR MONTH: the first 1M characters are
+// free, everything above is billed (~$16 / 1M chars). Billing is cumulative
+// across every run in the month, so a batch that looks free on its own can
+// still push the month over budget — that is exactly what caused the
+// Aug 2026 €9.27 bill (44 books / ~1.6M chars across two runs while each run
+// reported "FREE"). The monthly guard below budgets against what the month
+// has ALREADY used. We trim to 90% of the free tier so retries (which re-bill
+// a chunk) and estimate drift don't silently cross the real 1M line.
+const MONTHLY_FREE_CHARS = 1_000_000;
+const SAFETY_BUDGET_CHARS = Math.floor(MONTHLY_FREE_CHARS * 0.9); // 900,000
+
 type Book = NarratableBook & { id: string };
 
 /**
@@ -194,6 +205,31 @@ async function generateAudio(book: Book): Promise<{ url: string; chars: number; 
   return { url: audioUrl, chars: narrationText.length, sizeKB };
 }
 
+// First instant (UTC) of the current calendar month — the boundary Google's
+// free tier resets on.
+function startOfMonthUTC(d = new Date()): Date {
+  return new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), 1));
+}
+
+// Characters already synthesized this calendar month, estimated by re-composing
+// the narration for every book stamped with audioRegeneratedAt >= month start.
+// generateAudio() stamps that field on EVERY synthesis (all modes), so this is
+// an accurate proxy for what Google has already metered this month against the
+// 1M free tier. (Retries re-bill a chunk, so real usage can be a little higher —
+// the SAFETY_BUDGET_CHARS margin absorbs that.)
+async function charsUsedThisMonth(): Promise<number> {
+  const done = await prisma.book.findMany({
+    where: { audioRegeneratedAt: { gte: startOfMonthUTC() } },
+    select: {
+      title: true, summary: true, language: true,
+      keyInsights: true, chapters: true, quotes: true, actionItems: true,
+    },
+  });
+  let sum = 0;
+  for (const b of done) sum += composeNarrationText(b as unknown as NarratableBook).length;
+  return sum;
+}
+
 async function main() {
   console.log('🎙️  BookDigest Audio Generation — Google Cloud TTS\n');
 
@@ -220,6 +256,11 @@ async function main() {
   //                                                  Search Console impressions (real demand)
   //                                                  first, then popularity for the tail.
   //                                                  Needs GOOGLE_SA_KEY_* + SC_SITE_URL.
+  //
+  // Every mode is capped by the monthly free-tier guard: the batch is trimmed
+  // so this calendar month stays under Google's 1M-char free tier (90% safety
+  // budget). Add `--dry` to preview, or `--allow-paid` to synthesize the full
+  // selection and knowingly pay for the overage (~$16 / 1M extra chars).
   const argv = process.argv[2] || '10';
   const fullSelect = {
     id: true, title: true, summary: true, language: true,
@@ -334,6 +375,49 @@ async function main() {
     return;
   }
 
+  // ── Monthly free-tier guard ────────────────────────────────────────────
+  // Budget this batch against what the month has ALREADY used, not just the
+  // batch's own size, and drop the books that wouldn't fit under the free
+  // tier. Pass --allow-paid to synthesize the whole selection anyway (with an
+  // explicit cost estimate). Applies to --dry too, so the plan you preview is
+  // the plan that runs.
+  const allowPaid = process.argv.includes('--allow-paid');
+  const usedThisMonth = await charsUsedThisMonth();
+  const freeLeft = Math.max(0, MONTHLY_FREE_CHARS - usedThisMonth);
+  const budgetLeft = Math.max(0, SAFETY_BUDGET_CHARS - usedThisMonth);
+  console.log(
+    `🧮 Free tier this month: ${usedThisMonth.toLocaleString()} / ${MONTHLY_FREE_CHARS.toLocaleString()} chars used ` +
+    `→ ${freeLeft.toLocaleString()} free left (safety budget: ${budgetLeft.toLocaleString()}).\n`
+  );
+
+  if (!allowPaid) {
+    const kept: Book[] = [];
+    let running = 0;
+    let trimmed = 0;
+    for (const b of books) {
+      const chars = composeNarrationText(b).length;
+      if (running + chars > budgetLeft) { trimmed++; continue; }
+      running += chars;
+      kept.push(b);
+    }
+    if (trimmed > 0) {
+      console.warn(
+        `⚠️  Monthly free tier would be exceeded — keeping ${kept.length} of ${books.length} book(s) ` +
+        `(~${running.toLocaleString()} chars) to stay within the free tier.\n` +
+        `   Re-run next month for the remaining ${trimmed}, or pass --allow-paid to synthesize them now ` +
+        `(~$16 per extra 1M chars).\n`
+      );
+    }
+    books = kept;
+    if (books.length === 0) {
+      console.log(
+        "✅ Nothing fits this month's free tier (it's already near the 1M cap). " +
+        'Re-run next month, or pass --allow-paid to spend.'
+      );
+      return;
+    }
+  }
+
   // Dry-run mode: list what would be processed without spending the API
   // budget. Append `--dry` after the mode (e.g. `next=30 --dry`).
   if (process.argv.includes('--dry')) {
@@ -344,14 +428,14 @@ async function main() {
       projectedChars += chars;
       console.log(`  ${b.id.slice(0, 8)} [${b.language}] ${chars.toString().padStart(6)} chars — ${b.title}`);
     }
-    console.log(`\nProjected total: ${projectedChars.toLocaleString()} chars`);
-    const free = Math.min(projectedChars, 1_000_000);
-    const paid = Math.max(0, projectedChars - 1_000_000);
-    console.log(`  Within free tier: ${free.toLocaleString()} chars`);
+    const monthAfter = usedThisMonth + projectedChars;
+    const paid = Math.max(0, monthAfter - MONTHLY_FREE_CHARS);
+    console.log(`\nProjected this run: ${projectedChars.toLocaleString()} chars`);
+    console.log(`  Month after run:  ${monthAfter.toLocaleString()} / ${MONTHLY_FREE_CHARS.toLocaleString()} chars`);
     if (paid > 0) {
-      console.log(`  Beyond free tier: ${paid.toLocaleString()} chars (~$${((paid / 1_000_000) * 16).toFixed(2)})`);
+      console.log(`  Beyond free tier: ${paid.toLocaleString()} chars (~$${((paid / 1_000_000) * 16).toFixed(2)})${allowPaid ? ' — running anyway (--allow-paid)' : ''}`);
     } else {
-      console.log(`  💰 FREE — within Google's 1M chars/month Neural2 tier`);
+      console.log(`  💰 FREE — within this month's 1M chars Neural2 tier`);
     }
     return;
   }
@@ -374,9 +458,11 @@ async function main() {
     }
   }
 
+  const monthTotal = usedThisMonth + totalChars;
+  const paidChars = Math.max(0, monthTotal - MONTHLY_FREE_CHARS);
   console.log(`\n✨ Done — ${ok} succeeded, ${fail} failed`);
-  console.log(`📊 Total characters synthesized: ${totalChars.toLocaleString()}`);
-  console.log(`💰 Cost: ${totalChars <= 1_000_000 ? 'FREE (within 1M chars/month Neural2 tier)' : `~$${((totalChars / 1_000_000) * 16).toFixed(2)} for ${(totalChars / 1_000_000).toFixed(2)}M chars`}`);
+  console.log(`📊 Synthesized this run: ${totalChars.toLocaleString()} chars | this month: ${monthTotal.toLocaleString()} / ${MONTHLY_FREE_CHARS.toLocaleString()}`);
+  console.log(`💰 Cost: ${paidChars === 0 ? "FREE (within this month's 1M chars Neural2 tier)" : `~$${((paidChars / 1_000_000) * 16).toFixed(2)} for ${paidChars.toLocaleString()} chars over the free tier`}`);
   console.log(`\n☁️  Files uploaded to R2 bucket: ${R2_BUCKET}`);
   console.log(`   Served via: ${R2_PUBLIC_URL}/audio/<book-id>.mp3`);
 }
