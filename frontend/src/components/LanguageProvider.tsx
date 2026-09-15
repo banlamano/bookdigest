@@ -294,6 +294,8 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Book Content
     'bookContent.summary': 'Summary',
+    'bookContent.unlockText': 'This is a preview. Sign up free to read the full summary.',
+    'bookContent.unlockCta': 'Sign up free to read on',
     'bookContent.keyInsights': 'Key Insights',
     'bookContent.quotes': 'Memorable Quotes',
     'bookContent.chapters': 'Chapter Breakdown',
@@ -816,6 +818,8 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Book Content
     'bookContent.summary': 'Zusammenfassung',
+    'bookContent.unlockText': 'Das ist eine Vorschau. Melde dich kostenlos an, um die ganze Zusammenfassung zu lesen.',
+    'bookContent.unlockCta': 'Kostenlos anmelden & weiterlesen',
     'bookContent.keyInsights': 'Wichtige Erkenntnisse',
     'bookContent.quotes': 'Denkwürdige Zitate',
     'bookContent.chapters': 'Kapitelübersicht',
