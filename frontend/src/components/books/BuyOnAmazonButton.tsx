@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ChevronDown } from 'lucide-react';
 import { toAmazonAsin } from '@/lib/isbn';
 
 interface BuyOnAmazonButtonProps {
@@ -175,14 +175,22 @@ export function BuyOnAmazonButton({
           <button
             onClick={() => setShowDropdown(!showDropdown)}
             className="
+              inline-flex items-center gap-2
               px-4 py-3 bg-white dark:bg-gray-800
               border-2 border-gray-300 dark:border-gray-600
               rounded-lg hover:border-yellow-400
               transition-colors font-medium
             "
-            aria-label="Select Amazon region"
+            aria-label="Select Amazon store region"
+            aria-haspopup="listbox"
+            aria-expanded={showDropdown}
+            title="Choose your Amazon store"
           >
-            {getRegionLabel()}
+            <span>{getRegionLabel()}</span>
+            <ChevronDown
+              className={`w-4 h-4 text-gray-500 transition-transform ${showDropdown ? 'rotate-180' : ''}`}
+              aria-hidden="true"
+            />
           </button>
 
           {showDropdown && (

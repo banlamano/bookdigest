@@ -394,16 +394,9 @@ export default function BookDetailClient({ bookId, initialBook, breadcrumbItems,
                   <Play className="w-5 h-5 mr-2" />
                   {t('bookDetail.startReading')}
                 </button>
-                {book.amazonLink && (
-                  <a
-                    href={book.amazonLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-outline flex-1 h-12 inline-flex items-center justify-center text-center"
-                  >
-                    {t('bookDetail.buyFullBook')}
-                  </a>
-                )}
+                {/* "Buy Full Book" removed: it linked to the same Amazon page as the
+                    "Buy on Amazon" button above — a duplicate purchase CTA. One clear
+                    Amazon path per page (with the region selector) converts better. */}
               </div>
             </div>
           </div>
