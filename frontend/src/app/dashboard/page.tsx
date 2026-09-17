@@ -42,6 +42,7 @@ export default function DashboardPage() {
 
   const stats = statsData?.data?.data?.stats;
   const favorites = favoritesData?.data?.data?.favorites || [];
+  const isPremium = !!user?.subscriptionType && user.subscriptionType.toLowerCase() !== 'free';
 
   // Show loading while hydrating or redirecting
   if (!isHydrated || !isAuthenticated) {
@@ -65,6 +66,33 @@ export default function DashboardPage() {
           <p className="text-gray-600 dark:text-gray-400">
             {t('dashboard.continueJourney')}
           </p>
+        </div>
+
+        {/* Account info */}
+        <div className="card p-6 mb-8 flex flex-col sm:flex-row sm:items-center gap-4">
+          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">
+            {(user?.firstName?.[0] || user?.email?.[0] || 'U').toUpperCase()}
+          </div>
+          <div className="min-w-0 flex-1">
+            <div className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-0.5">
+              {t('dashboard.account')}
+            </div>
+            <div className="text-xl font-bold text-gray-900 dark:text-white truncate">
+              {[user?.firstName, user?.lastName].filter(Boolean).join(' ') || t('dashboard.reader')}
+            </div>
+            <div className="text-gray-600 dark:text-gray-400 truncate" title={user?.email}>
+              {user?.email}
+            </div>
+          </div>
+          <span
+            className={`self-start sm:self-center px-3 py-1 rounded-full text-sm font-semibold flex-shrink-0 ${
+              isPremium
+                ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/40 dark:text-yellow-300'
+                : 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300'
+            }`}
+          >
+            {isPremium ? t('dashboard.premiumMember') : t('dashboard.freeMember')}
+          </span>
         </div>
 
         {/* Subscription Card & Freemium Status */}
