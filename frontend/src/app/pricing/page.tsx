@@ -156,14 +156,14 @@ export default function PricingPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className={`card p-8 relative ${plan.highlighted
+              className={`card relative px-8 pb-8 ${plan.badge ? 'pt-14' : 'pt-8'} ${plan.highlighted
                 ? 'ring-2 ring-primary-600 shadow-xl scale-105'
                 : ''
                 }`}
             >
               {plan.badge && (
                 <div className="absolute top-3 left-1/2 z-10 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium whitespace-nowrap shadow-sm">
                     {plan.badge}
                   </span>
                 </div>
