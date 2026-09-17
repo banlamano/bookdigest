@@ -30,7 +30,8 @@ export default function PricingPage() {
 
   // Check if a specific plan is the user's current subscription
   const isCurrentPlan = (planType: string | null) => {
-    if (!planType) return false;
+    // The Free plan (planType null) is the "current plan" for a logged-in free user.
+    if (planType === null) return isAuthenticated && subscriptionType === 'FREE';
     if (planType === 'monthly') return subscriptionType === 'PREMIUM_MONTHLY';
     if (planType === 'yearly') return subscriptionType === 'PREMIUM_YEARLY';
     if (planType === 'lifetime') return subscriptionType === 'LIFETIME';
@@ -202,12 +203,14 @@ export default function PricingPage() {
                   <div className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 py-3 rounded-lg font-medium">
                     {t('pricing.currentPlan')}
                   </div>
-                  <a
-                    href="/dashboard"
-                    className="text-sm text-primary-600 hover:text-primary-700 mt-2 inline-block"
-                  >
-                    {t('pricing.manageSubscription')}
-                  </a>
+                  {plan.planType && (
+                    <a
+                      href="/dashboard"
+                      className="text-sm text-primary-600 hover:text-primary-700 mt-2 inline-block"
+                    >
+                      {t('pricing.manageSubscription')}
+                    </a>
+                  )}
                 </div>
               ) : plan.planType ? (
                 <>
