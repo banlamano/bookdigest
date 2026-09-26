@@ -10,6 +10,7 @@ import post10BestInvestingAndPersonalFinanceBooksToBuildLastingWealth from './10
 import masterProductivityTopBooksToBeatDistractionAndGetMoreDone from './master-productivity-top-books-to-beat-distraction-and-get-more-done.json';
 import post10EssentialPsychologyBooksToDecipherHumanBehavior from './10-essential-psychology-books-to-decipher-human-behavior.json';
 import top10BusinessBooks2026 from './top-10-business-books-2026.json';
+import post10BestFictionBooksToReadIn2026 from './10-best-fiction-books-to-read-in-2026.json';
 import howToReadMoreBooks from './how-to-read-more-books.json';
 
 export const blogPosts = [
@@ -20,5 +21,6 @@ export const blogPosts = [
   masterProductivityTopBooksToBeatDistractionAndGetMoreDone,
   post10EssentialPsychologyBooksToDecipherHumanBehavior,
   top10BusinessBooks2026,
+  post10BestFictionBooksToReadIn2026,
   howToReadMoreBooks,
 ];
