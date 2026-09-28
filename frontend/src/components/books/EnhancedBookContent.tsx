@@ -62,30 +62,30 @@ export default function EnhancedBookContent({
           ))}
           
           {(!isAuthenticated && !isPublicDemo) && (
-            <>
-              {/* Fade out effect */}
-              <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-blue-50 dark:from-gray-800 to-transparent pointer-events-none"></div>
-              {/* Sign-up CTA — turns the freemium cut-off into an invitation to read on */}
-              <div className="absolute bottom-0 left-0 right-0 flex flex-col items-center gap-3 px-4 pb-6 pt-20 text-center">
+            <div className="absolute inset-x-0 bottom-0">
+              {/* short fade blends the clipped text into the solid CTA block below */}
+              <div className="h-20 bg-gradient-to-t from-blue-50 dark:from-gray-800 to-transparent pointer-events-none"></div>
+              {/* solid, colour-matched block so the summary text behind is fully hidden */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 px-4 pb-6 pt-1 flex flex-col items-center gap-3 text-center">
                 <p className="text-sm sm:text-base font-medium text-gray-700 dark:text-gray-200">
                   {t('bookContent.unlockText')}
                 </p>
-                <div className="flex flex-wrap items-center justify-center gap-3">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto">
                   <Link
                     href="/register"
-                    className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 font-semibold text-white shadow-lg transition-all hover:from-blue-700 hover:to-indigo-700"
+                    className="w-full sm:w-auto inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 font-semibold text-white shadow-lg transition-all hover:from-blue-700 hover:to-indigo-700"
                   >
                     {t('bookContent.unlockCta')}
                   </Link>
                   <Link
                     href="/login"
-                    className="inline-flex items-center justify-center rounded-lg border border-gray-300 px-6 py-3 font-medium text-gray-700 transition-colors hover:border-blue-500 hover:text-blue-600 dark:border-gray-600 dark:text-gray-200"
+                    className="w-full sm:w-auto inline-flex items-center justify-center rounded-lg border border-gray-300 px-6 py-3 font-medium text-gray-700 transition-colors hover:border-blue-500 hover:text-blue-600 dark:border-gray-600 dark:text-gray-200"
                   >
                     {t('nav.login')}
                   </Link>
                 </div>
               </div>
-            </>
+            </div>
           )}
         </div>
       </div>
