@@ -71,18 +71,18 @@ export function HeroSection({ language: initialLanguage }: HeroSectionProps) {
               </Link>
             </div>
 
-            <div className="grid grid-cols-3 gap-6">
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-gray-900 dark:text-white">{t('hero.stats.booksValue')}</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">{t('hero.stats.books')}</div>
+            <div className="grid grid-cols-3 gap-3 sm:gap-6">
+              <div className="text-center lg:text-left min-w-0">
+                <div className="text-xl sm:text-3xl font-bold text-gray-900 dark:text-white">{t('hero.stats.booksValue')}</div>
+                <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 break-words">{t('hero.stats.books')}</div>
               </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-gray-900 dark:text-white">{t('hero.stats.readValue')}</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">{t('hero.stats.read')}</div>
+              <div className="text-center lg:text-left min-w-0">
+                <div className="text-xl sm:text-3xl font-bold text-gray-900 dark:text-white">{t('hero.stats.readValue')}</div>
+                <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 break-words">{t('hero.stats.read')}</div>
               </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-gray-900 dark:text-white">{t('hero.stats.ratingValue')}</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">{t('hero.stats.rating')}</div>
+              <div className="text-center lg:text-left min-w-0">
+                <div className="text-xl sm:text-3xl font-bold text-gray-900 dark:text-white">{t('hero.stats.ratingValue')}</div>
+                <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 break-words">{t('hero.stats.rating')}</div>
               </div>
             </div>
           </motion.div>
