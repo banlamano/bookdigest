@@ -123,12 +123,29 @@ async function searchConsoleSection(auth: any, siteUrl: string, days: number, ou
     return res.data.rows ?? [];
   }
 
-  const [cur, prev, queries, pages, countries] = await Promise.all([
+  // Filter by country instead of scanning a top-N country list: once the site
+  // drew impressions from 15+ countries, Germany fell out of the top 15 and
+  // was reported as 0 although it had impressions.
+  async function countryTotals(code: string) {
+    const res = await sc.searchanalytics.query({
+      siteUrl,
+      requestBody: {
+        startDate: curStart,
+        endDate: curEnd,
+        dimensions: [],
+        dimensionFilterGroups: [{ filters: [{ dimension: 'country', operator: 'equals', expression: code }] }],
+      },
+    });
+    return res.data.rows?.[0];
+  }
+
+  const [cur, prev, queries, pages, de, us] = await Promise.all([
     totals(curStart, curEnd),
     totals(prevStart, prevEnd),
     byDimension('query', 10),
     byDimension('page', 10),
-    byDimension('country', 15),
+    countryTotals('deu'),
+    countryTotals('usa'),
   ]);
 
   out.push(`\n🔍  SEARCH CONSOLE  —  ${siteUrl}`);
@@ -140,8 +157,6 @@ async function searchConsoleSection(auth: any, siteUrl: string, days: number, ou
 
   // DE vs US split — the whole point of the sitemap fix was unlocking the
   // German catalog, so call those two out explicitly.
-  const de = countries.find((r) => r.keys?.[0] === 'deu');
-  const us = countries.find((r) => r.keys?.[0] === 'usa');
   out.push(`\n    By country (impressions):`);
   out.push(`      🇩🇪 Germany  ${pad(nf.format(Math.round(de?.impressions ?? 0)), 9)}  (${nf.format(Math.round(de?.clicks ?? 0))} clicks)`);
   out.push(`      🇺🇸 USA      ${pad(nf.format(Math.round(us?.impressions ?? 0)), 9)}  (${nf.format(Math.round(us?.clicks ?? 0))} clicks)`);
@@ -149,6 +164,18 @@ async function searchConsoleSection(auth: any, siteUrl: string, days: number, ou
   out.push(`\n    Top queries:`);
   for (const r of queries.slice(0, 10)) {
     out.push(`      ${pad(r.keys?.[0] ?? '', 38)} ${pad(nf.format(Math.round(r.impressions ?? 0)) + ' imp', 12)} ${nf.format(Math.round(r.clicks ?? 0))} clk`);
+  }
+
+  // One query with a large share of all impressions and no clicks is usually
+  // automated SERP scraping (rank trackers), not readers. It inflates
+  // impressions and flatters the average position, so call it out.
+  const dominant = queries.find(
+    (r) => (r.clicks ?? 0) === 0 && cur.impressions > 0 && (r.impressions ?? 0) / cur.impressions >= 0.25,
+  );
+  if (dominant) {
+    const imp = Math.round(dominant.impressions ?? 0);
+    out.push(`\n    ⚠️  "${dominant.keys?.[0]}" = ${nf.format(imp)} of ${nf.format(Math.round(cur.impressions))} impressions with 0 clicks.`);
+    out.push(`        Likely automated searches — impressions without it: ${nf.format(Math.round(cur.impressions) - imp)}. Avg position is skewed.`);
   }
 
   out.push(`\n    Top pages:`);
