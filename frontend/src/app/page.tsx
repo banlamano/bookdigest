@@ -1,8 +1,21 @@
+import type { Metadata } from 'next';
 import { cookies } from 'next/headers';
+import FAQSchema from '@/components/FAQSchema';
 import { Features } from '@/components/home/Features';
 import { CTASection } from '@/components/home/CTASection';
 import { HeroSection } from '@/components/home/HeroSection';
 import { FeaturedBooks } from '@/components/home/FeaturedBooks';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://book-digest.com',
+    languages: {
+      en: 'https://book-digest.com',
+      de: 'https://book-digest.com/de',
+      'x-default': 'https://book-digest.com',
+    },
+  },
+};
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://bookdigest-lypx.onrender.com';
 
@@ -39,6 +52,10 @@ export default async function HomePage() {
 
   return (
     <div className="min-h-screen">
+      {/* Homepage FAQ schema lives here, not in the root layout: site-wide it
+          duplicated the FAQPage block on every book page and put the homepage
+          FAQ on blog posts. */}
+      <FAQSchema />
       <HeroSection language={language} />
       <FeaturedBooks language={language} initialBooks={featuredBooks} />
       <Features />

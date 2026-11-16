@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Blog — Book Insights & Reading Tips',
   description:
     'Curated book lists, reading strategies, and insights from 900+ book summaries on BookDigest.',
+  alternates: { canonical: 'https://book-digest.com/blog' },
 };
 
 export default function BlogPage() {

@@ -32,10 +32,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     title: loc.title,
     description: loc.excerpt,
     keywords: loc.keywords,
+    alternates: { canonical: `https://book-digest.com/blog/${post.slug}` },
     openGraph: {
       title: loc.title,
       description: loc.excerpt,
       type: 'article',
+      url: `https://book-digest.com/blog/${post.slug}`,
       publishedTime: post.date,
       authors: [post.author],
     },
@@ -58,8 +60,27 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const loc = localized(post, isDe);
   const html = marked.parse(loc.content, { async: false }) as string;
 
+  const url = `https://book-digest.com/blog/${post.slug}`;
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: loc.title,
+    description: loc.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    inLanguage: isDe ? 'de' : 'en',
+    mainEntityOfPage: url,
+    url,
+    author: { '@type': 'Organization', name: post.author },
+    publisher: { '@type': 'Organization', name: 'BookDigest', url: 'https://book-digest.com' },
+  };
+
   return (
     <article className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema).replace(/</g, '\\u003c') }}
+      />
       {/* Article Header */}
       <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
         <div className="container mx-auto px-4 py-12 max-w-4xl">

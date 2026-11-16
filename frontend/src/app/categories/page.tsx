@@ -1,5 +1,10 @@
+import type { Metadata } from 'next';
 import { cookies } from 'next/headers';
 import CategoriesClient from './CategoriesClient';
+
+export const metadata: Metadata = {
+  alternates: { canonical: 'https://book-digest.com/categories' },
+};
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 3600;
