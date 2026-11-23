@@ -5,6 +5,7 @@ import { Features } from '@/components/home/Features';
 import { CTASection } from '@/components/home/CTASection';
 import { HeroSection } from '@/components/home/HeroSection';
 import { FeaturedBooks } from '@/components/home/FeaturedBooks';
+import { PopularSummaries } from '@/components/home/PopularSummaries';
 
 export const metadata: Metadata = {
   alternates: {
@@ -58,6 +59,7 @@ export default async function HomePage() {
       <FAQSchema />
       <HeroSection language={language} />
       <FeaturedBooks language={language} initialBooks={featuredBooks} />
+      <PopularSummaries language={language} />
       <Features />
 
       <CTASection />
